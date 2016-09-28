@@ -1,0 +1,8 @@
+# See http://www.robotstxt.org/ for documentation on how to use the robots.txt file. Check the syntax at http://www.sxw.org.uk/computing/robots/check.html.
+
+User-agent: *
+Crawl-delay: 120
+Request-rate: 1/200
+Allow: /$
+Disallow: /
+Visit-time: 0200-0800
