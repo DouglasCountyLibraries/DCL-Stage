@@ -7,7 +7,7 @@
 <meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning."/>
 <link rel="canonical" href="http://dcl.org"/>
 <!-- InstanceBeginEditable name="title" -->
-<title>DCL | HSE, ESL, US Citizenship and Proctoring</title>
+<title>DCL | BizInfo: Business Resources</title>
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -42,6 +42,15 @@
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
+}
+.half-white {
+	background: url("bg-white.gif");
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+.img-responsive.gears {
+  position: relative;
+  top: -5px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -131,7 +140,7 @@
     <!-- Collect the nav links for toggling -->
     <div class="collapse navbar-collapse" id="bs-nav">
       <ul class="nav navbar-nav">
-        <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Explore <span class="caret"></span> </a>
+        <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Explore <span class="caret"></span> </a> 
           <ul class="dropdown-menu" role="menu">
             <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
             <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
@@ -153,17 +162,7 @@
             <li><a href="../history">Douglas County History</a></li>
           </ul>
         </li>
-        <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="../library-basics">Library Basics</a></li>
-            <li><a href="http://getacard.org/v2/index.html" target="new">Get a Library Card</a></li>
-            <li><a href="../book-clubs">Book Clubs</a></li>
-            <li><a href="../staff-recommendations">Staff Recommendations</a></li>
-            <li><a href="../bizinfo">Business Resources</a></li>
-            <li><a href="../research/online-learning">Online Learning</a></li>
-            <li><a href="../hse-esl-us-citizenship-proctoring">HSE, ESL, US Citizenship, Proctoring</a></li>
-          </ul>
-        </li>
+        <li class="using-the-library-active"><a href="../using-the-library">Using the Library</a> </li>
         <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
         <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
         <li class="events-active"><a href="../library-events">Library Events</a> </li>
@@ -178,119 +177,130 @@
 <div class="container-fluid">
   <div id="global-alert" class="row alert alert-warning" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top padding-bottom-15">
+  <div class="row padding-top-60 border-top">
     <div class="container">
-      <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400">HSE, ESL, US Citizenship and Proctoring</h1>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fa fa-umbrella"></i></div>
+      <h1 class="jumbo-text text-center text-uppercase font-weight-400">BizInfo: Business Resources</h1>
+      <div class="separator-container">
+        <div class="separator line-separator"><i class="fa fa-briefcase"></i></div>
+      </div>
+      <h1 class="roboto text-center">Information service for entrepreneurs and businesses</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="padding-top-15 padding-bottom-15">Are you an entrepreneur with a new idea? We can help with business plans, registration and other startup information.</div>
+        </div>
+        <div class="col-md-4">
+          <div class="padding-top-15 padding-bottom-15">Do you have an established business? We can provide market research and lists, industry trends, and operation assistance.</div>
+        </div>
+        <div class="col-md-4">
+          <div class="padding-top-15 padding-bottom-15"><a href="#" data-toggle="modal" data-target="#modal-one">Use our form to provide information</a> about your business and the type of help you need. A business librarian will respond in one business day.</div>
         </div>
       </div>
-
-    </div>
-  </div>
-  <div class="row bg-light-teal fff padding-bottom-40">
-    <div class="container">
-      <div class="col-md-4 margin-lg-30 padding-top-30 padding-bottom-40">
-        <h2 class="roboto fff">Adult Tutoring</h2>
-        <div>Tutoring for <a class="fff text-underline" href="#" rel="popover" data-placement="top" data-trigger="focus" data-content="English as a Second Language">ESL</a>, basic literacy, and high school equivalency exam preparation is personalized to individual student needs. ESL and basic literacy students meet with tutors one hour a week for six months; high school equivalency students study with a tutor for three months. </div>
-        <div class="dropdown"> <a class="btn btn-primary text-uppercase margin-top-30" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apply Now <span class="caret"></span></a>
-          <div class="dropdown-menu">
-            <div class="padding-30 text-capitalize">
-              <ul class="list-unstyled">
-                <li><a href="GEDStudentApp2016.pdf" target="_blank">GED Student Application</a></li>
-                <li><a href="ESLStudentApp2016.pdf" target="_blank">ESL Student Application</a></li>
-                <li><a href="ESLStudentAppEspanol.pdf" target="_blank">Solicitud de tutor de ESL en español</a></li>
-              </ul>
+      <div class="text-center padding-top-30"> <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-one">Ask Us Your Business Question</button>
+      </div>
+      <!-- Modal -->
+      <div id="modal-one" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3 class="text-center modal-title">Ask Us Your Business Question</h3>
             </div>
+            <script type="text/javascript" src="https://form.jotform.com/jsform/52096068904157"></script> 
           </div>
         </div>
       </div>
-      <div class="col-md-4 margin-lg-30 padding-top-30 padding-bottom-40">
-        <h2 id="test-prep" class="roboto fff">High School Equivalency Test Preparation</h2>
-        <div>Students may attend any of three weekly opportunities to prepare for equivalency testing: Mondays and Wednesdays at 6 p.m. in <a class="fff text-underline" href="../parker">Parker</a>, and Tuesdays at 6 p.m. in <a class="fff text-underline" href="../castle-rock">Castle Rock</a>. Prepare for the <a class="fff text-underline" href="https://ged.com/" target="_blank">GED</a>, <a class="fff text-underline" href="http://hiset.ets.org/" target="_blank">HiSET</a> or <a class="fff text-underline" href="http://www.tasctest.com/" target="_blank">TASC</a> exam.</div>
-        <div> <a class="text-uppercase btn btn-primary margin-top-30" href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=&et=&kw=GED+Prep+Class&nd=120&lib=3, 4&df=list&LangType=0" target="_blank">View Calendar</a></div>
+    </div>
+  </div>
+  <div class="row half-white">
+    <div class="container"> <img class="img-responsive gears" src="gears.png" alt="Library Services"></div>
+  </div>
+  <div class="row bg-gray-5 padding-top-30 padding-bottom-160">
+    <div class="container">
+      <h1 class="text-center no-margin-top padding-bottom-30">Library Services for Small Business</h1>
+      <div class="col-md-4 margin-lg-30">
+        <h2 class="roboto text-center"><a href="../research/business-finance">Online Resources for Business</a></h2>
+        <div>Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications.</div>
       </div>
-      <div class="col-md-4 margin-lg-30 padding-top-30 padding-bottom-40">
-        <h2 class="roboto fff">Practice Your English</h2>
-        <div>Adults of all skill levels, cultures and language backgrounds converse in English in a relaxed environment, facilitated by trained volunteers. Practice Your English is held Saturdays at 10:30 a.m. at Douglas County Libraries in <a class="fff text-underline" href="../highlands-ranch">Highlands Ranch</a> and <a class="fff text-underline" href="../parker">Parker</a>. No registration is required.</div>
-        <div><a class="text-uppercase btn btn-primary margin-top-30" href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=&et=&kw=Practice+Your+English&nd=120&lib=0, 3&df=list&LangType=0" target="_blank">View Calendar</a></div>
+      <div class="col-md-4 margin-lg-30">
+        <h2 class="roboto text-center">Services</h2>
+        <div><a href="#" data-toggle="modal" data-target="#modal-one">Our business librarians offer boutique-style service</a> to fit your needs — market information, competitive intelligence, data on industry trends, sample business plans, and more. In addition, our libraries offer <a href="../reserve-a-space">meeting rooms and study rooms</a> that may be reserved for uninterrupted work, meetings with clients, and group presentations, with free wireless internet access.</div>
+      </div>
+      <div class="col-md-4 margin-lg-30">
+        <h2 class="roboto text-center"><a href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=&et=Business&nd=120&lib=ALL&df=list&LangType=0" target="_blank">Upcoming Events</a></h2>
+        <div>We partner with the South Metro Small Business Development Center (SBDC) to provide free workshops on a variety of small-business topics: Startup Basics, Business Plan Basics, Cash Flow Fundamentals, and Marketing Fundamentals.</div>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 text-center padding-bottom-15">
-    <div class="container">
-      <h2 class=""><a href="../volunteer">I want to be an adult literacy volunteer!</a></h2>
+  <div class="row padding-top-60 padding-bottom-30">
+    <div class="container text-center padding-bottom-30 margin-lg-100">
+      <h1 class="roboto">Our specially trained business librarians are here to help you with your research.</h1>
     </div>
-  </div>
-  <div class="row bg-loquacious padding-bottom-60">
-    <div class="container">
-      <div class="col-md-4 margin-lg-30 padding-top-30 padding-bottom-40">
-        <h2 class="roboto fff">Tech Tutoring</h2>
-        <div class="text-left-md fff">We match patrons to tutors for individualized learning in technology subjects like basic internet use, tablets, email, e-books, popular software basics and more.</div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary text-uppercase margin-top-30" data-toggle="modal" data-target="#techform">Get Started</button>
-        <!-- Modal -->
-        <div class="modal fade" id="techform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content padding-30">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="text-center modal-title">Tech Tutoring</h3>
-              </div>
-              <script type="text/javascript" src="https://form.jotform.com/jsform/52096044569158"></script> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 margin-lg-30 padding-top-30 padding-bottom-40">
-        <h2 class="roboto fff">U.S. Citizenship</h2>
-        <div class="text-left-md fff">Candidates for U.S. citizenship can choose from two classes a year (three sessions each) to prepare for citizenship application and interviews. Representatives from <a class="fff text-underline" href="https://www.uscis.gov/" target="_blank">USCIS</a> attend to answer your questions.</div>
-        <div> <a href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=&et=&kw=Citizenship+Class&nd=365&lib=ALL&df=list&LangType=0" target="new" class="text-uppercase btn btn-primary margin-top-30">View Calendar</a></div>
-      </div>
-      <div class="col-md-4 margin-lg-30 padding-top-30 padding-bottom-40">
-        <h2 class="roboto fff">Proctoring</h2>
-        <div>
-          <div class="text-left-md fff">We are pleased to offer free test proctoring at three locations, by appointment.<br>
-          <a class="pointer fff text-underline" data-target="#proctoringmodal" data-toggle="modal" type="button">Some restrictions apply.</a></div>
-          <div id="proctoringmodal" class="modal fade" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" style="display: none;">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3 class="modal-title text-center">Proctoring Guidelines</h3>
+    <div id="carousel-pics" class="carousel slide"> 
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="row">
+            <div class="container">
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Angie Brown, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="angie.jpg" />
+                  <h3 class="no-margin-bottom">Angie Brown</h3>
                 </div>
-                <div class="modal-body text-left padding-30">
-                  <ul>
-                    <li>Before a proctoring appointment may be made, we must have received written confirmation from your school that it accepts our guidelines and/or we must have approved your school's proctoring guidelines.</li>
-                    <li>Proctors are unable to stay in the room with you when you test. We cannot store valuables for you.</li>
-                    <li>Unless you specified that your exam must be proctored by someone with a Master of Library Science degree, we may provide a proctor without an MLS.</li>
-                    <li>Please make sure your exam reaches your assigned proctor at least 48 hours before your proctoring appointment.</li>
-                    <li>You must present a current photo ID before each exam. Minors who do not have a photo ID must be accompanied by a parent with a photo ID.</li>
-                    <li>Please be advised that requests from the school for a staff member's personal identification will be declined. Examples of personal identification numbers that will not be provided include Social Security number (even if the request is only for the last four digits), driver's license number, and employee number.</li>
-                    <li>We can scan and email completed exams to your school, free of charge. You are responsible for any costs, including postage and an envelope, for returning the completed exam by mail.</li>
-                  </ul>
+              </div>
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Colbe Galston, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="colbe.jpg" />
+                  <h3 class="no-margin-bottom">Colbe Galston</h3>
+                </div>
+              </div>
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Kyra Hahn, Castle Pines" class="center-block img-circle" src="kyra.jpg" />
+                  <h3 class="no-margin-bottom">Kyra Hahn</h3>
+                </div>
+              </div>
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Julie Howard, Lone Tree" class="center-block img-circle" src="julie.jpg" />
+                  <h3 class="no-margin-bottom">Julie Howard</h3>
                 </div>
               </div>
             </div>
           </div>
+          <!--/row--> 
         </div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary text-uppercase margin-top-30" data-toggle="modal" data-target="#proctoringform">Get Started</button>
-        <!-- Modal -->
-        <div class="modal fade" id="proctoringform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="text-center modal-title">Proctoring</h3>
+        <!--/item-->
+        <div class="item">
+          <div class="row">
+            <div class="container">
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Katherine Johnson, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="katherine.jpg" />
+                  <h3 class="no-margin-bottom">Katherine Johnson</h3>
+                </div>
               </div>
-              <script type="text/javascript" src="https://form.jotform.com/jsform/62639346925163"></script>
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Andrew Roth, Parker" class="center-block img-circle" src="andrew.jpg" />
+                  <h3 class="no-margin-bottom">Andrew Roth</h3>
+                </div>
+              </div>
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Becky Spilver, Roxborough" class="center-block img-circle" src="http://placehold.it/200" />
+                  <h3 class="no-margin-bottom">Becky Spilver</h3>
+                </div>
+              </div>
+              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
+                <div><img alt="Patty Van Eysden" class="center-block img-circle" src="patty.jpg" />
+                  <h3 class="no-margin-bottom">Patty Van Eysden</h3>
+                </div>
+              </div>
             </div>
           </div>
+          <!--/row--> 
         </div>
+        <!--/item--> 
       </div>
-    </div>
+      <!--/carousel-inner--> 
+      <a data-slide="prev" href="#carousel-pics" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#carousel-pics" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> </div>
+  </div>
+  <div class="text-center padding-bottom-120"> <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-one">Ask Us Your Business Question</button>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-40">
@@ -339,13 +349,15 @@
 </div>
 <!-- remove for now <a id="help" class="btn btn-primary text-uppercase" href="http://answers.douglascountylibraries.org/" target="_blank">Help</a>--> 
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
-$("a[rel=popover]")
-    .popover()
-    .click(function(e) {
-        e.preventDefault();
-     });
- </script> 
+<script>$(document).ready(function() {
+	$('#carousel-pics').carousel({
+	interval: 6000
+	})
+    $('#carousel-pics').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});   
+});
+</script> 
 <!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
