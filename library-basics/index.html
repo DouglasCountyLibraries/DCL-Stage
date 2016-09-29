@@ -149,14 +149,7 @@
     <!-- Collect the nav links for toggling -->
     <div class="collapse navbar-collapse" id="bs-nav">
       <ul class="nav navbar-nav">
-        <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Explore <span class="caret"></span> </a> 
-          <!-- <ul class="dropdown-menu" role="menu">
-            <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
-            <li><a href="https://dcl.bibliocommons.com/explore/index/newly_acquired?f_on_order=false">New Titles</a></li>
-            <li><a href="https://dcl.bibliocommons.com/explore/index/awards">Awards</a></li>
-            <li><a href="https://dcl.bibliocommons.com/explore/index/best_sellers">Bestsellers</a></li>
-            <li><a href="https://tscpl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
-          </ul> -->
+        <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Explore <span class="caret"></span> </a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
             <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
@@ -178,7 +171,17 @@
             <li><a href="../history">Douglas County History</a></li>
           </ul>
         </li>
-        <li class="using-the-library-active"><a href="../using-the-library">Using the Library</a> </li>
+        <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="../library-basics">Library Basics</a></li>
+            <li><a href="http://getacard.org/v2/index.html" target="new">Get a Library Card</a></li>
+            <li><a href="../book-clubs">Book Clubs</a></li>
+            <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+            <li><a href="../bizinfo">Business Resources</a></li>
+            <li><a href="../research/online-learning">Online Learning</a></li>
+            <li><a href="../hse-esl-us-citizenship-proctoring">HSE, ESL, US Citizenship, Proctoring</a></li>
+          </ul>
+        </li>
         <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
         <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
         <li class="events-active"><a href="../library-events">Library Events</a> </li>
@@ -193,7 +196,7 @@
 <div class="container-fluid">
   <div id="global-alert" class="row alert alert-warning" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row padding-top-60 padding-bottom-100 border-top">
+  <div class="row border-top">
     <div class="container">
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400">Library Basics</h1>
@@ -201,17 +204,17 @@
           <div class="separator line-separator"><i class="fa fa-tag"></i></div>
         </div>
       </div>
-      <div class="row">
+      <div class="row padding-bottom-30">
         <div class="col-sm-6 text-center">
-          <h3 class="roboto"><i class="fa fa-shopping-basket" style="margin-right:10px"></i> <a href="#fines-fees-borrowing">Fines, Fees & Borrowing</a></h3>
+          <h3 class="roboto no-margin-top"><i class="fa fa-shopping-basket" style="margin-right:10px"></i> <a href="#fines-fees-borrowing">Fines, Fees & Borrowing</a></h3>
         </div>
         <div class="col-sm-6 text-center">
-          <h3 class="roboto"><i class="fa fa-print" style="margin-right:10px"></i> <a href="#print-copy-fax">Print, Copy, Fax</a></h3>
+          <h3 class="roboto no-margin-top"><i class="fa fa-print" style="margin-right:10px"></i> <a href="#print-copy-fax">Print, Copy, Fax</a></h3>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-gray-5 padding-top-80 padding-bottom-100">
+  <div class="row bg-gray-5 padding-top-30 padding-bottom-60">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -255,60 +258,54 @@
       </div>
     </div>
   </div>
-  <div class="row fff bg-salmon padding-top-60 padding-bottom-100">
+  <div class="row fff bg-salmon padding-top-15 padding-bottom-40">
     <div id="fines-fees-borrowing" class="container">
       <h1 class="fff text-center padding-bottom-30">Fines, Fees & Borrowing</h1>
       <div class="text-center margin-lg-200">Most materials check out for three weeks. Magazines and DVDs under 200 minutes check out for one week, and each patron may have up to 99 physical items checked out at any one time. The late fee for most materials is 10 cents per day, with a three&#8209;day grace period.</div>
       <div class="text-center margin-top-30"> <a href="https://epayments.douglascountylibraries.org/eCommerceWebModule/Home" target="_blank" class="text-uppercase btn btn-primary">Pay Your Fines</a> <a href="../fines-fees-borrowing" class="fff margin-left-10 text-uppercase">Learn More &raquo;</a></div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-top-80 padding-bottom-100">
-    <div class="container" id="print-copy-fax">
-      <h1 class="text-center padding-bottom-30">Print, Copy, Fax</h1>
-      <div class="col-md-4">
-        <div class="bg-white margin-bottom-30 padding-top-15 padding-right-15 padding-bottom-60 padding-left-15 shadow-low">
-          <h2 class="roboto">Wireless Printing</h2>
-          <div>Print on the library's public printers during library hours regardless of device, network or location. Please note, large documents and PDFs may take a few minutes to print.</div>
-          <div class="dropdown"> <a data-toggle="dropdown" class="btn btn-primary text-uppercase margin-top-15 dropdown-toggle">Print Now <span class="caret"></span></a>
-            <div class="dropdown-menu">
-              <div style="border-bottom:1px solid #ccc;" class="padding-15">Choose a Location:</div>
-              <div class="padding-30 text-capitalize">
-                <ul class="list-unstyled">
-                  <li><a target="new" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/castlepines&amp;protocolSwitched=true">Castle Pines </a></li>
-                  <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/philipsmiller-001&amp;protocolSwitched=true">Castle Rock</a></li>
-                  <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/jameshlarue-001&amp;protocolSwitched=true">Highlands Ranch</a></li>
-                  <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/lonetree-001&amp;protocolSwitched=true">Lone Tree</a></li>
-                  <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/parkerlibrary-001&amp;protocolSwitched=true">Parker</a></li>
-                  <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/roxborough-001&amp;protocolSwitched=true">Roxborough</a></li>
-                </ul>
-              </div>
+  <div class="row padding-top-30 padding-bottom-40">
+    <div id="print-copy-fax" class="container">
+      <h1 class="text-center padding-bottom-5">Print, Copy, Fax</h1>
+      <div class="col-md-4 margin-lg-30 padding-bottom-40">
+        <h2 class="roboto">Wireless Printing</h2>
+        <div>Print on the library's public printers during library hours regardless of device, network or location. Please note, large documents and PDFs may take a few minutes to print.</div>
+        <div class="dropdown"> <a data-toggle="dropdown" class="btn btn-primary text-uppercase margin-top-15 dropdown-toggle">Print Now <span class="caret"></span></a>
+          <div class="dropdown-menu">
+            <div style="border-bottom:1px solid #ccc;" class="padding-15">Choose a Location:</div>
+            <div class="padding-30 text-capitalize">
+              <ul class="list-unstyled">
+                <li><a target="new" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/castlepines&amp;protocolSwitched=true">Castle Pines </a></li>
+                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/philipsmiller-001&amp;protocolSwitched=true">Castle Rock</a></li>
+                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/jameshlarue-001&amp;protocolSwitched=true">Highlands Ranch</a></li>
+                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/lonetree-001&amp;protocolSwitched=true">Lone Tree</a></li>
+                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/parkerlibrary-001&amp;protocolSwitched=true">Parker</a></li>
+                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/roxborough-001&amp;protocolSwitched=true">Roxborough</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="bg-white margin-bottom-30 padding-top-15 padding-right-15 padding-bottom-60 padding-left-15 shadow-low">
-          <h2 class="roboto">Printing &amp; Copying</h2>
-          <div>Letter and legal-size copies
-            <ul>
-              <li>Black and white: 10 cents per page; 20 cents per double-sided page</li>
-              <li>Color: 25 cents per page; 50 cents per double-sided page</li>
-            </ul>
-          </div>
-          <div>11-inch by 17-inch copies
-            <ul>
-              <li>Black and white: 20 cents per page; 40 cents per double-sided page</li>
-              <li>Color: 50 cents per page; $1 per double-sided page</li>
-            </ul>
-            <div class="small">MasterCard and Visa are accepted, with a $1 minimum charge per transaction.</div>
-          </div>
+      <div class="col-md-4 margin-lg-30 padding-bottom-40">
+        <h2 class="roboto">Printing &amp; Copying</h2>
+        <div>Letter and legal-size copies
+          <ul>
+            <li>Black and white: 10 cents per page; 20 cents per double-sided page</li>
+            <li>Color: 25 cents per page; 50 cents per double-sided page</li>
+          </ul>
+        </div>
+        <div>11-inch by 17-inch copies
+          <ul>
+            <li>Black and white: 20 cents per page; 40 cents per double-sided page</li>
+            <li>Color: 50 cents per page; $1 per double-sided page</li>
+          </ul>
+          <div class="small">MasterCard and Visa are accepted, with a $1 minimum charge per transaction.</div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="bg-white margin-bottom-30 padding-top-15 padding-right-15 padding-bottom-60 padding-left-15 shadow-low">
-          <h2 class="roboto">Faxing</h2>
-          <div>The library sends faxes from the <a href="../highlands-ranch">Highlands Ranch</a>, <a href="../lone-tree">Lone Tree</a>, <a href="../parker">Parker</a>, <a href="../castle-rock">Castle Rock</a> and <a href="../roxborough">Roxborough</a> locations. The fee is $1.75 for the first page and $1 for each additional page. The library cannot accept incoming faxes and cannot send international faxes.</div>
-        </div>
+      <div class="col-md-4 margin-lg-30 padding-bottom-40">
+        <h2 class="roboto">Faxing</h2>
+        <div>The library sends faxes from the <a href="../highlands-ranch">Highlands Ranch</a>, <a href="../lone-tree">Lone Tree</a>, <a href="../parker">Parker</a>, <a href="../castle-rock">Castle Rock</a> and <a href="../roxborough">Roxborough</a> locations. The fee is $1.75 for the first page and $1 for each additional page. The library cannot accept incoming faxes and cannot send international faxes.</div>
       </div>
     </div>
   </div>
