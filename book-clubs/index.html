@@ -79,6 +79,9 @@ table.dataTable.no-footer {
 .dataTables_wrapper .dataTables_info {
 	display: none;
 }
+.using-the-library-active {
+	background-color: #f5f5f5;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -167,7 +170,7 @@ table.dataTable.no-footer {
     <!-- Collect the nav links for toggling -->
     <div class="collapse navbar-collapse" id="bs-nav">
       <ul class="nav navbar-nav">
-        <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Explore <span class="caret"></span> </a> 
+        <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Explore <span class="caret"></span> </a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
             <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
@@ -189,7 +192,17 @@ table.dataTable.no-footer {
             <li><a href="../history">Douglas County History</a></li>
           </ul>
         </li>
-        <li class="using-the-library-active"><a href="../using-the-library">Using the Library</a> </li>
+        <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="../library-basics">Library Basics</a></li>
+            <li><a href="http://getacard.org/v2/index.html" target="new">Get a Library Card</a></li>
+            <li><a href="../book-clubs">Book Clubs</a></li>
+            <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+            <li><a href="../bizinfo">Business Resources</a></li>
+            <li><a href="../research/online-learning">Online Learning</a></li>
+            <li><a href="../hse-esl-us-citizenship-proctoring">HSE, ESL, US Citizenship, Proctoring</a></li>
+          </ul>
+        </li>
         <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
         <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
         <li class="events-active"><a href="../library-events">Library Events</a> </li>
@@ -212,15 +225,17 @@ table.dataTable.no-footer {
           <div class="separator line-separator"><i class="fa fa-book"></i></div>
         </div>
       </div>
-    </div></div>
-    <div class="row">
-      <div class="container">
-        <div class="col-md-5"><img class="img-responsive center-block" src="book-clubs.png" alt="Book Clubs"></div>
-        <div class="col-md-7 padding-top-30 padding-bottom-30">
-          <h2 class="roboto">If you love to talk about books, then we’ve got a book club for you! Search or browse the list below and filter by location, audience, day or genre to find the perfect fit.</h2><h2 class="roboto">Interested in new titles? Browse <a href="https://dcl.bibliocommons.com/explore/recent_arrivals?f_on_order=false">Just Arrived</a> and <a href="https://dcl.bibliocommons.com/explore/recent_arrivals?f_on_order=true">On Order</a> Lists.</h2>
-        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="col-md-5"><img class="img-responsive center-block" src="book-clubs.png" alt="Book Clubs"></div>
+      <div class="col-md-7 padding-top-30 padding-bottom-30">
+        <h2 class="roboto">If you love to talk about books, then we’ve got a book club for you! Search or browse the list below and filter by location, audience, day or genre to find the perfect fit.</h2>
+        <h2 class="roboto">Just interested in coming soon items? Browse <a href="https://dcl.bibliocommons.com/explore/recent_arrivals?f_on_order=false">Just Arrived</a> and <a href="https://dcl.bibliocommons.com/explore/recent_arrivals?f_on_order=true">On Order</a> Lists.</h2>
       </div>
     </div>
+  </div>
   <div class="row padding-bottom-160">
     <div class="container">
       <table id="book-clubs" class="table table-responsive table-striped margin-bottom-30">
