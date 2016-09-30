@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,12 +61,15 @@
 <body>
 <div class="cp_header_biblio_bar">
   <div class="container">
-    <div class="row">
+    <div class="row"> 
+      
       <!-- begin BCNAV -->
       <div data-js="bc_my_account_nav" class="col-xs-12">
         <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a aria-expanded="true" data-toggle="dropdown" data-js="biblionav_account_trigger" id="biblionav_account_trigger" type="button" class="dropdown-toggle my_account_toggle" href="#"> Login / My DCL <span class="caret margin-left-15"></span> </a>
           <ul aria-labelledby="biblionav_trigger" data-js="biblionav_my_account" role="menu" class="dropdown-menu biblionav_my_account">
+            
             <!-- Template - t_biblionav_my_account_user_info -->
+            
             <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
             <li data-js="divider_logged_out" class="divider" role="presentation"></li>
             <li class="divider" role="presentation"></li>
@@ -88,7 +90,8 @@
           </ul>
         </div>
       </div>
-      <!-- end BCNAV -->
+      <!-- end BCNAV --> 
+      
     </div>
   </div>
 </div>
@@ -108,21 +111,20 @@
             <span class="input-group-btn">
             <button type="submit" value="search" class="btn btn-search"><i class="fa fa-search"></i></button>
             </span> </div>
-          <div class="text-right">
-            <!--remove until launch <span class="small margin-right-80"><a href="../search">Website Search</a></span>-->
-            <span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+          <div class="text-right"><!--remove until launch <span class="small margin-right-80"><a href="../search">Website Search</a></span>--><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
         </form>
       </div>
     </div>
   </div>
 </div>
 <nav class="navbar navbar-default">
-  <div class="container">
+  <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed search-collapsed" data-toggle="collapse" data-target="#bs-search"> <span class="sr-only">Toggle search</span> <i class="fa fa-search"></i> </button>
       <button type="button" class="navbar-toggle collapsed menu-collapsed" data-toggle="collapse" data-target="#bs-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
     </div>
+    
     <!-- Collect the search form for toggling -->
     <div class="collapse navbar-collapse" id="bs-search">
       <ul class="nav navbar-nav hidden-md hidden-lg">
@@ -133,12 +135,11 @@
             <span class="input-group-btn">
             <button type="submit" value="search" class="btn btn-search"><i class="fa fa-search"></i></button>
             </span> </div>
-          <div class="text-right margin-right-15">
-            <!--remove until launch <span class="small margin-right-80"><a href="../search">Website Search</a></span>-->
-            <span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+          <div class="text-right margin-right-15"><!--remove until launch <span class="small margin-right-80"><a href="../search">Website Search</a></span>--><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
         </form>
       </ul>
     </div>
+    
     <!-- Collect the nav links for toggling -->
     <div class="collapse navbar-collapse" id="bs-nav">
       <ul class="nav navbar-nav">
@@ -164,17 +165,36 @@
             <li><a href="../history">Douglas County History</a></li>
           </ul>
         </li>
-        <li class="using-the-library-active"><a href="../using-the-library">Using the Library</a> </li>
+        <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="../library-basics">Library Basics</a></li>
+            <li><a href="http://getacard.org/v2/index.html" target="new">Get a Library Card</a></li>
+            <li><a href="../book-clubs">Book Clubs</a></li>
+            <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+            <li><a href="../bizinfo">Business Resources</a></li>
+            <li><a href="../research/online-learning">Online Learning</a></li>
+            <li><a href="../hse-esl-us-citizenship-proctoring">HSE, ESL, US Citizenship, Proctoring</a></li>
+          </ul>
+        </li>
+        <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="../storytime">Storytime</a></li>
+            <li><a href="../read-listen-watch">Read, Listen Watch</a></li>
+            <li><a href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=Early+Talkers+(Birth+-++2years)%2C+Talkers+(2+to+3+years)%2C+Pre-Readers+(3+to+5+years)%2C+Children&et=Authors%2C+Book+Club%2FDiscussion+Group%2C+Branch+Program%2C+Business%2C+Children%2C+Closure%2C+District+Program%2C+Educational+Class%2C+Entertainment-Focused%2C+Literacy%2C+On-Site+Community+Partnership&lib=7,%200,%201,%202,%203,%204,%205" target="_blank">Kids Events</a></li>
+            <li><a href="../parents-teachers">Parents & Teachers</a></li>
+            <li><a href="../research/homework-help">Homework Help</a></li>
+            <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
+          </ul>
+        </li>
         <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
         <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
         <li class="events-active"><a href="../library-events">Library Events</a> </li>
         <li class="research-active"><a href="../research">Research</a> </li>
-        <li class="kids-teens-active"><a href="../kids">Kids & Teens</a> </li>
       </ul>
     </div>
-    <!-- /.navbar-collapse -->
+    <!-- /.navbar-collapse --> 
   </div>
-  <!-- /.container-fluid -->
+  <!-- /.container-fluid --> 
 </nav>
 <div class="container-fluid">
   <div id="global-alert" class="row alert alert-warning" style="display:none;"></div>
@@ -595,16 +615,14 @@
 </footer>
 <div class="copyright bg-gray-90">
   <div class="container padding-top-15 padding-bottom-30">
-    <div class="eee"> <span class="pull-left"><a class="wheat" href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy;
-      <script>document.write(new Date().getFullYear())</script>
-      Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO</a> | <a class="wheat" href="tel:303-791-7323">(303) 791-7323</a></span> </div>
+    <div class="eee"> <span class="pull-left"><a class="wheat" href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO</a> | <a class="wheat" href="tel:303-791-7323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- remove for now <a id="help" class="btn btn-primary text-uppercase" href="http://answers.douglascountylibraries.org/" target="_blank">Help</a>-->
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable -->
+<!-- remove for now <a id="help" class="btn btn-primary text-uppercase" href="http://answers.douglascountylibraries.org/" target="_blank">Help</a>--> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
-e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script>
+e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -616,5 +634,4 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
