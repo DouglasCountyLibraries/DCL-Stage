@@ -42,8 +42,8 @@
   position: absolute !important;
   z-index: 1100;
   background-color: #C5664D;
-    opacity: 0.4;
-  filter: alpha(opacity=40);
+    opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 .popover[class*="tour-"] {
   z-index: 1102;
