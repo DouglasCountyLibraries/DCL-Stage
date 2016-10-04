@@ -27,8 +27,8 @@
   left: 0;
   z-index: 1100;
   background-color: #000;
-  opacity: 0.2;
-  filter: alpha(opacity=80);
+  opacity: 0.1;
+  filter: alpha(opacity=10);
 }
 .tour-step-backdrop {
   position: relative;
@@ -41,8 +41,9 @@
 .tour-step-background {
   position: absolute !important;
   z-index: 1100;
-  background: inherit;
-  border-radius: 6px;
+  background-color: #C5664D;
+    opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 .popover[class*="tour-"] {
   z-index: 1102;
