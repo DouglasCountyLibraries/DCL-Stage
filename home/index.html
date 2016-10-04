@@ -136,7 +136,7 @@
     <!-- Collect the nav links for toggling -->
     <div class="collapse navbar-collapse" id="bs-nav">
       <ul class="nav navbar-nav">
-        <li class="dropdown" id="appSettings2"> <a id="appSettingsLink" class="dropdown-toggle" data-toggle="dropdown">Explore <b class="caret"></b> </a>
+        <li class="dropdown" id="appSettings2"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <b class="caret"></b> </a>
           <ul class="dropdown-menu">
             <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
             <li><a id="test3" href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
@@ -158,7 +158,7 @@
             <li><a href="../history">Douglas County History</a></li>
           </ul>
         </li>
-        <li class="dropdown" id="appSettings"> <a id="appSettingsLink" class="dropdown-toggle" data-toggle="dropdown">Using the Library <b class="caret"></b> </a>
+        <li class="dropdown" id="appSettings"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <b class="caret"></b> </a>
           <ul class="dropdown-menu">
             <li><a href="../library-basics">Library Basics</a></li>
             <li> <a id="test2" href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
@@ -193,12 +193,16 @@
   <div id="starttour" class="pointer">
     <div class="row text-uppercase alert alert-warning">Welcome to DCL.org. Get started with a quick tour!</div>
   </div>
+  
+  
+  
   <div class="row border-top padding-bottom-30">
-    <div class="container">
-      <div class="col-md-8 padding-top-60"><a href="../parker"><img class="img-responsive" src="explore-new-parker.png" alt="Come See New Parker"/></a></div>
-      <div class="col-md-4 text-center padding-top-30 padding-top-md-200">
-        <h4 class="roboto"><a href="https://twitter.com/search?src=typd&q=%23dclnewdigs" target="_blank">Share your photos with <span class="nothing">#DCLNewDigs</span></a></h4>
-        <h4 id="step-one" class="roboto"><a href="../parker">Explore Our New Building</a></h4>
+    <div class="container margin-lg-100">
+      <div class="col-md-7"><img class="img-responsive" src="hello-fall.png" alt="Hello Fall"/></div>
+      <div class="col-md-5 text-center padding-top-30 padding-top-md-200">
+        <h1 class="roboto"><a href="http://blogs.douglascountylibraries.org/blog/2016/10/03/fall-fests-across-douglas-county/" target="_blank">Fall Fests Galore!</a></h1>
+        <h1 class="roboto"><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/696997172_fall_favorites">Good Fall Reads</a></h1>
+        <h1 class="roboto"><a href="http://blogs.douglascountylibraries.org/blog/2016/10/03/fun-fall-crafts/" target="_blank">Fun Fall Crafts</a></h1>
       </div>
     </div>
   </div>
@@ -207,30 +211,34 @@
     <div class="container">
       <div class="col-md-4 padding-top-30 padding-bottom-40 radius-block">
         <div class="bg-white shadow-low hover-shadow text-center radius-block">
-          <div id="step-two" class="padding-top-15 padding-right-15 padding-bottom-40 padding-left-15 radius-block" style="background:transparent url(banned-books.jpg) top center/cover;">
-            <h2 class="roboto fff">Banned Book Week</h2>
-            <div class="text-uppercase fff font-weight-400">Read Dangerously</div>
-            <a href="http://blogs.douglascountylibraries.org/blog/2016/09/24/read-dangerously-top-banned-books-of-2015/" target="_blank"><span class="link-spanner"></span></a> </div>
+          <div class="padding-top-15 padding-right-15 padding-bottom-40 padding-left-15 radius-block" style="background:transparent url(movies.jpg) top center/cover;">
+            <h2 class="roboto fff">Borrow a Movie</h2>
+            <div class="text-uppercase fff font-weight-400">Stream or Download Now!</div>
+            <a href="https://www.hoopladigital.com/" target="_blank"><span class="link-spanner"></span></a> </div>
         </div>
       </div>
       <div class="col-md-4 padding-top-30 padding-bottom-40 radius-block">
         <div class="bg-white shadow-low hover-shadow text-center radius-block">
-          <div class="padding-top-15 padding-right-15 padding-bottom-40 padding-left-15 radius-block" style="background:transparent url(national-book-awards.jpg) top center/cover;">
-            <h2 class="roboto fff">National Book Awards</h2>
-            <div class="text-uppercase fff font-weight-400">Read the Nominees</div>
-            <a href="http://blogs.douglascountylibraries.org/blog/2016/09/24/read-a-national-book-award-nominee/" target="_blank"><span class="link-spanner"></span></a> </div>
+          <div class="padding-top-15 padding-right-15 padding-bottom-40 padding-left-15 radius-block" style="background:transparent url(rl-stine.jpg) top center/cover;">
+            <h2 class="roboto fff">Happy Birthday, RL Stine</h2>
+            <div class="text-uppercase fff font-weight-400">Favorite Creepy Classics</div>
+            <a href="http://blogs.douglascountylibraries.org/blog/2016/10/03/happy-birthday-rl-stine/" target="_blank"><span class="link-spanner"></span></a> </div>
         </div>
       </div>
       <div class="col-md-4 padding-top-30 padding-bottom-40 radius-block">
         <div class="bg-white shadow-low hover-shadow text-center radius-block">
-          <div class="padding-top-15 padding-right-15 padding-bottom-40 padding-left-15 radius-block" style="background:transparent url(business-resources.jpg) top center/cover;">
-            <h2 class="roboto fff">Starting a Business?</h2>
-            <div class="text-uppercase fff font-weight-400">We Can Help!</div>
-            <a href="../bizinfo"><span class="link-spanner"></span></a> </div>
+          <div class="padding-top-15 padding-right-15 padding-bottom-40 padding-left-15 radius-block" style="background:transparent url(kids-health-club.jpg) top center/cover;">
+            <h2 class="roboto fff">Kids Health Club</h2>
+            <div class="text-uppercase fff font-weight-400">Get Moving at the Library</div>
+            <a href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=&kw=kids+health+club&df=list&cn=0&lib=ALL&nd=365" target="_blank"><span class="link-spanner"></span></a> </div>
         </div>
       </div>
     </div>
   </div>
+  
+  
+  
+  
 </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-40">
   <div class="text-center">
