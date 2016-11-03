@@ -105,7 +105,7 @@ a:active {
 	background-color: #fff;
 }
 .modal-backdrop.in {
-	opacity: 0.7
+	opacity: 0.4
 }
 .modal-content {
 	border: 0;
@@ -325,7 +325,12 @@ div.cp_header .cp_header_biblio_bar .my_account_toggle {
 .cp_header_biblio_bar .biblionav_my_account .info .btn:first-of-type {
 	float: left;
 	margin-right: -1px;
-	background: #74894e none repeat scroll 0 0;
+	background: #008000 none repeat scroll 0 0;
+}
+.cp_header_biblio_bar .biblionav_my_account .info .btn:first-of-type:hover {
+	float: left;
+	margin-right: -1px;
+	background: #316F31 none repeat scroll 0 0;
 }
 .cp_header_biblio_bar .biblionav_my_account .info .btn .badge {
 	background-color: #ce0224;
@@ -788,7 +793,7 @@ a.text-dark:hover, a.text-dark:focus, a.text-dark:active, a.text-dark:visited {
 }
 /* ====== text size ====== */
 .jumbo-text {
-	font-size: 3.5em;
+	font-size: 48px;
 }
 .large-text {
 	font-size: 1.2em;
@@ -1174,7 +1179,6 @@ a .icon-circle-white:hover {
 	color: #ffffff;
 }
 .bizinfobox {
-	/* ====== background: #fff url("../bizinfo/accent.gif") no-repeat scroll 50% 0; ====== */
 	background: #fff;
 	border: 15px solid #d1d3d4;
 	border-right: 15px solid #d1d3d4;
@@ -1197,12 +1201,12 @@ a .icon-circle-white:hover {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
+.panel-title {
+	font-size: 16px;
+}
 .panel-group .panel-heading {
-	background: #E6E4E2;
-	border-bottom: 0 none;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	background: #efeeed none repeat scroll 0 0;
+	border-bottom: 0 none;/*box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);*/
 }
 .panel > .panel-heading:hover, .panel > .panel-heading:focus {
 	cursor: pointer;
@@ -1249,6 +1253,7 @@ a .icon-circle-white:hover {
 }
 .alert-info {
 	background-color: #3975AF;
+	color: #fff;
 }
 .alert-danger {
 	background-color: #ae2924;
@@ -1645,6 +1650,21 @@ a .icon-circle-white:hover {
 .padding-left-15 {
 	padding-left: 15px;
 }
+.padding-20 {
+	padding: 20px;
+}
+.padding-top-20 {
+	padding-top: 20px;
+}
+.padding-right-20 {
+	padding-right: 20px;
+}
+.padding-bottom-20 {
+	padding-bottom: 20px;
+}
+.padding-left-20 {
+	padding-left: 20px;
+}
 .padding-30 {
 	padding: 30px;
 }
@@ -1880,7 +1900,7 @@ a .icon-circle-white:hover {
 	margin-top: 240px;
 }
 #quote-carousel {
-	margin: 30px 0 80px;
+	margin: 30px 0 40px;
 }
 #quote-carousel .carousel-control {
 	background: none;
@@ -1918,45 +1938,25 @@ a .icon-circle-white:hover {
 	opacity: 1;
 	overflow: hidden;
 }
-.carousel-quotes {
+/*remove for now .carousel-quotes {
 	min-height: 420px;
-}
+}*/
 .item blockquote {
 	border-left: none;
 	margin: 0;
 }
-/* ====== flexbox ======
-.row-flex, .row-flex > div[class*='col-'] {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+/* ====== jquery equal height and vertical align middle ====== */
+
+.flex-center {
 	display: flex;
-	flex: 1 1 auto;
+	flex-direction: column;
+	justify-content: center;
+	resize: vertical;
 }
-.row-flex-wrap {
-	-webkit-flex-flow: row wrap;
-	align-content: flex-start;
-	flex: 0;
-}
-.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
-	margin: -.2px;
-}
-.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
-	width: 100%;
-}
-.flex-col {
-	display: flex;
-	display: -webkit-flex;
-	flex: 1 100%;
-	flex-flow: column nowrap;
-}
-.flex-grow {
-	display: flex;
-	-webkit-flex: 2;
-	flex: 2;
-}
-*/
+/*  causing trouble 
+	.equal-height {
+	padding: 30px 15px 45px 15px !important;
+} */
 /* ====== five columns ====== */
 .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {
 	position: relative;
@@ -1964,59 +1964,155 @@ a .icon-circle-white:hover {
 	padding-right: 10px;
 	padding-left: 10px;
 }
-/* ====== equal heights ====== */
-/* Bootstrap 3 responsive columns of same height
- thanks to http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height*/
- 
- /* USAGE
-<div class="row">
-  <div class="row-height">
-    <div class="col-xs-2 col-xs-height col-xs-middle">
-      <div class="inside"></div>
-    </div>
-    <div class="col-xs-4 col-lg-5 col-xs-height col-xs-middle">
-      <div class="inside"></div>
-    </div>
-  </div>
-</div>
-*/
-/* see also media queries below */
-/*.inside {
-	background: #fff;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #fff));
-	background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
-	background: -ms-linear-gradient(top, #fff 0%, #fff 100%);
-}*/
-.inside-full-height {
-	/*
-  // if you want to give content full height give him height: 100%;
-  // with content full height you can't apply margins to the content
-  // content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
-  */
-	height: 100%;
-	margin-top: 0;
-	margin-bottom: 0;
+/* styles for Springshare */
+
+
+.s-la-footer.s-la-color-bars.s-la-color-bars-border {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border-top: medium none;
+	margin-bottom: 60px;
 }
-/* columns of same height styles */
-.row-height {
-	display: table;
-	table-layout: fixed;
-	height: 100%;
-	width: 100%;
+.s-srch-result-meta .metalabel, label.check, .s-srch-result-title, .s-la-faq-listing-q {
+	font-weight: 300;
 }
-.col-height {
-	display: table-cell;
+.s-srch-result-title {
+	font-size: 16px;
+}
+#s-la-bc .breadcrumb, .s-srch-result-meta, .s-la-faq-listing-meta, .s-srch-top-header, #s-srch-sort-0-btn, #s-srch-facet-0-keywords, #s-srch-facet-0-g, #s-srch-params-0 {
+	display: none;
+}
+.s-la-public-header-text {
 	float: none;
-	height: 100%;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
 }
-.col-top {
-	vertical-align: top;
+.s-la-color-bars {
+	background-image: none;
 }
-.col-middle {
+h1#s-la-public-header-title {
+	color: #666;
+	font-size: 56px;
+	font-weight: 400;
+}
+.s-srch-askbutton .alert-info {
+	background-color: #5d9732;
+	border: medium none;
+	border-radius: 0;
+	color: #fff;
+	text-align: center;
+}
+.alert-info .btn-primary {
+	border-radius: 0;
+	padding: 10px;
+	text-transform: uppercase;
+}
+button.s-srch-facet-btn {
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 12px;
+	text-transform: uppercase;
+}
+.s-la-header.row.clearfix {
+	padding: 0;
+}
+/* styles for the blogs */
+
+#turnkey-credit, .entry-meta, .cat-links, .tags-links, .posts-navigation h2, .post-navigation h2, .comments-link {
+	display: none;
+}
+.entry-content {
+    display: table-cell;
+}
+.post.type-post {
+    border-bottom: 1px solid #efefef;
+    clear: both;
+    padding-bottom: 30px;
+}
+.navigation.posts-navigation {
+    clear: both;
+}
+.site-content.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+.alignleft {
+	float: left;
+	padding: 20px 20px 5px 0;
+}
+.edit-link {
+	display: block;
+}
+.comments-area {
+	clear: both;
+	display: block;
+}
+.comment-form-comment label {
+	display: none;
+}
+.nav-next {
+	float: right;
+	margin: 20px 0;
+}
+.nav-next:after {
+	content: " »"
+}
+.nav-previous {
+	float: left;
+	margin: 20px 0;
+}
+.nav-previous:before {
+	content: "« "
+	}
+.form-submit #submit {
+	-moz-user-select: none;
+	background-color: #456e70;
+	background-image: none;
+	border: 0 none;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.42857;
+	margin-bottom: 0;
+	padding: 10px 18px;
+	text-align: center;
 	vertical-align: middle;
+	white-space: nowrap;
 }
-.col-bottom {
-	vertical-align: bottom;
+.form-submit #submit:focus, .form-submit #submit:hover {
+	background-color: #4f868b;
+}
+.s-la-content-iconitem-icon .fa, .s-la-content-iconitem-icon .fa-envelope {
+	color: #444;
+}
+.btn.btn-default.s-la-searchform-button {
+	background: #456e70 none repeat scroll 0 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 7px 20px;
+	text-transform: uppercase;
+}
+.btn.btn-default.s-la-searchform-button:active, .btn.btn-default.s-la-searchform-button:hover, .btn.btn-default.s-la-searchform-button:focus {
+	background-color: #4e3b59;
+	border: 0;
+	color: #ffffff;
+	text-decoration: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: 0;
+	-moz-transition: 0;
+	-ms-transition: 0;
+	-o-transition: 0;
+	transition: 0;
+}
+.s-la-navbrowse, .form-control, .input-group .form-control:not(:first-child):not(:last-child), .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+	border-radius: 0;
 }
 
 /* ====== media queries ====== */
@@ -2026,20 +2122,6 @@ a .icon-circle-white:hover {
 	table-layout: fixed;
 	height: 100%;
 	width: 100%;
-}
-.col-xs-height {
-	display: table-cell;
-	float: none;
-	height: 100%;
-}
-.col-xs-top {
-	vertical-align: top;
-}
-.col-xs-middle {
-	vertical-align: middle;
-}
-.col-xs-bottom {
-	vertical-align: bottom;
 }
 }
 
@@ -2066,32 +2148,26 @@ a .icon-circle-white:hover {
 	width: 20%;
 	float: left;
 }
-.row-sm-height {
-	display: table;
-	table-layout: fixed;
-	height: 100%;
-	width: 100%;
-}
-.col-sm-height {
-	display: table-cell;
-	float: none;
-	height: 100%;
-}
-.col-sm-top {
-	vertical-align: top;
-}
-.col-sm-middle {
-	vertical-align: middle;
-}
-.col-sm-bottom {
-	vertical-align: bottom;
-}
 .margin-top-100-sm {
 	margin-top: 0;
 }
 }
 
+/* required for jquery match-height */
+
+@media only screen and (max-width : 767px) {
+.equal-height {
+	height: auto !important;
+}
+}
+
 @media (min-width: 992px) {
+.padding-top-md-120 {
+	padding-top: 120px;
+}
+.padding-top-md-140 {
+	padding-top: 140px;
+}
 .padding-top-md-160 {
 	padding-top: 160px;
 }
@@ -2113,26 +2189,6 @@ a .icon-circle-white:hover {
 .col-md-15 {
 	width: 20%;
 	float: left;
-}
-.row-md-height {
-	display: table;
-	table-layout: fixed;
-	height: 100%;
-	width: 100%;
-}
-.col-md-height {
-	display: table-cell;
-	float: none;
-	height: 100%;
-}
-.col-md-top {
-	vertical-align: top;
-}
-.col-md-middle {
-	vertical-align: middle;
-}
-.col-md-bottom {
-	vertical-align: bottom;
 }
 .text-center-md {
 	text-align: center;
@@ -2172,66 +2228,4 @@ a .icon-circle-white:hover {
 	width: 20%;
 	float: left;
 }
-.row-lg-height {
-	display: table;
-	table-layout: fixed;
-	height: 100%;
-	width: 100%;
 }
-.col-lg-height {
-	display: table-cell;
-	float: none;
-	height: 100%;
-}
-.col-lg-top {
-	vertical-align: top;
-}
-.col-lg-middle {
-	vertical-align: middle;
-}
-.col-lg-bottom {
-	vertical-align: bottom;
-}
-}
-
-/* changing out navbar collaspe - work on this: http://www.bootply.com/120604
-
-
-/*@media (max-width: 1200px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-		top: 0;
-		border-width: 0 0 1px;
-	}
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-		margin-top: 7.5px;
-	}
-	.navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-  		display:block !important;
-	}
-}
-
-end */
