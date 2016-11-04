@@ -39,54 +39,44 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
-<link type="text/css" rel="stylesheet prefetch" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" media="all" />
-<script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script>	
-$(document).ready(function() {
-    $('#book-clubs').DataTable( {
-        "pagingType": "simple",
-		"paging": false,
-		        "order": [ 0, 'asc' ],
-        "aoColumnDefs": [
-          { "bSortable": false, "aTargets": [ 0,5,6 ] } 
-          ]
-    } );
-} );
-	</script>
+
+
 <style>
-label
-{
-	margin-bottom: 15px;
-	color: #666;
+.element-item {
+	padding: 2px;
 }
-table.dataTable thead .sorting_asc
-{
-	background-image: url("sort_asc.png");
+.element-wrapper {
+	background-color: #fff;
+	border: 1px solid #fff;
+	padding: 0 15px 30px;
 }
-table.dataTable thead .sorting
-{
-	background-image: url("sort_both.png");
+
+@media (min-width: 992px) {
+.element-item {
+	width: 33.3333%;
 }
-table.dataTable thead th, table.dataTable thead td
-{
-	border-bottom: 5px solid #eee;
-	padding: 5px 18px 0 10px;
+.element-wrapper {
+	min-height: 315px;
 }
-.table-heading
-{
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
 }
-table.dataTable.no-footer
-{
-	border-bottom: 1px solid #ddd;
+
+@media (min-width: 768px) and (max-width: 991px) {
+.element-item {
+	width: 50%;
 }
-.dataTables_wrapper .dataTables_info
-{
-	display: none;
+.element-wrapper {
+	min-height: 315px;
+}
+}
+
+@media (max-width: 767px) {
+.element-item {
+	width: 100%;
+}
 }
 </style>
+
+
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -231,7 +221,7 @@ table.dataTable.no-footer
 <div class="container-fluid">
   <div id="global-alert" class="row alert alert-warning" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
+  <div class="row border-top padding-bottom-30">
     <div class="container">
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400">Book Clubs</h1>
@@ -239,12 +229,8 @@ table.dataTable.no-footer
           <div class="separator line-separator"><i class="fa fa-book"></i></div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container">
-      <div class="col-md-4"><img class="img-responsive center-block" src="book-clubs.png" alt="Book Clubs"></div>
-      <div class="col-md-8 padding-bottom-30">
+      <div class="col-md-4 padding-bottom-15"><img class="img-responsive center-block padding-bottom-15" src="book-clubs.png" alt="Book Clubs"></div>
+      <div class="col-md-8 padding-bottom-15">
         <div>If you love to talk about books, then we’ve got a book club for you! Search or browse the list below and filter by location, audience, day or genre to find the perfect fit.</div>
         <div>
           <h2 class="roboto"><a href="http://www.eventkeeper.com/kitkeeper/index.cfm?curOrg=dclibs" target="_blank">Book Club Express</a></h2>
@@ -267,231 +253,267 @@ table.dataTable.no-footer
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-60">
+  
+ <div class="row bg-gray-5">
     <div class="container">
-      <table id="book-clubs" class="table table-responsive table-striped margin-bottom-30">
-        <thead>
-          <tr class="table-heading">
-            <th><h5>Book Club</h5></th>
-            <th><h5><a href="#">Location</a></h5></th>
-            <th><h5><a href="#">Audience</a></h5></th>
-            <th><h5><a href="#">Day &amp; Time</a></h5></th>
-            <th><h5><a href="#">Genre</a></h5></th>
-            <th><h5>Description</h5></th>
-            <th><h5>Reading&nbsp;List</h5></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=book+banter&df=list&cn=0&lib=ALL&nd=365" target="_blank">Book Banter</a></td>
-            <td>Lone Tree</td>
-            <td>Adult</td>
-            <td>First Wednesday, 7PM</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/717033187_book_banter">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=brews+&+books&df=list&cn=0&lib=ALL&nd=365" target="_blank">Brews & Books: Teen Reads for Grown-Ups</a></td>
-            <td>Parker</td>
-            <td>Adult</td>
-            <td>First Thursday, 6:30PM</td>
-            <td>Young Adult</td>
-            <td>Meet monthly at Barnett & Son Brewing Co. in
-              Parker to discuss Young Adult titles.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=christian+literature&df=list&cn=0&lib=ALL&nd=365" target="_blank">Christian Literature Book Club</a></td>
-            <td>Castle Rock</td>
-            <td>Adult</td>
-            <td>Fourth Tuesday, 7PM</td>
-            <td>Christian Adult</td>
-            <td>Meet monthly to discuss Christian literature.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/703495728_christian_literature_book_club">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=crime+and+beyond&df=list&cn=0&lib=ALL&nd=365" target="_blank">Crime and Beyond</a></td>
-            <td>Lone Tree</td>
-            <td>Adult</td>
-            <td>Fourth Monday, 6:30PM</td>
-            <td>Adult Crime/Mystery</td>
-            <td>Meet monthly to discuss mysteries and crime books.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/716638358_crime_amp_beyond">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=daytime+book+group&df=list&cn=0&lib=ALL&nd=365" target="_blank">Daytime Book Group</a></td>
-            <td>Highlands Ranch</td>
-            <td>Adult</td>
-            <td>First Tuesday, 10AM</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/704045239_daytime_book_group">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=fika+bookshare&df=list&cn=0&lib=3&nd=365" target="_blank">Fika Bookshare</a></td>
-            <td>Parker</td>
-            <td>Adult</td>
-            <td>First Wednesday, Noon</td>
-            <td>General Adult</td>
-            <td>Learn about new and interesting titles.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books%20-%20evening%20discussion%20group&cn=0&lib=1004&nd=365" target="_blank">Great Books</a></td>
-            <td>Highlands Ranch</td>
-            <td>Adult</td>
-            <td>First &amp; Third Thursday, 7PM</td>
-            <td>General Adult</td>
-            <td>Read and discuss significant works
-              of fiction, philosophy, political science, poetry and drama.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books%20discussion%20forum&cn=0&lib=1001&nd=365" target="_blank">Great Books</a></td>
-            <td>Castle Rock</td>
-            <td>Adult</td>
-            <td>First Monday, 7PM</td>
-            <td>General Adult</td>
-            <td>Read and discuss significant works
-              of fiction, philosophy, political science, poetry and drama.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books%20-%20afternoon%20discussion%20group&cn=0&lib=1004&nd=365" target="_blank">Great Books</a></td>
-            <td>Highlands Ranch</td>
-            <td>Adult</td>
-            <td>Second &amp; Fourth Thursday, 2PM</td>
-            <td>General Adult</td>
-            <td>Read and discuss significant works
-              of fiction, philosophy, political science, poetry and drama.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books&cn=0&lib=1002&nd=365" target="_blank">Great Books</a></td>
-            <td>Lone Tree</td>
-            <td>Adult</td>
-            <td>First Thursday, 7PM</td>
-            <td>General Adult</td>
-            <td>Read and discuss significant works
-              of fiction, philosophy, political science, poetry and drama.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=highlands+ranch+book+group&df=list&cn=0&lib=ALL&nd=365" target="_blank">Highlands Ranch Book Group</a></td>
-            <td>Highlands Ranch</td>
-            <td>Adult</td>
-            <td>Second Monday, 7PM</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710097317_hr_book_group">View List</a></td>
-          </tr>
-          <!-- add back in 2017 <tr>
-            <td class="text-uppercase">Inklings</td>
-            <td>Parker</td>
-            <td>Adult</td>
-            <td>First Tuesday, 7PM</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td></td>
-          </tr>-->
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=junior+page+turners+1&df=list&cn=0&lib=ALL&nd=365" target="_blank">Junior Page Turners Group 1</a></td>
-            <td>Castle Rock</td>
-            <td>Children</td>
-            <td>Second Wednesday, 4:30PM</td>
-            <td>Youth</td>
-            <td>Kids, grades 1-3, discuss a
-              different book each month, and do a related craft.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710913112_junior_page_turners">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=junior+page+turners+2&df=list&cn=0&lib=ALL&nd=365" target="_blank">Junior Page Turners Group 2</a></td>
-            <td>Castle Rock</td>
-            <td>Children</td>
-            <td>Fourth Thursday, 4:30PM</td>
-            <td>Youth</td>
-            <td>Kids, grades 1-3, discuss a
-              different book each month, and do a related craft.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710913112_junior_page_turners">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=mother-daughter+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank">Mother-Daughter Book Club</a></td>
-            <td>Highlands Ranch</td>
-            <td>Children</td>
-            <td>Fourth Monday (Even Months), 6:30PM</td>
-            <td>Youth</td>
-            <td>For girls, grades 4-6, and their moms or caretakers.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=mystery+loves+company&df=list&cn=0&lib=ALL&nd=365" target="_blank">Mystery Loves Company</a></td>
-            <td>Highlands Ranch</td>
-            <td>Adult</td>
-            <td>First Thursday, 7PM</td>
-            <td>Adult Crime/Mystery</td>
-            <td>Meet monthly to discuss mysteries and crime books.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/721383955_mystery_loves_company">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=night+readers&df=list&cn=0&lib=ALL&nd=365" target="_blank">Night Readers</a></td>
-            <td>Castle Rock</td>
-            <td>Adult</td>
-            <td>Second Tuesday, 7PM</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/719688188_night_readers_2016_-_psm_book_discussion_group">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=page+twisters&df=list&cn=0&lib=ALL&nd=365" target="_blank">Page Twisters</a></td>
-            <td>Castle Rock</td>
-            <td>Children</td>
-            <td>Second Tuesday, 4:30PM</td>
-            <td>Youth</td>
-            <td>Kids, grades 4-6, discuss a different chapter book each month.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=reader's+roost&df=list&cn=0&lib=ALL&nd=365" target="_blank">Reader's Roost</a></td>
-            <td>Lone Tree</td>
-            <td>Adult</td>
-            <td>First Thursday, Noon</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/723944697_readers_roost">View List</a></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=teen+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank">Teen Book Club</a></td>
-            <td>Castle Rock</td>
-            <td>Teens</td>
-            <td>Second Thursday, 5PM</td>
-            <td>Young Adult</td>
-            <td>Meet monthly for games, snacks and talk about books.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=teen+reads+for+grown+ups&df=list&cn=0&lib=ALL&nd=365" target="_blank">Teen Reads for Grown-Ups</a></td>
-            <td>Castle Rock</td>
-            <td>Adult</td>
-            <td>Second Wednesday, 6:30PM</td>
-            <td>Young Adult</td>
-            <td>Meet monthly at The Fowl Line in
-              Castle Rock to discuss Young Adult titles.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a class="text-uppercase" href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=thursday+evening+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank">Thursday Evening Book Club</a></td>
-            <td>Castle Rock</td>
-            <td>Adult</td>
-            <td>Third Thursday, 7PM</td>
-            <td>General Adult</td>
-            <td>Meet monthly to discuss fiction and nonfiction titles.</td>
-            <td><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/703217107_thursday_evening_book_club">View List</a></td>
-          </tr>
-        </tbody>
-      </table>
+      <div><h2 class="roboto">Sort by:</h2>
+        <div id="sort" class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default margin-right-10 text-uppercase" data-sort-by="location">Location</button>
+          <button type="button" class="btn btn-default margin-right-10 text-uppercase" data-sort-by="audience">Audience</button>
+          <button type="button" class="btn btn-default margin-right-10 text-uppercase" data-sort-by="genre">Genre</button>
+          <button type="button" class="reset btn btn-link-unstyled text-uppercase text-center">Start Over &raquo;</button>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="row bg-gray-5 padding-top-30 padding-bottom-30">
+    <div class="container no-gutter">
+      <div class="col-sm-12">
+        <div id="items">
+          <div class="element-item" data-location="lone-tree" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=book+banter&df=list&cn=0&lib=ALL&nd=365" target="_blank">Book Banter</a></h2>
+              <h4 class="no-margin">Lone Tree</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time:</span> First Wednesday, 7PM</div>
+              <div class="margin-top-15">Meet monthly to discuss fiction and nonfiction titles.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/717033187_book_banter">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="parker" data-audience="adult" data-genre="young-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=brews+&+books&df=list&cn=0&lib=ALL&nd=365" target="_blank">Brews & Books: Teen Reads for Grown-ups</a></h2>
+              <h4 class="no-margin">Parker</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> Young Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>First Thursday, 6:30PM</div>
+              <div class="margin-top-15">Meet monthly at Barnett &amp; Son Brewing Co. in Parker to discuss Young Adult titles.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="adult" data-genre="christian-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=christian+literature&df=list&cn=0&lib=ALL&nd=365" target="_blank">Christian Literature Book Club</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> Christian Adult</div>
+              <div><span class="text-uppercase small">Day & Time:</span> Fourth Tuesday, 7PM</div>
+              <div class="margin-top-15">Meet monthly to discuss Christian literature.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/703495728_christian_literature_book_club">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="lone-tree" data-audience="adult" data-genre="adult-crime-mystery">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=crime+and+beyond&df=list&cn=0&lib=ALL&nd=365" target="_blank">Crime & Beyond</a></h2>
+              <h4 class="no-margin">Lone Tree</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> Adult/Crime/Mystery</div>
+              <div><span class="text-uppercase small">Day & Time:</span> Fourth Monday, 6:30PM</div>
+              <div class="margin-top-15">Meet monthly to discuss mysteries and crime books.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/716638358_crime_amp_beyond">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="lone-tree" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=daytime+book+group&df=list&cn=0&lib=ALL&nd=365" target="_blank">Daytime Book Group</a></h2>
+              <h4 class="no-margin">Highlands Ranch</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time:</span> First Tuesday, 10AM</div>
+              <div class="margin-top-15">Meet monthly to discuss fiction and nonfiction titles.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/704045239_daytime_book_group">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="parker" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=fika+bookshare&df=list&cn=0&lib=3&nd=365" target="_blank">Fika Bookshare</a></h2>
+              <h4 class="no-margin">Parker</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time:</span> First Wednesday, Noon</div>
+              <div class="margin-top-15">Learn about new and interesting titles.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books%20discussion%20forum&cn=0&lib=1001&nd=365" target="_blank">Great Books</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span> First Monday, 7PM</div>
+              <div class="margin-top-15">Read and discuss significant works of fiction, philosophy, political science, poetry and drama.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="highlands-ranch" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books%20-%20evening%20discussion%20group&cn=0&lib=1004&nd=365" target="_blank">Great Books</a></h2>
+              <h4 class="no-margin">Highlands Ranch</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span> First & Third Thursday, 7PM</div>
+              <div class="margin-top-15">Read and discuss significant works of fiction, philosophy, political science, poetry and drama.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="highlands-ranch" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books%20-%20afternoon%20discussion%20group&cn=0&lib=1004&nd=365" target="_blank">Great Books</a></h2>
+              <h4 class="no-margin">Highlands Ranch</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span> Second & Fourth Thursday, 2PM</div>
+              <div class="margin-top-15">Read and discuss significant works of fiction, philosophy, political science, poetry and drama.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="lone-tree" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=great%20books&cn=0&lib=1002&nd=365" target="_blank">Great Books</a></h2>
+              <h4 class="no-margin">Lone Tree</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span> First Thursday, 7PM</div>
+              <div class="margin-top-15">Read and discuss significant works of fiction, philosophy, political science, poetry and drama.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="highlands-ranch" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=highlands+ranch+book+group&df=list&cn=0&lib=ALL&nd=365" target="_blank">Highlands Ranch Book Group</a></h2>
+              <h4 class="no-margin">Highlands Ranch</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Second Monday, 7PM</div>
+              <div class="margin-top-15">Meet monthly to discuss fiction and nonfiction titles.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710097317_hr_book_group">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="children" data-genre="youth">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=junior+page+turners+1&df=list&cn=0&lib=ALL&nd=365" target="_blank">Junior Page Turners<br>
+                Group 1</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Children <span class="text-uppercase small margin-left-15">Genre:</span> Youth</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Second Wednesday, 4:30PM</div>
+              <div class="margin-top-15">Kids, grades 1-3, discuss a different book each month, and do a related craft.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710913112_junior_page_turners">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="children" data-genre="youth">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=junior+page+turners+2&df=list&cn=0&lib=ALL&nd=365" target="_blank">Junior Page Turners<br>
+                Group 2</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Children <span class="text-uppercase small margin-left-15">Genre:</span> Youth</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Fourth Thursday, 4:30PM</div>
+              <div class="margin-top-15">Kids, grades 1-3, discuss a different book each month, and do a related craft.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710913112_junior_page_turners">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="highlands-ranch" data-audience="children" data-genre="youth">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="#" target="_blank">Mother-Daughter Book Club</a></h2>
+              <h4 class="no-margin">Highlands Ranch</h4>
+              <div><span class="text-uppercase small">Audience:</span> Children <span class="text-uppercase small margin-left-15">Genre:</span> Youth</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Fourth Monday (Even Months), 6:30PM</div>
+              <div class="margin-top-15">For girls, grades 4-6, and their moms or caretakers.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="highlands-ranch" data-audience="adult" data-genre="adult-crime-mystery">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="#" target="_blank">Mystery Loves Company</a></h2>
+              <h4 class="no-margin">Highlands Ranch</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> Adult Crime/Mystery</div>
+              <div><span class="text-uppercase small">Day & Time: </span>First Thursday, 7PM</div>
+              <div class="margin-top-15">Meet monthly to discuss mysteries and crime books.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/721383955_mystery_loves_company">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=night+readers&df=list&cn=0&lib=ALL&nd=365" target="_blank">Night Readers</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Second Tuesday, 7PM</div>
+              <div class="margin-top-15">Meet monthly to discuss fiction and nonfiction titles.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/719688188_night_readers_2016_-_psm_book_discussion_group">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="children" data-genre="youth">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=page+twisters&df=list&cn=0&lib=ALL&nd=365" target="_blank">Page Twisters</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Children <span class="text-uppercase small margin-left-15">Genre:</span> Youth</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Second Tuesday, 4:30PM</div>
+              <div class="margin-top-15">Kids, grades 4-6, discuss a different chapter book each month.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="lone-tree" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=reader%27s+roost&df=list&cn=0&lib=ALL&nd=365" target="_blank">Reader's Roost</a></h2>
+              <h4 class="no-margin">Lone Tree</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>First Thursday, Noon</div>
+              <div class="margin-top-15">Meet monthly to discuss fiction and nonfiction titles.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/723944697_readers_roost">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="teens" data-genre="young-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=teen+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank">Teen Book Club</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Teens <span class="text-uppercase small margin-left-15">Genre:</span> Young Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Second Thursday, 5PM</div>
+              <div class="margin-top-15">Meet monthly for games, snacks and talk about books.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="adult" data-genre="young-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=teen+reads+for+grown+ups&df=list&cn=0&lib=ALL&nd=365" target="_blank">Teen Reads for Grown-ups</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> Young Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Second Wednesday, 6:30PM</div>
+              <div class="margin-top-15">Meet monthly at The Fowl Line in Castle Rock to discuss Young Adult titles.</div>
+              <!-- add link  <div class="text-uppercase margin-top-15"><a href="#">View Reading List &raquo;</a></div> --> 
+            </div>
+          </div>
+          <div class="element-item" data-location="castle-rock" data-audience="adult" data-genre="general-adult">
+            <div class="element-wrapper equal-height">
+              <h2 class="roboto"><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=thursday+evening+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank">Thursday Evening Book Club</a></h2>
+              <h4 class="no-margin">Castle Rock</h4>
+              <div><span class="text-uppercase small">Audience:</span> Adult <span class="text-uppercase small margin-left-15">Genre:</span> General Adult</div>
+              <div><span class="text-uppercase small">Day & Time: </span>Third Thursday, 7PM</div>
+              <div class="margin-top-15">Meet monthly to discuss fiction and nonfiction titles.</div>
+              <div class="text-uppercase margin-top-15"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/703217107_thursday_evening_book_club">View Reading List &raquo;</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script> 
+  <script>
+  $(document).ready(function() {
+
+    var $container = $('#items').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+      getSortData: {
+        location: '[data-location]',
+        audience: '[data-audience]',
+		genre: '[data-genre]'
+      }
+    })
+
+    // sort items on button click
+    $('#sort').on('click', 'button', function() {
+      var sortByValue = $(this).attr('data-sort-by')
+      $container.isotope({
+        sortBy: sortByValue
+      })
+    })
+	$("reset").click(function(){
+    $("#sort").isotope({
+        filter: '*'
+    });
+});
+  })
+  </script> 
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">

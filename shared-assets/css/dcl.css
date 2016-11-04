@@ -557,6 +557,25 @@ div.cp_header .cp_header_biblio_bar .my_account_toggle {
 	color: #ffffff;
 	text-decoration: none;
 }
+.btn-link-unstyled {
+	border: 0;
+	color: #B0852E;
+	background: none;
+}
+.btn-link-unstyled:active, .btn-link-unstyled:hover, .btn-link-unstyled:focus {
+	background: none;
+	border: 0;
+	color: #8a6824;
+	text-decoration: underline;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease-out;
+	-ms-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+	transform: translateY(0px);
+	opacity: 1;
+	cursor: pointer;
+}
 .btn-success {
 	background-color: #74894e;
 	border: 0;
@@ -1245,7 +1264,10 @@ a .icon-circle-white:hover {
 }
 /* ====== alert color classes ====== */
 .alert-warning {
-	background-color: #d36a50;
+	color: #fff;
+	background-color: #AD1A27;
+	font-size: 20px;
+	padding: 5px 0 6px;
 	text-align: center;
 }
 .alert-success {
@@ -1983,7 +2005,7 @@ a .icon-circle-white:hover {
 }
 .s-la-public-header-text {
 	float: none;
-	margin-bottom: 30px;
+	margi: 15px 0 30px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -2022,19 +2044,20 @@ button.s-srch-facet-btn {
 	display: none;
 }
 .entry-content {
-    display: table-cell;
+	display: table-cell;
 }
 .post.type-post {
-    border-bottom: 1px solid #efefef;
-    clear: both;
-    padding-bottom: 30px;
+	border-bottom: 1px solid #efefef;
+	clear: both;
+	padding-bottom: 30px;
 }
 .navigation.posts-navigation {
-    clear: both;
+	clear: both;
 }
 .site-content.container {
 	padding-left: 0;
 	padding-right: 0;
+	padding-top: 15px;
 }
 .alignleft {
 	float: left;
@@ -2063,7 +2086,7 @@ button.s-srch-facet-btn {
 }
 .nav-previous:before {
 	content: "« "
-	}
+}
 .form-submit #submit {
 	-moz-user-select: none;
 	background-color: #456e70;
