@@ -48,17 +48,9 @@
 	width: 100%;
 	clear: both;
 }
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-.element-item {
-	margin-bottom: 30px;
-}
-}
-
-@media (max-width: 767px) {
+.margin-fix {
+	margin-left: -15px;
+	margin-right: -15px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -216,7 +208,7 @@
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5">
+  <div class="row bg-gray-5 padding-bottom-30">
     <div class="container">
       <div>
         <h2 class="roboto">Sort by:</h2>
@@ -229,7 +221,7 @@
       </div>
     </div>
   </div>
-
+  <div class="bg-gray-5 margin-fix">
     <div class="container">
       <div id="items">
         <div class="element-item" data-location="castle-pines" data-room="event-hall" data-capacity="70">
@@ -684,6 +676,7 @@
         </div>
       </div>
     </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script> 
   <script>
   $(document).ready(function() {
