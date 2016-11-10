@@ -40,7 +40,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
-<style>
+	<style>
 .element-item {
 	background: #fff none repeat scroll 0 0;
 	padding: 0;
@@ -509,7 +509,7 @@
             <div class="padding-top-15">The AV, Wi-Fi and wet-bar features of the second floor Event Hall are available for a larger group when the flexible room is opened into the library's book space. </div>
           </div>
         </div>
-        <div class="element-item" data-location="lone-tree" data-room="meeting-room" data-capacity="60">
+        <div id="lt-kids-corner" class="element-item" data-location="lone-tree" data-room="meeting-room" data-capacity="60">
           <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="lt-kids-corner.jpg" alt="Kids Corner"></div>
           <div class="col-md-4 padding-top-15 padding-bottom-15">
             <h2 class="roboto no-margin">Lone Tree</h2>
@@ -677,34 +677,6 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script> 
-  <script>
-  $(document).ready(function() {
-
-    var $container = $('#items').isotope({
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        location: '[data-location]',
-        room: '[data-room]',
-		capacity: '[data-capacity] parseInt'
-      }
-    })
-
-    // sort items on button click
-    $('#sort').on('click', 'button', function() {
-      var sortByValue = $(this).attr('data-sort-by')
-      $container.isotope({
-        sortBy: sortByValue
-      })
-    })
-	$("reset").click(function(){
-    $("#sort").isotope({
-        filter: '*'
-    });
-});
-  })
-  </script> 
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -762,8 +734,36 @@
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- remove for now <a id="help" class="btn btn-primary text-uppercase" href="http://answers.douglascountylibraries.org/" target="_blank">Help</a>--> 
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" -->
+<script src="../shared-assets/js/isotope.pkgd.min.js"></script>
+<script>
+  $(window).load(function() {
+
+    var $container = $('#items').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+      getSortData: {
+        location: '[data-location]',
+        room: '[data-room]',
+		capacity: '[data-capacity] parseInt'
+      }
+    })
+
+    // sort items on button click
+    $('#sort').on('click', 'button', function() {
+      var sortByValue = $(this).attr('data-sort-by')
+      $container.isotope({
+        sortBy: sortByValue
+      })
+    })
+	$("reset").click(function(){
+    $("#sort").isotope({
+        filter: '*'
+    });
+});
+  })
+	</script>
+<!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
