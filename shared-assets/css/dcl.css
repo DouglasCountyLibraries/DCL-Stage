@@ -761,6 +761,12 @@ a.hover-shadow {
 .opacity-4 {
 	opacity: .4;
 }
+.opacity-3 {
+	opacity: .3;
+}
+.opacity-2 {
+	opacity: .2;
+}
 .fff, .white{
 	color: #fff;
 }
