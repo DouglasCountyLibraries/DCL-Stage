@@ -1264,7 +1264,7 @@ a .icon-circle-white:hover {
 	border-top: none;
 	background-color: #fff;
 }
-/* ====== evanced feed ====== */
+/* ====== evanced feed - remove for now ======
 #eventtitle {
 	color: #888888;
 	font-size: 22px;
@@ -1284,7 +1284,8 @@ a .icon-circle-white:hover {
 }
 #eventdate {
 	margin-right: 20px;
-}
+} */
+
 /* ====== alert color classes ====== */
 .alert-warning {
 	color: #fff;
