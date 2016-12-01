@@ -41,12 +41,18 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
 </script>
 <script type="text/javascript">
- $(document).ready(function() {
-     if ($.cookie('pop') == null) {
-         $('#myModal').modal('show');
-         $.cookie('pop', '7′);
-     }
- });
+$(document).ready(function () {
+    if (document.cookie.indexOf("shown=true")<0) {
+        var show = function(){
+                $('#myModal').modal('show');
+        };
+
+        $(window).load(function(){
+            var timer = window.setTimeout(show,0);
+        });
+    }
+    document.cookie = "shown=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+});
 </script>
 <!-- InstanceEndEditable -->
 </head>
@@ -194,20 +200,9 @@
   <!-- InstanceBeginEditable name="Content" -->
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content padding-60 text-center"><img src="be-our-hero.png" alt="Be Our Hero">
     </div>
   </div>
 </div>
