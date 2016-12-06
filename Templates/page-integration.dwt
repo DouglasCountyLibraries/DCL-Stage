@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="canonical" href="http://www.dcl.org"/>
-<!-- InstanceBeginEditable name="title" -->
-<!-- InstanceEndEditable -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV5DM73');</script>
+<!-- End Google Tag Manager -->
+<!-- TemplateBeginEditable name="title" -->
+<!-- TemplateEndEditable -->
 <meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning">
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -38,43 +44,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="../shared-assets/js/dcl.js"></script>
-<!-- InstanceBeginEditable name="head" -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
-<!-- InstanceEndEditable -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV5DM73"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="cp_header_biblio_bar">
   <div class="container">
     <div class="row"> 
       
       <!-- begin BCNAV -->
-      <div data-js="bc_my_account_nav" class="col-xs-12">
-        <div id="step5" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false"> Login / My DCL <span class="caret margin-left-15 margin-right-5"></span> </a>
-          <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
-            
-            <!-- Template - t_biblionav_my_account_user_info -->
-            
-            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
-            <li data-js="divider_logged_out" class="divider" role="presentation"></li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Borrowing</li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/checkedout">Checked Out</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/holds">On Hold</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/fines">Fees</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Collections</li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/for_later">For Later Shelf</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/completed">Completed Shelf</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/lists/show/mine">Lists</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/user_profile/me">My Profile</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/account/personal_information">My Settings</a> </li>
-          </ul>
-        </div>
+      <div class="bc-widget bc-my-account-nav">
+
       </div>
       <!-- end BCNAV --> 
       
@@ -184,154 +168,9 @@
 </nav>
 <div class="container-fluid">
   <div id="global-alert" class="row alert alert-warning" style="display:none;"></div>
-  <!-- InstanceBeginEditable name="Content" --><!-- TemplateBeginEditable name="EditRegion1" -->@@("")@@
-  <div class="row background"></div>
-  <div class="row padding-bottom-30">
-    <div class="container">
-      <div class="text-center">
-        <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Highlands Ranch, James H. LaRue</h1>
-        <div class="text-uppercase margin-bottom-10">Manager: Tammy Clausen <a href="tel:+13037917323" class="locuacious margin-left-30">(303) 791-7323</a></div>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fa fa-map-marker"></i></div>
-        </div>
-        <h2 class="roboto no-margin-top vcard">
-          <div class="adr"><a href="https://www.google.com/maps/place/Douglas+County+Libraries/@39.546705,-104.9963726,20z/data=!4m5!3m4!1s0x0:0x42ccf3a9dc616b09!8m2!3d39.5467051!4d-104.9960992" target="_blank"><span class="street-address">9292 S. Ridgeline Blvd.</span>, <span class="locality">Highlands Ranch</span>, <span class="region">CO</span> <span class="postal-code"> 80129</span></a></div>
-        </h2>
-      </div>
-      <div class="row margin-lg-200">
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Mon-Thu: 9AM-9PM</h5>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Fri-Sat: 9AM-5PM</h5>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Sun: 12-5PM</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-salmon text-center padding-top-15 padding-bottom-30">
-    <div class="container">
-      <div class="row padding-bottom-15">
-        <div class="col-sm-3 text-center"> 
-          
-          <!-- Button trigger modal -->
-          <h2 class="roboto fff"><em style="margin-right:10px" class="fa fa-comment-o fa-flip-horizontal"></em> <a href="../storytime#castle-pines-storytime" class="fff" data-toggle="modal" data-target="#storytime-modal">Storytime</a></h2>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="storytime-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content padding-bottom-60">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="myModalLabel">Highlands Ranch Storytime</h2>
-              </div>
-              <div class="modal-body">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Mondays, Tuesdays, Thursdays and Fridays</h5>
-                    </li>
-                    <li>9:30AM - Baby</li>
-                    <li>10:15AM - Toddlers</li>
-                    <li>11AM - Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Wednesdays</h5>
-                    </li>
-                    <li>9:30AM - Baby</li>
-                    <li>10:15AM - Toddlers</li>
-                    <li>11AM - Preschool</li>
-                    <li>7PM - Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Saturdays</h5>
-                    </li>
-                    <li>10:15AM - All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-bottom-30 padding-top-15" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h3 class="roboto">Special Storytime</h3>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">First & Third Friday of Each Month</h5>
-                    </li>
-                    <li>11AM - Movin' and Groovin' Storytime</li>
-                    <li>
-                      <h5 class="text-uppercase">Second Friday of Each Month</h5>
-                    </li>
-                    <li>11AM - Hands-On Storytime</li>
-                    <li>
-                      <h5 class="text-uppercase">Fourth & Fifth Friday of Each Month</h5>
-                    </li>
-                    <li>11AM - Storytime Presents</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h3 class="roboto">Sensory-Enhanced Storytime</h3>
-                      <div>This program is specially adapted to meet unique needs.
-                        <div><a class="text-uppercase" href="http://host.evanced.info/douglas/evanced/eventcalendar.asp?ag=&et=&kw=sensory&df=calendar&lib=ALL&nd=90" target="_blank">Registration Required &raquo;</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">Mondays</h5>
-                    </li>
-                    <li>4:15PM - All Ages</li>
-                  </ul>
-                </div>
-                <button class="btn btn-primary text-uppercase" data-toggle="collapse" data-target="#demo">View our Social Story</button>
-                <div id="demo" class="collapse">
-                  <div id="carousel-example-generic" class="carousel slide" data-ride=""> 
-                    
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner padding-bottom-160">
-                      <div class="item active"> <img class="img-responsive" src="slide-01.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-02.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-03.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-04.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-05.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-06.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-07.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-08.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-09.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-10.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-11.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-12.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-13.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-14.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-15.jpg"> </div>
-                      <div class="item"> <img class="img-responsive" src="slide-16.jpg"> </div>
-                    </div>
-                    
-                    <!-- Controls --> 
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon text-primary glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon text-primary glyphicon-chevron-right"></span> </a> </div>
-                </div>
-              </div>
-              <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
-          </div>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><em style="margin-right:10px" class="fa fa-check-square-o"></em> <a href="../reserve-a-space" class="fff">Reserve a Space</a></h2>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><i style="margin-right:10px" class="fa fa-paint-brush"></i> <a href="../art#highlands-ranch" class="fff">Art on Display</a></h2>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><i style="margin-right:10px" class="fa fa-book"></i> <a href="../used-book-sales" class="fff">Used Book Sales</a></h2>
-        </div>
-      </div>
-      <div>
-        <h5 class="fff margin-lg-200">Our children's area is home to The Market, an interactive, museum-quality farm-to-table play market and kitchen, complete with shopping carts, aprons and cooking utensils.</h5>
-      </div>
-    </div>
-  </div>
-  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="Content" -->
   <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">Content goes here</div>
-  <!-- InstanceEndEditable --> </div>
+  <!-- TemplateEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
     <div class="col-sm-6">
@@ -388,7 +227,7 @@
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- TemplateBeginEditable name="scripts" --> <!-- TemplateEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -403,5 +242,4 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd -->
 </html>
