@@ -47,21 +47,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- InstanceBeginEditable name="head" -->
 <title>DIY @ DCL | Douglas County Libraries</title>
 <style>
-a .yarn {
-	background: rgba(0, 0, 0, 0) url("yarn.png") no-repeat scroll 0 0;
-	display: inline-block;
-	margin-top: 40px;
-	opacity: 0.9;
-	padding: 85px 75px 7px;
-	top: 0;
-}
 .yarn {
-	font-size: 0px
+    background: url("yarn.png");
+
+background-position: 0 0;
+    height: 92px;
+display: inline-block;
+position: relative;
+	bottom: -9px;
+	margin-top: 30px;
+    width: 150px;
 }
-a .yarn:hover {
-	background: url('yarn.png') 0 93px;
-	opacity: 1;
-	transition: opacity 0.3s ease-out 0s;
+.yarn:hover, .yarn:active, .yarn:focus {
+	background-position: 0 93px;
+transition: none;
 }
 .evanced-feed {
 	padding: 20px;
@@ -292,21 +291,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       
       <a href="https://dcl.bibliocommons.com/item/show/869880114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781596680654/MC.GIF" alt="Start Spinning"> </a>
       
-      <a href="#" data-toggle="modal" data-target="#myModal"><i class="yarn">launch</i></a> 
+      <a href="javascript:;" class="yarn" rel="popover" data-placement="top" data-trigger="focus" data-content="Because this year, you do it yourself! Find materials, resources and events designed to help you DIY—from careers to crafts and writing to weight loss—we have a how-to for you."></a> 
       
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-sm" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title text-center" id="myModalLabel">DIY @ DCL</h4>
-            </div>
-            <div class="modal-body text-left padding-30 padding-bottom-60">Attend a January DIY @ DCL event and be eligible to check out a sewing machine, loom or spinning wheel! 
-              Items available on a first-come, first-served basis; ask a staff member for more information. </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
   <div class="row shelf-shadow padding-bottom-30">
@@ -413,7 +400,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" -->
+<script>
+$("a[rel=popover]")
+    .popover()
+    .click(function(e) {
+        e.preventDefault();
+     });
+ </script> 
+  <!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
