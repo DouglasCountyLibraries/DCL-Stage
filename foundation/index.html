@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -226,19 +227,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row no-gutter white bg-lavender padding-top-15 padding-bottom-30">
     <h1 class="text-center white">What We Do</h1>
-	  <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40"> <div id="banner-load"></div>
+    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40">
+      <div id="box-one"></div>
       <h3 class="text-center white">7Readers Are Leaders</h3>
       <div class="margin-left-30 margin-right-30">7Readers Are Leaders encourages and facilitates reading among early elementary school children, to help guide their academic success. Each month, Denver7 awards one local first-grade class a Storytime with on-air talent and $1,000 for their school’s library. Each student in the winning class receives a book from Douglas County Libraries.</div>
     </div>
-    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40"> <img alt="Cuddle Up & Read" class="img-responsive center-block" src="cuddle-up-read.jpg" />
+    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40">
+      <div id="box-two"></div>
       <h3 class="text-center white">Cuddle Up & Read</h3>
       <div class="margin-left-30 margin-right-30">Through partnerships with area hospitals, Cuddle Up & Read provides new parents with a fun and meaningful introduction to the library and to early literacy. The program includes small gifts for mom and baby, and an invitation to get baby a library card. We also distribute DCL growth charts, complete with reading suggestions and library service information, to parents through participating pediatricians’ offices across the county.</div>
     </div>
-    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40"> <img alt="Summer Reading" class="img-responsive center-block" src="summer-reading.jpg" />
+    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40">
+      <div id="box-three"></div>
       <h3 class="text-center white">Summer Reading</h3>
       <div class="margin-left-30 margin-right-30">Each year, Douglas County Libraries’ summer reading program encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
     </div>
-    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40"> <img alt="Fête des Fables Gala" class="img-responsive center-block" src="highlands-ranch-mansion.jpg" />
+    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40">
+      <div id="box-four"></div>
       <h3 class="text-center white">Fête des Fables Gala</h3>
       <div class="margin-left-30 margin-right-30">Our annual Fête des Fables Gala, in addition to traditional cash donations, is a primary way that we fund our support of <a class="text-underline white" href="#" rel="popover" data-placement="top" data-trigger="focus" data-content="Early Childhood Literacy">ECL</a> programs. Each year, Fête des Fables invites guests to enjoy cocktails and a sumptuous meal, shop a fantastic silent auction, and mingle with friends old and new, while celebrating a classic story in a charming venue.</div>
     </div>
@@ -441,18 +446,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
 
-<!--New images on load -->
+<!--random images on load --> 
 <script>
-//Add your images, we'll set the path in the next step
-    var images = ['cuddle-up-read.jpg', 'readers-leaders.jpg', 'summer-reading.jpg', 'highlands-ranch-mansion.jpg'];
-    
-//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
-    $('<img alt="7Readers Are Leaders" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
-</script>
 
+    var images = ['readers-leaders-one.jpg', 'readers-leaders-two.jpg', 'readers-leaders-three.jpg'];
+    $('<img alt="7Readers Are Leaders" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
+	
+	var images = ['cuddle-one.jpg'];
+    $('<img alt="Cuddle Up and Read" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');
+	
+	var images = ['summer-reading-one.jpg', 'summer-reading-two.jpg', 'summer-reading-three.jpg', 'summer-reading-four.jpg', 'summer-reading-five.jpg','summer-reading-six.jpg', 'summer-reading-seven.jpg'];
+    $('<img alt="Summer Reading" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
+	
+	var images = ['gala-one.jpg', 'gala-two.jpg', 'gala-three.jpg', 'gala-four.jpg'];
+    $('<img alt="Fete des Fables Gala" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
 
-
-
+</script> 
 <script>
 $("a[rel=popover]")
     .popover()
@@ -475,4 +484,5 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
