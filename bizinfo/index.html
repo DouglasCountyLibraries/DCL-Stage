@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,7 +53,23 @@ a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0057/0811.
 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" integrity="sha256-RYxg7tiJnLgQq6MA97aPOy+QCt1360G5PsCmiXw87dA=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js" integrity="sha256-HAaPZfOf77+Qt1BGcxucDhuS/tJVxuZA+uX3tbcnSAk=" crossorigin="anonymous"></script>
 <style>
+	.carousel-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  counter-increment: carousel-cell;
+text-align: center
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+
+}
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
@@ -261,11 +278,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
   </div>
   <div class="row bg-gray-5 padding-top-15">
-    <div class="container"><h1 class="text-center padding-bottom-15">Library Services for Small Business</h1> <img class="img-responsive center-block" src="gears.png" alt="Library Services"></div>
+    <div class="container">
+      <h1 class="text-center padding-bottom-15">Library Services for Small Business</h1>
+      <img class="img-responsive center-block" src="gears.png" alt="Library Services"></div>
   </div>
   <div class="row bg-gray-5 padding-bottom-60 padding-left-40 padding-right-40">
     <div class="">
-      
       <div class="col-md-4 margin-lg-30">
         <h2 class="roboto text-center"><a href="../research/business-finance">Online Resources for Business</a></h2>
         <div>Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications.</div>
@@ -339,72 +357,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container text-center padding-bottom-30 margin-lg-200">
       <h1 class="roboto">Our specially trained business librarians are here to help you with your research.</h1>
     </div>
-    <div id="carousel-pics" class="carousel slide"> 
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="row">
-            <div class="container">
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Angie Brown, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="angie.jpg" />
-                  <h3 class="no-margin-bottom">Angie Brown</h3>
-                </div>
-              </div>
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Colbe Galston, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="colbe.jpg" />
-                  <h3 class="no-margin-bottom">Colbe Galston</h3>
-                </div>
-              </div>
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Kyra Hahn, Castle Pines" class="center-block img-circle" src="kyra.jpg" />
-                  <h3 class="no-margin-bottom">Kyra Hahn</h3>
-                </div>
-              </div>
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Julie Howard, Lone Tree" class="center-block img-circle" src="julie.jpg" />
-                  <h3 class="no-margin-bottom">Julie Howard</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/row--> 
+  </div><div class="container">
+  <div class="carousel padding-bottom-60" data-flickity='{ "wrapAround": true, "autoPlay": 1500 }'>
+    
+      <div class="carousel-cell">
+        <div><img alt="Katherine Johnson, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="katherine.jpg" />
+          <h3 class="no-margin-bottom">Katherine Johnson</h3>
         </div>
-        <!--/item-->
-        <div class="item">
-          <div class="row">
-            <div class="container">
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Katherine Johnson, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="katherine.jpg" />
-                  <h3 class="no-margin-bottom">Katherine Johnson</h3>
-                </div>
-              </div>
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Andrew Roth, Parker" class="center-block img-circle" src="andrew.jpg" />
-                  <h3 class="no-margin-bottom">Andrew Roth</h3>
-                </div>
-              </div>
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Becky Spilver, Roxborough" class="center-block img-circle" src="becky.jpg" />
-                  <h3 class="no-margin-bottom">Becky Spilver</h3>
-                </div>
-              </div>
-              <div class="col-md-3 text-center padding-top-40 padding-bottom-40">
-                <div><img alt="Patty Van Eysden" class="center-block img-circle" src="patty.jpg" />
-                  <h3 class="no-margin-bottom">Patty Van Eysden</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/row--> 
-        </div>
-        <!--/item--> 
       </div>
-      <!--/carousel-inner--> 
-      <a data-slide="prev" href="#carousel-pics" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#carousel-pics" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> </div>
-  </div>
-  <div class="text-center padding-bottom-60"> <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-one">Ask Us Your Business Question</button>
-  </div>
+      <div class="carousel-cell">
+        <div><img alt="Andrew Roth, Parker" class="center-block img-circle" src="andrew.jpg" />
+          <h3 class="no-margin-bottom">Andrew Roth</h3>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div><img alt="Becky Spilver, Roxborough" class="center-block img-circle" src="becky.jpg" />
+          <h3 class="no-margin-bottom">Becky Spilver</h3>
+        </div>
+      </div>
+      
+	</div></div>
+
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -463,18 +436,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>$(document).ready(function() {
-	$('#carousel-pics').carousel({
-	interval: 6000
-	})
-    $('#carousel-pics').on('slid.bs.carousel', function() {
-    	//alert("slid");
-	});   
-});
-</script> 
-<script>
 
-	  
+<script>
 	  $(".card-grid").flip();
 		</script> 
 <!-- InstanceEndEditable --> 
@@ -492,4 +455,5 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
