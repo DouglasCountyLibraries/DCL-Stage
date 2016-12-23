@@ -67,11 +67,17 @@ table.dataTable thead th, table.dataTable thead td {
 #book-clubs_length > label, #book-clubs_filter > label {
 	font-weight: normal;
 }
-/* remove for now
-a {
+/* work on some more
+.container-fluid a {
 background: linear-gradient(#fff, #fff) no-repeat scroll 0 95% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 95% / 0.05em 1px, rgba(0, 0, 0, 0) linear-gradient(#B0852E, #B0852E) repeat-x scroll 0 95% / 1px 1px;
     color: #B0852E;
     text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+}
+
+.container-fluid .bg-salmon a {
+background: linear-gradient(#d36a50, #d36a50) no-repeat scroll 0 95% / 0.05em 1px, linear-gradient(#d36a50, #d36a50) no-repeat scroll 100% 95% / 0.05em 1px, rgba(0, 0, 0, 0) linear-gradient(#fff, #fff) repeat-x scroll 0 95% / 1px 1px;
+    color: #fff;
+    text-shadow: 0.03em 0 #d36a50, -0.03em 0 #d36a50, 0 0.03em #d36a50, 0 -0.03em #d36a50, 0.06em 0 #d36a50, -0.06em 0 #d36a50, 0.09em 0 #d36a50, -0.09em 0 #d36a50, 0.12em 0 #d36a50, -0.12em 0 #d36a50, 0.15em 0 #d36a50, -0.15em 0 #d36a50;
 }
 */
 a:visited, a:hover, a:focus {
@@ -270,7 +276,7 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .cp_header_biblio_bar {
 	background-color: #fff;
-	border-bottom: 3px solid #4d4c4b;
+	border-bottom: 3px solid #006066;
 	padding: 0;
 }
 .cp_header_biblio_bar .divider {
@@ -281,16 +287,17 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .cp_header_biblio_bar .biblio_bar_link {
 	display: block;
-	padding: 10px 5px;
+	padding: 9px 5px;
 }
 .cp_header_biblio_bar .biblio_bar_link.biblio_bar_my_account {
 	min-width: 150px;
 }
 .cp_header_biblio_bar a.my_account_toggle.dropdown-toggle {
-	background: #006066;
-	color: #fff;
-	margin-left: 20px;
-	padding: 11px 12px;
+    background: #006066 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 20px;
+    padding: 11px 2px 11px 19px;
 }
 div.cp_header .cp_header_biblio_bar .my_account_toggle {
 	background: #4d4c4b none repeat scroll 0 0;
@@ -687,15 +694,27 @@ a.btn.btn-primary {
 	/* ====== remove for now - transform: translateY(-2px);====== */
 	opacity: 1;
 	cursor: pointer;
-	display: block;
 	text-decoration: none;
 	color: #333;
+}
+.shadow-low-hover:hover {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease-out;
+	-ms-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	transition: all .4s ease-out;
 }
 a.hover-shadow {
 	color: #333;
 }
 .hover-fade:hover, .hover-fade:focus {
 	opacity: .8;
+}
+.no-text-decoration, .no-text-decoration a:hover {
+	text-decoration: none;
 }
 .shadow-low {
 	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
@@ -1389,34 +1408,34 @@ a .icon-circle-white:hover {
 	background-color: #F2DEDE;
 }
 /* ====== gray scale classes ====== */
-.white, .white a {
+.white, a.white {
 	color: #fff;
 }
-.gray-10, .gray-10 a {
+.gray-10, a.gray-10 {
 	color: #e6e7e8;
 }
-.gray-20, .gray-20 a {
+.gray-20, a.gray-20 {
 	color: #d1d3d4;
 }
-.gray-30, .gray-30 a {
+.gray-30, a.gray-30 {
 	color: #bcbec0;
 }
-.gray-40, .gray-40 a {
+.gray-40, a.gray-40 {
 	color: #a7a9ac;
 }
-.gray-50, .gray-50 a {
+.gray-50, a.gray-50 {
 	color: #939598;
 }
-.gray-60, .gray-60 a {
+.gray-60, a.gray-60 {
 	color: #808285;
 }
-.gray-70, .gray-70 a {
+.gray-70, a.gray-70 {
 	color: #6d6e71;
 }
-.gray-80, .gray-80 a {
+.gray-80, a.gray-80 {
 	color: #58595b;
 }
-.gray-90, .gray-90 a {
+.gray-90, a.gray-90 {
 	color: #414042;
 }
 .bg-white {
@@ -2066,6 +2085,9 @@ button.s-srch-facet-btn {
 .entry-content {
 	display: table-cell;
 }
+.entry-content > ul {
+    list-style-position: inside;
+}
 .post.type-post {
 	border-bottom: 1px solid #efefef;
 	clear: both;
@@ -2082,6 +2104,7 @@ button.s-srch-facet-btn {
 .alignleft {
 	float: left;
 	padding: 20px 20px 5px 0;
+	clear: both;
 }
 .edit-link {
 	display: block;
