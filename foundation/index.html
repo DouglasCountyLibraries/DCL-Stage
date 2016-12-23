@@ -226,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row no-gutter white bg-lavender padding-top-15 padding-bottom-30">
     <h1 class="text-center white">What We Do</h1>
-    <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40"> <img alt="7Readers Are Leaders" class="img-responsive center-block" src="readers-leaders.jpg" />
+	  <div class="col-md-3 col-sm-6 padding-top-30 padding-bottom-40"> <div id="banner-load"></div>
       <h3 class="text-center white">7Readers Are Leaders</h3>
       <div class="margin-left-30 margin-right-30">7Readers Are Leaders encourages and facilitates reading among early elementary school children, to help guide their academic success. Each month, Denver7 awards one local first-grade class a Storytime with on-air talent and $1,000 for their school’s library. Each student in the winning class receives a book from Douglas County Libraries.</div>
     </div>
@@ -440,6 +440,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
+
+<!--New images on load -->
+<script>
+//Add your images, we'll set the path in the next step
+    var images = ['cuddle-up-read.jpg', 'readers-leaders.jpg', 'summer-reading.jpg', 'highlands-ranch-mansion.jpg'];
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img alt="7Readers Are Leaders" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+</script>
+
+
+
+
 <script>
 $("a[rel=popover]")
     .popover()
