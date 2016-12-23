@@ -248,6 +248,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="margin-left-30 margin-right-30">Our annual Fête des Fables Gala, in addition to traditional cash donations, is a primary way that we fund our support of <a class="text-underline white" href="#" rel="popover" data-placement="top" data-trigger="focus" data-content="Early Childhood Literacy">ECL</a> programs. Each year, Fête des Fables invites guests to enjoy cocktails and a sumptuous meal, shop a fantastic silent auction, and mingle with friends old and new, while celebrating a classic story in a charming venue.</div>
     </div>
   </div>
+  <script>
+    var images = ['readers-leaders-one.jpg', 'readers-leaders-two.jpg', 'readers-leaders-three.jpg'];
+    $('<img alt="7Readers Are Leaders" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
+	
+	var images = ['cuddle-one.jpg', 'cuddle-two.jpg'];
+    $('<img alt="Cuddle Up and Read" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');
+	
+	var images = ['summer-reading-one.jpg', 'summer-reading-two.jpg', 'summer-reading-three.jpg', 'summer-reading-four.jpg', 'summer-reading-five.jpg','summer-reading-six.jpg', 'summer-reading-seven.jpg'];
+    $('<img alt="Summer Reading" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
+	
+	var images = ['gala-one.jpg', 'gala-two.jpg', 'gala-three.jpg', 'gala-four.jpg', 'gala-five.jpg', 'gala-six.jpg', 'gala-seven.jpg', 'gala-eight.jpg'];
+    $('<img alt="Fete des Fables Gala" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
+</script>
   <div class="row">
     <div id="staff" class="text-center padding-top-15">
       <h1>What Your Gift Means</h1>
@@ -447,21 +460,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- InstanceBeginEditable name="scripts" --> 
 
 <!--random images on load --> 
-<script>
 
-    var images = ['readers-leaders-one.jpg', 'readers-leaders-two.jpg', 'readers-leaders-three.jpg'];
-    $('<img alt="7Readers Are Leaders" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
-	
-	var images = ['cuddle-one.jpg'];
-    $('<img alt="Cuddle Up and Read" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');
-	
-	var images = ['summer-reading-one.jpg', 'summer-reading-two.jpg', 'summer-reading-three.jpg', 'summer-reading-four.jpg', 'summer-reading-five.jpg','summer-reading-six.jpg', 'summer-reading-seven.jpg'];
-    $('<img alt="Summer Reading" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
-	
-	var images = ['gala-one.jpg', 'gala-two.jpg', 'gala-three.jpg', 'gala-four.jpg', 'gala-five.jpg', 'gala-six.jpg', 'gala-seven.jpg', 'gala-eight.jpg'];
-    $('<img alt="Fete des Fables Gala" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
-
-</script> 
 <script>
 $("a[rel=popover]")
     .popover()
