@@ -56,19 +56,20 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" integrity="sha256-RYxg7tiJnLgQq6MA97aPOy+QCt1360G5PsCmiXw87dA=" crossorigin="anonymous" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js" integrity="sha256-HAaPZfOf77+Qt1BGcxucDhuS/tJVxuZA+uX3tbcnSAk=" crossorigin="anonymous"></script>
 <style>
-	.carousel-cell {
-  width: 66%;
-  height: 300px;
-  margin-right: 10px;
-  counter-increment: carousel-cell;
-text-align: center
+.carousel-cell {
+	width: 66%;
+	height: 300px;
+	margin-right: 10px;
+	counter-increment: carousel-cell;
+	text-align: center
 }
-
 /* cell number */
 .carousel-cell:before {
-  display: block;
-  text-align: center;
-
+	display: block;
+	text-align: center;
+}
+.flickity-page-dots {
+	bottom: 0px;
 }
 .using-the-library-active {
 	background-color: #f5f5f5;
@@ -357,9 +358,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container text-center padding-bottom-30 margin-lg-200">
       <h1 class="roboto">Our specially trained business librarians are here to help you with your research.</h1>
     </div>
-  </div><div class="container">
-  <div class="carousel padding-bottom-60" data-flickity='{ "wrapAround": true, "autoPlay": 2000 }'>
-    
+  </div>
+  <div class="container">
+    <div class="carousel padding-bottom-60" data-flickity='{ "wrapAround": true, "autoPlay": 2000 }'>
       <div class="carousel-cell">
         <div><img alt="Katherine Johnson, Highlands Ranch, James H. LaRue" class="center-block img-circle" src="katherine.jpg" />
           <h3 class="no-margin-bottom">Katherine Johnson</h3>
@@ -375,9 +376,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <h3 class="no-margin-bottom">Becky Spilver</h3>
         </div>
       </div>
-      
-	</div></div>
-
+    </div>
+  </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -436,7 +436,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-
 <script>
 	  $(".card-grid").flip();
 		</script> 
