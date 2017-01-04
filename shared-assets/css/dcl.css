@@ -9,6 +9,14 @@ body {
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 }
+.container-md {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.container-lg {
+	max-width: 2560px;
+	margin: 0 auto;
+}
 .roboto {
 	font-family: "Roboto Slab", palantino, serif;
 	font-weight: 300;
@@ -895,10 +903,10 @@ h6.responsive-text {
 	font-size: 1.6vmax;
 }
 .icon-circle {
-	border: 3px solid #999;
+	border: 3px solid #666;
 	border-radius: 50%;
 	box-sizing: border-box;
-	color: #999;
+	color: #666;
 	font-size: 60px;
 	height: 100px;
 	line-height: 90px;
