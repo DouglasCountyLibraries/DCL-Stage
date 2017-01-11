@@ -169,9 +169,11 @@ a:hover, a:focus {
 	font-weight: 700;
 }
 blockquote, .blockquote-reverse, blockquote.pull-right {
-	font-style: italic;
-	/*font-family: 'Lobster Two', cursive;*/
-	font-size: 20px;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+    border-left: none;
+    padding: 0;
 }
 .blockquote-reverse, blockquote.pull-right {
 	text-align: right;
