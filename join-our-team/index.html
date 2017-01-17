@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
 <title>Join Our Team | Douglas County Libraries</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" integrity="sha256-RYxg7tiJnLgQq6MA97aPOy+QCt1360G5PsCmiXw87dA=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js" integrity="sha256-HAaPZfOf77+Qt1BGcxucDhuS/tJVxuZA+uX3tbcnSAk=" crossorigin="anonymous"></script>
+<style>
+.carousel-cell {
+	text-align: center;
+	height: 380px;
+	width: 100%;
+}
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+.flickity-page-dots {
+	bottom: 15px;
+	opacity: .5;
+}
+.flickity-prev-next-button {
+	display: none;
+}
+ @media (min-width: 768px) {
+.carousel-cell {
+	height: 360px;
+}
+</style>
 <!-- InstanceEndEditable -->
 <meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning">
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
@@ -52,36 +77,17 @@ a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0057/0811.
 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" integrity="sha256-RYxg7tiJnLgQq6MA97aPOy+QCt1360G5PsCmiXw87dA=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js" integrity="sha256-HAaPZfOf77+Qt1BGcxucDhuS/tJVxuZA+uX3tbcnSAk=" crossorigin="anonymous"></script>
 <style>
-.carousel-cell {
-	width: 100%;
+.carousel-indicators {
+	bottom: -50px;
+	left: 50%;
+	list-style: outside none none;
+	margin-left: -40%;
+	padding-left: 0;
+	position: absolute;
 	text-align: center;
-}
-
-.flickity-prev-next-button {
-	width: 65px;
-	height: 65px;
-	opacity: .6;
-	background: transparent;
-}
-.flickity-prev-next-button:hover {
-	background: transparent;
-	opacity: 1;
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	-o-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.flickity-prev-next-button .arrow {
-	fill: #dedede;
-}
-.flickity-prev-next-button.no-svg {
-	color: #dedede;
-}
-.flickity-prev-next-button:disabled {
-	display: none;
+	width: 80%;
+	z-index: 15;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -247,145 +253,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <a class="button btn btn-primary text-uppercase" href="https://www.governmentjobs.com/careers/dclibraries" target="_blank">Join Our Team!</a></div>
     </div>
   </div>
-  <!-- <div class="row white bg-salmon padding-bottom-15">
-    <div class="container">
-      <h1 class="roboto text-center white">Our Story</h1>
-    </div>
+  <div class="row no-gutter white bg-salmon padding-bottom-15">
+    <h1 class="roboto padding-bottom-15 text-center white">Our Story</h1>
+    <div id="box-one" class="col-md-4"></div>
+    <div id="box-two" class="col-md-4"></div>
+    <div id="box-three" class="col-md-4"></div>
   </div>
-  <div class="row">
-    <div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true, "autoPlay": 2000, "pageDots": false }'>
-      <div class="carousel-cell">
-        <div><img src="rockfest-junior.jpg" alt="Rockfest Junior"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="gala-opening.jpg" alt="New Castle Pines Gala"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="librarian-patron-training.jpg" alt="Librarian Helping Patron with Tablet"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="awards-dinner.jpg" alt="Employee Award Dinner"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="storytime.jpg" alt="Storytime"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="librarian-patron-help.jpg" alt="Librarian Helping Patron Find Information"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="branch-opening.jpg" alt="New Castle Pines Opening Gala"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="special-storytime.jpg" alt="Special Storytime"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="shelving-books.jpg" alt="Staff Member Shelving Books"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="jason-segel-and-kerri.jpg" alt="Jason Segel and Kerri"> </div>
-      </div>
-      <div class="carousel-cell">
-        <div><img src="event-planning.jpg" alt="Planning for an Event"> </div>
-      </div>
-    </div>
+  <div class="row padding-bottom-15 bg-salmon"> 
+    <script>
+    var images = ['image-one.jpg', 'image-two.jpg', 'image-three.jpg', 'image-four.jpg', 'image-five.jpg', 'image-six.jpg', 'image-seven.jpg'];
+    $('<img alt="DCL Staff" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
+	
+	var images = ['image-ten.jpg', 'image-eleven.jpg', 'image-twelve.jpg', 'image-thirteen.jpg', 'image-fourteen.jpg', 'image-fifteen.jpg'];
+    $('<img alt="DCL Staff" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');
+	
+	var images = ['image-twenty.jpg', 'image-twenty-one.jpg', 'image-twenty-two.jpg', 'image-twenty-three.jpg', 'image-twenty-four.jpg', 'image-twenty-five.jpg'];
+    $('<img alt="DCL Staff" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
+	
+</script> 
   </div>
-  <div class="row white bg-salmon padding-top-40 padding-bottom-60">
+  <div class="row white bg-salmon padding-top-15 padding-bottom-60">
     <div class="container">
       <div class="col-sm-4">Douglas County Libraries is a passionate advocate for literacy and lifelong learning. It’s a place where purpose and profession align and you’re empowered to make a positive difference.</div>
       <div class="col-sm-4"><a data-content="Welcoming, Respectful, Trustworthy, Resilient, Innovative" data-trigger="focus" data-placement="top" rel="popover" href="#" class="fff text-underline" data-original-title="" title="">Our five core values</a> are the heart of our organization’s culture. They guide the work we do, and also the way we interact with each other and our patrons.</div>
       <div class="col-sm-4">We’re readers and leaders who work together in all manner of creative, impactful ways to meet goals and fulfill our mission. It’s a great story to be part of! </div>
     </div>
   </div>
-  
-  -->
-  
   <div class="row">
-    <div class="container">
-      <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 4000 }'>
+    <div class="container margin-lg-200 text-center padding-top-15">
+      <h1 class="roboto padding-bottom-15">We Work With Some Great Characters</h1>
+      <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 5000 }'>
         <div class="carousel-cell">
-          <div><img alt="Kyra Hahn, Castle Pines" class="img-circle" src="kyra.jpg" />
-            <div> "DCL is a respectful workplace. It encourages creativity and embraces diversity of cultures, ideas and opinions. I'm proud to be a part of it every day!"</div>
-            <div><small>Kyra, Librarian</small></div>
+          <div><img alt="Niki Weninger" class="img-circle" src="kyra.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"DCL is a respectful workplace. It encourages creativity and embraces diversity of cultures, ideas and opinions. I'm proud to be a part of it every day!" <small>Kyra, Librarian</small></blockquote>
+            </div>
           </div>
         </div>
         <div class="carousel-cell">
-          <div><img alt="Kyra Hahn, Castle Pines" class="img-circle" src="kyra.jpg" />
-            <div> "DCL is a respectful workplace. It encourages creativity and embraces diversity of cultures, ideas and opinions. I'm proud to be a part of it every day!"</div>
-            <div><small>Kyra, Librarian</small></div>
+          <div><img alt="Joe Henry" class="img-circle" src="aspen.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"I love working at DCL because every day is different, and I always leave work feeling like I learned something and helped someone. I am fortunate to have found this place!" <small>Aspen, Branch Manager</small></blockquote>
+            </div>
           </div>
         </div>
         <div class="carousel-cell">
-          <div><img alt="Kyra Hahn, Castle Pines" class="img-circle" src="kyra.jpg" />
-            <div> "DCL is a respectful workplace. It encourages creativity and embraces diversity of cultures, ideas and opinions. I'm proud to be a part of it every day!"</div>
-            <div><small>Kyra, Librarian</small></div>
+          <div><img alt="Opp Slawson" class="img-circle" src="roddy.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"Every book ever written is a whole new world waiting to be explored. Working for Douglas County Libraries makes me feel like I'm in the center of the universe!" <small>Roddy, Materials Handler Technician</small></blockquote>
+            </div>
           </div>
         </div>
         <div class="carousel-cell">
-          <div><img alt="Kyra Hahn, Castle Pines" class="img-circle" src="kyra.jpg" />
-            <div> "DCL is a respectful workplace. It encourages creativity and embraces diversity of cultures, ideas and opinions. I'm proud to be a part of it every day!"</div>
-            <div><small>Kyra, Librarian</small></div>
+          <div><img alt="Suresh Damle" class="img-circle" src="melissa.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"I'm always amazed by the creative, helpful and interesting professionals that I encounter at my library and also around the district. This is an amazing place to work!" <small>Melissa, Patron Service Technician</small></blockquote>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div id="staff" class="text-center padding-top-15">
-      <h1 class="roboto">We Work With Some Great Characters</h1>
-    </div>
-    <div class="col-md-12" data-wow-delay="0.3s">
-      <div class="carousel slide" data-ride="carousel" data-interval="10000" id="quote-carousel"> 
-        <!-- Carousel Slides / Quotes -->
-        <div class="carousel-inner carousel-quotes text-center"> 
-          <!-- Quote 1 -->
-          <div class="item active">
-            <blockquote>
-              <div class="row quote-row">
-                <div class="col-sm-6 col-sm-offset-3">
-                  <p class="margin-top-100-sm">“DCL is a respectful workplace. It encourages creativity and embraces diversity of cultures, ideas and opinions. I’m proud to be a part of it every day!”</p>
-                  <small>Kyra, Librarian</small> </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 2 -->
-          <div class="item">
-            <blockquote>
-              <div class="row quote-row">
-                <div class="col-sm-6 col-sm-offset-3">
-                  <p class="margin-top-100-sm">“I love working at DCL because every day is different, and I always leave work feeling like I learned something and helped someone. I am fortunate to have found this place!”</p>
-                  <small>Aspen, Branch Manager</small> </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 3 -->
-          <div class="item">
-            <blockquote>
-              <div class="row quote-row">
-                <div class="col-sm-6 col-sm-offset-3">
-                  <p class="margin-top-100-sm">“Every book ever written is a whole new world waiting to be explored. Working for Douglas County Libraries makes me feel like I’m in the center of the universe!”</p>
-                  <small>Roddy, Materials Handler Technician</small> </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 3 -->
-          <div class="item">
-            <blockquote>
-              <div class="row quote-row">
-                <div class="col-sm-6 col-sm-offset-3">
-                  <p class="margin-top-100-sm">“I’m always amazed by the creative, helpful and interesting professionals that I encounter at my library and also around the district. This is an amazing place to work!”</p>
-                  <small>Melissa, Patron Service Technician</small> </div>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-        <!-- Bottom Carousel Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="kyra.jpg" alt=""> </li>
-          <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="aspen.jpg" alt=""> </li>
-          <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="roddy.jpg" alt=""> </li>
-          <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="melissa.jpg" alt=""> </li>
-        </ol>
-        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> </div>
     </div>
   </div>
   <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
@@ -488,14 +414,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
+ <script>
 $("a[rel=popover]")
     .popover()
     .click(function(e) {
         e.preventDefault();
      });
  </script> 
-<!-- InstanceEndEditable --> 
+ <script>$(document).ready(function() {
+	$('#carousel-pics').carousel({
+	interval: 10000
+	})
+    $('#carousel-pics').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});   
+});
+</script> 
+ <!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -510,4 +445,5 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
