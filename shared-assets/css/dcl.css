@@ -169,11 +169,11 @@ a:hover, a:focus {
 	font-weight: 700;
 }
 blockquote, .blockquote-reverse, blockquote.pull-right {
-    font-size: 20px;
-    font-style: italic;
-    margin: 0;
-    border-left: none;
-    padding: 0;
+	font-size: 20px;
+	font-style: italic;
+	margin: 0;
+	border-left: none;
+	padding: 0;
 }
 .blockquote-reverse, blockquote.pull-right {
 	text-align: right;
@@ -303,11 +303,11 @@ blockquote footer, blockquote small, blockquote .small {
 	min-width: 150px;
 }
 .cp_header_biblio_bar a.my_account_toggle.dropdown-toggle {
-    background: #006066 none repeat scroll 0 0;
-    color: #fff;
-    font-weight: 400;
-    margin-left: 20px;
-    padding: 11px 2px 11px 19px;
+	background: #006066 none repeat scroll 0 0;
+	color: #fff;
+	font-weight: 400;
+	margin-left: 20px;
+	padding: 11px 2px 11px 19px;
 }
 div.cp_header .cp_header_biblio_bar .my_account_toggle {
 	background: #4d4c4b none repeat scroll 0 0;
@@ -1235,6 +1235,11 @@ a .icon-circle-white:hover {
 	outline: 0 none;
 	text-decoration: none;
 }
+.dropdown-menu-center {
+	left: 50%;
+	right: auto;
+	transform: translate(-50%, 0);
+}
 .btn-database {
 	color: #fff;
 	background-color: #4D4C4B;
@@ -1331,8 +1336,8 @@ a .icon-circle-white:hover {
 .alert-warning {
 	color: #fff;
 	background-color: #AD1A27;
-	font-size: 20px;
-	padding: 5px 0 6px;
+	/*font-size: 20px;*/
+	/*padding: 5px 0 6px;*/
 	text-align: center;
 }
 .alert-success {
@@ -2095,8 +2100,12 @@ button.s-srch-facet-btn {
 .entry-content {
 	display: table-cell;
 }
+.entry-content .row {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .entry-content > ul {
-    list-style-position: inside;
+	list-style-position: inside;
 }
 .post.type-post {
 	border-bottom: 1px solid #efefef;
@@ -2125,6 +2134,26 @@ button.s-srch-facet-btn {
 }
 .comment-form-comment label {
 	display: none;
+}
+.comment-body {
+	margin: 30px 0;
+}
+.comments-area .fn {
+	font-weight: normal;
+}
+.comments-area ol {
+	list-style-type: none;
+	padding-left: 0px;
+}
+.comment.even {
+	border-bottom: 1px solid #efefef;
+}
+.comments-area .avatar {
+	margin: 0 15px 15px 0;
+	border-radius: 50%;
+}
+.comment-metadata time {
+	font-size: 0.9em;
 }
 .nav-next {
 	float: right;
@@ -2265,6 +2294,9 @@ button.s-srch-facet-btn {
 }
 .text-center-md {
 	text-align: center;
+}
+.no-margin-top-md {
+	margin-top: 0px;
 }
 }
 
