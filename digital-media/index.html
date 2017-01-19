@@ -75,12 +75,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       
       <!-- begin BCNAV -->
       <div data-js="bc_my_account_nav" class="col-xs-12">
-        <div id="appSettings5" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
+        <div id="step5" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
           <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
             
             <!-- Template - t_biblionav_my_account_user_info -->
             
-            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
+            <li id="appSettings5" data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
             <li data-js="divider_logged_out" class="divider" role="presentation"></li>
             <li class="divider" role="presentation"></li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
@@ -338,7 +338,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 // Instance the tour
 var tour = new Tour({
   debug: true,
-  storage: false,
+  storage: true,
   steps: [
   {
     element: "#appSettings",
@@ -372,25 +372,25 @@ var tour = new Tour({
 	path: "http://stage.dcl.org/digital-media/"
   },   
    {
-    element: "#appSettings5",
+    element: "#step5",
     content: "Create your account to start placing holds, renew checkouts, and more!",
     placement: "bottom",
 	backdrop: true,
   },
   {
     element: "#test3",
-    content: "Click New Titles to discover what's &#34;Just Arrived&#34; and what's &#34;On Order.&#34;",
+    content: "It's easy! Use your full 14-digit barcode to start. Then create a username for easy access later. Hint: Your PIN is most likely the last four digits of your phone number.",
     placement: "right",
 	backdrop: true,
     onShow: function() {
-      return $("#appSettings2").addClass("open");
+      return $("#appSettings5").addClass("open");
     },      
     onHide: function() {
-      $("#appSettings2").removeClass("open"); 
+      $("#appSettings5").removeClass("open"); 
     } 
   } ,  
     {
-    element: "#step5",
+    element: "#step6",
     content: "You must register before using the new catalog, using your full 14-digit barcode. After that, you can create a user name for easy access on future visits! Your PIN is most likely the last four digits of your phone number. Happy searching! We hope you discover a great new read!",
     placement: "bottom",
 	backdrop: true,
