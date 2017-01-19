@@ -335,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 // Instance the tour
 var tour = new Tour({
   debug: true,
-  storage: false,
+ basePath: location.pathname.slice(0, location.pathname.lastIndexOf('/')),
   steps: [
   {
     element: "#appSettings",
@@ -394,11 +394,13 @@ var tour = new Tour({
   }
 ]});
 
-tour.init();
+  // init tour
+  tour.init();
 
-$("#starttour").click(function(){
-    tour.start();
-    });
+  // start tour
+  $('#start-tour').click(function() {
+    tour.restart();
+  });
 $(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
         e.stopPropagation();
     });

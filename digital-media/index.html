@@ -338,7 +338,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 // Instance the tour
 var tour = new Tour({
   debug: true,
-  storage: true,
+ basePath: location.pathname.slice(0, location.pathname.lastIndexOf('/')),
   steps: [
   {
     element: "#appSettings",
@@ -372,41 +372,43 @@ var tour = new Tour({
 	path: "http://stage.dcl.org/digital-media/"
   },   
    {
-    element: "#step5",
-    content: "Create your account to start placing holds, renew checkouts, and more!",
+    element: "#appSettings2",
+    content: "Looking for new books and movies?",
     placement: "bottom",
 	backdrop: true,
   },
   {
     element: "#test3",
-    content: "It's easy! Use your full 14-digit barcode to start. Then create a username for easy access later. Hint: Your PIN is most likely the last four digits of your phone number.",
+    content: "Click New Titles to discover what's &#34;Just Arrived&#34; and what's &#34;On Order.&#34;",
     placement: "right",
 	backdrop: true,
     onShow: function() {
-      return $("#appSettings5").addClass("open");
+      return $("#appSettings2").addClass("open");
     },      
     onHide: function() {
-      $("#appSettings5").removeClass("open"); 
+      $("#appSettings2").removeClass("open"); 
     } 
   } ,  
     {
-    element: "#step6",
+    element: "#step5",
     content: "You must register before using the new catalog, using your full 14-digit barcode. After that, you can create a user name for easy access on future visits! Your PIN is most likely the last four digits of your phone number. Happy searching! We hope you discover a great new read!",
     placement: "bottom",
 	backdrop: true,
   }
 ]});
 
-tour.init();
+  // init tour
+  tour.init();
 
-$("#starttour").click(function(){
+  // start tour
+  $('#start-tour').click(function() {
     tour.restart();
-    });
+  });
 $(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
         e.stopPropagation();
     });
 
-</script> 
+</script>  
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
