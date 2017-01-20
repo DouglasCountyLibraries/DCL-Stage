@@ -346,7 +346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 // Instance the tour
 var tour = new Tour({
   debug: true,
-  storage: true,
+  storage: false,
   steps: [
   {
     element: "#step1",
@@ -389,7 +389,11 @@ var tour = new Tour({
 ]});
 
 tour.init();
-tour.restart();
+tour.start();
+if (tour.ended()) {
+  // decide what to do
+  tour.restart();
+}
 
 $(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
         e.stopPropagation();
