@@ -334,11 +334,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </div>
 <link rel="stylesheet" type="text/css" href="bootstrap-tour.css">
 <script src="bootstrap-tour.js"></script> 
+
+	
+	
+	
 <script>
 // Instance the tour
 var tour = new Tour({
   debug: true,
- basePath: location.pathname.slice(0, location.pathname.lastIndexOf('/')),
+  storage: false,
   steps: [
   {
     element: "#appSettings",
@@ -347,8 +351,8 @@ var tour = new Tour({
 	backdrop: true,
   },
   {
-    element: "#step2",
-    content: "Sign up here! You won't regret it.",
+    element: "#test2",
+    content: "Get it here, then use it like crazy!",
     placement: "right",
 	backdrop: true,
     onShow: function() {
@@ -366,10 +370,9 @@ var tour = new Tour({
   }, 
     {
     element: "#step4",
-    content: "Got a new device? Need a digital assist? We're here for you!",
+    content: "Want to talk to a real person? No robots here! Call or chat with your questions.",
     placement: "top",
 	backdrop: true,
-	path: "http://stage.dcl.org/digital-media/"
   },   
    {
     element: "#appSettings2",
@@ -397,18 +400,20 @@ var tour = new Tour({
   }
 ]});
 
-  // init tour
-  tour.init();
+tour.init();
 
-  // start tour
-  $('#start-tour').click(function() {
+$("#starttour").click(function(){
     tour.restart();
-  });
+    });
 $(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
         e.stopPropagation();
     });
 
-</script>  
+</script> 		
+	
+	
+	
+	
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 

@@ -200,7 +200,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <!-- /.container-fluid --> 
 </nav>
 <div class="container-fluid">
-  <div id="global-alert" class="row alert alert-warning" style="display:none;"></div>
+	<div class="row alert-warning">
+	<div id="global-alert" class="container-md" style="display:none;"></div>
+	</div>
   <!-- TemplateBeginEditable name="Content" -->
   <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">Content goes here</div>
   <!-- TemplateEndEditable --> </div>
