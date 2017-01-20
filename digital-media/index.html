@@ -334,10 +334,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </div>
 <link rel="stylesheet" type="text/css" href="bootstrap-tour.css">
 <script src="bootstrap-tour.js"></script> 
-
-	
-	
-	
 <script>
 // Instance the tour
 var tour = new Tour({
@@ -345,21 +341,21 @@ var tour = new Tour({
   storage: false,
   steps: [
   {
-    element: "#appSettings",
+    element: "#step1",
     content: "Need a library card?",
     placement: "bottom",
 	backdrop: true,
   },
   {
-    element: "#test2",
+    element: "#step2",
     content: "Get it here, then use it like crazy!",
     placement: "right",
 	backdrop: true,
     onShow: function() {
-      return $("#appSettings").addClass("open");
+      return $("#step1").addClass("open");
     },      
     onHide: function() {
-      $("#appSettings").removeClass("open"); 
+      $("#step1").removeClass("open"); 
     } 
   } ,
    {
@@ -369,32 +365,16 @@ var tour = new Tour({
 	backdrop: true,
   }, 
     {
-    element: "#step4",
-    content: "Want to talk to a real person? No robots here! Call or chat with your questions.",
+	path: "../digital-media",
+    element: "#help",
+    content: "Got a new device? Need a digital assist? We're here for you!",
     placement: "top",
 	backdrop: true,
   },   
    {
-    element: "#appSettings2",
-    content: "Looking for new books and movies?",
-    placement: "bottom",
-	backdrop: true,
-  },
-  {
-    element: "#test3",
-    content: "Click New Titles to discover what's &#34;Just Arrived&#34; and what's &#34;On Order.&#34;",
-    placement: "right",
-	backdrop: true,
-    onShow: function() {
-      return $("#appSettings2").addClass("open");
-    },      
-    onHide: function() {
-      $("#appSettings2").removeClass("open"); 
-    } 
-  } ,  
-    {
-    element: "#step5",
-    content: "You must register before using the new catalog, using your full 14-digit barcode. After that, you can create a user name for easy access on future visits! Your PIN is most likely the last four digits of your phone number. Happy searching! We hope you discover a great new read!",
+	path: "../digital-media",
+    element: "#step4",
+    content: "Create your account to start placing holds, renew checkouts, and more!",
     placement: "bottom",
 	backdrop: true,
   }
@@ -403,17 +383,13 @@ var tour = new Tour({
 tour.init();
 
 $("#starttour").click(function(){
-    tour.restart();
+    tour.start();
     });
 $(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
         e.stopPropagation();
     });
 
-</script> 		
-	
-	
-	
-	
+</script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
