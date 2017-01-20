@@ -349,12 +349,14 @@ var tour = new Tour({
   storage: false,
   steps: [
   {
+	path: "/",
     element: "#step1",
     content: "Need a library card?",
     placement: "bottom",
 	backdrop: true,
   },
   {
+	path: "/",
     element: "#step2",
     content: "Get it here, then use it like crazy!",
     placement: "right",
@@ -367,6 +369,7 @@ var tour = new Tour({
     } 
   } ,
    {
+	path: "/",
     element: "#step3",
     content: "Stream and download digital movies, TV, music, magazines, e-books and audiobooks from this page.",
     placement: "bottom",
@@ -380,6 +383,7 @@ var tour = new Tour({
 	backdrop: true,
   },   
    {
+	path: "..digital-media",
     element: "#step4",
     content: "Create your account to start placing holds, renew checkouts, and more!",
     placement: "bottom",
@@ -392,10 +396,8 @@ localStorage.clear();
 tour.init();
 tour.restart();
 
-
-$(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
-        e.stopPropagation();
-    });
+  
+	
 </script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
