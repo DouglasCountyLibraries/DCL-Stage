@@ -391,7 +391,11 @@ var tour = new Tour({
   }
 ]});
 
-tour.restart();
+tour.init();
+
+$(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
+        e.stopPropagation();
+    });
 
 </script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
