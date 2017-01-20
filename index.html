@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,12 +56,20 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <!-- pinterest - do not remove -->
 <meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
 <style>
-.btn.btn-sm.btn-default {
+.popover-content {
+	font-size: 18px;
+	padding: 20px;
+}
+.popover-navigation .btn.btn-sm.btn-default {
 	background-color: #fff;
 	box-shadow: none;
 	color: #666;
 	padding: 10px;
 	text-transform: uppercase;
+}
+.popover-navigation .btn-default:active, .popover-navigation .btn-default:hover, .popover-navigation .btn-default:focus {
+	transform: translateY(0);
+	transition: none;
 }
 .featured .fa {
 	color: #fff;
@@ -218,9 +227,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <!-- /.container-fluid --> 
 </nav>
 <div class="container-fluid">
-	<div class="row alert-warning">
-	<div id="global-alert" class="container-md" style="display:none;"></div>
-	</div>
+  <div class="row alert-warning">
+    <div id="global-alert" class="container-md" style="display:none;"></div>
+  </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div id="starttour" class="pointer hidden-xs">
     <div class="row white text-uppercase text-center alert bg-salmon">Welcome to DCL.org. Get started with a quick tour!</div>
@@ -410,4 +419,5 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
