@@ -348,76 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- InstanceBeginEditable name="scripts" -->
 <link rel="stylesheet" type="text/css" href="../bootstrap-tour.css">
 <script src="../bootstrap-tour.js"></script> 
-<script>
-// Instance the tour
-var tour = new Tour({
-  debug: true,
-  storage: false,
-  steps: [
-  {
-	path:"/",
-    element: "#step1",
-    content: "Need a library card?",
-    placement: "bottom",
-	backdrop: true,
-  },
-  {
-	path:"/",
-    element: "#step2",
-    content: "Get it here, then use it like crazy!",
-    placement: "right",
-	backdrop: true,
-    onShow: function() {
-      return $("#step1").addClass("open");
-    },      
-    onHide: function() {
-      $("#step1").removeClass("open"); 
-    } 
-  } ,
-   {
-	path:"/",
-    element: "#step3",
-    content: "Stream and download digital movies, TV, music, magazines, e-books and audiobooks from this page.",
-    placement: "bottom",
-	backdrop: true,
-  }, 
-    {
-	path: "../digital-media",
-    element: "#help",
-    content: "Got a new device? Need a digital assist? We're here for you!",
-    placement: "top",
-	backdrop: true,
-  },   
-   {
-	path:"/",
-    element: "#step4",
-    content: "Create your account to start placing holds, renew checkouts, and more!",
-    placement: "bottom",
-	backdrop: true,
-  },
-	{
-	path:"/",
-    element: "#step5",
-    content: "It's easy! Use your full 14-digit barcode to start. Then create a username for easy access later. Hint: Your PIN is most likely the last four digits of your phone number.",
-    placement: "right",
-	backdrop: true,
-    onShow: function() {
-      return $("#step4").addClass("open");
-    },      
-    onHide: function() {
-      $("#step4").removeClass("open"); 
-    } 
-  }
-]});
-
-tour.init();
-tour.restart();
-
-$(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
-        e.stopPropagation();
-    });
-
-</script>
+<script src="../bootstrap-tour-ini.js"></script>
 <!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
