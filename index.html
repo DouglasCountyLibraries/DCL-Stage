@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,7 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       
       <!-- begin BCNAV -->
       <div data-js="bc_my_account_nav" class="col-xs-12">
-        <div id="step4" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
+        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a id="step4" data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
           <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
             
             <!-- Template - t_biblionav_my_account_user_info -->
@@ -227,9 +226,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <!-- /.container-fluid --> 
 </nav>
 <div class="container-fluid">
-  <div class="row alert-warning">
-    <div id="global-alert" class="container-md" style="display:none;"></div>
-  </div>
+	<div class="row alert-warning">
+	<div id="global-alert" class="container-md" style="display:none;"></div>
+	</div>
   <!-- InstanceBeginEditable name="Content" -->
   <div id="starttour" class="pointer hidden-xs">
     <div class="row white text-uppercase text-center alert bg-salmon">Welcome to DCL.org. Get started with a quick tour!</div>
@@ -355,12 +354,14 @@ var tour = new Tour({
   storage: false,
   steps: [
   {
+	path:"/",
     element: "#step1",
     content: "Need a library card?",
     placement: "bottom",
 	backdrop: true,
   },
   {
+	path:"/",
     element: "#step2",
     content: "Get it here, then use it like crazy!",
     placement: "right",
@@ -373,6 +374,7 @@ var tour = new Tour({
     } 
   } ,
    {
+	path:"/",
     element: "#step3",
     content: "Stream and download digital movies, TV, music, magazines, e-books and audiobooks from this page.",
     placement: "bottom",
@@ -386,11 +388,26 @@ var tour = new Tour({
 	backdrop: true,
   },   
    {
+	path:"/",
     element: "#step4",
     content: "Create your account to start placing holds, renew checkouts, and more!",
     placement: "bottom",
 	backdrop: true,
+  },
+	{
+	path:"/",
+    element: "#step5",
+    content: "It's easy! Use your full 14-digit barcode to start. Then create a username for easy access later. Hint: Your PIN is most likely the last four digits of your phone number.",
+    placement: "right",
+	backdrop: true,
+    onShow: function() {
+      return $("#step4").addClass("open");
+    },      
+    onHide: function() {
+      $("#step4").removeClass("open"); 
+    } 
   }
+	  
 ]});
 
 tour.init();
@@ -418,5 +435,4 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 </script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>

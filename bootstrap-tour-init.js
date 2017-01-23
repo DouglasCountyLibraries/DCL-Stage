@@ -1,4 +1,4 @@
-
+$(function () {
     tour = new Tour({
       onStart: function() {
         return $demo.addClass("disabled", true);
@@ -50,11 +50,9 @@
 ]});
 
 tour.init();
+tour.restart();
 
-$("#starttour").click(function(){
-    tour.start();
-    });
 $(document).on('click', '.popover-navigation [data-role=next],.popover-navigation [data-role=prev]', function (e) {
         e.stopPropagation();
     });
-  
+  });
