@@ -72,15 +72,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       
       <!-- begin BCNAV -->
       <div data-js="bc_my_account_nav" class="col-xs-12">
-        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a id="step4" data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
+        <div id="step4" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
           <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
             
             <!-- Template - t_biblionav_my_account_user_info -->
             
-            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
+            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a id="step5" testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
             <li data-js="divider_logged_out" class="divider" role="presentation"></li>
             <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
+            <li id="step6" role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
             <li class="divider" role="presentation"></li>
             <li role="presentation" class="dropdown-header">My Borrowing</li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/checkedout">Checked Out</a> </li>
@@ -221,7 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <h2 class="roboto"><i class="fa fa-comment-o" style="margin-right:10px"></i> <a href="#meetings">Meetings</a></h2>
       </div>
       <div class="col-sm-3 text-center">
-        <h2 class="roboto"><i class="fa fa-file-text" style="margin-right:10px"></i> <a href="dcl-board-policies.pdf" target="_blank">Bylaws & Policies</a></h2>
+        <h2 class="roboto"><i class="fa fa-file-text" style="margin-right:10px"></i> <a href="dcl-board-policies-v2.pdf" target="_blank">Bylaws & Policies</a></h2>
       </div>
       <div class="col-sm-3 text-center">
         <h2 class="roboto"><i class="fa fa-file-o" style="margin-right:10px"></i> <a href="public-notice-none.pdf" target="_blank">Public Notices</a></h2>
@@ -233,86 +233,87 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row bg-salmon text-center padding-top-20 padding-bottom-30">
     <div class="container">
-      <h2 class="fff roboto">Trustees are volunteers, appointed by the Douglas County Commissioners. The board adopts and oversees the budget, bylaws and policies. The board conducts long-range planning and hires and evaluates the library director.</h2>
+      <h2 class="white roboto">Trustees are volunteers, appointed by the Douglas County Commissioners. The board adopts and oversees the budget, bylaws and policies. The board conducts long-range planning and hires and evaluates the library director.</h2>
     </div>
   </div>
   <div class="row">
     <div class="container">
-      <div class="text-center col-md-4 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Bob Morris, President/Treasurer" class="img-circle center-block" src="bmorris.jpg" />
-        <h3 class="no-margin-bottom">Bob Morris</h3>
-        <h6 class="text-capitalize no-margin-top">President/Treasurer</h6>
-        <p>District I, Term Expires 1/17</p>
-      </div>
-      <div class="text-center col-md-4 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Janiece Murphy, Vice-President" class="img-circle center-block" src="jmurphy.jpg" />
+      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Janiece Murphy, President" class="img-circle center-block" src="jmurphy.jpg" />
         <h3 class="no-margin-bottom">Janiece Murphy</h3>
-        <h6 class="text-capitalize no-margin-top">Vice President</h6>
-        <p>District II, Term Expires 1/17</p>
+        <h6 class="text-capitalize no-margin-top">President</h6>
+        <p>District II, Term Expires 1/20</p>
       </div>
-      <div class="text-center col-md-4 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="David Williams, Secretary" class="img-circle center-block" src="dwilliams.jpg" />
-        <h3 class="no-margin-bottom">David Williams</h3>
+      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Eleanor Brown, Vice-President" class="img-circle center-block" src="ebrown.jpg" />
+        <h3 class="no-margin-bottom">Eleanor Brown</h3>
+        <h6 class="text-capitalize no-margin-top">Vice President</h6>
+        <p>District III, Term Expires 1/19</p>
+      </div>
+      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Bob Morris, Treasurer" class="img-circle center-block" src="bmorris.jpg" />
+        <h3 class="no-margin-bottom">Bob Morris</h3>
+        <h6 class="text-capitalize no-margin-top">Treasurer</h6>
+        <p>District I, Term Expires 1/20</p>
+      </div>
+	  <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Ron Cole, Secretary" class="img-circle center-block" src="rcole.jpg" />
+        <h3 class="no-margin-bottom">Ron Cole</h3>
         <h6 class="text-capitalize no-margin-top">Secretary</h6>
-        <p>District I, Term Expires 1/18</p>
+        <p>District II, Term Expires 1/19</p>
       </div>
     </div>
   </div>
   <div class="row bg-gray-5">
     <div class="container">
-      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="John Beckwith, At Large" class="img-circle center-block" src="jbeckwith.jpg" />
-        <h3>John Beckwith</h3>
-        <p>At Large, Term Expires 1/17</p>
-      </div>
-      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Ron Cole" class="img-circle center-block" src="rcole.jpg" />
-        <h3>Ron Cole</h3>
-        <p>District II, Term Expires 1/19</p>
-      </div>
-      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="John Howe" class="img-circle center-block" src="jhowe.jpg" />
+      <div class="text-center col-md-4 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="John Howe" class="img-circle center-block" src="jhowe.jpg" />
         <h3>John Howe</h3>
         <p>District I, Term Expires 1/19</p>
       </div>
-      <div class="text-center col-md-3 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Eleanor Brown" class="img-circle center-block" src="ebrown.jpg" />
-        <h3>Eleanor Brown</h3>
-        <p>District III, Term Expires 1/19</p>
+      <div class="text-center col-md-4 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="John Beckwith, At Large" class="img-circle center-block" src="jbeckwith.jpg" />
+        <h3>John Beckwith</h3>
+        <p>At Large, Term Expires 1/20</p>
+      </div>
+      <div class="text-center col-md-4 col-sm-6 padding-top-30 padding-bottom-30"> <img alt="Sean Duffy" class="img-circle center-block" src="sduffy.png" />
+        <h3>Sean Duffy</h3>
+        <p>District III, Term Expires 1/18</p>
       </div>
     </div>
   </div>
-  <div class="row fff bg-moss padding-top-15 padding-bottom-30">
+  <div class="row white bg-moss padding-top-15 padding-bottom-30">
     <div id="meetings" class="container">
-      <h1 class="fff text-center">Board Meeting Schedule</h1>
-		<div class="fff">DCL regular board meetings are held at least eight times a year at 7 p.m. at locations around the District. Board study sessions and committee meetings are held both on a recurring basis and as needed. Please see our <a href="http://www.dcl.org/board/public-notice-dec.pdf" class="fff text-underline" target="_blank">public notices</a> for information about upcoming meetings.</div>
+      <h1 class="white text-center">Board Meeting Schedule</h1>
+		<div class="white">DCL regular board meetings are held at least eight times a year at 7 p.m. at locations around the District. Board study sessions and committee meetings are held both on a recurring basis and as needed. Please see our <a href="http://www.dcl.org/board/public-notice-none.pdf" class="white text-underline" target="_blank">public notices</a> for information about upcoming meetings.</div>
       <div class="">
         <table class="table">
           <tbody>
           <thead>
-          <th><h3 class="fff">Date & Agenda</h3></th>
-            <th><h3 class="fff">Location & Minutes</h3></th>
+          <th><h3 class="white">Date & Agenda</h3></th>
+            <th><h3 class="white">Location & Minutes</h3></th>
               </thead>
           <tr>
-            <td><a class="fff" href="agenda/7-27-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>July 27, 2016</a></td>
-            <td><a class="fff" href="minutes/7-27-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Lone Tree</a></td>
+            <td><a class="white" href="agenda/7-27-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>July 27, 2016</a></td>
+            <td><a class="white" href="minutes/7-27-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Lone Tree</a></td>
           </tr>
           <tr>
             <td class="opacity-6">August 31, 2016</td>
             <td class="opacity-6">No Meeting</td>
           </tr>
           <tr>
-            <td><a class="fff" href="agenda/9-28-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>September 28, 2016</a></td>
-            <td><a class="fff" href="minutes/9-28-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Louviers</a></td>
+            <td><a class="white" href="agenda/9-28-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>September 28, 2016</a></td>
+            <td><a class="white" href="minutes/9-28-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Louviers</a></td>
           </tr>
           <tr>
-            <td><a class="fff" href="agenda/10-26-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>October 26, 2016</a></td>
-            <td><a class="fff" href="minutes/10-26-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Roxborough</a></td>
+            <td><a class="white" href="agenda/10-26-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>October 26, 2016</a></td>
+            <td><a class="white" href="minutes/10-26-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Roxborough</a></td>
           </tr>
           <tr>
-            <td><a class="fff" href="agenda/11-16-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>November 16, 2016 *</a></td>
-            <td class="opacity-6">Highlands Ranch</td>
+            <td><a class="white" href="agenda/11-16-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>November 16, 2016 *</a></td>
+            <td><a class="white" href="minutes/11-16-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Highlands Ranch</td>
           </tr>
           <tr>
-            <td><a class="fff" href="agenda/11-28-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>November 28, 2016</a></td>
-            <td class="opacity-6">via Telephone</td>
+            <td><a class="white" href="agenda/11-28-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>November 28, 2016</a></td>
+            <td><a class="white" href="minutes/11-28-16-special-mtg-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>via Telephone</td>
           </tr>
           <tr>
-            <td class="opacity-6">December 14, 2016 *</td>
-            <td class="opacity-6">Castle Rock</td>
+            <td><a class="white" href="agenda/12-14-16-agenda.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>December 14, 2016 *</a></td>
+            <td><a class="white" href="minutes/12-14-16-minutes.pdf" target="_blank"><i class="fa fa-file-pdf-o margin-right-10"></i>Castle Rock</td>
           </tr>
           <tr>
             <td class="opacity-6">January 25, 2017</td>
@@ -366,18 +367,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           
         </table>
       </div>
-      <h5 class="fff">* November and December 2017 board meetings will be held the third and second Wednesday of the month, respectively.</h5>
+      <h5 class="white">* November and December 2017 board meetings will be held the third and second Wednesday of the month, respectively.</h5>
     </div>
   </div>
   
- 
-       <!--<div class="row bg-salmon text-center padding-bottom-30">
-    removed <div id="public-notices" class="container">
-      <h2 class="fff roboto">There are no public notices at this time.</h2>
-    </div>
-  </div>-->
-  
-<div class="row padding-bottom-20">
+  <div class="row padding-bottom-20">
 	<div class="container">
 		<div class="col-sm-6 text-center margin-lg-30 padding-top-20 padding-bottom-20">
 			<h3 class="roboto"><i class="fa fa-dollar" style="margin-right:10px"></i><a href="2017-budget.pdf" target="_blank">2017 Budget</a></h3>
@@ -387,7 +381,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		</div>
 	</div>	
 </div>
- 
+  
+  <!--<div class="row bg-salmon text-center padding-bottom-30">
+    removed <div id="public-notices" class="container">
+      <h2 class="white roboto">There are no public notices at this time.</h2>
+    </div>
+  </div>-->
   <div class="row bg-gray-5">
     <div id="join" class="container">
       <div class="text-center margin-lg-200 padding-top-15 padding-bottom-60">
