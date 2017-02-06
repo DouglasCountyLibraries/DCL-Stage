@@ -2077,6 +2077,33 @@ button.s-srch-facet-btn {
 }
 /* styles for the blogs */
 
+.arve-wrapper {
+    margin-bottom: 15px;
+}
+.entry-content img, .comment-content img, .widget img {
+	max-width: 100%;
+}
+img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"] {
+	height: auto;
+}
+img.size-full, img.size-large, img.header-image, img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+}
+.entry-content .aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+.entry-content .alignleft {
+	float: left;
+	margin: 0 30px 15px;
+}
+.entry-content .alignright {
+	float: right;
+	margin: 0 0 15px 30px;
+}
 #turnkey-credit, .cat-links, .tags-links, .posts-navigation h2, .post-navigation h2, .comments-link {
 	display: none;
 }
@@ -2140,6 +2167,10 @@ button.s-srch-facet-btn {
 .comments-area .avatar {
 	margin: 0 15px 15px 0;
 	border-radius: 50%;
+}
+.comments-area label {
+    font-weight: normal;
+    margin-right: 10px;
 }
 .comment-metadata time {
 	font-size: 0.9em;
@@ -2242,6 +2273,9 @@ button.s-srch-facet-btn {
 .margin-top-100-sm {
 	margin-top: 0;
 }
+.insert-break {
+	display: none; /* <br class="insert-break" /> */
+}	
 }
 
 /* required for jquery match-height */

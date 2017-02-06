@@ -76,27 +76,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       
       <!-- begin BCNAV -->
       <div data-js="bc_my_account_nav" class="col-xs-12">
-        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a id="step4" data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
+        <div id="step4" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
           <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
             
             <!-- Template - t_biblionav_my_account_user_info -->
             
-            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
+            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a id="step5" testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
             <li data-js="divider_logged_out" class="divider" role="presentation"></li>
             <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
+            <li id="step6" role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
             <li class="divider" role="presentation"></li>
             <li role="presentation" class="dropdown-header">My Borrowing</li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/checkedout">Checked Out</a> </li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/holds">On Hold</a> </li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/fines">Fees</a> </li>
             <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Collections</li>
+            <li id="step8" role="presentation" class="dropdown-header">My Collections</li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/for_later">For Later Shelf</a> </li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/completed">Completed Shelf</a> </li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/lists/show/mine">Lists</a> </li>
             <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/user_profile/me">My Profile</a> </li>
+            <li id="step7" role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/user_profile/me">My Profile</a> </li>
             <li class="divider" role="presentation"></li>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/account/personal_information">My Settings</a> </li>
           </ul>
@@ -245,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <div class="col-sm-3 text-center"> 
           
           <!-- Button trigger modal -->
-          <h2 class="roboto fff"><em style="margin-right:10px" class="fa fa-comment-o fa-flip-horizontal"></em> <a href="../storytime#castle-pines-storytime" class="fff" data-toggle="modal" data-target="#storytime-modal">Storytime</a></h2>
+          <h2 class="roboto white"><i class="margin-right-10 fa fa-comment-o fa-flip-horizontal"></i><a href="#" class="white text-underline" data-toggle="modal" data-target="#storytime-modal">Storytime</a></h2>
         </div>
         
         <!-- Modal -->
@@ -259,69 +259,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
               <div class="modal-body">
                 <ul class="list-unstyled">
                   <li>
-                    <h5 class="text-uppercase">Mondays, Wednesdays, Thursdays and Fridays</h5>
+                    <h5 class="text-uppercase">Monday-Friday</h5>
                   </li>
-                  <li>9:30AM - Baby</li>
-                  <li>11AM - All Ages</li>
+                  <li>9:30AM-Baby</li>
+                  <li>11AM-All Ages</li>
                   <li>
-                    <h5 class="text-uppercase">Tuesdays</h5>
+                    <h5 class="text-uppercase">Tuesday</h5>
                   </li>
-                  <li>9:30AM - Baby</li>
-                  <li>11AM - All Ages</li>
-                  <li>7PM - All Ages</li>
+                  <li>7PM-All Ages</li>
                   <li>
-                    <h5 class="text-uppercase">Saturdays</h5>
+                    <h5 class="text-uppercase">Saturday</h5>
                   </li>
-                  <li>10AM - All Ages</li>
+                  <li>10AM-All Ages</li>
                 </ul>
               </div>
               <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
           </div>
         </div>
         <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><em style="margin-right:10px" class="fa fa-check-square-o"></em> <a href="../reserve-a-space" class="fff">Reserve a Space</a></h2>
+          <h2 class="roboto white"><i class="margin-right-10 fa fa-check-square-o"></i><a href="../reserve-a-space" class="white text-underline">Reserve a Space</a></h2>
         </div>
         <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><i style="margin-right:10px" class="fa fa-paint-brush"></i> <a href="../art#lone-tree" class="fff">Art on Display</a></h2>
+          <h2 class="roboto white"><i class="margin-right-10 fa fa-paint-brush"></i><a href="../art#lone-tree" class="white text-underline">Art on Display</a></h2>
         </div>
         <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><i style="margin-right:10px" class="fa fa-book"></i> <a href="../used-book-sales" class="fff">Used Book Sales</a></h2>
+          <h2 class="roboto white"><i class="margin-right-10 fa fa-book"></i><a href="../used-book-sales" class="white text-underline">Used Book Sales</a></h2>
         </div>
       </div>
       <div>
-        <h5 class="fff margin-lg-200">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h5>
+        <h5 class="white margin-lg-200">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h5>
       </div>
     </div>
   </div>
   <div id="events" class="row text-center padding-bottom-40">
-    <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Events at Lone Tree</h1>
-    <h2 class="roboto"><em style="margin-right:10px;" class="fa fa-calendar-o"></em> <a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=&kw=&lib=1002" target="_blank">Lone Tree Events Calendar</a></h2>
+    <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Happenings</h1>
+    <h2 class="roboto"><em style="margin-right:10px;" class="fa fa-calendar-o"></em> <a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=&kw=&et=18,2,22,16,20,15,3,24,25,7&lib=1002" target="_blank">Lone Tree Events Calendar</a></h2>
   </div>
- <div class="row padding-bottom-60">
-    <div class="container text-center">
-      <!--<div class=""><img class="img-responsive center-block" src="Live-Celtic.png" alt="Celtic-Harp"/></div>
-      <h1 class="roboto margin-lg-100 text-center">The Colorado Celtic Harp Society performs holiday classics. No registration required.</h1>
-      Saturday, December 3, 1:30PM
-      <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=116162&backTo=Calendar&startDate=2016/12/01" target="_blank" class="btn btn-primary text-uppercase margin-top-15">view calendar</a></div>-->
+<div class="row padding-bottom-40">
+  <div class="container text-center">
+    <div class="margin-top-15"> 
+      <img class="img-responsive center-block" src="lt-film-series.png" alt="Film Series">
+      <!--<div class="icon-circle"><i class="fa fa-video-camera"></i></div>-->
+      <h1 class="roboto"></h1>
+      <h2 class="roboto margin-lg-100">Catch a free film screening of Vertigo, then stay for a discussion with local film expert Matt Wigdahl. Friday, February 10, 1PM. ADULTS. </h2>
+      <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=114767" target="_blank" class="btn btn-default text-uppercase margin-top-30">Register Now</a></div>
     </div>
   </div>
-  <div class="row bg-lavender no-gutter">
-	<div class="col-md-6 bg-lavender text-center equal-height flex-center padding-30" style="height: 342px;">
-		<div class="icon-circle-lavender-reversed"><i class="fa fa-paint-brush"></i></div>
-     <h1 class="fff roboto">Art Stop on the Go!</h1>
-      <div class="fff margin-lg-100">Hands-on, literature-based art fun for kids.</div>
-      <div class="fff margin-top-15 text-uppercase"></div>
-      <div><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=&kw=art+stop&lib=1002&nd=30" target="_blank" class="btn btn-default text-uppercase margin-top-30">View Calendar</a></div>
-	</div>
-    <div class="col-md-6 bg-teal text-center equal-height flex-center padding-30">
-      <div class="icon-circle-teal-reversed"><i class="fa fa-book"></i></div>
- 		<h1 class="fff roboto">Book Clubs</h1>
-		<div class="fff margin-lg-100">Find a club to suit your age or reading taste.</div>
-		<div class="fff margin-top-15 text-uppercase"></div>
-		<div><a href="http://douglascountylibraries.evanced.info/signup/list?&et=2&kw=book+discussion&lib=1002" target="_blank" class="btn btn-primary text-uppercase margin-15">View List</a></div>
-		<div><a href="http://www.dcl.org/book-clubs/" class="fff text-underline text-uppercase">Explore All DCL Book Clubs </a></div>
+</div>
+  <div class="row bg-lavender no-gutter"> 
+    <div class="col-md-12 bg-lavender text-center equal-height flex-center">
+      <div class="padding-30">
+        <div class="icon-circle-lavender-reversed"><i class="fa fa-heart"></i></div>
+        <h1 class="white roboto">Book Lovers</h1>
+        <div class="white margin-lg-100">Find out which love stories DCL staff and a special guest book expert recommend. Thursday, February 9, 6:30PM. ADULTS. </div>
+        <div class="white margin-top-15 text-uppercase"></div>
+        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110057" target="_blank" class="btn btn-default text-uppercase margin-15">Register Now</a></div>     
+      </div>
     </div>
-  </div>
+    <!--<div class="col-md-6 bg-teal text-center equal-height flex-center">
+      <div class="padding-30">
+        <div class="icon-circle-teal-reversed"><i class="fa fa-cog"></i></div>
+        <h1 class="white roboto">DIY @ DCL: DiYA Jewelry Design</h1>
+        <div class="white margin-lg-100">Teens create handmade jewelry using DIY jewelry design tips and techniques. Thursday, January 26, 4PM. </div>
+        <div class="white margin-top-15 text-uppercase"></div>
+        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=116169" target="_blank" class="btn btn-primary text-uppercase margin-top-15">Register Now</a></div>
+      </div>
+    </div>
+  </div>-->
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
