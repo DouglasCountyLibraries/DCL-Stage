@@ -53,6 +53,19 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<style>
+@media (max-width: 1200px) {
+.dcl-navbar, .dcl-logo-search {
+	display: none !important;
+}
+}
+
+@media (min-width: 1201px) {
+.dcl-mobile-navbar {
+	display: none !important;
+}
+}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -102,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 <!-- begin logo and search -->
 
-<div class="client_and_search">
+<div class="dcl-logo-search client_and_search">
   <div class="container ">
     <div class="row">
       <div class="col-sm-5">
@@ -189,9 +202,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 <nav class="dcl-mobile-navbar navbar navbar-default">
   <div>
-	  <div class="col-sm-6">Responsive logo and hamburger with overlay on the left</div><div class="col-sm-6 text-right">search icon with accordian function on the right</div>
+    <div class="col-sm-6">Responsive logo and hamburger with overlay</div>
+    <div class="col-sm-6 text-right">Search icon with accordian function</div>
     
-<!-- full overlay modal for hamburger
+    <!-- full overlay modal for hamburger
  .modal-dialog {
   width: 100%;
   height: 100%;
