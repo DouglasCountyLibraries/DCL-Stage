@@ -55,7 +55,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <!-- TemplateEndEditable -->
 <style>
 .nav.mobile-nav {
-	margin: 60px 0 0 30px;
+	margin: 60px 0 0;
 }
 .mobile-nav-heading a {
 	color: #333;
@@ -66,13 +66,12 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	color: #333;
 	font-size: 20px;
 }
+.dcl-mobile-nav .modal-header {
+	border-bottom: medium none;
+}
 select {
-	/* styling */
-
 	display: inline-block;
 	font: inherit;
-	/* reset */
-
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -102,7 +101,8 @@ select.minimal {
 }
 .dcl-mobile-navbar .fa-bars {
 	color: #333;
-	font-size: 22px;
+	font-size: 26px;
+	margin-left: 20px;
 	vertical-align: middle;
 }
 .dcl-mobile-navbar .fa-bars:hover {
@@ -117,6 +117,31 @@ select.minimal {
 .dcl-mobile-nav.modal-content {
 	height: 100%;
 	border-radius: 0;
+}
+.mobile-nav-close {
+	background: rgba(0, 0, 0, 0) linear-gradient(#fff, #ebebeb) repeat scroll 0 0;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 1px 4px #666666;
+	cursor: pointer;
+	position: fixed;
+		opacity: 1;
+	right: 30px;
+	top: 0;
+	z-index: 250000;
+}
+.mobile-nav-close:hover {
+	background: #006066;
+	color: #fff;
+	
+}
+.mobile-nav-close .fa-times {
+	padding: 10px;
+	color: #006066;
+
+}
+.mobile-nav-close .fa-times:hover {
+	background: #006066;
+	color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -280,7 +305,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="dcl-mobile-nav modal-dialog">
         <div class="dcl-mobile-nav modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close mobile-nav-close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-2x fa-times"></i></button>
           </div>
           <div class="modal-body">
             <div class="container">
@@ -294,8 +319,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                     <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
                   </ul>
                 </li>
-                <li> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
+                <li class="locations-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#locations">Locations <b class="caret"></b> </a>
+                  <ul id="locations" class="nav mobile-nav-list collapse">
                     <li><a href="../locations">All Locations</a></li>
                     <li><a href="../castle-pines">Castle Pines</a></li>
                     <li><a href="../castle-rock">Castle Rock</a></li>
@@ -307,8 +332,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                     <li><a href="../history">Douglas County History</a></li>
                   </ul>
                 </li>
-                <li> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <b class="caret"></b> </a>
-                  <ul class="dropdown-menu">
+                <li class="using-the-library-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Using the Library <b class="caret"></b> </a>
+                  <ul id="using-the-library" class="nav mobile-nav-list collapse">
                     <li><a href="../library-basics">Library Basics</a></li>
                     <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
                     <li><a href="../book-clubs">Book Clubs</a></li>
@@ -318,8 +343,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                     <li><a href="../adult-education">Adult Education & Test Prep</a></li>
                   </ul>
                 </li>
-                <li> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
+                <li class="kids-teens-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <b class="caret"></b> </a>
+                  <ul id="kids-teens" class="nav mobile-nav-list collapse">
                     <li><a href="../storytime">Storytime</a></li>
                     <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
                     <li><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
@@ -328,10 +353,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                     <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
                   </ul>
                 </li>
-                <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
-                <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
-                <li class="events-active"><a href="../library-events">Library Events</a> </li>
-                <li class="research-active"><a href="../research">Research</a> </li>
+                <li class="digital-media-active mobile-nav-heading"><a href="../digital-media">Digital Media</a> </li>
+                <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space">Reserve a Space</a> </li>
+                <li class="events-active mobile-nav-heading"><a href="../library-events">Library Events</a> </li>
+                <li class="research-active mobile-nav-heading"><a href="../research">Research</a> </li>
               </ul>
             </div>
           </div>
