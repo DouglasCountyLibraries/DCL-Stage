@@ -1,0 +1,77 @@
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Library",
+		"name": "Douglas County Libraries",
+	    "logo": "http://www.dcl.org/dcl-logo.png",
+	    "telephone": "+1-303-791-7323",
+		"contactPoint": [{
+			"@type": "ContactPoint",
+			"telephone": "+1-303-791-7323",
+			"contactType": "Customer Service"
+		}],
+		"sameAs": [
+			"https://twitter.com/DCLcolorado",
+			"http://www.facebook.com/DouglasCountyLibrariesColorado",
+			"https://www.instagram.com/dclcolorado/",
+			"https://www.youtube.com/user/dclwebteam",
+			"https://pinterest.com/dougcolibraries/",
+			"https://www.instagram.com/dclcolorado/"
+		]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "http://www.your-domain.co.uk",
+      "@type": "Organization",
+      "name": "Your Business Name",
+      "url" : "http://www.your-domain.co.uk",
+      "logo" : "http://www.your-domain.co.uk/images/your-logo.png",
+      "sameAs" : [ "https://www.facebook.com/chrisains",
+          "https://twitter.com/chrisains",
+          "https://plus.google.com/+ChrisAinsworth",
+          "https://www.youtube.com/user/chrisains1982" ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "parentOrganization": {
+          "name" : "Your Business Name"
+      },
+     "name" : "Your Business Name",
+      "address": {
+          "@type" : "PostalAddress",
+          "streetAddress": "1 The High Street",
+          "addressLocality": "Colchester",
+          "addressRegion": "Essex",
+          "postalCode": "CO1 1AB",
+          "telephone" : "01234 567 891"
+          },
+      "openingHours": [ "Mo-Fr 09:00-18:00", "Sa 10:00-16:00" ],
+      "hasmap" : "https://www.google.co.uk/maps/place/Buckingham+Palace/@51.501364,-0.1440787,17z/data=!3m1!4b1!4m5!3m4!1s0x48760520cd5b5eb5:0xa26abf514d902a7!8m2!3d51.501364!4d-0.14189"
+    },
+    {
+      "@type": "LocalBusiness",
+      "parentOrganization": {
+          "name" : "Your Business Name"
+      },
+     "name" : "Your Business Name",
+      "address": {
+          "@type" : "PostalAddress",
+          "streetAddress": "Buckingham Palace",
+          "addressRegion": "London",
+          "postalCode": "SW1A 1AA",
+          "telephone" : "01234 567 891"
+          },
+      "openingHours": [ "Mo-Fr 09:00-18:00", "Sa 10:00-16:00" ],
+      "hasmap" : "https://www.google.co.uk/maps/place/Buckingham+Palace/@51.501364,-0.1440787,17z/data=!3m1!4b1!4m5!3m4!1s0x48760520cd5b5eb5:0xa26abf514d902a7!8m2!3d51.501364!4d-0.14189"
+    }
+  ]
+}
+</script>
