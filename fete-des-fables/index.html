@@ -52,6 +52,54 @@ a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0057/0811.
 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" integrity="sha256-RYxg7tiJnLgQq6MA97aPOy+QCt1360G5PsCmiXw87dA=" crossorigin="anonymous" />
+<style>
+.carousel-cell {
+	text-align: center;
+	height: 265px;
+	width: 200px;
+	margin: 0 40px;
+}
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+.flickity-page-dots {
+	bottom: -75px;
+	opacity: .5;
+}
+.using-the-library-active {
+	background-color: #f5f5f5;
+}
+.number-card {
+	height: 200px;
+	text-align: center;
+}
+.card-grid:hover, .card-grid:focus {
+	cursor: pointer;
+}
+.number {
+	color: #fff;
+	font-size: 80px;
+	padding-bottom: 15px;
+}
+.flickity-prev-next-button {
+	display: none;
+}
+
+@media (min-width: 768px) {
+.number-card {
+	height: 200px;
+}
+}
+	
+.backgroundimg {
+	background-repeat: repeat-x;
+	background-image: url(diamondtile250.png);
+	height:375px;
+}
+	
+</style>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -204,16 +252,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	<div id="global-alert" class="container-md" style="display:none;"></div>
 	</div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top padding-top-30 padding-bottom-30">
+
+      
+  <div class="row border-top padding-top-30">
+  
     <div class="container">
-		<h2 class="roboto text-center">The Douglas County Libraries Foundation presents its third annual Fête des Fables Gala:</h2>
-      <h1 class="jumbo-text text-center text-uppercase font-weight-400">Adventures in Wonderland</h1>
-      <div class="separator-container">
-        <div class="separator line-separator"><i class="fa fa-hourglass-o"></i></div>
-      </div>
-      <h3 class="roboto text-center ">Friday, October 20, 2017  6-11PM</h3>
-      <h3 class="roboto text-center">Highlands Ranch Mansion</h3>
-    </div>
+		<h2 class="roboto text-center">The Douglas County Libraries Foundation presents its third annual</h2>
+    </div> 
+  </div>
+      
+  <div class="row padding-top-20 padding-bottom-30">
+   
+	  <div class="backgroundimg">
+  			<img src="adventuresinwonderland375.png" class="img-responsive center-block ">
+  	  </div>
+      
+      <h3 class="roboto text-center ">Friday, October 20, 2017  6-11PM<br />
+      Highlands Ranch Mansion</h3>
+  
   </div>
   
   <div class="row border-top padding-bottom-30">
@@ -223,24 +279,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</div>
   </div>
  
-  <div class="row bg-salmon padding-top-30 padding-bottom-60">
+<div class="row bg-lichen">
     <div class="container">
-      <div class="col-md-6 margin-lg-30 padding-top-10">
-       <!--<img class="img-circle img-responsive center-block" src="be-a-chef.png">-->
-        <h1 class="fff roboto text-center margin-bottom-30">Sponsor a Table</h1>
-        <div class="fff text-center">Description of table sponsorship</div>
-        <div class="text-center"> <a class="btn btn-default text-uppercase margin-top-30" href="https://form.jotform.us/70655453285158">Register Now</a>
+	
+      <h1 class="white roboto text-center">Sponsor a Table</h1>
+      <div class="col-md-3 margin-top-15 margin-bottom-15">
+        <div class="card-grid number-card">
+          <img src="fete-sponsor-cheshire-cat.png">
+          <div class="back bg-white shadow-low padding-15 flex-center">
+            <div>$6,250<br />Sponsor the evening’s entertainment, including live British music, Blackjack tables, and “Alice” character actors. Enjoy a table for eight and excellent brand visibility for your organization.</div>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 margin-lg-30 padding-top-10"> 
-       <!--<img class="img-circle img-responsive center-block" src="master-builder.png">-->
-        <h1 class="fff roboto text-center margin-bottom-30">Individual Tickets</h1>
-        <div class="fff text-center">Description of individual tickets</div>
-        <div class="text-center"> <a class="btn btn-default text-uppercase margin-top-30">Register Now </a>
+      <div class="col-md-3 margin-top-15 margin-bottom-15">
+        <div class="card-grid number-card">
+          <img src="fete-sponsor-queen-hearts.png">
+          <div class="back bg-white shadow-low padding-15 flex-center">
+			  <div>$5,000<br />Enjoy a table for eight, ten tickets to a 2017 DCL signature event, brand visibility for your organization, and the opportunity for your guests to dedicate a fable for DCL’s circulating collection.</div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="col-md-3 margin-top-15 margin-bottom-15">
+        <div class="card-grid number-card">
+          <img src="fete-sponsor-mad-hatter.png">
+          <div class="back bg-white shadow-low padding-15 flex-center">
+            <div>$2,500<br />Enjoy a table for eight, ten tickets to a 2017 DCL signature event, brand visibility for your organization.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 margin-top-15 margin-bottom-15">
+        <div class="card-grid number-card">
+          <img src="fete-sponsor-tweedle-dee.png">
+          <div class="back bg-white shadow-low padding-15 flex-center">
+            <div>$1,250<br />Enjoy a table for eight and a sponsor listing on our program and presentation screens for the evening.</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="text-center"> <a class="btn btn-primary text-uppercase margin-top-80 margin-bottom-30" href="https://form.jotform.us/70655453285158">Register Now</a>
+	  </div>
+	  
   </div>
+</div>
+	 	   
+  <div class="row bg-light-teal padding-top-30 padding-bottom-30">
+    <div class="container"> 
+       <!--<img class="img-circle img-responsive center-block" src="master-builder.png">-->
+        <h1 class="white roboto text-center margin-bottom-30">Individual Tickets</h1>
+        <div class="white text-center">Description of individual tickets</div>
+        <div class="text-center"> <a class="btn btn-primary text-uppercase margin-top-30">Register Now </a>
+        </div>
+    </div>
+  </div>       	   	   
   	   
   <div class="row bg-gray-5 padding-top-15 padding-bottom-80">
     <div class="container">
@@ -265,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </ul>
             </div>
           </div>
-        </div>
+        </div> 
  
  		<div class="row padding-top-30 padding-bottom-30">
  			<div class="container">
@@ -330,7 +420,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" --> 
+<script>
+	  $(".card-grid").flip();
+		</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js" integrity="sha256-HAaPZfOf77+Qt1BGcxucDhuS/tJVxuZA+uX3tbcnSAk=" crossorigin="anonymous"></script>
+<!-- InstanceEndEditable --> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
