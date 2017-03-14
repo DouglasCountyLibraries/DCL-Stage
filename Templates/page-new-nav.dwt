@@ -103,15 +103,13 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	top: 0;
 	z-index: 250000;
 }
-.mobile-nav-close:hover {
-	background: #006066;
-	color: #fff;
-}
 .mobile-nav-close .fa-times {
 	padding: 10px;
+}
+.close.mobile-nav-close {
 	color: #006066;
 }
-.mobile-nav-close .fa-times:hover {
+.mobile-nav-close:hover {
 	background: #006066;
 	color: #fff;
 }
