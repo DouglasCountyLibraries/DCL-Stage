@@ -115,20 +115,17 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	background: #006066;
 	color: #fff;
 }
-.mobile-search-icon, .mobile-search-icon:hover {
+.mobile-search-icon > a:before {
+	font-family: FontAwesome;
+	content: "\f00d";
 	color: #333;
 	float: right;
-	margin: 20px 20px 0 0;
+	margin: 15px 20px 0 0;
 	font-size: 24px;
 	cursor: pointer;
 }
-	.panel-title > a:before {
-    font-family: FontAwesome;
-    content:"\f07c";
-    padding-right: 5px;
-}
-.panel-title > a.collapsed:before {
-    content:"\f07b";
+.mobile-search-icon > a.collapsed:before {
+	content: "\f002";
 }
 
 @media (max-width: 1200px) {
@@ -275,21 +272,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- start mobile navbar -->
 
 <nav class="dcl-mobile-navbar navbar navbar-default">
-  <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a><a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> 
-   
-   
-   
-   
-   
-   
-   <span class="panel-title">
-   <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a>
-	  </span>
-   
-  
-   
-   
-   
+  <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a><a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span>
     <div id="mobile-search" class="row collapse padding-bottom-30">
       <form id="searchFormTwo" class="search dcl-search" action="https://dcl.bibliocommons.com/search">
         <div class="input-group">
