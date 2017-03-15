@@ -127,6 +127,15 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	content: "\f002";
 }
 
+@media (max-width: 768px) {
+.btn.btn-primary.btn-flat {
+	float: right;
+}
+.bibliocommons_embed_block .dropdown-menu {
+	margin-top: 38px!important;
+}
+}
+
 @media (max-width: 1200px) {
 .dcl-navbar, .dcl-logo-search {
 	display: none !important;
@@ -153,7 +162,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="cp_header_biblio_bar">
   <div class="container">
     <div class="row">
-      <div data-js="bc_my_account_nav" class="col-xs-12">
+      <div class="biblio_bar_my_account navbar-right">
+        <div class="bc-widget bc-my-account-nav"></div>
+      </div>
+    </div>
+    
+    <!--<div data-js="bc_my_account_nav" class="col-xs-12">
         <div id="step4" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
           <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
             <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a id="step5" testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
@@ -176,8 +190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/account/personal_information">My Settings</a> </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </div>--> 
   </div>
 </div>
 
