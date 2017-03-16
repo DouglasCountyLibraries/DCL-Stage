@@ -4,18 +4,40 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="http://www.dcl.org"/>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MV5DM73');</script>
-<!-- End Google Tag Manager -->
+<link rel="canonical" href="https://www.dcl.org"/>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Library",
+	"address": {
+    	"@type": "PostalAddress",
+    	"addressLocality": "Castle Rock",
+    	"addressRegion": "CO",
+    	"postalCode": "80104",
+    	"streetAddress": "100 S. Wilcox Street"
+  },
+  	"telephone": "(303) 791-7323",
+    "url": "https://www.dcl.org/",
+    "name": "Douglas County Libraries",
+	"image": "https://www.dcl.org/locations/castle-rock.jpg",
+	"description": "Douglas County Libraries is a passionate advocate for literacy and lifelong learning.",
+    "logo": "https://www.dcl.org/dcl-logo.png",
+	"sameAs":
+		["http:\/\/dcl.bibliocommons.com",
+		"http:\/\/www.blogs.douglascountylibraries.org",
+		"http:\/\/answers.douglascountylibraries.org/",
+		"http://www.douglascountylibraries.org/",
+		"http:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
+		"https:\/\/www.instagram.com\/dclcolorado",
+		"https:\/\/www.youtube.com\/user\/dclwebteam",
+		"https:\/\/pinterest.com\/dougcolibraries",
+		"https:\/\/twitter.com\/DCLcolorado"]
+  }
+</script>
 <!-- TemplateBeginEditable name="title" -->
 <title>Page Title | Douglas County Libraries</title>
 <!-- TemplateEndEditable -->
-<meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning">
+<meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning.">
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="../apple-touch-icon-60x60.png">
@@ -45,12 +67,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV5DM73');</script>
+<!-- End Google Tag Manager -->
+<! -- Crazy Egg -->
 <script type="text/javascript">
 setTimeout(function(){var a=document.createElement("script");
 var b=document.getElementsByTagName("script")[0];
 a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0057/0811.js?"+Math.floor(new Date().getTime()/3600000);
 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
+<!-- End Crazy Egg -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 <style>
@@ -93,7 +124,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	padding-bottom: 120px;
 }
 .mobile-nav-close {
-	background: rgba(0, 0, 0, 0) linear-gradient(#fff, #ebebeb) repeat scroll 0 0;
 	border-radius: 0 0 5px 5px;
 	box-shadow: 0 1px 4px #666666;
 	cursor: pointer;
