@@ -74,7 +74,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MV5DM73');</script>
 <!-- End Google Tag Manager -->
-<! -- Crazy Egg -->
+<!-- Crazy Egg -->
 <script type="text/javascript">
 setTimeout(function(){var a=document.createElement("script");
 var b=document.getElementsByTagName("script")[0];
@@ -187,8 +187,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) --> 
 
-<!-- begin bc login bar -->
-
+<!-- BC Log In Bar -->
 <div class="cp_header_biblio_bar">
   <div class="container">
     <div class="row">
@@ -196,38 +195,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <div class="bc-widget bc-my-account-nav"></div>
       </div>
     </div>
-    
-    <!--<div data-js="bc_my_account_nav" class="col-xs-12">
-        <div id="step4" class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
-          <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
-            <li data-js="biblionav_my_account_user_info" class="info" role="presentation"> <a id="step5" testid="biblionav_login" role="button" data-js="header_login_button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
-            <li data-js="divider_logged_out" class="divider" role="presentation"></li>
-            <li class="divider" role="presentation"></li>
-            <li id="step6" role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Borrowing</li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/checkedout">Checked Out</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/holds">On Hold</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/fines">Fees</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li id="step8" role="presentation" class="dropdown-header">My Collections</li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/for_later">For Later Shelf</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/completed">Completed Shelf</a> </li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="indented" href="https://dcl.bibliocommons.com/lists/show/mine">Lists</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li id="step7" role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/user_profile/me">My Profile</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a tabindex="-1" role="menuitem" class="" href="https://dcl.bibliocommons.com/account/personal_information">My Settings</a> </li>
-          </ul>
-        </div>
-      </div>--> 
+
   </div>
 </div>
-
-<!-- end bc login bar --> 
-
-<!-- begin logo and search -->
-
+<!-- End BC Log In Bar --> 
+<!-- Desktop Logo and Search -->
 <div class="dcl-logo-search client_and_search">
   <div class="container ">
     <div class="row no-gutter">
@@ -250,11 +222,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
   </div>
 </div>
-
-<!-- end logo and search --> 
-
-<!-- begin desktop navbar -->
-
+<!-- End Desktop Logo and Search --> 
+<!-- Desktop Navbar -->
 <nav class="dcl-navbar navbar navbar-default">
   <div class="container">
     <ul class="nav navbar-nav">
@@ -308,11 +277,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </ul>
   </div>
 </nav>
-
-<!-- end desktop navbar --> 
-
-<!-- start mobile navbar -->
-
+<!-- End Desktop Navbar --> 
+<!-- Mobile Navbar, Logo and Search -->
 <nav class="dcl-mobile-navbar navbar navbar-default">
   <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a><a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span>
     <div id="mobile-search" class="row collapse bg-gray-10 padding-bottom-15">
@@ -327,8 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </form>
     </div>
   </div>
-  
-  <!-- Modal -->
+  <!-- Nav Modal -->
   <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="dcl-mobile-nav modal-dialog">
       <div class="dcl-mobile-nav modal-content">
@@ -390,8 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
   </div>
 </nav>
-
-<!-- end mobile navbar -->
+<!-- End Mobile Navbar -->
 
 <div class="container-fluid">
   <div class="row alert-warning">
