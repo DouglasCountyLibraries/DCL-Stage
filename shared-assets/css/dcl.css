@@ -1318,6 +1318,9 @@ a .icon-circle-white:hover {
 .bg-light-wheat {
 	background-color: #f9d782;
 }
+.bg-almond {
+	background-color: #F4E1B8;
+}
 .bg-moss {
 	background-color: #90ad63;
 }
@@ -1339,9 +1342,6 @@ a .icon-circle-white:hover {
 .bg-light-teal {
 	background-color: #669999;
 }
-.bg-spa {
-	background-color: #8cb5b4;
-}
 .bg-lavender {
 	background-color: #65587b;
 }
@@ -1350,12 +1350,6 @@ a .icon-circle-white:hover {
 }
 .bg-dead-lavender {
 	background-color: #7f788e;
-}
-.bg-black {
-	background-color: #000;
-}
-.background-ddd {
-	background-color: #ddd;
 }
 .bg-primary {
 	background-color: #C0E1E5;
@@ -1431,6 +1425,9 @@ a .icon-circle-white:hover {
 }
 .bg-gray-90 {
 	background: #4d4c4b;
+}
+.bg-black {
+	background-color: #000;
 }
 /* ====== font icons ====== */
 .bootstrap .glyphicon, .font-awesome .fa {
