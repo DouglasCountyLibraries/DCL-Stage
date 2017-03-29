@@ -177,24 +177,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <nav class="dcl-mobile-navbar navbar navbar-default">
   <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a>
   
-  <!--<a type="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>-->
+  <a type="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>
   
-   <a type="button" class="margin-5 btn text-uppercase btn-primary" data-toggle="modal" data-target="#mediamodal">Contact a Media Team Member</a> 
-    
-      <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
-  <div id="mobile-search" class="row collapse bg-gray-5">
-    <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
-      <div class="input-group">
-        <input type="hidden" value="smart" name="t" id="search_param_two">
-        <input type="text" placeholder="Find Books, Movies, Music & More &raquo;" name="q" class="form-control">
-        <span class="input-group-btn">
-        <button type="submit" value="search" class="btn btn-search"><i class="fa fa-search"></i></button>
-        </span> </div>
-      <div class="text-right"><span class="small margin-right-80"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
-    </form>
-  </div>
   
-  <!-- Nav Modal -->
+    <!-- Nav Modal -->
   <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="dcl-mobile-nav modal-dialog">
       <div class="dcl-mobile-nav modal-content">
@@ -255,6 +241,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
+  
+   <!--<a type="button" class="margin-5 btn text-uppercase btn-primary" data-toggle="modal" data-target="#nav-modal">Contact a Media Team Member</a> -->
+    
+      <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
+  <div id="mobile-search" class="row collapse bg-gray-5">
+    <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
+      <div class="input-group">
+        <input type="hidden" value="smart" name="t" id="search_param_two">
+        <input type="text" placeholder="Find Books, Movies, Music & More &raquo;" name="q" class="form-control">
+        <span class="input-group-btn">
+        <button type="submit" value="search" class="btn btn-search"><i class="fa fa-search"></i></button>
+        </span> </div>
+      <div class="text-right"><span class="small margin-right-80"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+    </form>
+  </div>
+  
+
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
