@@ -178,7 +178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a>
   
   <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>
-     <!--<a type="button" class="margin-5 btn text-uppercase btn-primary" data-toggle="modal" data-target="#nav-modal">Contact a Media Team Member</a> -->
+ 
   
     <!-- Nav Modal -->
   <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -244,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   
 
     
-      <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
+      <span class="mobile-search-icon"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
   <div id="mobile-search" class="row collapse bg-gray-5">
     <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
       <div class="input-group">
