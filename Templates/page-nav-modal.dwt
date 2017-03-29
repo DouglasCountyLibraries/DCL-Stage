@@ -64,35 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
-<div class="cp_header_biblio_bar">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<i class="caret margin-left-15 margin-right-15"></i></a>
-          <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
-            <li class="info" role="presentation"> <a role="button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a role="menuitem" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Borrowing</li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/checkedout">Checked Out</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/holds">On Hold</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/fines">Fees</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Collections</li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/for_later">For Later Shelf</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/completed">Completed Shelf</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/lists/show/mine">Lists</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a role="menuitem" href="https://dcl.bibliocommons.com/user_profile/me">My Profile</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a role="menuitem" href="https://dcl.bibliocommons.com/account/personal_information">My Settings</a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- End BC Log In Bar --> 
 <!-- Desktop Logo and Search -->
 <div class="dcl-logo-search client_and_search">
