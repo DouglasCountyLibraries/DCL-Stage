@@ -175,76 +175,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- End Desktop Navbar --> 
 <!-- Mobile Navbar, Logo and Search -->
 <nav class="dcl-mobile-navbar navbar navbar-default">
-  <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a>
-  
-  <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>
- 
-  
+  <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a> <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> 
+    
     <!-- Nav Modal -->
-  <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="dcl-mobile-nav modal-dialog">
-      <div class="dcl-mobile-nav modal-content">
-        <div class="modal-header">
-          <button type="button" class="close mobile-nav-close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-        </div>
-        <div class="modal-body">
-          <ul class="nav mobile-nav">
-            <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#explore">Explore <b class="caret"></b> </a>
-              <ul id="explore" class="nav mobile-nav-list collapse">
-                <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
-                <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
-                <li><a href="https://dcl.bibliocommons.com/explore/awards">Awards</a></li>
-                <li><a href="https://dcl.bibliocommons.com/explore/bestsellers">Bestsellers</a></li>
-                <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
-              </ul>
-            </li>
-            <li class="locations-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#locations">Locations <b class="caret"></b> </a>
-              <ul id="locations" class="nav mobile-nav-list collapse">
-                <li><a href="../locations">All Locations</a></li>
-                <li><a href="../castle-pines">Castle Pines</a></li>
-                <li><a href="../castle-rock">Castle Rock</a></li>
-                <li><a href="../highlands-ranch">Highlands Ranch</a></li>
-                <li><a href="../lone-tree">Lone Tree</a></li>
-                <li><a href="../louviers">Louviers</a></li>
-                <li><a href="../parker">Parker</a></li>
-                <li><a href="../roxborough">Roxborough</a></li>
-                <li><a href="../history">Douglas County History</a></li>
-              </ul>
-            </li>
-            <li class="using-the-library-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Using the Library <b class="caret"></b> </a>
-              <ul id="using-the-library" class="nav mobile-nav-list collapse">
-                <li><a href="../library-basics">Library Basics</a></li>
-                <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
-                <li><a href="../book-clubs">Book Clubs</a></li>
-                <li><a href="../staff-recommendations">Staff Recommendations</a></li>
-                <li><a href="../bizinfo">Business Resources</a></li>
-                <li><a href="../research/online-learning">Online Learning</a></li>
-                <li><a href="../adult-education">Adult Education & Test Prep</a></li>
-              </ul>
-            </li>
-            <li class="kids-teens-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <b class="caret"></b> </a>
-              <ul id="kids-teens" class="nav mobile-nav-list collapse">
-                <li><a href="../storytime">Storytime</a></li>
-                <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
-                <li><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
-                <li><a href="../parents-teachers">Parents & Teachers</a></li>
-                <li><a href="../research/students">Homework Help</a></li>
-                <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
-              </ul>
-            </li>
-            <li class="digital-media-active mobile-nav-heading"><a href="../digital-media">Digital Media</a> </li>
-            <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space">Reserve a Space</a> </li>
-            <li class="events-active mobile-nav-heading"><a href="../library-events">Library Events</a> </li>
-            <li class="research-active mobile-nav-heading"><a href="../research">Research</a> </li>
-          </ul>
+    <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="dcl-mobile-nav modal-dialog">
+        <div class="dcl-mobile-nav modal-content">
+          <div class="modal-header">
+            <button type="button" class="close mobile-nav-close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav mobile-nav">
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#explore">Explore <b class="caret"></b> </a>
+                <ul id="explore" class="nav mobile-nav-list collapse">
+                  <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/explore/awards">Awards</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/explore/bestsellers">Bestsellers</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
+                </ul>
+              </li>
+              <li class="locations-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#locations">Locations <b class="caret"></b> </a>
+                <ul id="locations" class="nav mobile-nav-list collapse">
+                  <li><a href="../locations">All Locations</a></li>
+                  <li><a href="../castle-pines">Castle Pines</a></li>
+                  <li><a href="../castle-rock">Castle Rock</a></li>
+                  <li><a href="../highlands-ranch">Highlands Ranch</a></li>
+                  <li><a href="../lone-tree">Lone Tree</a></li>
+                  <li><a href="../louviers">Louviers</a></li>
+                  <li><a href="../parker">Parker</a></li>
+                  <li><a href="../roxborough">Roxborough</a></li>
+                  <li><a href="../history">Douglas County History</a></li>
+                </ul>
+              </li>
+              <li class="using-the-library-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Using the Library <b class="caret"></b> </a>
+                <ul id="using-the-library" class="nav mobile-nav-list collapse">
+                  <li><a href="../library-basics">Library Basics</a></li>
+                  <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
+                  <li><a href="../book-clubs">Book Clubs</a></li>
+                  <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+                  <li><a href="../bizinfo">Business Resources</a></li>
+                  <li><a href="../research/online-learning">Online Learning</a></li>
+                  <li><a href="../adult-education">Adult Education & Test Prep</a></li>
+                </ul>
+              </li>
+              <li class="kids-teens-active mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <b class="caret"></b> </a>
+                <ul id="kids-teens" class="nav mobile-nav-list collapse">
+                  <li><a href="../storytime">Storytime</a></li>
+                  <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
+                  <li><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
+                  <li><a href="../parents-teachers">Parents & Teachers</a></li>
+                  <li><a href="../research/students">Homework Help</a></li>
+                  <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
+                </ul>
+              </li>
+              <li class="digital-media-active mobile-nav-heading"><a href="../digital-media">Digital Media</a> </li>
+              <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space">Reserve a Space</a> </li>
+              <li class="events-active mobile-nav-heading"><a href="../library-events">Library Events</a> </li>
+              <li class="research-active mobile-nav-heading"><a href="../research">Research</a> </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
-
-    
-      <span class="mobile-search-icon"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
+    <span class="mobile-search-icon"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
   <div id="mobile-search" class="row collapse bg-gray-5">
     <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
       <div class="input-group">
@@ -256,8 +250,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="text-right"><span class="small margin-right-80"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
     </form>
   </div>
-  
-
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
