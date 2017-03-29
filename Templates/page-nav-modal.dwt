@@ -71,7 +71,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- Desktop Navbar -->
 <!-- End Desktop Navbar --> 
 <!-- Mobile Navbar, Logo and Search -->
-<nav class="dcl-mobile-navbar">
+
+<!-- End Mobile Navbar -->
+<div class="container-fluid">
+  <div class="row alert-warning">
+    <div id="global-alert" class="container-md" style="display:none;"></div>
+  </div>
+  <!-- TemplateBeginEditable name="Content" -->
+  <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100"><nav class="dcl-mobile-navbar">
   <div class="container"> <a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
   <div id="mobile-search" class="row collapse bg-gray-5">
     <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
@@ -146,14 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-</nav>
-<!-- End Mobile Navbar -->
-<div class="container-fluid">
-  <div class="row alert-warning">
-    <div id="global-alert" class="container-md" style="display:none;"></div>
-  </div>
-  <!-- TemplateBeginEditable name="Content" -->
-  <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">Content goes here</div>
+</nav></div>
   <!-- TemplateEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
