@@ -69,63 +69,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- Desktop Logo and Search -->
 <!-- End Desktop Logo and Search --> 
 <!-- Desktop Navbar -->
-<nav class="dcl-navbar navbar navbar-default">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <b class="caret"></b> </a>
-        <ul class="dropdown-menu">
-          <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/awards">Awards</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/bestsellers">Bestsellers</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
-        </ul>
-      </li>
-      <li class="dropdown locations-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="../locations">All Locations</a></li>
-          <li><a href="../castle-pines">Castle Pines</a></li>
-          <li><a href="../castle-rock">Castle Rock</a></li>
-          <li><a href="../highlands-ranch">Highlands Ranch</a></li>
-          <li><a href="../lone-tree">Lone Tree</a></li>
-          <li><a href="../louviers">Louviers</a></li>
-          <li><a href="../parker">Parker</a></li>
-          <li><a href="../roxborough">Roxborough</a></li>
-          <li><a href="../history">Douglas County History</a></li>
-        </ul>
-      </li>
-      <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <b class="caret"></b> </a>
-        <ul class="dropdown-menu">
-          <li><a href="../library-basics">Library Basics</a></li>
-          <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
-          <li><a href="../book-clubs">Book Clubs</a></li>
-          <li><a href="../staff-recommendations">Staff Recommendations</a></li>
-          <li><a href="../bizinfo">Business Resources</a></li>
-          <li><a href="../research/online-learning">Online Learning</a></li>
-          <li><a href="../adult-education">Adult Education & Test Prep</a></li>
-        </ul>
-      </li>
-      <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="../storytime">Storytime</a></li>
-          <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
-          <li><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
-          <li><a href="../parents-teachers">Parents & Teachers</a></li>
-          <li><a href="../research/students">Homework Help</a></li>
-          <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
-        </ul>
-      </li>
-      <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
-      <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
-      <li class="events-active"><a href="../library-events">Library Events</a> </li>
-      <li class="research-active"><a href="../research">Research</a> </li>
-    </ul>
-  </div>
-</nav>
 <!-- End Desktop Navbar --> 
 <!-- Mobile Navbar, Logo and Search -->
 <nav class="dcl-mobile-navbar navbar navbar-default">
-  <div class="container"> <a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
+  <div class="container"> <a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>  </div>
   <div id="mobile-search" class="row collapse bg-gray-5">
     <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
       <div class="input-group">
