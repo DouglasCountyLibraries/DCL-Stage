@@ -67,28 +67,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 <!-- End BC Log In Bar --> 
 <!-- Desktop Logo and Search -->
-<div class="dcl-logo-search client_and_search">
-  <div class="container ">
-    <div class="row no-gutter">
-      <div class="col-sm-5">
-        <div class="cp_header_client_area">
-          <div class="logo"> <a href="/"><img class="img-responsive" src="../dcl-logo.png?9045" alt="Douglas County Libraries"></a> </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-sm-push-1">
-        <form id="searchForm" class="search dcl-search" action="https://dcl.bibliocommons.com/search">
-          <div class="input-group">
-            <input type="hidden" value="smart" name="t" id="search_param">
-            <input type="text" placeholder="Find Books, Movies, Music & More &raquo;" name="q" class="form-control">
-            <span class="input-group-btn">
-            <button type="submit" value="search" class="btn btn-search"><i class="fa fa-search"></i></button>
-            </span> </div>
-          <div class="text-right"><span class="small margin-right-80"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- End Desktop Logo and Search --> 
 <!-- Desktop Navbar -->
 <nav class="dcl-navbar navbar navbar-default">
