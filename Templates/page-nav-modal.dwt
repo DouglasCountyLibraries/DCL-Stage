@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <!-- TemplateBeginEditable name="Content" -->
   <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100"><nav class="dcl-mobile-navbar">
-  <div class="container"> <a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
+  <div class="container"> <a type="button" class="margin-5 btn text-uppercase btn-primary" data-toggle="modal" data-target="#nav-modal">Nav Modal</a>  <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
   <div id="mobile-search" class="row collapse bg-gray-5">
     <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
       <div class="input-group">
