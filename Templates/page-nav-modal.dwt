@@ -178,7 +178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a>
   
   <!--<a type="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>-->
-    <a class="" data-toggle="modal" data-target="#nav-modal">nav modal</a>
+    <a type="button" class="text-uppercase" data-toggle="modal" data-target="#nav-modal">nav modal</a>
   
     <!-- Nav Modal -->
   <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
