@@ -177,8 +177,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <nav class="dcl-mobile-navbar navbar navbar-default">
   <div class="container"> <a href="/"><img src="../dcl-responsive-logo.png"></a>
   
-  <!--<a type="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>-->
-    <a type="button" class="text-uppercase" data-toggle="modal" data-target="#nav-modal">nav modal</a>
+  <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a>
+     <!--<a type="button" class="margin-5 btn text-uppercase btn-primary" data-toggle="modal" data-target="#nav-modal">Contact a Media Team Member</a> -->
   
     <!-- Nav Modal -->
   <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
