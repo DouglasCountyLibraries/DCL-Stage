@@ -71,7 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- Desktop Navbar -->
 <!-- End Desktop Navbar --> 
 <!-- Mobile Navbar, Logo and Search -->
-<nav class="dcl-mobile-navbar navbar navbar-default" style="z-index: 1000">
+<nav class="dcl-mobile-navbar">
   <div class="container"> <a data-toggle="modal" data-target="#nav-modal"><i class="margin-left-15 fa fa-bars"></i></a> <span class="mobile-search-icon"> <a class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
   <div id="mobile-search" class="row collapse bg-gray-5">
     <form id="searchFormTwo" class="search dcl-search margin-md-100" action="https://dcl.bibliocommons.com/search">
