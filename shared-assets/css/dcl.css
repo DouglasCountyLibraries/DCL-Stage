@@ -204,6 +204,8 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .navbar-default .navbar-nav > li > a {
 	color: #000;
+	padding-left: 14px;
+	padding-right: 14px;
 }
 .navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav a:focus {
 	background-color: #ffff;
@@ -265,6 +267,9 @@ blockquote footer, blockquote small, blockquote .small {
 }
 /* ====== navbar, search and login ====== */
 
+.navbar-nav {
+	font-size: 15px;
+}
 .dcl-search {
 	margin: 25px 10px 0;
 }
@@ -353,8 +358,8 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .dcl-mobile-navbar .fa-bars {
 	color: #333;
-	font-size: 26px;
-	margin: 8px 0 0 30px;
+	font-size: 30px;
+	margin: 7px 0 0 30px;
 	vertical-align: middle;
 }
 .dcl-mobile-navbar .fa-bars:hover {
@@ -2041,6 +2046,10 @@ button.s-srch-facet-btn {
 }
 /* styles for the blogs */
 
+
+#masthead #site-navigation {
+	display: none;
+}
 .arve-wrapper {
 	margin-bottom: 15px;
 }
@@ -2240,6 +2249,9 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 .margin-top-100-sm {
 	margin-top: 0;
 }
+.no-margin-top-sm {
+	margin-top: 0px;
+}
 .insert-break {
 	display: none; /* <br class="insert-break" /> */
 }
@@ -2339,14 +2351,16 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 
 /* ====== navbar and search media queries ====== */
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
 .dcl-navbar, .dcl-logo-search {
 	display: none !important;
 }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 992px) {
 .dcl-mobile-navbar {
 	display: none !important;
 }
 }
+
+
