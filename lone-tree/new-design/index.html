@@ -52,11 +52,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .locations-active {
 	background-color: #f5f5f5;
 }
+
 .location {
 	font-size: 100px;
 	font-weight: 400;
 	opacity: .75;
-	padding-top: 10vh;
+	padding-top: 5vh;
 }
 .icon-circle {
 	border: 3px solid #fff;
@@ -314,8 +315,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	
 	$(function(){
 $(".slideshow").vegas({
+	preload: true,
+	timer: false,
+	shuffle: true,
 	animation: 'random',
-	overlay: '10.png',
+	color: '#000000',
+	animationDuration: 50000,
+	overlay: '12.png',
     slides: [
        { src: "../assets/images/lone-tree-one.jpg" },
         { src: "../assets/images/lone-tree-two.jpg" },
@@ -328,13 +334,13 @@ $(".slideshow").vegas({
 	
 	</script>
   <div class="row slideshow">
-    <div class="row">
+ 
       <div class="container text-center">
         <h1 class="location white text-uppercase no-margin-bottom">Lone Tree</h1>
         <div class="white small text-uppercase margin-bottom-10">Manager: Susan Byrne <a href="tel:+13037917323" class="white margin-left-30">(303) 791-7323</a></div>
-        <h4 style="padding-bottom:20vh;" class="animate-fade-in white margin-lg-100">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
+        <h4 style="padding-bottom:9vh;" class="animate-fade-in white margin-lg-100">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
       </div>
-    </div>
+   
   </div>
   <div class="row no-gutter bg-salmon sub-nav">
     <div class="col-sm-6 col-md-4 col-lg-2">
