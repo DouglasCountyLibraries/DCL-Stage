@@ -315,18 +315,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	
 	$(function(){
 $(".slideshow").vegas({
-	preload: true,
 	timer: false,
+	autoplay: true,
+	delay: 20000,
 	shuffle: true,
+transition: 'fade',
+	firstTransitionDuration: 1,
+	transitionDuration: 4000,
 	animation: 'random',
-	color: '#000000',
-	animationDuration: 50000,
+	color: '#000',
 	overlay: '12.png',
     slides: [
-       { src: "../assets/images/lone-tree-one.jpg" },
-        { src: "../assets/images/lone-tree-two.jpg" },
-        { src: "../assets/images/lone-tree-three.jpg" },
-        { src: "../assets/images/lone-tree-four.jpg" }
+       { src: "../assets/images/lone-tree-one-dark.jpg" },
+        { src: "../assets/images/lone-tree-two-dark.jpg" },
+        { src: "../assets/images/lone-tree-three-dark.jpg" },
+        { src: "../assets/images/lone-tree-four-dark.jpg" }
     ]
 });
 });
