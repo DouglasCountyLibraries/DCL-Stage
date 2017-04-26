@@ -62,12 +62,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .locations-active {
 	background-color: #f5f5f5;
 }
+.vegas-wrapper {
+	background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.6));
+}
 .location-caption {
 	padding: 20px 15px 60px;
 }
 .location-caption h1 {
 	font-size: 100px;
-	opacity: .9;
 }
 .icon-circle {
 	border: 3px solid #fff;
@@ -109,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  100% {
  opacity: 1;
 }
-}	
+}
 
 @media (min-width: 1200px) {
 .sub-nav .no-margin a {
@@ -333,16 +335,16 @@ $(".slideshow").vegas({
 	loop: true,
 	delay: 20000,
 	shuffle: true,
-transition: 'fade',
+	transition: 'fade',
 	firstTransitionDuration: 1,
 	transitionDuration: 4000,
 	animation: 'random',
 	color: '#000',
     slides: [
-        { src: "../assets/images/lone-tree-one-dark.jpg" },
-        { src: "../assets/images/lone-tree-two-dark.jpg" },
-        { src: "../assets/images/lone-tree-three-dark.jpg" },
-        { src: "../assets/images/lone-tree-four-dark.jpg" }
+        { src: "../assets/images/lone-tree-one.jpg" },
+        { src: "../assets/images/lone-tree-two.jpg" },
+        { src: "../assets/images/lone-tree-three.jpg" },
+        { src: "../assets/images/lone-tree-four.jpg" }
     ]
 });
 });
