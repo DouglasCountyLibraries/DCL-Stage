@@ -56,7 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .location {
 	font-size: 100px;
 	font-weight: 400;
-	opacity: .75;
+	opacity: .7;
 	padding-top: 5vh;
 }
 .icon-circle {
@@ -83,9 +83,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .show .fa {
 	margin-right: 10px;
 }
-.animate-fade-in {
-	animation: fade-in 1s forwards;
-	animation-delay: 1s;
+.animate-fade-in-description {
+	animation: fade-in 4s forwards;
+	animation-delay: .5s;
+	opacity: 0;
+}
+	.animate-fade-in-manager {
+	animation: fade-in 4s forwards;
+	animation-delay: 4s;
 	opacity: 0;
 }
  @keyframes fade-in {
@@ -317,6 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 $(".slideshow").vegas({
 	timer: false,
 	autoplay: true,
+	loop: true,
 	delay: 20000,
 	shuffle: true,
 transition: 'fade',
@@ -324,12 +330,11 @@ transition: 'fade',
 	transitionDuration: 4000,
 	animation: 'random',
 	color: '#000',
-	overlay: '12.png',
     slides: [
-       { src: "../assets/images/lone-tree-one-dark.jpg" },
-        { src: "../assets/images/lone-tree-two-dark.jpg" },
-        { src: "../assets/images/lone-tree-three-dark.jpg" },
-        { src: "../assets/images/lone-tree-four-dark.jpg" }
+        { src: "lone-tree-one.jpg" },
+        { src: "lone-tree-two.jpg" },
+        { src: "lone-tree-three.jpg" },
+        { src: "lone-tree-four.jpg" }
     ]
 });
 });
@@ -340,8 +345,8 @@ transition: 'fade',
  
       <div class="container text-center">
         <h1 class="location white text-uppercase no-margin-bottom">Lone Tree</h1>
-        <div class="white small text-uppercase margin-bottom-10">Manager: Susan Byrne <a href="tel:+13037917323" class="white margin-left-30">(303) 791-7323</a></div>
-        <h4 style="padding-bottom:9vh;" class="animate-fade-in white margin-lg-100">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
+        <div class="animate-fade-in-manager white small text-uppercase margin-bottom-10">Manager: Susan Byrne <a href="tel:+13037917323" class="white margin-left-30">(303) 791-7323</a></div>
+        <h4 style="padding-bottom:9vh;" class="animate-fade-in-description white margin-lg-100">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
       </div>
    
   </div>
