@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,9 +46,100 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+<link type="text/css" rel="stylesheet" href="../shared-assets/css/vegas.css">
+<script src="../shared-assets/js/vegas.js"></script>
 <style>
 .locations-active {
 	background-color: #f5f5f5;
+}
+.location-caption {
+	padding: 20px 15px 60px;
+}
+.location-caption h1 {
+	font-size: 100px;
+}
+.icon-circle {
+	border: 3px solid #fff;
+	border-radius: 50%;
+}
+.icon-circle .fa {
+	color: #fff;
+}
+.sub-nav a:hover, .sub-nav a:focus {
+	background-color: #AA5440;
+	color: #ffffff;
+	text-decoration: none;
+}
+.sub-nav .no-margin a {
+	color: #fff;
+	line-height: 20px;
+	padding: 10px 40px;
+	text-align: left;
+}
+.sub-nav .no-margin a:hover {
+	color: #fff;
+}
+.show .fa {
+	margin-right: 10px;
+}
+.animate-fade-in-description {
+	animation: fade-in 4s forwards;
+	opacity: 0;
+}
+.animate-fade-in-manager {
+	animation: fade-in 4s forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+ @keyframes fade-in {
+ 0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+.vegas-container {
+	height: 650px!important
+}
+
+@media (min-width: 320px) {
+.vegas-container {
+	height: 620px!important;
+}
+}
+
+@media (min-width: 450px) {
+.vegas-container {
+	height: 540px!important;
+}
+}
+
+@media (min-width: 500px) {
+.vegas-container {
+	height: 490px!important;
+}
+}
+
+@media (min-width: 550px) {
+.vegas-container {
+	height: 375px!important;
+}
+}
+
+@media (min-width: 900px) {
+.vegas-container {
+	height: 350px!important;
+}
+}
+
+@media (min-width: 1200px) {
+.sub-nav .no-margin a {
+	color: #fff;
+	line-height: 20px;
+	padding: 20px 5px;
+	text-align: center;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -254,135 +346,110 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="row alert-warning">
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
-  <!-- InstanceBeginEditable name="Content" -->
-   <div class="row kb-slideshow-background">
-    <div class="kb-slideshow">
-      <div class="kb-slideshow-image" style="background-image: url('assets/images/lone-tree-one.jpg')"></div>
-      <div class="kb-slideshow-image" style="background-image: url('assets/images/lone-tree-two.jpg')"></div>
-      <div class="kb-slideshow-image" style="background-image: url('assets/images/lone-tree-three.jpg')"></div>
-      <div class="kb-slideshow-image" style="background-image: url('assets/images/lone-tree-four.jpg')"></div>
+  <!-- InstanceBeginEditable name="Content" --> 
+  <script>
+	$(function(){
+$(".slideshow").vegas({
+	timer: false,
+	autoplay: true,
+	loop: true,
+	delay: 20000,
+	shuffle: true,
+	transition: 'fade',
+	firstTransitionDuration: .1,
+	transitionDuration: 4000,
+	animation: 'random',
+	color: '#000',
+    slides: [
+        { src: "assets/images/lone-tree-one.jpg" },
+        { src: "assets/images/lone-tree-two.jpg" },
+        { src: "assets/images/lone-tree-three.jpg" },
+        { src: "assets/images/lone-tree-four.jpg" },
+		{ src: "assets/images/lone-tree-five.jpg" },
+		{ src: "assets/images/lone-tree-six.jpg" },
+    ]
+});
+});
+	</script>
+  <div class="row slideshow">
+    <div class="container location-caption text-center">
+      <h1 class="no-margin-bottom font-weight-400 white text-capitalize">Lone Tree</h1>
+      <div class="animate-fade-in-manager white font-weight-400 small text-uppercase margin-bottom-10">Manager: Susan Byrne <a href="tel:+13037917323" class="white margin-left-5">(303) 791-7323</a></div>
+      <h4 class="animate-fade-in-description white font-weight-400">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row no-gutter bg-salmon sub-nav">
+    <div class="col-sm-6 col-md-4 col-lg-2">
+      <h5 class="no-margin text-uppercase"><a class="show" href="../research/all-databases"><i class="fa fa-comment-o fa-flip-horizontal"></i> Storytime</a></h5>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-2">
+      <h5 class="no-margin text-uppercase"><a class="show" href="../research/students"><i class="fa fa-check-square-o"></i> Reserve a Space</a></h5>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-2">
+      <h5 class="no-margin text-uppercase"><a class="show" href="../research/business-finance"><i class="fa fa-calendar-o"></i> Lone Tree Events Calendar</a></h5>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-2">
+      <h5 class="no-margin text-uppercase"><a class="show" href="../research/lifestyle"><i class="fa fa-paint-brush"></i> Art on Display</a></h5>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-2">
+      <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fa fa-book"></i> Used Book Sales</a></h5>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-2">
+      <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fa fa-smile-o"></i> Optional Link</a></h5>
+    </div>
+  </div>
+  <div class="row padding-top-30 padding-bottom-30">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Lone Tree</h1>
-        <div class="text-uppercase margin-bottom-10">Manager: Susan Byrne <a href="tel:+13037917323" class="locuacious margin-left-30">(303) 791-7323</a></div>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fa fa-map-marker"></i></div>
+        <div itemscope itemtype="http://schema.org/PostalAddress">
+          <h1 class="roboto no-margin-top"> <a href="https://www.google.com/maps/place/Douglas+County+Libraries/@39.5335731,-104.883716,17z/data=!4m5!3m4!1s0x0:0xcc7e74127b5cf17b!8m2!3d39.5335688!4d-104.8815219" target="_blank"><span itemprop="streetAddress">10055&nbsp;Library&nbsp;Way</span>, <span itemprop="addressLocality">Lone&nbsp;Tree</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80124</span></a></h1>
         </div>
-        <h2 class="roboto no-margin-top vcard">
-          <div class="adr"><a href="https://www.google.com/maps/place/Douglas+County+Libraries/@39.5335731,-104.883716,17z/data=!4m5!3m4!1s0x0:0xcc7e74127b5cf17b!8m2!3d39.5335688!4d-104.8815219" target="_blank"><span class="street-address">10055 Library Way</span>, <span class="locality">Lone Tree</span>, <span class="region">CO</span> <span class="postal-code"> 80124</span></a></div>
-        </h2>
-      </div>
-      <div class="row margin-lg-200">
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Mon-Thu: 9AM-9PM</h5>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Fri-Sat: 9AM-5PM</h5>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Sun: 12-5PM</h5>
-        </div>
+        <h4 class="text-uppercase no-margin-top"><span class="margin-left-10 margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
+          <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
+          <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></h4>
       </div>
     </div>
   </div>
-  <div class="row bg-salmon text-center padding-top-15 padding-bottom-30">
-    <div class="container">
-      <div class="row padding-bottom-15">
-        <div class="col-sm-3 text-center"> 
-          
-          <!-- Button trigger modal -->
-          <h2 class="roboto white"><i class="margin-right-10 fa fa-comment-o fa-flip-horizontal"></i><a href="#" class="white text-underline" data-toggle="modal" data-target="#storytime-modal">Storytime</a></h2>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="storytime-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content padding-bottom-60">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="myModalLabel">Lone Tree Storytime</h2>
-              </div>
-              <div class="modal-body">
-                <ul class="list-unstyled">
-                  <li>
-                    <h5 class="text-uppercase">Monday-Friday</h5>
-                  </li>
-                  <li>9:30AM-Baby</li>
-                  <li>11AM-All Ages</li>
-                  <li>
-                    <h5 class="text-uppercase">Tuesday</h5>
-                  </li>
-                  <li>7PM-All Ages</li>
-                  <li>
-                    <h5 class="text-uppercase">Saturday</h5>
-                  </li>
-                  <li>10AM-All Ages</li>
-                </ul>
-              </div>
-              <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
+  <div id="events" class="row bg-lavender no-gutter">
+    <div class="col-md-4 bg-lavender text-center equal-height flex-center">
+      <div class="padding-top-30 padding-right-40 padding-bottom-60 padding-left-40">
+        <div class="featured icon-circle"><i class="fa fa-music"></i></div>
+        <h1 class="fff roboto">Cultural Arts Fair</h1>
+        <div class="fff">Explore the music, art and street food (for purchase) of diverse cultures.<br>
+          Saturday, April 22, 10AM-2PM. </div>
+        <div class="margin-top-15"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=113346" target="_blank" class="btn btn-default text-uppercase">Register Now</a></div>
+      </div>
+    </div>
+    <div class="col-md-4 bg-teal text-center equal-height flex-center">
+      <div class="padding-top-30 padding-right-40 padding-bottom-60 padding-left-40">
+        <div class="icon-circle"><i class="fa fa-ship"></i></div>
+        <h1 class="fff roboto">Ships of the Sea</h1>
+        <div class="fff">Set sail to learn about pirates, passages and ships through the ages, plus model shipbuilding.<br>
+          Saturday, April 29, 10AM; Sunday, April 30, 12PM. </div>
+        <div class="dropdown text-center"> <a data-toggle="dropdown" class="btn btn-primary text-uppercase margin-top-15 dropdown-toggle" aria-expanded="true">Register Now <span class="caret"></span></a>
+          <div class="dropdown-menu dropdown-menu-center">
+            <div style="border-bottom:1px solid #ccc;" class="padding-15">Choose a Date:</div>
+            <div class="padding-15 text-capitalize">
+              <ul class="list-unstyled">
+                <li><a target="blank" href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=121822">April 29</a></li>
+                <li><a target="_blank" href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=121823">April 30</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto white"><i class="margin-right-10 fa fa-check-square-o"></i><a href="../reserve-a-space" class="white text-underline">Reserve a Space</a></h2>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto white"><i class="margin-right-10 fa fa-paint-brush"></i><a href="../art#lone-tree" class="white text-underline">Art on Display</a></h2>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto white"><i class="margin-right-10 fa fa-book"></i><a href="../used-book-sales" class="white text-underline">Used Book Sales</a></h2>
-        </div>
       </div>
-      <div>
-        <h5 class="white margin-lg-200">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h5>
+    </div>
+    <div class="col-md-4 bg-lavender text-center equal-height flex-center">
+      <div class="padding-top-30 padding-right-40 padding-bottom-60 padding-left-40">
+        <div class="featured icon-circle"><i class="fa fa-car"></i></div>
+        <h1 class="fff roboto">Here's a Third Event</h1>
+        <div class="fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus.<br>
+          Saturday, April 22, 10AM-2PM. </div>
+        <div class="margin-top-15"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=113346" target="_blank" class="btn btn-default text-uppercase">Register Now</a></div>
       </div>
     </div>
   </div>
-  <div id="events" class="row text-center padding-bottom-40">
-    <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Happenings</h1>
-    <h2 class="roboto"><em style="margin-right:10px;" class="fa fa-calendar-o"></em> <a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=&kw=&et=18,2,22,16,20,15,3,24,25,7&lib=1002" target="_blank">Lone Tree Events Calendar</a></h2>
-  </div>
-<!--<div class="row no-gutter padding-bottom-40">
- <div class="col-md-12 text-center equal-height flex-center">
-  <div class="container text-center">
-		<div class="margin-bottom-30"><img class="img-responsive center-block" src="instrument-zoo.png" alt="Instrument Zoo"></div>
-        <h2 class="roboto margin-lg-100">Explore the music, art and street food (for purchase) of diverse cultures. Saturday, April 22, 10AM-2PM. </h2>
-        <div class="white margin-top-15 text-uppercase"></div>
-        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=113346" target="_blank" class="btn btn-primary text-uppercase margin-top-15">Register Now</a></div>
-   </div>
- </div>
-</div>-->
-<div class="row no-gutter"> 
-   <div class="col-md-6 bg-lavender text-center equal-height flex-center">
-      <div class="padding-30">
-        <div class="icon-circle-lavender"><i class="fa fa-ship"></i></div>
-        <h1 class="fff roboto">Ships of the Sea</h1>
-        <div class="fff margin-lg-100">Set sail to learn about pirates, passages and ships through the ages, plus model shipbuilding. Saturday, April 29, 10AM; Sunday, April 30, 12PM. </div>
-        
-        <div class="row">
-        <div class="col-md-6">
-        <div class="text-right-md margin-15"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=121822" target="_blank" class="btn btn-default text-uppercase">Register April 29</a></div>
-			</div>
-     	
-     	<div class="col-md-6">     	
-        <div class="text-left-md"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=121823" target="_blank" class="btn btn-default text-uppercase margin-15">Register April 30</a></div>  	
-		</div>
-      </div>
-    </div>
-  </div>  
-   
-    <div class="col-md-6 bg-teal text-center equal-height flex-center">
-      <div class="padding-30">
-      <div class="icon-circle-teal"><i class="fa fa-money"></i></div>
-      <h1 class="fff roboto">Second Chapter Book Sale</h1>
-		  <div class="fff margin-lg-100">Find spring bargains on great used books! Saturday, April 29, 10AM-2PM. NO REGISTRATION REQUIRED. </div>
-      <div class="margin-15"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=121819" target="_blank" class="btn btn-primary text-uppercase">View Calendar</a></div>
-    </div>
-    </div>
-    
-	<!-- InstanceEndEditable --> </div>
+  <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
     <div class="col-sm-6">
@@ -486,4 +553,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </script> 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
