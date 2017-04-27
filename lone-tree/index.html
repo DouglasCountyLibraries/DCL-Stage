@@ -65,19 +65,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .icon-circle .fa {
 	color: #fff;
 }
-.sub-nav a:hover, .sub-nav a:focus {
+.sub-nav-item {
+	background-color: #d36a50;
+	border-bottom: 1px solid #e79682;
+}
+.sub-nav-item:hover, .sub-nav-item:focus {
 	background-color: #AA5440;
 	color: #ffffff;
 	text-decoration: none;
 }
-.sub-nav .no-margin a {
+.sub-nav-item a, .sub-nav-item a:hover {
+	text-decoration: none;
 	color: #fff;
+	font-weight: 400;
+	letter-spacing: .2px;
 	line-height: 20px;
-	padding: 10px 40px;
-	text-align: left;
+	padding: 15px;
 }
-.sub-nav .no-margin a:hover {
-	color: #fff;
+.sub-nav-border {
+	border-right: 1px solid #e79682;
 }
 .show .fa {
 	margin-right: 10px;
@@ -378,23 +384,23 @@ $(".slideshow").vegas({
       <h4 class="animate-fade-in-description white font-weight-400">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
     </div>
   </div>
-  <div class="row no-gutter bg-salmon sub-nav">
-    <div class="col-sm-6 col-md-4 col-lg-2">
+  <div class="row no-gutter sub-nav">
+    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/all-databases"><i class="fa fa-comment-o fa-flip-horizontal"></i> Storytime</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2">
+    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/students"><i class="fa fa-check-square-o"></i> Reserve a Space</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2">
+    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/business-finance"><i class="fa fa-calendar-o"></i> Lone Tree Events Calendar</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2">
+    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/lifestyle"><i class="fa fa-paint-brush"></i> Art on Display</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2">
+    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fa fa-book"></i> Used Book Sales</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2">
+    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fa fa-smile-o"></i> Optional Link</a></h5>
     </div>
   </div>
