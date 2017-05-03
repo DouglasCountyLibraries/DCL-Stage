@@ -88,15 +88,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .show .fa {
 	margin-right: 10px;
 }
+	.animate-fade-in-description {
+	animation: fade-in 2s forwards;
+		animation-delay: .2s;
+	opacity: 0;
+}
+	.animate-fade-in-manager {
+	animation: fade-in 3s forwards;
+	animation-delay: 4s;
+	opacity: 0;
+}
 .animate-fade-in-description {
-	animation: fade-in 4s forwards;
+	animation: fade-in 2s forwards;
+		animation-delay: .6s;
 	opacity: 0;
 }
-.animate-fade-in-manager {
-	animation: fade-in 4s forwards;
-	animation-delay: 2s;
-	opacity: 0;
-}
+
  @keyframes fade-in {
  0% {
  opacity: 0;
@@ -355,7 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <!-- InstanceBeginEditable name="Content" --> 
   <script>
 	$(function(){
-$(".slideshow").vegas({
+$(".panzoom").vegas({
 	timer: false,
 	autoplay: true,
 	loop: true,
@@ -365,21 +372,21 @@ $(".slideshow").vegas({
 	firstTransitionDuration: .1,
 	transitionDuration: 4000,
 	animation: 'random',
-	color: '#000',
+	color: '#fff',
     slides: [
-        { src: "assets/images/lone-tree-one.jpg" },
-        { src: "assets/images/lone-tree-two.jpg" },
-        { src: "assets/images/lone-tree-three.jpg" },
-        { src: "assets/images/lone-tree-four.jpg" },
-		{ src: "assets/images/lone-tree-five.jpg" },
-		{ src: "assets/images/lone-tree-six.jpg" },
+        { src: "assets/images/lone-tree-background-one.jpg" },
+        { src: "assets/images/lone-tree-background-two.jpg" },
+        { src: "assets/images/lone-tree-background-three.jpg" },
+        { src: "assets/images/lone-tree-background-four.jpg" },
+		{ src: "assets/images/lone-tree-background-five.jpg" },
+		{ src: "assets/images/lone-tree-background-six.jpg" },
     ]
 });
 });
 	</script>
-  <div class="row slideshow">
+  <div class="row panzoom">
     <div class="container location-caption text-center">
-      <h1 class="no-margin-bottom font-weight-400 white text-capitalize">Lone Tree</h1>
+      <h1 class="animate-fade-in-location no-margin-bottom font-weight-400 white text-capitalize">Lone Tree</h1>
       <div class="animate-fade-in-manager white font-weight-400 small text-uppercase margin-bottom-10">Manager: Susan Byrne <a href="tel:+13037917323" class="white margin-left-5">(303) 791-7323</a></div>
       <h4 class="animate-fade-in-description white font-weight-400">Eight interactive alcoves upstairs and down inspire discovery, and a unique meeting room doubles as the perfect spot for completing group projects. Flexible spaces for events or quiet contemplation abound.</h4>
     </div>
@@ -391,17 +398,14 @@ $(".slideshow").vegas({
     <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/students"><i class="fa fa-check-square-o"></i> Reserve a Space</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
+    <div class="col-sm-6 col-md-4 col-lg-3 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/business-finance"><i class="fa fa-calendar-o"></i> Lone Tree Events Calendar</a></h5>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/lifestyle"><i class="fa fa-paint-brush"></i> Art on Display</a></h5>
     </div>
-    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
+    <div class="col-sm-12 col-md-8 col-lg-3 sub-nav-item sub-nav-border equal-height">
       <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fa fa-book"></i> Used Book Sales</a></h5>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item equal-height">
-      <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fa fa-smile-o"></i> Optional Link</a></h5>
     </div>
   </div>
   <div class="row padding-top-30 padding-bottom-30">
