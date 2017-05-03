@@ -22,7 +22,21 @@ jQuery.get("https://s3.amazonaws.com/website.alert/alert.txt")
 // smooth page scroll for page anchors
 /* ------------------------------------------------------------ */
 
+	$(function() {
+$('a[href*=#]:not([href=#]):not(.carousel-control):not(.tab)').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top - 50
+	        }, 800);
+	        return false;
+	      }
+	    }
+	  });
+	});
 
 // --------------------------------------------------------------------------------------------------------
 // jquery-match-height master by @liabru
