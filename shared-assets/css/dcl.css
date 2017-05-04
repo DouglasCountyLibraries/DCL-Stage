@@ -2405,7 +2405,7 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 }
 .animate-fade-in-description {
 	animation: fade-in 2s forwards;
-	animation-delay: .6s;
+	animation-delay: 1s;
 	opacity: 0;
 }
  @keyframes pop-in {
