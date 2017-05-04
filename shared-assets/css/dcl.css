@@ -2362,5 +2362,109 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 	display: none !important;
 }
 }
+/* ====== sub-nav and location pan and zoom ====== */
 
+.location-caption {
+	padding: 20px 15px 60px;
+}
+.location-caption h1 {
+	font-size: 100px;
+}
+.sub-nav-item {
+	background-color: #d36a50;
+	border-bottom: 1px solid #e79682;
+}
+.sub-nav-item:hover, .sub-nav-item:focus {
+	background-color: #AA5440;
+	color: #ffffff;
+	text-decoration: none;
+}
+.sub-nav-item a, .sub-nav-item a:hover {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+	letter-spacing: .2px;
+	line-height: 20px;
+	padding: 15px;
+}
+.sub-nav-border {
+	border-right: 1px solid #e79682;
+}
+.show .fa {
+	margin-right: 10px;
+}
+.animate-pop-in-location {
+	animation: pop-in 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+	animation-delay: .5s;
+	opacity: 0;
+}
+.animate-fade-in-manager {
+	animation: fade-in 3s forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+.animate-fade-in-description {
+	animation: fade-in 2s forwards;
+	animation-delay: .6s;
+	opacity: 0;
+}
+ @keyframes pop-in {
+ 0% {
+ opacity: 0;
+ transform: translateY(-1rem) scale(.3);
+}
+ 100% {
+ opacity: 1;
+ transform: none;
+}
+}
+ @keyframes fade-in {
+ 0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+.vegas-container {
+	height: 650px!important
+}
 
+@media (min-width: 320px) {
+.vegas-container {
+	height: 620px!important;
+}
+}
+
+@media (min-width: 450px) {
+.vegas-container {
+	height: 540px!important;
+}
+}
+
+@media (min-width: 500px) {
+.vegas-container {
+	height: 490px!important;
+}
+}
+
+@media (min-width: 550px) {
+.vegas-container {
+	height: 375px!important;
+}
+}
+
+@media (min-width: 900px) {
+.vegas-container {
+	height: 350px!important;
+}
+}
+
+@media (min-width: 1200px) {
+.sub-nav .no-margin a {
+	color: #fff;
+	line-height: 20px;
+	padding: 20px 5px;
+	text-align: center;
+}
+}
