@@ -3,7 +3,7 @@
  * comments/questions? djarrett at dclibraries dot org
    ==================================================== */
 
-// josh's script to pull in the alert
+// script to pull the alert
 // smooth page scroll for page anchors
 // jQuery match-height plugin
 // flip
