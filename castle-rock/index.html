@@ -4,6 +4,25 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Minimize page flickering for Google Optimize --> 
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-K3MW9FB':true});</script>
+<!-- End --> 
+<!-- Google Analytics with Google Optimize plugin --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81615628-1', 'auto');
+  ga('require', 'GTM-K3MW9FB');
+  ga('send', 'pageview');
+</script>
+<!-- End --> 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -13,6 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
 <title>Castle Rock | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
+<meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning. Through engagement, education and entertainment, Douglas County Libraries transforms lives and builds community.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -36,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]> 
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -45,13 +66,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+<link type="text/css" rel="stylesheet" href="../shared-assets/css/vegas.css">
+<script src="../shared-assets/js/vegas.js"></script>
 <style>
-.background {
-	background: transparent url("../shared-assets/images/locations/castle-rock.jpg") no-repeat scroll left top / cover;
-	min-height: 500px;
+.panzoom-wrapper {
+	height: 440px;
+	display: table;
+	width: 100%;
+}
+.panzoom-vcenter {
+	display: table-cell;
+	vertical-align: middle
 }
 .locations-active {
 	background-color: #f5f5f5;
+}
+.location-caption h1 {
+	font-size: 100px;
+	line-height: 85px;
+	margin: 0;
+}
+.location-caption h2 {
+	font-size: 60px;
+	line-height: 55px;
+	margin: 0;
+}
+.vegas-container {
+	height: 440px!important
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -68,7 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#my-account" href="#my-account" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<span class="glyphicon glyphicon-menu-down white margin-left-15 margin-right-15" aria-hidden="true"></span></a>
+        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<span class="glyphicon glyphicon-menu-down white margin-left-15 margin-right-15" aria-hidden="true"></span></a>
           <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
             <li class="info" role="presentation"> <a role="button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
             <li class="divider" role="presentation"></li>
@@ -123,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <nav class="dcl-navbar navbar navbar-default">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li class="dropdown"> <a data-target="#dt-explore" href="#dt-explore" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+      <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
         <ul class="dropdown-menu">
           <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
           <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
@@ -132,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
         </ul>
       </li>
-      <li class="dropdown locations-active"> <a data-target="#dt-locations" href="#dt-locations" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+      <li class="dropdown locations-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="../locations">All Locations</a></li>
           <li><a href="../castle-pines">Castle Pines</a></li>
@@ -145,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <li><a href="../history">Douglas County History</a></li>
         </ul>
       </li>
-      <li class="dropdown using-the-library-active"> <a data-target="#dt-using-the-library" href="#dt-using-the-library" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+      <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
         <ul class="dropdown-menu">
           <li><a href="../library-basics">Library Basics</a></li>
           <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
@@ -156,11 +197,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <li><a href="../adult-education">Adult Education & Test Prep</a></li>
         </ul>
       </li>
-      <li class="dropdown kids-teens-active"> <a data-target="#dt-kids-teens" href="#dt-kids-teens" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+      <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="../storytime">Storytime</a></li>
           <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
-          <li><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
+          <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
           <li><a href="../parents-teachers">Parents & Teachers</a></li>
           <li><a href="../research/students">Homework Help</a></li>
           <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
@@ -176,7 +217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- End Desktop Navbar --> 
 <!-- Mobile Navbar, Logo and Search -->
 <nav class="dcl-mobile-navbar navbar navbar-default">
-  <div class="container-md"> <a href="/"><img class="margin-left-15" src="../dcl-responsive-logo.png"></a> <a href="#hamburger" role="button" data-toggle="modal" data-target="#nav-modal"><i class="fa fa-bars"></i></a> 
+  <div class="container-md"> <a href="/"><img class="margin-left-15" src="../dcl-responsive-logo.png"></a> <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="fa fa-bars"></i></a> 
     <!-- Nav Modal -->
     <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="dcl-mobile-nav modal-dialog">
@@ -186,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           </div>
           <div class="modal-body">
             <ul class="nav mobile-nav">
-              <li class="mobile-nav-heading"> <a href="#mobile-explore" data-toggle="collapse" data-target="#explore">Explore <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#explore">Explore <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="explore" class="nav mobile-nav-list collapse">
                   <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
                   <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
@@ -195,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                   <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
                 </ul>
               </li>
-              <li class="mobile-nav-heading"> <a href="#mobile-locations" data-toggle="collapse" data-target="#locations">Locations <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#locations">Locations <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="locations" class="nav mobile-nav-list collapse">
                   <li><a href="../locations">All Locations</a></li>
                   <li><a href="../castle-pines">Castle Pines</a></li>
@@ -208,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                   <li><a href="../history">Douglas County History</a></li>
                 </ul>
               </li>
-              <li class="mobile-nav-heading"> <a href="#mobile-using-the-library" data-toggle="collapse" data-target="#using-the-library">Using the Library <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Using the Library <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="using-the-library" class="nav mobile-nav-list collapse">
                   <li><a href="../library-basics">Library Basics</a></li>
                   <li><a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
@@ -219,11 +260,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                   <li><a href="../adult-education">Adult Education & Test Prep</a></li>
                 </ul>
               </li>
-              <li class="mobile-nav-heading"> <a href="#mobile-kids-teens" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="kids-teens" class="nav mobile-nav-list collapse">
                   <li><a href="../storytime">Storytime</a></li>
                   <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
-                  <li><a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
+                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
                   <li><a href="../parents-teachers">Parents & Teachers</a></li>
                   <li><a href="../research/students">Homework Help</a></li>
                   <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
@@ -238,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
     </div>
-    <span class="mobile-search-icon"> <a href="#mobile-search" class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
+    <span class="mobile-search-icon"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#mobile-search"></a> </span> </div>
   <div id="mobile-search" class="collapse bg-gray-10">
     <div class="container">
       <form id="searchFormTwo" class="search" action="https://dcl.bibliocommons.com/search">
@@ -258,128 +299,135 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="row alert-warning">
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
-  <!-- InstanceBeginEditable name="Content" -->
-  <div class="row background"></div>
-  <div class="row padding-bottom-30">
+  <!-- InstanceBeginEditable name="Content" --> 
+  <script>
+	$(function(){
+$(".panzoom").vegas({
+	timer: false,
+	autoplay: true,
+	loop: true,
+	delay: 20000,
+	shuffle: true,
+	transition: 'fade',
+	firstTransitionDuration: .01,
+	transitionDuration: 4000,
+	animation: 'random',
+	color: '#000',
+    slides: [
+        { src: "assets/images/castle-rock-background-one.jpg?123" },
+        { src: "assets/images/castle-rock-background-two.jpg?123" },
+        { src: "assets/images/castle-rock-background-three.jpg?123" },
+        { src: "assets/images/castle-rock-background-four.jpg?123" },
+    ]
+});
+});
+	</script>
+  <div class="row panzoom">
+    <div class="panzoom-wrapper">
+      <div class="panzoom-vcenter">
+        <div class="container location-caption text-center">
+          <h1 class="font-weight-400 white text-capitalize">Castle Rock</h1>
+          <h2 class="font-weight-400 white text-capitalize">Philip S. Miller</h2>
+          <div class="white font-weight-400 small text-uppercase margin-bottom-10">Manager: Jaime Gotlieb <a href="tel:+13037917323" class="white margin-left-5">(303) 791-7323</a></div>
+          <h4 class="white margin-lg-100 font-weight-400">This library houses the staff and archives of the <a class="white text-underline" href="../history">Douglas County History Research Center</a>, offering patrons specialized help with historical, archival and genealogical projects. It is also home to the Castle Rock Community Bandstand.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutter sub-nav-row">
+    <div class="sub-nav">
+      <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"> <a href="#" class="show" data-toggle="modal" data-target="#storytime-modal"><i class="fa fa-comment-o fa-flip-horizontal"></i>Storytime</a> </h5>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade text-center" id="storytime-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content padding-bottom-60">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title" id="myModalLabel">Castle Rock Storytime</h2>
+            </div>
+            <div class="modal-body">
+              <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
+                <ul class="list-unstyled">
+                  <li>
+                    <h5 class="text-uppercase">Monday-Friday</h5>
+                  </li>
+                  <li>9:30AM-Baby</li>
+                  <li>10:30AM-Toddler</li>
+                  <li>11:30AM-Preschool</li>
+                  <li>
+                    <h5 class="text-uppercase">Saturday</h5>
+                  </li>
+                  <li>10:30AM-All Ages</li>
+                </ul>
+              </div>
+              <div class="padding-top-15">
+                <ul class="list-unstyled">
+                  <li>
+                    <h4 class="roboto">Special Storytime</h4>
+                  </li>
+                  <li>
+                    <h5 class="text-uppercase">Monday</h5>
+                  </li>
+                  <li>7PM-Storytime Discover-All Ages</li>
+                </ul>
+              </div>
+            </div>
+            <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="../reserve-a-space"><i class="fa fa-check-square-o"></i>Reserve a Space</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=18,2,22,16,20,15,3,24,25,7&lib=1001" target="_blank" class="show"><i class="fa fa-calendar-o"></i>Castle Rock Events Calendar</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="../art#castle-rock-art"><i class="fa fa-paint-brush"></i>Art on Display</a></h5>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-3 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="../used-book-sales"><i class="fa fa-book"></i>Used Book Sales</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-gray-10 padding-top-30 padding-bottom-30">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Castle Rock, Philip S. Miller</h1>
-        <div class="text-uppercase margin-bottom-10">Manager: Jaime Gotlieb <a href="tel:+13037917323" class="locuacious margin-left-30">(303) 791-7323</a></div>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fa fa-map-marker"></i></div>
+        <div itemscope itemtype="http://schema.org/PostalAddress">
+          <h1 class="roboto no-margin-top"> <a href="https://www.google.com/maps/place/Douglas+County+Libraries/@39.3676569,-104.8601784,18z/data=!4m5!3m4!1s0x0:0x3640fa4d1ddfc4e0!8m2!3d39.3680882!4d-104.8591377" target="_blank"><span itemprop="streetAddress">100&nbsp;S.&nbsp;Wilcox&nbsp;Street</span>, <span itemprop="addressLocality">Castle&nbsp;Rock</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80104</span></a></h1>
         </div>
-        <h2 class="roboto no-margin-top vcard">
-          <div class="adr"><a href="https://www.google.com/maps/place/Douglas+County+Libraries/@39.3676569,-104.8601784,18z/data=!4m5!3m4!1s0x0:0x3640fa4d1ddfc4e0!8m2!3d39.3680882!4d-104.8591377" target="_blank"><span class="street-address">100 S. Wilcox Street</span>, <span class="locality">Castle Rock</span>, <span class="region">CO</span> <span class="postal-code"> 80104</span></a></div>
-        </h2>
-      </div>
-      <div class="row margin-lg-200">
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Mon-Thu: 9AM-9PM</h5>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Fri-Sat: 9AM-5PM</h5>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h5 class="text-uppercase no-margin-top">Sun: 12-5PM</h5>
-        </div>
+        <h4 class="text-uppercase no-margin-top"><span class="margin-left-10 margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
+          <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
+          <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></h4>
       </div>
     </div>
   </div>
-  <div class="row bg-salmon text-center padding-top-15 padding-bottom-30">
-    <div class="container">
-      <div class="row padding-bottom-15">
-        <div class="col-sm-3 text-center"> 
-          
-          <!-- Button trigger modal -->
-          <h2 class="roboto fff"><em style="margin-right:10px" class="fa fa-comment-o fa-flip-horizontal"></em> <a href="../storytime#castle-pines-storytime" class="fff" data-toggle="modal" data-target="#storytime-modal">Storytime</a></h2>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="storytime-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content padding-bottom-60">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="myModalLabel">Castle Rock Storytime</h2>
-              </div>
-              <div class="modal-body">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Mondays, Thursdays and Fridays</h5>
-                    </li>
-                    <li>9:30AM - Baby</li>
-                    <li>10:30AM - Preschool</li>
-                    <li>11:30AM - All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Tuesdays and Wednesdays</h5>
-                    </li>
-                    <li>9:30AM - Baby</li>
-                    <li>10:30AM - Toddlers</li>
-                    <li>11:30AM - All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Saturdays</h5>
-                    </li>
-                    <li>10:30AM - All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h3 class="roboto">Special Storytime</h3>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">Third Tuesday of Each Month</h5>
-                    </li>
-                    <li>7PM - Pajama Storytime</li>
-                  </ul>
-                </div>
-              </div>
-              <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
-          </div>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><em style="margin-right:10px" class="fa fa-check-square-o"></em> <a href="../reserve-a-space" class="fff">Reserve a Space</a></h2>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><i style="margin-right:10px" class="fa fa-paint-brush"></i> <a href="../art#castle-rock" class="fff">Art on Display</a></h2>
-        </div>
-        <div class="col-sm-3 text-center">
-          <h2 class="roboto fff"><i style="margin-right:10px" class="fa fa-book"></i> <a href="../used-book-sales" class="fff">Used Book Sales</a></h2>
-        </div>
-      </div>
-      <div>
-        <h5 class="fff margin-lg-200">This library houses the staff and archives of the <a class="fff text-underline" href="../history">Douglas County History Research Center</a>, offering patrons specialized help with historical, archival and genealogical projects. It is also home to the Castle Rock Community Bandstand.</h5>
+  <!--
+  ###############################
+  ###### One Featured Item ######
+  ###############################
+       --> 
+  <!-- one featured item event row start -->
+  <div id="events" class="row event-row bg-teal"> 
+    <!-- block 1 start -->
+    <div class="col-md-6 col-md-push-3 bg-teal equal-height">
+      <div class="one-featured-item">
+        <div style="padding:0px 0px 0px 0px;" class="icon-circle-default"><i class="fa fa-star"></i></div>
+        <h1 class="roboto">Saturday Surprise</h1>
+        <div>Drop in and learn something new and delightful! <span class="text-uppercase">No Registration Required.</span> </div>
+        <div>Saturday, July 8, 10-11:30AM</div>
+        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=113596" target="_blank" class="btn btn-default">View Calendar</a></div>
       </div>
     </div>
+    <!-- block 1 end --> 
   </div>
-  <div id="events" class="row text-center">
-    <h1 class="jumbo-text text-uppercase no-margin-bottom font-weight-400">Events at Castle Rock</h1>
-    <h2 class="roboto"><em style="margin-right:10px;" class="fa fa-calendar-o"></em> <a href="http://douglascountylibraries.evanced.info/signup/calendar?ag=&kw=&lib=1001" target="_blank">Castle Rock Events Calendar</a></h2>
-  </div>
-  <div class="row padding-bottom-40">
-    <div class="container text-center">
-      <div class="margin-top-15"><img class="img-responsive center-block" src="polar-express.png" alt="All Aboard the Polar Express"/></div>
-      <h2 class="roboto margin-lg-100">All Aboard the Polar Express </h2>
-      <div class="margin-lg-100">Bring your holiday cheer and join us for this seasonal reading. Registration required.</div>
-      <h2 class="roboto">Tuesday, December 6, 7pm</h2>
-      <a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=100255" class="margin-top-30 text-center btn btn-primary text-uppercase" target="_blank">Register Now</a> </div>
-  </div>
-  <div class="row no-gutter">
-    <div class="col-md-6 bg-teal text-center equal-height flex-center padding-30" style="height: 382px;">
-      <div class="icon-circle-teal-reversed"><i class="fa fa-globe"></i></div>
-      <h1 class="fff roboto">Great Decisions 2017</h1>
-      <div class="fff margin-lg-100">A multi-week civic education program devoted to world affairs. Meetings begin after the new year.</div>
-      <div class="fff margin-top-15 text-uppercase"></div>
-      <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=113623" target="_blank" class="btn btn-primary text-uppercase margin-top-30">Register Now</a></div>
-  </div>
-    <div class="col-md-6 bg-lavender equal-height text-center padding-30">
-      <div class="icon-circle-lavender-reversed"><i class="fa fa-file-code-o"></i></div>
-      <h1 class="fff roboto">Castle Rock Coders</h1>
-      <div class="fff">Hang out, collaborate, ask and answer questions. Meets every other week. Registration not required.</div>
-      <div><a href="http://douglascountylibraries.evanced.info/signup/list?ag=&kw=castle+rock+coders&df=list&cn=0&lib=1001&nd=20" target="_blank" class="btn btn-default text-uppercase margin-top-30">View Calendar</a></div>
-    </div>
-  </div>
+  <!-- one featured item event row end --> 
+  <!--
+  ###############################
+  ###############################
+  ###############################
+       --> 
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -435,18 +483,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
-<!-- Google Analytics --> 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-81615628-1', 'auto');
-  ga('send', 'pageview');
-
-</script> 
-<!-- End Google Analytics --> 
 <!-- Structured Data --> 
 <script type="application/ld+json">
   {
