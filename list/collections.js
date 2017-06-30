@@ -53,11 +53,7 @@ function createPostShelves(title)
 //            </div>
 //        </div>
 //    `
-const markup = `
-<ul class="dogs">
-    ${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`)}
-</ul>
-`;
+
 var collData;
 $(document).ready(function () {
    // $('#gen').append(preShelf);
