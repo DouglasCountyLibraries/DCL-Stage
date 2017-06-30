@@ -1,9 +1,4 @@
-﻿const dogs = [
-    { name: 'Snickers', age: 2 },
-    { name: 'Hugo', age: 8 },
-    { name: 'Sunny', age: 1 }
-];
-var title = "Coming Soon Fiction";
+﻿
 var baseURI = "http:///dev.dclcollections.dcl.lan/";
 // <div id="covers-${title}" class ="container shelf-container text-center">
 
@@ -13,7 +8,7 @@ function createPreShelf(title, seq)
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/957746078_new_amp_noteworthy_(june_2017)">${title}</a></h1>
+     <h1 class="no-margin-bottom"><a href="https://stage.dcl.org/list/all.html">${title}</a></h1>
       `;
     return x;
 }
