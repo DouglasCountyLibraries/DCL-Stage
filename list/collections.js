@@ -1,4 +1,4 @@
-﻿
+
 var baseURI = "http:///dev.dclcollections.dcl.lan/";
 // <div id="covers-${title}" class ="container shelf-container text-center">
 
@@ -194,7 +194,7 @@ function getlargeList(KeyName) {
         });
 
     }
-}
+
 function createBookList(val) {
     var x;
     var bib = val.Bib + 114;
