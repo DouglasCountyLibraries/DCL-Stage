@@ -179,10 +179,10 @@ function getlargeList(KeyName) {
                
                 console.log('val', val.Isbn)
 
-                console.log('divid', divid)
+                console.log('divid', divid);
 				
                     $('#largeCoverList').append(createBookList(val));
-                }
+             
                
                 console.log('val', val.Title)
             });
