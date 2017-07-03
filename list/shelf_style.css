@@ -1,0 +1,16 @@
+.shelf-container img {
+	margin: 15px 15px 17px 15px;
+	vertical-align: bottom;
+}
+
+@media (min-width: 992px) {
+.shelf {
+	border-bottom: 20px solid transparent;
+	border-image: url("new-shelf.jpg") 30 30 30 30 round round;
+	border-top: 0 none;
+	padding-bottom: 0;
+}
+.shelf-shadow {
+	background: #fff url("shelf-shadow.jpg");
+	background-repeat: repeat-x;
+}
