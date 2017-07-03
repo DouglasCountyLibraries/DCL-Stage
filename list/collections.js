@@ -2,13 +2,13 @@
 var baseURI = "http:///dev.dclcollections.dcl.lan/";
 // <div id="covers-${title}" class ="container shelf-container text-center">
 
-function createPreShelf(title, seq)
+function createPreShelf(title, keyName, seq)
 {
     var x = `
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html">${title}</a></h1>
+     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html?${keyName}">${title}</a></h1>
       `;
     return x;
 }
@@ -85,9 +85,9 @@ function getCollectionSet() {
             title = val.DisplayName;
             console.log('val', val.DisplayName)
             console.log('i', i)
-            console.log('w', createPreShelf(title, i));
+            console.log('w', createPreShelf(title, val.KeyName, i));
          
-            var myel = $('#gen').append(createPreShelf(title,i));
+            var myel = $('#gen').append(createPreShelf(title,val.KeyName,i));
             console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,i);
             $('#gen').append(createPostShelves(title));
@@ -140,6 +140,49 @@ function getCollectionSet() {
                     $('#covers-3').append(createBookList(val));
                 }
 
+               
+                console.log('val', val.Title)
+            });
+
+        });
+        promise.fail(function (data, status) {
+            //swal("Problem With Request", data.responseText, "error");
+            console.log("Problem With Request", data.responseText, "error")
+        });
+
+    }
+}
+function getlargeList(KeyName) {
+
+        var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/50';
+        var promise =
+           $.ajax({
+               url: uri,
+               crossDomain: true,
+               processData: false,
+               type: 'GET',
+               contentType: "application/json"
+
+           });
+        promise.done(function (data, status) {
+
+            var jdata = JSON.stringify(data);
+            var jsonData = JSON.parse(jdata);
+            console.log('covers', jdata, jsonData)
+          //  console.log('setTitle', setTitle)
+            collData = jdata;
+          //  var divid =  divid;
+            jQuery.each(jsonData, function (i, val) {
+                //  $("#" + i).append(document.createTextNode(" - " + val));
+                isbn = val.Isbn;
+               // console.log('setTitle', setTitle)
+               
+                console.log('val', val.Isbn)
+
+                console.log('divid', divid)
+				
+                    $('#largeCoverList').append(createBookList(val));
+                }
                
                 console.log('val', val.Title)
             });
