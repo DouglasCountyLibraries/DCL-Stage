@@ -8,7 +8,7 @@ function createPreShelf(title, seq)
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin-bottom"><a href="https://stage.dcl.org/list/all.html">${title}</a></h1>
+     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html">${title}</a></h1>
       `;
     return x;
 }
