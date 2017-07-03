@@ -1,6 +1,12 @@
 
 var baseURI = "http:///dev.dclcollections.dcl.lan/";
-// <div id="covers-${title}" class ="container shelf-container text-center">
+// <div id="covers-${title}" class ="container shelf-container text-center
+var a = window.location.toString();
+var allKeyName = a.substring(a.indexOf("=") + 1);
+console.log("allKeyName name  is ", allKeyName, "a ", a);
+if (allKeyName != undefined) {
+    getlargeList(allKeyName);
+}
 
 function createPreShelf(title, keyName, seq)
 {
