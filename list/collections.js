@@ -6,7 +6,7 @@ var allKeyName;
 if (a.indexOf('=') > -1)
 {
    allKeyName = a.substring(a.indexOf("=") + 1,a.lastIndexOf("&"));
-   title = a.substring(a.indexOf("&") + 7).replace("%20", " ";
+   title = a.substring(a.indexOf("&") + 7).replace("%20", " ");
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
 }
 
