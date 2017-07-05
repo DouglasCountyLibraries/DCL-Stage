@@ -10,9 +10,7 @@ if (a.indexOf('=') > -1)
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
 }
 
-if (allKeyName != undefined) { 
-    getlargeList(allKeyName, title);
-}
+
 function createAllPageTitle(title)
 {
     var x = `
@@ -78,6 +76,9 @@ $(document).ready(function () {
     // console.log(markup);
    // $("#header").load("DCLHeader.html");
     getCollectionSet();
+	if (allKeyName != undefined) { 
+    getlargeList(allKeyName, title);
+}
   //  console.log('return from getCollection',collData);
 });  // end document ready
 function getCollectionSet() {
