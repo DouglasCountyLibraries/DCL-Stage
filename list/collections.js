@@ -5,7 +5,7 @@ var a = window.location.toString();
 var allKeyName;
 if (a.indexOf('=') > -1)
 {
-   allKeyName = a.substring(a.indexOf("=") + 1,str.lastIndexOf("&"));
+   allKeyName = a.substring(a.indexOf("=") + 1,a.lastIndexOf("&"));
    title = a.substring(a.indexOf("&") + 7);
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
 }
