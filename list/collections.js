@@ -2,12 +2,23 @@
 var baseURI = "http:///dev.dclcollections.dcl.lan/";
 // <div id="covers-${title}" class ="container shelf-container text-center
 var a = window.location.toString();
-var allKeyName = a.substring(a.indexOf("=") + 1);
-console.log("allKeyName name  is ", allKeyName, "a ", a);
+var allKeyName;
+if (a.indexOf('=') > -1)
+{
+   allKeyName = a.substring(a.indexOf("=") + 1);
+   console.log("allKeyName name  is ", allKeyName, "a ", a);
+}
+
 if (allKeyName != undefined) { 
     getlargeList(allKeyName);
 }
-
+function createAllPageTitle(title)
+{
+    var x = `
+     <h1 class="no-margin-bottom">${title}</h1>
+      `;
+    return x;
+}
 function createPreShelf(title, keyName, seq)
 {
     var x = `
@@ -178,6 +189,7 @@ function getlargeList(KeyName) {
           //  console.log('setTitle', setTitle)
             collData = jdata;
           //  var divid =  divid;
+		  createAllPageTitle(KeyName);
             jQuery.each(jsonData, function (i, val) {
                 //  $("#" + i).append(document.createTextNode(" - " + val));
                 isbn = val.Isbn;
