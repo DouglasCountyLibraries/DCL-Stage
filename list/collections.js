@@ -190,7 +190,7 @@ function getlargeList(KeyName,Title) {
           //  console.log('setTitle', setTitle)
             collData = jdata;
           //  var divid =  divid;
-		   var myel = $('#allCovers').append(createAllPageTitle(KeyName));
+		   var myel = $('#allCovers').append(createAllPageTitle(Title));
 		  createAllPageTitle(Title);
             jQuery.each(jsonData, function (i, val) {
                 //  $("#" + i).append(document.createTextNode(" - " + val));
