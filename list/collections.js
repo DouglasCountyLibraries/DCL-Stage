@@ -6,11 +6,12 @@ var allKeyName;
 if (a.indexOf('=') > -1)
 {
    allKeyName = a.substring(a.indexOf("=") + 1);
-   console.log("allKeyName name  is ", allKeyName, "a ", a);
+   title = a.substring(a.indexOf("&") + 7);
+   console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
 }
 
 if (allKeyName != undefined) { 
-    getlargeList(allKeyName);
+    getlargeList(allKeyName, title);
 }
 function createAllPageTitle(title)
 {
@@ -25,7 +26,7 @@ function createPreShelf(title, keyName, seq)
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html?key=${title}">${title}</a></h1>
+     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html?key=${keyName}&title=${title}">${title}</a></h1>
       `;
     return x;
 }
@@ -169,7 +170,7 @@ function getCollectionSet() {
 
     }
 }
-function getlargeList(KeyName) {
+function getlargeList(KeyName,Title) {
 
         var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/50';
         var promise =
@@ -190,7 +191,7 @@ function getlargeList(KeyName) {
             collData = jdata;
           //  var divid =  divid;
 		   var myel = $('#allCovers').append(createAllPageTitle(KeyName));
-		  createAllPageTitle(KeyName);
+		  createAllPageTitle(Title);
             jQuery.each(jsonData, function (i, val) {
                 //  $("#" + i).append(document.createTextNode(" - " + val));
                 isbn = val.Isbn;
