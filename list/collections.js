@@ -4,7 +4,7 @@ var baseURI = "http:///dev.dclcollections.dcl.lan/";
 var a = window.location.toString();
 var allKeyName = a.substring(a.indexOf("=") + 1);
 console.log("allKeyName name  is ", allKeyName, "a ", a);
-if (allKeyName != undefined) {
+if (allKeyName != undefined) { 
     getlargeList(allKeyName);
 }
 
