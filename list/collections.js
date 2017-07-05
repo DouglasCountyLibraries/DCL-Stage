@@ -14,7 +14,7 @@ function createPreShelf(title, keyName, seq)
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html?${keyName}">${title}</a></h1>
+     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html?key=${keyName}">${title}</a></h1>
       `;
     return x;
 }
