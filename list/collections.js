@@ -1,7 +1,7 @@
 
 var baseURI = "http:///dev.dclcollections.dcl.lan/";
 // <div id="covers-${title}" class ="container shelf-container text-center
-var a = window.location.toString();
+var a = window.location.toString(); 
 var allKeyName;
 if (a.indexOf('=') > -1)
 {
