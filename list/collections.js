@@ -117,6 +117,7 @@ function getCollectionSet() {
        // swal("Problem With Request", data.responseText, "error");
         console.log("Problem With Request", data.responseText, "error");
     });
+	
     function getRandomCollectionList(KeyName, divid) {
 
         var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/5';
@@ -173,7 +174,8 @@ function getCollectionSet() {
 }
 function getlargeList(KeyName,Title) {
 
-        var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/50';
+        var uri = baseURI + 'api/collectionlist/GetCollectionList/' + KeyName ;
+		// var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/50';
         var promise =
            $.ajax({
                url: uri,
