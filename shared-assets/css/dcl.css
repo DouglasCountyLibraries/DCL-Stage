@@ -2561,7 +2561,7 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 	padding-bottom: 60px;
 }
 
-#gen .shelf-container img {
+#gen .cover-image {
 	margin: 15px 15px 17px 15px;
 	vertical-align: bottom;
 }
@@ -2569,12 +2569,13 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 @media (min-width: 992px) {
 #gen .shelf {
 	border-bottom: 20px solid transparent;
-	border-image: url(../images/new-shelf.jpg) 30 30 30 30 round round;
+	border-image: url("/shared-assets/images/new-shelf.jpg") 30 30 30 30 round round;
 	border-top: 0 none;
 	padding-bottom: 0;
 }
+
 #gen .shelf-shadow {
-	background: #fff url(../images/shelf-shadow.png);
+	background: #fff url("/shared-assets/images/shelf-shadow.png");
 	background-repeat: repeat-x;
 }
 }
