@@ -14,7 +14,7 @@ if (a.indexOf('=') > -1)
 function createAllPageTitle(title)
 {
     var x = `
-     <h1 class="no-margin-bottom">${title}</h1>
+     <h1 class="no-margin">${title}</h1>
       `;
     return x;
 }
@@ -24,7 +24,7 @@ function createPreShelf(title, keyName, seq)
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin-bottom"><a href="http://stage.dcl.org/list/all.html?key=${keyName}&title=${title}">${title}</a></h1>
+     <h1 class="no-margin"><a href="http://stage.dcl.org/list/all.html?key=${keyName}&title=${title}">${title}</a></h1>
       `;
     return x;
 }
