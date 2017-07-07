@@ -223,7 +223,7 @@ function createBookList(val,KeyName) {
 	
     if (val.FoundImage == true)
     {
-		if (Keyname == 'ComingSoonMovies')
+		if (KeyName == 'ComingSoonMovies')
 		{
 			// https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192396540
 			 x = `
