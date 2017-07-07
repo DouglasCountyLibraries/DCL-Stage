@@ -148,16 +148,16 @@ function getCollectionSet() {
                 console.log('divid', divid)
                 // $('#' + divid).append(createBookList(isbn));
                 if (divid == 1) {
-                    $('#covers-1').append(createBookList(val));
+                    $('#covers-1').append(createBookList(val,KeyName));
                 }
                 if (divid == 0) {
-                    $('#covers-0').append(createBookList(val));
+                    $('#covers-0').append(createBookList(val,KeyName));
                 }
                 if (divid == 2) {
-                    $('#covers-2').append(createBookList(val));
+                    $('#covers-2').append(createBookList(val,KeyName));
                 }
                 if (divid == 3) {
-                    $('#covers-3').append(createBookList(val));
+                    $('#covers-3').append(createBookList(val,KeyName));
                 }
 
                
@@ -203,7 +203,7 @@ function getlargeList(KeyName,Title) {
                 console.log('val', val.Isbn)
 
               		
-                    $('#largeCoverList').append(createBookList(val));
+                    $('#largeCoverList').append(createBookList(val,KeyName));
              
                
                 console.log('val', val.Title)
@@ -217,20 +217,29 @@ function getlargeList(KeyName,Title) {
 
     }
 
-function createBookList(val) {
+function createBookList(val,KeyName) {
     var x;
     var bib = val.Bib + 114;
+	
     if (val.FoundImage == true)
     {
+		if (Keyname == 'ComingSoonMovies')
+		{
+			// https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192396540
+			   <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=LC.GIF&client=dougp&type=xw12&oclc=&upc=${val.Isbn}" alt="${val.title}">
+		}
+		else
+		{
         x = `
-     <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=${val.Isbn}/LC.GIF" alt=${val.title}>
+          <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=${val.Isbn}/LC.GIF" alt="${val.title}">
       `;
+		}
     }
     else
     {
 
         x = `
-       <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${baseURI}/api/images/${val.Isbn}" alt=${val.title}>
+       <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${baseURI}/api/images/${val.Isbn}" alt="${val.title}">
       `;
     }
        
