@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,58 +74,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
 <style>
 .background {
-	background: #eee url() center bottom/cover;
+	background: #fff url(pool.png) center center/cover;
 	background-repeat: no-repeat;
-	height: 600px;
 }
-.float-one {
-	position: absolute;
-	right: 100px;
-	top: 320px;
-	-webkit-animation: orbit-one 45s linear infinite;
-	animation: orbit-one 45s linear infinite;
-}
-.float-two {
-	position: absolute;
-	right: 500px;
-	top: 420px;
-	-webkit-animation: orbit-two 35s linear infinite;
-	animation: orbit-two 35s linear infinite;
-}
- @keyframes orbit-one {
- from {
--webkit-transform: rotate(0deg) translateX(70px) rotate(0deg);
-}
- to {
--webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
-}
-}
- @-webkit-keyframes orbit-one {
- from {
--webkit-transform: rotate(0deg) translateX(70px) rotate(0deg);
-}
- to {
--webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
-}
-}
- @keyframes orbit-two {
- from {
-transform: rotate(0deg) translateX(150px) rotate(0deg);
-}
- to {
-transform: rotate(360deg) translateX(150px) rotate(-360deg);
-}
-}
- @-webkit-keyframes orbit-two {
- from {
-transform: rotate(0deg) translateX(150px) rotate(0deg);
-}
- to {
-transform: rotate(360deg) translateX(150px) rotate(-360deg);
-}
-}
-</style>
-<style>
 .featured .material-icons {
 	color: #387d88;
 	font-size: 70px;
@@ -146,7 +96,7 @@ transform: rotate(360deg) translateX(150px) rotate(-360deg);
 }
 .sr-ticket {
 	position: fixed;
-	bottom: 6%;
+	top: 480px;
 	right: -130px;
 	z-index: 2000;
 	-webkit-transition-duration: 1.5s;
@@ -156,7 +106,7 @@ transform: rotate(360deg) translateX(150px) rotate(-360deg);
 }
 .sr-ticket:hover {
 	position: fixed;
-	bottom: 6%;
+	top: 480px;
 	right: -10px;
 	z-index: 2000;
 	-webkit-transition-duration: 0.6s;
@@ -167,24 +117,115 @@ transform: rotate(360deg) translateX(150px) rotate(-360deg);
 	-o-transform: rotate(20deg);
 	transform: rotate(20deg);
 }
+.featured {
+	margin: 300px auto 30px auto;
+}
 .fourth-text {
-	opacity: .8;
+	text-shadow: 0px 1px 9px rgba(22,158,201, 1)
 }
 .fourth-text:hover, .fourth-text a:hover {
-	opacity: 1.0;
 	text-decoration: none;
-	-webkit-transition-duration: 0.6s;
-	-moz-transition-duration: 0.6s;
-	-o-transition-duration: 0.6s;
-	transition-duration: 0.6s;
+}
+.float-one {
+	position: absolute;
+	right: 10%;
+	top: 260px;
+	-webkit-animation: orbit-one 75s linear infinite;
+	animation: orbit-one 75s linear infinite;
+}
+.float-two {
+	position: absolute;
+	right: 49%;
+	top: 320px;
+	-webkit-animation: orbit-two 35s linear infinite;
+	animation: orbit-two 35s linear infinite;
+}
+.spin-image {
+	position: absolute;
+	top: 150px;
+	left: 10%;
+	-webkit-animation: spin 30s linear infinite;
+	animation: spin 30s linear infinite;
+}
+ @keyframes orbit-one {
+ from {
+-webkit-transform: rotate(0deg) translateX(70px) rotate(0deg);
+}
+ to {
+-webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
+}
+}
+ @-webkit-keyframes orbit-one {
+ from {
+-webkit-transform: rotate(0deg) translateX(70px) rotate(0deg);
+}
+ to {
+-webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
+}
+}
+ @keyframes orbit-two {
+ from {
+transform: rotate(0deg) translateX(100px) rotate(0deg);
+}
+ to {
+transform: rotate(360deg) translateX(100px) rotate(-360deg);
+}
+}
+ @-webkit-keyframes orbit-two {
+ from {
+transform: rotate(0deg) translateX(100px) rotate(0deg);
+}
+ to {
+transform: rotate(360deg) translateX(100px) rotate(-360deg);
+}
+}
+ @-webkit-keyframes spin {
+100% {
+-webkit-transform: rotate(360deg);
+}
+}
+@keyframes spin {
+100% {
+-webkit-transform: rotate(360deg);
+transform:rotate(360deg);
+}
 }
 
-@media (min-width: 480px) {
+@media (min-width: 790px) {
 .fourth-text {
 	font-size: 42px;
 }
+.featured {
+	margin: 400px auto 30px auto;
 }
+.spin-image {
+	position: absolute;
+	top: 260px;
+	left: 5%;
+	-webkit-animation: spin 30s linear infinite;
+	animation: spin 30s linear infinite;
+}
+}
+.grow {
+	transition: all .8s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.2);
+}
+
 </style>
+	<script>
+$(function(){
+    $(".input-group").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*500)+"px",
+                top:(Math.random()*500)+"px",
+            });
+        }
+    });
+});
+	</script>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -391,29 +432,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row background">
-    <div class="container-lg">
-      <div class=""><img class="float-one animated img-circle" src="http://placehold.it/200"></div>
-      <div class=""><img class="float-two animated img-circle" src="http://placehold.it/200"></div>
+    <div class="container featured text-center">
+      <div class="hidden-xs"><img class="float-one animated" src="summer-loving-tommy.png" alt="Summer Loving Tommy"></div>
+      <div class="hidden-xs hidden-sm"><img class="float-two animated" src="summer-loving-jessica.png" alt="Summer Loving Jessica"></div>
+      <div class=""><img class="spin-image" src="summer-loving-andrea.png" alt="Summer Loving Andrea"></div>
+      <h1 class="grow font-weight-400 text-uppercase"><a class="white fourth-text" href="http://blogs.douglascountylibraries.org/blog/2017/06/30/lovin-summer-bucket-list/"><span class="font-weight-700">Lovin' Summer</span> Bucket List</a></h1>
+      <h1 class="grow font-weight-400 text-uppercase"><a class="white grow fourth-text" href="https://www.hoopladigital.com/title/11896951" target="_blank">Your Soundtrack for <span class="font-weight-700">Summer</span></a></h1>
     </div>
   </div>
-  <div style="border-top:1px solid #B79EC0;" class="row bg-lavender padding-top-30 padding-bottom-40">
+  <div style="border-top:1px solid #fff;" class="row bg-moss padding-top-30 padding-bottom-40">
     <div class="container">
       <div class="col-md-4 text-center padding-left-30 padding-right-30 padding-top-15 padding-bottom-15">
-        <div class="icon-circle-default"><i class="fa fa-map"></i></div>
-        <h2 class="roboto no-margin-bottom"><a class="white" href="../library-basics#check-out-colorado">Check Out Colorado</a></h2>
-        <div class="text-uppercase no-margin-top"><a href="../library-basics#check-out-colorado" class="white text-uppercase font-weight-400">Play at a State Park!</a></div>
+        <div class="icon-circle-default"><i class="fa fa-book"></i></div>
+        <h2 class="roboto no-margin-bottom"><a class="white" href="../staff-picks">New & Noteworthy</a></h2>
+        <div class="text-uppercase no-margin-top"><a href="../staff-picks" class="white text-uppercase font-weight-400">Books With Buzz</a></div>
       </div>
       <div class="col-md-4 text-center padding-left-30 padding-right-30 padding-top-15 padding-bottom-15">
         <div class="text-center">
-          <div style="padding:2px 0 0 2px;" class="icon-circle-default"><i class="fa fa-compass"></i></div>
-          <h2 class="roboto no-margin-bottom"><a class="white" href="../dcl-local">DCL Local</a></h2>
-          <div class="text-uppercase no-margin-top"><a href="../dcl-local" class="white text-uppercase font-weight-400">Great Deals for Cardholders</a></div>
+          <div style="padding:2px 0 0 0;" class="icon-circle-default"><i class="fa fa-trophy"></i></div>
+          <h2 class="roboto no-margin-bottom"><a class="white" href="https://blogs.douglascountylibraries.org/blog/2017/01/03/2017-dcl-reading-challenge/">DCL Reading Challenge</a></h2>
+          <div class="text-uppercase no-margin-top"><a href="https://blogs.douglascountylibraries.org/blog/2017/01/03/2017-dcl-reading-challenge/" class="white text-uppercase font-weight-400">Keep It Up!</a></div>
         </div>
       </div>
       <div class="col-md-4 text-center padding-left-30 padding-right-30 padding-top-15 padding-bottom-15">
-        <div style="padding:4px 0 0 0;" class="icon-circle-default"><i class="fa fa-th"></i></div>
-        <h2 class="roboto no-margin-bottom"><a class="white" href="../event-spaces">Event Venues</a></h2>
-        <div class="text-uppercase no-margin-top"><a href="../event-spaces" class="white text-uppercase font-weight-400">Party Outdoors!</a></div>
+        <div style="padding:2px 0 0 0;" class="icon-circle-default"><i class="fa fa-star"></i></div>
+        <h2 class="roboto no-margin-bottom"><a class="white" href="../staff-recommendations">Personalized Picks</a></h2>
+        <div class="text-uppercase no-margin-top"><a href="../staff-recommendations" class="white text-uppercase font-weight-400">Summer Reads Just for You</a></div>
       </div>
     </div>
   </div>
@@ -510,7 +554,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		"https:\/\/twitter.com\/DCLcolorado"]
   }
 </script> 
-<!-- End Structured Data -->
+<!-- End Structured Data --> 
+<!-- TM tracking snippet start --> 
+<script>
+var TMTrack = ['bf9cf0b78685', null, null, '//jss.trumeasure.com', null, window.location.protocol];
+(function () {
+	var pe = document.currentScript; if (!pe) { pe = document.getElementsByTagName('head')[0]; } else {
+			while (pe.tagName.toLowerCase() != 'body' && pe.tagName.toLowerCase() != 'head') { pe = pe.parentElement; } }
+		TMTrack[2] = document.getElementsByTagName(pe.tagName)[0];
+	var ns = document.createElement('script'); ns.async = 1; ns.src = TMTrack[5] + TMTrack[3] + '/Scripts/TMLoader.js'; TMTrack[2].appendChild(ns);
+})();
+</script> 
+<!-- TM tracking snippet end -->
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
