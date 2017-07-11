@@ -72,6 +72,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+		<script>
+  $(document).ready(function(){
+    $(".sticky-one").sticky({topSpacing:0});
+  });
+		</script>
 <style>
 .reserve-a-space-active {
 	background-color: #f5f5f5;
@@ -314,9 +319,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-top-15 padding-bottom-60">
+  <div class="row sticky-one bg-lavender padding-top-15 padding-bottom-60" style="z-index:100">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Pines</h1>
+		<h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Pines</h1></div></div>
+        <div class="row bg-lavender padding-top-15 padding-bottom-60">
+ 
+        
+        
+    <div class="container">
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x600" alt="CPN Masters Association Event Hall"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
