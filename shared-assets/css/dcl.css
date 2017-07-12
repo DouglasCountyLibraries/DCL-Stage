@@ -458,19 +458,18 @@ blockquote footer, blockquote small, blockquote .small {
 }
 /* ====== staff picks ====== */
 .cover-image {
-	box-shadow: 0 5px 15px -7px #000;
-	max-height: 200px;
-	max-width: 180px;
-	opacity: 1;
-	position: relative;
-	top: 20px;
-	transition: top 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+    box-shadow: 0 5px 15px -7px #000;
+    max-height: 210px;
+    max-width: 190px;
+    position: relative;
+    top: 20px;
+	transition: all .3s ease-in-out;
+	transform: scale(0.9);
 }
 .cover-image:hover {
-	box-shadow: 0 5px 10px #838383;
-	opacity: 0.8;
-	top: 5px;
-	transition: top 0.5s ease-out 0s, opacity 0.5s ease-out 0s;
+    box-shadow: 0 5px 10px #838383;
+    top: 5px;
+	transform: scale(1.1);
 }
 /* ====== buttons ====== */
 .btn-database {
