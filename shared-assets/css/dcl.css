@@ -469,7 +469,7 @@ blockquote footer, blockquote small, blockquote .small {
 .cover-image:hover {
     box-shadow: 0 5px 10px #838383;
     top: 5px;
-	transform: scale(1.1);
+	transform: scale(1);
 }
 /* ====== buttons ====== */
 .btn-database {
