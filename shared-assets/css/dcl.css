@@ -459,18 +459,17 @@ blockquote footer, blockquote small, blockquote .small {
 /* ====== staff picks ====== */
 
 .cover-image {
-    box-shadow: 0 5px 15px -7px #000;
-    max-height: 260px;
-    max-width: 300px;
-    position: relative;
-    top: 45px;
-	transition: all .3s ease-in-out;
-	transform: scale(0.8);
+	box-shadow: 0 5px 15px -7px #000;
+	max-height: 200px;
+	max-width: 180px;
+	position: relative;
+	top: 20px;
+	transition: all 0.5s ease-in-out;
 }
 .cover-image:hover, .cover-image:focus {
-    box-shadow: 0 5px 10px #838383;
-    top: 20px;
-	transform: scale(1);
+	box-shadow: 0 5px 10px #838383;
+	top: 5px;
+	transition: all 0.5s ease-in-out;	
 }
 /* ====== buttons ====== */
 .btn-database {
