@@ -471,6 +471,22 @@ blockquote footer, blockquote small, blockquote .small {
 	top: 5px;
 	transition: all 0.5s ease-in-out;	
 }
+/* grow image later
+.cover-image {
+    box-shadow: 0 5px 15px -7px #000;
+    max-height: 220px;
+    max-width: 200px;
+    position: relative;
+    top: 30px;
+	transition: all .3s ease-in-out;
+	transform: scale(0.85);
+}
+.cover-image:hover, .cover-image:focus {
+    box-shadow: 0 5px 10px #838383;
+    top: 20px;
+	transform: scale(1);
+}
+*/
 /* ====== buttons ====== */
 .btn-database {
 	font-size: 20px;
