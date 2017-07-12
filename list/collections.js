@@ -228,7 +228,7 @@ function createBookList(val,KeyName) {
 		{
 			// https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192396540
 			 x = `
-			   <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=LC.GIF&client=dougp&type=xw12&oclc=&upc=${val.Isbn}/LC.GIF alt=${val.title}">
+			   <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=${val.Isbn}/LC.GIF alt=${val.title}">
 			    `;
 		}
 		else
