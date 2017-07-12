@@ -462,13 +462,13 @@ blockquote footer, blockquote small, blockquote .small {
     max-height: 210px;
     max-width: 190px;
     position: relative;
-    top: 20px;
+    top: 25px;
 	transition: all .3s ease-in-out;
-	transform: scale(0.9);
+	transform: scale(0.95);
 }
 .cover-image:hover {
     box-shadow: 0 5px 10px #838383;
-    top: 5px;
+    top: 0px;
 	transform: scale(1);
 }
 /* ====== buttons ====== */
