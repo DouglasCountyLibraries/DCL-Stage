@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Minimize page flickering for Google Optimize --> 
-<style>.async-hide { opacity: 0 !important} </style>
+<!-- Minimize page flickering for Google Optimize -->
+<style>
+.async-hide {
+	opacity: 0 !important
+}
+</style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',4000,
 {'GTM-K3MW9FB':true});</script>
-<!-- End --> 
-<!-- Google Analytics with Google Optimize plugin --> 
+<!-- End -->
+<!-- Google Analytics with Google Optimize plugin -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,7 +27,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   ga('require', 'GTM-K3MW9FB');
   ga('send', 'pageview');
 </script>
-<!-- End --> 
+<!-- End -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -67,6 +72,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+		<script>
+  $(document).ready(function(){
+    $(".sticky-one").sticky({topSpacing:0});
+  });
+		</script>
 <style>
 .reserve-a-space-active {
 	background-color: #f5f5f5;
@@ -74,8 +84,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .room-row {
 	background-color: rgba(255,255,255,.8);
 	padding: 0;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
+
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -308,65 +319,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-top-15 padding-bottom-60">
+  <div class="row sticky-one bg-lavender padding-top-15 padding-bottom-60" style="z-index:100">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Pines</h1>
+		<h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Pines</h1></div></div>
+        <div class="row bg-lavender padding-top-15 padding-bottom-60">
+ 
+        
+        
+    <div class="container">
       <div class="row room-row">
-        <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall.jpg" alt="CPN Masters Association Event Hall"></div>
-        <div class="col-md-4 padding-top-15 padding-bottom-15">
-			<h2 class="roboto no-margin">Castle Pines North "Master" Assoc. Event Hall</h2>
-          <div class="padding-top-15"><span class="text-uppercase small">Room Type:</span> Event Hall</div>
-          <div><span class="text-uppercase small">Max. Capacity:</span> 70</div>
-          <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-          <div>Indoor/Outdoor</div>
-        </div>
-        <div class="col-md-5 padding-top-15 padding-bottom-15">
-          <div><span class="text-uppercase small">Cost/Hr:</span> $25-150 <span class="margin-left-15 text-uppercase small">Dimensions:</span> 39'5" x 25'3"</div>
-          <div class="padding-top-15">Located on the lower level, this classic event space features a wet bar, Wi-Fi internet access, built-in audiovisual equipment and projection screen, hearing loop for use with hearing-impaired guests, separate entrance/exit, access to the outdoor patio, and an abundance of natural light.</div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x600" alt="CPN Masters Association Event Hall"></div>
+        <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
+          <h2 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall</h2>
+          <div class="col-md-5">
+            <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
+            <div><span class="text-uppercase small">Max. Capacity:</span> 70</div>
+            <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
+            <div>Indoor/Outdoor</div>
+            <div><span class="text-uppercase small">Dimensions:</span> 39'5" x 25'3"</div>
+            <div><span class="text-uppercase small">Cost/Hr:</span> $25-150</div>
+          </div>
+          <div class="col-md-7">
+            <div>Located on the lower level, this classic event space features a wet bar, Wi-Fi internet access, built-in audiovisual equipment and projection screen, hearing loop for use with hearing-impaired guests, separate entrance/exit, access to the outdoor patio, and an abundance of natural light.</div>
+          </div>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall-library.jpg" alt="CPN Masters Association Event Hall and Library"></div>
-        <div class="col-md-4 padding-top-15 padding-bottom-15">
-          <h2 class="roboto no-margin">Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h2>
-          <div class="padding-top-15"><span class="text-uppercase small">Room Type:</span> Event Hall</div>
-          <div><span class="text-uppercase small">Max. Capacity:</span> 120</div>
-          <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
-          <div>Indoor/Outdoor</div>
+        <div class="col-md-4 vcenter no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x600" alt="CPN Masters Association Event Hall"></div>
+        <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
+          <h2 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h2>
+          <div class="col-md-5">
+            <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
+            <div><span class="text-uppercase small">Max. Capacity:</span> 120</div>
+            <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
+            <div>Indoor/Outdoor</div>
+            <div><span class="text-uppercase small">Dimensions:</span> 53' x 25'3"</div>
+            <div><span class="text-uppercase small">Cost/Hr:</span> $25-175</div>
+          </div>
+          <div class="col-md-7">
+            <div>A sliding air wall can be opened to extend this classic Event Hall into the library's open book space for greater capacity. The Event Hall features a wet bar, Wi-Fi, AV amenities, a separate entrance/exit, and access to the outdoor patio.</div>
+          </div>
         </div>
-        <div class="col-md-5 padding-top-15 padding-bottom-15">
-          <div><span class="text-uppercase small">Cost/Hr:</span> $25-175 <span class="margin-left-15 text-uppercase small">Dimensions:</span> 53' x 25'3"</div>
-          <div class="padding-top-15">A sliding air wall can be opened to extend this classic Event Hall into the library's open book space for greater capacity. The Event Hall features a wet bar, Wi-Fi, AV amenities, a separate entrance/exit, and access to the outdoor patio.</div>
-        </div>
-      </div>
-      <div class="row room-row">
+      </div> 
+        <div class="row room-row">
         <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="cap-first-floor-conference.jpg" alt="First Floor Conference Room"></div>
-        <div class="col-md-4 padding-top-15 padding-bottom-15">
-          <h2 class="roboto no-margin">First Floor Conference Room</h2>
-          <div class="padding-top-15"><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
-          <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
-          <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-          <div>Indoor</div>
+        <div class="col-md-9 no-gutter padding-top-15 padding-bottom-30">
+          <h2 class="roboto no-margin-top">First Floor Conference Room</h2>
+          <div class="col-md-6">
+            <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
+            <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
+            <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
+            <div>Indoor</div>
+            <div><span class="text-uppercase small">Dimensions:</span> 16' x 16'11"</div>
+            <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
+          </div>
+          <div class="col-md-6">
+            <div>Located on the lower level of the library, this private room features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity.</div>
+          </div>
         </div>
-        <div class="col-md-5 padding-top-15 padding-bottom-15">
-          <div><span class="text-uppercase small">Cost/Hr:</span> $25-75 <span class="margin-left-15 text-uppercase small">Dimensions:</span> 16' x 16'11"</div>
-          <div class="padding-top-15">Located on the lower level of the library, this private room features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity.</div>
-        </div>
-      </div>
-      <div class="row room-row">
+      </div>    
+          <div class="row room-row">
         <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="cap-second-floor-conference.jpg" alt="Second Floor Conference Room"></div>
-        <div class="col-md-4 padding-top-15 padding-bottom-15">
-          <h2 class="roboto no-margin">Second Floor Conference Room</h2>
-          <div class="padding-top-15"><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
-          <div><span class="text-uppercase small">Max. Capacity:</span> 6</div>
-          <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-          <div>Indoor</div>
+        <div class="col-md-9 no-gutter padding-top-15 padding-bottom-30">
+          <h2 class="roboto no-margin-top">Second Floor Conference Room</h2>
+          <div class="col-md-6">
+            <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
+            <div><span class="text-uppercase small">Max. Capacity:</span> 6</div>
+            <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
+            <div>Indoor</div>
+            <div><span class="text-uppercase small">Dimensions:</span> 9'11" x 13'8"</div>
+            <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
+          </div>
+          <div class="col-md-6">
+            <div>This private meeting space on the upper level of the library overlooks the lobby and features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity. </div>
+          </div>
         </div>
-        <div class="col-md-5 padding-top-15 padding-bottom-15">
-          <div><span class="text-uppercase small">Cost/Hr:</span> $25-75 <span class="margin-left-15 text-uppercase small">Dimensions:</span> 9'11" x 13'8"</div>
-          <div class="padding-top-15">This private meeting space on the upper level of the library overlooks the lobby and features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity. </div>
-        </div>
-      </div>
+      </div>    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <div class="row room-row">
         <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="cap-the-loft.jpg" alt="The Loft"></div>
         <div class="col-md-4 padding-top-15 padding-bottom-15">
@@ -595,7 +639,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-3 no-padding"><img class="img-responsive center-block" src="lt-kids-corner.jpg" alt="Kids Corner"></div>
         <div class="col-md-4 padding-top-15 padding-bottom-15">
-          
           <h2 class="roboto no-margin">Kids Corner</h2>
           <div class="padding-top-15"><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
           <div><span class="text-uppercase small">Max. Capacity:</span> 30</div>
@@ -745,8 +788,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Roxborough</h1>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x500" alt="Lockheed Martin Community Meeting Room"></div>
+        <h2 class="roboto no-margin-top">Lockheed Martin Community Meeting Room </h2>
         <div class="col-md-4 padding-top-15">
-          <h2 class="roboto no-margin-top">Lockheed Martin Community Meeting Room </h2>
           <div class=""><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
           <div><span class="text-uppercase small">Max. Capacity:</span> 40</div>
           <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
@@ -857,4 +900,5 @@ $(function () {
 </script> 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
