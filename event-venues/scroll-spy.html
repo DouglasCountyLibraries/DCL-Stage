@@ -6,6 +6,7 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
 <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 <style>
 body {
 	width: 400px;
@@ -22,6 +23,19 @@ body {
 }
 #sidebar li.active {
 	display: block;
+}
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".crazy").toggleClass("main");
+    });
+});
+</script>
+<style>
+.main {
+	font-size: 120%;
+	color: red;
 }
 </style>
 </head>
@@ -61,6 +75,11 @@ body {
     
     Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque. Phasellus vestibulum purus vitae purus auctor accumsan. Aliquam porta rutrum purus, sit amet pretium diam rutrum vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in elit vitae quam placerat sagittis. Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</p>
 </div>
+<div style="padding:60px 0;">
+  <button>Toggle for crazy class</button>
+  <div class="crazy">This is a paragraph.</div>
+  <p>This is another paragraph.</p>
+  <p><b>Note:</b> Click the button more than once to see the toggle effect.</p>
+</div>
 </body>
 </html>
-3
