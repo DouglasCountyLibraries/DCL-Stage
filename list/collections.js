@@ -93,7 +93,7 @@ function doBiblioList(val)
 	{
 		 var myel = $('#Noteworthy').append(createPreShelf(title,val.KeyName,i));
             console.log('val', val.KeyName)
-            getRandomCollectionList(val.KeyName,i);
+            getRandomCollectionList(val.KeyName,'10');
             $('#gen').append(createPostShelves(title));
 	}
 }
