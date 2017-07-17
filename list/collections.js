@@ -138,6 +138,7 @@ function getCollectionSet() {
        // swal("Problem With Request", data.responseText, "error");
         console.log("Problem With Request", data.responseText, "error");
     });
+}
 	
     function getRandomCollectionList(KeyName, divid) {
 
