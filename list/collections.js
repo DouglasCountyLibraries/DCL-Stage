@@ -94,7 +94,7 @@ function doBiblioList(val)
 		 var myel = $('#Noteworthy').append(createPreShelf(title,val.KeyName,'10'));
             console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,'10');
-            $('#gen').append(createPostShelves(title));
+            $('#Noteworthy').append(createPostShelves(title));
 	}
 }
 function getCollectionSet() {
@@ -169,17 +169,21 @@ function getCollectionSet() {
 
                 console.log('divid', divid)
                 // $('#' + divid).append(createBookList(isbn));
-                if (divid == 1) {
-                    $('#covers-1').append(createBookList(val,KeyName));
-                }
+               
                 if (divid == 0) {
                     $('#covers-0').append(createBookList(val,KeyName));
+                }
+				 if (divid == 1) {
+                    $('#covers-1').append(createBookList(val,KeyName));
                 }
                 if (divid == 2) {
                     $('#covers-2').append(createBookList(val,KeyName));
                 }
                 if (divid == 3) {
                     $('#covers-3').append(createBookList(val,KeyName));
+                }
+				 if (divid == 10 {
+                    $('#covers-Noteworthy').append(createBookList(val,KeyName));
                 }
 
                
