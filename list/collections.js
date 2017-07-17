@@ -82,6 +82,21 @@ $(document).ready(function () {
 }
   //  console.log('return from getCollection',collData);
 });  // end document ready
+function doBiblioList(val)
+{
+	//Noteworthy|New & Noteworthy||5|True|Biblio|975832667|10
+//ListenToThis|Listen To This||5|True|Biblio|963743517|10
+//NowFeaturing|Now Featuring||5|True|Biblio|/991669947|24
+//EpicReads|Epic Reads||5|True|Biblio|994069717|10
+ title = val.DisplayName;
+	if (val.KeyName == 'Noteworthy' )
+	{
+		 var myel = $('#gen').append(createPreShelf(title,val.KeyName,i));
+            console.log('val', val.KeyName)
+            getRandomCollectionList(val.KeyName,i);
+            $('#gen').append(createPostShelves(title));
+	}
+}
 function getCollectionSet() {
 
     var uri = baseURI + 'api/collectionlist/GetCollectionSet/';
@@ -112,6 +127,9 @@ function getCollectionSet() {
             console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,i);
             $('#gen').append(createPostShelves(title));
+		 }
+		 else {
+			 doBiblioList(val);
 		 }
         });
 
