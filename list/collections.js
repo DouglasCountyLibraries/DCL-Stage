@@ -91,7 +91,7 @@ function doBiblioList(val)
  title = val.DisplayName;
 	if (val.KeyName == 'Noteworthy' )
 	{
-		 var myel = $('#Noteworthy').append(createPreShelf(title,val.KeyName,i));
+		 var myel = $('#Noteworthy').append(createPreShelf(title,val.KeyName,'10'));
             console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,'10');
             $('#gen').append(createPostShelves(title));
