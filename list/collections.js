@@ -1,6 +1,6 @@
 
-//var baseURI = "http:///dev.dclcollections.dcl.lan/";
-var baseURI = "http://dclcollections.douglascountylibraries.org/";
+var baseURI = "http:///dev.dclcollections.dcl.lan/";
+//var baseURI = "http://dclcollections.douglascountylibraries.org/";
 // <div id="covers-${title}" class ="container shelf-container text-center
 var a = window.location.toString(); 
 var allKeyName;
@@ -106,11 +106,13 @@ function getCollectionSet() {
             console.log('val', val.DisplayName)
             console.log('i', i)
             console.log('w', createPreShelf(title, val.KeyName, i));
-         
+         if	(val.ListType == 'WhatsNew')
+		 {
             var myel = $('#gen').append(createPreShelf(title,val.KeyName,i));
             console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,i);
             $('#gen').append(createPostShelves(title));
+		 }
         });
 
     });
