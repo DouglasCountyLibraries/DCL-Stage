@@ -854,11 +854,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                 var src = $(this).find('img').attr('src');
                 var alt = $(this).find('img').attr('alt');
                
-                if (src.startsWith("images/fp")) {
-                    src = "images/" + src.substring(10);
+                if (src.startsWith("fp")) {
+                    src =  src.substring(3);
                 }
                 else {
-                    src = "images/fp-" + src.substring(7);
+                    src = "fp-" + src;
                 }
                
                 $(this).find('img').attr('src',src);
