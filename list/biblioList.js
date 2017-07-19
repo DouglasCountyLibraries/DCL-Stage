@@ -3,13 +3,9 @@
 //var baseURI = "http:///dev.dclcollections.dcl.lan/";
 var baseURI = "http://dclcollections.douglascountylibraries.org/";
 // <div id="covers-${title}" class ="container shelf-container text-center
-var a = window.location.toString();
+
 var allKeyName;
-if (a.indexOf('=') > -1) {
-    allKeyName = a.substring(a.indexOf("=") + 1, a.lastIndexOf("&"));
-    title = a.substring(a.indexOf("&") + 7).replace(/%20/g, " ");
-    console.log("allKeyName name  is ", allKeyName, "title name  is ", title, "a ", a);
-}
+
 
 
 function createAllPageTitle(title) {
@@ -72,14 +68,7 @@ $(document).ready(function () {
     if (allKeyName != undefined) {
         getlargeList(allKeyName, title);
     }
-    $(window).load(function () {
-        $("#covers-Noteworthy").elastislide({
-            minItems: 5
-
-        });
-    });
-    //$("#covers-Noteworthy").elastislide({
-    //    minItems: 5
+   
 
     //});
     //  console.log('return from getCollection',collData);
