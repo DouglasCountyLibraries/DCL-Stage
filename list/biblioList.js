@@ -45,9 +45,7 @@ function createPostShelves(title) {
     var x = `
         </ul>
  </div>
- <div class ="row shelf-shadow padding-bottom-60">
-
- </div>
+ 
     `;
     return x;
 }
