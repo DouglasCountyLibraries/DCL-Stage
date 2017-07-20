@@ -75,55 +75,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .reserve-a-space-active {
 	background-color: #f5f5f5;
 }
+.room-row h4.roboto {
+	line-height: 1.1em;
+}
 .room-row {
 	background-color: rgba(255,255,255,.8);
 	padding: 0;
 	margin-bottom: 15px;
-}
-.room-wrapper {
-	width: 390px;
-	height: 380px;
-	background-color: red;
-}
-#select-plans:checked ~ rooms .room-wrapper {
-	background-color: green;
-}
-input[type=checkbox].css-checkbox {
-	position: absolute;
-	z-index: -1000;
-	left: -1000px;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
-}
-input[type=checkbox].css-checkbox + label.css-label {
-	padding-left: 50px;
-	height: 30px;
-	text-transform: uppercase;
-	font-weight: normal;
-	display: inline-block;
-	line-height: 26px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	font-size: 16px;
-	vertical-align: middle;
-	cursor: pointer;
-}
-input[type=checkbox].css-checkbox:checked + label.css-label {
-	background-position: 0 -30px;
-}
-label.css-label {
-	background-image: url(switch.png);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -331,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
+  <div id="top" class="row border-top">
     <div class="container text-center">
       <h1 class="jumbo-text text-uppercase font-weight-400">Event Venues</h1>
       <div class="separator-container">
@@ -353,9 +311,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row margin-top-15 padding-bottom-30">
     <div class="container text-center">
-      <button type="button" class="btn text-uppercase btn-primary margin-top-15" data-toggle="modal" data-target="#modalone">Get Started</button>
+      <button type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</button>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="modalone" style="display: none;">
@@ -371,13 +329,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-top-15 padding-bottom-60">
+  <div class="row bg-teal padding-top-15 padding-bottom-60">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Parker</h1>
+      <h1 id="parker" class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Parker</h1>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a-b.jpg" alt="Event Hall A & B + Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Event Halls A & B + Terrace</h2>
+          <h4 class="roboto no-margin-top">Event Halls A & B + Terrace</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 235</div>
@@ -394,7 +352,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a-terrace.jpg" alt="Event Hall A + Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Event Hall A + Terrace</h2>
+          <h4 class="roboto no-margin-top">Event Hall A + Terrace</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 125</div>
@@ -411,7 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a.jpg" alt="Event Hall A"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Event Hall A</h2>
+          <h4 class="roboto no-margin-top">Event Hall A</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 100</div>
@@ -428,7 +386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-b.jpg" alt="Event Hall B"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Event Hall B</h2>
+          <h4 class="roboto no-margin-top">Event Hall B</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 100</div>
@@ -445,7 +403,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-kids-corner.jpg" alt="Kids Corner"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Kids Corner</h2>
+          <h4 class="roboto no-margin-top">Kids Corner</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 70</div>
@@ -462,7 +420,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-conference-room.jpg" alt="Conference Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Conference Room</h2>
+          <h4 class="roboto no-margin-top">Conference Room</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 40</div>
@@ -479,7 +437,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-the-loft.jpg" alt="The Loft"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">The Loft</h2>
+          <h4 class="roboto no-margin-top">The Loft</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 12</div>
@@ -493,15 +451,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </div><div class="margin-top-30 text-center text-uppercase white"><i class="fa fa-phone"></i> <a class="white" href="tel:303-688-7605">(303) 688-7605</a> | <a class="white" href="#top">Back to Top</a></div>
   </div>
   <div class="row bg-moss padding-top-15 padding-bottom-60">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Lone Tree</h1>
+      <h1 id="lone-tree" class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Lone Tree</h1>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Event Hall + Adjoining Library Space"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Event Hall + Adjoining Library Space"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Event Hall + Adjoining Library Space</h2>
+          <h4 class="roboto no-margin-top">Event Hall + Adjoining Library Space</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 200</div>
@@ -516,9 +474,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Event Hall"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Event Hall"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Event Hall</h2>
+          <h4 class="roboto no-margin-top">Event Hall</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 100</div>
@@ -533,9 +491,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Main Terrace"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Main Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Main Terrace</h2>
+          <h4 class="roboto no-margin-top">Main Terrace</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Outdoor</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 75</div>
@@ -550,9 +508,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Kids Corner"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Kids Corner"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Kids Corner</h2>
+          <h4 class="roboto no-margin-top">Kids Corner</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 30</div>
@@ -567,9 +525,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="The Studio"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="The Studio"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">The Studio</h2>
+          <h4 class="roboto no-margin-top">The Studio</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 15</div>
@@ -587,11 +545,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row bg-loquacious padding-top-15 padding-bottom-60">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Pines</h1>
+      <h1 id="castle-pines" class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Pines</h1>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall-library.jpg" alt="CPN Masters Association Event Hall"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="CPN Masters Association Event Hall"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h2>
+          <h4 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 120</div>
@@ -606,9 +564,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="The Terrace"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="The Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">The Terrace</h2>
+          <h4 class="roboto no-margin-top">The Terrace</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Outdoor</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 100</div>
@@ -625,7 +583,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall.jpg" alt="CPN Masters Association Event Hall"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall</h2>
+          <h4 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 70</div>
@@ -640,9 +598,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="First Floor Conference Room"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="First Floor Conference Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">First Floor Conference Room</h2>
+          <h4 class="roboto no-margin-top">First Floor Conference Room</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
@@ -657,9 +615,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="The Loft"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="The Loft"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">The Loft</h2>
+          <h4 class="roboto no-margin-top">The Loft</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 8</div>
@@ -675,13 +633,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-teal padding-top-15 padding-bottom-60">
+  <div class="row bg-lavender padding-top-15 padding-bottom-60">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Highlands Ranch</h1>
+      <h1 id="highlands-ranch" class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Highlands Ranch</h1>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="The Terrace"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="The Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">The Terrace</h2>
+          <h4 class="roboto no-margin-top">The Terrace</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Outdoor</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 140</div>
@@ -696,9 +654,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Shea Meeting Room A & B"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Shea Meeting Room A & B"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Shea Meeting Rooms A & B</h2>
+          <h4 class="roboto no-margin-top">Shea Meeting Rooms A & B</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 100</div>
@@ -713,9 +671,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Second Floor Quiet Reading Room"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Second Floor Quiet Reading Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Second Floor Quiet Reading Room</h2>
+          <h4 class="roboto no-margin-top">Second Floor Quiet Reading Room</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 80</div>
@@ -730,9 +688,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Shea Meeting Room A"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Shea Meeting Room A"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Shea Meeting Room A</h2>
+          <h4 class="roboto no-margin-top">Shea Meeting Room A</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 60</div>
@@ -747,9 +705,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Shea Meeting Room B"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Shea Meeting Room B"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Shea Meeting Room B</h2>
+          <h4 class="roboto no-margin-top">Shea Meeting Room B</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 35</div>
@@ -765,13 +723,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-top-15 padding-bottom-60">
+  <div class="row bg-teal padding-top-15 padding-bottom-60">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Rock</h1>
+      <h1 id="castle-rock" class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Castle Rock</h1>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Castle Rock Bank Meeting Room East & West"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Castle Rock Bank Meeting Room East & West"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Castle Rock Bank Meeting Room East & West</h2>
+          <h4 class="roboto no-margin-top">Castle Rock Bank Meeting Room East & West</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 130</div>
@@ -786,9 +744,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Castle Rock Bank Meeting Room East"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Castle Rock Bank Meeting Room East"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Castle Rock Bank Meeting Room East</h2>
+          <h4 class="roboto no-margin-top">Castle Rock Bank Meeting Room East</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 65</div>
@@ -803,9 +761,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Castle Rock Bank Meeting Room West"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Castle Rock Bank Meeting Room West"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Castle Rock Bank Meeting Room West</h2>
+          <h4 class="roboto no-margin-top">Castle Rock Bank Meeting Room West</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Event Hall</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 65</div>
@@ -820,9 +778,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="James H. LaRue Meeting Room"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="James H. LaRue Meeting Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">James H. LaRue Meeting Room</h2>
+          <h4 class="roboto no-margin-top">James H. LaRue Meeting Room</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 21</div>
@@ -837,9 +795,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Great Southwest Construction Conference Room"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Great Southwest Construction Conference Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Great Southwest Construction Conference Room</h2>
+          <h4 class="roboto no-margin-top">Great Southwest Construction Conference Room</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 12</div>
@@ -854,9 +812,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Bandstand"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Bandstand"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Bandstand</h2>
+          <h4 class="roboto no-margin-top">Bandstand</h4>
           <div class="col-md-5">
             <div><span class="text-uppercase small">Room Type:</span> Outdoor</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
@@ -874,11 +832,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row bg-moss padding-top-15 padding-bottom-60">
     <div class="container">
-      <h1 class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Roxborough</h1>
+      <h1 id="roxborough" class="jumbo-text font-weight-400 text-center white text-uppercase padding-bottom-15">Roxborough</h1>
       <div class="row room-row">
-        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x700" alt="Lockheed Martin Community Meeting Room"></div>
+        <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="http://placehold.it/800x650" alt="Lockheed Martin Community Meeting Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-          <h2 class="roboto no-margin-top">Lockheed Martin Community Meeting Room </h2>
+          <h4 class="roboto no-margin-top">Lockheed Martin Community Meeting Room </h4>
           <div class="col-md-5">
             <div class=""><span class="text-uppercase small">Room Type:</span> Meeting Room</div>
             <div><span class="text-uppercase small">Max. Capacity:</span> 40</div>
