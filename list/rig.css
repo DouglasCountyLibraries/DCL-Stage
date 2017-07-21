@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 ul.grid-nav {
 	list-style: none;
 	font-size: .85em;
