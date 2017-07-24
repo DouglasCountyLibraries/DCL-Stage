@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Minimize page flickering for Google Optimize --> 
-<style>.async-hide { opacity: 0 !important} </style>
+<!-- Minimize page flickering for Google Optimize -->
+<style>
+.async-hide {
+	opacity: 0 !important
+}
+</style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',4000,
 {'GTM-K3MW9FB':true});</script>
-<!-- End --> 
-<!-- Google Analytics with Google Optimize plugin --> 
+<!-- End -->
+<!-- Google Analytics with Google Optimize plugin -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,7 +27,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   ga('require', 'GTM-K3MW9FB');
   ga('send', 'pageview');
 </script>
-<!-- End --> 
+<!-- End -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -77,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	line-height: 1.1em;
 }
 .room-row {
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0;
 	margin-bottom: 15px;
 }
@@ -86,22 +91,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	vertical-align: middle;
 	padding-bottom: 3px;
 }
-	.nav > li > a {
-    display: inline;
+.nav > li > a {
+	display: inline;
 }
-#sidebar {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
+.location-heading {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 48px;
+}
+#location-sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
 	z-index: 1000;
 }
-	#sidebar a:hover, #sidebar a:focus {background: #fff;}
-#sidebar li {
+#location-sticky a:hover, #location-sticky a:focus {
+	background: #fff;
+}
+#location-sticky li {
 	display: none;
 }
-#sidebar li.active {
+#location-sticky li.active {
 	display: block;
 }
 </style>
@@ -309,19 +320,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="row alert-warning">
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
-  <!-- InstanceBeginEditable name="Content" -->
-      <script>$('body').scrollspy({ target: '#sidebar' })</script>
-  <div class="row" id="sidebar">
+  <!-- InstanceBeginEditable name="Content" --> 
+  <script>$('body').scrollspy({ target: '#location-sticky' })</script>
+  <div class="row" id="location-sticky">
     <ul class="nav">
-      <li class="jumbo-text text-uppercase font-weight-400">
-        <a class="teal" href="#parker">Parker</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a>
-      </li>
-      <li><a href="#lone-tree">Lone Tree</a></li>
-      <li><a href="#castle-pines">Castle Pines</a></li>
-      <li><a href="#highlands-ranch">Highlands Ranch</a></li>
-      <li><a href="#castle-rock">Castle Rock</a></li>
-      <li><a href="#roxborough">Roxborough</a></li>
-    </ul></div>
+      <li class="location-heading bg-teal"> <a class="white" href="#parker">Parker</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+      <li class="location-heading bg-moss"> <a class="white" href="#lone-tree">Lone Tree</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+      <li class="location-heading bg-loquacious"> <a class="white" href="#castle-pines">Castle Pines</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+      <li class="location-heading bg-lavender"> <a class="white" href="#highlands-ranch">Highlands Ranch</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+      <li class="location-heading bg-teal"> <a class="white" href="#castle-rock">Castle Rock</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+      <li class="location-heading bg-moss"> <a class="white" href="#roxborough">Roxborough</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+    </ul>
+  </div>
   <div id="top" class="row border-top">
     <div class="container text-center">
       <h1 class="jumbo-text text-uppercase font-weight-400">Event Venues</h1>
@@ -986,4 +996,5 @@ $(function () {
 </script> 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
