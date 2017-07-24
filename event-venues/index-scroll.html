@@ -97,7 +97,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .location-heading {
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 48px;
 }
 #location-sticky {
 	position: fixed;
@@ -106,11 +105,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	text-align: center;
 	z-index: 1000;
 }
+	
+.btn.btn-events {
+    border: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+}
 #location-sticky a:hover, #location-sticky a:focus {
 	background: #fff;
 }
 #location-sticky li {
-	display: none;
+    display: none;
+    padding: 10px 0;
 }
 #location-sticky li.active {
 	display: block;
@@ -323,8 +330,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <!-- InstanceBeginEditable name="Content" --> 
   <script>$('body').scrollspy({ target: '#location-sticky' })</script>
   <div class="row" id="location-sticky">
-    <ul class="nav">
-      <li class="location-heading bg-teal"> <a class="white" href="#parker">Parker</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
+    <ul class="nav sticky-nav">
+      <li class="bg-teal"> <a class="location-heading white" href="#parker">Parker</a> <a class="white" href="tel:303-688-7605">(303) 688-7605</a> <a href="#" type="button" class="btn btn-events" data-toggle="modal" data-target="#modalone">Get Started</a></li>
       <li class="location-heading bg-moss"> <a class="white" href="#lone-tree">Lone Tree</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
       <li class="location-heading bg-loquacious"> <a class="white" href="#castle-pines">Castle Pines</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
       <li class="location-heading bg-lavender"> <a class="white" href="#highlands-ranch">Highlands Ranch</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
