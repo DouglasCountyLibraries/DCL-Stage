@@ -227,7 +227,7 @@ function getlargeList(KeyName,Title) {
                 console.log('val', val.Isbn)
 
               		
-                    $('#largeCoverList').append(createBookList(val,KeyName));
+                    $('#largeCoverList').append(createBookListAsList(val,KeyName));
              
                
                 console.log('val', val.Title)
@@ -240,8 +240,39 @@ function getlargeList(KeyName,Title) {
         });
 
     }
-
 function createBookList(val,KeyName) {
+    var x;
+    var bib = val.Bib + 114;
+	
+    if (val.FoundImage == true)
+    {
+		if (KeyName == 'ComingSoonMovies')
+		{
+			//https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192184178
+			// https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192396540
+			 x = `
+			    <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=${val.Isbn}"></a>
+			    `;
+		}
+		else
+		{
+        x = `
+          <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=${val.Isbn}/LC.GIF" alt="${val.Title}"></a>
+      `;
+		}
+    }
+    else
+    {
+
+        x = `
+        <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${baseURI}/api/images/${val.Isbn}" alt="${val.Title}"></a>
+      `;
+    }
+       
+  
+    return x;
+}
+function createBookListAsList(val,KeyName) {
     var x;
     var bib = val.Bib + 114;
 	
