@@ -469,24 +469,8 @@ blockquote footer, blockquote small, blockquote .small {
 .cover-image:hover, .cover-image:focus {
 	box-shadow: 0 5px 10px #838383;
 	top: 5px;
-	transition: all 0.5s ease-in-out;	
+	transition: all 0.5s ease-in-out;
 }
-/* grow image later
-.cover-image {
-    box-shadow: 0 5px 15px -7px #000;
-    max-height: 220px;
-    max-width: 200px;
-    position: relative;
-    top: 30px;
-	transition: all .3s ease-in-out;
-	transform: scale(0.85);
-}
-.cover-image:hover, .cover-image:focus {
-    box-shadow: 0 5px 10px #838383;
-    top: 20px;
-	transform: scale(1);
-}
-*/
 /* ====== buttons ====== */
 .btn-database {
 	font-size: 20px;
@@ -505,9 +489,9 @@ blockquote footer, blockquote small, blockquote .small {
 .btn-default {
 	background-color: #456e70;
 	border: 0;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 a.btn.btn-default {
 	color: #fff;
@@ -516,24 +500,23 @@ a.btn.btn-default {
 .btn-default:active, .btn-default:hover, .btn-default:focus {
 	background-color: #4f868b;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
 .btn-primary {
 	background-color: #4e3b59;
 	border: 0;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 a.btn.btn-primary {
 	color: #fff;
@@ -542,15 +525,14 @@ a.btn.btn-primary {
 .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
 	background-color: #65577b;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
@@ -572,9 +554,9 @@ a.btn.btn-primary {
 	border: 0;
 	color: #ffffff;
 	text-decoration: none;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
@@ -617,88 +599,84 @@ a.btn.btn-primary {
 .btn-success {
 	background-color: #74894e;
 	border: 0;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 .btn-success:active, .btn-success:hover, .btn-success:focus {
 	background-color: #91ae65;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
 .btn-info {
 	background-color: #3975af;
 	border: 0;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 .btn-info:active, .btn-info:hover, .btn-info:focus {
 	background-color: #3f81c1;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
 .btn-warning {
 	background-color: #d36a50;
 	border: 0;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 .btn-warning:active, .btn-warning:hover, .btn-warning:focus {
 	background-color: #ed785a;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
 .btn-danger {
 	background-color: #ae2924;
 	border: 0;
-	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 .btn-danger:active, .btn-danger:hover, .btn-danger:focus {
 	background-color: #ad4949;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
@@ -1255,7 +1233,6 @@ h6.responsive-text {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	opacity: 1;
-	transform: translateY(-2px);
 	transition: all 0.4s ease-out 0s;
 }
 .btn-database:active, .btn-database.active, .open > .dropdown-toggle.btn-database {
@@ -2489,40 +2466,42 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 .bg-teal .btn-default {
 	background-color: #4e3b59;
 	border: 0 none;
-	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 .bg-teal .btn-default:active, .bg-teal .btn-default:hover, .bg-teal .btn-default:focus {
 	background-color: #65577b;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
 .bg-lavender .btn-default {
 	background-color: #456e70;
 	border: 0 none;
-	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 .bg-lavender .btn-default:active, .bg-lavender .btn-default:hover, .bg-lavender .btn-default:focus {
 	background-color: #4f868b;
 	border: 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
-	transform: translateY(-2px);
 	opacity: 1;
 	cursor: pointer;
 }
@@ -2569,33 +2548,6 @@ img.size-full, img.size-large, img.header-image, img.wp-post-image {
 	width: 50%;
 }
 }
-
-/* styles for coming soon pages */
-
-#gen {
-	padding-bottom: 60px;
-}
-
-#gen .cover-image {
-	margin: 15px 15px 17px 15px;
-	vertical-align: bottom;
-}
-
-@media (min-width: 992px) {
-#gen .shelf {
-	border-bottom: 20px solid transparent;
-	border-image: url("/shared-assets/images/new-shelf.jpg") 30 30 30 30 round round;
-	border-top: 0 none;
-	padding-bottom: 0;
-}
-
-#gen .shelf-shadow {
-	background: #fff url("/shared-assets/images/shelf-shadow.png");
-	background-repeat: repeat-x;
-}
-}
-
-
 /* animations for locations - remove for now
 .animate-pop-in-location {
 	animation: pop-in 1s forwards;
