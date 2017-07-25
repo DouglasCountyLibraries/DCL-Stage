@@ -92,12 +92,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	padding-bottom: 3px;
 }
 .nav.sticky-nav > li > a {
-	padding: 15px 15px;
+	padding: 15px 12px;
 	display: inline;
 }
 .location-heading {
 	text-transform: uppercase;
 	font-weight: 400;
+	font-size: 48px;
+	line-height: 73px;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
 }
 #location-sticky {
 	position: fixed;
@@ -123,7 +128,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 #location-sticky li {
 	display: none;
-	padding: 13px;
 }
 #location-sticky li.active {
 	display: block;
@@ -347,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <script>$('body').scrollspy({ target: '#location-sticky' })</script>
   <div class="row" id="location-sticky">
     <ul class="nav sticky-nav">
-      <li class="bg-teal"> <a class="location-heading white" href="#parker">Parker</a> <a class="text-nowrap white font-weight-400" href="tel:303-688-7605">(303) 688-7605</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a></li>
+      <li class="bg-teal"> <a class="location-heading white" href="#parker">Parker</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a></li>
       <li class="location-heading bg-moss"> <a class="white" href="#lone-tree">Lone Tree</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
       <li class="location-heading bg-loquacious"> <a class="white" href="#castle-pines">Castle Pines</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
       <li class="location-heading bg-lavender"> <a class="white" href="#highlands-ranch">Highlands Ranch</a><a href="#" type="button" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#modalone">Get Started</a> </li>
