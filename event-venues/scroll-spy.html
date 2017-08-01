@@ -70,5 +70,29 @@ body {
     Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque. Phasellus vestibulum purus vitae purus auctor accumsan. Aliquam porta rutrum purus, sit amet pretium diam rutrum vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in elit vitae quam placerat sagittis. Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</p>
 </div>
 
+
+<div>
+
+    <label><input type="checkbox" class="selectall"/>checkbox1</label><br/>
+    <label><input type="checkbox" class="selectall"/>checkbox2</label><br />
+<label><input type="checkbox" class="selectall"/>checkbox3</label><br />
+    
+</div>
+
+	<script>
+		
+  $(document).ready(function () {		
+		
+	$('.selectall').click(function() {
+    if ($(this).is(':checked')) {
+        $('input:checkbox').attr('checked', true);
+    } else {
+        $('input:checkbox').attr('checked', false);
+    }
+});
+	  	});  // end document ready
+	</script>
+
 </body>
+
 </html>
