@@ -26,7 +26,7 @@ function createPreShelf(title, keyName, seq)
 <div class="row shelf">
  
    <div id="covers-${seq}" class ="container shelf-container text-center">
-     <h1 class="no-margin"><a href="${baseDCLOrgURI}all.html?key=${keyName}&title=${title}">${title}</a></h1>
+     <h1 class="no-margin"><a href="all.html?key=${keyName}&title=${title}">${title}</a></h1>
       `;
     return x;
 }
