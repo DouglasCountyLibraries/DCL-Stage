@@ -835,6 +835,14 @@ a.hover-shadow {
 .text-dark {
 	color: #333;
 }
+.sold-out {
+	border: 2px solid red;
+	color: red;
+	padding: 6px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 250px;
+}
 a.fff:hover, a.fff:focus, a.fff:active, a.fff:visited {
 	color: #fff;
 }
