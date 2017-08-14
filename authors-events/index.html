@@ -70,6 +70,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
 <style>
+.events-active {
+	background-color: #f5f5f5;
+}
+.dropdown-menu.dropdown-event-menu a {
+	color: #b0852e;
+	font-weight: normal;
+}
+.dropdown-menu.dropdown-event-menu {
+	color: #b0852e;
+	font-weight: normal;
+	width: 400px;
+}
 .bookrow {
 	margin: 15px auto 20px;
 	max-width: 500px;
@@ -300,7 +312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <div class="separator-container">
           <div class="separator line-separator"><i class="fa fa-bookmark-o"></i></div>
         </div>
-        <h4 class="roboto text-center margin-lg-100">Summary content describing DCL Presents and pointing out these are not all our authors events, just highlighted ones.</h4>
+        <h4 class="roboto text-center margin-lg-100">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</h4>
       </div>
     </div>
   </div>
@@ -338,48 +350,212 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-black">
-    <div class="text-center">
-      <h1 class="roboto margin-top-10 margin-bottom-15 opacity-9 white font-weight-400">DCL Presents:</h1>
+  <div class="row"> 
+    
+    <!-- Nav tabs -->
+    <div class="container">
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active"><a class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
+          <h1 class="">DCL Presents:</h1>
+          </a></li>
+        <li role="presentation"><a class="tab" href="#two" role="tab" data-toggle="tab">
+          <h1 class="">2017</h1>
+          </a></li>
+        <li role="presentation"><a class="tab" href="#three" role="tab" data-toggle="tab">
+          <h1 class="text-uppercase">2016</h1>
+          </a></li>
+      </ul>
     </div>
-  </div>
-  <div class="row">
-    <div class="container-lg">
-      <div class="col-lg-4 bg-teal padding-top-15 padding-bottom-80 text-center">
-        <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Louise Penny</h1>
-        <img class="img-responsive center-block shadow-high" src="louise-penny.jpg" alt="Louise Penny">
-        <div class="row bookrow">
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1412170114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781250066190/MC.GIF" alt="Glass Houses"> </a> </div>
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/932000114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780312661687/MC.GIF" alt="The Brutal Telling"> </a> </div>
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/845849114"><img src="https://secure.syndetics.com/index.aspx?isbn=9780312655464/MC.GIF" alt="The Beautiful Mystery" class="img-responsive book-cover"> </a></div>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="one">
+        <div class="container-lg">
+          <div class="col-lg-4 bg-teal padding-top-15 padding-bottom-80 text-center">
+            <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Louise Penny</h1>
+            <img class="img-responsive center-block shadow-high" src="louise-penny.jpg" alt="Louise Penny">
+            <div class="row bookrow">
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1412170114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781250066190/MC.GIF" alt="Glass Houses"> </a> </div>
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/932000114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780312661687/MC.GIF" alt="The Brutal Telling"> </a> </div>
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/845849114"><img src="https://secure.syndetics.com/index.aspx?isbn=9780312655464/MC.GIF" alt="The Beautiful Mystery" class="img-responsive book-cover"> </a></div>
+            </div>
+            <h4 class="white no-margin-top no-margin-bottom font-weight-400">Tuesday, September 5, 2017</h4>
+            <h4 class="white no-margin-top no-margin-bottom font-weight-400">7PM</h4>
+            <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
+          </div>
+          <div class="col-lg-4 bg-loquacious padding-top-15 padding-bottom-80 text-center">
+            <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Sarah J. Maas</h1>
+            <img class="img-responsive center-block shadow-high" src="sarah-j-mass.jpg" alt="Sarah J. Maas">
+            <div class="row bookrow">
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1420929114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781681195773/MC.GIF" alt="Tower of Dawn"> </a> </div>
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1283629114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781619636040/MC.GIF" alt="Queen of Shadows"> </a> </div>
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1213536114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781619633612/MC.GIF" alt="Assassin's Blade"> </a></div>
+            </div>
+            <h4 class="white no-margin-top no-margin-bottom font-weight-400">Wednesday, September 13, 2017</h4>
+            <h4 class="white no-margin-top no-margin-bottom font-weight-400">6:30PM</h4>
+            <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
+          </div>
+          <div class="col-lg-4 bg-teal padding-top-15 padding-bottom-80 text-center">
+            <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Dan Brown</h1>
+            <img class="img-responsive center-block shadow-high" src="dan-brown.jpg" alt="Dan Brown">
+            <div class="row bookrow">
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1410264114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780385514231/MC.GIF" alt="Origin"> </a> </div>
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1358424114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781524715823/MC.GIF" alt="The Da Vinci Code"> </a> </div>
+              <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1112156114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781101974117/MC.GIF" alt="Inferno"> </a></div>
+            </div>
+            <h4 class="white no-margin-top no-margin-bottom font-weight-400">Wednesday, November 15, 2017</h4>
+            <h4 class="white no-margin-top no-margin-bottom font-weight-400">7:30PM</h4>
+            <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
+          </div>
         </div>
-        <h4 class="white no-margin-top no-margin-bottom font-weight-400">Tuesday, September 5, 2017</h4>
-        <h4 class="white no-margin-top no-margin-bottom font-weight-400">7PM</h4>
-        <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
       </div>
-      <div class="col-lg-4 bg-loquacious padding-top-15 padding-bottom-80 text-center">
-        <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Sarah J. Maas</h1>
-        <img class="img-responsive center-block shadow-high" src="sarah-j-mass.jpg" alt="Sarah J. Maas">
-        <div class="row bookrow">
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1420929114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781681195773/MC.GIF" alt="Tower of Dawn"> </a> </div>
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1283629114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781619636040/MC.GIF" alt="Queen of Shadows"> </a> </div>
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1213536114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781619633612/MC.GIF" alt="Assassin's Blade"> </a></div>
+      <div role="tabpanel" class="tab-pane fade" id="two">
+        <div class="bg-lavender padding-top-30 padding-bottom-60">
+          <div class="container white">
+            <div class="text-center padding-bottom-30">
+              <h1 class="white text-uppercase font-weight-400">2017 Author Events</h1>
+              <h4 class="roboto white text-center margin-lg-100">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</h4>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <h4 class="white no-margin-top no-margin-bottom font-weight-400">Wednesday, September 13, 2017</h4>
-        <h4 class="white no-margin-top no-margin-bottom font-weight-400">6:30PM</h4>
-        <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
       </div>
-      <div class="col-lg-4 bg-teal padding-top-15 padding-bottom-80 text-center">
-        <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Dan Brown</h1>
-        <img class="img-responsive center-block shadow-high" src="dan-brown.jpg" alt="Dan Brown">
-        <div class="row bookrow">
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1410264114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780385514231/MC.GIF" alt="Origin"> </a> </div>
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1358424114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781524715823/MC.GIF" alt="The Da Vinci Code"> </a> </div>
-          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1112156114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781101974117/MC.GIF" alt="Inferno"> </a></div>
+      <div role="tabpanel" class="tab-pane fade" id="three">
+        <div class="bg-moss padding-top-30 padding-bottom-60">
+          <div class="container white">
+            <div class="text-center padding-bottom-30">
+              <h1 class="white text-uppercase font-weight-400">2016 Author Events</h1>
+              <h4 class="roboto white text-center margin-lg-100">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</h4>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <h2 class="roboto white">Author Name</h2>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <h4 class="white no-margin-top no-margin-bottom font-weight-400">Wednesday, November 15, 2017</h4>
-        <h4 class="white no-margin-top no-margin-bottom font-weight-400">7:30PM</h4>
-        <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
       </div>
     </div>
   </div>
