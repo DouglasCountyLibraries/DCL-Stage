@@ -275,10 +275,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">
-    <div class="row">
-      <div class="col-xs-4 col-md-2"> <a href="#" data-toggle="popover" data-full="http://placehold.it/200"> <img src="http://placehold.it/150"> </a> </div>
-      <div class="col-xs-4 col-md-2"> <a href="#" data-toggle="popover" data-full="http://placehold.it/200"> <img src="http://placehold.it/150"> </a> </div>
-    </div>
+    <div class="col-md-4"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" 
+   title="<div>Title Content</div>" data-content="<div><img src='http://placehold.it/200'><div>content goes here</div></div>"><img src="http://placehold.it/150"></a> </div>
+       <div class="col-md-4"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" 
+   title="<div>Title Content</div>" data-content="<div><img src='http://placehold.it/200'><div>content goes here</div></div>"><img src="http://placehold.it/150"></a> </div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
@@ -335,21 +335,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>// Wait for the web page to be ready
-$(document).ready(function() {
-  // grab all thumbnails and add bootstrap popovers
-  // https://getbootstrap.com/javascript/#popovers
-  $('[data-toggle="popover"]').popover({
-    container: 'body',
-    html: true,
-    placement: 'bottom',
-    trigger: 'onClick',
-    content: function() {
-      // get the url for the full size img
-      var url = $(this).data('full');
-      return '<img src="' + url + '">'
-    }
-  });
+<script>$(function(){
+    // Enables popover
+    $("[data-toggle=popover]").popover();
 });</script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
