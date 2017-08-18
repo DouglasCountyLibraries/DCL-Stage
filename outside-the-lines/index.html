@@ -97,6 +97,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .thumb:hover {
 	cursor: pointer;
 }
+	
+.rotate-vert-center:hover {
+	-webkit-animation: rotate-vert-center 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: rotate-vert-center 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}	
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+	
+	
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -315,27 +342,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row background"></div>
   <div style="background-color:#74c043;" class="row text-center padding-bottom-15">
-    <div class="container">
-      <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>105 West Brewing Company</h3> <a href='#' target='_blank'>1043 Park St., Castle Rock</a></div>
-</div>"><img class="thumb" src="105-west-brewing.png"></a> </div>
-      <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>3 Freaks Brewery</h3> <a href='#' target='_blank'>7140 E. County Line Rd., Highlands Ranch</a></div></div>
-</div>"><img class="thumb" src="3-freaks-brewery.png"></a> </div>
+	  <div class="container"><h2 class="roboto white font-weight-400">Visit a different business or two each week and enjoy a special free event brought to you by Douglas County Libraries! Registration required only where noted.</h2>
+      <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>105 West Brewing Company</h3> <a href='https://www.google.com/maps/place/105+West+Brewing+Company/@39.3811365,-104.8677044,15z/data=!4m5!3m4!1s0x0:0x2d5501ba35999ee5!8m2!3d39.3811365!4d-104.8677044' target='_blank'>1043 Park St., Castle Rock</a><div class='margin-top-5'>Serving a variety of brews in their friendly, spacious tap room.</div></div></div>
+</div>"><img class="thumb rotate-vert-center" src="castle-rock-brewery.png"></a> </div>
+     
+     
+      <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>3 Freaks Brewery</h3> <a href='https://www.google.com/maps/place/3+Freaks+Brewery/@39.5648836,-104.9059894,15z/data=!4m5!3m4!1s0x0:0x7ab434bda2d30aaf!8m2!3d39.5648836!4d-104.9059894' target='_blank'>7140 E. County Line Rd., Highlands Ranch</a><div class='margin-top-5'>A nano-brewery serving up freakishly delicious beers.</div></div></div>
+</div>"><img class="thumb rotate-vert-center" src="castle-rock-brewery.png"></a> </div>
+     
+     
+      <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Barnett & Son Brewing Company</h3> <a href='https://www.google.com/maps/place/Barnett+%26+Son+Brewing+Co./@39.522213,-104.774991,15z/data=!4m5!3m4!1s0x0:0xd69330d884fe5dbf!8m2!3d39.522213!4d-104.774991' target='_blank'>18425 Pony Express Dr., Parker</a><div class='margin-top-5'>A cold craft beer and good friends can help keep you connected to the world.</div></div></div>
+</div>"><img class="thumb rotate-vert-center" src="castle-rock-brewery.png"></a> </div>
+     
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+     
+     
       <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
 </div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
-      <div class="col-sm-3 margin-top-30 margin-bottom-30"> <a tabindex="0" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="auto" data-content="<div class='text-center'><h3>Lone Tree Brewing Company</h3> <a href='#' target='_blank'>8200 Park Meadows Dr., #8222, Lone Tree</a></div><div class='text-center'><h4>Beer & Chocolate Pairings</h4>Wednesday, September 6, 6-8PM<div class='margin-top-5'>Enjoy wisdom and samples from The Chocolate Therapist, plus LTB's tapping of a Brew Tour exclusive East Coast IPA!</div></div>
-</div>"><img class="thumb" src="castle-rock-brewery.png"></a> </div>
+   
+   
     </div>
   </div>
   <div class="row padding-bottom-30">
