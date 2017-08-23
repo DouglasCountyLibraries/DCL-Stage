@@ -228,7 +228,7 @@ function getlargeList(KeyName,Title) {
                 console.log('val', val.Isbn)
 
               		
-                    $('#largeCoverList').append(createBookListAsList(val,KeyName));
+                    $('#largeCoverList').append(createBookList(val,KeyName));
              
                
                 console.log('val', val.Title)
@@ -245,7 +245,7 @@ function createBookList(val,KeyName) {
     var x;
     var bib = val.Bib + 114;
 	
-    if (val.FoundImage == true)
+    if (val.ImageSource == 'Syndetics')
     {
 		if (KeyName == 'ComingSoonMovies')
 		{
@@ -262,14 +262,20 @@ function createBookList(val,KeyName) {
       `;
 		}
     }
-    else
+    else if (val.ImageSource == 'URL')
     {
 
         x = `
+		 <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${val.ImageURL}" alt="${val.Title}"></a>
         <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${baseURI}/api/images/${val.Isbn}" alt="${val.Title}"></a>
       `;
     }
-       
+	else{
+		x = `
+		  <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${baseURI}/api/images/${val.Isbn}" alt="${val.Title}"></a>
+      `;
+	}
+	     
   
     return x;
 }
