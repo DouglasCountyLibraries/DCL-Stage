@@ -267,8 +267,7 @@ function createBookList(val,KeyName) {
 
         x = `
 		 <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${val.ImageURL}" alt="${val.Title}"></a>
-        <a href="https://dcl.bibliocommons.com/item/show/${bib}"><img class ="cover-image" src="${baseURI}/api/images/${val.Isbn}" alt="${val.Title}"></a>
-      `;
+            `;
     }
 	else{
 		x = `
