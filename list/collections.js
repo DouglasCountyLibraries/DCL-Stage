@@ -10,9 +10,16 @@ if (a.indexOf('=') > -1)
    allKeyName = a.substring(a.indexOf("=") + 1,a.lastIndexOf("&"));
    title = a.substring(a.indexOf("&") + 7).replace(/%20/g, " ");
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
+   console.log ("getparam key", getUrlParameter("key"));
+ console.log ("getparam titlegetUrlParameter("title"));
 }
 
-
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
 function createAllPageTitle(title)
 {
     var x = `
