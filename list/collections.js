@@ -26,8 +26,8 @@ function getUrlParameter(name) {
 function createAllPageTitle(title)
 {
     var x = 
-    " <h1 class="no-margin">${title}</h1>  "
-      ;
+    " <h1 class="no-margin">${title}</h1>  ";
+      
     return x;
 }
 function createPreShelf(title, keyName, seq)
@@ -37,8 +37,8 @@ function createPreShelf(title, keyName, seq)
  
   ' <div id="covers-${seq}" class ="container shelf-container text-center"> ',
     ' <h1 class="no-margin"><a href="all.html?key=${keyName}&title=${title}">${title}</a></h1> '
-	]
-      ;
+	].join('\n);
+      
     return x;
 }
 
