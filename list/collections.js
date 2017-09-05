@@ -66,7 +66,7 @@ function createPostShelves(title)
    
 ' </div>'
  ].join('\n');
-    `;
+    
     return x;
 }
 
