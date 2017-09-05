@@ -26,7 +26,7 @@ function getUrlParameter(name) {
 function createAllPageTitle(title)
 {
     var x = 
-    " <h1 class="no-margin">${title}</h1>  ";
+    ' <h1 class="no-margin">${title}</h1>  ';
       
     return x;
 }
