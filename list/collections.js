@@ -14,7 +14,7 @@ if (a.indexOf('=') > -1)
  console.log ("getparam titlegetUrlParameter("title"));
 }
 
-function getUrlParameter(name) {
+function getUrlParameter(name) { 
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
     var results = regex.exec(location.search);
