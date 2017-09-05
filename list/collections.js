@@ -11,7 +11,7 @@ if (a.indexOf('=') > -1)
    title = a.substring(a.indexOf("&") + 7).replace(/%20/g, " ");
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
    console.log ("getparam key", getUrlParameter("key"));
- console.log ("getparam titlegetUrlParameter("title"));
+ console.log ("getparam title", getUrlParameter("title"));
 }
 
 function getUrlParameter(name) { 
