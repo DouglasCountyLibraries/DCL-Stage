@@ -12,6 +12,9 @@ if (a.indexOf('=') > -1)
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
    console.log ("getparam key", getUrlParameter("key"));
  console.log ("getparam title", getUrlParameter("title"));
+ allKeyName  = getUrlParameter("key");
+  title = getUrlParameter("title");
+  console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
 }
 
 function getUrlParameter(name) { 
