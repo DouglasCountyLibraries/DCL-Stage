@@ -60,11 +60,12 @@ function createPreShelf(title, keyName, seq)
 //}
 function createPostShelves(title)
 {
-    var x = `
- </div>
- <div class ="row shelf-shadow padding-bottom-60">
+    var x = [
+ '</div>',
+ '<div class ="row shelf-shadow padding-bottom-60">',
    
- </div>
+' </div>'
+ ].join('\n');
     `;
     return x;
 }
