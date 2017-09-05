@@ -34,29 +34,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MV5DM73');</script>
 <!-- End Google Tag Manager -->
-<title>Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Douglas County Libraries is a passionate advocate for literacy and lifelong learning. Through engagement, education and entertainment, Douglas County Libraries transforms lives and builds community.">
-<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#007b83">
+<!-- TemplateBeginEditable name="title" -->
+<title>Page Title | Douglas County Libraries</title>
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#007b83">
 <meta name="theme-color" content="#ffffff">
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="shared-assets/css/dcl.css">
+<link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -66,106 +66,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--<script src="https://use.fortawesome.com/e61d5dd7.js"></script>-->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="shared-assets/js/dcl.js"></script><!-- pinterest - do not remove -->
-<meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
-<style>
-/* ----------------------------------------------
- * Keyframes Generated by Animista
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-.background {
-	background: #b7e3ef url(mountains.png) repeat-x bottom;
-	padding: 15px 0 50px;
-}
-.modal-dialog {
-	margin: 5% auto 0 auto;
-}
-.featured {
-	background-color: #5F953D;
-}
-.featured .material-icons {
-	font-size: 70px;
-	padding-top: 14px;
-}
-.finger {
-	padding: 50px 0 0 30px;
-}
-.grow, .grow a {
-	color: #000;
-	font-weight: 500;
-	font-size: 28px;
-	line-height: 1em;
-	transition: all .5s ease-in-out;
-}
-.grow:hover, .grow a:hover {
-	text-decoration: none;
-	transform: scale(1.05);
-}
-.roll-in-left {
-	-webkit-animation: roll-in-left 0.6s ease-out .5s both;
-	animation: roll-in-left 0.6s ease-out .5s both;
-}
- @-webkit-keyframes roll-in-left {
- 0% {
- -webkit-transform: translateX(-800px) rotate(-540deg);
- transform: translateX(-800px) rotate(-540deg);
- opacity: 0;
-}
- 100% {
- -webkit-transform: translateX(0) rotate(0deg);
- transform: translateX(0) rotate(0deg);
- opacity: 1;
-}
-}
-.shake-horizontal {
-	-webkit-animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s 8 both;
-	animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s 8 both;
-}
-@-webkit-keyframes shake-horizontal {
- 0%, 100% {
- -webkit-transform: translateX(0);
- transform: translateX(0);
-}
- 10%, 30%, 50%, 70% {
- -webkit-transform: translateX(-10px);
- transform: translateX(-10px);
-}
- 20%, 40%, 60% {
- -webkit-transform: translateX(10px);
- transform: translateX(10px);
-}
- 80% {
- -webkit-transform: translateX(8px);
- transform: translateX(8px);
-}
- 90% {
- -webkit-transform: translateX(-8px);
- transform: translateX(-8px);
-}
-}
-@keyframes shake-horizontal {
- 0%, 100% {
- -webkit-transform: translateX(0);
- transform: translateX(0);
-}
- 10%, 30%, 50%, 70% {
- -webkit-transform: translateX(-10px);
- transform: translateX(-10px);
-}
- 20%, 40%, 60% {
- -webkit-transform: translateX(10px);
- transform: translateX(10px);
-}
- 80% {
- -webkit-transform: translateX(8px);
- transform: translateX(8px);
-}
- 90% {
- -webkit-transform: translateX(-8px);
- transform: translateX(-8px);
-}
-}
-</style>
+<script src="../shared-assets/js/dcl.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -212,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="row no-gutter">
       <div class="col-sm-5">
         <div class="cp_header_client_area">
-          <div class="logo"> <a href="/"><img class="img-responsive" src="dcl-logo.png?9045" alt="Douglas County Libraries"></a> </div>
+          <div class="logo"> <a href="/"><img class="img-responsive" src="../dcl-logo.png?9045" alt="Douglas County Libraries"></a> </div>
         </div>
       </div>
       <div class="col-sm-6 col-sm-push-1">
@@ -223,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             <span class="input-group-btn">
             <button type="submit" value="search" class="btn btn-search"><i class="fa fa-search"></i></button>
             </span> </div>
-          <div class="text-right"><span class="small margin-right-80"><a href="search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+          <div class="text-right"><span class="small margin-right-80"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
         </form>
       </div>
     </div>
@@ -243,40 +146,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
         </ul>
       </li>
-      <li class="whats-new-active"><a href="whats-new">What's New</a> </li>
+      <li class="whats-new-active"><a href="../whats-new">What's New</a> </li>
       <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
         <ul class="dropdown-menu">
-          <li><a href="locations">Hours & Locations</a></li>
-          <li><a href="library-basics">Library Basics</a></li>
+          <li><a href="../locations">Hours & Locations</a></li>
+          <li><a href="../library-basics">Library Basics</a></li>
           <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
-          <li><a href="book-clubs">Book Clubs</a></li>
-          <li><a href="staff-recommendations">Staff Recommendations</a></li>
-          <li><a href="bizinfo">Business Resources</a></li>
-          <li><a href="research/online-learning">Online Learning</a></li>
-          <li><a href="adult-education">Adult Education & Test Prep</a></li>
+          <li><a href="../book-clubs">Book Clubs</a></li>
+          <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+          <li><a href="../bizinfo">Business Resources</a></li>
+          <li><a href="../research/online-learning">Online Learning</a></li>
+          <li><a href="../adult-education">Adult Education & Test Prep</a></li>
         </ul>
       </li>
       <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="storytime">Storytime</a></li>
-          <li><a href="read-listen-watch">Read, Listen, Watch</a></li>
+          <li><a href="../storytime">Storytime</a></li>
+          <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
           <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
-          <li><a href="parents-teachers">Parents & Teachers</a></li>
-          <li><a href="research/students">Homework Help</a></li>
+          <li><a href="../parents-teachers">Parents & Teachers</a></li>
+          <li><a href="../research/students">Homework Help</a></li>
           <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
         </ul>
       </li>
-      <li class="digital-media-active"><a href="digital-media">Digital Media</a> </li>
-      <li class="reserve-a-space-active"><a href="reserve-a-space">Reserve a Space</a> </li>
-      <li class="events-active"><a href="authors-events">Authors & Events</a> </li>
-      <li class="research-active"><a href="research">Research</a> </li>
+      <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
+      <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
+      <li class="events-active"><a href="../authors-events">Authors & Events</a> </li>
+      <li class="research-active"><a href="../research">Research</a> </li>
     </ul>
   </div>
 </nav>
 <!-- End Desktop Navbar --> 
 <!-- Mobile Navbar, Logo and Search -->
 <nav class="dcl-mobile-navbar navbar navbar-default">
-  <div class="container-md"> <a href="/"><img class="margin-left-15" src="dcl-responsive-logo.png"></a> <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="fa fa-bars"></i></a> 
+  <div class="container-md"> <a href="/"><img class="margin-left-15" src="../dcl-responsive-logo.png"></a> <a href="#" role="button" data-toggle="modal" data-target="#nav-modal"><i class="fa fa-bars"></i></a> 
     <!-- Nav Modal -->
     <div class="modal fade" id="nav-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="dcl-mobile-nav modal-dialog">
@@ -295,33 +198,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                   <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
                 </ul>
               </li>
-              <li class="whats-new-active mobile-nav-heading"><a href="whats-new">What's New</a> </li>
+              <li class="whats-new-active mobile-nav-heading"><a href="../whats-new">What's New</a> </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="using-the-library" class="nav mobile-nav-list collapse">
-                  <li><a href="locations">Hours & Locations</a></li>
-                  <li><a href="library-basics">Library Basics</a></li>
+                  <li><a href="../locations">Hours & Locations</a></li>
+                  <li><a href="../library-basics">Library Basics</a></li>
                   <li><a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
-                  <li><a href="book-clubs">Book Clubs</a></li>
-                  <li><a href="staff-recommendations">Staff Recommendations</a></li>
-                  <li><a href="bizinfo">Business Resources</a></li>
-                  <li><a href="research/online-learning">Online Learning</a></li>
-                  <li><a href="adult-education">Adult Education & Test Prep</a></li>
+                  <li><a href="../book-clubs">Book Clubs</a></li>
+                  <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+                  <li><a href="../bizinfo">Business Resources</a></li>
+                  <li><a href="../research/online-learning">Online Learning</a></li>
+                  <li><a href="../adult-education">Adult Education & Test Prep</a></li>
                 </ul>
               </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="kids-teens" class="nav mobile-nav-list collapse">
-                  <li><a href="storytime">Storytime</a></li>
-                  <li><a href="read-listen-watch">Read, Listen, Watch</a></li>
+                  <li><a href="../storytime">Storytime</a></li>
+                  <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
                   <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
-                  <li><a href="parents-teachers">Parents & Teachers</a></li>
-                  <li><a href="research/students">Homework Help</a></li>
+                  <li><a href="../parents-teachers">Parents & Teachers</a></li>
+                  <li><a href="../research/students">Homework Help</a></li>
                   <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
                 </ul>
               </li>
-              <li class="digital-media-active mobile-nav-heading"><a href="digital-media">Digital Media</a> </li>
-              <li class="reserve-a-space-active mobile-nav-heading"><a href="reserve-a-space">Reserve a Space</a> </li>
-              <li class="events-active mobile-nav-heading"><a href="authors-events">Authors & Events</a> </li>
-              <li class="research-active mobile-nav-heading"><a href="research">Research</a> </li>
+              <li class="digital-media-active mobile-nav-heading"><a href="../digital-media">Digital Media</a> </li>
+              <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space">Reserve a Space</a> </li>
+              <li class="events-active mobile-nav-heading"><a href="../authors-events">Authors & Events</a> </li>
+              <li class="research-active mobile-nav-heading"><a href="../research">Research</a> </li>
             </ul>
           </div>
         </div>
@@ -331,7 +234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div id="mobile-search" class="collapse bg-gray-10">
     <div class="container">
       <form id="searchFormTwo" class="search" action="https://dcl.bibliocommons.com/search">
-        <div class="text-right clearfix margin-bottom-5"><span class="small margin-right-60"><a href="search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+        <div class="text-right clearfix margin-bottom-5"><span class="small margin-right-60"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
         <div class="input-group">
           <input type="hidden" value="smart" name="t" id="search_param_two">
           <input placeholder="Search" type="text" name="q" class="form-control">
@@ -347,77 +250,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="row alert-warning">
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
-<div class="row background">
-    <div class="container no-gutter">
-      <div class="col-md-4 col-md-push-6 padding-top-30 equal-height flex-center"><a href="outside-the-lines/"><img class="roll-in-left grow img-responsive center-block" src="brew-tour-logo.png" alt="The Great Douglas County Brew Tour"></a> </div>
-      <div class="col-md-4 col-md-pull-2 text-center padding-top-40 equal-height flex-center"><a href="outside-the-lines/"><img class="grow img-responsive center-block" src="outside-the-lines.png" alt="Outside the Lines"></a>
-        <h1 class="grow padding-top-15 text-uppercase"><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1039054467_book_and_brews_pairings">Books & Brews Pairings</a></h1>
-      </div>
-      <div class="col-md-2 col-md-push-2 hidden-xs hidden-sm equal-height flex-center">
-        <div><img class="shake-horizontal img-responsive finger" src="finger.png" alt="Pointing Finger"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row featured padding-top-30 padding-bottom-40">
-    <div class="container">
-      <div class="col-md-4 text-center padding-left-30 padding-right-30 padding-top-15 padding-bottom-15">
-        <div style="padding:1px 0 0 2px;" class="icon-circle-default"><i class="fa fa-codepen"></i></div>
-        <h2 class="roboto no-margin-bottom"><a href="../dan-brown" class="white">Don't Miss Dan Brown!</a></h2>
-        <div class="text-uppercase no-margin-top"><a href="../dan-brown" class="white text-uppercase font-weight-400">Get Your Tickets Today!</a></div>
-      </div>
-      <div class="col-md-4 text-center padding-left-30 padding-right-30 padding-top-15 padding-bottom-15">
-        <div style="padding:1px 0 0 1;" class="icon-circle-default"><i class="fa fa-handshake-o"></i></div>
-        <h2 class="roboto no-margin-bottom"><a class="white" href="#" data-toggle="modal" data-target="#modal-two">Toiletries Drive</a></h2>
-        <div class="text-uppercase no-margin-top"><a class="white text-uppercase font-weight-400" href="#" data-toggle="modal" data-target="#modal-two">Support Your Neighbors</a></div>
-      </div>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="modal-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <button type="button" class="close margin-15" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="padding-top-30 padding-right-60 padding-bottom-60 padding-left-60">
-              <h4 class="roboto">Help the Douglas/Elbert Task Force meet the needs of Douglas and Elbert County residents. </h4>
-              <div class="margin-top-10">Drop off toiletry donations at any DCL location (except Louviers) through Sunday, September 10. Toiletries needed include:
-                <div class="row margin-top-10">
-                  <div class="col-sm-6">
-                    <ul>
-                      <li>Toothpaste</li>
-                      <li>Toothbrushes</li>
-                      <li>Shampoo</li>
-                      <li>Conditioner</li>
-                      <li>Soap</li>
-                      <li>Body Wash</li>
-                      <li>Deodorant</li>
-                      <li>Feminine Hygiene Products</li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-6">
-                    <ul>
-                      <li>Diapers (size 3, 4, 5, 6)</li>
-                      <li>Baby Wipes</li>
-                      <li>Laundry Pods</li>
-                      <li>Toilet Paper</li>
-                      <li>Paper Towels</li>
-                      <li>Facial Tissue</li>
-                      <li>Dish Soap</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="margin-top-10">Cash donations and gift cards are also gratefully accepted.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 text-center padding-left-30 padding-right-30 padding-top-15 padding-bottom-15">
-        <div style="padding:3px 0 0 0;" class="icon-circle-default"><i class="fa fa-language"></i></div>
-        <h2 class="roboto no-margin-bottom"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank" class="white">Learn to Toast...</a></h2>
-        <div class="text-uppercase no-margin-top"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank" class="white text-uppercase font-weight-400">In Every Language</a></div>
-      </div>
-    </div>
-  </div>
-  </div>
+  <!-- TemplateBeginEditable name="Content" -->
+  <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">Content goes here</div>
+  <!-- TemplateEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
     <div class="col-sm-6">
@@ -438,9 +273,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="col-sm-3">
       <h5 class="font-weight-500 no-margin">About</h5>
       <ul>
-        <li><a href="who-we-are">Who We Are</a></li>
-        <li><a href="join-our-team">Join Our Team</a></li>
-        <li><a href="press-kit">Press Kit</a></li>
+        <li><a href="../who-we-are">Who We Are</a></li>
+        <li><a href="../join-our-team">Join Our Team</a></li>
+        <li><a href="../press-kit">Press Kit</a></li>
       </ul>
     </div>
     <div class="col-sm-3">
@@ -452,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="col-sm-3">
       <h5 class="font-weight-500 no-margin">Connect</h5>
       <ul>
-        <li><a href="newsletters">eNews Sign-Up</a></li>
+        <li><a href="../newsletters">eNews Sign-Up</a></li>
         <li><a href="http://blogs.douglascountylibraries.org">DCL Blog</a></li>
       </ul>
     </div>
@@ -460,8 +295,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <h5 class="font-weight-500 no-margin">Support</h5>
       <ul>
         <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate</a></li>
-        <li><a href="foundation">Foundation</a></li>
-        <li><a href="volunteer">Volunteer</a></li>
+        <li><a href="../foundation">Foundation</a></li>
+        <li><a href="../volunteer">Volunteer</a></li>
       </ul>
     </div>
   </div>
@@ -471,6 +306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
+<!-- TemplateBeginEditable name="scripts" --> <!-- TemplateEndEditable --> 
 <!-- Structured Data --> 
 <script type="application/ld+json">
   {
