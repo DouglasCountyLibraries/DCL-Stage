@@ -8,10 +8,10 @@ var a = window.location.toString();
 var allKeyName;
 if (a.indexOf('=') > -1)
 {
-  
- allKeyName  = getUrlParameter("key");
-  title = getUrlParameter("title");
-  console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
+
+   allKeyName  = getUrlParameter("key");
+   title = getUrlParameter("title");
+   console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
 }
 
 function getUrlParameter(name) { 
@@ -20,9 +20,10 @@ function getUrlParameter(name) {
     var results = regex.exec(location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
+
 function createAllPageTitle(title)
 {
-	 var x = [
+  var x = [
      '<div class="text-center">',
       '<h1 class="jumbo-text text-uppercase font-weight-400">What' + "'s"  + 'New</h1>',
       '<div class="separator-container padding-bottom-15">',
@@ -32,82 +33,45 @@ function createAllPageTitle(title)
      ' <h1 class="no-margin">' + title + '</h1>  '
 	 ].join('\n');
       
-  
-      
     return x;
 }
 function createPreShelf(title, keyName, seq)
 {
 	var decodedTitle = title.replace(/%26/g, "&");;
     var x = [
-'<div class="row shelf">',
+    '<div class="row shelf">',
  
   ' <div id="covers-' + seq + '" class ="container shelf-container text-center"> ',
     ' <h1 class="no-margin"><a href="all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h1> '
 	].join('\n');
-      
     return x;
 }
 
-//function createPreShelves(title)
-//{
-//    var x = `
-// <div class ="row padding-bottom-15 border-top">
-//            <div class ="container">
-//                <div class ="text-center">
-//                    <h1 class ="jumbo-text text-uppercase font-weight-400">${title}</h1>
-//                </div>
-//                <div class ="row">
-//                    <div class ="container text-center"><a class ="text-uppercase" href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">View All Staff Picks &raquo; </a></div>
-//                </div>
-//            </div>
-//        </div>
-//    `;
-//    return x;
-//}
 function createPostShelves(title)
 {
     var x = [
  '</div>',
- '<div class ="row shelf-shadow padding-bottom-60">',
+ '<div class ="row shelf-shadow padding-bottom-80">',
    
 ' </div>'
  ].join('\n');
-    
     return x;
 }
-
-//var preShelf = `
-// <div class ="row padding-bottom-15 border-top">
-//            <div class ="container">
-//                <div class ="text-center">
-//                    <h1 class ="jumbo-text text-uppercase font-weight-400">${title}</h1>
-                   
-//                </div>
-//                <div class ="row">
-//                    <div class ="container text-center"><a class ="text-uppercase" href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">View All Staff Picks &raquo; </a></div>
-//                </div>
-//            </div>
-//        </div>
-//    `
+   
 
 var collData;
 $(document).ready(function () {
-   // $('#gen').append(preShelf);
-    // console.log(markup);
-   // $("#header").load("DCLHeader.html");
+
     getCollectionSet();
 	if (allKeyName != undefined) { 
     getlargeList(allKeyName, title);
 }
   //  console.log('return from getCollection',collData);
 });  // end document ready
+
 function doBiblioList(val)
 {
-	//Noteworthy|New & Noteworthy||5|True|Biblio|975832667|10
-//ListenToThis|Listen To This||5|True|Biblio|963743517|10
-//NowFeaturing|Now Featuring||5|True|Biblio|/991669947|24
-//EpicReads|Epic Reads||5|True|Biblio|994069717|10
+
  title = val.DisplayName;
 	if (val.KeyName == 'Noteworthy' )
 	{
@@ -117,6 +81,7 @@ function doBiblioList(val)
             $('#Noteworthy').append(createPostShelves(title));
 	}
 }
+
 function getCollectionSet() {
 
     var uri = baseURI + 'api/collectionlist/GetCollectionSet/';
@@ -133,18 +98,18 @@ function getCollectionSet() {
 
         var jdata = JSON.stringify(data);
         var jsonData = JSON.parse(jdata);
-        console.log(jdata, jsonData)
+       // console.log(jdata, jsonData)
         collData = jdata;
         jQuery.each(jsonData, function (i, val) {
             //  $("#" + i).append(document.createTextNode(" - " + val));
             title = val.DisplayName;
-            console.log('val', val.DisplayName)
-            console.log('i', i)
-            console.log('w', createPreShelf(title, val.KeyName, i));
+         //   console.log('val', val.DisplayName)
+         //   console.log('i', i)
+         //  console.log('w', createPreShelf(title, val.KeyName, i));
          if	(val.ListType == 'WhatsNew')
 		 {
             var myel = $('#gen').append(createPreShelf(title,val.KeyName,i));
-            console.log('val', val.KeyName)
+           // console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,i);
             $('#gen').append(createPostShelves(title));
 		 }
@@ -155,7 +120,7 @@ function getCollectionSet() {
 
     });
     promise.fail(function (data, status) {
-       // swal("Problem With Request", data.responseText, "error");
+       
         console.log("Problem With Request", data.responseText, "error");
     });
 }
@@ -176,7 +141,7 @@ function getCollectionSet() {
 
             var jdata = JSON.stringify(data);
             var jsonData = JSON.parse(jdata);
-            console.log('covers', jdata, jsonData)
+           // console.log('covers', jdata, jsonData)
           //  console.log('setTitle', setTitle)
             collData = jdata;
           //  var divid =  divid;
@@ -185,10 +150,10 @@ function getCollectionSet() {
                 isbn = val.Isbn;
                // console.log('setTitle', setTitle)
                
-                console.log('val', val.Isbn)
+               // console.log('val', val.Isbn)
 
-                console.log('divid', divid)
-                // $('#' + divid).append(createBookList(isbn));
+              //  console.log('divid', divid)
+               
                
                 if (divid == 0) {
                     $('#covers-0').append(createBookList(val,KeyName));
@@ -207,19 +172,19 @@ function getCollectionSet() {
                 }
 
                
-                console.log('val', val.Title)
+               // console.log('val', val.Title)
             });
 
         });
         promise.fail(function (data, status) {
-            //swal("Problem With Request", data.responseText, "error");
+            
             console.log("Problem With Request", data.responseText, "error")
         });
 }
 function getlargeList(KeyName,Title) {
 
         var uri = baseURI + 'api/collectionlist/GetCollectionList/' + KeyName ;
-		// var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/50';
+		
         var promise =
            $.ajax({
                url: uri,
@@ -244,57 +209,46 @@ function getlargeList(KeyName,Title) {
                 isbn = val.Isbn;
                // console.log('setTitle', setTitle)
                
-                console.log('val', val.Isbn)
+                //console.log('val', val.Isbn)
 
-              		
-                    $('#largeCoverList').append(createBookList(val,KeyName));
+              $('#largeCoverList').append(createBookList(val,KeyName));
              
-               
-                console.log('val', val.Title)
+              // console.log('val', val.Title)
             });
 
         });
         promise.fail(function (data, status) {
-            //swal("Problem With Request", data.responseText, "error");
+          
             console.log("Problem With Request", data.responseText, "error")
         });
 
     }
+
 function createBookList(val,KeyName) {
     var x;
     var bib = val.Bib + 114;
-
 	
     if (val.ImageSource == 'Syndetics')
     {
 		if (KeyName == 'ComingSoonMovies')
 		{
-			//https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192184178
-			// https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=025192396540
 			 x = 
 			   ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=' + val.Isbn + 'alt="' + val.Title +  '"></a>';
-			    
 		}
 		else
 		{
-       
-          x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a>'
-      ;
+         x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a>';
 		}
     }
     else if (val.ImageSource == 'URL')
     {
 
-       
-		 x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + val.ImageURL + '" alt=' +val.Title + '"></a>';
-            
+        x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + val.ImageURL + '" alt=' + val.Title + '"></a>';
     }
 	else{
-		
 		 x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + baseURI + '/api/images/' + val.Isbn + '" alt="' + val.Title + '"></a>';
-      
 	}
-	     
+       
   
     return x;
 }
