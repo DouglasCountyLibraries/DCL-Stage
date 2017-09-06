@@ -8,7 +8,7 @@ var allKeyName;
 if (a.indexOf('=') > -1)
 {
    allKeyName = a.substring(a.indexOf("=") + 1,a.lastIndexOf("&"));
-   title = a.substring(a.indexOf("&") + 7).replace(/%20/g, " ");
+  // title = a.substring(a.indexOf("&") + 7).replace(/%20/g, " ");
    console.log("allKeyName name  is ", allKeyName,"title name  is ", title, "a ", a);
    console.log ("getparam key", getUrlParameter("key"));
  console.log ("getparam title", getUrlParameter("title"));
@@ -32,11 +32,12 @@ function createAllPageTitle(title)
 }
 function createPreShelf(title, keyName, seq)
 {
+	var decodedTitle = title.replace(/%26/g, "&");;
     var x = [
 '<div class="row shelf">',
  
   ' <div id="covers-' + seq + '" class ="container shelf-container text-center"> ',
-    ' <h1 class="no-margin"><a href="all.html?key=' + keyName + '&title=' + title + '">' +title+ '</a></h1> '
+    ' <h1 class="no-margin"><a href="all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h1> '
 	].join('\n');
       
     return x;
