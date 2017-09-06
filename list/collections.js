@@ -35,8 +35,8 @@ function createPreShelf(title, keyName, seq)
     var x = [
 '<div class="row shelf">',
  
-  ' <div id="covers-${seq}" class ="container shelf-container text-center"> ',
-    ' <h1 class="no-margin"><a href="all.html?key=${keyName}&title=${title}">${title}</a></h1> '
+  ' <div id="covers-' + seq + '" class ="container shelf-container text-center"> ',
+    ' <h1 class="no-margin"><a href="all.html?key=' + keyName + '&title=' + title + '">' +title+ '</a></h1> '
 	].join('\n');
       
     return x;
