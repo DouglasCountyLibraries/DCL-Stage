@@ -50,10 +50,11 @@ function createPreShelf(title, keyName, seq)
 function createPostShelves(title)
 {
     var x = [
+	' </div>',' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title='">See Entire List &raquo;</a></div> ',
  '</div>',
  '<div class ="row shelf-shadow padding-bottom-80">',
    
-' </div>'
+' </div>',' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title='">See Entire List &raquo;</a></div> '
  ].join('\n');
     return x;
 }
