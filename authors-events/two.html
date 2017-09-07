@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Minimize page flickering for Google Optimize --> 
-<style>.async-hide { opacity: 0 !important} </style>
+<!-- Minimize page flickering for Google Optimize -->
+<style>
+.async-hide {
+	opacity: 0 !important
+}
+</style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',4000,
 {'GTM-K3MW9FB':true});</script>
-<!-- End --> 
-<!-- Google Analytics with Google Optimize plugin --> 
+<!-- End -->
+<!-- Google Analytics with Google Optimize plugin -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,7 +27,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   ga('require', 'GTM-K3MW9FB');
   ga('send', 'pageview');
 </script>
-<!-- End --> 
+<!-- End -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -75,15 +80,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	color: #666!important;
 }
 .active #tabone, a .active #tabone {
-	background-color: #000;
-	color: #fff!important;
+	background-color: #e6e4e2;
+	color: #666!important;
 }
 .active #tabtwo, a .active #tabtwo {
-	background-color: #65587b;
-	color: #fff!important;
+	background-color: #e6e4e2;
+	color: #666!important;
 }
 .active #tabthree, a .active #tabthree {
-	background-color: #4f878c;
+	background-color: #4d4c4b;
 	color: #fff!important;
 }
 .nav-tabs > li > a::after {
@@ -103,6 +108,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	max-width: 500px;
 }
 .bookrow img {
+	margin-top: 10px;
+	display: inline;
+}
+.tabbed-bookrow {
+	margin: 15px 0 20px;
+	max-width: 500px;
+}
+.tabbed-bookrow img {
 	margin-top: 10px;
 	display: inline;
 }
@@ -316,8 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </nav>
 <!-- End Mobile Navbar -->
-<div class="container-fluid">
-  <!-- InstanceBeginEditable name="Content" -->
+<div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
     <div class="container">
       <div class="text-center padding-bottom-30">
@@ -331,226 +343,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="row no-gutter sub-nav-row">
     <div class="sub-nav">
       <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="#featured-events"><i class="fa fa-comment fa-flip-horizontal"></i>Featured Events</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=726,728,724,729,731,727,730,725&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank"><i class="fa fa-calendar"></i>Events Calendar</a></h5>
       </div>
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <div class="dropdown"><a class="show" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          <h5 class="white font-weight-400 text-center-md no-margin text-uppercase"><i class="fa fa-pagelines"></i>Branch Events <span class="caret"></span></h5>
-          </a>
-          <div class="dropdown-menu dropdown-event-menu">
-            <div class="text-capitalize">
-              <div class="col-sm-6 no-padding"> <a href="../castle-pines#events">Castle Pines</a><br>
-                <a href="../castle-rock#events">Castle Rock</a><br>
-                <a href="../highlands-ranch#events">Highlands Ranch</a><br>
-                <a href="../lone-tree#events">Lone Tree</a> </div>
-              <div class="col-sm-6 no-padding">
-                <ul class="list-unstyled">
-                  <a href="../louviers#events">Louviers</a><br>
-                  <a href="../parker#events">Parker</a><br>
-                  <a href="../roxborough#events">Roxborough</a>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#featured-events"><i class="fa fa-pagelines"></i>Featured Events</a></h5>
       </div>
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank"><i class="fa fa-child"></i>Kids Events</a></h5>
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#an-evening-with"><i class="fa fa-glass"></i>An Evening With...</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#past-authors"><i class="fa fa-hourglass-3"></i>Past Authors</a></h5>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5">
-    <div class="container">
-      <div class="text-center padding-top-15 padding-bottom-15">
-        <h1>Author Events</h1>
-        <h4 class="roboto text-center">Vivamus ut tortor eget risus convallis auctor. Nunc posuere, magna ut auctor fermentum, elit velit venenatis eros, quis gravida tortor urna non felis. Ut velit quam, tincidunt id placerat a, mattis a libero. Nunc sit amet felis ac purus sagittis ornare gravida at dui. Nam mauris arcu, iaculis id imperdiet a, iaculis sit amet urna.</h4>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5"> 
-    
-    <!-- Nav tabs -->
-    <div class="container">
-      <ul class="nav nav-tabs nav-justified" role="tablist">
-        <li role="presentation" class="active"><a id="tabone" class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
-          <div class="author-tabs">DCL Presents:</div>
-          </a></li>
-        <li role="presentation"><a id="tabtwo" class="tab" href="#two" role="tab" data-toggle="tab">
-          <div class="author-tabs">More Authors</div>
-          </a></li>
-        <li role="presentation"><a id="tabthree" class="tab" href="#three" role="tab" data-toggle="tab">
-          <div class="author-tabs">Past Authors</div>
-          </a></li>
-      </ul>
-    </div>
-    
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane fade in active" id="one">
-        <div class="bg-black padding-top-30 padding-bottom-30">
-          <div class="container">
-            <div class="col-lg-4 bg-teal padding-top-15 padding-bottom-80 text-center">
-              <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Louise Penny</h1>
-              <img class="img-responsive center-block shadow-low" src="louise-penny.jpg" alt="Louise Penny">
-              <div class="row bookrow">
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1412170114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781250066190/MC.GIF" alt="Glass Houses"> </a> </div>
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/932000114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780312661687/MC.GIF" alt="The Brutal Telling"> </a> </div>
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/845849114"><img src="https://secure.syndetics.com/index.aspx?isbn=9780312655464/MC.GIF" alt="The Beautiful Mystery" class="img-responsive book-cover"> </a></div>
-              </div>
-              <h4 class="white no-margin-top no-margin-bottom font-weight-400">Tuesday, September 5, 2017</h4>
-              <h4 class="white no-margin-top no-margin-bottom font-weight-400">7PM</h4>
-              <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
-            </div>
-            <div class="col-lg-4 bg-loquacious padding-top-15 padding-bottom-80 text-center">
-              <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Sarah J. Maas</h1>
-              <img class="img-responsive center-block shadow-low" src="sarah-j-mass.jpg" alt="Sarah J. Maas">
-              <div class="row bookrow">
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1420929114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781681195773/MC.GIF" alt="Tower of Dawn"> </a> </div>
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1283629114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781619636040/MC.GIF" alt="Queen of Shadows"> </a> </div>
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1213536114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781619633612/MC.GIF" alt="Assassin's Blade"> </a></div>
-              </div>
-              <h4 class="white no-margin-top no-margin-bottom font-weight-400">Wednesday, September 13, 2017</h4>
-              <h4 class="white no-margin-top no-margin-bottom font-weight-400">6:30PM</h4>
-              <div class="text-center"> <a class="text-uppercase btn btn-primary margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
-            </div>
-            <div class="col-lg-4 bg-teal padding-top-15 padding-bottom-80 text-center">
-              <h1 class="jumbo-text white text-uppercase text-nowrap font-weight-400">Dan Brown</h1>
-              <img class="img-responsive center-block shadow-low" src="dan-brown.jpg" alt="Dan Brown">
-              <div class="row bookrow">
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1410264114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780385514231/MC.GIF" alt="Origin"> </a> </div>
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1358424114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781524715823/MC.GIF" alt="The Da Vinci Code"> </a> </div>
-                <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1112156114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781101974117/MC.GIF" alt="Inferno"> </a></div>
-              </div>
-              <h4 class="white no-margin-top no-margin-bottom font-weight-400">Wednesday, November 15, 2017</h4>
-              <h4 class="white no-margin-top no-margin-bottom font-weight-400">7:30PM</h4>
-              <div class="text-center"> <a class="text-uppercase btn btn-default margin-top-15" href="https://www.dcl.org/louise-penny/">Learn More</a></div>
-            </div>
-          </div>
+  <div class="row bg-gray-20">
+    <div class="container-md">
+      <div class="col-lg-4 bg-gray-20 padding-top-15 padding-bottom-60 text-center">
+        <h1 class="jumbo-text text-uppercase text-nowrap font-weight-400">Sarah J. Maas</h1>
+        <img class="img-responsive center-block" src="sarah-j-mass.jpg" alt="Sarah J. Maas">
+        <div class="row bookrow">
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1420929114"><img class="img-responsive book-cover shadow-low shadow-low-hover" src="https://secure.syndetics.com/index.aspx?isbn=9781681195773/MC.GIF" alt="Tower of Dawn"> </a> </div>
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1283629114"><img class="img-responsive book-cover shadow-low shadow-low-hover" src="https://secure.syndetics.com/index.aspx?isbn=9781619636040/MC.GIF" alt="Queen of Shadows"> </a> </div>
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1213536114"><img class="img-responsive book-cover shadow-low shadow-low-hover" src="https://secure.syndetics.com/index.aspx?isbn=9781619633612/MC.GIF" alt="Assassin's Blade"> </a></div>
         </div>
+        <h4 class="no-margin-top no-margin-bottom font-weight-400">Wednesday, September 13, 2017</h4>
+        <h4 class="no-margin-top no-margin-bottom font-weight-400">6:30PM</h4>
+        <div class="text-center"> <a class="text-uppercase btn btn-warning margin-top-15" href="https://www.dcl.org/sarah-j-maas/">Learn More</a></div>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="two">
-        <div class="bg-lavender padding-top-30 padding-bottom-60">
-          <div class="container white">
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h1 class="white text-uppercase font-weight-400">Peter Heller</h1>
-                  <div>The NYT bestselling author of The Dog Stars and The Painter will present his newest novel, Celine. A book sale and signing will follow the author's talk.
-                    Parker, Friday, August 18, 6:30PM.
-                    <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124894" class="btn btn-default text-uppercase margin-top-15" target="_blank">Register Now</a></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h1 class="white text-uppercase font-weight-400">Author Name</h1>
-                  <div>Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.
-                    <div><a href="#" class="btn btn-default text-uppercase margin-top-15" target="_blank">Register Now</a></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h1 class="white text-uppercase font-weight-400">Author Name</h1>
-                  <div>Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.
-                    <div><a href="#" class="btn btn-default text-uppercase margin-top-15" target="_blank">Register Now</a></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h1 class="white text-uppercase font-weight-400">Author Name</h1>
-                  <div>Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.
-                    <div><a href="#" class="btn btn-default text-uppercase margin-top-15" target="_blank">Register Now</a></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="col-lg-4 bg-gray-5 padding-top-15 padding-bottom-60 text-center">
+        <h1 class="jumbo-text text-uppercase text-nowrap font-weight-400">Dan Brown</h1>
+        <img class="img-responsive center-block" src="dan-brown.jpg" alt="Dan Brown">
+        <div class="row bookrow">
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1410264114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780385514231/MC.GIF" alt="Origin"> </a> </div>
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1358424114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781524715823/MC.GIF" alt="The Da Vinci Code"> </a> </div>
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1112156114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781101974117/MC.GIF" alt="Inferno"> </a></div>
         </div>
+        <h4 class="no-margin-top no-margin-bottom font-weight-400">Wednesday, November 15, 2017</h4>
+        <h4 class="no-margin-top no-margin-bottom font-weight-400">7:30PM</h4>
+        <div class="text-center"> <a class="text-uppercase btn btn-warning margin-top-15" href="https://www.dcl.org/dan-brown/">Learn More</a></div>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="three">
-        <div class="bg-teal padding-top-30 padding-bottom-60">
-          <div class="container white">
-            <div class="text-center padding-bottom-30">
-              <h1 class="white text-uppercase font-weight-400">Past Authors</h1>
-              <h4 class="roboto white text-center margin-lg-100">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</h4>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>
-                  <h2 class="roboto white">Author Name</h2>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</div>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="col-lg-4 bg-gray-20 padding-top-15 padding-bottom-60 text-center">
+        <h1 class="jumbo-text text-uppercase text-nowrap font-weight-400">Jason Segel</h1>
+        <img class="img-responsive center-block" src="jason-segel.jpg" alt="Jason Segel">
+        <div class="row bookrow">
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1426191114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780385744317/MC.GIF" alt="Everything You Need to Know About Nightmares! and How to Defeat Them "> </a> </div>
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1426025114"><img src="https://secure.syndetics.com/index.aspx?isbn=9781101939321/MC.GIF" alt="Otherworld" class="img-responsive book-cover"> </a></div>
+          <div class="col-xs-4"><a href="https://dcl.bibliocommons.com/item/show/1331021114"><img class="img-responsive book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780375991592/MC.GIF&client=dougp&type=xw12&oclc=" alt="Nightmares! The Lost Lullaby"> </a> </div>
         </div>
+        <h4 class="text-uppercase no-margin-top no-margin-bottom font-weight-400">Coming Soon!</h4>
+        <div class=""><i>(Yes, that Jason Segel)</i></div>
       </div>
     </div>
   </div>
@@ -558,29 +399,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container">
       <div class="text-center padding-top-15 padding-bottom-15">
         <h1>Featured Events</h1>
-        <h4 class="roboto text-center">Vivamus ut tortor eget risus convallis auctor. Nunc posuere, magna ut auctor fermentum, elit velit venenatis eros, quis gravida tortor urna non felis. Ut velit quam, tincidunt id placerat a, mattis a libero. Nunc sit amet felis ac purus sagittis ornare gravida at dui.</h4>
+        <h4 class="roboto margin-lg-100 text-center">Don't miss these special library events! Check out our <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=726,728,724,729,731,727,730,725&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Events Calendar</a> for more fun happenings at all DCL locations.</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row padding-bottom-30">
+    <div class="container-md">
+      <div class="col-md-4 padding-top-15 padding-bottom-30">
+        <div class="padding-left-md-30 padding-right-md-30"> <img class="img-responsive img-circle center-block" src="brew-tour.jpg" alt="Great Douglas County Brew Tour">
+          <h2 class="roboto text-center">Great Douglas County Brew Tour</h2>
+          <div>Visit some great Douglas County establishments for special events and delicious brews. Get a passport stamp at each location and collect a commemorative pint glass. Ages 21+.
+            <div class="text-center"><a href="https://www.dcl.org/outside-the-lines/" class="btn btn-default text-uppercase margin-15" target="_blank">Learn More</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 padding-top-15 padding-bottom-30">
+        <div class="padding-left-md-30 padding-right-md-30"> <img class="img-responsive img-circle center-block" src="renew-and-rejuvenate.jpg" alt="Renew & Rejuvenate">
+          <h2 class="roboto text-center">Renew &amp; Rejuvenate</h2>
+          <div>DCL is celebrating sustainability during September with a variety of events that focus on refreshing your mind, body, spirit, home and garden. All ages.
+            <div class="text-center"><a href="https://www.dcl.org/renew/" class="btn btn-default text-uppercase margin-15" target="_blank">Learn More</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 padding-top-15 padding-bottom-30">
+        <div class="padding-left-md-30 padding-right-md-30"> <img class="img-responsive img-circle center-block" src="cap-after-dark.jpg" alt="Castle Pines After Dark">
+          <h2 class="roboto text-center">Castle Pines After Dark</h2>
+          <div>Have fun in the library after hours! Play games, win prizes, hang out and nosh snacks, watch movies, and more. Teens. Castle Pines, Friday, September 22, 6-9PM.
+            <div class="text-center"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=123331" class="btn btn-default text-uppercase margin-15" target="_blank">Register Now</a></div>
+          </div>
+        </div>
+      </div>
+    </div>=
+  </div>
+  <div class="row bg-lavender padding-bottom-20">
+    <div class="container text-center">
+      <h2 class="white">More Featured Events</h2>
+      <h5 class="white font-weight-400 text-uppercase"> <i class="fa fa-pagelines"></i> Branch Events <span class="caret margin-right-30"></span> <i class="fa fa-child"></i> Kids Events</h5>
+    </div>
+  </div>
+  <div id="an-evening-with" class="row">
+    <div class="container">
+      <div class="text-center padding-top-15 padding-bottom-15">
+        <h1>An Evening With...</h1>
+        <h4 class="roboto margin-lg-100 text-center">Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tristique porttitor arcu, sed tincidunt dolor congue et.</h4>
       </div>
     </div>
   </div>
   <div class="row padding-bottom-30">
     <div class="container">
-      <div class="col-md-4 padding-top-15 padding-bottom-30"> <img class="img-responsive" src="artificial-intelligence.jpg">
-        <h2 class="roboto text-center">Artificial Intelligence 101</h2>
-        <div>Learn about the real world of artificial intelligence with guests from the Osher Lifelong Learning Institute (OLLI) at the University of Denver. Highlands Ranch, Friday, August 18, 1PM. ADULTS.
-          <div class="text-center"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=119072" class="btn btn-default text-uppercase margin-15" target="_blank">Register Now</a></div>
+      <div class="col-md-7 col-md-push-3">
+        <div class="padding-bottom-30">
+          <h1 class="text-uppercase font-weight-400">Angela Gaffney</h1>
+          <div class="row padding-top-15">
+            <div><a href="https://dcl.bibliocommons.com/item/show/1409945114"><img class="img-responsive pull-left margin-right-15 book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780997980141/MC.GIF" alt="Feel Good Look Good For Life"> </a> After surviving a personal health crisis that nearly took her life, the author is sharing her life-changing strategies for living your best life and thriving from her book <i>Feel Good, Look Good, for Life</i>. Adults. <br>
+              Castle Pines, Friday, September 8, 6PM</div>
+            <div><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124823" class="btn btn-primary text-uppercase margin-top-15" target="_blank">Register Now</a></div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 padding-top-15 padding-bottom-30"> <img class="img-responsive" src="games.jpg">
-        <h2 class="roboto text-center">Caddy Stacks & Life-Size Games</h2>
-        <div>Have big fun throughout the library!
-          Highlands Ranch, Friday, August 25, 6:30PM. ALL AGES.
-          <div class="text-center"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=113827" class="btn btn-default text-uppercase margin-15" target="_blank">Register Now</a></div>
+        <div class="padding-bottom-30">
+          <h1 class="text-uppercase font-weight-400">Joyce Lohse</h1>
+          <div class="row padding-top-15">
+            <div><a href="https://dcl.bibliocommons.com/item/show/895073114_unsinkable"><img style="border:1px solid #ddd;" class="img-responsive pull-left margin-right-15 book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9780865410817/MC.GIF" alt="Unsinkable"> </a>The <i>Unsinkable</i> author and historian will present a history of local figure Spencer Penrose, the businessman who built the Broadmoor and other prominent landmarks in Colorado Springs. <br>
+              Parker, Tuesday, September 12, 6PM </div>
+            <div><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=119057" class="btn btn-primary text-uppercase margin-top-15" target="_blank">Register Now</a></div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 padding-top-15 padding-bottom-30"> <img class="img-responsive" src="event.jpg">
-        <h2 class="roboto text-center">Event Three</h2>
-        <div>Nunc posuere, magna ut auctor fermentum, elit velit venenatis eros, quis gravida tortor urna non felis. Ut velit quam, tincidunt id placerat a, mattis a libero.
-          <div class="text-center"><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124894" class="btn btn-default text-uppercase margin-15" target="_blank">Register Now</a></div>
+        <div class="padding-bottom-30">
+          <h1 class="text-uppercase font-weight-400">Adrian Miller</h1>
+          <div class="row padding-top-15">
+            <div><a href="https://dcl.bibliocommons.com/item/show/1386342114"><img class="img-responsive pull-left margin-right-15 book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781469632537/MC.GIF" alt="The President's Kitchen Cabinet"> </a> <a href="https://dcl.bibliocommons.com/item/show/1166967114"><img class="img-responsive pull-left margin-right-15 book-cover" src="https://secure.syndetics.com/index.aspx?isbn=9781469607627/MC.GIF" alt="Soul Food"> </a> The Soul Food Scholar and award-winning author will dish about <i>The President's Kitchen Cabinet</i> and give a liquid history of the presidents, followed by a wine tasting. Sponsored by RidgeGate. Ages 21+. <br>
+              Lone Tree, Tuesday, September 12, 6:30PM</div>
+            <div><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=123031" class="btn btn-primary text-uppercase margin-top-15" target="_blank">Register Now</a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -639,6 +529,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
