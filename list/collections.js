@@ -47,14 +47,14 @@ function createPreShelf(title, keyName, seq)
     return x;
 }
 
-function createPostShelves(title)
+function createPostShelves(title, keyName)
 {
     var x = [
 	
  '</div>',
  '<div class ="row shelf-shadow padding-bottom-80">',
-   
-' </div>',' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div> ',
+   ' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div> ',
+' </div>',
  ].join('\n');
     return x;
 }
@@ -79,7 +79,7 @@ function doBiblioList(val)
 		 var myel = $('#Noteworthy').append(createPreShelf(title,val.KeyName,'10'));
             console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,'10');
-            $('#Noteworthy').append(createPostShelves(title));
+            $('#Noteworthy').append(createPostShelves(title, val.KeyName));
 	}
 }
 
@@ -112,7 +112,7 @@ function getCollectionSet() {
             var myel = $('#gen').append(createPreShelf(title,val.KeyName,i));
            // console.log('val', val.KeyName)
             getRandomCollectionList(val.KeyName,i);
-            $('#gen').append(createPostShelves(title));
+            $('#gen').append(createPostShelves(title, val.KeyName));
 		 }
 		 else {
 			 doBiblioList(val);
