@@ -53,7 +53,8 @@ function createPostShelves(title, keyName)
 	
  '</div>',
  '<div class ="row shelf-shadow padding-bottom-80">',
-   ' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div> ',
+ '<div class="col-sm-9 padding-top-40">',
+          ' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div>/div> ',
 ' </div>',
  ].join('\n');
     return x;
