@@ -4,15 +4,19 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Minimize page flickering for Google Optimize --> 
-<style>.async-hide { opacity: 0 !important} </style>
+<!-- Minimize page flickering for Google Optimize -->
+<style>
+.async-hide {
+	opacity: 0 !important
+}
+</style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',4000,
 {'GTM-K3MW9FB':true});</script>
-<!-- End --> 
-<!-- Google Analytics with Google Optimize plugin --> 
+<!-- End -->
+<!-- Google Analytics with Google Optimize plugin -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,7 +26,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   ga('require', 'GTM-K3MW9FB');
   ga('send', 'pageview');
 </script>
-<!-- End --> 
+<!-- End -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -122,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="row no-gutter">
       <div class="col-sm-5">
         <div class="cp_header_client_area">
-          <div class="logo"> <a href="/"><img class="img-responsive" src="../../dcl-logo.png?9045" alt="Douglas County Libraries"></a> </div>
+          <div class="logo"> <a href="/"><img class="img-responsive" src="../../dcl-logo.png" alt="Douglas County Libraries"></a> </div>
         </div>
       </div>
       <div class="col-sm-6 col-sm-push-1">
@@ -153,21 +157,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
         </ul>
       </li>
-      <li class="dropdown locations-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="../../locations">All Locations</a></li>
-          <li><a href="../../castle-pines">Castle Pines</a></li>
-          <li><a href="../../castle-rock">Castle Rock</a></li>
-          <li><a href="../../highlands-ranch">Highlands Ranch</a></li>
-          <li><a href="../../lone-tree">Lone Tree</a></li>
-          <li><a href="../../louviers">Louviers</a></li>
-          <li><a href="../../parker">Parker</a></li>
-          <li><a href="../../roxborough">Roxborough</a></li>
-          <li><a href="../../history">Douglas County History</a></li>
-        </ul>
-      </li>
-      <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Using the Library <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+      <li id="step1" class="whats-new-active"><a href="../../whats-new">What's New</a> </li>
+      <li id="step2" class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
         <ul class="dropdown-menu">
+          <li><a href="../../locations">Hours & Locations</a></li>
           <li><a href="../../library-basics">Library Basics</a></li>
           <li> <a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
           <li><a href="../../book-clubs">Book Clubs</a></li>
@@ -189,7 +182,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </li>
       <li class="digital-media-active"><a href="../../digital-media">Digital Media</a> </li>
       <li class="reserve-a-space-active"><a href="../../reserve-a-space">Reserve a Space</a> </li>
-      <li class="events-active"><a href="../../library-events">Library Events</a> </li>
+      <li id="step3" class="dropdown events-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="../../authors-events">Authors & Events</a></li>
+          <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
+        </ul>
+      </li>
       <li class="research-active"><a href="../../research">Research</a> </li>
     </ul>
   </div>
@@ -216,21 +214,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                   <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
                 </ul>
               </li>
-              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#locations">Locations <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
-                <ul id="locations" class="nav mobile-nav-list collapse">
-                  <li><a href="../../locations">All Locations</a></li>
-                  <li><a href="../../castle-pines">Castle Pines</a></li>
-                  <li><a href="../../castle-rock">Castle Rock</a></li>
-                  <li><a href="../../highlands-ranch">Highlands Ranch</a></li>
-                  <li><a href="../../lone-tree">Lone Tree</a></li>
-                  <li><a href="../../louviers">Louviers</a></li>
-                  <li><a href="../../parker">Parker</a></li>
-                  <li><a href="../../roxborough">Roxborough</a></li>
-                  <li><a href="../../history">Douglas County History</a></li>
-                </ul>
-              </li>
-              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Using the Library <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+              <li class="whats-new-active mobile-nav-heading"><a href="../../whats-new">What's New</a> </li>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="using-the-library" class="nav mobile-nav-list collapse">
+                  <li><a href="../../locations">Hours & Locations</a></li>
                   <li><a href="../../library-basics">Library Basics</a></li>
                   <li><a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a> </li>
                   <li><a href="../../book-clubs">Book Clubs</a></li>
@@ -252,7 +239,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
               </li>
               <li class="digital-media-active mobile-nav-heading"><a href="../../digital-media">Digital Media</a> </li>
               <li class="reserve-a-space-active mobile-nav-heading"><a href="../../reserve-a-space">Reserve a Space</a> </li>
-              <li class="events-active mobile-nav-heading"><a href="../../library-events">Library Events</a> </li>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#library-events">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+                <ul id="library-events" class="nav mobile-nav-list collapse">
+                  <li><a href="../../authors-events">Authors & Events</a></li>
+                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724,729,731,730&et=18,2,22,16,20,15,3,24,25&lib=ALL" target="_blank">Kids Events</a></li>
+                </ul>
+              </li>
               <li class="research-active mobile-nav-heading"><a href="../../research">Research</a> </li>
             </ul>
           </div>
@@ -276,6 +268,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
+  <div class="row alert-warning">
+    <div id="global-alert" class="container-md" style="display:none;"></div>
+  </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row">
     <div class="padding-bottom-30 border-top">
@@ -817,5 +812,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- Structured Data --> 
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Library",
+	"address": {
+    	"@type": "PostalAddress",
+    	"addressLocality": "Castle Rock",
+    	"addressRegion": "CO",
+    	"postalCode": "80104",
+    	"streetAddress": "100 S. Wilcox Street"
+  },
+  	"telephone": "(303) 791-7323",
+    "url": "https://www.dcl.org/",
+    "name": "Douglas County Libraries",
+	"image": "https://www.dcl.org/locations/castle-rock.jpg",
+	"description": "Douglas County Libraries is a passionate advocate for literacy and lifelong learning. Through engagement, education and entertainment, Douglas County Libraries transforms lives and builds community.",
+    "logo": "https://www.dcl.org/dcl-logo.png",
+	"potentialAction": {
+    	"@type": "SearchAction",
+    	"target": "https://dcl.bibliocommons.com/search?t=smart&q={search_term_string}",
+    	"query-input": "required name=search_term_string"
+  },
+	"sameAs":
+		["http:\/\/dcl.bibliocommons.com",
+		"http:\/\/www.blogs.douglascountylibraries.org",
+		"http:\/\/answers.douglascountylibraries.org/",
+		"http://www.douglascountylibraries.org/",
+		"http:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
+		"https:\/\/www.instagram.com\/dclcolorado",
+		"https:\/\/www.youtube.com\/user\/dclwebteam",
+		"https:\/\/pinterest.com\/dougcolibraries",
+		"https:\/\/twitter.com\/DCLcolorado"]
+  }
+</script> 
+<!-- End Structured Data --> 
+<!-- TM tracking snippet start --> 
+<!-- TM tracking snippet end -->
 </body>
 <!-- InstanceEnd --></html>
