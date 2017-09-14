@@ -354,22 +354,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="row" id="location-sticky">
     <ul class="nav sticky-nav">
       <li class="bg-teal"> <a class="location-heading white" href="#parker">Parker</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a>
-        <input class="switcheroo" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+        <input class="switcheroo check checkAll" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
       </li>
       <li class="bg-moss"> <a class="location-heading white" href="#lone-tree">Lone Tree</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a>
-        <input class="switcheroo" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+        <input class="switcheroo check checkAll" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
       </li>
       <li class="bg-loquacious"> <a class="location-heading white" href="#castle-pines">Castle Pines</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a>
-        <input class="switcheroo" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+        <input class="switcheroo check checkAll" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
       </li>
       <li class="bg-lavender"> <a class="location-heading white" href="#highlands-ranch">Highlands Ranch</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a>
-        <input class="switcheroo" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+        <input class="switcheroo check checkAll" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
       </li>
       <li class="bg-teal"> <a class="location-heading white" href="#castle-rock">Castle Rock</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a>
-        <input class="switcheroo" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+        <input class="switcheroo check checkAll" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
       </li>
       <li class="bg-moss"> <a class="location-heading white" href="#roxborough">Roxborough</a> <a href="#" type="button" class="btn-events text-nowrap" data-toggle="modal" data-target="#modalone">Get Started</a>
-        <input class="switcheroo" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+        <input class="switcheroo check checkAll" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
       </li>
     </ul>
   </div>
@@ -996,6 +996,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     })
 	});  // end document ready
 	</script> 
+	
+
+	
+	<script>
+$(".checkAll").click(function () {
+    $(".check").prop('checked', $(this).prop('checked'));
+});</script>
+	
+	
+	
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <script type="application/ld+json">
