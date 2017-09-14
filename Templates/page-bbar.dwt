@@ -9,16 +9,17 @@
 .async-hide {
 	opacity: 0 !important
 }
+	#bbar {position:absolute;
+	right:0;
+	top:0;}
 	.cp_header_biblio_bar .biblio_bar_link {
     display: block;
     padding-top:0!important;
 		padding-bottom: 0!important;
 }
-.bibliocommons_embed_block {
-    float: right;
-}
-.bibliocommons_embed_block .dropdown {
-    position: relative;
+	.bibliocommons_embed_block .dropdown-menu {
+		position: relative;
+    right: 0!important;
 }
 </style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -93,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container no-padding">
     <div class="row no-margin">
       
-        <div class="biblio_bar_link biblio_bar_my_account">
+        <div id="bbar">
 			<div id="bibliobar"><div class="bc-widget bc-my-account-nav">
 <noscript><a href="https://dcl.bibliocommons.com/user/login"><div style="line-height:1.485; background-color:#004b8d; color:white; padding:6px 12px; width:160.578px; height:34px; float:right;">Log In / My Library</div></a></noscript>
 	</div></div>
