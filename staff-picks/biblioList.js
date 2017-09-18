@@ -18,7 +18,7 @@ function getBiblioHref(keyName)
 {
     var h = '';
     if (keyName == "Noteworthy") {
-        h = "https://dcl.bibliocommons.com/list/share/692278051_dcladults/975832667_new_amp_noteworthy_(july_2017)";
+        h = "https://dcl.bibliocommons.com/list/share/692278051_dcladults/1039845827";
     }
     return h;
 }
