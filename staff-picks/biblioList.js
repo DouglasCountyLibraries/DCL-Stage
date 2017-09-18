@@ -102,6 +102,12 @@ function doBiblioList(val) {
         getRandomCollectionList(val.KeyName, '10');
         $('#StorytimeFavorites').append(createPostShelves(title));
     }
+    if (val.KeyName == 'EpicReads') {
+        var myel = $('#EpicReads').append(createPreShelf(title, val.KeyName, '10'));
+        console.log('val', val.KeyName)
+        getRandomCollectionList(val.KeyName, '10');
+        $('#EpicReads').append(createPostShelves(title));
+    }	
 }
 function getCollectionSet() {
 
