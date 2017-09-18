@@ -30,7 +30,7 @@ function createPreShelf(title, keyName, seq) {
     var x = `
 <div class="row shelf">
 
-   <div id="covers-outer" class ="container shelf-container text-center">
+   <div id="covers-outer">
      <h1 class ="no-margin"><a href=${hr}>${title}</a></h1>
      <ul id="covers-${keyName}">
       `;
