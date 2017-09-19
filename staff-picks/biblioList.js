@@ -38,7 +38,7 @@ function createPreShelf(title, keyName, seq) {
     var x = [
     '<div class="row shelf">',
    '<div id="covers-outer" class ="container shelf-container text-center">',
-    '<ul id="covers-' + keyName + '>'
+    '<ul id="covers-' + keyName + '">'
      ].join('\n');
     return x;
 }
