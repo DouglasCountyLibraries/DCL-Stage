@@ -281,7 +281,7 @@ function createBookList(val,KeyName) {
     var x;
     var bib = val.Bib + 114;
 	
-    if (val.ImageSource == 'Syndetics')
+    if (val.ImageSource == 'Syndetics' || val.ImageSource == 'Biblio')
     {
 		if (KeyName == 'ComingSoonMovies')
 		{
