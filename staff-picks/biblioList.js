@@ -8,10 +8,18 @@ var allKeyName;
 
 
 
-function createAllPageTitle(title) {
-    var x = `
-     <h1 class="no-margin">${title}</h1>
-      `;
+function createAllPageTitle(title)
+{
+  var x = [
+     '<div class="text-center">',
+      '<h1 class="jumbo-text text-uppercase font-weight-400">What' + "'s"  + 'New</h1>',
+      '<div class="separator-container padding-bottom-15">',
+       ' <div class="separator line-separator"><i class="fa fa-star-o"></i></div>',
+     ' </div>',
+   ' </div>',
+     ' <h1 class="no-margin">' + title + '</h1>  '
+	 ].join('\n');
+      
     return x;
 }
 function getBiblioHref(keyName)
@@ -27,21 +35,19 @@ function getBiblioHref(keyName)
 
 function createPreShelf(title, keyName, seq) {
     var hr = getBiblioHref(keyName);
-    var x = `
-<div class="row shelf">
-
-   <div id="covers-outer" class ="container shelf-container text-center">
-     <ul id="covers-${keyName}">
-      `;
+    var x = [
+    '<div class="row shelf">',
+   '<div id="covers-outer" class ="container shelf-container text-center">',
+    '<ul id="covers-' + keyName + '>'
+     ].join('\n');
     return x;
 }
 //<ul id="covers-${keyName}" class ="elastislide-list">
 function createPostShelves(title) {
-    var x = `
-        </ul>
- </div>
- 
-    `;
+    var x = [
+       ' </ul>',
+ '</div>'
+  ].join('\n');
     return x;
 }
 //var preShelf = `
