@@ -271,8 +271,36 @@ function getlargeList(KeyName, Title) {
     });
 
 }
+function createBookList(val,KeyName) {
+    var x;
+    var bib = val.Bib + 114;
+	
+    if (val.ImageSource == 'Biblio')
+    {
+		if (KeyName == 'ComingSoonMovies')
+		{
+			 x = 
+			   ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=' + val.Isbn + '"alt="' + val.Title +  '"></a>';
+		}
+		else
+		{
+         x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a>';
+		}
+    }
+    else if (val.ImageSource == 'URL')
+    {
 
-function createBookList(val, KeyName) {
+        x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + val.ImageURL + '" alt=' + val.Title + '"></a>';
+    }
+	else{
+		 x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + baseURI + '/api/images/' + val.Isbn + '" alt="' + val.Title + '"></a>';
+	}
+       
+  
+    return x;
+}
+
+/* function createBookList(val, KeyName) {
     var x;
     var dolist = false;
   //  var bib = val.Bib + 114;
@@ -291,4 +319,4 @@ function createBookList(val, KeyName) {
          
       
     return x;
-}
+} */
