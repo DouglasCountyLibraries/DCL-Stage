@@ -279,7 +279,8 @@ function getlargeList(KeyName, Title) {
 }
 function createBookList(val,KeyName) {
     var x;
-    var bib = val.Bib + 114;
+    //  var bib = val.Bib + 114;
+    var bib = val.Bib ;
 	
     if (val.ImageSource == 'Syndetics' || val.ImageSource == 'Biblio')
     {
