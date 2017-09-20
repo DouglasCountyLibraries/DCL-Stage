@@ -287,20 +287,20 @@ function createBookList(val,KeyName) {
 		if (KeyName == 'ComingSoonMovies')
 		{
 			 x = 
-			   ' <div class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=' + val.Isbn + '"alt="' + val.Title +  '"></a></div>';
+			   ' <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=/MC.GIF&client=dougp&type=xw12&oclc=&upc=' + val.Isbn + '"alt="' + val.Title +  '"></a></span>';
 		}
 		else
 		{
-         x = ' <div class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a></div>';
+         x = ' <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a></span>';
 		}
     }
     else if (val.ImageSource == 'URL')
     {
 
-        x = ' <div class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + val.ImageURL + '" alt=' + val.Title + '"></a></div>';
+        x = ' <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + val.ImageURL + '" alt=' + val.Title + '"></a></span>';
     }
 	else{
-		 x = ' <div class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + baseURI + '/api/images/' + val.Isbn + '" alt="' + val.Title + '"></a></div>';
+		 x = ' <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + baseURI + '/api/images/' + val.Isbn + '" alt="' + val.Title + '"></a></span>';
 	}
        
   
