@@ -163,7 +163,7 @@ function getCollectionSet() {
 
 function getRandomCollectionList(KeyName, divid) {
 
-    var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/25';
+    var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/20';
     var promise =
        $.ajax({
            url: uri,
