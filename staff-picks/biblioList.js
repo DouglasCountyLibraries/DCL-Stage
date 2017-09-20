@@ -233,7 +233,7 @@ function getRandomCollectionList(KeyName, divid) {
 }
 function getlargeList(KeyName, Title) {
 
-    var uri = baseURI + 'api/collectionlist/GetCollectionList/' + KeyName;
+    var uri = baseURI + 'api/collectionlist/GetCollectionList/' + KeyName + '/12';
     // var uri = baseURI + 'api/collectionlist/GetRandomCollectionList/' + KeyName + '/50';
     var promise =
        $.ajax({
