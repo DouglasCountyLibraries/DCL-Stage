@@ -291,7 +291,7 @@ function createBookList(val,KeyName) {
 		}
 		else
 		{
-         x = ' <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a></span>';
+         x = '<li> <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a></span> </li>';
 		}
     }
     else if (val.ImageSource == 'URL')
