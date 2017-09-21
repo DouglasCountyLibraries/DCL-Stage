@@ -32,12 +32,13 @@ function getBiblioHref(keyName)
 }
 //class="elastislide-list"
 //class ="container shelf-container text-center"
-
+// '<div id="covers-outer" class ="carousel-cell container shelf-container text-center">',
 function createPreShelf(title, keyName, seq) {
     var hr = getBiblioHref(keyName);
     var x = [
     '<div class="row shelf">',
-   '<div id="covers-outer" class ="carousel-cell container shelf-container text-center">',
+	'<div class="carousel" data-flickity=\'{ "imagesLoaded": true, "groupCells": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.36, "autoPlay": 4000 }\'>',
+  
     '<ul id="covers-' + keyName + '">'
      ].join('\n');
     return x;
@@ -291,7 +292,7 @@ function createBookList(val,KeyName) {
 		}
 		else
 		{
-         x = '<li> <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a></span> </li>';
+         x = ' <span class="carousel-cell"><a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=' + val.Isbn + '/LC.GIF" alt="' + val.Title + '"></a></span> ';
 		}
     }
     else if (val.ImageSource == 'URL')
