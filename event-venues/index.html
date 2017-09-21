@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,6 +71,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+<script>
+  $(document).ready(function(){
+    $(".sticky-one").sticky({topSpacing:0});
+  });
+		</script>
 <style>
 .reserve-a-space-active {
 	background-color: #f5f5f5;
@@ -90,6 +96,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	vertical-align: middle;
 	padding-bottom: 3px;
 }
+	.sticky-one {
+		background-color: rgba(255,255,255);
+		width: 100%;
+		padding:10px 0;
+		z-index: 1000;
+	}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -290,25 +302,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       <div class="separator-container">
         <div class="separator line-separator"><i class="fa fa-th"></i></div>
       </div>
-		<h4 class="roboto">Our state-of-the-art meeting rooms and event venues are perfect for business meetings, holiday parties, seminars and corporate events. Explore our unique spaces to find the one that's right for you, then call Event + Hospitality Services at <a href="tel:303-688-7605">(303) 688-7605</a> with questions or to reserve the space. </h4>
+      <h4 class="roboto">Our state-of-the-art meeting rooms and event venues are perfect for business meetings, holiday parties, seminars and corporate events. Explore our unique spaces to find the one that's right for you, then call Event + Hospitality Services at <a href="tel:303-688-7605">(303) 688-7605</a> with questions or to reserve the space. </h4>
     </div>
   </div>
-  <div class="row">
+  <div class="row padding-bottom-15">
     <div class="container">
-      <div class="col-md-4">
-        <h5>When you host a meeting or party with us, you can work with our professional, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Full library buy-out, room setup and teardown, drop-off and full-service/staffed catering, vendor recommendations, alcohol service.">full-service</a> planners to help make it memorable. We can also recommend affordable caterers, rental companies, and other vendors. </h5>
+      <div class="col-md-6">
+        <h5 class="no-margin-top">When you host a meeting or party with us, you can work with our professional, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Full library buy-out, room setup and teardown, drop-off and full-service/staffed catering, vendor recommendations, alcohol service.">full-service</a> planners to help make it memorable. We can also recommend affordable caterers, rental companies, and other vendors. Our modern venues are available at all hours, and with <a class="" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Complimentary Wi-Fi, AV amenities, projection screens, LED televisions, Blu-ray players, HDMI connectivity, hearing loops.">audiovisual (AV) amenities</a> for presentations and conferencing. </h5>
       </div>
-      <div class="col-md-4">
-        <h5>Our modern venues are available at all hours, and with <a class="" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Complimentary Wi-Fi, AV amenities, projection screens, LED televisions, Blu-ray players, HDMI connectivity, hearing loops.">audiovisual (AV) amenities</a> for presentations and conferencing. Be sure to consider our outdoor spaces, as well. They're ideal for catered parties, and the spectacular views are free!</h5>
-      </div>
-      <div class="col-md-4">
-        <h5>Want more information? Call Event + Hospitality Services at <a href="tel:303-688-7605">(303) 688-7605</a>. We're here to help!</h5>
+      <div class="col-md-6">
+        <h5 class="no-margin-top">Be sure to consider our outdoor spaces, as well. They're ideal for catered parties, and the spectacular views are free!</h5><h5>Want more information? Call Event + Hospitality Services at <a href="tel:303-688-7605">(303) 688-7605</a>. We're here to help!</h5>
       </div>
     </div>
   </div>
-  <div class="row fixed-row margin-top-15 padding-bottom-30">
+  <div class="row sticky-one">
     <div class="container text-center">
-		<button type="button" class="btn text-uppercase btn-primary margin-right-30" data-toggle="modal" data-target="#modalone">Get Started</button><label>check</label> <input class="switcheroo check" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
+      <button type="button" class="btn text-uppercase btn-primary margin-right-30" data-toggle="modal" data-target="#modalone">Get Started</button>
+      <label>check</label>
+      <input class="switcheroo check" type="checkbox" data-toggle="toggle" data-on="Photos" data-off="Floor Plans">
     </div>
     <!-- Modal -->
     <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="modalone" style="display: none;">
@@ -324,11 +335,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
-  <div class="row bg-teal padding-top-15 padding-bottom-60">
+  <div class="row bg-teal padding-top-15 margin-top-30 padding-bottom-60">
     <div class="container">
       <h1 id="parker" class="jumbo-text font-weight-400 text-center white text-uppercase">Parker</h1>
       <h4 class="text-center white roboto padding-bottom-20">Located on Mainstreet in the heart of Parker, our modern event spaces can be reserved for everything from business meetings, seminars and conferences to weddings and other public ceremonies.</h4>
-       <div class="row room-row">
+      <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a-b.jpg" alt="Event Hall A & B + Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
           <h4 class="roboto no-margin-top">Event Halls A & B + Terrace</h4>
@@ -448,7 +459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container">
       <h1 id="lone-tree" class="jumbo-text font-weight-400 text-center white text-uppercase">Lone Tree</h1>
       <h4 class="text-center white roboto padding-bottom-20">The flexible spaces in Lone Tree easily accommodate large celebrations, workshops, and corporate meetings and events. Our Terrace is the ideal outdoor setting for your intimate party.</h4>
-       <div class="row room-row">
+      <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="lt-event-hall-library.jpg" alt="Event Hall + Adjoining Library Space"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
           <h4 class="roboto no-margin-top">Event Hall + Adjoining Library Space</h4>
@@ -535,7 +546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container">
       <h1 id="castle-pines" class="jumbo-text font-weight-400 text-center white text-uppercase">Castle Pines</h1>
       <h4 class="text-center white roboto padding-bottom-20">This jewel in Castle Pines offers so many creative event options. Book a corporate meeting in one of our flexible conference room spaces, or a private, catered party on the Terrace with stunning views of the Front Range.</h4>
-       <div class="row room-row">
+      <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall-library.jpg" alt="CPN Masters Association Event Hall"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
           <h4 class="roboto no-margin-top">Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h4>
@@ -622,7 +633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container">
       <h1 id="highlands-ranch" class="jumbo-text font-weight-400 text-center white text-uppercase">Highlands Ranch</h1>
       <h4 class="text-center white roboto padding-bottom-20">If you need an event space that can expand and transform with your group's needs, these meeting rooms fit the bill. And the Terrace overlooking Civic Green Park is spacious enough for holding your event outside.</h4>
-       <div class="row room-row">
+      <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="hr-terrace.jpg" alt="The Terrace"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
           <h4 class="roboto no-margin-top">The Terrace</h4>
@@ -709,7 +720,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container">
       <h1 id="castle-rock" class="jumbo-text font-weight-400 text-center white text-uppercase">Castle Rock</h1>
       <h4 class="text-center white roboto padding-bottom-20">Our meeting rooms include state-of-the-art technology to accommodate business events of all sizes and styles &mdash; even weddings! Talk to one of our full-service planners for help reserving the right space.</h4>
-       <div class="row room-row">
+      <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-bank-east-west.jpg" alt="Castle Rock Bank Meeting Room East & West"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
           <h4 class="roboto no-margin-top">Castle Rock Bank Meeting Room East & West</h4>
@@ -812,7 +823,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container">
       <h1 id="roxborough" class="jumbo-text font-weight-400 text-center white text-uppercase">Roxborough</h1>
       <h4 class="text-center white roboto padding-bottom-20">Located in the heart of Roxborough, our meeting room is ideal for getting straight to the business at hand and includes the AV capabilities needed for your important presentations.</h4>
-       <div class="row room-row">
+      <div class="row room-row">
         <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="rox-lockheed-martin.jpg" alt="Lockheed Martin Community Meeting Room"></div>
         <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
           <h4 class="roboto no-margin-top">Lockheed Martin Community Meeting Room </h4>
@@ -886,7 +897,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
+ <script>
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
@@ -918,7 +929,7 @@ $(function () {
     })
 	});  // end document ready
 	</script> 
-<!-- InstanceEndEditable --> 
+ <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <script type="application/ld+json">
   {
@@ -958,4 +969,5 @@ $(function () {
 <!-- TM tracking snippet start --> 
 <!-- TM tracking snippet end -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
