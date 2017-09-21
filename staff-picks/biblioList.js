@@ -41,6 +41,7 @@ function createPreShelf(title, keyName, seq) {
 	 '</div>',
 	'<div class="main-carousel">'
           ].join('\n');
+		  console ("preshelf: " x);
     return x;
 }
 //<ul id="covers-${keyName}" class ="elastislide-list">
@@ -49,6 +50,7 @@ function createPostShelves(title) {
        ' </div>',
  '</div>'
   ].join('\n');
+   console ("postshelf: " x);
     return x;
 }
 //var preShelf = `
@@ -156,38 +158,8 @@ function getCollectionSet() {
                 //console.log('val', val.KeyName)
                 //getRandomCollectionList(val.KeyName, 10);
                 //$('#Noteworthy').append(createPostShelves(title));
-               // doBiblioList(val);
-			    title = val.DisplayName;
-    if (val.KeyName == 'Noteworthy') {
-        var myel = $('#Noteworthy').append(createPreShelf(title, val.KeyName, '10'));
-        console.log('val', val.KeyName)
-        getRandomCollectionList(val.KeyName, '10');
-        $('#Noteworthy').append(createPostShelves(title));
-    }
-    if (val.KeyName == 'ListenToThis') {
-        var myel = $('#ListenToThis').append(createPreShelf(title, val.KeyName, '10'));
-        console.log('val', val.KeyName)
-        getRandomCollectionList(val.KeyName, '10');
-        $('#ListenToThis').append(createPostShelves(title));
-    }
-    if (val.KeyName == 'NowFeaturing') {
-        var myel = $('#NowFeaturing').append(createPreShelf(title, val.KeyName, '10'));
-        console.log('val', val.KeyName)
-        getRandomCollectionList(val.KeyName, '10');
-        $('#NowFeaturing').append(createPostShelves(title));
-    }
-    if (val.KeyName == 'StorytimeFavorites') {
-        var myel = $('#StorytimeFavorites').append(createPreShelf(title, val.KeyName, '10'));
-        console.log('val', val.KeyName)
-        getRandomCollectionList(val.KeyName, '10');
-        $('#StorytimeFavorites').append(createPostShelves(title));
-    }
-    if (val.KeyName == 'EpicReads') {
-        var myel = $('#EpicReads').append(createPreShelf(title, val.KeyName, '10'));
-        console.log('val', val.KeyName)
-        getRandomCollectionList(val.KeyName, '10');
-        $('#EpicReads').append(createPostShelves(title));
-    }	
+                doBiblioList(val);
+		
             }
         });
 
