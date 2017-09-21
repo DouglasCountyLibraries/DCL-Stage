@@ -41,7 +41,7 @@ function createPreShelf(title, keyName, seq) {
 	 '</div>',
 	'<div class="main-carousel">'
           ].join('\n');
-		  console ("preshelf: ", x);
+		  console.log("preshelf: ", x);
     return x;
 }
 //<ul id="covers-${keyName}" class ="elastislide-list">
@@ -50,7 +50,7 @@ function createPostShelves(title) {
        ' </div>',
  '</div>'
   ].join('\n');
-   console ("postshelf: ", x);
+   console.log("postshelf: ", x);
     return x;
 }
 //var preShelf = `
