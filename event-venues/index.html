@@ -96,13 +96,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	vertical-align: middle;
 	padding-bottom: 3px;
 }
-
 .lbl {
 	position: relative;
 	top: 9px;
 	height: 20px;
 	width: 44px;
-	background: #ccc;
+	background: #ddd;
 	border-radius: 100px;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -122,16 +121,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	border: 1px solid #999;
 }
 .cbx:checked ~ label::after {
-    background: #5f953d;
-    left: 20px;
-    border: 1px solid #5f953d;
-}
-.cbx:disabled ~ label {
-	background: #d5d5d5;
-	pointer-events: none;
-}
-.cbx:disabled ~ label:after {
-	background: #bcbdbc;
+	background: #5f953d;
+	left: 20px;
+	border: 1px solid #5f953d;
 }
 .cntr {
 	position: absolute;
@@ -939,12 +931,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
- <script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
- <script>
+	<script>
   $(document).ready(function () {
     $(function () {
         $('.switcheroo').change(function () {
@@ -971,7 +958,12 @@ $(function () {
     })
 	});  // end document ready
 	</script> 
- <!-- InstanceEndEditable --> 
+	<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+ </script> 
+	<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <script type="application/ld+json">
   {
