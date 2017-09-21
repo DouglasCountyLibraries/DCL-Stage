@@ -39,14 +39,14 @@ function createPreShelf(title, keyName, seq) {
     '<div class="row shelf">',
 	'<div class="carousel" data-flickity=\'{  }\'>',
   
-    '<ul id="covers-' + keyName + '">'
+    '<div id="covers-' + keyName + '">'
      ].join('\n');
     return x;
 }
 //<ul id="covers-${keyName}" class ="elastislide-list">
 function createPostShelves(title) {
     var x = [
-       ' </ul>',
+       ' </div>',
  '</div>'
   ].join('\n');
     return x;
