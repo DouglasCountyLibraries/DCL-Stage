@@ -38,10 +38,8 @@ function createPreShelf(title, keyName, seq) {
     var x = [
     '<div class="row shelf">',
 	 '<div id="covers-' + keyName + '"></div>',
-	'<div class="main-carousel" data-flickity=\'{ "cellAlign": "left", "contain": true , "rightToLeft": true }\'>'
-  
-   
-     ].join('\n');
+	'<div class="main-carousel">'
+          ].join('\n');
     return x;
 }
 //<ul id="covers-${keyName}" class ="elastislide-list">
@@ -75,6 +73,11 @@ $(document).ready(function () {
     if (allKeyName != undefined) {
         getlargeList(allKeyName, title);
     }
+	$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
    
 
     //});
