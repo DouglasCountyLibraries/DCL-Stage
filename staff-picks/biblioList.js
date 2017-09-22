@@ -76,10 +76,11 @@ $(document).ready(function () {
     if (allKeyName != undefined) {
         getlargeList(allKeyName, title);
     }
-	$('.main-carousel').flickity({
+	 $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  rightToLeft: true
 });
    
 
