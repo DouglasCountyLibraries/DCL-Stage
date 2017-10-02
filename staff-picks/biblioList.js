@@ -37,7 +37,7 @@ function createPreShelf(title, keyName, seq) {
     var hr = getBiblioHref(keyName);
     var x = [
     '<div class="row shelf">',
-	 '<div class="main-carousel" id="covers-' + keyName + '">'
+	 '<div class="carousel" id="covers-' + keyName + '">'
 		
           ].join('\n');
 		  console.log("preshelf: ", x);
@@ -76,7 +76,7 @@ $(document).ready(function () {
     if (allKeyName != undefined) {
         getlargeList(allKeyName, title);
     }
-	 $('.main-carousel').flickity({
+	 $('.carousel').flickity({
   // options
   cellAlign: 'left',
   contain: true,
