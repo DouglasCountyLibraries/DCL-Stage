@@ -76,14 +76,6 @@ $(document).ready(function () {
     if (allKeyName != undefined) {
         getlargeList(allKeyName, title);
     }
-	 $('.carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true,
-  rightToLeft: true
-});
-   
-
     //});
     //  console.log('return from getCollection',collData);
 });  // end document ready
