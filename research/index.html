@@ -69,7 +69,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
-<script src="http://support.epnet.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
 <style>
 .research-active {
 	background-color: #f5f5f5;
@@ -279,12 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="container text-center">
       <h1 class="text-uppercase jumbo-text font-weight-400">Research</h1>
       <div class="col-sm-6 col-sm-push-3">
-        <form class="ebscohostCustomSearchBox margin-top-10 margin-bottom-10 search research-search" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
-          <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
-          <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://douglascountylibraries.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&scope=site&type=0&site=eds-live&lang=en" />
-          <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
-          <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
-          <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+        <form class="ebscohostCustomSearchBox margin-top-10 margin-bottom-10 search research-search" action="//search.ebscohost.com/login.aspx?direct=true&scope=site&site=eds-live&authtype=guest&custid=s9038887&groupid=main&profile=eds&bquery=" method="post" style="overflow:hidden;">
           <div class="input-group">
             <input id="ebscohostsearchtext" class="form-control" placeholder="Search Articles &raquo;" name="ebscohostsearchtext" type="text" />
             <span class="input-group-btn">
@@ -294,6 +288,354 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </div>
     </div>
   </div>
+  
+  
+	<div class="row"><div class="container">
+		<!-- EBSCOhost Custom Search Box Begins -->
+<script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+
+	<form class="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
+		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&scope=site&type=0&site=eds-live&custid=s9038887&groupid=main&profid=eds&lang=en" />
+		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
+		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+		
+		<div style="background-image:url('http://support.ebsco.com/images/logos/eds150.gif'); background-repeat:no-repeat; height:75px; width:392px; font-size:9pt; color:#353535;">
+			<div style="padding-top:5px;padding-left:167px;">
+				<span class="ebscohost-title " style="font-weight:bold;">EBSCO Discovery Service</span>
+
+				<div>
+					<input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" size="23"  style="font-size:9pt;padding-left:5px;margin-left:0px;" />
+					<input type="submit" value="Search" class="ebscohost-search-button " style="font-size:9pt;padding-left:5px;" />
+					
+					<div id="guidedFieldSelectors">
+						<input class="radio" type="radio" name="searchFieldSelector" id="guidedField_0" value="" checked="checked" />
+						<label class="label" for="guidedField_0"> Keyword</label>
+						<input class="radio" type="radio" name="searchFieldSelector" id="guidedField_1" value="TI" />
+						<label class="label" for="guidedField_1"> Title</label>
+						<input class="radio" type="radio" name="searchFieldSelector" id="guidedField_2" value="AU" />
+						<label class="label" for="guidedField_2"> Author</label>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="limiterblock" style="margin-left:-px; overflow: auto; ">
+			<div id="limitertitle" style="font-weight:bold;padding-top:25px;padding-bottom:5px;">Limit Your Results</div>
+			
+			<div class="limiter" >
+				<input type="checkbox" id="chkFullText" name="chkFullText"  />
+				<label for="chkFullText">Full Text</label>
+			</div>
+			
+			<div class="limiter" >
+				<input type="checkbox" id="chkLibraryCollection" name="chkLibraryCollection" checked="checked" />
+				<label for="chkLibraryCollection">Available in Library Collection</label>
+			</div>
+			
+			<div class="limiter" >
+				<input type="checkbox" id="chkPeerReviewed" name="chkPeerReviewed"  />
+				<label for="chkPeerReviewed">Peer Reviewed</label>
+			</div>
+			
+			<div class="limiter" >
+				<input type="checkbox" id="chkCatalogOnly" name="chkCatalogOnly"  />
+				<label for="chkCatalogOnly">Catalog Only</label>
+			</div>
+			
+			<div class="limiter" >
+				<input type="checkbox" id="chkIROnly" name="chkIROnly"  />
+				<label for="chkIROnly">Institutional Repository Only</label>
+			</div>
+			
+		</div>
+		
+				
+		<div id="disciplineBlock" style="margin-left:-px; overflow: auto;">
+			
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="AGRI"  />
+				<label for="">Agriculture & Agribusiness</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ANAT"  />
+				<label for="">Anatomy & Physiology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ANTH"  />
+				<label for="">Anthropology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="APPL"  />
+				<label for="">Applied Sciences</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ARCH"  />
+				<label for="">Architecture</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ARTS"  />
+				<label for="">Arts & Entertainment</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ASTR"  />
+				<label for="">Astronomy & Astrophysics</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="BIOG"  />
+				<label for="">Biography</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="BIOL"  />
+				<label for="">Biology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="BIOT"  />
+				<label for="">Biotechnology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="BOTA"  />
+				<label for="">Botany</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="BUSI"  />
+				<label for="">Business & Management</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="CHEM"  />
+				<label for="">Chemistry</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="COMM"  />
+				<label for="">Communication & Mass Media</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="CALM"  />
+				<label for="">Complementary & Alternative Medicine</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="COMP"  />
+				<label for="">Computer Science</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="CONS"  />
+				<label for="">Construction & Building</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="COHE"  />
+				<label for="">Consumer Health</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="DANC"  />
+				<label for="">Dance</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="DENT"  />
+				<label for="">Dentistry</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="DIPL"  />
+				<label for="">Diplomacy & International Relations</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="DRAM"  />
+				<label for="">Drama & Theater Arts</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="EART"  />
+				<label for="">Earth & Atmospheric Sciences</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ECON"  />
+				<label for="">Economics</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="EDUC"  />
+				<label for="">Education</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ENGI"  />
+				<label for="">Engineering</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ENVI"  />
+				<label for="">Environmental Sciences</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ETHN"  />
+				<label for="">Ethnic & Cultural Studies</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="FILM"  />
+				<label for="">Film</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="FORE"  />
+				<label for="">Forestry</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="GEOG"  />
+				<label for="">Geography & Cartography</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="GEOL"  />
+				<label for="">Geology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="HEAL"  />
+				<label for="">Health & Medicine</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="HIST"  />
+				<label for="">History</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="INFO"  />
+				<label for="">Information Technology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="LANG"  />
+				<label for="">Language & Linguistics</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="LAWX"  />
+				<label for="">Law</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="LIBR"  />
+				<label for="">Library & Information Science</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="LIFE"  />
+				<label for="">Life Sciences</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="LITE"  />
+				<label for="">Literature & Writing</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="MARK"  />
+				<label for="">Marketing</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="MATH"  />
+				<label for="">Mathematics</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="MILI"  />
+				<label for="">Military History & Science</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="MINI"  />
+				<label for="">Mining & Mineral Resources</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="MUSI"  />
+				<label for="">Music</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="NURS"  />
+				<label for="">Nursing & Allied Health</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="NUTR"  />
+				<label for="">Nutrition & Dietetics</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="OCEA"  />
+				<label for="">Oceanography</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="PHAR"  />
+				<label for="">Pharmacy & Pharmacology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="PTOT"  />
+				<label for="">Physical Therapy & Occupational Therapy</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="PHYS"  />
+				<label for="">Physics</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="POSC"  />
+				<label for="">Political Science</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="POGV"  />
+				<label for="">Politics & Government</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="POWE"  />
+				<label for="">Power & Energy</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="PSYC"  />
+				<label for="">Psychology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="PUBL"  />
+				<label for="">Public Health</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="RELI"  />
+				<label for="">Religion & Philosophy</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="SCIE"  />
+				<label for="">Science</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="SSHU"  />
+				<label for="">Social Sciences & Humanities</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="SOWO"  />
+				<label for="">Social Work</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="SOCY"  />
+				<label for="">Sociology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="SPLS"  />
+				<label for="">Sports & Leisure</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="SPME"  />
+				<label for="">Sports Medicine</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="TECH"  />
+				<label for="">Technology</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="VETM"  />
+				<label for="">Veterinary Medicine</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="VISU"  />
+				<label for="">Visual Arts</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="WOFE"  />
+				<label for="">Women's Studies & Feminism</label>
+			</div>
+			<div style="display:none;">
+				<input type="checkbox" id="" name="" value="ZOOL"  />
+				<label for="">Zoology</label>
+			</div>
+		</div>				
+
+		
+	</form>
+	<!-- EBSCOhost Custom Search Box Ends -->
+		
+	</div></div>
+  
+  
   <div class="row">
     <div class="container text-center">
       <h4 class="roboto">Use the search feature above to access a wealth of information on your chosen topic from magazines, journals and other educational research databases. Or browse through popular resources such as <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank">Consumer Reports</a>, <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=lynda" target="_blank">Lynda.com</a>, <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank">Brainfuse</a> and <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a>.</h4>
