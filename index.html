@@ -35,19 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MV5DM73');</script>
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Page Title | Douglas County Libraries</title>
-  <link rel="manifest" href="/manifest.json">
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-  <script>
-    var OneSignal = window.OneSignal || [];
-    OneSignal.push(["init", {
-      appId: "39124fd4-c082-4c81-b009-95f47620ab0e",
-      autoRegister: true,
-      notifyButton: {
-        enable: false
-      }
-    }]);
-  </script>
+<title>Douglas County Libraries</title>
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
@@ -76,6 +64,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 <!--<script src="https://use.fortawesome.com/e61d5dd7.js"></script>-->
+<script async="async" type="text/javascript">(function(){var e=document.createElement("script");
+e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
+e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="shared-assets/js/dcl.js"></script>
@@ -90,32 +81,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
-<div class="cp_header_biblio_bar">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="pull-right biblio_bar_link biblio_bar_my_account"> <a data-target="#" href="#" data-toggle="dropdown" role="button" class="dropdown-toggle my_account_toggle" aria-haspopup="true" aria-expanded="false">Log In / My DCL<span class="glyphicon glyphicon-menu-down white margin-left-15 margin-right-15" aria-hidden="true"></span></a>
-          <ul aria-labelledby="biblionav_trigger" role="menu" class="dropdown-menu biblionav_my_account">
-            <li class="info" role="presentation"> <a role="button" class="btn btn-transactional btn-block log_in_btn" href="https://dcl.bibliocommons.com/user/login"> Log In / Register </a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a role="menuitem" href="https://dcl.bibliocommons.com/dashboard/user_dashboard">My Library Dashboard</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Borrowing</li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/checkedout">Checked Out</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/holds">On Hold</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/fines">Fees</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation" class="dropdown-header">My Collections</li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/for_later">For Later Shelf</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/completed">Completed Shelf</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/collection/show/my/library/in_progress">In Progress Shelf</a> </li>
-            <li role="presentation"> <a role="menuitem" class="indented" href="https://dcl.bibliocommons.com/lists/show/mine">Lists</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a role="menuitem" href="https://dcl.bibliocommons.com/user_profile/me">My Profile</a> </li>
-            <li class="divider" role="presentation"></li>
-            <li role="presentation"> <a role="menuitem" href="https://dcl.bibliocommons.com/account/personal_information">My Settings</a> </li>
-          </ul>
-        </div>
+<div class="login-row">
+  <div class="container login-container">
+    <div id="login-bar">
+      <div class="biblio_bar_link biblio_bar_my_account">
+        <div class="bc-widget bc-my-account-nav"></div>
       </div>
     </div>
   </div>
@@ -158,8 +128,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
         </ul>
       </li>
-      <li id="step1" class="whats-new-active"><a href="whats-new">What's New</a> </li>
-      <li id="step2" class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+      <li class="whats-new-active"><a href="whats-new">What's New</a> </li>
+      <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
         <ul class="dropdown-menu">
           <li><a href="locations">Hours & Locations</a></li>
           <li><a href="library-basics">Library Basics</a></li>
@@ -175,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <ul class="dropdown-menu" role="menu">
           <li><a href="storytime">Storytime</a></li>
           <li><a href="read-listen-watch">Read, Listen, Watch</a></li>
-          <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=35&lib=ALL&nd=365" target="_blank">Kids Events</a></li>
+          <li><a href="kids-events">Kids Events</a></li>
           <li><a href="parents-teachers">Parents & Teachers</a></li>
           <li><a href="research/students">Homework Help</a></li>
           <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
@@ -183,10 +153,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </li>
       <li class="digital-media-active"><a href="digital-media">Digital Media</a> </li>
       <li class="reserve-a-space-active"><a href="reserve-a-space">Reserve a Space</a> </li>
-      <li id="step3" class="dropdown events-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+      <li class="dropdown events-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="authors-events">Authors & Events</a></li>
-          <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=35&lib=ALL&nd=365" target="_blank">Kids Events</a></li>
+          <li><a href="kids-events">Kids Events</a></li>
         </ul>
       </li>
       <li class="research-active"><a href="research">Research</a> </li>
@@ -232,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                 <ul id="kids-teens" class="nav mobile-nav-list collapse">
                   <li><a href="storytime">Storytime</a></li>
                   <li><a href="read-listen-watch">Read, Listen, Watch</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=35&lib=ALL&nd=365" target="_blank">Kids Events</a></li>
+                  <li><a href="kids-events">Kids Events</a></li>
                   <li><a href="parents-teachers">Parents & Teachers</a></li>
                   <li><a href="research/students">Homework Help</a></li>
                   <li><a href="http://blogs.douglascountylibraries.org/teens/">Teens</a></li>
@@ -243,7 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#library-events">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="library-events" class="nav mobile-nav-list collapse">
                   <li><a href="authors-events">Authors & Events</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=35&lib=ALL&nd=365" target="_blank">Kids Events</a></li>
+                  <li><a href="kids-events">Kids Events</a></li>
                 </ul>
               </li>
               <li class="research-active mobile-nav-heading"><a href="research">Research</a> </li>
@@ -273,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
-	<div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100"><h1 class="jumbo-text">TEST PAGE</h1></div>
+	<div class="row text-center border-top padding-top-100 padding-bottom-120"><h1 class="jumbo-text text-uppercase font-weight-400">Go to <a href="https://www.dcl.org/">dcl.org</a></h1></div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -284,9 +254,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
     <div class="col-sm-6">
       <div class="text-center">
-        <h3 style="line-height: 40px;"><span class="text-nowrap">Share your experience</span> <span class="nothing margin-left-5 margin-right-15"><a href="http://blogs.douglascountylibraries.org/blog/2017/01/03/imadethisatdcl/">#IMadeThisatDCL</a></span></h3>
+        <h3 style="line-height: 40px;"><span class="text-nowrap">Share your experience</span> <span class="nothing margin-left-5 margin-right-15"><a href="cuddle-up-and-read/#bright-future">#BabyBrightFuture</a></span></h3>
       </div>
-      <div class="social-links-wrapper text-center"> <a class="margin-right-5" alt="Friend us on Facebook" href="http://www.facebook.com/DouglasCountyLibrariesColorado" target="_blank"><i class="fa fa-facebook fa-2x"></i></a> <a class="margin-right-5" alt="Follow us on Twitter" href="https://twitter.com/DCLcolorado" target="_blank"> <i class="fa fa-twitter fa-2x"></i></a> <a class="margin-right-5" alt="Check us out on Pinterest" href="https://pinterest.com/dougcolibraries/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a> <a class="margin-right-5" alt="Check out our Youtube Channel" href="https://www.youtube.com/user/dclwebteam" target="_blank"> <i class="fa fa-youtube-play fa-2x"></i></a> <a alt="Visit us on Flickr" href="http://www.flickr.com/photos/douglascountylibraries/" target="_blank"> <i class="fa fa-flickr fa-2x"></i></a> </div>
+      <div class="social-links-wrapper text-center"> <a class="margin-right-5" alt="Friend us on Facebook" href="http://www.facebook.com/DouglasCountyLibrariesColorado" target="_blank"><i class="fa fa-facebook fa-2x"></i></a> <a class="margin-right-5" alt="Follow us on Twitter" href="https://twitter.com/DCLcolorado" target="_blank"> <i class="fa fa-twitter fa-2x"></i></a> <a class="margin-right-5" alt="Follow us on Instagram" href="https://www.instagram.com/dclcolorado/" target="_blank"> <i class="fa fa-instagram fa-2x"></i></a> <a class="margin-right-5" alt="Check us out on Pinterest" href="https://pinterest.com/dougcolibraries/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a> <a class="margin-right-5" alt="Check out our Youtube Channel" href="https://www.youtube.com/user/dclwebteam" target="_blank"> <i class="fa fa-youtube-play fa-2x"></i></a> <a alt="Visit us on Flickr" href="http://www.flickr.com/photos/douglascountylibraries/" target="_blank"> <i class="fa fa-flickr fa-2x"></i></a> </div>
     </div>
   </div>
 </div>
@@ -325,7 +295,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </footer>
 <div class="copyright bg-gray-90">
   <div class="container padding-top-15 padding-bottom-30">
-    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank">100 S. Wilcox Street, Castle Rock, CO&nbsp;&nbsp;80104</a> | <a class="wheat" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+	  <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
@@ -345,7 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     "url": "https://www.dcl.org/",
     "name": "Douglas County Libraries",
 	"image": "https://www.dcl.org/locations/castle-rock.jpg",
-	"description": "Douglas County Libraries is a passionate advocate for literacy and lifelong learning. Through engagement, education and entertainment, Douglas County Libraries transforms lives and builds community.",
+	"description": "Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.",
     "logo": "https://www.dcl.org/dcl-logo.png",
 	"potentialAction": {
     	"@type": "SearchAction",
@@ -365,7 +335,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   }
 </script> 
 <!-- End Structured Data --> 
-<!-- TM tracking snippet start --> 
-<!-- TM tracking snippet end -->
 </body>
 <!-- InstanceEnd --></html>
