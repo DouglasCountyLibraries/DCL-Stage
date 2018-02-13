@@ -71,18 +71,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     text-align: center;
     width: 60px;
 }
-.room-row, .room-row h4 {
+.element-wrapper, .element-wrapper h4 {
     color: #222;
 }
-.room-row h4.roboto {
+.element-wrapper h4.roboto {
     line-height: 1.1em;
 }
-.room-row {
+.element-wrapper {
     background-color: rgba(255,255,255,.8);
-    padding: 0;
-    margin-bottom: 15px;
+    margin: 0 2px 30px 2px;
 }
-.room-row .material-icons {
+.element-wrapper .material-icons {
     font-size: 16px;
     vertical-align: middle;
     padding-bottom: 3px;
@@ -124,6 +123,30 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .hidden {
     display: none;
+}
+
+@media (min-width: 992px) {
+.element-item {
+    width: 33.3333%;
+}
+.element-i {
+    height: 750px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.element-item {
+    width: 50%;
+}
+.element-item {
+    height: 750px;
+}
+}
+
+@media (max-width: 767px) {
+.element-item {
+    width: 100%;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -322,7 +345,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <div class="row bg-gray-10">
+  <div class="row bg-gray-20">
     <div class="container no-padding-left no-padding-right padding-top-15 padding-bottom-15">
       <div class="col-md-6 padding-bottom-15">
         <div class="text-uppercase small text-center margin-bottom-5">Filter by Location:</div>
@@ -351,483 +374,46 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <div class="row bg-gray-10 padding-top-15 padding-bottom-60">
-    <div class="container">
+  <div class="row bg-lavender padding-top-15 padding-bottom-60">
+    <div class="container no-padding">
       <div class="grid">
-        <div class="row room-row element-item castle-pines">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall.jpg" alt="CPN Masters Association Event Hall"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Pines &mdash; Castle Pines North "Master" Assoc. Event Hall</h4>
-            <div class="col-md-5">
+        <div class="element-item castle-pines">
+          <div class="element-wrapper">
+            <div class="no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall.jpg" alt="CPN Masters Association Event Hall"></div>
+            <div class="padding-15">
+              <h4 class="roboto no-margin-top">Castle Pines &mdash; Castle Pines North "Master" Assoc. Event Hall</h4>
               <div><span class="text-uppercase small">Theater Capacity:</span> 70</div>
               <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
               <div><span class="text-uppercase small">Dimensions:</span> 39'5" x 25'3"</div>
               <div><span class="text-uppercase small">Cost/Hr:</span> $25-150</div>
               <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor <i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the lower level, this classic event space features a wet bar, Wi-Fi internet access, built-in audiovisual equipment and projection screen, hearing loop for use with hearing-impaired guests, separate entrance/exit, access to the outdoor patio, and an abundance of natural light.</div>
+              <div class="margin-top-10">Located on the lower level, this classic event space features a wet bar, Wi-Fi internet access, built-in audiovisual equipment and projection screen, hearing loop for use with hearing-impaired guests, separate entrance/exit, access to the outdoor patio, and an abundance of natural light.</div>
             </div>
           </div>
         </div>
-        <div class="row room-row element-item castle-pines">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall-library.jpg" alt="CPN Masters Association Event Hall"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Pines &mdash; Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h4>
-            <div class="col-md-5">
+        <div class="element-item castle-pines">
+          <div class="element-wrapper">
+            <div class="no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall-library.jpg" alt="CPN Masters Association Event Hall"></div>
+            <div class="padding-15">
+              <h4 class="roboto no-margin-top">Castle Pines &mdash; Castle Pines North "Master" Assoc. Event Hall + Adjoining Library Space</h4>
               <div><span class="text-uppercase small">Theater Capacity:</span> 120</div>
               <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
               <div><span class="text-uppercase small">Dimensions:</span> 53' x 25'3"</div>
               <div><span class="text-uppercase small">Cost/Hr:</span> $75-150</div>
               <div class="text-uppercase small"><i class="material-icons teal">home</i> <i class="material-icons loquacious">wb_sunny</i> Indoor/Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>A sliding air wall can be opened to extend the classic Event Hall on the lower level into the library's open book space for greater capacity. The Event Hall features a wet bar, Wi-Fi, audiovisual amenities, a separate entrance/exit, and access to the outdoor patio.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-pines">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-first-floor-conference.jpg" alt="First Floor Conference Room"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Pines &mdash; First Floor Conference Room</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 16' x 16'11"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the lower level of the library, this private room features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-pines">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-the-loft.jpg" alt="The Loft"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Pines &mdash; The Loft</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Max. Capacity:</span> 8</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 14'3" x 13'11"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $35-75</div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This playful space on the upper level of the library overlooks the lobby and includes Wi-Fi internet access, a 65-inch wall-mounted LED television, Blu-ray player, and table-mounted HDMI connectivity.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-pines">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cap-the-terrace.jpg" alt="The Terrace"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Pines &mdash; The Terrace</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 100</div>
-              <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 47'6" x 24'8"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $75-150 </div>
-              <div class="text-uppercase small"><i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The covered second-floor terrace is adjacent to the green roof and features Wi-Fi internet access, a fireplace, and stunning Front Range vistas.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a-b.jpg" alt="Event Hall A & B + Terrace"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; Event Halls A & B + Terrace</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 235</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 33'9" x 45' </div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $75-300 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor <i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This combined event space on the second floor features Wi-Fi internet access, a wet bar, built-in audiovisual equipment and screen for presentations, a hearing loop for use with hearing-impaired guests, an abundance of natural light through floor-to-ceiling windows, and west-facing views from the small terrace. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a-terrace.jpg" alt="Event Hall A + Terrace"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; Event Hall A + Terrace</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 125</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions &ndash; Event Hall A:</span> 33'9" x 22'6" </div>
-              <div><span class="text-uppercase small">Dimensions &ndash; Terrace:</span> 14'3" x 18'10" </div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $50-175 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor <i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Event Hall A combined with the terrace features Wi-Fi internet access, a wet bar, built-in audiovisual equipment and screen for presentations, a hearing loop for use with hearing-impaired guests, plenty of natural light in the room, and west-facing views from the small terrace. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-a.jpg" alt="Event Hall A"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; Event Hall A</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 100</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 33'9" x 22'6" </div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-150 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The private event space on the second floor features Wi-Fi internet access, a wet bar, built-in audiovisual equipment and screen for presentations, a hearing loop for use with hearing-impaired guests, access to a small terrace with west-facing views, and an abundance of natural light. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-event-hall-b.jpg" alt="Event Hall B"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; Event Hall B</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 100</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 33'8" x 23' </div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-150 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located adjacent to Event Hall A, this space features Wi-Fi internet access, a wet bar, built-in audiovisual equipment and screen for presentations, a hearing loop for use with hearing-impaired guests, and an abundance of natural light. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-kids-corner.jpg" alt="Kids Corner"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; Kids Corner</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 70</div>
-              <div><span class="text-uppercase small">Availability:</span> Limited; call for details</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 23'3" x 46'4"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $35-125 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the first floor, the spacious Kids Corner features a sink/light wet bar and a high-tech, ceiling-mounted projector and screen to aid in the most detailed presentations. A sliding glass wall makes it easy to open the space to the main library area — or close it off for complete privacy. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-conference-room.jpg" alt="Conference Room"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; Conference Room</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 40</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 19'9" x 35'11"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-100 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the second floor, this light-filled room features Wi-Fi internet access and mobile audiovisual equipment that includes a 65-inch LED television and Blu-ray player. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item parker">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="pa-the-loft.jpg" alt="The Loft"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Parker &mdash; The Loft</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 12</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 20'7" x 12'3" </div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $35-75 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This private room on the second floor features Wi-Fi internet access, a 65-inch wall-mounted LED television, Blu-ray player, and HDMI connectivity for presentations and conferencing. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item lone-tree">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="lt-event-hall-library.jpg" alt="Event Hall + Adjoining Library Space"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Lone Tree &mdash; Event Hall + Adjoining Library Space</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 200</div>
-              <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 80' x 30'9"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $75-175 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The audiovisual, Wi-Fi and wet-bar features of the second floor Event Hall are available for a larger group when the flexible room is opened into the library's book space. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item lone-tree">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="lt-event-hall.jpg" alt="Event Hall"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Lone Tree &mdash; Event Hall</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 100</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 35'5" x 30'9"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-150 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the second floor, this classic event space features a wet bar, built-in audiovisual equipment and screen for presentations, a hearing loop for use with hearing-impaired guests, and Wi-Fi internet access.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item lone-tree">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="lt-main-terrace.jpg" alt="Main Terrace"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Lone Tree &mdash; Main Terrace</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 75</div>
-              <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 13'9" x 56'5"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $75-150 </div>
-              <div class="text-uppercase small"><i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The open-air terrace on the second floor is adjacent to the green roof. It offers Wi-Fi internet access and two separate entrances/exits from the main library space. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item lone-tree">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="lt-kids-corner.jpg" alt="Kids Corner"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Lone Tree &mdash; Kids Corner</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 30</div>
-              <div><span class="text-uppercase small">Availability:</span> Limited; call for details</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 22'7" x 25'10"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $35-125 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the first floor, the spacious Kids Corner features a sink/light wet bar, Wi-Fi internet access, and a high-tech, ceiling-mounted projector and screen to aid in the most detailed presentations. The room also offers a separate entrance/exit, and a barn-style sliding door for privacy. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item lone-tree">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="lt-the-studio.jpg" alt="The Studio"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Lone Tree &mdash; The Studio</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Max. Capacity:</span> 15</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 37'9" x 14'</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the first floor, The Studio features floor-to-ceiling windows and an abundance of natural light. It offers a separate entrance/exit from the building and additional privacy with sliding glass doors separating the space from the main library. Wi-Fi internet access and mobile audiovisual equipment, including a 65-inch LED television and Blu-ray player, are available. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item highlands-ranch">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="hr-terrace.jpg" alt="The Terrace"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Highlands Ranch &mdash; The Terrace</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 140</div>
-              <div><span class="text-uppercase small">Availability:</span> Before/after library hours</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 19'11" x 30'</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $75-125 </div>
-              <div class="text-uppercase small"><i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The large, open-air terrace overlooks Civic Green Park and features Wi-Fi internet access and two separate entrances/exits from the main library space.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item highlands-ranch">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="hr-shea-a-b.jpg" alt="Shea Meeting Room A & B"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Highlands Ranch &mdash; Shea Meeting Rooms A & B</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 100</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 23'3" x 40'</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $50-125 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the first floor, the combination of Shea meeting rooms A and B offers expanded meeting space with a ceiling-mounted projector, projection screen, DVD player, sound system, Wi-Fi internet access, and access to a kitchen area.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item highlands-ranch">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="hr-quiet-reading-room.jpg" alt="Second Floor Quiet Reading Room"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Highlands Ranch &mdash; Second Floor Quiet Reading Room</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 80</div>
-              <div><span class="text-uppercase small">Availability:</span> Limited; call for details</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 28'6" x 28'6"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $35-100 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This spacious, private room features Wi-Fi internet access, a fireplace, and an abundance of natural light. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item highlands-ranch">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="hr-shea-a.jpg" alt="Shea Meeting Room A"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Highlands Ranch &mdash; Shea Meeting Room A</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 60</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 28'4" x 30'5"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the first floor, this private meeting space features a ceiling-mounted projector, projection screen, DVD player, sound system, Wi-Fi internet access, and access to a kitchen area. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item highlands-ranch">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="hr-shea-b.jpg" alt="Shea Meeting Room B"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Highlands Ranch &mdash; Shea Meeting Room B</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 35</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 23'3" x 19'6"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-50 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>Located on the first floor, this private meeting space features a DVD player, sound system, Wi-Fi internet access, and access to a kitchen area.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-rock">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-bank-east-west.jpg" alt="Castle Rock Bank Meeting Room East & West"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Rock &mdash; Castle Rock Bank Meeting Room East & West</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 130</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 31'4" x 55'7"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-150 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This combined event space provides all the features  of both the East and West meeting rooms — ceiling-mounted projector, projection screen, sound system, and Wi-Fi internet access — for additional capacity.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-rock">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-bank-east.jpg" alt="Castle Rock Bank Meeting Room East"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Rock &mdash; Castle Rock Bank Meeting Room East</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 65</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 31'4" x 29'2"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This classic meeting space features a ceiling-mounted projector, projection screen, sound system, and Wi-Fi internet access.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-rock">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-bank-west.jpg" alt="Castle Rock Bank Meeting Room West"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Rock &mdash; Castle Rock Bank Meeting Room West</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 65</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 31'4" x 26'5"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The meeting space features a ceiling-mounted projector, projection screen, sound system, and Wi-Fi internet access.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-rock">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-jhl.jpg" alt="James H. LaRue Meeting Room"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Rock &mdash; James H. LaRue Meeting Room</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Max. Capacity:</span> 21</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 15'3" x 20'7"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-50 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The meeting space in this room includes Wi-Fi internet access. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-rock">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-gswc.jpg" alt="Great Southwest Construction Conference Room"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Rock &mdash; Great Southwest Construction Conference Room</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Max. Capacity:</span> 12</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 13'6" x 19'</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-50 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This conference room includes Wi-Fi internet access. </div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item castle-rock">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="cr-bandstand.jpg" alt="Bandstand"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Castle Rock &mdash; Bandstand</h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 14' diameter</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $75-125 </div>
-              <div class="text-uppercase small"><i class="material-icons loquacious">wb_sunny</i> Outdoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>The covered, open-sided bandstand is located in the west parking lot of the Castle Rock – Philip S. Miller branch. It is an ideal performance venue equipped with electrical outlets. It also accommodates a sound system and folding chairs.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row room-row element-item roxborough">
-          <div class="col-md-4 no-padding"><img class="img-responsive center-block" src="rox-lockheed-martin.jpg" alt="Lockheed Martin Community Meeting Room"></div>
-          <div class="col-md-8 no-gutter padding-top-15 padding-bottom-30">
-            <h4 class="roboto no-margin-top">Roxborough &mdash; Lockheed Martin Community Meeting Room </h4>
-            <div class="col-md-5">
-              <div><span class="text-uppercase small">Theater Capacity:</span> 40</div>
-              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 28'6" x 19'6" </div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75 </div>
-              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-            </div>
-            <div class="col-md-7">
-              <div>This classic meeting space features a ceiling-mounted projector, projection screen, and Wi-Fi internet access. </div>
+              <div class="margin-top-10">A sliding air wall can be opened to extend the classic Event Hall on the lower level into the library's open book space for greater capacity. The Event Hall features a wet bar, Wi-Fi, audiovisual amenities, a separate entrance/exit, and access to the outdoor patio.</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  ******************************************* 
   <script>
   $(window).load(function() {
 // init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
-  layoutMode: 'fitRows',
   getSortData: {
     adult: '[data-adult]',
     child: '[data-child]',
