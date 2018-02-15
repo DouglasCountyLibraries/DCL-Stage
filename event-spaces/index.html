@@ -422,7 +422,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  ******************************************* 
   <script>
   $(window).load(function() {
 // init Isotope
@@ -525,7 +524,7 @@ $('.button-group').each( function( i, buttonGroup ) {
         $('.switcheroo').change(function () {
             $('#console-event').html('Toggle: ' + $(this).prop('checked'))
            // console.log("what");
-            $(".room-row").each(function (index) {
+            $(".element-item").each(function (index) {
                 console.log("src val = " + $(this).find('img').attr('src'));
                 var src = $(this).find('img').attr('src');
                 var alt = $(this).find('img').attr('alt');
@@ -546,11 +545,6 @@ $('.button-group').each( function( i, buttonGroup ) {
     })
 	});  // end document ready
 	</script> 
-	<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
 	<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
