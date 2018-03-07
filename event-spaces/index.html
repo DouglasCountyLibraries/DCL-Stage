@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,6 +70,43 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     text-align: center;
     width: 60px;
 }
+.button {
+    color: #666;
+    background: #fff;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #4f868b;
+    border: 1px solid #4f868b;
+    color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.button:active, .button.is-checked {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    background-color: #456e70;
+    border: 1px solid #456e70;
+}
+.button.is-checked {
+    border: 1px solid #456e70;
+}
+.btn-default {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ccc
+}
+.sort-floorplan {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+}
 .element-wrapper, .element-wrapper h4 {
     color: #222;
 }
@@ -78,8 +114,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     line-height: 1.1em;
 }
 .element-wrapper {
-    background-color: rgba(255,255,255,.8);
-    margin: 0 2px 30px 2px;
+    background-color: rgba(255,255,255,.85);
+    margin: 0 2px 4px 2px;
 }
 .element-wrapper .material-icons {
     font-size: 16px;
@@ -152,7 +188,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) --> 
+<!-- Google Tag Manager (noscript) -->
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -345,8 +381,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <div class="row bg-gray-20">
-    <div class="container no-padding-left no-padding-right padding-top-15 padding-bottom-15">
+  <div class="row bg-gray-10">
+    <div class="container text-center no-padding-left no-padding-right padding-top-15 padding-bottom-15">
       <div class="col-md-6 padding-bottom-15">
         <div class="text-uppercase small text-center margin-bottom-5">Filter by Location:</div>
         <select class="form-control text-uppercase filters-select font-weight-400">
@@ -359,24 +395,41 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           <option value=".roxborough">Roxborough</option>
         </select>
       </div>
-      <div class="col-md-3">
-        <div class="button-group btn-group" id="sorts">
-          <div class="text-uppercase text-center small margin-bottom-5">Sort by Audience: </div>
-          <button class="button btn btn-default" data-sort-by="adult">Adult</button>
-          <button class="button btn btn-default" data-sort-by="child">Children</button>
+      <div class="col-md-6">
+        <div class="sort-floorplan">
+          <div class="button-group btn-group" id="sorts">
+            <div class="text-uppercase text-center small margin-bottom-5">Capacity: </div>
+            <button class="button btn btn-default" data-sort-by="adult">Small</button>
+            <button class="button btn btn-default" data-sort-by="child">Large</button>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="padding-top-30"> <span class="text-uppercase font-weight-400 margin-right-5">Floorplans</span>
-          <input type="checkbox" id="unchecked" class="cbx hidden switcheroo"/>
-          <label for="unchecked" class="lbl"></label>
+        <div class="sort-floorplan">
+          <div class="text-uppercase text-center small margin-bottom-5">Floorplans: </div>
+          <div>
+            <input type="checkbox" id="unchecked" class="cbx hidden switcheroo"/>
+            <label for="unchecked" class="lbl"></label>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-top-15 padding-bottom-60">
+  <div class="row bg-gray-30 padding-top-15 padding-bottom-60">
     <div class="container no-padding">
       <div class="grid">
+                  <div class="element-item castle-pines">
+          <div class="element-wrapper">
+            <div class="no-padding"><img class="img-responsive center-block" src="cap-first-floor-conference.jpg" alt="First Floor Conference Room"></div>
+            <div class="padding-15">
+              <h4 class="no-margin-top"><span class="text-uppercase">Castle Pines &mdash;</span> <span class="roboto">First Floor Conference Room</span></h4>
+              <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
+              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
+              <div><span class="text-uppercase small">Dimensions:</span> 16' x 16'11"</div>
+              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
+              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
+              <div class="margin-top-10">Located on the lower level of the library, this private room features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity.</div>
+            </div>
+          </div>
+        </div>
         <div class="element-item castle-pines">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall.jpg" alt="CPN Masters Association Event Hall"></div>
@@ -405,20 +458,68 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-        <div class="element-item castle-pines">
+
+          
+                    
+                  <div class="element-item highlands-ranch">
           <div class="element-wrapper">
-            <div class="no-padding"><img class="img-responsive center-block" src="cap-first-floor-conference.jpg" alt="First Floor Conference Room"></div>
+            <div class="no-padding"><img class="img-responsive center-block" src="hr-shea-b.jpg" alt="Shea Meeting Room B"></div>
             <div class="padding-15">
-              <h4 class="no-margin-top"><span class="text-uppercase">Castle Pines &mdash;</span> <span class="roboto">First Floor Conference Room</span></h4>
-              <div><span class="text-uppercase small">Max. Capacity:</span> 10</div>
+              <h4 class="no-margin-top"><span class="text-uppercase">Highlands Ranch &mdash;</span> <span class="roboto">Shea Meeting Room B</span></h4>
+              <div><span class="text-uppercase small">Max. Capacity:</span> 35</div>
               <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
-              <div><span class="text-uppercase small">Dimensions:</span> 16' x 16'11"</div>
-              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
+              <div><span class="text-uppercase small">Dimensions:</span> 23'3" x 19'6"</div>
+              <div><span class="text-uppercase small">Cost/Hr:</span> $25-50</div>
               <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
-              <div class="margin-top-10">Located on the lower level of the library, this private room features Wi-Fi internet access, a 65-inch LED television, Blu-ray player, and table-mounted HDMI connectivity.</div>
+              <div class="margin-top-10">Located on the first floor, this private meeting space features a DVD player, sound system, Wi-Fi internet access, and access to a kitchen area.</div>
             </div>
           </div>
         </div>
+          
+          
+          
+          
+          <div class="element-item highlands-ranch">
+          <div class="element-wrapper">
+            <div class="no-padding"><img class="img-responsive center-block" src="hr-shea-a.jpg" alt="Shea Meeting Room A
+Shea Meeting Room A"></div>
+            <div class="padding-15">
+              <h4 class="no-margin-top"><span class="text-uppercase">Highlands Ranch &mdash;</span> <span class="roboto">Shea Meeting Room A</span></h4>
+              <div><span class="text-uppercase small">Max. Capacity:</span> 60</div>
+              <div><span class="text-uppercase small">Availability:</span> Unlimited</div>
+              <div><span class="text-uppercase small">Dimensions:</span> 28'4" x 30'5"</div>
+              <div><span class="text-uppercase small">Cost/Hr:</span> $25-75</div>
+              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
+              <div class="margin-top-10">Located on the first floor, this private meeting space features a ceiling-mounted projector, projection screen, DVD player, sound system, Wi-Fi internet access, and access to a kitchen area. </div>
+            </div>
+          </div>
+        </div>
+          
+          
+
+          
+          
+          
+                  <div class="element-item highlands-ranch">
+          <div class="element-wrapper">
+            <div class="no-padding"><img class="img-responsive center-block" src="hr-quiet-reading-room.jpg" alt="Second Floor Quiet Reading Room"></div>
+            <div class="padding-15">
+              <h4 class="no-margin-top"><span class="text-uppercase">Highlands Ranch &mdash;</span> <span class="roboto">Second Floor Quiet Reading Room</span></h4>
+              <div><span class="text-uppercase small">Max. Capacity:</span> 80</div>
+              <div><span class="text-uppercase small">Availability:</span> Limited; call for details</div>
+              <div><span class="text-uppercase small">Dimensions:</span> 28'6" x 28'6"</div>
+              <div><span class="text-uppercase small">Cost/Hr:</span> $35-100</div>
+              <div class="text-uppercase small"><i class="material-icons teal">home</i> Indoor</div>
+              <div class="margin-top-10">This spacious, private room features Wi-Fi internet access, a fireplace, and an abundance of natural light. </div>
+            </div>
+          </div>
+        </div>
+          
+          
+          
+          
+          
+          
       </div>
     </div>
   </div>
@@ -514,11 +615,11 @@ $('.button-group').each( function( i, buttonGroup ) {
 </footer>
 <div class="copyright bg-gray-90">
   <div class="container padding-top-15 padding-bottom-30">
-    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+	  <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-	<script>
+<script>
   $(document).ready(function () {
     $(function () {
         $('.switcheroo').change(function () {
@@ -545,10 +646,9 @@ $('.button-group').each( function( i, buttonGroup ) {
     })
 	});  // end document ready
 	</script> 
-	<!-- InstanceEndEditable --> 
+<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
-<!-- End Structured Data -->
+<!-- End Structured Data --> 
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
