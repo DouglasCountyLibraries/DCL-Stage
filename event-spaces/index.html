@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -166,7 +167,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     width: 33.3333%;
 }
 .element-wrapper {
-    height: 730px;
+    height: 690px;
 }
 }
 
@@ -175,7 +176,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     width: 50%;
 }
 .element-wrapper {
-    height: 700px;
+    height: 670px;
 }
 }
 
@@ -188,7 +189,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -388,19 +389,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
         <select class="form-control text-uppercase filters-select font-weight-400">
           <option value="*">All Locations</option>
           <option value=".castle-pines">Castle Pines</option>
-          <option value=".castle-rock">Castle Rock</option>
+          <!--<option value=".castle-rock">Castle Rock</option>-->
           <option value=".highlands-ranch">Highlands Ranch</option>
-          <option value=".lone-tree">Lone Tree</option>
+          <!--<option value=".lone-tree">Lone Tree</option>
           <option value=".parker">Parker</option>
-          <option value=".roxborough">Roxborough</option>
+          <option value=".roxborough">Roxborough</option>-->
         </select>
       </div>
       <div class="col-md-6">
         <div class="sort-floorplan">
           <div class="button-group btn-group" id="sorts">
             <div class="text-uppercase text-center small margin-bottom-5">Capacity: </div>
-            <button class="button btn btn-default" data-sort-by="adult">Small</button>
-            <button class="button btn btn-default" data-sort-by="child">Large</button>
+            <button class="button btn btn-default" data-sort-value="number">small</button>
+            <button class="button btn btn-default" data-sort-value="name">large</button>
           </div>
         </div>
         <div class="sort-floorplan">
@@ -413,10 +414,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <div class="row bg-gray-30 padding-top-15 padding-bottom-60">
+  <div class="row bg-gray-30 padding-top-30 padding-bottom-60">
     <div class="container no-padding">
       <div class="grid">
-                  <div class="element-item castle-pines">
+        <div class="element-item castle-pines">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="cap-first-floor-conference.jpg" alt="First Floor Conference Room"></div>
             <div class="padding-15">
@@ -458,10 +459,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-
-          
-                    
-                  <div class="element-item highlands-ranch">
+        <div class="element-item highlands-ranch">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="hr-shea-b.jpg" alt="Shea Meeting Room B"></div>
             <div class="padding-15">
@@ -475,11 +473,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-          
-          
-          
-          
-          <div class="element-item highlands-ranch">
+        <div class="element-item highlands-ranch">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="hr-shea-a.jpg" alt="Shea Meeting Room A
 Shea Meeting Room A"></div>
@@ -494,13 +488,7 @@ Shea Meeting Room A"></div>
             </div>
           </div>
         </div>
-          
-          
-
-          
-          
-          
-                  <div class="element-item highlands-ranch">
+        <div class="element-item highlands-ranch">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="hr-quiet-reading-room.jpg" alt="Second Floor Quiet Reading Room"></div>
             <div class="padding-15">
@@ -514,12 +502,6 @@ Shea Meeting Room A"></div>
             </div>
           </div>
         </div>
-          
-          
-          
-          
-          
-          
       </div>
     </div>
   </div>
@@ -529,8 +511,8 @@ Shea Meeting Room A"></div>
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   getSortData: {
-    adult: '[data-adult]',
-    child: '[data-child]',
+    number: '.number parseInt',
+      name: '.name',
     weight: function( itemElem ) {
       var weight = $( itemElem ).find('.weight').text();
       return parseFloat( weight.replace( /[\(\)]/g, '') );
@@ -615,7 +597,7 @@ $('.button-group').each( function( i, buttonGroup ) {
 </footer>
 <div class="copyright bg-gray-90">
   <div class="container padding-top-15 padding-bottom-30">
-	  <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
@@ -649,6 +631,7 @@ $('.button-group').each( function( i, buttonGroup ) {
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
-<!-- End Structured Data --> 
+<!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
