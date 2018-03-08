@@ -399,9 +399,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       <div class="col-md-6">
         <div class="sort-floorplan">
           <div class="button-group btn-group" id="sorts">
-            <div class="text-uppercase text-center small margin-bottom-5">Capacity: </div>
-            <button class="button btn btn-default" data-sort-value="number">small</button>
-            <button class="button btn btn-default" data-sort-value="name">large</button>
+            <div class="text-uppercase text-center small margin-bottom-5">Max. Capacity: </div>
+            <button class="button btn btn-default" data-sort-by="smallcap">Small</button>
+<button class="button btn btn-default" data-sort-by="largecap">Large</button>
           </div>
         </div>
         <div class="sort-floorplan">
@@ -417,7 +417,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   <div class="row bg-gray-30 padding-top-30 padding-bottom-60">
     <div class="container no-padding">
       <div class="grid">
-        <div class="element-item castle-pines">
+        <div class="element-item castle-pines" data-smallcap="10" data-largecap="-10">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="cap-first-floor-conference.jpg" alt="First Floor Conference Room"></div>
             <div class="padding-15">
@@ -431,7 +431,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-        <div class="element-item castle-pines">
+        <div class="element-item castle-pines" data-smallcap="70" data-largecap="-70">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall.jpg" alt="CPN Masters Association Event Hall"></div>
             <div class="padding-15">
@@ -445,7 +445,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-        <div class="element-item castle-pines">
+        <div class="element-item castle-pines" data-smallcap="120" data-largecap="-120">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="cap-ma-event-hall-library.jpg" alt="CPN Masters Association Event Hall"></div>
             <div class="padding-15">
@@ -459,7 +459,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-        <div class="element-item highlands-ranch">
+        <div class="element-item highlands-ranch" data-smallcap="35" data-largecap="-35">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="hr-shea-b.jpg" alt="Shea Meeting Room B"></div>
             <div class="padding-15">
@@ -473,7 +473,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
             </div>
           </div>
         </div>
-        <div class="element-item highlands-ranch">
+        <div class="element-item highlands-ranch" data-smallcap="60" data-largecap="-60">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="hr-shea-a.jpg" alt="Shea Meeting Room A
 Shea Meeting Room A"></div>
@@ -488,7 +488,7 @@ Shea Meeting Room A"></div>
             </div>
           </div>
         </div>
-        <div class="element-item highlands-ranch">
+        <div class="element-item highlands-ranch" data-smallcap="80" data-largecap="-80">
           <div class="element-wrapper">
             <div class="no-padding"><img class="img-responsive center-block" src="hr-quiet-reading-room.jpg" alt="Second Floor Quiet Reading Room"></div>
             <div class="padding-15">
@@ -511,8 +511,8 @@ Shea Meeting Room A"></div>
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   getSortData: {
-    number: '.number parseInt',
-      name: '.name',
+      smallcap: '[data-smallcap] parseInt',
+      largecap: '[data-largecap] parseInt',
     weight: function( itemElem ) {
       var weight = $( itemElem ).find('.weight').text();
       return parseFloat( weight.replace( /[\(\)]/g, '') );
