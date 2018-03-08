@@ -9,6 +9,37 @@
 // flip
 // sticky		
 
+function autoScroll(name,animated,distance){		
+	var scrollDistance = distance;
+	var scrollTarget = $("*[name='"+name+"']");
+
+	if(animated){
+		$('html, body').animate({scrollTop: (scrollTarget.offset().top - scrollDistance)}, 500);
+	}
+	else{
+		$('html, body').scrollTop(scrollTarget.offset().top - scrollDistance);
+	}
+}
+
+//Stop default hashtag scrolling
+window.scrollTo(0, 0);
+
+//Execute stuff when entire page is loaded
+$(window).bind("load", function() {
+	
+	//Check if there is a hashtag in URL
+	if(window.location.hash) {
+		//Get hashtag in URL
+		var getHash = window.location.hash.substring(1);
+		//Do the scroll function to the desired section
+		autoScroll(getHash,true,0);
+	}
+	
+	//Do it manually
+	autoScroll("second",true,0);
+
+});
+
 // pull the alert into the global-alert div
 /* ------------------------------------------------------------ */
 
