@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,7 +74,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     z-index: 1000;
 }
 .grow:hover, .grow a:visited, .grow a:hover, .grow a:active {
-    color: #497c91;
+    color: #365c6c;
     transform: scale(1.02);
     text-decoration: none;
     opacity: 1;
@@ -93,8 +94,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     z-index: 1000;
 }
 .red-grow:hover, .red-grow a:visited, .red-grow a:hover, .red-grow a:active {
-    color: #d65700;
-    transform: scale(1.02);
+    color: #a84200;
+    transform: scale(1.2);
     text-decoration: none;
     opacity: 1;
 }
@@ -120,6 +121,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     padding: 15px;
     transition: all .1s ease-in-out;
 }
+.shadow-high-hover:hover {
+    transition: all .1s ease-in-out;
+}
 
 @media (max-width: 1200px) {
 .polaroid-left, .polaroid-right {
@@ -131,7 +135,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -299,24 +303,28 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top padding-top-40 padding-bottom-60">
     <div class="container-md image-center">
-      <div class="col-md-3 hidden-xs hidden-sm"> 
-          <div class="polaroid-left shadow-high"><a href="camp-dcl"><div id="box-one"></div></a>
-          <div class="text-center margin-top-10">Be a Chef</div>
-        </div>
-         </div>
-      <div class="col-md-6"><a href="camp-dcl"><img src="camp-dcl-mid.jpg" alt="Camp DCL" class="grow img-responsive"></a>
-        <div class="text-center">
-          <h1 class="grow jumbo-text text-uppercase no-margin-top font-weight-500"><a class="grow" href="camp-dcl">Spring Break Camps</a></h1>
-          <h3 class="grow no-margin font-weight-400"><a class="grow" href="camp-dcl">Registration Ends in <span id="countdown"></span> Days!</a></h3>
-          <h3 class="red-grow no-margin-top text-uppercase font-weight-500"><a class="red-grow" href="camp-dcl">Sign Up Now</a></h3>
-          <div class="nothing-text">Summer Camp Registration Now Open</div>
+      <div class="col-md-3 hidden-xs hidden-sm">
+        <div class="polaroid-left shadow-high shadow-high-hover"><a href="camp-dcl">
+          <div id="box-one"></div>
+          </a>
+          <div class="text-center text-uppercase margin-top-10">Be a Chef</div>
         </div>
       </div>
-      <div class="col-md-3"> 
-          <div class="polaroid-right shadow-high"><a href="camp-dcl"><div id="box-two"></div></a>
-          <div class="text-center margin-top-10">Be a Builder</div>
+      <div class="col-md-6"><a href="camp-dcl"><img src="camp-dcl-mid.jpg" alt="Camp DCL" class="grow img-responsive"></a>
+        <div class="text-center">
+          <h1 class="jumbo-text text-uppercase no-margin font-weight-500"><a class="grow" href="camp-dcl">Spring Break Camps</a></h1>
+          <h3 class="no-margin font-weight-400"><a class="grow" href="camp-dcl">Registration Ends in <span id="countdown"></span> Days!</a></h3>
+          <h1 class="red-grow margin-top-10 text-uppercase font-weight-500"><a class="red-grow" href="camp-dcl">Sign Up Now</a></h1>
+          <div class="nothing-text margin-top-30"><a class="grow" href="camp-dcl#summer">Summer Camp Registration Now Open</a></div>
         </div>
-         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="polaroid-right shadow-high shadow-high-hover"><a href="camp-dcl">
+          <div id="box-two"></div>
+          </a>
+          <div class="text-center text-uppercase margin-top-10">Be a Builder</div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row featured padding-top-30 padding-bottom-40">
@@ -337,11 +345,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-      <script>
+  <script>
     var images = ['chef-one.jpg', 'chef-two.jpg', 'chef-three.jpg', 'chef-four.jpg', 'chef-five.jpg', 'chef-six.jpg'];
     $('<img alt="Be a Chef" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
 	
-	var images = ['builder-one.jpg', 'builder-two.jpg', 'builder-three.jpg'];
+	var images = ['builder-one.jpg', 'builder-two.jpg', 'builder-three.jpg', 'builder-four.jpg', 'builder-five.jpg', 'builder-six.jpg', 'builder-seven.jpg'];
     $('<img alt="Be a Builder" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');
 
 </script> 
@@ -396,7 +404,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </footer>
 <div class="copyright bg-gray-90">
   <div class="container padding-top-15 padding-bottom-30">
-	  <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
@@ -433,6 +441,7 @@ var end = new Date('03/18/2018');
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
-<!-- End Structured Data --> 
+<!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
