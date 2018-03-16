@@ -59,6 +59,30 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .reserve-a-space-active {
     background-color: #f5f5f5;
 }
+.fa-star {
+    color: #FFBE0C;
+}
+.carousel-cell {
+	width: 100%;
+	padding: 0 0 50px 0;
+}
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+.flickity-page-dots {
+	bottom: 20px;
+	opacity: .5;
+}
+.flickity-page-dots .dot {
+
+}
+.flickity-prev-next-button {
+	display: none;
+}
+	.flickity-viewport {
+	transition: height 0.6s;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -244,20 +268,20 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="container-lg no-gutter">
       <div class="col-md-4 padding-bottom-40">
         <div id="box-one"></div>
-        <h2 class="text-center white"><a class="white" href="../cuddle-up-and-read/">Event Spaces</a></h2>
-        <div class="margin-left-30 margin-right-30">Our three brand-new, vibrant buildings offer beautiful and ample <a class="white text-underline" href="../event-spaces">event spaces</a>, and maintain the high standards of service you may have encountered in our legacy buildings. From modern furniture to high-end technology, discover the ideal event space for your next corporate function or social event, whether intimate or expansive. We'll even <a class="white text-underline" href="../birthday-parties/">host your child's birthday party!</a>
+        <h2 class="text-center white"><a class="white" href="../event-services/">Event Services</a></h2>
+        <div class="margin-left-30 margin-right-30">Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque. Phasellus vestibulum purus vitae purus auctor accumsan. Aliquam porta rutrum purus, sit amet pretium diam rutrum vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
           <div class="margin-top-30 text-center"> <a href="../event-services/" class="btn btn-lg btn-default">Get Started</a></div>
         </div>
       </div>
       <div class="col-md-4 padding-bottom-40">
         <div id="box-two"></div>
-        <h2 class="text-center white">Study Rooms</h2>
+        <h2 class="text-center white"><a class="white" href="http://studyrooms.douglascountylibraries.org/srres.html?branchname=CastlePines" target="_blank">Study Rooms</a></h2>
         <div class="margin-left-30 margin-right-30"> Study rooms for up to eight people (rooms vary by location) may be reserved up to one month in advance, for a maximum of two hours per day. You may forfeit your reservation if you are 15 or more minutes late. For help reserving a study room, call <a class="white text-nowrap" href="tel:+13037917323">(303) 791-7323</a> or visit your library.</div>
         <div class="margin-top-30 text-center"> <a href="http://studyrooms.douglascountylibraries.org/srres.html?branchname=CastlePines" target="_blank" class="btn btn-lg btn-default">Reserve a Study Room</a></div>
       </div>
       <div class="col-md-4 padding-bottom-40">
         <div id="box-three"></div>
-        <h2 class="text-center white">Parker Recording Studio</h2>
+        <h2 class="text-center white"><a class="white" href="http://studyrooms.douglascountylibraries.org/StudioRes.html" target="_blank">Parker Recording Studio</a></h2>
         <div class="margin-left-30 margin-right-30">Patrons at our Parker location can use state-of-the-art software and equipment to create videos, musical compositions, animations, e-books and more.</div>
         <div class="text-center margin-top-30"> <a href="http://studyrooms.douglascountylibraries.org/StudioRes.html" target="_blank" class="btn btn-lg btn-default margin-right-10">Reserve Now</a> 
           <!-- Button trigger modal --> 
@@ -317,7 +341,42 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	var images = ['one.jpg', 'two.jpg', 'three.jpg', 'four.jpg', 'five.jpg'];
     $('<img alt="Parker Recording Studio" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
 
-</script> 
+</script>
+  <div class="row">
+    <div class="container margin-lg-200 text-center padding-top-40 padding-bottom-30">
+      
+      <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.30, "autoPlay": 6000 }'>
+        <div class="carousel-cell">
+          <div><img alt="Yelp Review" class="img-circle" src="yelp.png" />
+            <div class="padding-top-15">
+              <blockquote>"Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque." <small>Bobby B. on <a href="#" target="_blank">Yelp</a></small></blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img alt="Ken M Review" class="img-circle" src="ken-m.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas." <small>Ken M on <a href="#" target="_blank">Yahoo! Local Listings</a></small></blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img alt="Google Review" class="img-circle" src="google.png"/>
+            <div class="padding-top-15">
+              <blockquote><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <small>Peggy H. on <a href="#" target="_blank">Google Reviews</a></small></blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img alt="Twitter Comment" class="img-circle" src="twitter.png"/>
+            <div class="padding-top-15">
+              <blockquote>"Sed pulvinar pharetra volutpat. Sed egestas congue rhoncus. Vivamus ut tortor eget risus convallis auctor." <small>Katie via <a href="#" target="_blank">Twitter</a></small></blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
