@@ -65,6 +65,24 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     vertical-align: top;
     margin-right: 10px;
 }
+.gray-circle {
+    border: 10px solid #f5f5f5;
+}
+.white-circle {
+    border: 10px solid #fff;
+}
+.bottom-bkg {
+    background: #fff url(bkg.gif) center bottom repeat-x;
+}
+.top-bkg {
+    background: #fff url(bkg.gif) center top repeat-x;
+}
+
+@media (min-width:992px) {
+.need {
+    margin-top: 7px;
+}
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -241,7 +259,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
         <h1 class="jumbo-text text-uppercase font-weight-400">Digital Media</h1>
         <div class="separator-container">
           <div class="separator line-separator"><i class="fa fa-tablet"></i></div>
-            <h4 class="roboto margin-lg-100">Use your <a data-toggle="modal" data-target="#modalone" href="#">library card number and PIN</a> to access e-books, audiobooks, digital magazines, movies, TV and music for the whole family. </h4>
+          <h4 class="roboto margin-lg-100">Use your <a data-toggle="modal" data-target="#modalone" href="#">library card number and PIN</a> to access e-books, audiobooks, digital magazines, movies, TV and music for the whole family. </h4>
         </div>
       </div>
     </div>
@@ -250,47 +268,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-body text-left padding-left-30">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center modal-title">Parker Recording Studio</h3>
-        </div>
-        <div class="modal-body text-left padding-left-30 padding-right-30 padding-bottom-40">
-          <div class="padding-bottom-15">The Recording Studio can be reserved for up to three hours at a time. Room use can be extended if no one is waiting. Three single-user computer stations, located just outside the Recording Studio, can also be reserved for digital projects. Software on these computers and the Recording Studio computer may include:</div>
-          <div class="row">
-            <div class="col-md-6">
-              <ul>
-                <li>Tinkercad</li>
-                <li>Sketch-up Pro</li>
-                <li>Blender</li>
-                <li>Unity</li>
-                <li>Adobe Creative Cloud</li>
-                <li>Final Cut Pro</li>
-                <li>Compressor 4</li>
-                <li>Motion 5</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul>
-                <li>iMovie</li>
-                <li>Garageband</li>
-                <li>iWorks</li>
-                <li>Manga Studio 5</li>
-                <li>Camtasia Studio (Mac)</li>
-                <li>Logic Pro X</li>
-                <li>MainStage 3</li>
-              </ul>
-            </div>
+          <div class="modal-body text-left">
+            <div class="margin-bottom-15">Your library card number is the 14-digit number under the bar code on your card, beginning with 2302500. Enter it without spaces. Your PIN is typically the last four digits of your phone number.</div>
+            <div class="margin-bottom-10"><a class="text-uppercase font-weight-400" href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">Recover your PIN »</a></div>
+            <div><a class="text-uppercase font-weight-400" href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">Recover your card number »</a></div>
           </div>
-          <div>Due to demand, the Recording Studio and additional computer stations may be given to other patrons if you are more than 15 minutes late for your reserved time. The Recording Studio may be booked online in advance, on a walk-in basis or with the assistance of library staff. The additional computers outside the Recording Studio can be booked by library staff over the phone or in person and on a walk-in basis.
-            <h4 class="no-margin-bottom">Need help?</h4>
-            Please schedule your session at least five business days in advance for one-on-one assistance. We are not able to accommodate last-minute assistance requests at this time.</div>
         </div>
       </div>
     </div>
   </div>
-    
-    
-    
   <div class="row no-gutter sub-nav-row">
     <div class="sub-nav">
       <div class="col-sm-6 col-md-4 col-lg-2 sub-nav-item sub-nav-border equal-height">
@@ -310,57 +298,60 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5">
+  <div class="row bottom-bkg padding-top-30">
+    <div id="e-books"><img src="e-books.png" alt="E-Books" class="gray-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row bg-gray-5 text-center">
+    <h1 class="no-margin text-uppercase font-weight-400">E-Books</h1>
+  </div>
+  <div class="row bg-gray-5 padding-top-15 padding-bottom-15">
     <div class="container">
-      <div class="col-md-6 text-center padding-top-30 padding-bottom-40">
-        <div class="col-md-6 padding-top-15"> <img src="e-books-and-audiobooks.png" alt="Access a Collection of E-Books and Audiobooks"></div>
-        <div class="col-md-6 text-left-md">
-          <h2 class="roboto"><a href="http://www.emedia2go.org" target="_blank">E-Books & Audiobooks</a></h2>
-          <div>Access a collection of OverDrive e&#8209;books and audiobooks to enjoy on your PC, smartphone or e&#8209;book reader. <a href="http://www.adobe.com/solutions/ebook/digital-editions/download.html" target="_blank">Need the dedicated e-reader app?</a> </div>
-        </div>
+      <div class="col-md-6">
+        <h2 class="no-margin-top">Hoopla</h2>
+        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
       </div>
-      <div class="col-md-6 text-center padding-top-30 padding-bottom-40">
-        <div class="col-md-6 padding-top-15"><img src="magazines.png" alt="Download Digital Magazines"></div>
-        <div class="col-md-6 text-left-md">
-          <h2 class="roboto"><a href="http://www.rbdigital.com/douglascountylibraries/service/magazines/landing?" target="_blank">Magazines</a></h2>
-          <div>Download digital magazines to read on your computer, tablet or mobile device.</div>
-        </div>
+      <div class="col-md-6">
+        <h4 class="need">You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
+          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (Android, iOS)</li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="row bg-teal">
+  <div class="row bg-gray-5 padding-bottom-15">
     <div class="container">
-      <div class="col-md-6 white text-center padding-top-30 padding-bottom-40">
-        <div class="col-md-6 padding-top-15"><img src="music.png" alt="Download Music on Demand"></div>
-        <div class="col-md-6 text-left-md">
-          <h2 class="roboto"><a class="white text-underline" href="http://douglascountylibraries.freegalmusic.com/homes/index" target="_blank">Music on Demand</a></h2>
-          <div>Download up to five songs a week for free using your library card number and PIN. This Freegal service offers access to the Sony Music Entertainment catalog &mdash; no special software needed.</div>
-        </div>
+      <div class="col-md-6">
+        <h2 class="no-margin-top">OverDrive</h2>
+        <div>Access a collection of e-books and audiobooks to enjoy on your PC, smartphone or e-book reader. </div>
+        <div class="margin-top-10">Need the dedicated e-reader app?</div>
       </div>
-      <div class="col-md-6 white text-center padding-top-30 padding-bottom-40">
-        <div class="col-md-6 padding-top-15"><img src="stream.png" alt="Stream Movies, TV, Music and More"></div>
-        <div class="col-md-6 text-left-md">
-          <h2 class="roboto"><a class="white text-underline" href="https://www.hoopladigital.com/home" target="_blank">Streaming</a></h2>
-          <div>Instantly stream (or download via mobile app) digital movies, TV, music, e&#8209;books and audiobooks from Hoopla. There’s no waiting, and items are returned automatically.</div>
-        </div>
+      <div class="col-md-6">
+        <h4 class="need">You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>OverDrive mobile app (Android, iOS, Kindle Fire) or Libby (Android, iOS) mobile app</li>
+          <li><i class="fa-li fa fa-check"></i>Adobe Digital Editions (Windows, Mac) or OverDrive desktop app (Windows 7-10) for Adobe EPUB formats and transferring to readers</li>
+          <li><i class="fa-li fa fa-check"></i>Kindle Reader app (Android, iOS, Windows, Mac) or Kindle Reader device (Kindle formats)</li>
+          <li><i class="fa-li fa fa-check"></i>Amazon account for Kindle format titles</li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row bg-gray-5 padding-bottom-15">
     <div class="container">
-      <div class="col-md-6 text-center padding-top-30 padding-bottom-40">
-        <div class="col-md-6 padding-top-15"><img class="img-circle" src="kids-digital-media.png" alt="Kids' Digital Media"></div>
-        <div class="col-md-6 text-left-md">
-          <h2 class="roboto"><a href="../read-listen-watch/#digital-media">Kids' Digital Media</a></h2>
-          <div>Safely search for e-books, animated picture books, read-along chapter books and videos for the younger set.</div>
-        </div>
+      <div class="col-md-6">
+        <h2 class="no-margin-top">OverDrive Kids</h2>
+        <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format subject, device or reading level.</div>
+        <div class="margin-top-10">Need the dedicated e-reader app?</div>
       </div>
-      <div id="help" class="col-md-6 text-center padding-top-30 padding-bottom-40">
-        <div class="col-md-6 padding-top-15"><img class="img-circle" src="help.png" alt="Digital Media Help"></div>
-        <div class="col-md-6 text-left-md">
-          <h2 class="roboto"><a href="http://answers.douglascountylibraries.org/digital-media">Digital Media Help</a></h2>
-          <div>Having trouble? We can help! Fill out our <a href="http://answers.douglascountylibraries.org/digital-media">Digital Media Help Form</a> and get answers.</div>
-        </div>
+      <div class="col-md-6">
+        <h4 class="need">You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>OverDrive mobile app (Android, iOS, Kindle Fire) or Libby (Android, iOS) mobile app</li>
+          <li><i class="fa-li fa fa-check"></i>Adobe Digital Editions (Windows, Mac) or OverDrive desktop app (Windows 7-10) for Adobe EPUB formats and transferring to readers</li>
+          <li><i class="fa-li fa fa-check"></i>Kindle Reader app (Android, iOS, Windows, Mac) or Kindle Reader device (Kindle formats)</li>
+          <li><i class="fa-li fa fa-check"></i>Amazon account for Kindle format titles</li>
+        </ul>
       </div>
     </div>
   </div>
