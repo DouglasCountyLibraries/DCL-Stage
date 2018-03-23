@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,12 +65,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     vertical-align: top;
     margin-right: 10px;
 }
-.gray-row {
-    background: #f5f5f5;
+.gray-row, .white-row {
     border-top: 1px solid #ddd;
     padding: 0 0 20px;
 }
-.gray-row.last {
+.gray-row {
+    background: #f5f5f5;
+}
+.gray-row.last, .white-row.last {
     padding: 0 0 60px;
 }
 .fa-check {
@@ -89,7 +92,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 
 @media (min-width:992px) {
-.gray-row h4 {
+.gray-row h4, .white-row h4 {
     padding-top: 12px;
 }
 }
@@ -97,7 +100,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -275,7 +278,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
         <h5 class="no-margin text-uppercase"><a class="show" href="#magazines"><i class="material-icons">computer</i>Magazines</a></h5>
       </div>
       <div class="col-sm-6 col-md-4 col-lg-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="#videos"><i class="material-icons">video_library</i>Movies, TV & Kids Videos</a></h5>
+        <h5 class="no-margin text-uppercase"><a class="show" href="#video"><i class="material-icons">video_library</i>Movies, TV & Kids Videos</a></h5>
       </div>
       <div class="col-sm-12 col-md-8 col-lg-2 sub-nav-item sub-nav-border equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="#music"><i class="fa fa-music"></i>Music</a></h5>
@@ -288,7 +291,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
         <h1 class="jumbo-text text-uppercase font-weight-400">Digital Media</h1>
         <div class="separator-container">
           <div class="separator line-separator"><i class="fa fa-tablet"></i></div>
-          <h4 class="roboto margin-lg-100">Use your <a data-toggle="modal" data-target="#modalone" href="#">library card number and PIN</a> to access e-books, audiobooks, digital magazines, movies, TV and music for the whole family. </h4>
+          <h4 class="roboto margin-lg-100">Use your <a data-toggle="modal" data-target="#modalone" href="#">library card number and PIN</a> to access e-books, audiobooks, digital magazines, movies, TV and music for the whole family. Having trouble? Fill out our <a href="http://answers.douglascountylibraries.org/digital-media">Digital Media Help Form</a> and get answers. </h4>
         </div>
       </div>
     </div>
@@ -308,6 +311,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
+  
+  <!----################################### -->
+  
   <div class="row bottom-bkg padding-top-15">
     <div id="audiobooks"><img src="e-books.png" alt="E-Books" class="gray-circle img-circle img-responsive center-block"></div>
   </div>
@@ -316,11 +322,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row">
     <div class="container">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <h3> <a href="https://www.hoopladigital.com/home" target="_blank">Hoopla</a></h3>
         <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-6">
         <h4>You'll need:</h4>
         <ul class="fa-ul">
           <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
@@ -331,13 +337,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row">
     <div class="container">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <h3><a href="https://dcl.overdrive.com/" target="_blank">OverDrive</a></h3>
         <div>Access a collection of e-books and audiobooks to enjoy on your PC, smartphone or e-book reader. </div>
         <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
         <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format subject, device or reading level.</div>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-6">
         <h4>You'll need:</h4>
         <ul class="fa-ul">
           <li><i class="fa-li fa fa-check"></i><a href="https://app.overdrive.com/#download" target="_blank">OverDrive app</a> (Android, iOS, Desktop, Kindle Fire) or <a href="https://meet.libbyapp.com/" target="_blank">Libby  app</a> (Android, iOS, Windows)</li>
@@ -350,11 +356,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row">
     <div class="container">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <h3><a href="https://douglascountylibraries.rbdigital.com/" target="_blank">RBdigital</a></h3>
         <div>Download audiobooks and digital magazines to read on your computer, tablet or mobile device.</div>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-6">
         <h4>You'll need:</h4>
         <ul class="fa-ul">
           <li><i class="fa-li fa fa-check"></i>One-time setup of an RBdigital account using your DCL credentials</li>
@@ -366,15 +372,189 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row last">
     <div class="container">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
         <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-6">
         <h4>You'll need:</h4>
         <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>Log in using your DCL credentials</li>
           <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!----################################### -->
+  
+  <div class="row top-bkg padding-top-15">
+    <div id="e-books"><img src="e-books.png" alt="E-Books" class="white-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">E-Books</h1>
+  </div>
+  <div class="row white-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3> <a href="https://www.hoopladigital.com/home" target="_blank">Hoopla</a></h3>
+        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
+          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (<a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="https://dcl.overdrive.com/" target="_blank">OverDrive</a></h3>
+        <div>Access a collection of e-books and audiobooks to enjoy on your PC, smartphone or e-book reader. </div>
+        <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
+        <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format subject, device or reading level.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i><a href="https://app.overdrive.com/#download" target="_blank">OverDrive app</a> (Android, iOS, Desktop, Kindle Fire) or <a href="https://meet.libbyapp.com/" target="_blank">Libby  app</a> (Android, iOS, Windows)</li>
+          <li><i class="fa-li fa fa-check"></i><a href="https://www.adobe.com/solutions/ebook/digital-editions.html" target="_blank">Adobe Digital Editions</a> (Windows, Mac) or <a href="https://app.overdrive.com/#download" target="_blank">OverDrive desktop app</a> (Windows) for Adobe EPUB formats and transferring to readers</li>
+          <li><i class="fa-li fa fa-check"></i><a href="http://www.amazon.com/OverDrive-Media-Console-Library-Audiobooks/dp/B00850NK6I/" target="_blank">Kindle Reader app</a> (Android, iOS, Windows, Mac) or Kindle Reader device (Kindle formats)</li>
+          <li><i class="fa-li fa fa-check"></i>Amazon account for Kindle format titles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="https://douglascountylibraries.rbdigital.com/" target="_blank">RBdigital</a></h3>
+        <div>Download audiobooks and digital magazines to read on your computer, tablet or mobile device.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of an RBdigital account using your DCL credentials</li>
+          <li><i class="fa-li fa fa-check"></i>RBdigital mobile app (<a href="https://play.google.com/store/apps/details?id=com.ocd" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/oneclickdigital/id515311743?mt=8" target="_blank">iOS</a>, <a href="http://www.amazon.com/Recorded-Books-OneClickdigital/dp/B009GLFOL4/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1358440633&sr=1-1&keywords=oneclickdigital" target="_blank">Kindle</a>)</li>
+          <li><i class="fa-li fa fa-check"></i>RBdigital Digital Media Manager app (<a href="https://douglascountylibraries.rbdigital.com/DesktopAppInstaller/oneclickdigitalmedia/OneClickdigital%20Media%20Manager%20Installer.exe" target="_blank">Windows</a>, <a href="https://itunes.apple.com/us/app/oneclickdigital-media-manager/id491365225?ls=1&mt=12" target="_blank">Macintosh</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row last">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
+        <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!----################################### -->
+  
+  <div class="row bottom-bkg padding-top-15">
+    <div id="magazines"><img src="e-books.png" alt="Magazines" class="gray-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row bg-gray-5 text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Magazines</h1>
+  </div>
+  <div class="row gray-row last">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="https://douglascountylibraries.rbdigital.com/" target="_blank">RBdigital</a></h3>
+        <div>Download audiobooks and digital magazines to read on your computer, tablet or mobile device.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of an RBdigital account using your DCL credentials</li>
+          <li><i class="fa-li fa fa-check"></i>RBdigital mobile app (<a href="https://play.google.com/store/apps/details?id=com.ocd" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/oneclickdigital/id515311743?mt=8" target="_blank">iOS</a>, <a href="http://www.amazon.com/Recorded-Books-OneClickdigital/dp/B009GLFOL4/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1358440633&sr=1-1&keywords=oneclickdigital" target="_blank">Kindle</a>)</li>
+          <li><i class="fa-li fa fa-check"></i>RBdigital Digital Media Manager app (<a href="https://douglascountylibraries.rbdigital.com/DesktopAppInstaller/oneclickdigitalmedia/OneClickdigital%20Media%20Manager%20Installer.exe" target="_blank">Windows</a>, <a href="https://itunes.apple.com/us/app/oneclickdigital-media-manager/id491365225?ls=1&mt=12" target="_blank">Macintosh</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!----################################### -->
+  
+  <div class="row top-bkg padding-top-15">
+    <div id="video"><img src="e-books.png" alt="Movies, TV & Kids Videos" class="white-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Movies, TV & Kids Videos</h1>
+  </div>
+  <div class="row white-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3> <a href="https://www.hoopladigital.com/home" target="_blank">Hoopla</a></h3>
+        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
+          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (<a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row last">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
+        <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!----################################### -->
+  
+  <div class="row bottom-bkg padding-top-15">
+    <div id="music"><img src="e-books.png" alt="Music" class="gray-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row bg-gray-5 text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Music</h1>
+  </div>
+  <div class="row gray-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="https://douglascountylibraries.freegalmusic.com/homes/index" target="_blank">Freegal</a></h3>
+        <div>Download up to five songs a week for free and keep them. This service offers access to the Sony Music Entertainment catalog.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>MP3/MP4 player or Freegal mobile app (<a href="https://play.google.com/store/apps/details?id=com.libraryideas.freegalmusic&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/freegal-music/id508036345?mt=8" target="_blank">iOS</a>)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row last">
+    <div class="container">
+      <div class="col-md-6">
+        <h3> <a href="https://www.hoopladigital.com/home" target="_blank">Hoopla</a></h3>
+        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
+          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (<a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>)</li>
         </ul>
       </div>
     </div>
@@ -430,12 +610,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </footer>
 <div class="copyright bg-gray-90">
   <div class="container padding-top-15 padding-bottom-30">
-	  <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
-<!-- End Structured Data --> 
+<!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
