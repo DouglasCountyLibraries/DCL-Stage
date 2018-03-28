@@ -55,9 +55,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 <style>
-#baguetteBox-overlay {
-    background-color: rgba(255,255,255,.8) !important;
-}
 polyline, g {
     stroke: #000;
 }
@@ -506,7 +503,10 @@ polyline, g {
 <!-- InstanceBeginEditable name="scripts" --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> 
 <script>
-    baguetteBox.run('.tz-gallery');
+    baguetteBox.run('.tz-gallery', {
+        buttons: true,
+        overlayBackgroundColor: 'rgba(255,255,255,0.8)'
+    });
 </script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
