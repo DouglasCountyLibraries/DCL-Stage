@@ -56,7 +56,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 <style>
 #baguetteBox-overlay {
-    background-color: rgba(0,0,0,.8)!important;
+    background-color: rgba(255,255,255,.8) !important;
+}
+polyline {
+    stroke: #000;
+}
+g {
+    stroke: #000;
 }
 #baguetteBox-overlay .full-image figcaption {
     display: block;
@@ -66,14 +72,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     text-align: center;
     line-height: inherit;
     white-space: normal;
-    color: #fff;
+    color: #000;
     background-color: transparent;
     padding: 10px 10%;
-    font-size: 24px;
-    line-height: 22px;
+    font-size: 20px;
 }
 #baguetteBox-overlay .full-image img {
-    border: 1px solid #999;
+    margin-top: -5%;
 }
 .author {
     color: #fff;
@@ -297,9 +302,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
       <div class="tz-gallery">
         <div class="row">
-          <div class="col-xs-6"> <a class="lightbox" href="images/dan-brown/dan-brown-speaking.jpg" data-caption="&#147;I LOVED it! The VIP code cracking was quite entertaining and the food was amazing.&#148;"> <img src="images/dan-brown/dan-brown-speaking.jpg" alt="Dan Brown Speaking"> </a> </div>
+          <div class="col-xs-6"> <a class="lightbox" href="images/dan-brown/dan-brown-speaking.jpg" data-caption="&#147;<i>I LOVED it! The VIP code cracking was quite entertaining and the food was amazing.</i>&#148;"> <img src="images/dan-brown/dan-brown-speaking.jpg" alt="Dan Brown Speaking"> </a> </div>
           <div class="col-xs-6"> <a class="lightbox" href="images/dan-brown/dan-brown-books.jpg"> <img src="images/dan-brown/dan-brown-books.jpg" alt="Dan Brown Books"> </a> </div>
-          <div class="col-sm-12 col-md-8"> <a class="lightbox" href="images/dan-brown/dan-brown-audience.jpg" data-caption="&#147;WOW! WOW! WOW! What a fabulous event!&#148;"> <img src="images/dan-brown/dan-brown-audience.jpg" alt="Dan Brown Audience"> </a> </div>
+          <div class="col-sm-12 col-md-8"> <a class="lightbox" href="images/dan-brown/dan-brown-audience.jpg" data-caption="&#147;<i>WOW! WOW! WOW! What a fabulous event!</i>&#148;"> <img src="images/dan-brown/dan-brown-audience.jpg" alt="Dan Brown Audience"> </a> </div>
           <div class="col-xs-6 col-md-4"> <a class="lightbox" href="images/dan-brown/dan-brown-answers.jpg"> <img src="images/dan-brown/dan-brown-answers.jpg" alt="Dan Brown Answers Questions"> </a> </div>
           <div class="col-xs-6 col-md-4"> <a class="lightbox" href="images/dan-brown/dan-brown-food.jpg"> <img src="images/dan-brown/dan-brown-food.jpg" alt="Dan Brown Refreshments"> </a> </div>
         </div>
@@ -361,11 +366,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
       <div class="tz-gallery">
         <div class="row">
-          <div class="col-sm-12 col-md-8"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-at-podium.jpg"> <img src="images/lemony-snicket/lemony-snicket-at-podium.jpg" alt="Lemony Snicket at the Podium"> </a> </div>
+          <div class="col-sm-12 col-md-8"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-at-podium.jpg" data-caption="&#147;<i>My 11- and 12-year-old both say '5 Stars.' Loved it! Lemony Snicket was hilarious.</i>&#148;"> <img src="images/lemony-snicket/lemony-snicket-at-podium.jpg" alt="Lemony Snicket at the Podium"> </a> </div>
           <div class="col-xs-6 col-md-4"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-audience.jpg"> <img src="images/lemony-snicket/lemony-snicket-audience.jpg" alt="Lemony Snicket Audience"> </a> </div>
-          <div class="col-xs-6 col-md-4"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-fun.jpg"> <img src="images/lemony-snicket/lemony-snicket-fun.jpg" alt="Lemony Snicket Fun"> </a> </div>
+          <div class="col-xs-6 col-md-4"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-fun.jpg" data-caption="&#147;<i>[Lemony Snicket] was a hoot to watch and listen to. So entertaining! He was engaging to all ages. It was nice that he took a moment or several moments to converse with everyone he signed a book for. Well done!</i>&#148;"> <img src="images/lemony-snicket/lemony-snicket-fun.jpg" alt="Lemony Snicket Fun"> </a> </div>
           <div class="col-xs-6"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-signing.jpg"> <img src="images/lemony-snicket/lemony-snicket-signing.jpg" alt="Lemony Snicket Signing"> </a> </div>
-          <div class="col-xs-6"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-pointing.jpg"> <img src="images/lemony-snicket/lemony-snicket-pointing.jpg" alt="Lemony Snicket Interacting with Kids"> </a> </div>
+          <div class="col-xs-6"> <a class="lightbox" href="images/lemony-snicket/lemony-snicket-pointing.jpg" data-caption="&#147;<i>My son said 'it was probably the best night of my life!'</i>&#148;"> <img src="images/lemony-snicket/lemony-snicket-pointing.jpg" alt="Lemony Snicket Interacting with Kids"> </a> </div>
         </div>
       </div>
     </div>
@@ -376,7 +381,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
       <div class="tz-gallery">
         <div class="row">
-          <div class="col-xs-6"> <a class="lightbox" href="images/louis-penny/louis-penny-fans.jpg"> <img src="images/louis-penny/louis-penny-fans.jpg" alt="Louis Penny with Fans"> </a> </div>
+          <div class="col-xs-6"> <a class="lightbox" href="images/louis-penny/louis-penny-fans.jpg" data-caption="The author's &#147;magnificent&#148; Chief Inspector Gamache character was inspired by her husband."> <img src="images/louis-penny/louis-penny-fans.jpg" alt="Louis Penny with Fans"> </a> </div>
           <div class="col-xs-6"> <a class="lightbox" href="images/louis-penny/louis-penny-audience.jpg"> <img src="images/louis-penny/louis-penny-audience.jpg" alt="Louis Penny Audience"> </a> </div>
           <div class="col-sm-12 col-md-8"> <a class="lightbox" href="images/louis-penny/louis-penny-books.jpg"> <img src="images/louis-penny/louis-penny-books.jpg" alt="Louis Penny Titles"> </a> </div>
           <div class="col-xs-6 col-md-4"> <a class="lightbox" href="images/louis-penny/louis-penny-speaking.jpg"> <img src="images/louis-penny/louis-penny-speaking.jpg" alt="Louis Penny Speaking"> </a> </div>
