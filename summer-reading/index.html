@@ -74,7 +74,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', endColorstr='#fce885', GradientType=0 );
     color: #7b4520;
 }
-    .event-wrapper {background: #5495bf;color: #fff;}
+.page-wrapper a {
+    text-decoration: underline;
+    color: #7b4520;
+    font-weight: 400;
+}
+.page-wrapper a:visited, .page-wrapper a:hover, .page-wrapper a:focus {
+    color: #29190a;
+}
+.event-wrapper {
+    background: #5495bf;
+    color: #fff;
+}
 .page-wrapper h1, .page-wrapper h2, .page-wrapper h3, .page-wrapper h4 {
     color: #7b4520;
 }
@@ -95,6 +106,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
     position: relative;
     top: -70px;
     z-index: 5;
+}
+.img-circle {
+    border: 3px solid #29190a;
+}
+.rotate-vert-center:hover {
+    -webkit-animation: rotate-vert-center 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: rotate-vert-center 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+@-webkit-keyframes rotate-vert-center {
+ 0% {
+ -webkit-transform: rotateY(0);
+ transform: rotateY(0);
+}
+ 100% {
+ -webkit-transform: rotateY(360deg);
+ transform: rotateY(360deg);
+}
+}
+@keyframes rotate-vert-center {
+ 0% {
+ -webkit-transform: rotateY(0);
+ transform: rotateY(0);
+}
+ 100% {
+ -webkit-transform: rotateY(360deg);
+ transform: rotateY(360deg);
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -267,119 +305,112 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
   </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row background">
-    <div class="container-lg">
-        <div><img class="banner img-responsive image-center" src="neverland.png" alt="Escape to Neverland"><a href="#kickoff"><img class="kids img-responsive image-center" src="barrel-kids.gif" alt="Kickoff Parties!"></a></div>
+    <div class="container">
+      <div class="col-xs-12"><a href="#register"><img class="banner img-responsive image-center" src="neverland.png" alt="Escape to Neverland"></a><a href="#kickoff"><img class="kids img-responsive image-center" src="barrel-kids.gif" alt="Kickoff Parties!"></a></div>
     </div>
   </div>
   <div class="row page-wrapper">
     <div class="intro container text-center">
       <h1 class="lobster no-margin">2018 Summer Reading Program for All Ages</h1>
-      <h2 class="lobster no-margin">Saturday, June 2-Tuesday, July 31</h2>
-      <div class="large-text">Kids ages 12 and under read for 720 minutes and get a free book. 
-        Teens and adults ages 13 and up read for 900 minutes and get an exclusive Escape to Neverland book bag. </div>
+      <h2 class="lobster no-margin-top">Saturday, June 2-Tuesday, July 31</h2>
+      <div class="col-md-3 text-left-md padding-top-15">Hey kids! Starting June 2, <a href="reading-log.pdf">print a reading log</a> or <a href="#register">sign up online</a>, then read for 720 minutes or complete fun alternative activities to complete the Summer Reading Program. When you're done, visit us in person to get a free book (while supplies last)!</div>
+      <div class="col-md-3 text-left-md padding-top-15">Summer Reading is for grown-ups, too! Readers ages 13 and up can read 900 minutes to finish and receive a limited-edition Douglas County Libraries book bag. <a href="bookmark.pdf">Print a bookmark</a> or <a href="#log-in">track your minutes</a> and finish online.</div>
+      <div class="col-md-3 text-left-md padding-top-15">Our friends in the community want you to keep reading this summer! Be sure to log your time—when we reach 7 million minutes, the Douglas County Libraries Foundation will donate $500 to the Denver Dumb Friends League Buddy Center!</div>
+      <div class="col-md-3 text-left-md padding-top-15"><a href="#" data-toggle="modal" data-target="#modalone">Attending a library event</a> can make your summer in Neverland even more fun! Your Escape to Neverland Summer Reading Program registration does not register you for library events. <a href="#" data-toggle="modal" data-target="#modalone">Event registration</a> opens 20 days prior to each event date. Events, dates and times are subject to change. </div>
     </div>
-    <div class="container">
-      <div class="col-md-2 text-center"><img class="img-responsive image-center img-circle" src="https://placehold.it/100" alt="Kids Registration">
+    <div id="register" class="container">
+      <div class="col-xs-6 col-md-2 text-center padding-bottom-15"><a href="#" target="_blank"><img class="rotate-vert-center img-responsive image-center img-circle" src="https://placehold.it/100" alt="Kids Registration"></a>
         <h3 class="lobster no-margin">Kids Registration</h3>
       </div>
-        
-      <div class="col-md-2 text-center"><img class="img-responsive image-center img-circle" src="https://placehold.it/100" alt="Teen & Adult Registration">
+      <div class="col-xs-6 col-md-2 text-center padding-bottom-15"><a href="#" target="_blank"><img class="rotate-vert-center img-responsive image-center img-circle" src="https://placehold.it/100" alt="Teen & Adult Registration"></a>
         <h3 class="lobster no-margin">Teen & Adult Registration</h3>
       </div>
-        <div class="col-md-2 text-center"><img class="img-responsive image-center img-circle" src="https://placehold.it/100" alt="Kids Log In">
+      <div id="log-in" class="col-xs-6 col-md-2 text-center padding-bottom-15"><a href="#" target="_blank"><img class="rotate-vert-center img-responsive image-center img-circle" src="https://placehold.it/100" alt="Kids Log In"></a>
         <h3 class="lobster no-margin">Kids Log In</h3>
       </div>
-        <div class="col-md-2 text-center"><img class="img-responsive image-center img-circle" src="https://placehold.it/100" alt="Teen & Adult Log In">
+      <div class="col-xs-6 col-md-2 text-center padding-bottom-15"><a href="#" target="_blank"><img class="rotate-vert-center img-responsive image-center img-circle" src="https://placehold.it/100" alt="Teen & Adult Log In"></a>
         <h3 class="lobster no-margin">Teen & Adult Log In</h3>
       </div>
-        <div class="col-md-2 text-center"><img class="img-responsive image-center img-circle" src="https://placehold.it/100" alt="Family Management Tool">
+      <div class="col-xs-6 col-md-2 text-center padding-bottom-15"><a href="#" target="_blank"><img class="rotate-vert-center img-responsive image-center img-circle" src="https://placehold.it/100" alt="Family Management Tool"></a>
         <h3 class="lobster no-margin">Family Management Tool</h3>
       </div>
-        <div class="col-md-2 text-center"><img class="img-responsive image-center img-circle" src="https://placehold.it/100" alt="Promos">
+      <div class="col-xs-6 col-md-2 text-center padding-bottom-15"><a href="#" target="_blank"><img class="rotate-vert-center img-responsive image-center img-circle" src="https://placehold.it/100" alt="Promos"></a>
         <h3 class="lobster no-margin">Promos</h3>
       </div>
-        
-      </div></div><div id="kickoff" class="row event-wrapper">
-    <div class="container padding-top-60 padding-bottom-60 text-center">
-      <h1 class="lobster white no-margin">Escape to Neverland Kickoff Parties:</h1>
+    </div>
+  </div>
+  <div id="kickoff" class="row event-wrapper">
+    <div class="container padding-top-60 padding-bottom-80 text-center">
+      <h1 class="lobster white no-margin">Escape to Neverland Kickoff Party</h1>
       <h3 class="no-margin white">Face painting, activities, snacks, and much more!</h3>
       <div>Saturday, June 2, 10AM-Noon. All DCL locations. All ages. No registration required.</div>
-   
-
-  <!-- Button trigger modal -->
-  <div class="text-center">
-    <button type="button" class="btn btn-primary text-uppercase margin-top-30" data-toggle="modal" data-target="#modalone">See All Events</button>
-        </div>  </div></div>
+    </div>
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="modalone" style="display: none;">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center modal-title">Readers @ Play Events</h3>
+          <h2 class="lobster text-center modal-title">Escape to Neverland Events</h2>
         </div>
         <div class="padding-left-30 padding-right-30 padding-bottom-60">
-          <h2 class="roboto no-margin-bottom">LEGO Amusement Park</h2>
-          <div>Get your ticket to ride with Bricks 4 Kidz<sup>&reg;</sup>! Learn about the history and mechanics of favorite amusement park rides, build carousel and swing rides, and learn to make them spin, roll, turn and rock. Motorized models maximize the fun. Ideal for ages 6-12.</div>
+          <h3 class="lobster no-margin-bottom">Adventures in Art</h3>
+          <div>Kids ages 6-12 will make folded, clock-eating crocodiles in this interactive art program, using guided drawing, oil pastels, markers and watercolor.</div>
           <ul class="list-unstyled margin-top-10">
-            <li>Wednesday, June 21, 1:30PM, Parker &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110088" target="_blank">WAIT LIST</a></li>
-            <li>Wednesday, June 21, 3PM, Parker &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124714" target="_blank">WAIT LIST</a></li>
-            <li>Friday, June 30, 1:30PM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110097" target="_blank">WAIT LIST</a></li>
-            <li>Friday, June 30, 3PM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124713" target="_blank">WAIT LIST</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110113" target="_blank">Wednesday, July 19, 9:30AM, Lone Tree</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124712" target="_blank">Wednesday, July 19, 11AM, Lone Tree</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110115" target="_blank">Friday, July 21, 9:30AM, Roxborough</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124711" target="_blank">Friday, July 21, 11AM, Roxborough</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110122" target="_blank">Monday, July 31, 9:30AM, Castle Pines</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124716" target="_blank">Monday, July 31, 11AM, Castle Pines</a></li>
+            <li>Tuesday, June 12, 9:30 & 10:30am, Roxborough</li>
+            <li>Tuesday, June 19, 1:30 & 2:30pm, Highlands Ranch, James H. LaRue</li>
+            <li>Wednesday, July 11, 1:30 & 2:30pm, Castle Rock, Philip S. Miller</li>
+            <li>Thursday, July 12, 9:30 & 10:30am, Lone Tree</li>
+            <li>Thursday, July 19, 1:30 & 2:30pm, Parker</li>
+            <li>Monday, July 23, 1:30 & 2:30pm, Castle Pines</li>
           </ul>
-          <h2 class="roboto no-margin-bottom">Band Practice</h2>
-          <div>We start with band practice and learn to play our instruments in unison. Then, it's music time! We play, sing and have a blast. Ideal for all ages.</div>
+          <h3 class="lobster no-margin-bottom">Adventures in Music</h3>
+          <div>Kids ages 2-12 will sing, shake and shimmy their way around the world, enjoying songs, dances and instruments for hand-clapping, foot-stomping fun. </div>
           <ul class="list-unstyled margin-top-10">
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110087" target="_blank">Tuesday, June 27, 9:30AM, Roxborough</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124704" target="_blank">Tuesday, June 27, 11AM, Roxborough</a></li>
-            <li>Wednesday, June 28, 1:30PM, Lone Tree &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110095" target="_blank">WAIT LIST</a></li>
-            <li>Wednesday, June 28, 3PM, Lone Tree &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124702" target="_blank">WAIT LIST</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=117786" target="_blank">Tuesday, July 25, 3:30PM, Louviers</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110110" target="_blank">Friday, July 28, 9:30AM, Castle Rock, Philip S. Miller</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124700" target="_blank">Friday, July 28, 11AM, Castle Rock, Philip S. Miller</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110121" target="_blank">Friday, July 28, 1:30PM, Highlands Ranch, James H. LaRue</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124701" target="_blank">Friday, July 28, 3PM, Highlands Ranch, James H. LaRue</a></li>
+            <li>Wednesday, June 13, 9:30 & 11am, Castle Pines</li>
+            <li>Wednesday, June 13, 1:30 & 3pm, Castle Rock, Philip S. Miller</li>
+            <li>Saturday, June 16, 9:30 & 11am, Parker</li>
+            <li>Thursday, June 28, 9:30 & 11am, Lone Tree</li>
+            <li>Saturday, July 14, 1:30 & 3pm, Highlands Ranch, James H. LaRue</li>
+            <li>Saturday, July 14, 9:30 & 11am, Roxborough</li>
           </ul>
-          <h2 class="roboto no-margin-bottom">Motion Madness</h2>
-          <div>Discover Sir Isaac Newton's three laws of motion, and learn about gravity, momentum, kinetic energy and potential energy. Use the same forces to build a cool kinetic roller coaster that you can take home! Ideal for ages 4-12.</div>
+          <h3 class="lobster no-margin-bottom">Animal Adventures</h3>
+          <div>What animals live in Neverland? Kids ages 2-12 will join experts from Nature's Educators, plus live doves, toads, rabbits and owls, to explore where they live, what they eat, and how they survive.</div>
           <ul class="list-unstyled margin-top-10">
-            <li>Tuesday, June 20, 1:30PM, Castle Pines &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=116597" target="_blank">WAIT LIST</a></li>
-            <li>Tuesday, June 20, 3PM, Castle Pines &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124710" target="_blank">WAIT LIST</a></li>
-            <li>Friday, June 23, 9:30AM, Castle Rock, Philip S. Miller &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110090" target="_blank">WAIT LIST</a></li>
-            <li>Friday, June 23, 11AM, Castle Rock, Philip S. Miller &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124709" target="_blank">WAIT LIST</a></li>
-            <li>Monday, June 26, 9:30AM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110092" target="_blank">WAIT LIST</a></li>
-            <li>Monday, June 26, 11AM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124708" target="_blank">WAIT LIST</a></li>
-            <li>Wednesday, June 28, 9:30AM, Parker &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110094" target="_blank">WAIT LIST</a></li>
-            <li>Wednesday, June 28, 11AM, Parker &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124706" target="_blank">WAIT LIST</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110118" target="_blank">Wednesday, July 26, 1:30PM, Lone Tree</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124707" target="_blank">Wednesday, July 26, 3PM, Lone Tree</a></li>
+            <li>Wednesday, June 6, 1:30 & 2:30pm, Lone Tree</li>
+            <li>Tuesday, June 12, 3:30pm, Louviers</li>
+            <li>Wednesday, June 20, 1:30 & 2:30pm, Castle Pines</li>
+            <li>Tuesday, June 26, 1:30 & 2:30pm, Highlands Ranch, James H. LaRue</li>
+            <li>Wednesday, June 27, 9:30 & 11am, Parker</li>
+            <li>Saturday, June 30, 1:30 & 2:30pm, Castle Rock, Philip S. Miller</li>
+            <li>Monday, July 16, 9:30 & 11am, Parker</li>
+            <li>Monday, July 16, 1:30 & 2:30pm, Castle Rock, Philip S. Miller</li>
+            <li>Tuesday, July 24, 1:30 & 2:30pm, Highlands Ranch, James H. LaRue</li>
+            <li>Wednesday, July 25, 4:30pm, Castle Pines</li>
+            <li>Monday, July 30, 1:30 & 2:30pm, Lone Tree</li>
           </ul>
-          <h2 class="roboto no-margin-bottom">The Zoo Comes to You</h2>
-          <div>Explore animal habitats and learn about animals' food, water and shelter with live animal and human guests from the Denver Zoo. Ideal for all ages; ages 3 and under must be accompanied by an adult.</div>
+          <h3 class="lobster no-margin-bottom">LEGO Adventures</h3>
+          <div>Choose from sessions for ages 4-6 or 7-12. Kids will journey to Neverland, dive into a massive collection of LEGOs, explore hideouts with mermaids and pirates, chase down crocodiles, and tinker with Tinker Bell!</div>
           <ul class="list-unstyled margin-top-10">
-            <li>Monday, July 10, 10AM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110104" target="_blank">WAIT LIST</a></li>
-            <li>Thursday, July 13, 9:30AM, Parker &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110109" target="_blank">WAIT LIST</a></li>
-            <li>Thursday, July 13, 10:30AM, Parker &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124694" target="_blank">WAIT LIST</a></li>
-          </ul>
-          <h2 class="roboto no-margin-bottom">Move Your Body</h2>
-          <div>Test your speed and agility through a padded obstacle course with pros from Karate Denver. Engage your brain with a brief history of the Martial Arts and discover how your body works to deliver a punch or a kick. Ideal for ages 5-10.</div>
-          <ul class="list-unstyled margin-top-10">
-            <li>Thursday, June 29, 1:30PM, Roxborough &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110096" target="_blank">WAIT LIST</a></li>
-            <li>Thursday, June 29, 3PM, Roxborough &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124717" target="_blank">WAIT LIST</a></li>
-            <li>Friday, July 7, 1:30PM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110103" target="_blank">WAIT LIST</a></li>
-            <li>Friday, July 7, 3PM, Highlands Ranch, James H. LaRue &mdash; <a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124720" target="_blank">WAIT LIST</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110107" target="_blank">Wednesday, July 12, 9:30AM, Castle Pines</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124721" target="_blank">Wednesday, July 12, 11AM, Castle Pines</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110108" target="_blank">Wednesday, July 12, 1:30PM, Lone Tree</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124719" target="_blank">Wednesday, July 12, 3PM, Lone Tree</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=110120" target="_blank">Thursday, July 27, 1:30PM, Parker</a></li>
-            <li><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=124718" target="_blank">Thursday, July 27, 3PM, Parker</a></li>
+            <li>
+              <h5 class="no-margin-bottom">Ages 4-6</h5>
+            </li>
+            <li>Tuesday, June 5, 1:30pm, Castle Rock, Philip S. Miller</li>
+            <li>Wednesday, June 13, 2pm, Highlands Ranch, James H. LaRue</li>
+            <li>Monday, June 25, 1:30pm, Lone Tree</li>
+            <li>Wednesday, June 27, 9:30am, Roxborough</li>
+            <li>Friday, July 6, 1:30pm, Castle Pines</li>
+            <li>Saturday, July 7, 9:30am, Parker</li>
+            <li>
+              <h5 class="no-margin-bottom">Ages 7-12</h5>
+            </li>
+            <li>Tuesday, June 5, 3pm, Castle Rock, Philip S. Miller</li>
+            <li>Wednesday, June 13, 3:30pm, Highlands Ranch, James H. LaRue</li>
+            <li>Monday, June 25, 3pm, Lone Tree</li>
+            <li>Wednesday, June 27, 11am, Roxborough</li>
+            <li>Friday, July 6, 3pm, Castle Pines</li>
+            <li>Saturday, July 7, 11am, Parker</li>
           </ul>
         </div>
       </div>
