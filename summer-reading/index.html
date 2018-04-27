@@ -63,7 +63,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     background: #ade0f1 url(background.jpg) no-repeat bottom center/cover;
 }
 .page-wrapper {
-    padding: 0 0 30px;
     background: rgba(254,204,79,1) fixed;
     background: -moz-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,204,79,1)), color-stop(100%, rgba(252,232,133,1)));
@@ -110,6 +109,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
     position: relative;
     top: -70px;
     z-index: 5;
+}
+.cat img {
+    position: relative;
+    bottom: -15px;
 }
 .modal-content {
     background: #fde6be url(texture.png) repeat;
@@ -473,10 +476,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
   </div>
   <div class="row watersand"></div>
   <div id="contest" class="row page-wrapper">
-    <div class="container padding-top-40 padding-bottom-40 text-center">
+    <div class="container padding-top-40 text-center">
       <h1 class="lobster white">Contest: School Treasure!</h1>
       <h5 class="no-margin white">Help your school win some booty! It's easy — all you have to do is register for summer reading. The school with the most Summer Reading Program sign-ups by July 31 wins $250. Be sure to include your school name and your grade when registering online so your school gets credit. Winner will be announced in August. Fair winds, matey!</h5>
-      <h5><a data-toggle="modal" data-target="#restrictions" style="text-decoration: none;" href="#" class="text-uppercase">Some rules and restrictions apply &raquo;</a> </h5>
+      <h5 class="no-margin-bottom"><a style="text-decoration: none;" data-toggle="modal" data-target="#restrictions" href="#" class="text-uppercase">Some rules and restrictions apply &raquo;</a> </h5>
+      <div class="cat"><img src="bernard.png" alt="Benard the Cat"></div>
     </div>
   </div>
   <!-- Modal -->
