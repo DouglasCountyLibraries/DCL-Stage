@@ -105,6 +105,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
     transform: scale(1.03);
     transition: all .4s ease-in-out;
 }
+.table-bordered {
+    border: 1px solid #fff;
+}
+.prize-table {
+    background: #5495bf;
+    color: #fff;
+}
 .kids {
     position: relative;
     top: -70px;
@@ -240,6 +247,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
 #register {
     position: relative;
     top: 0;
+}
+}
+
+@media (min-width: 768px) {
+.reg {
+    margin-top: 160px;
 }
 }
 </style>
@@ -436,68 +449,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
       <h2 class="lobster no-margin text-center">Saturday, June 2-Tuesday, July 31</h2>
       <h2 class="lobster no-margin-top text-center">Log In or Register</h2>
     </div>
-    <div class="container margin-lg-200">
-      <div class="col-sm-6 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-kids/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="kids-registration.png" alt="Kids Registration"></a> </div>
-      <div class="col-sm-6 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-teens-adults/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="teen-adult-registration.png" alt="Teen & Adult Registration"></a> </div>
+    <div class="container no-gutter padding-bottom-15 padding-top-15 margin-lg-100">
+      <div class="col-sm-15 padding-bottom-15 reg"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-kids/users/sessions/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="kids-login.png" alt="Kids Login"></a> </div>
+      <div class="col-sm-15 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-kids/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="kids-registration.png" alt="Kids Registration"></a> </div>
+      <div class="col-sm-15 padding-bottom-15 reg"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-teens-adults/users/sessions/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="teen-adult-login.png" alt="Teen & Adult Login"></a> </div>
+      <div class="col-sm-15 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-teens-adults/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="teen-adult-registration.png" alt="Teen & Adult Registration"></a> </div>
+      <div class="col-sm-15 padding-bottom-15 reg"><a href="https://douglascountylibraries.evanced.info/reader/family" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="family-management-tool.png" alt="Family Management Tool"></a> </div>
     </div>
-    <div class="container padding-bottom-15">
-      <div class="col-sm-4 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-kids/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="kids-login.png" alt="Kids Registration"></a> </div>
-      <div class="col-sm-4 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-kids/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="teen-adult-login.png" alt="Kids Registration"></a> </div>
-      <div class="col-sm-4 padding-bottom-15"><a href="https://douglascountylibraries.evanced.info/reader/family" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="family-management-tool.png" alt="Family Management Tool"></a> </div>
-    </div>
-    <div class="container padding-bottom-15">
+    <div class="container padding-bottom-30">
       <h2 class="lobster no-margin text-center">Intro paragraph goes here</h2>
       <div class="col-md-12 padding-top-15">
         <h5>Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu, luctus sit amet nisl. Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu, luctus sit amet nisl.</h5>
       </div>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="eventsmodal" tabindex="-1" role="dialog" aria-labelledby="eventsmodal" style="display: none;">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h2 class="lobster text-center modal-title">Escape to Neverland Events</h2>
-        </div>
-        <div class="padding-left-30 padding-right-30 padding-bottom-60">
-          <h3 class="lobster text-center">Adventures in Art</h3>
-          <div>Kids ages 6-12 will make folded, clock-eating crocodiles in this interactive art program, using guided drawing, oil pastels, markers and watercolor.</div>
-          <h3 class="lobster text-center">Adventures in Music</h3>
-          <div>Kids ages 2-12 will sing, shake and shimmy their way around the world, enjoying songs, dances and instruments for hand-clapping, foot-stomping fun. </div>
-          <h3 class="lobster text-center">Animal Adventures</h3>
-          <div>What animals live in Neverland? Kids ages 2-12 will join experts from Nature's Educators, plus live doves, toads, rabbits and owls, to explore where they live, what they eat, and how they survive.</div>
-          <h3 class="lobster text-center">LEGO Adventures</h3>
-          <div>Choose from sessions for ages 4-6 or 7-12. Kids will journey to Neverland, dive into a massive collection of LEGOs, explore hideouts with mermaids and pirates, chase down crocodiles, and tinker with Tinker Bell!</div>
-          <!-- Link to SRP events <div class="text-center margin-top-30"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=featured-one&lib=all&nd=365" target="_blank" class="text-uppercase btn btn-primary">Register Now</a></div>--> 
-        </div>
-      </div>
+  <div class="row padding-top-30 prize-table">
+    <h1 class="lobster white no-margin text-center padding-bottom-15">Table heading goes here</h1>
+    <div class="container table-responsive table-condensed">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td></td>
+            <td><h4 class="white font-weight-400">Registration Prize</h4></td>
+            <td><h4 class="white font-weight-400">Midway Prize</h4></td>
+            <td><h4 class="white font-weight-400">Finishing Prize</h4></td>
+          </tr>
+          <tr>
+            <td><h4 class="white no-margin font-weight-400">Kids</h4></td>
+            <td>Free Good Times Kids Meal & GOTG Movie Pass</td>
+            <td>Neverland Dog Tags</td>
+            <td>Choose a Free Book</td>
+          </tr>
+          <tr>
+            <td><h4 class="white no-margin font-weight-400">Teens/Adults</h4></td>
+            <td>BOGO Good Times Burger & GOTG Movie Pass</td>
+            <td>You're halfway! Virtual High-Five!</td>
+            <td>Limited Edition DCL Book Bag</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <td></td>
-        <th><span style="color: #569949;"><strong>Registration Prize</strong></span></th>
-        <th><span style="color: #569949;"><strong>Midway Prize</strong></span></th>
-        <th><span style="color: #569949;"><strong>Finishing Prize</strong></span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span style="color: #569949;"><strong>Kids</strong></span></td>
-        <td>Free Good Times Kids Meal & GOTG Movie Pass</td>
-        <td>Neverland Dog Tags</td>
-        <td>Choose a Free Book</td>
-      </tr>
-      <tr>
-        <td><span style="color: #569949;"><strong>Teens/Adults</strong></span></td>
-        <td>BOGO Good Times Burger & GOTG Movie Pass</td>
-        <td>You're halfway! Virtual High-Five!</td>
-        <td><span>Limited Edition DCL Book Bag</span></td>
-      </tr>
-    </tbody>
-  </table>
   <div id="kickoff" class="row kickoff-wrapper">
     <div class="container padding-top-40 padding-bottom-40 text-center">
       <div class="col-md-12">
@@ -510,7 +502,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
   <div class="row bg-gray-5 padding-top-30 padding-bottom-30">
     <div class="container">Minutes go here 1-7M</div>
   </div>
-  <div class="row watersand"></div>
   <div id="contest" class="row page-wrapper">
     <div class="container padding-top-40 text-center">
       <h1 class="lobster white">The dog thing</h1>
