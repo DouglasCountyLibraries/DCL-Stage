@@ -56,94 +56,98 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <style>
 .lobster {
-    font-family: 'Lobster', cursive;
-    letter-spacing: .03em
+	font-family: 'Lobster', cursive;
+	letter-spacing: .03em
 }
 .background {
-    background: #ade0f1 url(background.jpg) no-repeat bottom center/cover;
+	background: #ade0f1 url(background.jpg) no-repeat bottom center/cover;
+}
+.minutes {
+	background: #fce885 url(minutes-background.png) repeat-x top center;
 }
 .page-wrapper {
-    background: rgba(254,204,79,1) fixed;
-    background: -moz-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,204,79,1)), color-stop(100%, rgba(252,232,133,1)));
-    background: -webkit-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
-    background: -o-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
-    background: -ms-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
-    background: linear-gradient(to bottom, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
+	background: rgba(254,204,79,1) fixed;
+	background: -moz-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,204,79,1)), color-stop(100%, rgba(252,232,133,1)));
+	background: -webkit-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
+	background: -o-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
+	background: -ms-linear-gradient(top, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
+	background: linear-gradient(to bottom, rgba(254,204,79,1) 0%, rgba(252,232,133,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', endColorstr='#fce885', GradientType=0 );
-    color: #7b4520;
+	color: #7b4520;
 }
 .watersand {
-    background: url(water-sand.png) repeat-x top center;
-    height: 19px;
+	background: url(water-sand.png) repeat-x top center;
+	height: 19px;
 }
 .page-wrapper a, .page-wrapper a:visited {
-    text-decoration: underline;
-    color: #7b4520;
-    font-weight: 400;
+	text-decoration: underline;
+	color: #7b4520;
+	font-weight: 400;
 }
-.page-wrapper a:hover, .page-wrapper a:focus {
-    color: #29190a;
+.page-wrapper a:hover, .page-wrapper a:focus, .minutes a:hover, .minutes a:focus {
+	color: #29190a;
 }
 .kickoff-wrapper {
-    background: #5495bf;
-    color: #fff;
+	background: #5495bf;
+	color: #fff;
 }
-.page-wrapper h1, .page-wrapper h2, .page-wrapper h3, .page-wrapper h4, .page-wrapper h5, .modal-content h1, .modal-content h2, .modal-content h3, .modal-content h4, .modal-content h5 {
-    color: #7b4520;
+.page-wrapper h1, .page-wrapper h2, .page-wrapper h3, .page-wrapper h4, .page-wrapper h5, .modal-content h1, .modal-content h2, .modal-content h3, .modal-content h4, .modal-content h5, .minutes h1, .minutes h2, .minutes h3, .minutes h4, .minutes h5 {
+	color: #7b4520;
 }
 #register {
-    position: relative;
-    top: -30px;
+	position: relative;
+	top: -30px;
 }
 .banner {
-    position: relative;
-    top: 10px;
-    z-index: 2;
+	position: relative;
+	top: 10px;
+	z-index: 2;
 }
 .banner:hover {
-    transform: scale(1.03);
-    transition: all .4s ease-in-out;
+	transform: scale(1.03);
+	transition: all .4s ease-in-out;
 }
 .table-bordered {
-    border: 1px solid #fff;
+	border: 1px solid #fff;
 }
 .prize-table {
-    background: #5495bf;
-    color: #fff;
+	background: #5495bf;
+	color: #fff;
 }
+	.goal {position: relative; top: -35px;}
 .kids {
-    position: relative;
-    top: -70px;
-    z-index: 5;
+	position: relative;
+	top: -70px;
+	z-index: 5;
 }
 .cat img {
-    position: relative;
-    bottom: -15px;
+	position: relative;
+	bottom: -15px;
 }
 .modal-content {
-    background: #fde6be url(texture.png) repeat;
-    color: #7b4520;
+	background: #fde6be url(texture.png) repeat;
+	color: #7b4520;
 }
 .modal-header {
-    border-bottom: none;
+	border-bottom: none;
 }
 .modal .close {
-    color: #7b4520;
+	color: #7b4520;
 }
 .btn-primary {
-    background-color: #a23f22;
+	background-color: #a23f22;
 }
 .btn-primary:hover, .b {
-    background-color: #87351c;
+	background-color: #87351c;
 }
 .kids:hover {
-    transform: scale(1.05);
-    transition: all .4s ease-in-out;
+	transform: scale(1.05);
+	transition: all .4s ease-in-out;
 }
 .rotate-vert-center {
-    -webkit-animation: rotate-vert-center 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
-    animation: rotate-vert-center 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
+	-webkit-animation: rotate-vert-center 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
+	animation: rotate-vert-center 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
 }
 @-webkit-keyframes rotate-vert-center {
  0% {
@@ -182,8 +186,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
 }
 }
 .hovershake:hover {
-    -webkit-animation: hovershake 0.3s linear infinite both;
-    animation: hovershake 0.3s linear infinite both;
+	-webkit-animation: hovershake 0.3s linear infinite both;
+	animation: hovershake 0.3s linear infinite both;
 }
  @-webkit-keyframes hovershake {
  0% {
@@ -240,19 +244,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
 
 @media (max-width: 475px) {
 .kids {
-    position: relative;
-    top: 0;
-    z-index: 5;
+	position: relative;
+	top: 0;
+	z-index: 5;
 }
 #register {
-    position: relative;
-    top: 0;
+	position: relative;
+	top: 0;
 }
 }
 
 @media (min-width: 768px) {
 .reg {
-    margin-top: 100px;
+	margin-top: 100px;
 }
 }
 </style>
@@ -456,16 +460,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
       <div class="col-sm-15 padding-bottom-15"><a href="https://wandooreader.com/douglascountylibraries/escape-to-neverland-teens-adults/users/registrations/new" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="teen-adult-registration.png" alt="Teen & Adult Registration"></a> </div>
       <div class="col-sm-15 padding-bottom-15 reg"><a href="https://douglascountylibraries.evanced.info/reader/family" target="_blank"><img class="rotate-vert-center hovershake img-responsive image-center img-circle" src="family-management-tool.png" alt="Family Management Tool"></a> </div>
     </div>
-    <div id="why-we-read" class="container padding-bottom-30">
+    <div id="why-we-read" class="container padding-bottom-60">
       <h2 class="lobster no-margin-bottom text-center">Why We Read</h2>
       <div class="col-xs-12 ">
         <h5 class="margin-lg-200">Summer reading is fun and playful — you can read anything you like! We encourage kids and adults alike to be creative with it and to make connections through entertaining events and activities. </h5>
       </div>
-      <div class="col-md-6">Kids, print a reading log and then read for 720 minutes or complete fun alternate activities to finish the program and win prizes. Readers ages 13 and up can read for 900 minutes to win a limited edition DCL book bag. Print a bookmark or track your minutes and finish online. </div>
-      <div class="col-md-6">Help your school win a $250 prize in our new school contest. You can also help us reach our community reading goal of 7 million minutes. If we reach the goal, Douglas County Libraries Foundation will donate $500 to the Denver Dumb Friends League Buddy Center. Get reading! </div>
+      <div class="col-md-6">Kids, <a href="summer-reading-log-kids.pdf" target="_blank">print a reading log</a> and then read for 720 minutes or complete fun alternate activities to finish the program and <a href="#prizes">win prizes</a>. Readers ages 13 and up can read for 900 minutes to win a limited edition DCL book bag. <a href="summer-reading-log-teen-adult.pdf" target="_blank">Print a bookmark</a> or track your minutes and finish online. </div>
+      <div class="col-md-6">Help your school win a $250 prize in our new <a href="#contest">school contest</a>. You can also help us reach our <a href="#ddfl">community reading goal</a> of 7 million minutes. If we reach the goal, Douglas County Libraries Foundation will donate $500 to the Denver Dumb Friends League Buddy Center. Get reading! </div>
     </div>
   </div>
-  <div class="row padding-top-30 padding-bottom-30 prize-table">
+  <div id="prizes" class="row padding-top-30 padding-bottom-30 prize-table">
     <h1 class="lobster white no-margin text-center padding-bottom-15">Summer Reading Prizes</h1>
     <div class="container table-responsive table-condensed">
       <table class="table table-bordered">
@@ -495,23 +499,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecc47', end
   <div class="row watersand"></div>
   <div id="community-fun" class="row page-wrapper padding-bottom-40">
     <div class="container padding-top-30 text-center">
-      <div><img class="img-responsive image-center" src="bernard.png" alt="Bernard the Cat">
+      <div id="contest"><img class="img-responsive image-center" src="bernard.png" alt="Bernard the Cat">
         <h1 class="lobster no-margin-top">Contest: School Treasure!</h1>
-        <h5 class="no-margin">Help your school win some booty! It's easy — all you have to do is register for summer reading. The school with the most Summer Reading Program sign-ups by July 31 wins $250. Be sure to include your school name and your grade when registering online so your school gets credit. Winner will be announced in August. Fair winds, matey!</h5><h5> <a style="text-decoration: none;" data-toggle="modal" data-target="#restrictions" href="#" class="text-uppercase">Some rules and restrictions apply &raquo;</a></h5>
-      </div>
-      <div id="ddfl" class="padding-top-15 padding-bottom-30 text-center"><img class="img-responsive image-center" src="boxcar-charlie.png" alt="Boxcar Charlie the Pirate Dog">
-        <h1 class="lobster no-margin-top">DCL Community Goal: 7 Million Minutes </h1>
-        <div class="row bg-gray-5 padding-top-30 padding-bottom-30">
-          <div class="container">Minutes graphic goes here 1-7M</div>
-        </div>
-        <h5>Help us read for a cause this year. Once we reach 7 million minutes, the Douglas County Libraries Foundation will donate $500 to the Denver Dumb Friends League Buddy Center in Castle Rock to help our furry friends in need. Track your reading time online when you register for the reading program. We've got this! </h5>
-        <a href="https://www.ddfl.org/" target="_blank"><img class="img-responsive image-center" src="dumb-friends-league.png" alt="Denver Dumb Friends League Buddy Center"></a> </div>
-      <div class="padding-top-15 padding-bottom-30 text-center">
-        <h1 class="lobster">Quiz: Which Peter Pan Character Are You?</h1>
-        <h5>Who would you be in Never Never Land? Take our quiz to find out. </h5>
+        <h5 class="no-margin">Help your school win some booty! It's easy — all you have to do is register for summer reading. The school with the most Summer Reading Program sign-ups by July 31 wins $250. Be sure to include your school name and your grade when registering online so your school gets credit. Winner will be announced in August. Fair winds, matey!</h5>
+        <h5> <a style="text-decoration: none;" data-toggle="modal" data-target="#restrictions" href="#" class="text-uppercase">Some rules and restrictions apply &raquo;</a></h5>
       </div>
     </div>
   </div>
+  <div id="ddfl" class="row minutes padding-top-60 padding-bottom-40 text-center">
+    <div class="container">
+      <h1 class="lobster no-margin-top">DCL Community Goal: 7 Million Minutes </h1>
+		<h5>Help us read for a cause this year. Once we reach 7 million minutes, the Douglas County Libraries Foundation will donate $500 to the Denver Dumb Friends League Buddy Center in Castle Rock to help our furry friends in need. Track your reading time online when you register for the reading program.<br>We've got this! </h5>
+      </div><img class="goal img-responsive image-center hidden-xs hidden-sm" src="community-reading-goal.png" alt="Help Us Reach Our Goal"> <img class="img-responsive image-center hidden-lg hidden-md" src="community-reading-goal-small.png" alt="Help Us Reach Our Goal"><div class="container">
+      
+      <a href="https://www.ddfl.org/" target="_blank"><img class="img-responsive image-center hidden-lg hidden-md" src="dumb-friends-league.png" alt="Denver Dumb Friends League Buddy Center"></a> </div>
+  </div>
+  <div class="row prize-table padding-top-15 padding-bottom-30 text-center">
+    <h1 class="lobster white">Quiz: Which Peter Pan Character Are You?</h1>
+    <h5 class="white">Who would you be in Never Never Land? <a class="white text-underline" href="quiz/">Take our quiz to find out</a>. </h5>
+  </div>
+  
   <!-- Modal -->
   <div id="restrictions" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
