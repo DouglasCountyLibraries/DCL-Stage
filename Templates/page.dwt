@@ -212,10 +212,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     </div>
   </div>
 </nav>
-<!-- End Mobile Navbar --> 
-<!-- TemplateBeginEditable name="Content" -->
-<div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">Content goes here</div>
-<!-- TemplateEndEditable -->
+<!-- End Mobile Navbar -->
+<div class="container-fluid"> <!-- TemplateBeginEditable name="Content" -->
+  <div class="row text-center bg-gray-5 padding-top-100 padding-bottom-100">Content goes here</div>
+  <!-- TemplateEndEditable --></div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
     <div class="col-sm-6">
@@ -271,7 +271,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </div>
 <!-- TemplateBeginEditable name="scripts" --> <!-- TemplateEndEditable --> 
 <!-- Structured Data --> 
-
 <!-- End Structured Data -->
 </body>
 </html>
