@@ -2299,6 +2299,23 @@ body .lightbox .lb-image {
 .s-la-navbrowse, .form-control, .input-group .form-control:not(:first-child):not(:last-child), .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
 	border-radius: 0;
 }
+:target {
+    -webkit-animation-name: link-highlight; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: link-highlight;
+    animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes link-highlight {
+    from {background-color: red;}
+    to {background-color: transparent;}
+}
+
+/* Standard syntax */
+@keyframes link-highlight {
+    from {background-color: red;}
+    to {background-color: transparent;}
+}
 
 /* ====== media queries ====== */
 @media (min-width: 480px) {
@@ -2656,3 +2673,4 @@ h1.entry-title {
 	width: 50%;
 }
 }
+
