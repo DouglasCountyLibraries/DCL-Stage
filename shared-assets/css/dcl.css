@@ -2300,22 +2300,9 @@ body .lightbox .lb-image {
 	border-radius: 0;
 }
 :target {
-    -webkit-animation-name: link-highlight; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: link-highlight;
-    animation-duration: 4s;
-}
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes link-highlight {
-    from {background-color: red;}
-    to {background-color: transparent;}
+border: 2px solid red;
 }
 
-/* Standard syntax */
-@keyframes link-highlight {
-    from {background-color: red;}
-    to {background-color: transparent;}
-}
 
 /* ====== media queries ====== */
 @media (min-width: 480px) {
