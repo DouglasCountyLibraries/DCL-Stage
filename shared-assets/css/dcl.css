@@ -2300,8 +2300,8 @@ body .lightbox .lb-image {
 	border-radius: 0;
 }
 :target .highlight {
-    -webkit-animation: target-fade 8s 1;
-    -moz-animation: target-fade 8s 1;
+    -webkit-animation: target-fade 4s 1;
+    -moz-animation: target-fade 4s 1;
 }
 @-webkit-keyframes target-fade {
     0% { background-color: rgba(211,106,80,1); color: #fff; }
