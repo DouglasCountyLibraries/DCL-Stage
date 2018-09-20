@@ -12,6 +12,12 @@
 // pull the alert into the global-alert div
 /* ------------------------------------------------------------ */
 
+$(function() {
+    $(document).scrollTop( $("#").offset().top );  
+});
+
+
+
 jQuery.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     /*alert( "Data Loaded: " + data );*/
