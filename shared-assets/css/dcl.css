@@ -2304,13 +2304,13 @@ body .lightbox .lb-image {
     -moz-animation: target-fade 4s 1;
 }
 @-webkit-keyframes target-fade {
-    0% { background-color: rgba(211,106,80,1); color: #fff; }
-	80% { background-color: rgba(211,106,80,1); color: #fff; }
+    0% { background-color: #d36a50; color: #fff; }
+	80% { background-color: #d36a50; color: #fff; }
     100% { background-color: transparent; }
 }
 @keyframes target-fade {
-    0% { background-color: rgba(211,106,80,1); color: #fff; }
-	80% { background-color: rgba(211,106,80,1); color: #fff; }
+    0% { background-color: #d36a50; color: #fff; }
+	80% { background-color: #d36a50; color: #fff; }
     100% { background-color: transparent; }
 }
 
