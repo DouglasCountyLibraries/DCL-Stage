@@ -2304,11 +2304,11 @@ body .lightbox .lb-image {
     -moz-animation: target-fade 8s 1;
 }
 @-webkit-keyframes target-fade {
-    0% { background-color: rgba(0,0,0,.3); }
+    0% { background-color: rgba(211,106,80,.3); color: #fff; }
     100% { background-color: rgba(0,0,0,0); }
 }
 @keyframes target-fade {
-    0% { background-color: rgba(0,0,0,.3); }
+    0% { background-color: rgba(211,106,80,.3); color: #fff; }
     100% { background-color: rgba(0,0,0,0); }
 }
 
