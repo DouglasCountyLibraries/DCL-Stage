@@ -12,10 +12,10 @@
 // pull the alert into the global-alert div
 /* ------------------------------------------------------------ */
 
-$(function() {
-    $(document).scrollTop( $("#").offset().top );  
-});
 
+$(document).ready(function() {
+$("html, body").animate({scrollTop:$(window.location.hash).offset().top-offsetSize }, 500);
+});
 
 
 jQuery.get("https://s3.amazonaws.com/website.alert/alert.txt")
