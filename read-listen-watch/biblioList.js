@@ -82,7 +82,7 @@ function doBiblioList(val) {
     //Noteworthy|New & Noteworthy||5|True|Biblio|975832667|10
     //ListenToThis|Listen To This||5|True|Biblio|963743517|10
     //NowFeaturing|Now Featuring||5|True|Biblio|/991669947|24
-    //EpicReads|Epic Reads||5|True|Biblio|994069717|10
+    //GreatBooksGreatKids|GreatBooksGreatKids||5|True|Biblio|994069717|10
     title = val.DisplayName;
     if (val.KeyName == 'Noteworthy') {
         var myel = $('#Noteworthy').append(createPreShelf(title, val.KeyName, '10'));
@@ -217,7 +217,7 @@ function getRandomCollectionList(KeyName, divid) {
                     $('#covers-ListenToThis').append(createBookList(val, KeyName));
                 }
                 if (KeyName == "GreatBooksGreatKids") {
-                    $('#covers-EpicReads').append(createBookList(val, KeyName));
+                    $('#covers-GreatBooksGreatKids').append(createBookList(val, KeyName));
                 }
               
             }
