@@ -108,11 +108,11 @@ function doBiblioList(val) {
         getRandomCollectionList(val.KeyName, '10');
         $('#StorytimeFavorites').append(createPostShelves(title));
     }
-    if (val.KeyName == 'EpicReads') {
-        var myel = $('#EpicReads').append(createPreShelf(title, val.KeyName, '10'));
+    if (val.KeyName == 'GreatBooksGreatKids') {
+        var myel = $('#GreatBooksGreatKids').append(createPreShelf(title, val.KeyName, '10'));
         console.log('val', val.KeyName)
         getRandomCollectionList(val.KeyName, '10');
-        $('#EpicReads').append(createPostShelves(title));
+        $('#GreatBooksGreatKids').append(createPostShelves(title));
     }	
 }
 function getCollectionSet() {
@@ -216,7 +216,7 @@ function getRandomCollectionList(KeyName, divid) {
                 if (KeyName == "ListenToThis") {
                     $('#covers-ListenToThis').append(createBookList(val, KeyName));
                 }
-                if (KeyName == "EpicReads") {
+                if (KeyName == "GreatBooksGreatKids") {
                     $('#covers-EpicReads').append(createBookList(val, KeyName));
                 }
               
