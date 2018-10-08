@@ -61,8 +61,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background-color: #f5f5f5;
 }
 #eventsinfo {
-	/*overflow:auto;*/
 	float: left;	/* Set float so eventtime DIV will appear to the right of event title */
+}
+/* Large */
+.eventList.width {
+	display: flex;/* This aligns items to the end line on main-axis */
+}
+
+@media all and (max-width: 992px) {
+.eventList.width {
+	/* On small screens, we are no longer using row direction but column */
+	flex-direction: column;
+}
 }
 #eventsinfo .item .title {
 	font-family: "Roboto Slab", palantino, serif;
@@ -83,7 +93,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 8px 0;
 }
 #eventsinfo .item {
-	font-size: 0px;
+	background-color: #fff;
+	font-size: 0px; /* hides "-" character */
+	margin: 5px;
+	padding: 15px;
 }
 #eventsinfo .time {
 	font-size: 16px;
@@ -268,7 +281,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
     <div class="container padding-bottom-30">
-      <div class="col-md-6 padding-top-30"><img class="img-responsive" src="https://placehold.it/800x400"></div>
+      <div class="col-md-6 padding-top-30"><img class="img-responsive" src="https://placehold.it/800x500"></div>
       <div class="col-md-6">
         <h1 class="font-weight-400 text-capitalize fade-in-text">Parker</h1>
         <div class="text-uppercase">Manager: Amy Long <a href="tel:+13037917323" class="margin-left-5">(303) 791-7323</a></div>
@@ -279,20 +292,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
         <div><span class="margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
           <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
           <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5">
-    <div class="container padding-bottom-30">
-      <div class="col-md-6 padding-top-30">
-        <h5 class="no-margin text-uppercase"> <a href="#" class="show" data-toggle="modal" data-target="#storytime-modal"><i class="fas fa-comment fa-flip-horizontal"></i>Storytime</a> </h5>
-        <h5 class="no-margin text-uppercase"><a class="show" href="../reserve-a-space"><i class="fas fa-check-square"></i>Reserve a Space</a></h5>
-        <h5 class="no-margin text-uppercase"><a class="show" href="../used-book-sales"><i class="fas fa-book"></i>Used Book Sales</a></h5>
-      </div>
-      <div class="col-md-6">
         <div>
-          <div id="eventsinfo"></div>
-          <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Parker-Event&ag=&et=&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
+          <h5 class=""> <a href="#" class="show" data-toggle="modal" data-target="#storytime-modal"><i class="fas fa-comment fa-flip-horizontal"></i>Storytime</a> </h5>
+          <h5 class=""><a class="show" href="../reserve-a-space"><i class="fas fa-check-square"></i>Reserve a Space</a></h5>
+          <h5 class=""><a class="show" href="../used-book-sales"><i class="fas fa-book"></i>Used Book Sales</a></h5>
         </div>
       </div>
     </div>
@@ -334,6 +337,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
         <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
+    </div>
+  </div>
+  <div class="row bg-gray-20 padding-top-30 padding-bottom-30">
+    <div class="container no-padding">
+      <div id="eventsinfo"></div>
+      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Parker-Event&ag=&et=&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
     </div>
   </div>
   <div id="art" class="row padding-top-30 padding-bottom-40">
@@ -416,10 +425,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" -->
-	<script>
+<!-- InstanceBeginEditable name="scripts" --> 
+<script>
 $("#eventsinfo a[href^='https://']").attr("target","_blank");
-	</script>
+	</script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
