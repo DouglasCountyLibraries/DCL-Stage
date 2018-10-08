@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,11 +60,36 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-.tax-notice {
-	color: #fff;
-	text-align: center;
-	padding: 10px 0 10px;
-	font-size: 1.2em;
+#eventsinfo {
+	/*overflow:auto;*/
+	float: left;	/* Set float so eventtime DIV will appear to the right of event title */
+}
+#eventsinfo .item .title {
+	font-family: "Roboto Slab", palantino, serif;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: -0.4px;
+	text-rendering: optimizeLegibility;
+}
+#eventsinfo #eventdate {
+	font-size: 16px;
+	text-align: left;
+	padding-right: 20px;
+	float: left;
+}
+#eventsinfo .description {
+	font-size: 16px;
+	margin: 8px 0;
+}
+#eventsinfo .item {
+	font-size: 0px;
+}
+#eventsinfo .time {
+	font-size: 16px;
+}
+#eventsinfo .location, #eventsinfo .branch, .description br {
+	display: none;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -240,26 +266,34 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row location-background padding-top-15 padding-bottom-40">
-    <div class="container text-center">
-      <h1 class="no-margin-bottom font-weight-400 white text-capitalize fade-in-text">Parker</h1>
-      <div class="white font-weight-500 text-uppercase margin-bottom-10">Manager: Amy Long <a href="tel:+13037917323" class="white margin-left-5">(303) 791-7323</a></div>
-      <h4 class="white font-weight-400 margin-lg-100">This library is home to <a class="white text-underline" href="../reserve-a-space#recording-studio">The Recording Studio</a>, where patrons can use state-of-the-art software and equipment to create videos, musical compositions, animations, e-books and more.</h4>
+  <div class="row border-top">
+    <div class="container padding-bottom-30">
+      <div class="col-md-6 padding-top-30"><img class="img-responsive" src="https://placehold.it/800x400"></div>
+      <div class="col-md-6">
+        <h1 class="font-weight-400 text-capitalize fade-in-text">Parker</h1>
+        <div class="text-uppercase">Manager: Amy Long <a href="tel:+13037917323" class="margin-left-5">(303) 791-7323</a></div>
+        <div>This library is home to <a href="../reserve-a-space#recording-studio">The Recording Studio</a>, where patrons can use state-of-the-art software and equipment to create videos, musical compositions, animations, e-books and more.</div>
+        <div itemscope itemtype="http://schema.org/PostalAddress">
+          <div> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a></div>
+        </div>
+        <div><span class="margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
+          <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
+          <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></div>
+      </div>
     </div>
   </div>
-  <div class="row no-gutter sub-nav-row">
-    <div class="sub-nav">
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border-first equal-height">
+  <div class="row bg-gray-5">
+    <div class="container padding-bottom-30">
+      <div class="col-md-6 padding-top-30">
         <h5 class="no-margin text-uppercase"> <a href="#" class="show" data-toggle="modal" data-target="#storytime-modal"><i class="fas fa-comment fa-flip-horizontal"></i>Storytime</a> </h5>
-      </div>
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../reserve-a-space"><i class="fas fa-check-square"></i>Reserve a Space</a></h5>
-      </div>
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=2,3,7,15,16,18,20,22,24,25,35,36,37&lib=1005" target="_blank" class="show"><i class="fas fa-calendar"></i>Parker Events Calendar</a></h5>
-      </div>
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../used-book-sales"><i class="fas fa-book"></i>Used Book Sales</a></h5>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <div id="eventsinfo"></div>
+          <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Parker-Event&ag=&et=&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
+        </div>
       </div>
     </div>
   </div>
@@ -302,57 +336,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
         <a class="text-uppercase" href="../storytime">View Storytime Hours at all Locations &raquo;</a> </div>
     </div>
   </div>
-  <div class="row bg-gray-10 padding-top-30 padding-bottom-30">
-    <div class="container">
-      <div class="text-center">
-        <div itemscope itemtype="http://schema.org/PostalAddress">
-          <h1 class="roboto no-margin-top"> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a></h1>
-        </div>
-        <h4 class="text-uppercase no-margin-top"><span class="margin-left-10 margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
-          <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
-          <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></h4>
-      </div>
-    </div>
-  </div>
-  <!--
-  ###############################
-  ##### Two Featured Items ######
-  ###############################
-       --> 
-  <!-- two featured items event row start -->
-  <div id="events" class="row event-row bg-teal"> 
-    <!-- block 1 start -->
-    <div class="col-md-6 bg-lavender equal-height">
-      <div class="two-featured-items">
-        <div class="icon-circle-default" style="padding: 2px 0px 0px 1px;"><i class="fas fa-yin-yang"></i></div>
-        <h1 class="roboto">Learn About: Feng Shui</h1>
-        <div>Learn to incorporate the practice of Feng Shui for health and wellness. <span class="text-uppercase">Adults.</span> </div>
-        <div>Saturday, October 13, 2PM.</div>
-        <div><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=131742" target="_blank" class="btn btn-default">Register Now</a></div>
-      </div>
-    </div>
-    <!-- block 1 end --> 
-    <!-- block 2 start -->
-    <div class="col-md-6 bg-teal equal-height">
-      <div class="two-featured-items">
-        <div style="padding:2px 0px 0px 1px;" class="icon-circle-default"><i class="fas fa-pencil-alt"></i></div>
-        <h1 class="roboto">Writing Workshop Series</h1>
-        <div>Author-guided workshops for writing children's fantasy, teen and adult fiction, and mystery. <span class="text-uppercase">Adults. </span></div>
-        <div>Thursdays, 6:30PM.</div>
-        <div><a href="http://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=writing&lib=1005&nd=45" target="_blank" class="btn btn-default">Register Now</a></div>
-      </div>
-    </div>
-    <!-- block 2 end --> 
-  </div>
-  <!-- two featured items event row end --> 
-  <!--
-  ###############################
-  ###############################
-  ###############################
-       -->
-	
   <div id="art" class="row padding-top-30 padding-bottom-40">
-	  <div class="container text-center"><div><h1 class="text-uppercase font-weight-400 no-margin">Shilpa Gadgil</h1><div>On display through October 5</div><img class="img-responsive shadow-low image-center margin-top-15 margin-bottom-15" src="gadgil.jpg" alt="Shilpa Gadgil"><div>Shilpa’s artwork focuses on the two types of tribal art from India: Warli and Madhubani. Warli originates from the state of Maharashtra. Artists there use white chalk with their hands on clay walls to recreate scenes of daily life. Madhubani originates from the Mithila region in northern India and Nepal, and reconstructs mythological scenes and the natural world.</div></div>
+    <div class="container text-center">
+      <div>
+        <h1 class="text-uppercase font-weight-400 no-margin">Shilpa Gadgil</h1>
+        <div>On display through October 5</div>
+        <img class="img-responsive shadow-low image-center margin-top-15 margin-bottom-15" src="gadgil.jpg" alt="Shilpa Gadgil">
+        <div>Shilpa’s artwork focuses on the two types of tribal art from India: Warli and Madhubani. Warli originates from the state of Maharashtra. Artists there use white chalk with their hands on clay walls to recreate scenes of daily life. Madhubani originates from the Mithila region in northern India and Nepal, and reconstructs mythological scenes and the natural world.</div>
+      </div>
       <h4 class="roboto margin-lg-200">Douglas County Libraries supports the arts by featuring stunning public art and donating display space at select branches for local artists.</h4>
       <button data-target="#artModal" data-toggle="modal" class="btn btn-primary text-uppercase margin-top-10" type="button">Exhibit Your Work</button>
       <!-- Modal -->
@@ -429,4 +420,5 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- Structured Data --> 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

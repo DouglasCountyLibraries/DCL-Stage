@@ -1476,26 +1476,9 @@ h6.responsive-text {
 	background-color: #fff;
 }
 /* ====== evanced feed ====== */
-#eventtitle {
-	color: #888888;
-	font-size: 22px;
-	font-weight: 300;
-	margin-top: 20px;
-}
-#eventtime, #eventdate, #eventlibrary, #eventlocation {
-	color: #999;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-#eventlocation::after {
-	content: " - ";
-}
-#eventtime, #eventdate, #eventlocation, #eventlibrary {
-	display: inline;
-}
-#eventdate {
-	margin-right: 20px;
-}
+
+
+
 /* ====== alert color classes ====== */
 #global-alert {
 	color: #fff;
