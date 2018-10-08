@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,7 +65,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* Large */
 .eventList.width {
-	display: flex;/* This aligns items to the end line on main-axis */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 @media all and (max-width: 992px) {
@@ -353,13 +358,20 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     </div>
   </div>
   <div id="events" class="row bg-teal padding-bottom-60">
-	  <div class="container no-padding"><h1 class="white text-uppercase text-center font-weight-400">Featured Parker Events</h1>
+    <div class="container no-padding">
+      <h1 class="white text-uppercase text-center font-weight-400">Featured Branch Events</h1>
       <div id="eventsinfo"></div>
       <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Parker-Event&ag=&et=&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
     </div>
   </div>
   <div id="art" class="row padding-top-30 padding-bottom-40">
-	  <div class="container text-center"><div><h1 class="text-uppercase font-weight-400 no-margin">Shilpa Gadgil</h1><div>On display through October 5</div><img class="img-responsive shadow-low image-center margin-top-15 margin-bottom-15" src="gadgil.jpg" alt="Shilpa Gadgil"><div>Shilpa’s artwork focuses on the two types of tribal art from India: Warli and Madhubani. Warli originates from the state of Maharashtra. Artists there use white chalk with their hands on clay walls to recreate scenes of daily life. Madhubani originates from the Mithila region in northern India and Nepal, and reconstructs mythological scenes and the natural world.</div></div>
+    <div class="container text-center">
+      <div>
+        <h1 class="text-uppercase font-weight-400 no-margin">Shilpa Gadgil</h1>
+        <div>On display through October 5</div>
+        <img class="img-responsive shadow-low image-center margin-top-15 margin-bottom-15" src="gadgil.jpg" alt="Shilpa Gadgil">
+        <div>Shilpa’s artwork focuses on the two types of tribal art from India: Warli and Madhubani. Warli originates from the state of Maharashtra. Artists there use white chalk with their hands on clay walls to recreate scenes of daily life. Madhubani originates from the Mithila region in northern India and Nepal, and reconstructs mythological scenes and the natural world.</div>
+      </div>
       <h4 class="roboto margin-lg-200">Douglas County Libraries supports the arts by featuring stunning public art and donating display space at select branches for local artists.</h4>
       <button data-target="#artModal" data-toggle="modal" class="btn btn-primary text-uppercase margin-top-10" type="button">Exhibit Your Work</button>
       <!-- Modal -->
@@ -432,7 +444,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" -->
+<!-- InstanceBeginEditable name="scripts" --> 
 <script>
 $("#eventsinfo a[href^='https://']").attr("target","_blank");
 	</script> 
@@ -440,4 +452,5 @@ $("#eventsinfo a[href^='https://']").attr("target","_blank");
 <!-- Structured Data --> 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
