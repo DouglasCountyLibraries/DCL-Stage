@@ -364,37 +364,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <!--
-  ###############################
-  ##### Two Featured Items ######
-  ###############################
-       --> 
-  <!-- two featured items event row start -->
-  <div id="events" class="row event-row bg-teal"> 
-    <!-- block 1 start -->
-    <div class="col-md-6 bg-lavender equal-height">
-      <div class="two-featured-items">
-        <div style="padding:1px 0px 0px 1px;" class="icon-circle-default"><i style="padding:0px 0px 15px 0px;" class="material-icons">local_florist</i></i></div>
-        <h1 class="roboto">Aloha! Hawaiian Celebration</h1>
-        <div>Celebrate Hawaiian culture with crafts, traditional hula performances, and live music. <span class="text-uppercase">All Ages.</span> </div>
-        <div>Saturday, August 11, 11AM.</div>
-        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=138808" target="_blank" class="btn btn-default">Register Now</a></div>
-      </div>
+  <div id="events" class="row bg-lavender">
+    <div class="container no-padding">
+      <h1 class="white text-uppercase text-center font-weight-400">Featured Branch Events</h1>
+      <div id="eventsinfo"></div>
+      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Highlands-Ranch-Event&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
     </div>
-    <!-- block 1 end --> 
-    <!-- block 2 start -->
-    <div class="col-md-6 bg-teal equal-height">
-      <div class="two-featured-items">
-        <div style="padding:0px 0px 0px 0px;" class="icon-circle-default"><i style="padding:0px 0px 16px 0px;" class="material-icons">local_library</i></div>
-        <h1 class="roboto">Book Clubs</h1>
-        <div>Find a club to suit your age or reading taste. </div>
-        <div><a href="../book-clubs/" class="btn btn-default">View List</a></div>
-      </div>
-    </div>
-    <!-- block 2 end --> 
   </div>
-  <!-- two featured items event row end --> 
-  
   <!-- InstanceEndEditable --></div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -449,7 +425,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" -->
+<script>
+$("#eventsinfo a[href^='https://']").attr("target","_blank");
+</script>
+<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
 </body>

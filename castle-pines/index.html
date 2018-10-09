@@ -307,43 +307,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <!--
-  ###############################
-  ##### Two Featured Items ######
-  ###############################
-       --> 
-  <!-- two featured items event row start -->
-  <div id="events" class="row event-row bg-teal"> 
-    <!-- block 1 start -->
-    <div class="col-md-6 bg-lavender equal-height">
-      <div class="two-featured-items">
-        <div style="padding:2px 0px 0px 1px;" class="icon-circle-default"><i class="fa fa-sun-o"></i></div>
-        <h1 class="roboto">The Great Outdoors</h1>
-        <div>Learn clever ways to prep your food and supplies for no-fuss meals and snacks on your next camping adventure. <span class="text-uppercase">All ages.</span> </div>
-        <div>Thursday, August 2, 5PM.</div>
-        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=128953" target="_blank" class="btn btn-default">Register Now</a></div>
-      </div>
+  <div id="events" class="row bg-lavender">
+    <div class="container no-padding">
+      <h1 class="white text-uppercase text-center font-weight-400">Featured Branch Events</h1>
+      <div id="eventsinfo"></div>
+      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Castle-Pines-Event&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
     </div>
-    <!-- block 1 end --> 
-    <!-- block 2 start -->
-    <div class="col-md-6 bg-teal equal-height">
-      <div class="two-featured-items">
-        <div style="padding:0px 0px 0px 0px;" class="icon-circle-default"><i class="fa fa-tree"></i></div>
-        <h1 class="roboto">Lawn & Landscape Lessons</h1>
-        <div>Get expert tips and advice for pruning trees and shrubs. <span class="text-uppercase">Adults.</span> </div>
-        <div>Thursday, August 16, 10AM.</div>
-        <div><a href="http://douglascountylibraries.evanced.info/signup/EventDetails?EventId=134180" target="_blank" class="btn btn-default">Register Now</a></div>
-      </div>
-    </div>
-    <!-- block 2 end --> 
   </div>
-  <!-- two featured items event row end --> 
-  <!--
-  ###############################
-  ###############################
-  ###############################
-       --> 
-  
   <!-- InstanceEndEditable --></div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -401,9 +371,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="scripts" --> 
 <script>
 $(function () {
-  $('[data-toggle="popover"]').popover()
+  $('[data-toggle="popover"]').popover();
+  $("#eventsinfo a[href^='https://']").attr("target","_blank");
 })
- </script> 
+ </script>
+
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
