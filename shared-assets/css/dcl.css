@@ -1477,9 +1477,6 @@ h6.responsive-text {
 }
 /* ====== evanced feed ====== */
 
-#eventsinfo {
-	float: left;	/* Set float so eventtime DIV will appear to the right of event title */
-}
 .eventList.width {
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
@@ -1512,6 +1509,12 @@ h6.responsive-text {
 }
 #eventsinfo .time {
 	font-size: 16px;
+}
+#eventsinfo #noevent {
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 #eventsinfo .location, #eventsinfo .branch, .description br {
 	display: none;
