@@ -374,10 +374,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>$("#eventsinfo .item").click(function() {
-  window.location = $(this).find("a").attr( "href","target","_blank" );	
-  return false;
-	});</script> 
+<script>
+function OpenInNewTab(url )
+{
+  var win=window.open(url, '_blank');
+  win.focus();
+}
+
+$("#eventsinfo .item").click(function(){
+     var url = $(this).find("a").attr("href");
+     OpenInNewTab(url);
+     return false;
+});
+	</script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
