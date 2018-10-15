@@ -373,10 +373,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" -->
-<script>
-$("#eventsinfo a[href^='https://']").attr("target","_blank");
-</script>
+<!-- InstanceBeginEditable name="scripts" --> 
+<script>$("#eventsinfo .item").click(function() {
+  window.location = $(this).find("a").attr( "href","target","_blank" );	
+  return false;
+	});</script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
