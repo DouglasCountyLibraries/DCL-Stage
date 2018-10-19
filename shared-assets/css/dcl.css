@@ -79,7 +79,7 @@ table.dataTable thead th, table.dataTable thead td {
 	padding: 0px 18px;
 }
 .table.board-table.table-striped > tbody > tr:nth-of-type(2n+1) {
-	background-color:  rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,.1);
 }
 .table.board-table.table-striped > tbody > tr > td {
 	border-top: 0;
@@ -2576,6 +2576,10 @@ h1.entry-title {
 .margin-lg-100 {
 	padding-left: 100px;
 	padding-right: 100px;
+}
+.margin-lg-150 {
+	padding-left: 150px;
+	padding-right: 150px;
 }
 .margin-lg-200 {
 	padding-left: 200px;
