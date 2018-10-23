@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,6 +53,25 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
+}
+.gray-circle {
+	border: 10px solid #f5f5f5;
+}
+.white-circle {
+	border: 10px solid #fff;
+}
+.bottom-bkg {
+	background: #fff url(bkg.gif) center bottom repeat-x;
+}
+.top-bkg {
+	background: #fff url(bkg.gif) center top repeat-x;
+}
+.library-card {
+	border: 3px solid #999;
+	border-radius: 10px;
+	transform: rotate(-30deg);
+	z-index: -1;
+	box-shadow: 1px 5px 8px 1px rgba(0,0,0,.2);
 }
 .icon-circle-moss {
 	background-color: #90ad63;
@@ -245,13 +265,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
     <div class="container">
-      <div class="text-center">
+      <div class="col-md-3 padding-top-30"></div>
+      <div class="col-md-9">
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Library Perks</h1>
         <div class="separator-container">
           <div class="separator line-separator"><i class="fas fa-tag"></i></div>
         </div>
+        <h4 class="roboto margin-bottom-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis.</h4>
       </div>
-      <h4 class="roboto margin-lg-100 text-center margin-bottom-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu. Integer pellentesque sem non turpis gravida mollis. Duis vel libero vel felis lacinia convallis in in justo.</h4>
     </div>
   </div>
   
@@ -269,92 +290,85 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-	-->
-  
+-->
+  <div class="row bg-lavender">
+    <div class="container padding-top-100 padding-bottom-100"></div>
+  </div>
+  <div class="row bottom-bkg padding-top-30">
+    <div id=""><img src="e-books.png" alt="E-Books" class="white-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row bg-gray-5 text-center">
+    <h1 class="no-margin-top text-uppercase font-weight-400">Online Learning</h1>
+  </div>
+  <div class="row bg-gray-5">
+    <div class="container text-center">
+      <h4 class="roboto">These resources make learning simple and convenient, whether it's a new language, technology skills, or resume and career prep. Learn from the privacy of your own home &mdash; or your local library or coffee shop.</h4>
+    </div>
+  </div>
   <div class="row bg-gray-5 padding-top-30 padding-bottom-60">
     <div class="container">
-      <div class="row">
-        <div id="check-out-colorado" class="col-md-6">
-          <div class="padding-top-30 col-sm-3">
-            <div class="icon-circle-teal"><i class="fas fa-map"></i></div>
-          </div>
-          <div class="col-sm-9">
-            <h2> <a class="text-left" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Backpacks and passes are part of our Your Lucky Day program for new and popular materials; checkout is first come, first served, and packs may not be put on hold. Each pack may be kept out for up to seven days. Stop in today and see if it’s Your Lucky Day!">Check Out Colorado</a> </h2>
-            <div>A limited number of backpacks containing a pass good for admission to any Colorado State Park are available for checkout from our welcome desks.</div>
+      <div class="col-lg-4 col-md-6">
+        <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=adult-learning-center" target="_blank"><span class="link-spanner"></span></a>
+            <h4>Adult Learning Center</h4>
+            <div>Live assistance from Brainfuse on passing the GED, preparing for the U.S. citizenship test, writing a resume, and getting help with Microsoft Office.</div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="padding-top-30 col-sm-3">
-            <div style="padding:2px 0 0 1px;" class="icon-circle-teal"><i class="fas fa-compass"></i></div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank"><span class="link-spanner"></span></a>
+            <h4 class="no-margin-bottom">Brainfuse Homework Help</h4>
+            <p class="text-uppercase small">Brainfuse</p>
+            <div>Live homework help and tutoring, including a writing lab, skills building, test prep, and Spanish-speaking tutors, for students of all ages and learning levels.</div>
           </div>
-          <div class="col-sm-9">
-            <h2><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Adventure Pass</a> & <a href="../dcl-local/">DCL Local</a></h2>
-            <div>Our partnerships with <a href="../dcl-local/#adventure-pass">area cultural institutions</a> let you reserve free passes up to 30 days in advance. Plus, enjoy DCL Local: Use your library card for discounts at <a href="../dcl-local/">participating businesses</a>!</div>
+        </div>
+      </div>
+      <div id="brainhq" class="col-lg-4 col-md-6">
+        <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainhq" target="_blank"><span class="link-spanner"></span></a>
+            <h4>BrainHQ</h4>
+            <div>Fun brain games for relaxing and exercising your most important muscle for learning and memory.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div id="lynda" class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=lynda" target="_blank"><span class="link-spanner"></span></a>
+            <h4>Lynda.com</h4>
+            <div>Learn software, creative, business and technology skills from thousands of video courses taught by industry experts.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=news-for-you" target="_blank"><span class="link-spanner"></span></a>
+            <h4>News for You</h4>
+            <div>Easy-to-read news stories from reputable news services to help improve English language skills. Includes audio, vocabulary lists, exercises and puzzles.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank"><span class="link-spanner"></span></a>
+            <h4>Mango Languages</h4>
+            <div>Online language learning from German to Spanish, Russian to Mandarin Chinese. No downloads are required, and an app is available.</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="fines-fees-borrowing" class="row white bg-teal padding-top-15 padding-bottom-60">
+  <div class="row padding-top-30 padding-bottom-60">
     <div class="container">
-      <h1 class="white text-center">Fines, Fees & Borrowing</h1>
-      <div class="text-center padding-top-15 margin-lg-200">Most materials check out for three weeks. Magazines and DVDs under 200 minutes check out for one week, and each patron may have up to 200 physical items checked out at any one time. The late fee for most materials is 20 cents per day, with a three&#8209;day grace period.</div>
-      <div class="text-center margin-top-30"> <a href="https://dcl.bibliocommons.com/fines" target="_blank" class="text-uppercase btn btn-primary">Pay Your Fines</a> <a href="../fines-fees-borrowing" class="white margin-left-10 text-uppercase">Learn More &raquo;</a></div>
-    </div>
-  </div>
-  <div id="print-copy" class="row padding-top-30 padding-bottom-60">
-    <div class="container">
-      <h1 class="text-center">Print &amp; Copy</h1>
-      <div class="col-md-4 margin-lg-30 padding-top-5 padding-bottom-40">
-        <h2 class="roboto">Printing</h2>
-        <div>Print on the library's public printers during library hours regardless of device, network or location. Large documents and PDFs may take a few minutes to print; jobs not picked up within two hours of being sent will be deleted.</div>
-        <div class="dropdown"> <a data-toggle="dropdown" class="btn btn-primary text-uppercase margin-top-15 dropdown-toggle">Print Now <span class="caret"></span></a>
-          <div class="dropdown-menu">
-            <div style="border-bottom:1px solid #ccc;" class="padding-15">Choose a Location:</div>
-            <div class="padding-15 text-capitalize">
-              <ul class="list-unstyled">
-                <li><a target="new" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/castlepines&amp;protocolSwitched=true">Castle Pines </a></li>
-                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/philipsmiller-001&amp;protocolSwitched=true">Castle Rock</a></li>
-                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/jameshlarue-001&amp;protocolSwitched=true">Highlands Ranch</a></li>
-                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/lonetree-001&amp;protocolSwitched=true">Lone Tree</a></li>
-                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/parkerlibrary-001&amp;protocolSwitched=true">Parker</a></li>
-                <li><a target="_blank" href="https://www.printeron.net/system/printspot/interface/select_file.jsp?url=dcl/roxborough-001&amp;protocolSwitched=true">Roxborough</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div id="check-out-colorado" class="col-md-4">
+        <h2> <a href="https://dcl.bibliocommons.com/item/show/1350439114">Check Out Colorado</a> </h2>
+        <div>A limited number of backpacks containing a pass good for admission to any Colorado State Park are available for checkout from our welcome desks.</div>
       </div>
-      <div class="col-md-4 margin-lg-30 padding-bottom-40">
-        <h2 class="roboto">Printing Prices</h2>
-        <div>Letter & legal size
-          <ul>
-            <li>Black & white: 10 cents per page; 20 cents per double-sided page</li>
-            <li>Color: 25 cents per page; no double-sided color printing</li>
-          </ul>
-        </div>
-        <div>11-inch by 17-inch
-          <ul>
-            <li>Black & white: 20 cents per page; 40 cents per double-sided page</li>
-            <li>Color: 50 cents per page; no double-sided color printing</li>
-          </ul>
-        </div>
+      <div class="col-md-4 padding-30"><img class="img-responsive library-card" src="library-card-one.jpg" alt="DCL Library Card"></div>
+      <div class="col-md-4">
+        <h2><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Adventure Pass</a> & <a href="../dcl-local/">DCL Local</a></h2>
+        <div>Our partnerships with <a href="../dcl-local/#adventure-pass">area cultural institutions</a> let you reserve free passes up to 30 days in advance. Plus, enjoy DCL Local: Use your library card for discounts at <a href="../dcl-local/">participating businesses</a>!</div>
       </div>
-      <div class="col-md-4 margin-lg-30 padding-bottom-40">
-        <h2 class="roboto">Copying Prices</h2>
-        <div>Letter & legal size
-          <ul>
-            <li>Black & white: 10 cents per page; 20 cents per double-sided page</li>
-            <li>Color: 25 cents per page; 50 cents per double-sided page</li>
-          </ul>
-        </div>
-        <div>11-inch by 17-inch
-          <ul>
-            <li>Black & white: 20 cents per page; 40 cents per double-sided page</li>
-            <li>Color: 50 cents per page; $1 per double-sided page</li>
-          </ul>
-        </div>
-      </div>
-      <div class="small text-center">To pay with your Visa or MasterCard credit card, see a DCL staff member; $1 minimum. There is a $5 maximum per print/copy job.</div>
     </div>
   </div>
   <!-- InstanceEndEditable --></div>
@@ -422,4 +436,5 @@ $(function () {
 <!-- Structured Data --> 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
