@@ -70,21 +70,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	border: 3px solid #999;
 	border-radius: 10px;
 	transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
 	z-index: -1;
 	box-shadow: 1px 5px 8px 1px rgba(0,0,0,.2);
-}
-.icon-circle-moss {
-	background-color: #90ad63;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #fff;
-	font-size: 60px;
-	height: 100px;
-	line-height: 90px;
-	margin: 0 auto;
-	text-align: center;
-	width: 100px;
 }
 .come-in {
 	transform: translateY(250px);
@@ -108,7 +96,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .come-in:nth-child(6) {
 	animation-duration: 1.2s;
 }
-	.come-in-card.come-in {
+.come-in-card.come-in {
 	animation-duration: 2.5s;
 	transform: rotate(30deg)
 }
@@ -118,8 +106,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   animation: none;
 }
 */
-
 @keyframes come-in {
+ to {
+ transform: translateY(0);
+}
+}
+ @-webkit-keyframes come-in {
  to {
  transform: translateY(0);
 }
