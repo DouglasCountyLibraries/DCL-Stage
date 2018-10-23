@@ -69,7 +69,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .library-card {
 	border: 3px solid #999;
 	border-radius: 10px;
-	transform: rotate(-30deg);
+	transform: rotate(-15deg);
 	z-index: -1;
 	box-shadow: 1px 5px 8px 1px rgba(0,0,0,.2);
 }
@@ -85,6 +85,44 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0 auto;
 	text-align: center;
 	width: 100px;
+}
+.come-in {
+	transform: translateY(250px);
+	animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(1) {
+	animation-duration: 0.2s;
+}
+.come-in:nth-child(2) {
+	animation-duration: 0.4s;
+}
+.come-in:nth-child(3) {
+	animation-duration: 0.6s;
+}
+.come-in:nth-child(4) {
+	animation-duration: 0.8s;
+}
+.come-in:nth-child(5) {
+	animation-duration: 1s;
+}
+.come-in:nth-child(6) {
+	animation-duration: 1.2s;
+}
+	.come-in-card.come-in {
+	animation-duration: 2.5s;
+	transform: rotate(30deg)
+}
+/* everybody slides in
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+*/
+
+@keyframes come-in {
+ to {
+ transform: translateY(0);
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -307,7 +345,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row bg-gray-5 padding-top-30 padding-bottom-60">
     <div class="container">
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 module">
         <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=adult-learning-center" target="_blank"><span class="link-spanner"></span></a>
             <h4>Adult Learning Center</h4>
@@ -315,7 +353,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 module">
         <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank"><span class="link-spanner"></span></a>
             <h4 class="no-margin-bottom">Brainfuse Homework Help</h4>
@@ -324,7 +362,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
       </div>
-      <div id="brainhq" class="col-lg-4 col-md-6">
+      <div id="brainhq" class="col-lg-4 col-md-6 module">
         <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainhq" target="_blank"><span class="link-spanner"></span></a>
             <h4>BrainHQ</h4>
@@ -332,7 +370,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 module">
         <div id="lynda" class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=lynda" target="_blank"><span class="link-spanner"></span></a>
             <h4>Lynda.com</h4>
@@ -340,7 +378,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 module">
         <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=news-for-you" target="_blank"><span class="link-spanner"></span></a>
             <h4>News for You</h4>
@@ -348,7 +386,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 module">
         <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank"><span class="link-spanner"></span></a>
             <h4>Mango Languages</h4>
@@ -360,12 +398,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row padding-top-30 padding-bottom-60">
     <div class="container">
-      <div id="check-out-colorado" class="col-md-4">
+      <div id="check-out-colorado" class="col-md-4 bg-white">
         <h3> <a href="https://dcl.bibliocommons.com/item/show/1350439114">Check Out Colorado</a> </h3>
         <div>A limited number of backpacks containing a pass good for admission to any Colorado State Park are available for checkout from our welcome desks.</div>
       </div>
-      <div class="col-md-4"><img class="img-responsive library-card" src="library-card-one.jpg" alt="DCL Library Card"></div>
-      <div class="col-md-4">
+      <div class="col-md-4 padding-right-30 padding-left-30 module come-in-card"><img class="img-responsive image-center library-card" src="library-card-one.jpg" alt="DCL Library Card"></div>
+      <div class="col-md-4 bg-white">
         <h3><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Adventure Pass</a> & <a href="../dcl-local/">DCL Local</a></h3>
         <div>Our partnerships with <a href="../dcl-local/#adventure-pass">area cultural institutions</a> let you reserve free passes up to 30 days in advance. Plus, enjoy DCL Local: Use your library card for discounts at <a href="../dcl-local/">participating businesses</a>!</div>
       </div>
@@ -427,12 +465,65 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
+	<script>
+	(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".module");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+	</script> 
+	<script>
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
  </script> 
-<!-- InstanceEndEditable --> 
+	<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
 </body>
