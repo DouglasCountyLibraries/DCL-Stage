@@ -66,6 +66,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .top-bkg {
 	background: #fff url(bkg.gif) center top repeat-x;
 }
+.gradient-row {
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,201,185,.4) 100%);
+}
 .library-card {
 	border: 3px solid #999;
 	border-radius: 10px;
@@ -117,12 +121,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 }
 .gif-background {
-	background: url(https://placehold.it/600/777) no-repeat top center;
-	height: 440px;
-	margin: 0 auto 0 auto;
+	background: url("wheel.gif") no-repeat top center;
+
 }
 .staff-person {
-	padding-top: 140px;
+	padding-top: 20px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -301,18 +304,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="container-md">
-      <div class="col-md-6">
-        <div class="gif-background"><img class="staff-person img-responsive center-block" src="https://placehold.it/300x300"></div>
+<div class="row gradient-row">
+    <div class="container gif-background">
+      <div class="col-md-4">
+        <div class=""><img class="staff-person img-responsive center-block" src="woman.png"></div>
       </div>
-      <div class="col-md-6 bg-white">
+      <div class="col-md-8 padding-top-60">
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Library Perks</h1>
-        <h4 class="roboto margin-bottom-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</h4>
+        <h4 class="roboto margin-bottom-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.<br>Highlight Lynda.com and Mango here.</h4>
       </div>
     </div>
   </div>
-  
   <!-- add if needed
   <div class="row no-gutter sub-nav-row">
     <div class="sub-nav">
@@ -329,7 +331,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
 -->
   <div id="creative-bug" class="row bg-lavender">
-    <div class="container padding-top-100 padding-bottom-100"></div>
+    <div class="container text-center padding-top-100 padding-bottom-100">
+      <h1 class="white jumbo-text text-uppercase font-weight-400 fade-in-text">Creative Bug Goes Here</h1>
+    </div>
   </div>
   <div class="row bottom-bkg padding-top-30">
     <div id=""><img src="e-books.png" alt="E-Books" class="white-circle img-circle img-responsive center-block"></div>
