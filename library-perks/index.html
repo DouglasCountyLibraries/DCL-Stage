@@ -63,7 +63,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .bottom-bkg {
 	background: #65587b url(bkg.gif) center bottom repeat-x;
 }
-
 .gradient-row {
 	background: rgb(255,255,255);
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,201,185,.4) 100%);
@@ -120,10 +119,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .gif-background {
 	background: url("wheel-slow.gif") no-repeat top center;
-
 }
 .staff-person {
-	padding-top: 15px;
+	padding-top: 60px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -302,14 +300,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-<div class="row gradient-row">
+  <div class="row gradient-row">
     <div class="container gif-background">
       <div class="col-md-4">
         <div class=""><img class="staff-person img-responsive center-block" src="woman.png"></div>
       </div>
-      <div class="col-md-8 padding-top-100">
+      <div class="col-md-8">
+        <div class="padding-top-100 hidden-xs hidden-sm"></div>
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Library Perks</h1>
-        <h4 class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</h4><h4 class="roboto padding-bottom-30">Highlight Lynda.com and Mango here.</h4>
+        <h4 class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</h4>
+        <h4 class="roboto padding-bottom-30">Highlight Lynda.com and Mango here.</h4>
       </div>
     </div>
   </div>
@@ -363,11 +363,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
       </div>
-      <div id="brainhq" class="col-lg-4 col-md-6 module">
+      <div id="brainhq" class="col-lg-4 col-md-6">
         <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainhq" target="_blank"><span class="link-spanner"></span></a>
             <h4>BrainHQ</h4>
-            <div>Fun brain games for relaxing and exercising your most important muscle for learning and memory.</div>
+            <div>Fun brain games for relaxing and exercising your most important muscle for learning and memory. <span class="db-small font-weight-400">We will no longer be subscribing to this service after December 31.</span></div>
           </div>
         </div>
       </div>
@@ -392,6 +392,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank"><span class="link-spanner"></span></a>
             <h4>Mango Languages</h4>
             <div>Online language learning from German to Spanish, Russian to Mandarin Chinese. No downloads are required, and an app is available.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="bg-white shadow-low hover-shadow default-block-container gutter-five">
+          <div class="database-box"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=terc" target="_blank"><span class="link-spanner"></span></a>
+            <h4>Testing &amp; Education Reference Center</h4>
+            <div>Online tests and prep tools for academic and professional exams. Also includes school scholarship info and a resume builder.</div>
           </div>
         </div>
       </div>
