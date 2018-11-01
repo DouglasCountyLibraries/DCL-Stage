@@ -51,8 +51,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
 <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Prata" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
-<style>
+
+  <script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+  </script>
+	<style>
 /* carousel height, as percentage of width */
 /* inherit height from parent */
 * {
@@ -342,21 +350,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           <div class="large-text padding-bottom-30">See below to learn how your donation directly impacts our community. Thank you for helping us make a difference in Douglas County. </div>
         </div>
         <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>130,735 Storytime attendees</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
+          <div>
             <h4 class="section-heading">Futures So Bright</h4>
             <div class="padding-bottom-15">The Foundation supports vital programs that foster reading readiness and growth, giving kids a head start on school success.</div>
-          </div>
+			</div><div><span class="counter">1,234,567</span></div>
           <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 20000 }'>
             <div class="carousel-cell"> Up to the age of 3, Sara had no interest in reading books. Instead of reading, she would flip to the last page and say, “the end.” But her parents knew how important reading was to a bright future. They began attending Storytime at DCL in Castle Rock and heard the librarian suggest a goal of 1,000 books before kindergarten. They made that their mission. As a first-grader, Sara was placed on an advanced learning plan as part of a gifted program for reading and writing, and today, as a fourth-grader, she is ranked in the top 1 percent in reading nationwide, based on recent test results. </div>
             <div class="carousel-cell"> Second-grader Penelope was not a confident reader, especially when she compared herself to others in her class. Reading Buddies allowed her to grow her confidence in sounding out unfamiliar words in front of others and that, in turn, built her confidence with reading as a whole. Her teen buddy allowed Penelope an opportunity to practice in a safe space and gain more courage with her reading, and that helped her to also find the fun in reading. </div>
           </div>
         </div>
         <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>6.43 visits per capita</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
+          <div>
             <h4 class="section-heading">Reaching Seniors </h4>
             <div class="padding-bottom-15">DCL Foundation supports programs and outreach that promote lifelong learning for our community’s mature adults and seniors.</div>
             <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 20000 }'>
@@ -365,9 +369,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
         <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>130,735 Storytime attendees</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
+          <div>
             <h4 class="section-heading">Opening Doors</h4>
             <div class="padding-bottom-15">DCL’s high school diploma programs, citizenship and ESL programs, and adult tutoring services open doors for our neighbors.</div>
             <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 22000 }'>
@@ -377,9 +379,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           </div>
         </div>
         <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>130,735 Storytime attendees</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
+          <div>
             <h4 class="section-heading">Community Connections</h4>
             <div class="padding-bottom-15">Our libraries, which are supported by the Foundation, are critical to neighborhood, workforce and economic development.</div>
             <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 25000 }'>
@@ -447,13 +447,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://www.google.com/maps/place/Philip+S.+Miller+Library/@39.3682405,-104.8612646,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61032512ce3a96db" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
+<!-- InstanceBeginEditable name="scripts" -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
