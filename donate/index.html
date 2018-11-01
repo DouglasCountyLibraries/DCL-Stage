@@ -52,6 +52,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Prata" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 20,
+            time: 4000
+        });
+    });
+  </script>
 <style>
 /* carousel height, as percentage of width */
 /* inherit height from parent */
@@ -81,6 +89,27 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .flickity-viewport {
 	transition: height 0.6s;
 }
+.stats-wrapper {
+	padding: 20px 0 0;
+}
+.stats .fa-ul {
+	margin-left: 21px;
+}
+.fa-li.fa.fa-check {
+	color: #873928;
+}
+.stats {
+	text-transform: uppercase;
+	color: #236566;
+	font-size: .9em;
+}
+.stats span {
+	padding-right: 15px;
+}
+.counter {
+	color: #333;
+	font-size: 15px;
+}
 .text-center.headings {
 	position: relative;
 	top: -75px;
@@ -98,14 +127,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	color: #6c781d;
 	line-height: 0px;
 }
+	.feature-section {
+
+		padding-bottom:10px;
+}
 .section-heading {
 	font-family: 'Clicker Script', cursive;
-	font-size: 38px;
+	font-size: 44px;
 	color: #6c781d;
 	font-weight: bold;
 	text-transform: lowercase;
 	margin-bottom: 0px;
-	line-height: 40px;
+	line-height: 62px;
 }
 .btn-default {
 	background-color: #ae2e1d;
@@ -328,71 +361,108 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
 </nav>
 <!-- End Mobile Navbar -->
-<div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row treehouse-background">
-    <div class="container no-padding">
-      <div class="cgd-content col-lg-8 col-md-8">
-        <div class="text-center headings">
-          <div class="feature-one">come</div>
-          <div class="feature-two">on&nbsp;up</div>
-        </div>
-        <div>
-          <div class="large-text">Join Douglas County Libraries Foundation in making a difference on Colorado Gives Day, Tuesday, December 4! <img class="pull-left margin-top-10 margin-right-15" src="cgd-logo.png" alt="Colorado Gives Day">Your donation supports the work of the Foundation in funding programs that reach youth, adults and families in Douglas County and across Colorado. And when you schedule your donation for December 4, your gift goes even further thanks to Community First Foundation and FirstBank’s $1 million incentive fund. </div>
-          <div class="padding-top-15 padding-bottom-15 text-center"><a class="btn btn-default" href="#" target="_blank">Schedule Donation</a></div>
-          <div class="large-text padding-bottom-30">See below to learn how your donation directly impacts our community. Thank you for helping us make a difference in Douglas County. </div>
-        </div>
-        <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>130,735 Storytime attendees</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
-            <h4 class="section-heading">Futures So Bright</h4>
-            <div class="padding-bottom-15">The Foundation supports vital programs that foster reading readiness and growth, giving kids a head start on school success.</div>
-          </div>
-          <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 20000 }'>
-            <div class="carousel-cell"> Up to the age of 3, Sara had no interest in reading books. Instead of reading, she would flip to the last page and say, “the end.” But her parents knew how important reading was to a bright future. They began attending Storytime at DCL in Castle Rock and heard the librarian suggest a goal of 1,000 books before kindergarten. They made that their mission. As a first-grader, Sara was placed on an advanced learning plan as part of a gifted program for reading and writing, and today, as a fourth-grader, she is ranked in the top 1 percent in reading nationwide, based on recent test results. </div>
-            <div class="carousel-cell"> Second-grader Penelope was not a confident reader, especially when she compared herself to others in her class. Reading Buddies allowed her to grow her confidence in sounding out unfamiliar words in front of others and that, in turn, built her confidence with reading as a whole. Her teen buddy allowed Penelope an opportunity to practice in a safe space and gain more courage with her reading, and that helped her to also find the fun in reading. </div>
-          </div>
-        </div>
-        <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>6.43 visits per capita</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
-            <h4 class="section-heading">Reaching Seniors </h4>
-            <div class="padding-bottom-15">DCL Foundation supports programs and outreach that promote lifelong learning for our community’s mature adults and seniors.</div>
-            <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 20000 }'>
-              <div class="carousel-cell">Bob is a resident of the Wind Crest senior living community. He enjoys the independent living environment, but counts on DCL’s convenient book delivery service to satisfy his thirst for reading. Not only are the books Bob requests hand-delivered by library staff, they’re also returned by library staff for him. To Bob, this service is "wonderful." He says, "If the service ever went away, I would be in big trouble."</div>
-            </div>
-          </div>
-        </div>
-        <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>130,735 Storytime attendees</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
-            <h4 class="section-heading">Opening Doors</h4>
-            <div class="padding-bottom-15">DCL’s high school diploma programs, citizenship and ESL programs, and adult tutoring services open doors for our neighbors.</div>
-            <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 22000 }'>
-              <div class="carousel-cell">When Opp first came to the U.S., she didn’t speak English. She was an ESL student, and someone took the time to teach her. She says the ESL program provided a pathway for her to interact and socialize with people, and now, most importantly, to have the opportunity to teach. </div>
-              <div class="carousel-cell">English fluency is crucial to feeling at home in Colorado. As a former Practice Your English facilitator and now an ESL tutor, Jean has seen how appreciative her students are for the opportunity to learn the language, and practice it, at no cost to them. Jean enjoys her time with these adults who have many competing obligations yet are eager to develop their literacy skills through these wonderful programs. </div>
-            </div>
-          </div>
-        </div>
-        <div>
-			
-			
-          <div><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<h4 style='margin:0;text-align:center;'>2017</h4><ul><li>130,735 Storytime attendees</li><li>2,798,687 children’s materials circulated</li><li>4,977 programs/events for kids</li><li>172,608 kids attending programs/events</li></ul>" data-original-title="" title=""><img class="pull-left margin-right-15" src="http://placehold.it/85" alt="By the Numbers"></a>
-            <h4 class="section-heading">Community Connections</h4>
-            <div class="padding-bottom-15">Our libraries, which are supported by the Foundation, are critical to neighborhood, workforce and economic development.</div>
-            <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 25000 }'>
-              <div class="carousel-cell">In the process of putting together a business plan for her design business, Sydney discovered that she needed a lot of help researching trends, articles and statistics. She reached out to the business librarians through DCL for Business, who dug into the research and found information that Sydney felt she couldn't have discovered on her own. Sydney says it "made the process of putting my business plan together 100 percent easier."</div>
-              <div class="carousel-cell">David needed help with market research for his cybersecurity business. Specifically, he was looking for geographically targeted information and statistics. He reached out to the DCL for Business team for assistance. A DCL business librarian went to work researching industry data and reports, and even reached out to local government entities for information. David says he is impressed with the thorough report and materials he received for the market research he requested. </div>
-            </div>
-          </div>
-        </div>
-        <div class="padding-top-30 padding-bottom-15 text-center"><a class="btn btn-default" href="#" target="_blank">Schedule Donation</a></div>
-      </div>
-    </div>
-  </div>
-  <!-- InstanceEndEditable --></div>
+<div class="container-fluid">
+<!-- InstanceBeginEditable name="Content" -->
+<div class="row treehouse-background">
+<div class="container no-padding">
+<div class="cgd-content col-lg-8 col-md-8">
+<div class="text-center headings">
+  <div class="feature-one">come</div>
+  <div class="feature-two">on&nbsp;up</div>
+</div>
+<div>
+  <div class="large-text">Join Douglas County Libraries Foundation in making a difference on Colorado Gives Day, Tuesday, December 4! <img class="pull-left margin-top-10 margin-right-15" src="cgd-logo.png" alt="Colorado Gives Day">Your donation supports the work of the Foundation in funding programs that reach youth, adults and families in Douglas County and across Colorado. And when you schedule your donation for December 4, your gift goes even further thanks to Community First Foundation and FirstBank’s $1 million incentive fund. </div>
+  <div class="padding-top-15 padding-bottom-15 text-center"><a class="btn btn-default" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788#1" target="_blank">Schedule Donation</a></div>
+  <div class="large-text padding-bottom-30">See below to learn how your donation directly impacts our community. Thank you for helping us make a difference in Douglas County. </div>
+</div>
+<div class="feature-section">
+<h4 class="section-heading">Futures So Bright</h4>
+<div class="padding-bottom-15">The Foundation supports vital programs that foster reading readiness and growth, giving kids a head start on school success.</div>
+<div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 20000 }'>
+  <div class="carousel-cell"> Up to the age of 3, Sara had no interest in reading books. Instead of reading, she would flip to the last page and say, “the end.” But her parents knew how important reading was to a bright future. They began attending Storytime at DCL in Castle Rock and heard the librarian suggest a goal of 1,000 books before kindergarten. They made that their mission. As a first-grader, Sara was placed on an advanced learning plan as part of a gifted program for reading and writing, and today, as a fourth-grader, she is ranked in the top 1 percent in reading nationwide, based on recent test results. </div>
+  <div class="carousel-cell"> Second-grader Penelope was not a confident reader, especially when she compared herself to others in her class. Reading Buddies allowed her to grow her confidence in sounding out unfamiliar words in front of others and that, in turn, built her confidence with reading as a whole. Her teen buddy allowed Penelope an opportunity to practice in a safe space and gain more courage with her reading, and that helped her to also find the fun in reading. </div>
+</div>
+<div class="stats-wrapper">
+
+<div class="stats">
+<ul class="fa-ul no-margin">
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Storytime Attendees: <span class="counter">130,735</span></li>
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Children's Materials Circulated: <span class="counter">2,798,687</span></li>
+</div>
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Programs/Events for Kids: <span class="counter">4,977</span></li>
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Kids Attending Programs/Events: <span class="counter">172,608</span></li>
+</div><div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="feature-section">
+<h4 class="section-heading">Reaching Seniors </h4>
+<div class="padding-bottom-15">DCL Foundation supports programs and outreach that promote lifelong learning for our community’s mature adults and seniors.</div>
+<div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 20000 }'>
+  <div class="carousel-cell">Bob is a resident of the Wind Crest senior living community. He enjoys the independent living environment, but counts on DCL’s convenient book delivery service to satisfy his thirst for reading. Not only are the books Bob requests hand-delivered by library staff, they’re also returned by library staff for him. To Bob, this service is "wonderful." He says, "If the service ever went away, I would be in big trouble."</div>
+</div>
+<div class="stats-wrapper">
+
+<div class="stats">
+<ul class="fa-ul no-margin">
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Visits Per Capita: <span class="counter">6.43</span></li>
+</div>
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Programs/Events for All Ages: <span class="counter">5,610</span></li>
+</div><div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="feature-section">
+<h4 class="section-heading">Opening Doors</h4>
+<div class="padding-bottom-15">DCL’s high school diploma programs, citizenship and ESL programs, and adult tutoring services open doors for our neighbors.</div>
+<div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 22000 }'>
+  <div class="carousel-cell">When Opp first came to the U.S., she didn’t speak English. She was an ESL student, and someone took the time to teach her. She says the ESL program provided a pathway for her to interact and socialize with people, and now, most importantly, to have the opportunity to teach. </div>
+  <div class="carousel-cell">English fluency is crucial to feeling at home in Colorado. As a former Practice Your English facilitator and now an ESL tutor, Jean has seen how appreciative her students are for the opportunity to learn the language, and practice it, at no cost to them. Jean enjoys her time with these adults who have many competing obligations yet are eager to develop their literacy skills through these wonderful programs. </div>
+</div>
+<div class="stats-wrapper">
+
+<div class="stats">
+<ul class="fa-ul no-margin">
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Volunteer Hours: <span class="counter">44,452</span></li>
+</div>
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>New Patrons: <span class="counter">21,095</span></li>
+</div><div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="feature-section">
+<h4 class="section-heading">Community Connections</h4>
+<div class="padding-bottom-15">Our libraries, which are supported by the Foundation, are critical to neighborhood, workforce and economic development.</div>
+<div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.40, "autoPlay": 25000 }'>
+  <div class="carousel-cell">In the process of putting together a business plan for her design business, Sydney discovered that she needed a lot of help researching trends, articles and statistics. She reached out to the business librarians through DCL for Business, who dug into the research and found information that Sydney felt she couldn't have discovered on her own. Sydney says it "made the process of putting my business plan together 100 percent easier."</div>
+  <div class="carousel-cell">David needed help with market research for his cybersecurity business. Specifically, he was looking for geographically targeted information and statistics. He reached out to the DCL for Business team for assistance. A DCL business librarian went to work researching industry data and reports, and even reached out to local government entities for information. David says he is impressed with the thorough report and materials he received for the market research he requested. </div>
+</div>
+<div class="stats-wrapper">
+
+<div class="stats">
+<ul class="fa-ul no-margin">
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Circulation Per Capita: <span class="counter">20.19</span></li>
+</div>
+<div class="col-lg-6 no-padding">
+  <li class="text-nowrap"><i class="fa-li fa fa-check"></i>Community Group Meetings: <span class="counter">7,478</span></li>
+</div><div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="padding-top-30 padding-bottom-30 text-center"><a class="btn btn-default" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788#2" target="_blank">Schedule Donation</a></div>
+<div class="small text-uppercase text-center">Note: All statistics are for 2017</div></div>
+	</div>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
     <div class="col-sm-6">
@@ -448,12 +518,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> 
+<script src="jquery.counterup.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
