@@ -2,22 +2,19 @@
   <div class="dropdown">
     <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" class="btn btn-block btn-database dropdown-toggle"> Filter by Category <span class="caret"></span> </button>
     <div class="no-gutter bg-salmon dropdown-menu database-dropdown" aria-labelledby="databasedropdown" style="margin:0; border: none;">
-      <div class="col-sm-6 col-md-4 col-lg-2 database-nav-first equal-height">
+      <div class="col-sm-6 col-md-4 col-lg-15 database-nav-first equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../research/all-databases"><i class="fas fa-th-list"></i> All Databases</a></h5>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-2 database-nav equal-height">
+      <div class="col-sm-6 col-md-4 col-lg-15 database-nav equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../research/students"><i class="fas fa-graduation-cap"></i> Students</a></h5>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-2 database-nav equal-height">
+      <div class="col-sm-6 col-md-4 col-lg-15 database-nav equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../research/business-finance"><i class="fas fa-building"></i> Business & Finance</a></h5>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-2 database-nav equal-height">
+      <div class="col-sm-6 col-md-4 col-lg-15 database-nav equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../research/lifestyle"><i class="fas fa-coffee"></i> Lifestyle</a></h5>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-2 database-nav equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../research/online-learning"><i class="fas fa-laptop"></i> Online Learning</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-2 database-nav equal-height">
+      <div class="col-sm-12 col-md-8 col-lg-15 database-nav equal-height">
         <h5 class="no-margin text-uppercase"><a class="show" href="../research/history-genealogy"><i class="fas fa-history"></i> History & Genealogy</a></h5>
       </div>
     </div>
