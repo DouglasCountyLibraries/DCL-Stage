@@ -50,6 +50,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../shared-assets/js/dcl.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+	
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
@@ -68,11 +71,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,201,185,.4) 100%);
 }
 .cb-box {
-	padding: 60px 30px 30px;
-}
-.cb-background-one {
-	background: url(cb-one.jpg) center center/cover;
-	min-height: 395px;
+	padding: 30px 15px;
 }
 .library-card {
 	border: 3px solid #999;
@@ -122,22 +121,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
  @-webkit-keyframes come-in {
  to {
  transform: translateY(0);
-}
-}
-
-@media (max-width: 1200px) {
-.cb-box {
-	padding: 30px;
-}
-}
-
-@media (max-width: 992px) {
-.cb-box {
-	padding: 30px;
-}
-.cb-background-one {
-	background: url(cb-one.jpg) center center/cover;
-	min-height: 100px;
 }
 }
 </style>
@@ -317,34 +300,129 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row gradient-row">
-    <div class="container">
-      <div class="col-md-4">
-        <div class="padding-top-15"><img class="staff-person img-responsive center-block" src="woman.png" alt="Library Perks"></div>
+
+	<section class="cd-hero js-cd-hero js-cd-autoplay">
+		<ul class="cd-hero__slider">
+			<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--full-width">
+					<h2>Hero slider</h2>
+					<p>A simple, responsive slideshow in CSS &amp; JavaScript.</p>
+					<a href="http://codyhouse.co/gem/hero-slider/" class="cd-hero__btn">Article &amp; Download</a>
+				</div> <!-- .cd-hero__content -->
+			</li>
+
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="#0" class="cd-hero__btn">Start</a>
+					<a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a>
+				</div> <!-- .cd-hero__content -->
+
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img src="assets/tech-1.jpg" alt="tech 1">
+				</div> <!-- .cd-hero__content -->
+			</li>
+
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img src="assets/tech-2.jpg" alt="tech 2">
+				</div> <!-- .cd-hero__content -->
+
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="#0" class="cd-hero__btn">Start</a>
+					<a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a>
+				</div> <!-- .cd-hero__content -->
+				
+			</li>
+
+			<li class="cd-hero__slide cd-hero__slide--video js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-hero__btn">Learn more</a>
+				</div> <!-- .cd-hero__content -->
+
+				<div class="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="assets/video/video">
+					<!-- video element will be loaded using JavaScript -->
+				</div> <!-- .cd-hero__content -->
+			</li>
+
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-hero__btn">Start</a>
+					<a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a>
+				</div> <!-- .cd-hero__content -->
+			</li>
+		</ul> <!-- .cd-hero__slider -->
+
+		<div class="cd-hero__nav js-cd-nav">
+			<nav>
+				<span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
+				
+				<ul class="slider-nav">
+					<li class="cd-selected"><a href="#0"><i class="fas fa-bookmark"></i></a></li>
+					<li><a href="#0"><i class="fas fa-bookmark"></i></a></li>
+					<li><a href="#0"><i class="fas fa-bookmark"></i></a></li>
+					<li><a href="#0"><i class="fas fa-bookmark"></i></a></li>
+					<li><a href="#0"><i class="fas fa-bookmark"></i></a></li>
+				</ul>
+			</nav> 
+		</div>
+
+		<!-- .cd-hero__nav -->
+	</section> <!-- .cd-hero -->
+  <!-- add if needed
+  <div class="row no-gutter sub-nav-row">
+    <div class="sub-nav">
+      <div class="col-sm-4 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="../request-title/"><i class="fas fa-share-square"></i>Request a Title</a></h5>
       </div>
-      <div class="col-md-8 padding-bottom-15">
-        <div class="padding-top-30 hidden-xs hidden-sm"></div>
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Library Perks</h1>
-        <h4 class="roboto">Congratulations! Being a DCL cardholder means you have access to all sorts of fun perks, from free online classes (in crafting, software, language and more) to activities you can enjoy in real life, like museum and parks passes.
-          <div class="padding-top-15 hidden-xs hidden-sm"></div>
-          Explore your options and do something new!</h4>
+      <div class="col-sm-4 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#fines-fees-borrowing"><i class="fas fa-shopping-basket"></i>Fines, Fees & Borrowing</a></h5>
+      </div>
+      <div class="col-sm-4 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#print-copy"><i class="fas fa-print"></i>Print & Copy</a></h5>
       </div>
     </div>
   </div>
+-->
   <div id="creative-bug" class="row bg-lavender">
-    <div class="container-lg no-gutter">
-      <div class="cb-background-one col-lg-3 col-md-3"> </div>
-      <div class="col-lg-6 col-md-6">
+    <div class="container-md no-gutter">
+      <div class="col-sm-12 col-md-4 no-gutter">
+        <div class="col-md-6 col-sm-3 col-xs-6"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-one.jpg" alt="Creative Bug"></a></div>
+        <div class="col-md-6 col-sm-3 col-xs-6"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-two.jpg" alt="Creative Bug"></a></div>
+        <div class="col-md-6 col-sm-3 hidden-xs"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-three.jpg" alt="Creative Bug"></a></div>
+        <div class="col-md-6 col-sm-3 hidden-xs"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-four.jpg" alt="Creative Bug"></a></div>
+      </div>
+      <div class="clearfix hidden-md hidden-lg"></div>
+      <div class="col-md-4 no-gutter">
         <div class="cb-box"><img class="img-responsive image-center" src="creative-bug-logo.png" alt="Creative Bug">
           <h4 class="roboto white text-center margin-top-5">Watch more than 1,000 DIY classes from renowned artists&mdash;anytime, anywhere. No pressure, just possibilities! </h4>
           <div class="text-center"><a href="https://www.creativebug.com/lib/dcl" target="_blank" class="btn btn-default text-uppercase margin-15">Get Started Now</a></div>
           <h5 class="white text-center">Create your account using your library card and PIN, and start crafting!</h5>
         </div>
       </div>
-      <div class="cb-background-one col-lg-3 col-md-3"> </div>
+      <div class="clearfix hidden-md hidden-lg"></div>
+      <div class="col-sm-12 col-md-4 no-gutter">
+        <div class="col-md-6 col-sm-3 col-xs-6"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-five.jpg" alt="Creative Bug"></a></div>
+        <div class="col-md-6 col-sm-3 col-xs-6"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-six.jpg" alt="Creative Bug"></a></div>
+        <div class="col-md-6 col-sm-3 hidden-xs"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-seven.jpg" alt="Creative Bug"></a></div>
+        <div class="col-md-6 col-sm-3 hidden-xs"><a href="https://www.creativebug.com/lib/dcl" target="_blank"><img class="img-responsive image-center" src="card-eight.jpg" alt="Creative Bug"></a></div>
+      </div>
     </div>
   </div>
-  <div class="row"> </div>
+  <div class="row">
+	  
+	  <!-- remove for now
+    <div id=""><img src="https://placehold.it/175/cbd6dd/999?text=COOL ICON" alt="E-Books" class="white-circle img-circle img-responsive center-block"></div>
+	  -->
+	  
+  </div>
   <div class="row padding-top-30 bg-gray-5 text-center">
     <h1 class="text-uppercase font-weight-400">Online Learning</h1>
   </div>
@@ -536,11 +614,7 @@ win.scroll(function(event) {
   
 });
 	</script> 
-	<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
+<script src="js/main.js"></script> <!-- Resource JavaScrip -->
 	<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 <!-- End Structured Data -->
