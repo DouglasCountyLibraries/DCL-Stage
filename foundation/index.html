@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,9 +94,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 </style>
 <!-- InstanceBeginEditable name="head" -->
-	<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Prata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Prata" rel="stylesheet">
 <style>
-	.feature-one {
+.feature-one {
 	font-family: 'Clicker Script', cursive;
 	font-size: 160px;
 	color: #6c781d;
@@ -106,12 +107,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	text-transform: uppercase;
 	font-size: 100px;
 	color: #6c781d;
-	line-height: 80px;
+	line-height: 60px;
 }
-	.tree-background {
+.what-text {
+	font-family: 'Clicker Script', cursive;
+	font-size: 60px;
+	color: #fff;
+	text-transform: lowercase;
+	line-height: 50px;
+}
+.tree-background {
 	background: #f5ebdc url("tree-background.png") repeat-x top center;
 }
-	.red-text {
+.red-text {
 	color: #000;
 	font-weight: 400;
 }
@@ -119,7 +127,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	color: #873928;
 	text-decoration: none;
 }
-	@media (max-width: 1200px) {
+
+@media (max-width: 1200px) {
 .text-center.headings {
 	position: relative;
 	top: -53px;
@@ -383,9 +392,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-	
-	
-	  <div class="row tree-background padding-top-60 padding-bottom-60">
+  <div class="row tree-background padding-top-60">
     <div class="container-md">
       <div class="col-lg-7"><img class="padding-top-15 padding-bottom-15 img-responsive center-block" src="treehouse.png" alt="Come On Up"></div>
       <div class="col-lg-5 col-lg-pull-2 padding-top-15 padding-bottom-15">
@@ -398,14 +405,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-	
-	
-	
-	
-	
-  <div class="row white bg-lavender padding-bottom-30">
+  <div style="background-color: #7f8d21;" class="row white padding-bottom-30">
     <div class="container-lg no-gutter">
-      <h1 class="text-center white">What We Do</h1>
+      <div class="padding-top-15 hidden-lg"></div>
+      <div class="text-center what-text">What We Do</div>
       <div class="col-lg-3 col-md-6 col-sm-6 padding-top-15 padding-bottom-30">
         <div id="box-one"></div>
         <h2 class="roboto text-center white"><a class="white" href="../adult-education/">Career Online High School & HSE Prep</a></h2>
@@ -682,4 +685,5 @@ $(document).on('click', '.popover-navigation [data-role=next],.popover-navigatio
 
 </script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
