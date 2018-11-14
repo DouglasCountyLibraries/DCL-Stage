@@ -14,7 +14,7 @@
 <title>Foundation | Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
 <meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.1/flickity.min.css" integrity="sha256-qNqUHYpEZRbIJOvJ+3e0LmuSxt7tHa7SZr2CHtJ7xRY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -93,7 +93,49 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 </style>
 <!-- InstanceBeginEditable name="head" -->
+	<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Prata" rel="stylesheet">
 <style>
+	.feature-one {
+	font-family: 'Clicker Script', cursive;
+	font-size: 160px;
+	color: #6c781d;
+	line-height: 130px;
+}
+.feature-two {
+	font-family: 'Prata', serif;
+	text-transform: uppercase;
+	font-size: 100px;
+	color: #6c781d;
+	line-height: 80px;
+}
+	.tree-background {
+	background: #f5ebdc url("tree-background.png") repeat-x top center;
+}
+	.red-text {
+	color: #000;
+	font-weight: 400;
+}
+.red-text a:active, .red-text a:hover, .red-text a:focus {
+	color: #873928;
+	text-decoration: none;
+}
+	@media (max-width: 1200px) {
+.text-center.headings {
+	position: relative;
+	top: -53px;
+}
+.tree-background {
+	background: #f5ebdc;
+}
+.feature-one {
+	font-size: 150px;
+	line-height: 175px;
+}
+.feature-two {
+	font-size: 90px;
+	line-height: 0px;
+}
+}
 .carousel-cell {
 	width: 100%;
 	padding: 0 0 50px 0;
@@ -319,7 +361,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Foundation</h1>
         <div class="separator-container">
-          <div class="separator line-separator"><i class="fa fa-bookmark"></i></div>
+          <div class="separator line-separator"><i class="fas fa-bookmark"></i></div>
         </div>
         <h4 class="roboto">Your support of the Douglas County Libraries Foundation helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. Our libraries are critical to education, neighborhood development, workforce development, and economic development. </h4>
       </div>
@@ -328,26 +370,46 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   <div class="row no-gutter sub-nav-row">
     <div class="sub-nav">
       <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border-first equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../volunteer/"><i class="fa fa-clock-o"></i>Give Time</a></h5>
+        <h5 class="no-margin text-uppercase"><a class="show" href="../volunteer/"><i class="fas fa-clock"></i>Give Time</a></h5>
       </div>
       <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank"><i class="fa fa-money"></i>Give Money</a></h5>
+        <h5 class="no-margin text-uppercase"><a class="show" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank"><i class="fas fa-dollar-sign"></i>Give Money</a></h5>
       </div>
       <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="#other-ways" target="_blank"><i class="fa fa-edit"></i>Other Ways to Give</a></h5>
+        <h5 class="no-margin text-uppercase"><a class="show" href="#other-ways" target="_blank"><i class="fas fa-edit"></i>Other Ways to Give</a></h5>
       </div>
       <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="foundation_annual_report_v2.pdf" target="_blank"><i class="fa fa-file-text-o"></i>2016 Annual Report</a></h5>
+        <h5 class="no-margin text-uppercase"><a class="show" href="foundation_annual_report_v2.pdf" target="_blank"><i class="fas fa-archive"></i>2016 Annual Report</a></h5>
       </div>
     </div>
   </div>
+	
+	
+	  <div class="row tree-background padding-top-60 padding-bottom-60">
+    <div class="container-md">
+      <div class="col-lg-7"><img class="padding-top-15 padding-bottom-15 img-responsive center-block" src="treehouse.png" alt="Come On Up"></div>
+      <div class="col-lg-5 col-lg-pull-2 padding-top-15 padding-bottom-15">
+        <div class="text-center headings">
+          <div class="feature-one">come</div>
+          <div class="feature-two">on&nbsp;up</div>
+        </div>
+        <h3 class="text-center gray-90">Colorado Gives Day is Tuesday, December 4.</h3>
+        <h4 class="text-center red-text text-uppercase"><a class="red-text" href="donate/">Learn More &raquo;</a></h4>
+      </div>
+    </div>
+  </div>
+	
+	
+	
+	
+	
   <div class="row white bg-lavender padding-bottom-30">
     <div class="container-lg no-gutter">
       <h1 class="text-center white">What We Do</h1>
       <div class="col-lg-3 col-md-6 col-sm-6 padding-top-15 padding-bottom-30">
         <div id="box-one"></div>
-        <h2 class="roboto text-center white">7Readers Are Leaders</h2>
-        <div class="margin-left-30 margin-right-30">7Readers Are Leaders encourages and facilitates reading among early elementary school children, to help guide their academic success. Each month, Denver7 awards one local first-grade class a Storytime with on-air talent and $1,000 for their school's library. Each student in the winning class receives a book from Douglas County Libraries.</div>
+        <h2 class="roboto text-center white"><a class="white" href="../adult-education/">Career Online High School & HSE Prep</a></h2>
+        <div class="margin-left-30 margin-right-30">Douglas County Libraries offers programs to help adults achieve their educational goals. Career Online High School is an accredited online high school diploma and career certification program for adults ages 19 and older, with scholarships available to qualified students. Our High School Equivalency (HSE) Prep Classes are free to students ages 17-plus preparing for equivalency testing.</div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6 padding-top-15 padding-bottom-30">
         <div id="box-two"></div>
@@ -362,13 +424,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       <div class="col-lg-3 col-md-6 col-sm-6 padding-top-15 padding-bottom-30">
         <div id="box-four"></div>
         <h2 class="roboto text-center white"><a class="white" href="../fete-des-fables/">Fête des Fables Gala</a></h2>
-        <div class="margin-left-30 margin-right-30">Our annual <a class="white text-underline" href="../fete-des-fables/">Fête des Fables Gala</a>, in addition to traditional cash donations, is a primary way that we fund our support of <a class="text-underline white" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Early Childhood Literacy">ECL</a> programs. Each year, <a class="white text-underline" href="../fete-des-fables/">Fête des Fables</a> invites guests to enjoy cocktails and a sumptuous meal, shop a fantastic silent auction, and mingle with friends old and new, while celebrating a classic story in a charming venue.</div>
+        <div class="margin-left-30 margin-right-30">Our annual Fête des Fables Gala, in addition to traditional cash donations, is a primary way that we fund our support of <a class="text-underline white" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Early Childhood Literacy">ECL</a> programs. Each year, Fête des Fables invites guests to enjoy cocktails and a sumptuous meal, shop a fantastic silent auction, and mingle with friends old and new, while celebrating a classic story in a charming venue.</div>
       </div>
     </div>
   </div>
   <script>
-    var images = ['readers-leaders-one.jpg', 'readers-leaders-two.jpg', 'readers-leaders-three.jpg', 'readers-leaders-four.jpg', 'readers-leaders-five.jpg', 'readers-leaders-six.jpg'];
-    $('<img alt="7Readers Are Leaders" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
+    var images = ['cohs-hse-one.jpg'];
+    $('<img alt="Career Online High School and HSE Prep" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');
 	
 	var images = ['cuddle-one.jpg', 'cuddle-two.jpg'];
     $('<img alt="Cuddle Up and Read" class="img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');
@@ -425,39 +487,40 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           Castle Rock, CO 80104<br>
           (Include a note on the check to designate your donation for a specific program or branch) </div>
         <h2 class="roboto">Make an Impact</h2>
-        <ul>
-          <li>Attend Fête des Fables Gala</li>
-          <li>Workplace Giving/Matching Gifts</li>
-          <li>Naming Rights</li>
-          <li>Tribute Gifts</li>
-          <!-- Button trigger modal -->
-          <li><a href="#" data-toggle="modal" data-target="#king-soopers">King Soopers Rewards</a></li>
-          
-          <!-- Button trigger modal --> 
-          
-          <!-- Modal -->
-          <div class="modal fade" id="king-soopers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="padding-30 text-center modal-title">Sign up to get a DCL Foundation King Soopers Rewards Card! Fill it up at the register before you shop and DCL will earn 5% every time you use your card. </h4>
-                </div>
-                <div class="modal-body">
-                  <iframe id="JotFormIFrame" allowtransparency="true" src="https://form.jotform.us/62995947341167" frameborder="0" style="width:100%;height:570px;border:none;" scrolling="no"></iframe>
-                </div>
-              </div>
+        <ul style="padding-left: 0px;">
+          <div class="col-md-6">
+            <li>Attend <a href="../fete-des-fables/">Fête des Fables Gala</a></li>
+            <li>Workplace Giving/Matching Gifts</li>
+            <li>Naming Rights</li>
+            <li>Tribute Gifts</li>
+            <li><a href="#" data-toggle="modal" data-target="#king-soopers">King Soopers Rewards</a></li>
+          </div>
+          <div class="col-md-6">
+            <li>Planned Giving</li>
+            <li><a href="https://smile.amazon.com/ch/84-1207775" target="_blank">Shop Using AmazonSmile</a></li>
+            <li><a href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A3DWH3KNEEAD5M&merchant=A3DWH3KNEEAD5M&redirect=true" target="_blank">Shop Our Online Bookstore</a></li>
+            <li><a href="https://carshelpingcharities.org/cobrand/douglas-county-libraries/" target="_blank">Donate Your Car</a></li>
+          </div>
+        </ul>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="king-soopers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="padding-30 text-center modal-title">Sign up to get a DCL Foundation King Soopers Rewards Card! Fill it up at the register before you shop and DCL will earn 5% every time you use your card. </h4>
+            </div>
+            <div class="modal-body">
+              <iframe id="JotFormIFrame" allowtransparency="true" src="https://form.jotform.us/62995947341167" frameborder="0" style="width:100%;height:570px;border:none;" scrolling="no"></iframe>
             </div>
           </div>
-          <li>Planned Giving</li>
-          <li><a href="https://smile.amazon.com/ch/84-1207775" target="_blank">Shop Using AmazonSmile</a></li>
-          <li><a href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A3DWH3KNEEAD5M&merchant=A3DWH3KNEEAD5M&redirect=true" target="_blank">Shop Our Online Bookstore</a></li>
-        </ul>
+        </div>
       </div>
       <div id="donate-materials" class="col-md-6">
         <h2 class="roboto">Donate Materials</h2>
-        <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. Donations will be accepted at library welcome desks during regular business hours. We appreciate your call at <a href="tel:+13037917323">(303) 791-7323</a> in advance of large donations (more than you can carry from your vehicle). We are not able to quote a value for donated items, but dated receipts for the number of items donated are available upon request. Please do not donate:</div>
-        <ul>
+        <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. Donations will be accepted at library welcome desks during regular business hours. We appreciate your call at <a href="tel:+13037917323">(303) 791-7323</a> in advance of large donations (more than you can carry from your vehicle). Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
+        <ul style="padding-left: 15px;">
           <li>Items in poor condition</li>
           <li>Textbooks older than five years</li>
           <li>Encyclopedias</li>
@@ -550,7 +613,7 @@ $(document).ready(function() {
   }
 });
 </script> 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.1/flickity.pkgd.min.js" integrity="sha256-/i359t9LSo1xdNJZ9WO42eKOTAP49Akv2dtgRODmTDI=" crossorigin="anonymous"></script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
  <script>
 	var cards = $(".carousel-cell");
 for (var i = 0; i < cards.length; i++) {
