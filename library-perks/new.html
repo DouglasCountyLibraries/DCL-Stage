@@ -115,10 +115,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	z-index: -1;
 }
 .aaptiv-box {
-	padding: 30px;
+
+	flex: 1;
 }
 .aaptiv-row {
 	background: rgba(218,201,185,.2);
+display: flex;
+	  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 992px) {
@@ -318,15 +322,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       </div>
     </div>
   </div>
-  <div class="row aaptiv-row no-gutter">
-    <div class="col-lg-6 col-md-5 text-center">
-      <div class="aaptiv-box"><img class="img-responsive center-block" src="aaptiv-logo.png" alt="Aaptiv">
+  <div class="row aaptiv-row text-center">
+    
+      <div class="aaptiv-box padding-left-15 padding-right-15"><img class="img-responsive center-block" src="aaptiv-logo.png" alt="Aaptiv">
         <h4 class="roboto">Aaptiv gives you unlimited access to over 2,500 audio-guided workouts and programs led by expert trainers in running, strength, yoga, and 10 other categories.</h4>
         <div class="text-center"><a href="https://aaptivenroll.douglascountylibraries.org/aaptiv/goforth " target="_blank" class="btn btn-primary text-uppercase margin-15">Get Started Now</a></div>
         <div class="text-center">Create an Aaptiv account using your library card and PIN.</div>
       </div>
-    </div>
-    <div class="col-lg-6 col-md-7 aaptiv-video">
+    
+    <div class="aaptiv-box">
       <div class="embed-responsive embed-responsive-16by9">
         <video class="embed-responsive-item" poster="aaptiv.jpg" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
           <source data-src="aaptiv-video.mp4" type="video/mp4" src="aaptiv-video.mp4">
