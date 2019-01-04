@@ -118,8 +118,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .top-bkg {
 	background: #fff url(bkg.gif) center top repeat-x;
 }
-.gray-row h3, .white-row h3 {
+.gray-row .gray-aside h4, .white-row .white-aside h4 {
+	font-weight: 400;
 	text-transform: uppercase;
+	color: #807e7d;
 }
 .gray-row h3, .gray-row h4 {
 	margin: 0;
@@ -127,23 +129,32 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .vcenter {
 	display: flex;
 	align-items: center;
-	padding: 5px 15px 5px;
+	padding: 15px;
 }
 .vcenter {
 	flex: 1 100%;
 }
-	.aside {
-		background: #fff url("gray-aside.png") center right no-repeat;
-	}
 
-
-@media (max-width: 768px) {
+@media (min-width: 620px) {
+.gray-aside, .white-aside {
+	padding: 25px 50px 25px 35px;
+	min-width: 305px;
+}
+.gray-aside {
+	background: #fff url("gray-aside.png") center right no-repeat;
+}
+.white-aside {
+	background: #f5f5f5 url("white-aside.png") center right no-repeat;
+}
+}
+ @media (max-width: 620px) {
 .vcenter {
 	flex-flow: row wrap;
+	padding: 20px 0 25px;
 }
-.aside {
-}
-.main {
+ @media (min-width: 992px) {
+.container.vcenter {
+ width: 992px;
 }
 }
 </style>
@@ -332,14 +343,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
           <div class="separator line-separator"><i class="fa fa-map-marker"></i></div>
         </div>
       </div>
-      <h4 class="roboto text-center margin-lg-200">Show your Douglas County Libraries library card at participating DCL Local merchants to receive special offers!</h4>
+      <h4 class="roboto text-center margin-lg-200">Show your Douglas County Libraries library card at participating DCL Local merchants to receive special offers of <a href="#food-drink">Food & Drink</a>, <a href="#shopping">Shopping</a> and <a href="#classes-experiences">Classes & Experiences</a>.</h4>
     </div>
   </div>
-	
-	
-	
-	
-	
   <div class="row bottom-bkg padding-top-30">
     <div id="food-drink"><img src="https://placehold.it/175/d5d9dd/666?text=graphic" alt="Food & Drink" class="white-circle img-circle img-responsive center-block"></div>
   </div>
@@ -348,10 +354,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row">
     <div class="container vcenter">
-      <div class="col-md-3 col-md-push-3 aside">
-        <h3>$1 Off</h3>
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>$1 Off</h4>
       </div>
-      <div class="col-md-5 col-md-push-3 main">
+      <div class="col-sm-6 col-md-push-2 main">
         <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
         <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
       </div>
@@ -359,51 +365,89 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row">
     <div class="container vcenter">
-      <div class="col-md-3 col-md-push-3 aside">
-        <h3>Buy one, get one half off</h3>
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>Buy one, get one half off</h4>
       </div>
-      <div class="col-md-5 col-md-push-3 main">
+      <div class="col-sm-6 col-md-push-2 main">
         <h4><a href="https://goo.gl/maps/HuKVuJVgy5x" target="_blank">Briccy's Coffee</a></h4>
         <div>Buy one drink, get one drink 50% off. Same size or smaller drink.</div>
       </div>
     </div>
   </div>
   <div class="row gray-row">
-    <div class="container">
-      <div class="col-md-6">
-        <h3>$9.99 Deal</h3>
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>$5 Off</h4>
       </div>
-      <div class="col-md-6">
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
-          <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). <a href="#restrictions" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Valid at the Highlands Ranch and Lone Tree locations.">Restrictions apply.</a></div>
-        </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/RWHyr7vzwW62" target="_blank">The Chicken Shack</a></h4>
+        <div>$5 off a minimum of 2 combos purchased. Not valid with any other offer.</div>
       </div>
     </div>
   </div>
   <div class="row gray-row">
-    <div class="container">
-      <div class="col-md-6">
-        <h3>$9.99 Deal</h3>
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>25% Off</h4>
       </div>
-      <div class="col-md-6">
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
-          <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). <a href="#restrictions" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Valid at the Highlands Ranch and Lone Tree locations.">Restrictions apply.</a></div>
-        </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/ryzk4fhcdRr" target="_blank">Festive Cup Coffee & Gift Boutique</a></h4>
+        <div>25% off any hand-crafted coffee, tea or smoothie. </div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>10% Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/tWA7SnV3gtu" target="_blank">Living the Dream Brewing</a></h4>
+        <div>10% off on-site taproom beers.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>10% Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/7R15KVHsV6R2" target="_blank">Lone Tree Brewing Company</a></h4>
+        <div>10% off on-site taproom beers.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>10% Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/ZfQdtdjpEuB2" target="_blank">Old Blinking Light</a></h4>
+        <div>10% off total purchase. Offer may not be used on Happy Hour menu.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>Buy two, get one free</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://drive.google.com/open?id=1JHR-ocgpdQcW7BaFoXZEMtjPfsg0EMNG&usp=sharing" target="_blank">Purgatory Cellars Winery</a></h4>
+        <div>Buy two bottles of wine to go, get one of equal or lesser value free.</div>
       </div>
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="container">
-      <div class="col-md-6">
-        <h3>$9.99 Deal</h3>
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 gray-aside">
+        <h4>Buy one, get one free</h4>
       </div>
-      <div class="col-md-6">
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
-          <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). <a href="#restrictions" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Valid at the Highlands Ranch and Lone Tree locations.">Restrictions apply.</a></div>
-        </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/emNZ3PXS1Ez" target="_blank">Welcome Home Brewery</a></h4>
+        <div>Buy one pint, get one pint free. One per person, per visit. Show library card or use code: DCL.</div>
       </div>
     </div>
   </div>
@@ -417,51 +461,79 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Shopping</h1>
   </div>
   <div class="row white-row">
-    <div class="container">
-      <div class="col-md-6">
-        <h3><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h3>
-        <div>Access a collection of e-books and audiobooks to enjoy on your PC, smartphone or e-book reader. </div>
-        <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
-        <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
       </div>
-      <div class="col-md-6">
-        <h4>You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i><a href="https://meet.libbyapp.com/" target="_blank">Libby  app</a> (Android, iOS, Windows) or <a href="https://app.overdrive.com/#download" target="_blank">OverDrive app</a> (Android, iOS, Desktop, Kindle Fire) </li>
-          <li><i class="fa-li fa fa-check"></i><a href="https://app.overdrive.com/#download" target="_blank">OverDrive desktop app</a> (Windows) for MP3 format and to transfer to MP3 players</li>
-        </ul>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
       </div>
     </div>
   </div>
   <div class="row white-row">
-    <div class="container">
-      <div class="col-md-6">
-        <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
-        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
       </div>
-      <div class="col-md-6">
-        <h4>You'll need:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
-        </ul>
-        <h4 class="want">You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (<a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>)</li>
-        </ul>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
       </div>
     </div>
   </div>
-  <div class="row white-row last">
-    <div class="container">
-      <div class="col-md-6">
-        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
-        <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
+  <div class="row white-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
       </div>
-      <div class="col-md-6">
-        <h4>You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
-        </ul>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container vcenter">
+      <div class="col-sm-4 col-md-push-2 white-aside">
+        <h4>$1 Off</h4>
+      </div>
+      <div class="col-sm-6 col-md-push-2 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
       </div>
     </div>
   </div>
@@ -476,7 +548,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="row gray-row">
     <div class="container vcenter">
-      <div class="col-md-3 col-md-push-3 aside">
+      <div class="col-md-3 col-md-push-3 gray-aside">
         <h3>$9.99 Deal</h3>
       </div>
       <div class="col-md-5 col-md-push-3 main">
