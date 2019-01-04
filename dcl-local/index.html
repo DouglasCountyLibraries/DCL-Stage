@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,6 +93,60 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 </style>
 <!-- InstanceBeginEditable name="head" -->
+<style>
+.using-the-library-active {
+	background-color: #f5f5f5;
+}
+.gray-row, .white-row {
+	border-top: 1px solid #ddd;
+}
+.gray-row {
+	background: #f5f5f5;
+}
+.gray-row.last, .white-row.last {
+	border-bottom: 1px solid #ddd;
+}
+.gray-circle {
+	border: 10px solid #f5f5f5;
+}
+.white-circle {
+	border: 10px solid #fff;
+}
+.bottom-bkg {
+	background: #fff url(bkg.gif) center bottom repeat-x;
+}
+.top-bkg {
+	background: #fff url(bkg.gif) center top repeat-x;
+}
+.gray-row h3, .white-row h3 {
+	text-transform: uppercase;
+}
+.gray-row h3, .gray-row h4 {
+	margin: 0;
+}
+.vcenter {
+	display: flex;
+	align-items: center;
+	padding: 5px 15px 5px;
+}
+.vcenter {
+	flex: 1 100%;
+}
+	.aside {
+		background: #fff url("gray-aside.png") center right no-repeat;
+	}
+
+
+@media (max-width: 768px) {
+.vcenter {
+	flex-flow: row wrap;
+}
+.aside {
+}
+.main {
+}
+}
+</style>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -280,80 +335,165 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       <h4 class="roboto text-center margin-lg-200">Show your Douglas County Libraries library card at participating DCL Local merchants to receive special offers!</h4>
     </div>
   </div>
-  <div class="row padding-bottom-40">
-    <div class="container">
-      <div class="col-sm-6">
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://www.google.com/maps/place/Cheyenne+Mountain+Zoo/@38.7718176,-104.8555402,17z/data=!4m12!1m6!3m5!1s0x87135cafcac1ab93:0x91d11c5ba536774e!2sCheyenne+Mountain+Zoo!8m2!3d38.7718176!4d-104.8533515!3m4!1s0x87135cafcac1ab93:0x91d11c5ba536774e!8m2!3d38.7718176!4d-104.8533515" target="_blank">Cheyenne Mountain Zoo</a></h4>
-          <div>$2 off daytime admission, valid for up to three people. <a href="#" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Daytime admission only. Not valid for special events.">Restrictions apply.</a></div>
-        </div>
-        <div>
- 
-</div>
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://www.google.com/maps/place/The+Gator+Loft/@39.5260035,-104.7726578,17z/data=!3m1!4b1!4m5!3m4!1s0x876c8e1e650da0a7:0xbacf04c6be28b9bc!8m2!3d39.5260035!4d-104.7704691" target="_blank">The Gator Loft Baby Boutique</a></h4>
-          <div>5% off your total purchase. <a href="#" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Some product exclusions may apply. Cannot be combined with any other offers. In store purchases only.">Restrictions apply.</a></div>
-        </div>
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://www.google.com/maps/place/Monk+%26+Mongoose+Gourmet+Coffee/@39.530316,-104.8798037,17z/data=!3m1!4b1!4m5!3m4!1s0x876c853d7ffb5377:0x8460c601a2c1518!8m2!3d39.530316!4d-104.877615" target="_blank">Monk & Mongoose Gourmet Coffee</a></h4>
-          <div>15% off all coffee, espresso and tea-based beverages.</div>
-        </div>
+	
+	
+	
+	
+	
+  <div class="row bottom-bkg padding-top-30">
+    <div id="food-drink"><img src="https://placehold.it/175/d5d9dd/666?text=graphic" alt="Food & Drink" class="white-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row bg-gray-5 text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Food & Drink</h1>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-md-3 col-md-push-3 aside">
+        <h3>$1 Off</h3>
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-5 col-md-push-3 main">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">3 Freaks Brewery</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-md-3 col-md-push-3 aside">
+        <h3>Buy one, get one half off</h3>
+      </div>
+      <div class="col-md-5 col-md-push-3 main">
+        <h4><a href="https://goo.gl/maps/HuKVuJVgy5x" target="_blank">Briccy's Coffee</a></h4>
+        <div>Buy one drink, get one drink 50% off. Same size or smaller drink.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3>$9.99 Deal</h3>
+      </div>
+      <div class="col-md-6">
         <div>
-          <h4 class="no-margin-bottom"><a href="https://www.google.com/maps/place/Old+Blinking+Light/@39.547144,-105.0014475,17z/data=!3m1!4b1!4m5!3m4!1s0x876c8245986fc83f:0x704642c1be3bea73!8m2!3d39.547144!4d-104.9992588" target="_blank">Old Blinking Light</a></h4>
-          <div>10% off total purchase. <a href="#" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Does not include Happy Hour pricing.">Restrictions apply.</a></div>
-        </div>
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://www.google.com/maps/place/Roxborough+Academy+of+Martial+Arts/@39.4843435,-105.0772723,17z/data=!3m1!4b1!4m5!3m4!1s0x876b7d2b33f80a37:0xe0df02bb43ead3e9!8m2!3d39.4843435!4d-105.0750836" target="_blank">Roxborough Academy of Martial Arts</a></h4>
-          <div>25% off one month Karate or MMA Core Fit, or one free uniform with purchase of Karate.</div>
-        </div>
-        <div>
-          <h4 class="no-margin-bottom"><a href="https://www.google.com/maps/search/SafeSplash+Swim+School/@39.5565933,-104.8225279,13z?hl=en-US" target="_blank">SafeSplash Swim School</a></h4>
-          <div>$10 off first month of swim lessons and one free trial class. Good at Parker/Lone Tree and Aurora &ndash; Southlands Mall locations.</div>
+          <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
+          <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). <a href="#restrictions" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Valid at the Highlands Ranch and Lone Tree locations.">Restrictions apply.</a></div>
         </div>
       </div>
     </div>
   </div>
-  <div id="adventure-pass" class="row bg-gray-5">
+  <div class="row gray-row">
     <div class="container">
-      <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Adventure Pass</h1>
+      <div class="col-md-6">
+        <h3>$9.99 Deal</h3>
       </div>
-      <h4 class="roboto text-center margin-lg-100">Use your library card to reserve a Douglas County Libraries <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Adventure Pass</a> to one of our local participating institutions. Reserve free passes up to 30 days in advance. </h4>
+      <div class="col-md-6">
+        <div>
+          <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
+          <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). <a href="#restrictions" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Valid at the Highlands Ranch and Lone Tree locations.">Restrictions apply.</a></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-bottom-40">
-    <div class="container margin-lg-100">
-      <div class="col-sm-6">
+  <div class="row gray-row last">
+    <div class="container">
+      <div class="col-md-6">
+        <h3>$9.99 Deal</h3>
+      </div>
+      <div class="col-md-6">
         <div>
-          <h4><a href="https://www.google.com/maps/place/Butterfly+Pavilion/@39.8870846,-105.0665152,15z/data=!4m5!3m4!1s0x0:0x912be2f44ca96b6e!8m2!3d39.8870846!4d-105.0665152" target="_blank">Butterfly Pavilion</a></h4>
-        </div>
-        <div>
-          <h4><a href="https://www.google.com/maps/place/Clyfford+Still+Museum/@39.7362842,-104.9919789,17z/data=!3m2!4b1!5s0x876c7f2b1487542f:0xce248acb741d1e55!4m5!3m4!1s0x876c7f2b1442f4ad:0xee723d9652e7955d!8m2!3d39.7362842!4d-104.9897849" target="_blank">Clyfford Still Museum</a></h4>
-        </div>
-        <div>
-          <h4><a href="https://www.google.com/maps/place/Denver+Firefighters+Museum/@39.7405861,-104.9945725,17z/data=!3m1!4b1!4m5!3m4!1s0x876c78d39a7ccef5:0x4a8ebffa0694c906!8m2!3d39.7405861!4d-104.9923785" target="_blank">Denver Firefighters Museum</a></h4>
-        </div>
-        <div>
-          <h4><a href="https://www.google.com/maps/place/Denver+Museum+of+Miniatures,+Dolls+and+Toys/@39.746272,-104.962916,17z/data=!3m1!4b1!4m5!3m4!1s0x876c794a18eb7283:0xbb0750d04458cb22!8m2!3d39.746272!4d-104.960722" target="_blank">Denver Museum of Miniatures, Dolls and Toys</a></h4>
+          <h4 class="no-margin-bottom"><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
+          <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). <a href="#restrictions" data-placement="top" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Valid at the Highlands Ranch and Lone Tree locations.">Restrictions apply.</a></div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div>
-          <h4><a href="https://www.google.com/maps/place/Denver+Museum+of+Nature+%26+Science/@39.7475261,-104.9450018,17z/data=!3m2!4b1!5s0x876c795447b763dd:0x6f579fada74fc0b0!4m5!3m4!1s0x876c795153a77423:0xcd3f08f3f2746211!8m2!3d39.7475261!4d-104.9428078" target="_blank">Denver Museum of Nature & Science</a></h4>
-        </div>
-        <div>
-          <h4><a href="https://www.google.com/maps/place/Dinosaur+Ridge/@39.6941657,-105.2087762,15z/data=!3m1!4b1!4m5!3m4!1s0x876b83416f69ac9d:0x7369e8f36128feb8!8m2!3d39.6941666!4d-105.2" target="_blank">Dinosaur Ridge</a></h4>
-        </div>
-        <div>
-          <h4><a href="https://www.google.com/maps/place/History+Colorado+Center/@39.7358054,-104.9891827,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7f2a94319b1f:0x8959e1089da28aec!8m2!3d39.7358054!4d-104.9869887" target="_blank">History Colorado Center</a></h4>
-        </div>
-        <div>
-          <h4><a href="https://www.google.com/maps/place/Molly+Brown+House+Museum/@39.737494,-104.9829247,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7ed496dac877:0xe605a23aa769fbad!8m2!3d39.737494!4d-104.980736" target="_blank">Molly Brown House Museum</a></h4>
-        </div>        
+    </div>
+  </div>
+  
+  <!----################################### -->
+  
+  <div class="row top-bkg padding-top-15">
+    <div id="shopping"><img src="https://placehold.it/175/d5d9dd/666?text=graphic" alt="Shopping" class="white-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Shopping</h1>
+  </div>
+  <div class="row white-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h3>
+        <div>Access a collection of e-books and audiobooks to enjoy on your PC, smartphone or e-book reader. </div>
+        <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
+        <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
       </div>
-      <div class="text-center"> <a class="text-uppercase btn btn-primary margin-top-30" href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Reserve Now</a></div>
+      <div class="col-md-6">
+        <h4>You might want:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i><a href="https://meet.libbyapp.com/" target="_blank">Libby  app</a> (Android, iOS, Windows) or <a href="https://app.overdrive.com/#download" target="_blank">OverDrive app</a> (Android, iOS, Desktop, Kindle Fire) </li>
+          <li><i class="fa-li fa fa-check"></i><a href="https://app.overdrive.com/#download" target="_blank">OverDrive desktop app</a> (Windows) for MP3 format and to transfer to MP3 players</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container">
+      <div class="col-md-6">
+        <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
+        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You'll need:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
+        </ul>
+        <h4 class="want">You might want:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (<a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row white-row last">
+    <div class="container">
+      <div class="col-md-6">
+        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
+        <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
+      </div>
+      <div class="col-md-6">
+        <h4>You might want:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!----################################### -->
+  
+  <div class="row bottom-bkg padding-top-15">
+    <div id="classes-experiences"><img src="https://placehold.it/175/d5d9dd/666?text=graphic" alt="Classes & Experiences" class="white-circle img-circle img-responsive center-block"></div>
+  </div>
+  <div class="row bg-gray-5 text-center">
+    <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Classes & Experiences</h1>
+  </div>
+  <div class="row gray-row">
+    <div class="container vcenter">
+      <div class="col-md-3 col-md-push-3 aside">
+        <h3>$9.99 Deal</h3>
+      </div>
+      <div class="col-md-5 col-md-push-3 main">
+        <h4><a href="https://goo.gl/maps/B2CFpxsKL2S2" target="_blank">ATA Karate Denver</a></h4>
+        <div>30 days unlimited martial arts, a pizza party for up to 35 kids(food, drinks & fun included) for only $9.99, 25% off any membership (after introductory offer). Valid at the Highlands Ranch and Lone Tree locations.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row gray-row last">
+    <div class="container vcenter">
+      <div class="col-md-6 item">
+        <h3>last</h3>
+      </div>
+      <div class="col-md-6">
+        <h4><a href="https://goo.gl/maps/xJkqX1xRyCT2" target="_blank">last</a></h4>
+        <div>$1 off first two pints. Valid Tuesdays, Wednesdays and Thursdays only.</div>
+      </div>
     </div>
   </div>
   <div class="row text-center text-left-md padding-top-30 padding-bottom-40">
@@ -507,4 +647,5 @@ $(document).on('click', '.popover-navigation [data-role=next],.popover-navigatio
 
 </script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
