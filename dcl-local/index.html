@@ -151,10 +151,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .library-card {
 	transform: rotate(-15deg);
 	-webkit-transform: rotate(-15deg);
+	-webkit-backface-visibility: hidden;
 	z-index: -1;
 	box-shadow: 1px 5px 8px 1px rgba(0,0,0,.2);
-}
-.come-in {
 }
 .come-in-card.come-in {
 	animation: come-in 2.5s ease forwards;
