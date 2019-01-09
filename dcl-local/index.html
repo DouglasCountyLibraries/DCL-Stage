@@ -149,24 +149,30 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: #f5f5f5 url("lavender-aside.jpg") center right no-repeat;
 }
 .library-card {
-	transform: rotate(-15deg);
-	-webkit-transform: rotate(-15deg);
+	transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
 	-webkit-backface-visibility: hidden;
 	z-index: -1;
 	box-shadow: 1px 5px 8px 1px rgba(0,0,0,.2);
 }
 .come-in-card.come-in {
 	animation: come-in 2.5s ease forwards;
-	transform: rotate(30deg)
+	transform-origin: 50% 50%;
 }
  @keyframes come-in {
- to {
- transform: translateY(0);
+ 0% {
+ transform:  translate(0px, 0px) rotate(0deg);
+}
+ 100% {
+ transform:  translate(0px, 0px) rotate(-30deg);
 }
 }
  @-webkit-keyframes come-in {
- to {
- transform: translateY(0);
+ 0% {
+ -webkit-transform:  translate(0px, 0px) rotate(0deg);
+}
+ 100% {
+ -webkit-transform:  translate(0px, 0px) rotate(-30deg);
 }
 }
 
