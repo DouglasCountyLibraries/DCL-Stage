@@ -132,23 +132,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
  -webkit-transform:  translate(0px, 0px) rotate(-30deg);
 }
 }
-
-@media (max-width: 992px) {
-.library-card {
-	margin-bottom: 50px;
-}
-.item {
-	text-align: center;
-}
-.item-wrapper {
-	flex-direction: column;
-}
-}
 .pic-wrapper {
 	position: relative;
 	width: 600px;
 	height: 450px;
 	overflow: hidden;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
 }
 figure {
 	position: absolute;
@@ -157,40 +148,32 @@ figure {
 	width: 600px;
 	height: 450px;
 	opacity: 0;
-	/*animation*/
-  
 	animation: slideShow 24s linear infinite 0s;
 	-o-animation: slideShow 24s linear infinite 0s;
 	-moz-animation: slideShow 24s linear infinite 0s;
 	-webkit-animation: slideShow 24s linear infinite 0s;
 }
-figurecaption {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	color: #fff;
-}
-.pic-1 {
+.image-one {
 	opacity: 1;
 	background: url(https://images.unsplash.com/photo-1492140818141-7b1370b0b5ee) no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.pic-2 {
+.image-two {
 	animation-delay: 6s;
 	-webkit-animation-delay: 6s;
 	background: url(https://images.unsplash.com/photo-1536564397506-55dda737cc65) no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.pic-3 {
+.image-three {
 	animation-delay: 12s;
 	-webkit-animation-delay: 12s;
 	background: url(https://images.unsplash.com/photo-1544213456-bc37cb97df74) no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.pic-4 {
+.image-four {
 	animation-delay: 18s;
 	-webkit-animation-delay: 18s;
 	background: url(https://images.unsplash.com/photo-1511366778564-867c73d27b6d) no-repeat center center;
@@ -238,6 +221,18 @@ figurecaption {
  100% {
  opacity: 0;
  -webkit-transformm:scale(1);
+}
+}
+
+@media (max-width: 992px) {
+.library-card {
+	margin-bottom: 50px;
+}
+.item {
+	text-align: center;
+}
+.item-wrapper {
+	flex-direction: column;
 }
 }
 </style>
@@ -418,7 +413,7 @@ figurecaption {
 </div>
 <!-- End Mobile Navbar -->
 <div class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
+  <div class="row border-top padding-bottom-15">
     <div class="container">
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Adventure Pass</h1>
@@ -429,52 +424,50 @@ figurecaption {
       <h4 class="roboto text-center margin-lg-100">Use your library card to reserve a Douglas County Libraries <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Adventure Pass</a> to one of our local participating institutions. Reserve free passes up to 30 days in advance. </h4>
     </div>
   </div>
-  <div class="row padding-top-30 padding-bottom-30">
+  <div class="row bg-teal padding-top-30 padding-bottom-40">
     <div class="container item-wrapper no-padding">
       <div class="item">
         <div class="pic-wrapper">
-          <figure class="pic-1"></figure>
-          <figure class="pic-2"></figure>
-          <figure class="pic-3"></figure>
-          <figure class="pic-4"></figure>
+          <figure class="image-one"></figure>
+          <figure class="image-two"></figure>
+          <figure class="image-three"></figure>
+          <figure class="image-four"></figure>
         </div>
       </div>
       <div class="item">
         <div>
-          <h4><a href="https://goo.gl/maps/VJiUS4pxFem" target="_blank">Butterfly Pavilion</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/VJiUS4pxFem" target="_blank">Butterfly Pavilion</a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/1SZaYEK3cv52" target="_blank">Clyfford Still Museum</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/1SZaYEK3cv52" target="_blank">Clyfford Still Museum</a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony </a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony </a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/nswiDYjXdYo" target="_blank">Denver Firefighters Museum</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/nswiDYjXdYo" target="_blank">Denver Firefighters Museum</a></h4>
         </div>
         <!-- removed until they re-open <div>
          <h4><a href="https://goo.gl/maps/gB4iKfbCsXx" target="_blank">Denver Museum of Miniatures, Dolls and Toys</a></h4>
         </div>-->
         <div>
-          <h4><a href="https://goo.gl/maps/wDgZGzgiLct" target="_blank">Denver Museum of Nature & Science</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/wDgZGzgiLct" target="_blank">Denver Museum of Nature & Science</a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/UbLAyK8XrxK2" target="_blank">Dinosaur Ridge</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/UbLAyK8XrxK2" target="_blank">Dinosaur Ridge</a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/DC8LFDAHJLo" target="_blank">History Colorado Center</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/DC8LFDAHJLo" target="_blank">History Colorado Center</a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/nSdLFauthwT2" target="_blank">Molly Brown House Museum</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/nSdLFauthwT2" target="_blank">Molly Brown House Museum</a></h4>
         </div>
         <div>
-          <h4><a href="https://goo.gl/maps/ZH2Vas4RAYt" target="_blank">Museum of Contemporary Art Denver</a></h4>
+          <h4><a class="white" href="https://goo.gl/maps/ZH2Vas4RAYt" target="_blank">Museum of Contemporary Art Denver</a></h4>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row padding-bottom-40">
-    <div class="text-center"> <a class="text-uppercase btn btn-primary margin-top-15" href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Reserve Now</a></div>
+    <div class="text-center"> <a class="text-uppercase btn btn-primary margin-top-30" href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Reserve Now</a></div>
   </div>
   <div class="row bg-gray-5 text-center text-left-sm padding-top-80 padding-bottom-80">
     <div class="container margin-lg-100">
