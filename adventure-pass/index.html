@@ -94,7 +94,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </style>
 <!-- InstanceBeginEditable name="head" -->
 <style>
-	/*compile the css from the scss below. Codepen reference: https://codepen.io/anon/pen/qLvRKr
+/*compile the css from the scss below. Codepen reference: https://codepen.io/anon/pen/qLvRKr
 $items: 3;
 $animation-time: 6s;
 $transition-time: 1.2s;
@@ -177,7 +177,7 @@ $scale-base-1: (1 + $scale / 100%);
 	right: 40px;
 	text-align: right;
 }
-	.pic-wrapper {
+.pic-wrapper {
 	position: relative;
 	width: 600px;
 	height: 450px;
@@ -374,6 +374,9 @@ $scale-base-1: (1 + $scale / 100%);
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
+.date-list li {
+	padding-bottom: 15px;
+}
 .library-card {
 	transform: rotate(15deg);
 	-webkit-transform: rotate(15deg);
@@ -409,7 +412,6 @@ $scale-base-1: (1 + $scale / 100%);
  -webkit-transform:  translate(0px, 0px) rotate(-30deg);
 }
 }
-
 figure {
 	position: absolute;
 	top: 0;
@@ -719,7 +721,8 @@ figure {
           <h4><a class="white" href="https://goo.gl/maps/1SZaYEK3cv52" target="_blank">Clyfford Still Museum</a></h4>
         </div>
         <div>
-          <h4><a class="white" href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony </a></h4>
+          <h4 class="no-margin-bottom"><a class="white" href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony</a></h4>
+          <div><a href="#" data-toggle="modal" data-target="#symphony" class="small white text-uppercase">View Perfomance Dates &raquo;</a></div>
         </div>
         <div>
           <h4><a class="white" href="https://goo.gl/maps/nswiDYjXdYo" target="_blank">Denver Firefighters Museum</a></h4>
@@ -744,14 +747,40 @@ figure {
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="symphony" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="text-center modal-title">2019 Perfomance Dates</h4>
+          </div>
+          <div class="modal-body padding-30">
+            <ul class="list-unstyled date-list">
+              <li>A Tribute to Arthur Fiedler and the Boston Pops<br>
+                Saturday, January 12, 2019, 7:30PM</li>
+              <li>Symphonic Tribute to Comic Con-Friday<br>
+                February 8, 2019, 7:30PM</li>
+              <li>A Classical Romance-Sunday<br>
+                February 17, 1PM</li>
+              <li>Mussorgsky Pictures at an Exhibition<br>
+                March 31, 2019, 1PM</li>
+              <li>Brahms Symphony No. 4<br>
+                Friday, April 12, 2019, 7:30PM</li>
+              <li>Danny Elfman Violin Concerto featuring Sandy Cameron<br>
+                Friday, May 17, 2019 7:30PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="text-center"> <a class="text-uppercase btn btn-primary margin-top-30" href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Reserve Now</a></div>
   </div>
   <div class="row bg-gray-5 text-center text-left-sm padding-top-80 padding-bottom-80">
     <div class="container margin-lg-100">
-      <div style="z-index: 1000" class="col-md-4 padding-right-30 padding-left-30 module come-in-card"><a href="dcl-local-card.pdf" target="_blank"><img class="img-responsive image-center library-card" src="dcl-local-card.png" alt="DCL Local Card"></a></div>
+      <div style="z-index: 1000" class="col-md-4 padding-right-30 padding-left-30 module come-in-card"><a href="http://getacard.org/v2/index.html" target="_blank"><img class="img-responsive image-center library-card" src="library-card.jpg" alt="Get a Library Card"></a></div>
       <div class="col-md-8">
-        <h4 class="roboto">Don't have a physical library card? <a href="dcl-local-card.pdf" target="_blank">Print a DCL Local card here.</a></h4>
-        <div>Note: the DCL Local card is not a library card. To enjoy all the benefits of being a DCL cardholder, <a href="http://getacard.org/v2/index.html" target="_blank">sign up here</a>.</div>
+        <h4 class="roboto">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
       </div>
     </div>
   </div>
