@@ -94,7 +94,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </style>
 <!-- InstanceBeginEditable name="head" -->
 <style>
+/*
+############################################################################################
+pan and zoom css - to add another slide update $items: and recompile the scss
 /*compile the css from the scss below. Codepen reference: https://codepen.io/anon/pen/qLvRKr
+############################################################################################
 $items: 3;
 $animation-time: 6s;
 $transition-time: 1.2s;
@@ -167,20 +171,22 @@ $scale-base-1: (1 + $scale / 100%);
     }
   }
 }
-	*/
+	
+/* compiled css below */
+	
 .photo-credit {
 	color: white;
 	font-weight: 400;
 	font-size: .6em;
 	position: absolute;
-	bottom: 25px;
-	right: 40px;
+	bottom: 30px;
+	right: 45px;
 	text-align: right;
 }
 .pic-wrapper {
 	position: relative;
-	width: 600px;
-	height: 450px;
+	width: 50vw;
+	height: 45vh;
 	overflow: hidden;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
 	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
@@ -369,10 +375,24 @@ $scale-base-1: (1 + $scale / 100%);
  transform: scale(1);
 }
 }
-/*####################################################### */	
+/*
+#######################################################
+#######################################################
+	*/	
 	
 .using-the-library-active {
 	background-color: #f5f5f5;
+}
+.item-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.item {
+	flex: 0 auto;
+}
+.item-list {
+	padding: 30px;
 }
 .date-list li {
 	padding-bottom: 15px;
@@ -387,14 +407,6 @@ $scale-base-1: (1 + $scale / 100%);
 .come-in-card.come-in {
 	animation: come-in 2.5s ease forwards;
 	transform-origin: 50% 50%;
-}
-.item-wrapper {
-	display: flex;
-	align-items: center;
-}
-.item {
-	margin: 15px;
-	flex: 0 auto;
 }
  @keyframes come-in {
  0% {
@@ -412,88 +424,6 @@ $scale-base-1: (1 + $scale / 100%);
  -webkit-transform:  translate(0px, 0px) rotate(-30deg);
 }
 }
-figure {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 600px;
-	height: 450px;
-	opacity: 0;
-	animation: slideShow 24s linear infinite 0s;
-	-o-animation: slideShow 24s linear infinite 0s;
-	-moz-animation: slideShow 24s linear infinite 0s;
-	-webkit-animation: slideShow 24s linear infinite 0s;
-}
-.image-one {
-	opacity: 1;
-	background: #fff url(https://images.unsplash.com/photo-1492140818141-7b1370b0b5ee) no-repeat center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.image-two {
-	animation-delay: 6s;
-	-webkit-animation-delay: 6s;
-	background: #fff url(https://images.unsplash.com/photo-1536564397506-55dda737cc65) no-repeat center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.image-three {
-	animation-delay: 12s;
-	-webkit-animation-delay: 12s;
-	background: #fff url(https://images.unsplash.com/photo-1544213456-bc37cb97df74) no-repeat center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.image-four {
-	animation-delay: 18s;
-	-webkit-animation-delay: 18s;
-	background: #fff url(https://images.unsplash.com/photo-1511366778564-867c73d27b6d) no-repeat center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-@keyframes slideShow {
-0% {
- opacity: 0;
- transform:scale(1);
- -ms-transform:scale(1);
-}
- 5% {
- opacity: 1
-}
- 25% {
- opacity: 1;
-}
- 30% {
- opacity: 0;
- transform:scale(1.1);
- -ms-transform:scale(1.1);
-}
- 100% {
- opacity: 0;
- transform:scale(1);
- -ms-transformm:scale(1);
-}
-}
- @-webkit-keyframes slideShow {
-0% {
- opacity: 0;
- -webkit-transform:scale(1);
-}
- 5% {
- opacity: 1
-}
- 25% {
- opacity: 1;
-}
- 30% {
- opacity: 0;
- -webkit-transform:scale(1.1);
-}
- 100% {
- opacity: 0;
- -webkit-transformm:scale(1);
-}
-}
 
 @media (max-width: 992px) {
 .library-card {
@@ -504,6 +434,10 @@ figure {
 }
 .item-wrapper {
 	flex-direction: column;
+}
+.pic-wrapper {
+	width: 96vw;
+	height: 45vh;
 }
 }
 </style>
@@ -696,10 +630,9 @@ figure {
     </div>
   </div>
   <div class="row bg-teal padding-top-30 padding-bottom-40">
-    <div class="container item-wrapper no-padding">
+    <div class="container-md item-wrapper no-padding">
       <div class="item">
-        <div class="pic-wrapper"> 
-          <!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
+        <div class="pic-wrapper">
           <div class="slideshow">
             <div class="slideshow-image" style="background-image: url('colorado-symphony.jpg')">
               <div class="photo-credit">&copy; Jedediah Liddell</div>
@@ -713,7 +646,7 @@ figure {
           </div>
         </div>
       </div>
-      <div class="item">
+      <div class="item item-list">
         <div>
           <h4><a class="white" href="https://goo.gl/maps/VJiUS4pxFem" target="_blank">Butterfly Pavilion</a></h4>
         </div>
@@ -721,8 +654,8 @@ figure {
           <h4><a class="white" href="https://goo.gl/maps/1SZaYEK3cv52" target="_blank">Clyfford Still Museum</a></h4>
         </div>
         <div>
-          <h4 class="no-margin-bottom"><a class="white" href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony</a></h4>
-          <div><a href="#" data-toggle="modal" data-target="#symphony" class="small white text-uppercase">View Perfomance Dates &raquo;</a></div>
+          <h4 class="no-margin-bottom"><a class="white" href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony*</a></h4>
+          <div><a href="#" data-toggle="modal" data-target="#symphony" class="small white">*Passes available for these performances</a></div>
         </div>
         <div>
           <h4><a class="white" href="https://goo.gl/maps/nswiDYjXdYo" target="_blank">Denver Firefighters Museum</a></h4>
@@ -753,7 +686,7 @@ figure {
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="text-center modal-title">2019 Perfomance Dates</h4>
+            <h4 class="text-center modal-title">Adventure Passes availible for these 2019 Perfomances</h4>
           </div>
           <div class="modal-body padding-30">
             <ul class="list-unstyled date-list">
@@ -776,14 +709,14 @@ figure {
     </div>
     <div class="text-center"> <a class="text-uppercase btn btn-primary margin-top-30" href="http://www.eventkeeper.com/code/events.cfm?curOrg=dclibs&curapp=passes" target="_blank">Reserve Now</a></div>
   </div>
-  <div class="row bg-gray-5 text-center text-left-sm padding-top-80 padding-bottom-80">
+  <!--<div class="row bg-gray-5 text-center text-left-sm padding-top-80 padding-bottom-80">
     <div class="container margin-lg-100">
       <div style="z-index: 1000" class="col-md-4 padding-right-30 padding-left-30 module come-in-card"><a href="http://getacard.org/v2/index.html" target="_blank"><img class="img-responsive image-center library-card" src="library-card.jpg" alt="Get a Library Card"></a></div>
       <div class="col-md-8">
         <h4 class="roboto">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
       </div>
     </div>
-  </div>
+  </div>-->
   <div class="row bg-lavender text-center padding-top-15 padding-bottom-30">
     <div class="container">
       <h4 class="roboto white">Make your business part of the DCL Local family!</h4>
