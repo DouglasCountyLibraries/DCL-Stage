@@ -188,9 +188,9 @@ $scale-base-1: (1 + $scale / 100%);
 	width: 50vw;
 	height: 45vh;
 	overflow: hidden;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 10px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 10px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 3px 10px 0;
 }
 .slideshow {
 	position: absolute;
@@ -210,8 +210,8 @@ $scale-base-1: (1 + $scale / 100%);
 	animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
-	-webkit-animation-duration: 18s;
-	animation-duration: 18s;
+	-webkit-animation-duration: 54s;
+	animation-duration: 54s;
 	opacity: 1;
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -219,16 +219,46 @@ $scale-base-1: (1 + $scale / 100%);
 .slideshow-image:nth-child(1) {
 	-webkit-animation-name: kenburns-1;
 	animation-name: kenburns-1;
-	z-index: 2;
+	z-index: 8;
 }
 .slideshow-image:nth-child(2) {
 	-webkit-animation-name: kenburns-2;
 	animation-name: kenburns-2;
-	z-index: 1;
+	z-index: 7;
 }
 .slideshow-image:nth-child(3) {
 	-webkit-animation-name: kenburns-3;
 	animation-name: kenburns-3;
+	z-index: 6;
+}
+.slideshow-image:nth-child(4) {
+	-webkit-animation-name: kenburns-4;
+	animation-name: kenburns-4;
+	z-index: 5;
+}
+.slideshow-image:nth-child(5) {
+	-webkit-animation-name: kenburns-5;
+	animation-name: kenburns-5;
+	z-index: 4;
+}
+.slideshow-image:nth-child(6) {
+	-webkit-animation-name: kenburns-6;
+	animation-name: kenburns-6;
+	z-index: 3;
+}
+.slideshow-image:nth-child(7) {
+	-webkit-animation-name: kenburns-7;
+	animation-name: kenburns-7;
+	z-index: 2;
+}
+.slideshow-image:nth-child(8) {
+	-webkit-animation-name: kenburns-8;
+	animation-name: kenburns-8;
+	z-index: 1;
+}
+.slideshow-image:nth-child(9) {
+	-webkit-animation-name: kenburns-9;
+	animation-name: kenburns-9;
 	z-index: 0;
 }
  @-webkit-keyframes kenburns-1 {
@@ -237,13 +267,13 @@ $scale-base-1: (1 + $scale / 100%);
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 3.3333333333% {
+ 1.1111111111% {
  opacity: 1;
 }
- 30% {
+ 10% {
  opacity: 1;
 }
- 36.6666666667% {
+ 12.2222222222% {
  opacity: 0;
  -webkit-transform: scale(1);
  transform: scale(1);
@@ -253,7 +283,7 @@ $scale-base-1: (1 + $scale / 100%);
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 96.6666666667% {
+ 98.8888888889% {
  opacity: 0;
  -webkit-transform: scale(1.1090909091);
  transform: scale(1.1090909091);
@@ -268,13 +298,13 @@ $scale-base-1: (1 + $scale / 100%);
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 3.3333333333% {
+ 1.1111111111% {
  opacity: 1;
 }
- 30% {
+ 10% {
  opacity: 1;
 }
- 36.6666666667% {
+ 12.2222222222% {
  opacity: 0;
  -webkit-transform: scale(1);
  transform: scale(1);
@@ -284,7 +314,7 @@ $scale-base-1: (1 + $scale / 100%);
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 96.6666666667% {
+ 98.8888888889% {
  opacity: 0;
  -webkit-transform: scale(1.1090909091);
  transform: scale(1.1090909091);
@@ -294,18 +324,18 @@ $scale-base-1: (1 + $scale / 100%);
 }
 }
 @-webkit-keyframes kenburns-2 {
- 30% {
+ 10% {
  opacity: 1;
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 36.6666666667% {
+ 12.2222222222% {
  opacity: 1;
 }
- 63.3333333333% {
+ 21.1111111111% {
  opacity: 1;
 }
- 70% {
+ 23.3333333333% {
  opacity: 0;
  -webkit-transform: scale(1);
  transform: scale(1);
@@ -317,18 +347,18 @@ $scale-base-1: (1 + $scale / 100%);
 }
 }
 @keyframes kenburns-2 {
- 30% {
+ 10% {
  opacity: 1;
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 36.6666666667% {
+ 12.2222222222% {
  opacity: 1;
 }
- 63.3333333333% {
+ 21.1111111111% {
  opacity: 1;
 }
- 70% {
+ 23.3333333333% {
  opacity: 0;
  -webkit-transform: scale(1);
  transform: scale(1);
@@ -340,15 +370,291 @@ $scale-base-1: (1 + $scale / 100%);
 }
 }
 @-webkit-keyframes kenburns-3 {
- 63.3333333333% {
+ 21.1111111111% {
  opacity: 1;
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 70% {
+ 23.3333333333% {
  opacity: 1;
 }
- 96.6666666667% {
+ 32.2222222222% {
+ opacity: 1;
+}
+ 34.4444444444% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@keyframes kenburns-3 {
+ 21.1111111111% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 23.3333333333% {
+ opacity: 1;
+}
+ 32.2222222222% {
+ opacity: 1;
+}
+ 34.4444444444% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@-webkit-keyframes kenburns-4 {
+ 32.2222222222% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 34.4444444444% {
+ opacity: 1;
+}
+ 43.3333333333% {
+ opacity: 1;
+}
+ 45.5555555556% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@keyframes kenburns-4 {
+ 32.2222222222% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 34.4444444444% {
+ opacity: 1;
+}
+ 43.3333333333% {
+ opacity: 1;
+}
+ 45.5555555556% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@-webkit-keyframes kenburns-5 {
+ 43.3333333333% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 45.5555555556% {
+ opacity: 1;
+}
+ 54.4444444444% {
+ opacity: 1;
+}
+ 56.6666666667% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@keyframes kenburns-5 {
+ 43.3333333333% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 45.5555555556% {
+ opacity: 1;
+}
+ 54.4444444444% {
+ opacity: 1;
+}
+ 56.6666666667% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@-webkit-keyframes kenburns-6 {
+ 54.4444444444% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 56.6666666667% {
+ opacity: 1;
+}
+ 65.5555555556% {
+ opacity: 1;
+}
+ 67.7777777778% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@keyframes kenburns-6 {
+ 54.4444444444% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 56.6666666667% {
+ opacity: 1;
+}
+ 65.5555555556% {
+ opacity: 1;
+}
+ 67.7777777778% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@-webkit-keyframes kenburns-7 {
+ 65.5555555556% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 67.7777777778% {
+ opacity: 1;
+}
+ 76.6666666667% {
+ opacity: 1;
+}
+ 78.8888888889% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@keyframes kenburns-7 {
+ 65.5555555556% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 67.7777777778% {
+ opacity: 1;
+}
+ 76.6666666667% {
+ opacity: 1;
+}
+ 78.8888888889% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@-webkit-keyframes kenburns-8 {
+ 76.6666666667% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 78.8888888889% {
+ opacity: 1;
+}
+ 87.7777777778% {
+ opacity: 1;
+}
+ 90% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@keyframes kenburns-8 {
+ 76.6666666667% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 78.8888888889% {
+ opacity: 1;
+}
+ 87.7777777778% {
+ opacity: 1;
+}
+ 90% {
+ opacity: 0;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+}
+@-webkit-keyframes kenburns-9 {
+ 87.7777777778% {
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+ 90% {
+ opacity: 1;
+}
+ 98.8888888889% {
  opacity: 1;
 }
  100% {
@@ -357,16 +663,16 @@ $scale-base-1: (1 + $scale / 100%);
  transform: scale(1);
 }
 }
-@keyframes kenburns-3 {
- 63.3333333333% {
+@keyframes kenburns-9 {
+ 87.7777777778% {
  opacity: 1;
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
- 70% {
+ 90% {
  opacity: 1;
 }
- 96.6666666667% {
+ 98.8888888889% {
  opacity: 1;
 }
  100% {
@@ -631,14 +937,32 @@ $scale-base-1: (1 + $scale / 100%);
       <div class="item">
         <div class="pic-wrapper">
           <div class="slideshow">
+            <div class="slideshow-image" style="background-image: url('butterfly-pavilion.jpg')">
+              <div class="photo-credit">&copy; Butterfly Pavilion</div>
+            </div>
+            <div class="slideshow-image" style="background-image: url('clifford-still-museum.jpg')">
+              <div class="photo-credit">&copy; Clifford Still Museum</div>
+            </div>
             <div class="slideshow-image" style="background-image: url('colorado-symphony.jpg')">
               <div class="photo-credit">&copy; Jedediah Liddell</div>
+            </div>
+            <div class="slideshow-image" style="background-image: url('denver-firefighters-museum.jpg')">
+              <div class="photo-credit">&copy; Denver Firefighters Museum</div>
+            </div>
+            <div class="slideshow-image" style="background-image: url('denver-museum-of-nature-and-science.jpg')">
+              <div class="photo-credit">&copy; Denver Museum of Nature & Science</div>
             </div>
             <div class="slideshow-image" style="background-image: url('history-colorado-center.jpg')">
               <div class="photo-credit">&copy; History Colorado Center</div>
             </div>
+            <div class="slideshow-image" style="background-image: url('molly-brown-house-museum.jpg')">
+              <div class="photo-credit">&copy; Paul Brokering Photography</div>
+            </div>
             <div class="slideshow-image" style="background-image: url('museum-of-contemporary-art.jpg')">
               <div class="photo-credit">&copy; MCA Denver</div>
+            </div>
+            <div class="slideshow-image" style="background-image: url('wings-over-the-rockies.jpg')">
+              <div class="photo-credit">&copy; Wings over the Rockies Air & Space Museum</div>
             </div>
           </div>
         </div>
@@ -710,7 +1034,8 @@ $scale-base-1: (1 + $scale / 100%);
     <div class="container margin-lg-100">
       <div class="col-md-4 padding-bottom-30 module come-in-card"><a href="http://getacard.org/v2/index.html" target="_blank"><img class="img-responsive image-center library-card" src="library-card.jpg" alt="Get a Library Card"></a></div>
       <div class="col-md-8">
-        <h4 class="roboto">Did you know you can show your Douglas County Libraries library card at participating <a href="../dcl-local/">DCL Local merchants</a> to receive special offers?</h4><div>To enjoy all the benefits of being a DCL cardholder, <a href="http://getacard.org/v2/index.html" target="_blank">sign up here</a>.</div>
+        <h4 class="roboto">Did you know you can show your Douglas County Libraries library card at participating <a href="../dcl-local/">DCL Local merchants</a> to receive special offers?</h4>
+        <div>To enjoy all the benefits of being a DCL cardholder, <a href="http://getacard.org/v2/index.html" target="_blank">sign up here</a>.</div>
       </div>
     </div>
   </div>
