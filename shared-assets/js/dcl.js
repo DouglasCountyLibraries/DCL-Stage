@@ -12,11 +12,11 @@
 // pull the alert into the global-alert div
 /* ------------------------------------------------------------ */
 
-//jQuery.get("https://s3.amazonaws.com/website.alert/alert.txt")
-//  .done(function( data ) {
+jQuery.get("https://s3.amazonaws.com/website.alert/alert.txt")
+  .done(function( data ) {
     /*alert( "Data Loaded: " + data );*/
-//	if ( data !=null ){	jQuery("#global-alert").show().append( data );}
-//  });
+	if ( data !=null ){	jQuery("#global-alert").show().append( data );}
+  });
   
 // smooth page scroll for page anchors
 /* ------------------------------------------------------------ */
