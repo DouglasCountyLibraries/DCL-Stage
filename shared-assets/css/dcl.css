@@ -1388,7 +1388,7 @@ h6.responsive-text {
 	border-top: none;
 	background-color: #fff;
 }
-/* ====== evanced feed ====== */
+/* ====== evanced feed ====== 
 
 .eventList.width {
 	font-family: "Ubuntu", arial, sans-serif;
@@ -1422,7 +1422,7 @@ h6.responsive-text {
 }
 #eventsinfo .item {
 	background-color: rgba(255,255,255,.9);
-	font-size: 0px; /* hides "-" character */
+	font-size: 0px;
 	margin: 5px;
 	padding: 30px;
 	max-width: 450px;
@@ -1451,6 +1451,7 @@ h6.responsive-text {
 #eventsinfo .location, #eventsinfo .branch, .description br {
 	display: none;
 }
+*/
 .location-events {
 	padding-bottom: 60px;
 }
