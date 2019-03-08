@@ -54,6 +54,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<script src="flickity.js"></script>
 <style>
 .title a, .title a:hover, .title a:focus {
 	color: #333;
@@ -248,7 +250,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row bg-gray-5 padding-top-100 padding-bottom-100">
     <div id="eventsinfo" class="eventsinfo"></div>
-    <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script> 
+    <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "wrapAround": true, "autoPlay": 4000 }'> 
+      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script></div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
