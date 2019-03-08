@@ -57,24 +57,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '323565307821038'); 
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
-<noscript>
-<img height="1" width="1" 
-src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
-&noscript=1"/>
-</noscript>
+
 <!-- End Facebook Pixel Code -->
 
 <style>
@@ -131,7 +114,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 .fa-th {
 	vertical-align: middle;
 }
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 			.item-one {
 	
 		order: 2;
@@ -141,6 +124,10 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 			order: 1;
 	}
 	}
+	@media (max-width: 992px) {
+.eventList.width {
+	flex-direction: row;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -353,7 +340,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
   </div>
   <div class="flex-wrapper">
     <div class="item-one bg-teal padding-bottom-30">
-      <div class="container">
+      <div class="container-md">
         <h1 class="roboto white text-center no-margin-bottom">Upcoming Community Events</h1>
         <div class="white text-center margin-lg-50 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries.</div>
         <div id="eventsinfo" class="eventsinfo"></div>
