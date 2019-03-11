@@ -71,10 +71,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin-right: -15px;
 }
 .eventsinfo {
-    overflow: auto;
 }
 .eventList.width {
-	flex-wrap: nowrap;
 	padding-bottom: 10px;
 }
 .item-one {
@@ -91,8 +89,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 #eventsinfo .item {
 	margin: 5px;
 	padding: 30px;
-	min-width: 375px;
 	background-color: #fff;
+	min-width: 375px;
 	max-width: 375px;
 }
 .service-box {
@@ -138,6 +136,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .eventsinfo::-webkit-scrollbar-thumb:window-inactive {
  background: #fff;
+}
+
+@media (min-width: 991px) {
+.eventList.width {
+	flex-wrap: nowrap;
+}
 }
 
 @media (max-width: 992px) {
