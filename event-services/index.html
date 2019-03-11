@@ -75,6 +75,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .eventList.width {
 	flex-wrap: nowrap;
+	justify-content: flex-start;
+	padding-bottom: 10px;
 }
 .item-one {
 	width: 100%;
@@ -118,23 +120,34 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .fa-th {
 	vertical-align: middle;
 }
+	/* Let's get this party started */
+.eventsinfo::-webkit-scrollbar {
+ height: 3px;
+}
+ 
+/* Track */
+.eventsinfo::-webkit-scrollbar-track {
+ -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+ -webkit-border-radius: 0px;
+ border-radius: 0px;
+}
+ 
+/* Handle */
+.eventsinfo::-webkit-scrollbar-thumb {
+ -webkit-border-radius: 0px;
+ border-radius: 0px;
+ background: #fff;
+}
+.eventsinfo::-webkit-scrollbar-thumb:window-inactive {
+ background: #fff;
+}
 
 @media (max-width: 991px) {
-#eventsinfo .item {
-	margin: 5px 0;
-	max-width: 100%;
-}
 .item-one {
 	order: 2;
 }
 .item-two {
 	order: 1;
-}
-}
-
-@media (max-width: 992px) {
-.eventList.width {
-	flex-direction: row;
 }
 }
 </style>
