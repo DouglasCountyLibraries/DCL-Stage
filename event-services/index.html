@@ -71,10 +71,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin-right: -15px;
 }
 .eventsinfo {
+		overflow: auto;
+	overflow-y: hidden;
 }
 .eventList.width {
 	padding-bottom: 10px;
-	overflow-y: scroll;
+
+	justify-content: flex-start;
 }
 .item-one {
 	width: 100%;
@@ -374,7 +377,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <div class="flex-wrapper">
     <div class="item-one bg-teal padding-bottom-30">
-      <div class="container-md">
+      <div class="container">
         <h1 class="roboto white text-center no-margin-bottom">Upcoming Community Events</h1>
         <div class="container white text-center margin-lg-50 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries. Events are listed in chronological order.</div>
         <div id="eventsinfo" class="eventsinfo"></div>
