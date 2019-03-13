@@ -70,12 +70,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	text-align: center;
-	padding: 25px 30px 30px;
+	padding: 15px 30px 20px;
 }
 #eventsinfo {
-	background: rgba(255,255,255,.6);
-	padding-top: 15px;
-	padding-bottom: 20px;
+	background: rgba(255,255,255,.8);
 }
 #eventsinfo .item .title {
 	font-size: 24px;
@@ -147,10 +145,25 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .fa-th {
 	vertical-align: middle;
 }
-	/* Let's get this party started */
-.eventsinfo::-webkit-scrollbar {
- height: 6px;
+	
+	/* Fading animation */
+.item {
+  -webkit-animation-name: item-fade;
+  -webkit-animation-duration: 1s;
+  animation-name: item-fade;
+  animation-duration: 1s;
 }
+
+@-webkit-keyframes item-fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes item-fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+	
 .item:nth-of-type(n+7) {
 	display: none;
 }
@@ -378,7 +391,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       <div class="container">
         <h1 class="roboto white text-center no-margin-bottom">Upcoming Community Events</h1>
         <div class="white text-center margin-lg-50 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries. Events are listed in chronological order.</div>
-        <div id="eventsinfo" class="eventsinfo margin-lg-200"></div>
+        <div id="eventsinfo" class="eventsinfo margin-lg-100"></div>
         <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script>
         <div class="white large-text text-center padding-top-15">Contact our Event + Hospitality Services team for information about how to list your event at <span class="text-nowrap"><a class="white" href="tel:303-688-7605">(303) 688-7605</a>.</span></div>
       </div>
@@ -569,7 +582,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   item[slideIndex-1].className += " active";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
 </script> 
 <script type="text/javascript">
