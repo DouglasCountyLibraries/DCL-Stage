@@ -105,6 +105,24 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-size: 18px;
 	text-transform: uppercase;
 }
+.slide-wrapper {
+	position: relative;
+}
+.prev, .prev a, .next, .next a {
+	cursor: pointer;
+	font-size: 30px;
+	color: rgba(0,0,0,.2);
+	position: absolute;
+	top: 35%;
+	text-decoration: none;
+	padding: 10px;
+}
+.prev, .prev a {
+	left: 0px;
+}
+.next, .next a {
+	right: 0px;
+}
 .flex-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -145,25 +163,29 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .fa-th {
 	vertical-align: middle;
 }
-	
-	/* Fading animation */
+/* Fading animation */
 .item {
-  -webkit-animation-name: item-fade;
-  -webkit-animation-duration: 1s;
-  animation-name: item-fade;
-  animation-duration: 1s;
+	-webkit-animation-name: item-fade;
+	-webkit-animation-duration: 1s;
+	animation-name: item-fade;
+	animation-duration: 1s;
 }
-
-@-webkit-keyframes item-fade {
-  from {opacity: 0} 
-  to {opacity: 1}
+ @-webkit-keyframes item-fade {
+ from {
+opacity: 0
 }
-
-@keyframes item-fade {
-  from {opacity: 0} 
-  to {opacity: 1}
+ to {
+opacity: 1
 }
-	
+}
+ @keyframes item-fade {
+ from {
+opacity: 0
+}
+ to {
+opacity: 1
+}
+}
 .item:nth-of-type(n+7) {
 	display: none;
 }
@@ -391,7 +413,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
       <div class="container">
         <h1 class="roboto white text-center no-margin-bottom">Upcoming Community Events</h1>
         <div class="white text-center margin-lg-50 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries. Events are listed in chronological order.</div>
-        <div id="eventsinfo" class="eventsinfo margin-lg-100"></div>
+        <div class="slide-wrapper">
+          <div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+          <div id="eventsinfo" class="eventsinfo margin-lg-100"></div>
+        </div>
         <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script>
         <div class="white large-text text-center padding-top-15">Contact our Event + Hospitality Services team for information about how to list your event at <span class="text-nowrap"><a class="white" href="tel:303-688-7605">(303) 688-7605</a>.</span></div>
       </div>
@@ -565,27 +590,37 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
 <script>
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
 
-function showSlides() {
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("item");
   var item = document.getElementsByClassName("item");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < item.length; i++) {
-    item[i].className = item[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  item[slideIndex-1].className += " active";
-  setTimeout(showSlides, 8000); // Change image every 2 seconds
-}
+ 
+  slides[slideIndex-1].style.display = "block";
+  
+  timer = setTimeout(showSlides, 8000);
+} 
 </script> 
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
   if(window.location.href.indexOf('#self-service-get-started') != -1) {
     $('#self-service-get-started').modal('show')
