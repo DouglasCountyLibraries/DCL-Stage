@@ -62,22 +62,9 @@ opacity: 1
 </style>
 </head>
 <body>
-	
-	
-        <div id="eventsinfo" class="eventsinfo"></div>
-        <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script>	
-	<div>
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>	
+<div id="eventsinfo" class="eventsinfo"></div>
+<script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script>
+<div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
 
 <script>
 var slideIndex = 1;
@@ -97,19 +84,17 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("item");
-  var dots = document.getElementsByClassName("dot");
+  var item = document.getElementsByClassName("item");
   if (n==undefined){n = ++slideIndex}
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+ 
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  timer = setTimeout(showSlides, 4000);
+  
+  timer = setTimeout(showSlides, 2000);
 } 
 </script>
 </body>
