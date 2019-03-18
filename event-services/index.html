@@ -70,10 +70,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	text-align: center;
-	padding: 15px 30px 20px;
+	padding: 15px 30px 15px;
 }
 #eventsinfo {
 	background: rgba(255,255,255,.8);
+}
+.button-wrapper {
+	background: rgba(255,255,255,.8);
+	padding-bottom: 25px;
 }
 #eventsinfo .item .title {
 	font-size: 24px;
@@ -108,14 +112,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .slide-wrapper {
 	position: relative;
 }
-.prev, .prev a, .next, .next a {
+.prev, .prev a, .next, .next a, .prev:hover, .prev a:hover, .next:hover, .next a:hover {
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 50px;
 	color: rgba(0,0,0,.2);
 	position: absolute;
-	top: 35%;
+	top: 38%;
 	text-decoration: none;
 	padding: 10px;
+}
+.prev:hover, .prev a:hover, .next:hover, .next a:hover, .prev:focus, .prev a:focus, .next:focus, .next a:focus {
+	cursor: pointer;
+	color: rgba(0,0,0,.4);
+	text-decoration: none;
 }
 .prev, .prev a {
 	left: 0px;
@@ -409,15 +418,16 @@ opacity: 1
     </div>
   </div>
   <div class="flex-wrapper">
-    <div class="item-one bg-teal padding-bottom-30">
+    <div class="item-one bg-lavender padding-bottom-30">
       <div class="container">
         <h1 class="roboto white text-center no-margin-bottom">Upcoming Community Events</h1>
         <div class="white text-center margin-lg-50 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries. Events are listed in chronological order.</div>
         <div class="slide-wrapper">
-          <div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+          <div> <a class="prev" onclick="plusSlides(-1)">&#139;</a> <a class="next" onclick="plusSlides(1)">&#155;</a> </div>
           <div id="eventsinfo" class="eventsinfo margin-lg-100"></div>
         </div>
         <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script>
+        <div class="button-wrapper text-center"><a href="#" type="button" class="btn btn-default text-uppercase">View All Community Events</a></div>
         <div class="white large-text text-center padding-top-15">Contact our Event + Hospitality Services team for information about how to list your event at <span class="text-nowrap"><a class="white" href="tel:303-688-7605">(303) 688-7605</a>.</span></div>
       </div>
     </div>
@@ -528,10 +538,10 @@ opacity: 1
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-top-30 padding-bottom-40 text-center">
+  <div class="row bg-teal padding-top-30 padding-bottom-40 text-center"><div class="container">
     <div><a href="../event-spaces/" type="button" class="btn btn-default text-uppercase">View Event Spaces</a></div>
     <h4 class="roboto white">All reservations are subject to room availability.</h4>
-    <div class="white large-text margin-lg-200">Select and Concierge Service reservations are subject to availability of Event & Hospitality Services personnel.</div>
+    <div class="white large-text margin-lg-200">Select and Concierge Service reservations are subject to availability of Event & Hospitality Services personnel.</div></div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
