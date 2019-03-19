@@ -70,18 +70,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	display: none;
 }
 #eventsinfo .item {
-	background-color: rgba(255,255,255,.9);
+	background-color: rgba(255,255,255,1);
 	margin: 5px;
 	padding: 30px;
 	max-width: 450px;
 }
-#eventsinfo .item:hover, #eventsinfo .item:focus {
-	cursor: pointer;
-	background-color: rgba(255,255,255,1);
-	box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 0;
-	transition: all .4s ease-out;
-	-webkit-transition: all .4s ease;
+.title a, .title a:hover, .title a:focus {
+	color: #333;
+	cursor: text;
+	text-decoration: none;
 }
 .eventList.width {
 	font-family: "Ubuntu", arial, sans-serif;
@@ -124,6 +121,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .location-events {
 	padding-bottom: 60px;
+}
+.contact-info {
+	padding-top: 10px;
+}
+.description b {
+	font-weight: 300;
+	margin-right: 15px;
+	white-space: nowrap;
 }
 
 @media (max-width: 992px) {
@@ -337,7 +342,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   <div class="row padding-top-30 padding-bottom-40 text-center">
     <div class="container">
       <div class="margin-lg-200 large-text text-center padding-bottom-15">Contact our Event + Hospitality Services team for information about how to list your event at <span class="text-nowrap"><a href="tel:303-688-7605">(303) 688-7605</a>.</span></div>
-      <div><a href="#" type="button" class="btn btn-primary text-uppercase">Reserve a Space Now</a></div>
+      <div><a href="../" type="button" class="btn btn-primary text-uppercase">Reserve a Space Now</a></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
