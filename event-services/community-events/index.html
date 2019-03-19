@@ -15,7 +15,7 @@
 
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Event + Hospitality Services | Douglas County Libraries</title>
+<title>Upcoming Community Events-Event + Hospitality Services | Douglas County Libraries</title>
 <meta name="keywords" content="event venues, conference room, event space, party venues, meeting room">
 <meta name="description" content="Douglas County Libraries is home to unique, state-of-the-art event venues that are perfect for catered parties, business meetings, workshops and trainings.">
 <!-- InstanceEndEditable -->
@@ -59,25 +59,39 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- Facebook Pixel Code -->
 
 <!-- End Facebook Pixel Code -->
-
 <style>
-.reserve-a-space-active {
+.using-the-library-active {
 	background-color: #f5f5f5;
+}
+#eventsinfo .item {
+	font-size: 0px;
+}
+#eventsinfo .location, #eventsinfo .branch, .description br {
+	display: none;
+}
+#eventsinfo .item {
+	background-color: rgba(255,255,255,.9);
+	margin: 5px;
+	padding: 30px;
+	max-width: 450px;
+}
+#eventsinfo .item:hover, #eventsinfo .item:focus {
+	cursor: pointer;
+	background-color: rgba(255,255,255,1);
+	box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 0;
+	transition: all .4s ease-out;
+	-webkit-transition: all .4s ease;
 }
 .eventList.width {
 	font-family: "Ubuntu", arial, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
-	text-align: center;
-	padding: 15px 30px 15px;
-}
-#eventsinfo {
-	background: rgba(255,255,255,.8);
-}
-.button-wrapper {
-	background: rgba(255,255,255,.8);
-	padding-bottom: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
 }
 #eventsinfo .item .title {
 	font-size: 24px;
@@ -86,15 +100,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	letter-spacing: -0.8px;
 }
 #eventsinfo .item .title a, #eventsinfo .item .title a:hover, #eventsinfo .item .title a:focus {
-	color: #333;
+	color: #666;
 	text-decoration: none;
-}
-#eventsinfo .item a, #eventsinfo .item a:hover, #eventsinfo .item a:focus {
-	color: #333;
 }
 #eventsinfo #eventdate {
 	font-size: 16px;
-	padding-left: 20px;
+	text-align: left;
+	padding-right: 20px;
+	float: left;
 }
 #eventsinfo .description {
 	font-size: 16px;
@@ -109,102 +122,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-size: 18px;
 	text-transform: uppercase;
 }
-.slide-wrapper {
-	position: relative;
-}
-.prev, .prev a, .next, .next a, .prev:hover, .prev a:hover, .next:hover, .next a:hover {
-	cursor: pointer;
-	font-size: 50px;
-	color: rgba(0,0,0,.2);
-	position: absolute;
-	top: 38%;
-	text-decoration: none;
-	padding: 10px;
-}
-.prev:hover, .prev a:hover, .next:hover, .next a:hover, .prev:focus, .prev a:focus, .next:focus, .next a:focus {
-	cursor: pointer;
-	color: rgba(0,0,0,.4);
-	text-decoration: none;
-}
-.prev, .prev a {
-	left: 0px;
-}
-.next, .next a {
-	right: 0px;
-}
-.flex-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -15px;
-	margin-right: -15px;
-}
-.item-one {
-	width: 100%;
-}
-.item-two {
-	width: 100%;
-}
-.title a, .title a:hover, .title a:focus {
-	color: #333;
-	cursor: text;
-	text-decoration: none;
-}
-.service-box {
-	border: 4px solid #f5f5f5;
-}
-.service-box > h1 {
-	color: #fff;
-	margin: 0 -15px;
-	padding: 4px 4px 8px;
-}
-.self .fa-check {
-	color: #90ad63;
-}
-.select .fa-check {
-	color: #B0852E;
-}
-.concierge .fa-check {
-	color: #D36A50;
-}
-.fa-ul > li {
-	margin-bottom: 15px;
-}
-.fa-th {
-	vertical-align: middle;
-}
-/* Fading animation */
-.item {
-	-webkit-animation-name: item-fade;
-	-webkit-animation-duration: 1s;
-	animation-name: item-fade;
-	animation-duration: 1s;
-}
- @-webkit-keyframes item-fade {
- from {
-opacity: 0
-}
- to {
-opacity: 1
-}
-}
- @keyframes item-fade {
- from {
-opacity: 0
-}
- to {
-opacity: 1
-}
-}
-.item:nth-of-type(n+7) {
-	display: none;
+.location-events {
+	padding-bottom: 60px;
 }
 
 @media (max-width: 992px) {
-.item-one {
-	order: 2;
+.eventList.width {
+	flex-direction: column;
 }
-.item-two {
-	order: 1;
+.location-events {
+	padding-bottom: 15px;
 }
 }
 </style>
@@ -394,31 +321,23 @@ opacity: 1
         </div>
       </div>
       <div class="row">
-        <div class="container text-center padding-bottom-15">
-          <h4 class="roboto">All  Upcoming Community Events</h4>
-          <div class="text-center margin-top-15">Have questions? Call Event + Hospitality Services at <span class="text-nowrap"><a href="tel:303-688-7605">(303) 688-7605</a></span>.</div>
+        <div class="container text-center">
+          <h1 class="roboto text-center margin-top-10">Upcoming Community Events</h1>
+          <div class="text-center margin-lg-100 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries. Events are listed in chronological order.</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row bg-lavender padding-bottom-30">
-    <div class="container">
-      <h1 class="roboto white text-center no-margin-bottom">Upcoming Community Events</h1>
-      <div class="white text-center margin-lg-50 padding-bottom-15">Events listed below are sponsored by community groups and/or individuals using Douglas County Libraries spaces for a fee. These events are not sponsored by Douglas County Libraries. Events are listed in chronological order.</div>
-      <div class="slide-wrapper">
-        <div> <a class="prev" onclick="plusSlides(-1)">&#139;</a> <a class="next" onclick="plusSlides(1)">&#155;</a> </div>
-        <div id="eventsinfo" class="eventsinfo margin-lg-100"></div>
-      </div>
-      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=90&dm=html"></script>
-      <div class="button-wrapper text-center"><a href="#" type="button" class="btn btn-default text-uppercase">View All Community Events</a></div>
-      <div class="white large-text text-center padding-top-15">Contact our Event + Hospitality Services team for information about how to list your event at <span class="text-nowrap"><a class="white" href="tel:303-688-7605">(303) 688-7605</a>.</span></div>
+  <div class="row bg-lavender padding-top-30 padding-bottom-30">
+    <div class="container-md">
+      <div id="eventsinfo" class="eventsinfo"></div>
+      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?et=41&private=2&lib=ALL&nd=365&dm=html"></script> 
     </div>
   </div>
-  <div class="row bg-teal padding-top-30 padding-bottom-40 text-center">
+  <div class="row padding-top-30 padding-bottom-40 text-center">
     <div class="container">
-      <div><a href="../event-spaces/" type="button" class="btn btn-default text-uppercase">View Event Spaces</a></div>
-      <h4 class="roboto white">All reservations are subject to room availability.</h4>
-      <div class="white large-text margin-lg-200">Select and Concierge Service reservations are subject to availability of Event & Hospitality Services personnel.</div>
+      <div class="margin-lg-200 large-text text-center padding-bottom-15">Contact our Event + Hospitality Services team for information about how to list your event at <span class="text-nowrap"><a href="tel:303-688-7605">(303) 688-7605</a>.</span></div>
+      <div><a href="#" type="button" class="btn btn-primary text-uppercase">Reserve a Space Now</a></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -476,52 +395,7 @@ opacity: 1
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<script>
-var slideIndex = 1;
-var timer = null;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  clearTimeout(timer);
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  clearTimeout(timer);
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("item");
-  var item = document.getElementsByClassName("item");
-  if (n==undefined){n = ++slideIndex}
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
- 
-  slides[slideIndex-1].style.display = "block";
-  
-  timer = setTimeout(showSlides, 8000);
-} 
-</script> 
-<script>
-$(document).ready(function() {
-  if(window.location.href.indexOf('#self-service-get-started') != -1) {
-    $('#self-service-get-started').modal('show')
-  };
-  if(window.location.href.indexOf('#select-service-get-started') != -1) {
-    $('#select-service-get-started').modal('show')
-  };
-  if(window.location.href.indexOf('#concierge-service-get-started') != -1) {
-    $('#concierge-service-get-started').modal('show')
-  }
-});
-</script> 
-<!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
 <!-- End Structured Data -->
