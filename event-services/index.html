@@ -122,7 +122,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	position: absolute;
 	top: 28%;
 	text-decoration: none;
-	padding: 10px;
 }
 .prev:hover, .prev a:hover, .next:hover, .next a:hover, .prev:focus, .prev a:focus, .next:focus, .next a:focus {
 	cursor: pointer;
@@ -131,9 +130,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .prev, .prev a {
 	left: 0px;
+	padding: 10px 10px 10px 0;
 }
 .next, .next a {
 	right: 0px;
+	padding: 10px 0 10px 10px;
 }
 .flex-wrapper {
 	display: flex;
@@ -216,6 +217,13 @@ opacity: 1
 }
 .item-two {
 	order: 1;
+}
+}
+
+@media (max-width: 768px) {
+.item-one > .container {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 }
 </style>
