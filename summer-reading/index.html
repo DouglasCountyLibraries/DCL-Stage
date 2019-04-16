@@ -55,23 +55,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-	.sunset-inner {
-			width: 100wh;
-	min-height: 500px;
-		background: transparent url(clouds.png) repeat-x bottom center;
-	}
 .sunset-row {
-	width: 100wh;
-	color: #fff;
-	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,.6), rgba(0,0,255,.6), rgba(0,0,255,.8), rgba(0,0,255,1));
-	background-size: 100% 400%;
-	-webkit-animation: sunset 5s ease infinite;
-	animation: sunset 5s ease infinite;
+	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,.6), rgba(0,0,255,.6), rgba(0,0,255,1));
+	background-size: 400% 800%;
+	-webkit-animation: sunset 25s ease infinite;
+	animation: sunset 25s ease infinite;
 }
-	.sun
-	{ 
-		margin: 0 auto 0 auto;
-	}
  @-webkit-keyframes sunset {
  0% {
  background-position: 50% 0%;
@@ -92,6 +81,29 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
  100% {
  background-position: 50% 0%;
+}
+}
+.sunset-clouds {
+	height: 370px;
+	background: transparent url(clouds.png) repeat-x bottom center;
+	-webkit-animation: slide 30s linear infinite;
+	animation: slide 30s linear infinite;
+	margin-top: 10px;
+}
+ @-webkit-keyframes slide {
+ from {
+background-position: 0 0;
+}
+ to {
+background-position: -1094px 0;
+}
+}
+ @keyframes slide {
+ from {
+background-position: 0 0;
+}
+ to {
+background-position: -1094px 0;
 }
 }
 </style>
@@ -273,7 +285,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row sunset-row">
-	  <div class="sunset-inner"><div><img class="sun img-responsive" src="sun.png" alt="Sun"></div></div>
+    <div class="sunset-clouds"> </div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
