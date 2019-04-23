@@ -57,6 +57,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <style>
 .sky-row {
 	background: #386799 url("landscape.jpg") bottom center repeat-x;
+	
 }
 .sign-wrapper {
 	display: flex;
@@ -68,16 +69,30 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	height: 800px;
 	margin: 20px 0 0;
 }
-.road-top {
-	height: 49px;
-	background: #214760 url(road.png) repeat-x center center;
+.sign-three {
+	display: flex;
+	align-content: center;
+}
+.sign-three-middle {
+	background: transparent url("sign-three-middle.png") center center;
+	height: 300px;
+	width: 153px;
+}
+
+.right-lane {
+	min-height: 160px;
+	background: transparent url("right-lane-vehicles.png") repeat-x bottom center;
+	-webkit-animation: slide 26s linear infinite;
+	animation: slide 26s linear infinite;
+	margin-top: -200px;
+	padding-bottom: 200px;
 }
  @-webkit-keyframes slide {
  from {
 background-position: 0 0;
 }
  to {
-background-position: -1717px 0;
+background-position: -2900px 0;
 }
 }
  @keyframes slide {
@@ -85,7 +100,31 @@ background-position: -1717px 0;
 background-position: 0 0;
 }
  to {
-background-position: -1717px 0;
+background-position: -2900px 0;
+}
+}
+.left-lane {
+	min-height: 200px;
+	background: transparent url("left-lane-vehicles.png") repeat-x bottom center;
+	-webkit-animation: left-slide 22s linear infinite;
+	animation: left-slide 22s linear infinite;
+	margin-top: -215px;
+	padding-bottom: 215px;
+}
+ @-webkit-keyframes left-slide {
+ from {
+background-position: 0 0;
+}
+ to {
+background-position: 3050px 0;
+}
+}
+ @keyframes left-slide {
+ from {
+background-position: 0 0;
+}
+ to {
+background-position: 3050px 0;
 }
 }
 </style>
@@ -268,10 +307,14 @@ background-position: -1717px 0;
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row sky-row">
     <div class="sign-wrapper">
+      <div class="sign-one-item"></div>
       <div class="billboard-item"></div>
+      <div class="sign-three-item">
+        
+      </div>
     </div>
-  </div>
-  <div class="row road-top"></div>
+  </div><div class="row right-lane"></div>
+	<div class="row left-lane"></div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
