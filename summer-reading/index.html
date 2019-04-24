@@ -56,40 +56,42 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <style>
 .sky-row {
-	background: #386799 url("landscape.jpg") bottom center repeat-x;
+	background: #386799 url("landscape.jpg") bottom left repeat-x;
 }
 .sign-wrapper {
 	display: flex;
 	justify-content: center;
 }
 .sign-one {
+	background: transparent url("pole.jpg") bottom center no-repeat;
 	padding-top: 400px;
 	margin-right: -45px;
 }
 .sign-three {
+	background: transparent url("pole.jpg") bottom center no-repeat;
 	padding-top: 400px;
 	margin-left: -45px;
 }
 .sign-two {
 	background: transparent url("summer-reading-billboard.png") top center no-repeat;
 	height: 850px;
-	padding: 480px 160px 0 135px;
+	padding: 460px 155px 0 135px;
 	margin-top: 10px;
 }
 .right-lane {
 	min-height: 160px;
-	background: transparent url("right-lane-vehicles.png") repeat-x bottom center;
-	-webkit-animation: slide 26s linear infinite;
-	animation: slide 26s linear infinite;
-	margin-top: -200px;
-	padding-bottom: 200px;
+	background: transparent url("far-lane-vehicles.png") repeat-x bottom center;
+	-webkit-animation: slide 28s linear infinite;
+	animation: slide 28s linear infinite;
+	margin-top: -205px;
+	padding-bottom: 205px;
 }
  @-webkit-keyframes slide {
  from {
 background-position: 0 0;
 }
  to {
-background-position: -2900px 0;
+background-position: -2100px 0;
 }
 }
  @keyframes slide {
@@ -97,23 +99,23 @@ background-position: -2900px 0;
 background-position: 0 0;
 }
  to {
-background-position: -2900px 0;
+background-position: -2100px 0;
 }
 }
 .left-lane {
-	min-height: 200px;
-	background: transparent url("left-lane-vehicles.png") repeat-x bottom center;
+	min-height: 180px;
+	background: transparent url("near-lane-vehicles.png") repeat-x bottom center;
 	-webkit-animation: left-slide 22s linear infinite;
 	animation: left-slide 22s linear infinite;
-	margin-top: -215px;
-	padding-bottom: 215px;
+	margin-top: -195px;
+	padding-bottom: 195px;
 }
  @-webkit-keyframes left-slide {
  from {
 background-position: 0 0;
 }
  to {
-background-position: 3050px 0;
+background-position: 2700px 0;
 }
 }
  @keyframes left-slide {
@@ -121,9 +123,66 @@ background-position: 3050px 0;
 background-position: 0 0;
 }
  to {
-background-position: 3050px 0;
+background-position: 2700px 0;
 }
 }
+	.vibrate:hover, .vibrate:focus {
+	-webkit-animation: vibrate 0.3s linear infinite both;
+	        animation: vibrate 0.3s linear infinite both;
+}
+@-webkit-keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -304,9 +363,9 @@ background-position: 3050px 0;
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row sky-row">
     <div class="sign-wrapper">
-      <div class="sign-one"><img src="registration.gif" alt="Register Now!"></div>
-      <div class="sign-two"><img src="registration.gif" alt="Register Now!"></div>
-      <div class="sign-three"><img src="registration.gif" alt="Register Now!"> </div>
+      <div class="sign-one"><div class="vibrate"><a href="#"><img src="registration.gif" alt="Register Now!"></a></div></div>
+      <div class="sign-two"><div class="vibrate"><a href="#"><img src="activities.gif" alt="Road Trip Activities"></a></div></div>
+      <div class="sign-three"><div class="vibrate"><a href="#"><img src="scrapbook.gif" alt="Road Trip Scrapbook"></a></div></div>
     </div>
   </div>
   <div class="row right-lane"></div>
