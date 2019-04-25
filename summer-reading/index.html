@@ -62,14 +62,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	display: flex;
 	justify-content: center;
 }
-.sign-one {
+.sign-one, .sign-three {
 	background: transparent url("pole.jpg") bottom center no-repeat;
 	padding-top: 403px;
+}
+.sign-one {
 	margin-right: -45px;
 }
 .sign-three {
-	background: transparent url("pole.jpg") bottom center no-repeat;
-	padding-top: 403px;
 	margin-left: -45px;
 }
 .sign-two {
@@ -78,7 +78,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding: 460px 155px 0 135px;
 	margin-top: 10px;
 }
-.right-lane {
+.far-lane {
 	min-height: 150px;
 	background: transparent url("blurred-far-lane-vehicles.png") repeat-x bottom center;
 	-webkit-animation: slide 28s linear infinite;
@@ -102,7 +102,7 @@ background-position: 0 0;
 background-position: -2100px 0;
 }
 }
-.left-lane {
+.near-lane {
 	min-height: 180px;
 	background: transparent url("blurred-near-lane-vehicles.png") repeat-x bottom center;
 	-webkit-animation: left-slide 18s linear infinite;
@@ -126,63 +126,89 @@ background-position: 0 0;
 background-position: 2700px 0;
 }
 }
-	.vibrate:hover, .vibrate:focus {
+.vibrate:hover, .vibrate:focus {
 	-webkit-animation: vibrate 0.3s linear infinite both;
-	        animation: vibrate 0.3s linear infinite both;
+	animation: vibrate 0.3s linear infinite both;
 }
 @-webkit-keyframes vibrate {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+}
+ 20% {
+ -webkit-transform: translate(-2px, 2px);
+ transform: translate(-2px, 2px);
+}
+ 40% {
+ -webkit-transform: translate(-2px, -2px);
+ transform: translate(-2px, -2px);
+}
+ 60% {
+ -webkit-transform: translate(2px, 2px);
+ transform: translate(2px, 2px);
+}
+ 80% {
+ -webkit-transform: translate(2px, -2px);
+ transform: translate(2px, -2px);
+}
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+}
 }
 @keyframes vibrate {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
+ 0% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+}
+ 20% {
+ -webkit-transform: translate(-2px, 2px);
+ transform: translate(-2px, 2px);
+}
+ 40% {
+ -webkit-transform: translate(-2px, -2px);
+ transform: translate(-2px, -2px);
+}
+ 60% {
+ -webkit-transform: translate(2px, 2px);
+ transform: translate(2px, 2px);
+}
+ 80% {
+ -webkit-transform: translate(2px, -2px);
+ transform: translate(2px, -2px);
+}
+ 100% {
+ -webkit-transform: translate(0);
+ transform: translate(0);
+}
+}
+.mobile-sky-row {
+	background: #386799 url("mobile-landscape.jpg") bottom center repeat-x;
+}
+.mobile-sign-wrapper {
+	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.mobile-billboard {
+	padding: 10px 0 30px 0;
+}
+.mobile-sign-three {
+	margin-bottom: 250px;
 }
 
+@media (min-width: 981px) {
+.mobile-sky-row {
+	display: none;
+}
+}
+
+@media (max-width: 980px) {
+.sky-row {
+	display: none;
+}
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -363,13 +389,27 @@ background-position: 2700px 0;
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row sky-row">
     <div class="sign-wrapper">
-      <div class="sign-one"><div class="vibrate"><a href="#"><img src="registration.gif" alt="Register Now!"></a></div></div>
-      <div class="sign-two"><div class="vibrate"><a href="#"><img src="activities.gif" alt="Road Trip Activities"></a></div></div>
-      <div class="sign-three"><div class="vibrate"><a href="#"><img src="scrapbook.gif" alt="Road Trip Scrapbook"></a></div></div>
+      <div class="sign-one">
+        <div class="vibrate"><a href="#"><img src="registration.gif" alt="Register Now!"></a></div>
+      </div>
+      <div class="sign-two">
+        <div class="vibrate"><a href="#"><img src="activities.gif" alt="Road Trip Activities"></a></div>
+      </div>
+      <div class="sign-three">
+        <div class="vibrate"><a href="#"><img src="scrapbook.gif" alt="Road Trip Scrapbook"></a></div>
+      </div>
     </div>
   </div>
-  <div class="row right-lane"></div>
-  <div class="row left-lane"></div>
+  <div class="row mobile-sky-row">
+    <div class="mobile-sign-wrapper">
+      <div class="mobile-billboard"><img class="img-responsive" src="mobile-billboard.png" alt="The Great Summer Reading Road Trip"></div>
+      <div class="mobile-sign-one vibrate"> <a href="#"><img class="img-responsive" src="registration.gif" alt="Register Now!"></a> </div>
+      <div class="mobile-sign-two vibrate"> <a href="#"><img class="img-responsive" src="activities.gif" alt="Road Trip Activities"></a> </div>
+      <div class="mobile-sign-three vibrate"> <a href="#"><img class="img-responsive" src="scrapbook.gif" alt="Road Trip Scrapbook"></a> </div>
+    </div>
+  </div>
+  <div class="row far-lane"></div>
+  <div class="row near-lane"></div>
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
