@@ -64,14 +64,37 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: #375972 url("landscape.jpg") bottom left repeat-x;
 	-webkit-animation: slide 10s linear infinite;
 	animation: slide 10s linear infinite;
-	height: 355px;
+}
+.registration-row {
+	background: #375972;
+	background: -moz-linear-gradient(top, #375972 0%, #578ec7 20%, #578ec7 100%);
+	background: -webkit-linear-gradient(top, #375972 0%, #578ec7 20%, #578ec7 100%);
+	background: linear-gradient(to bottom, #375972 0%, #578ec7 20%, #578ec7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375972', endColorstr='#578ec7', GradientType=0 );
+}
+.content-row {
+	background: #375972 linear-gradient(#578ec7, #375972);
+}
+.button-wrapper, .box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.car {
+	margin: 10px 5px 0 5px;
+}
+.box {
+	width: 500px;
+	background: #c4934b;
+	padding: 35px 35px 40px;
+	margin: 15px;
 }
  @-webkit-keyframes slide {
  from {
 background-position: 0 0;
 }
  to {
-background-position: 963px 0;
+background-position: 960px 0;
 }
 }
  @keyframes slide {
@@ -79,14 +102,8 @@ background-position: 963px 0;
 background-position: 0 0;
 }
  to {
-background-position: 963px 0;
+background-position: 960px 0;
 }
-}
-.car {
-	margin: 10px 5px 0 5px;
-}
-.content-row {
-	background: #375972 linear-gradient(#375972, #578ec7);
 }
 .vibrate {
 	-webkit-animation: vibrate 2s linear infinite both;
@@ -329,9 +346,27 @@ background-position: 963px 0;
     </div>
     <div class="car"><img class="vibrate center-block img-responsive" src="car.png" alt="Road Trip"></div>
   </div>
+  <div class="row registration-row">
+    <div class="padding-top-40 padding-bottom-30">
+      <div class="button-wrapper">
+        <div class="button-item"><a href="#" target="_blank" class="margin-15 text-uppercase btn btn-primary">New Reader Registration</a></div>
+        <div class="button-item"><a href="https://wandooreader.com/douglascountylibraries/the-great-summer-reading-road-trip/users/sessions/new" target="_blank" class="margin-15 text-uppercase btn btn-primary">Returning Reader Registration</a></div>
+        <div class="button-item"><a href="https://douglascountylibraries.evanced.info/reader/family" target="_blank" class="margin-15 text-uppercase btn btn-primary">Family Management Tool </a></div>
+      </div>
+    </div>
+  </div>
   <div class="row content-row">
-    <div class="container white text-center padding-bottom-30">
-      <div class="margin-30"> <a href="#" target="_blank" class="margin-15 text-uppercase btn btn-primary">New Reader Registration</a><a href="#" target="_blank" class="margin-15 text-uppercase btn btn-primary">Returning Reader Registration</a><a href="#" target="_blank" class="margin-15 text-uppercase btn btn-primary">Family Management Tool </a></div>
+    <div class="container text-center black padding-bottom-80">
+      <div class="box-wrapper">
+        <div class="box">
+          <h4 class="black roboto no-margin-top">Help us meet our community goal of 16,775 people signed up!</h4>
+          <div>If we meet our goal, the Douglas County Libraries Foundation will donate $500 to Nature’s Educators, a top-rated nonprofit educational wildlife organization in Douglas County. </div>
+        </div>
+        <div class="box">
+          <h4 class="black roboto no-margin-top">On the road to a reward! Help your school win $250!</h4>
+          <div>All you have to do is sign up! Be sure to note your school name and your grade. The school with the most sign-ups by July 31 wins $250. Contest winner announced in August.</div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
