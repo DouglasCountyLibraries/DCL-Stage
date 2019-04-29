@@ -83,12 +83,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375972', end
 .car {
 	margin: 10px 5px 0 5px;
 }
-.box {
+.box-one, .box-two {
 	width: 500px;
-	background: #c4934b;
-	padding: 35px 35px 40px;
+	background: #FFC900;
+	padding: 35px 40px 40px;
 	margin: 15px;
+
 }
+	.box-one {
+		-webkit-clip-path: polygon(5% 0, 98% 2%, 100% 97%, 0 100%);
+clip-path: polygon(5% 0, 98% 2%, 100% 97%, 0 100%);
+		
+	}
+	.box-two {
+
+-webkit-clip-path: polygon(2% 1%, 100% 0, 100% 97%, 0 100%);
+clip-path: polygon(2% 1%, 100% 0, 100% 97%, 0 100%);
+
+
+	}
  @-webkit-keyframes slide {
  from {
 background-position: 0 0;
@@ -358,11 +371,11 @@ background-position: 960px 0;
   <div class="row content-row">
     <div class="container text-center black padding-bottom-80">
       <div class="box-wrapper">
-        <div class="box">
+        <div class="box-one">
           <h4 class="black roboto no-margin-top">Help us meet our community goal of 16,775 people signed up!</h4>
           <div>If we meet our goal, the Douglas County Libraries Foundation will donate $500 to Nature’s Educators, a top-rated nonprofit educational wildlife organization in Douglas County. </div>
         </div>
-        <div class="box">
+        <div class="box-two">
           <h4 class="black roboto no-margin-top">On the road to a reward! Help your school win $250!</h4>
           <div>All you have to do is sign up! Be sure to note your school name and your grade. The school with the most sign-ups by July 31 wins $250. Contest winner announced in August.</div>
         </div>
