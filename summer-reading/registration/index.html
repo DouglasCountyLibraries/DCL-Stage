@@ -353,7 +353,10 @@ background-position: 960px 0;
       <h1 class="grand-hotel no-margin white">Registration</h1>
       <h1 class="no-margin roboto white">The Great Summer Reading Road Trip</h1>
     </div>
-    <div class="car"><img class="vibrate center-block img-responsive" src="car.png" alt="Road Trip"></div>
+    <div class="car"></div>
+    <script>
+    var images = ['green-car.png', 'camper-trailer.png', 'camper.png', 'car.png', 'fiat.png', 'vw-bus.png', 'rv.png', 'orange-car.png',];
+    $('<img alt="Road Trip" class="vibrate center-block img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.car');</script> 
   </div>
   <div class="row registration-row">
     <div class="padding-top-40 padding-bottom-30">
