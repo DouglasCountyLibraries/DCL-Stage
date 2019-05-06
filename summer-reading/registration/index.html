@@ -73,6 +73,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375972', endColorstr='#578ec7', GradientType=0 );
 	margin-top: -5px;
 }
+.gh-shadow {
+	text-shadow: -1px 2px 0 rgba(0,0,0,.5);
+	font-size: 95px;
+}
 .content-row {
 	background: #375972 linear-gradient(#578ec7, #375972);
 }
@@ -82,7 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375972', end
 	justify-content: center;
 }
 .car {
-	margin: -10px 5px 0 5px;
+	margin: -3px 5px 0 5px;
 }
 .box-one, .box-two {
 	width: 500px;
@@ -104,7 +108,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375972', end
 background-position: 0 0;
 }
  to {
-background-position: 960px 0;
+background-position: 1058px 0;
 }
 }
  @keyframes slide {
@@ -112,7 +116,7 @@ background-position: 960px 0;
 background-position: 0 0;
 }
  to {
-background-position: 960px 0;
+background-position: 1058px 0;
 }
 }
 .vibrate {
@@ -169,6 +173,12 @@ background-position: 960px 0;
  100% {
  -webkit-transform: translate(0);
  transform: translate(0);
+}
+}
+
+@media (max-width: 475px) {
+.gh-shadow {
+	font-size: 85px;
 }
 }
 </style>
@@ -351,7 +361,7 @@ background-position: 960px 0;
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row landscape-row">
     <div class="container white text-center padding-top-30">
-      <h1 class="grand-hotel no-margin white">Registration</h1>
+      <h1 class="grand-hotel gh-shadow no-margin white">Registration</h1>
       <h1 class="no-margin roboto white">The Great Summer Reading Road Trip</h1>
     </div>
     <div class="car"></div>
