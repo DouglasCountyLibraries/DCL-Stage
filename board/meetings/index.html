@@ -74,9 +74,8 @@ $(document).ready(function() {
 <script>
 $(document).ready(function() {
     $.fn.dataTable.moment( 'MMMM D, YYYY' );
-    $('#example').DataTable( {
-        "order": [[ 0, "asc" ]],
-		"paging": false
+    $('#meetings').DataTable( {
+        "order": []
     } );
 } );
 		</script>
@@ -302,93 +301,9 @@ table.dataTable thead th, table.dataTable thead td {
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
-    <div class="container">
-      <table id="one" class="table board-table table-striped table-responsive">
-        <thead>
-          <tr>
-            <th>Meeting Type</th>
-            <th>Agenda/Topic</th>
-            <th>Location & Minutes</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="opacity-6">Cancelled</td>
-            <td class="opacity-6">N/A</td>
-            <td class="opacity-6 line-through">Castle Pines</td>
-            <td class="opacity-6 line-through">January 30, 2019</td>
-          </tr>
-          <tr>
-            <td>Regular Board Meeting</td>
-            <td><a href="agenda/02-27-19-agenda.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10 gray-60"></i>Agenda</a></td>
-            <td><a href="minutes/02-27-19-minutes.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Lone Tree</a></td>
-            <td>February 27, 2019</td>
-          </tr>
-          <tr>
-            <td>Regular Board Meeting</td>
-            <td><a href="agenda/03-27-19-agenda.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Agenda</a></td>
-            <td><a href="minutes/03-27-19-minutes.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Parker</a></td>
-            <td>March 27, 2019</td>
-          </tr>
-          <tr>
-            <td>Regular Board Meeting</td>
-            <td><a href="agenda/04-24-19-agenda.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Agenda</a></td>
-            <td class="opacity-6">Highlands Ranch</td>
-            <td>April 24, 2019</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td class="opacity-6">Agenda/Topic</td>
-            <td class="opacity-6">Castle Rock</td>
-            <td class="opacity-6">May 29, 2019</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td class="opacity-6">Agenda/Topic</td>
-            <td class="opacity-6">Roxborough</td>
-            <td class="opacity-6">June 26, 2019</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td class="opacity-6">Agenda/Topic</td>
-            <td class="opacity-6">Castle Pines</td>
-            <td class="opacity-6">August 28, 2019</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td class="opacity-6">Agenda/Topic</td>
-            <td class="opacity-6">Lone Tree</td>
-            <td class="opacity-6">September 25, 2019</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td class="opacity-6">Agenda/Topic</td>
-            <td class="opacity-6">Parker</td>
-            <td class="opacity-6">October 30, 2019</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td class="opacity-6">Agenda/Topic</td>
-            <td class="opacity-6">Highlands Ranch</td>
-            <td class="opacity-6">November 20, 2019*</td>
-          </tr>
-          <tr>
-            <td class="opacity-6">Regular Board Meeting</td>
-            <td><a href="agenda/01-31-18-agenda.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Agenda</a></td>
-            <td><a href="minutes/01-31-18-minutes.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Castle Pines</a></td>
-            <td class="opacity-6">January 31, 2018</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="margin-right-10 margin-left-10 margin-bottom-10">There are no meetings in July and December.</div>
-      <div class="margin-right-10 margin-left-10 margin-bottom-10">* The November 2019 board meeting will be held the third Wednesday of the month due to the Thanksgiving holiday.</div>
-    </div>
-  </div>
   <div class="row">
     <div class="container">
-      <table id="example" class="display" cellspacing="0" width="100%">
+      <table id="meetings" class="display table table-striped" cellspacing="0" width="100%">
         <thead>
           <tr>
             <th>Date</th>
@@ -457,6 +372,12 @@ table.dataTable thead th, table.dataTable thead td {
             <td class="opacity-6">Regular Board Meeting</td>
             <td class="opacity-6">Agenda</td>
             <td class="opacity-6">Highlands Ranch*</td>
+          </tr>
+          <tr>
+            <td>January 31, 2018</td>
+            <td>Regular Board Meeting</td>
+            <td><a href="agenda/01-31-18-agenda.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Agenda</a></td>
+            <td><a href="minutes/01-31-18-minutes.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Castle Pines</a></td>
           </tr>
         </tbody>
       </table>
