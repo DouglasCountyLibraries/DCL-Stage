@@ -59,9 +59,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+	<link href="https://zurb.com/playground/playground/responsive-tables/responsive-tables.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.dataTables.min.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/datetime-moment.js"></script>
+<script src="https://zurb.com/playground/playground/responsive-tables/responsive-tables.js"></script>
 <script>
 $(document).ready(function() {
     $.fn.dataTable.moment( 'MMMM D, YYYY, h:mm A' );
@@ -313,8 +315,8 @@ table.dataTable thead th, table.dataTable tfoot th {
     </div>
   </div>
   <div class="row">
-    <div class="container">
-      <table id="meetings" class="display table table-striped" cellspacing="0" width="100%">
+    <div class="container no-padding">
+      <table id="meetings" class="responsive display table table-striped" cellspacing="0" width="100%">
         <thead>
           <tr>
             <th>Date/Time</th>
@@ -343,8 +345,7 @@ table.dataTable thead th, table.dataTable tfoot th {
             <td>February 27, 2019, 5:00 PM</td>
             <td>Development Session</td>
             <td><a href="../lone-tree/">Lone Tree</a></td>
-            <td>Colorado Open Meeting Law,<br>
-              Trustee Volunteer Agreement</td>
+            <td>Colorado Open Meeting Law, Trustee Volunteer Agreement</td>
             <td><a href="record/02-27-19-record.pdf" target="_blank"><i class="fas fa-file-pdf margin-right-10"></i>Record</a></td>
           </tr>
           <tr>
