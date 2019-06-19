@@ -55,92 +55,20 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-html, body {
-	margin: 0;
-	padding: 0;
-	font: 1em/1.75 Verdana, Arial, Helvetica, sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
-}
-#header {
-	position: relative;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 4.0625em;
-	background: #222
-}
-#header img {
-	position: absolute;
-	top: 0.5em;
-	left: 1em;
-	width: 3em;
-	height: 3em;
-	border: 0
-}
-#header > span {
-	position: absolute;
-	top: 1.175em;
-	left: 5em;
-	color: #fff
-}
-#header span + a {
-	position: absolute;
-	top: 0.65em;
-	right: 0.5em;
-	color: #fff;
-	text-decoration: none
-}
-#header a span {
-	font-size: 1.5em
-}
-.page-content {
-	padding: 0 1em 1em;
-	max-width: 64em;
-	margin: auto
-}
-
-
-@media(min-width:30em) {
-.breadcrumbs {
-	line-height: 3.75;
-	padding: 0 1.25em
-}
-}
-
-@media(min-width:60em) {
-.breadcrumbs span {
-	display: inline-block
-}
-}
-a, a:active, a:visited {
-	color: #c30
-}
-a:visited {
-	color: #c90
-}
-a:hover, a:focus {
-	color: #666;
-	text-decoration: none
-}
-code {
-	display: block;
-	background: #ebebeb;
-	font-size: 0.875em;
-	padding: 1em 2em;
-	overflow-x: scroll;
-	white-space: nowrap
-}
-blockquote {
-	font-style: italic;
-	margin: 0 5%
-}
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
+.item-wrapper {
+	display: flex;
+	align-items: center;
+}
+.item {
+	width: 50%;
+	text-align: center;
+	border: 1px solid red;
+}
 #slideshow {
 	position: relative;
 	overflow: hidden;
-	max-width: 64em;
-	padding-bottom: 40%
+	padding-bottom: 50%
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
 	position: absolute;
@@ -177,6 +105,11 @@ blockquote {
 	-ms-transform-origin: bottom right;
 	transform-origin: bottom right
 }
+	#slideshow div:nth-of-type(5n+1) {
+	-webkit-transform-origin: top right;
+	-ms-transform-origin: top right;
+	transform-origin: top right
+}
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
 	z-index: 1
 }
@@ -187,16 +120,19 @@ blockquote {
 	opacity: 1
 }
 #slideshow div:nth-of-type(1) {
-	background-image: url(https://source.unsplash.com/1024x1024/?dogs)
+	background-image: url(https://source.unsplash.com/500x500/?dogs)
 }
 #slideshow div:nth-of-type(2) {
-	background-image: url(https://source.unsplash.com/1024x1024/?cats)
+	background-image: url(https://source.unsplash.com/500x500/?flowers)
 }
 #slideshow div:nth-of-type(3) {
-	background-image: url(https://source.unsplash.com/1024x1024/?babies)
+	background-image: url(https://source.unsplash.com/500x500/?babies)
 }
 #slideshow div:nth-of-type(4) {
-	background-image: url(https://source.unsplash.com/1024x1024/?bunnies)
+	background-image: url(https://source.unsplash.com/500x500/?cars)
+}
+	#slideshow div:nth-of-type(5) {
+	background-image: url(https://source.unsplash.com/500x500/?women)
 }
 /* captions */
 #slideshow span {
@@ -207,17 +143,19 @@ blockquote {
 	display: inline-block;
 	padding: 2% 3%;
 	margin: 5%;
-	font-size: 2.5vw;
+	font-size: 4.5vw;
 	color: transparent
 }
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
 	z-index: 1
 }
 #slideshow .fx + span, #slideshow .fx1 + span {
-	background: rgba(0,0,0,0.75);
-	color: #fff;
-	-webkit-animation: caption 5s 1s both;
-	animation: caption 5s 1s both
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	background: rgba(255,255,255,0.75);
+	color: #333;
+	-webkit-animation: caption 7s 1s both;
+	animation: caption 7s 1s both
 }
 @-webkit-keyframes caption {
  0% {
@@ -260,7 +198,7 @@ transform:translate3d(-500%, 0, 0)
 #slideshow span {
 	padding: 1em 1.5em;
 	margin: 2em;
-	font-size: 1em
+	font-size: 2em
 }
 }
 </style>
@@ -441,24 +379,35 @@ transform:translate3d(-500%, 0, 0)
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
-<div class="container">
-    <div id="slideshow"> 
-      <!-- define each background-image in CSS -->
-      
-      <div></div>
-      <!-- #slideshow div:nth-of-type(1) --> 
-      <span> Home to the <a href="#">Recording Studio</a>. </span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(2) --> 
-      <span> Lots of Meeting Rooms. </span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(3) --> 
-      <span> Tons of Study Rooms. </span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(4) --> 
-      <span> PUPPIES! </span> </div>
-
-	</div>
+  <div class="row bg-gray-5">
+    <div class="container-md no-padding">
+      <div class="item-wrapper">
+        <div class="item padding-15">
+      <h1 class="no-margin text-capitalize">Parker</h1>
+      <div class="text-uppercase margin-bottom-10">Manager: Amy Long <a href="tel:+13037917323" class="margin-left-5">(303) 791-7323</a></div>
+      <h4 class="roboto">This library is home to <a class="text-underline" href="../reserve-a-space/#recording-studio">The Recording Studio</a>, where patrons can use state-of-the-art software and equipment to create videos, musical compositions, animations, e-books and more.</h4>
+    </div>
+        <div class="item" id="slideshow"> 
+          <!-- define each background-image in CSS -->
+          
+          <div></div>
+          <!-- #slideshow div:nth-of-type(1) --> 
+          <span> This is 1 </span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(2) --> 
+          <span> This is 2 </span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(3) --> 
+          <span> This is 3 </span>
+          <div></div>
+			          <!-- #slideshow div:nth-of-type(4) --> 
+          <span> This is 4 </span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(5) --> 
+          <span> This is 5 </span> </div>
+      </div>
+    </div>
+  </div>
   
   <!--[if gte IE 9]><!--> 
   <script>
