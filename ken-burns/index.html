@@ -98,27 +98,27 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* slide four */
 #slideshow div:nth-of-type(3n+1) {
-	-webkit-transform-origin: top left;
-	-ms-transform-origin: top left;
-	transform-origin: top right;
+	-webkit-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
 /* slide five */
 #slideshow div:nth-of-type(4n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: top right;
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 }
 /* slide six */
 #slideshow div:nth-of-type(5n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: top right;
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 }
 /* slide seven */
 #slideshow div:nth-of-type(6n+1) {
-	-webkit-transform-origin: bottom left;
-	-ms-transform-origin: bottom left;
-	transform-origin: top right;
+	-webkit-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
 /* slide eight */
 #slideshow div:nth-of-type(7n+1) {
@@ -128,9 +128,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* slide one */
 #slideshow div:nth-of-type(8n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: bottom right;
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 }
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
 	z-index: 1
@@ -167,26 +167,27 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* captions */
 #slideshow span {
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
 	position: absolute;
 	z-index: 2;
 	bottom: 0;
 	left: 0;
 	display: inline-block;
-	padding: 2% 3%;
-	margin: 5%;
-	font-size: 2.5vw;
+	margin: 3%;
+	font-size: 4.5vw;
 	color: transparent;
 }
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
 	z-index: 1;
 }
 #slideshow .fx + span, #slideshow .fx1 + span {
-	background: rgba(255,255,255,0.9);
-	color: #000;
+	color: #fff;
 	-webkit-animation: caption 7s 1s both;
 	animation: caption 7s 1s both;
 }
-@-webkit-keyframes caption {
+-webkit-keyframes caption {
  0% {
 opacity:0;
 -webkit-transform:translate3d(300%, 0, 0)
@@ -225,11 +226,19 @@ transform:translate3d(-500%, 0, 0)
 
 @media(min-width:42em) { /* bigger than 672px */
 #slideshow span {
-	padding: 1em 1.5em;
 	margin: 2em;
-	font-size: 1.2em
+	font-size: 2em
 }
 }
+	
+	@media (max-width: 992px) {
+.item-wrapper {
+	flex-direction: column;
+}
+		.item {width: 100%;}
+	}
+	
+	
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -412,7 +421,7 @@ transform:translate3d(-500%, 0, 0)
     <div class="container-md no-padding">
       <div class="item-wrapper">
         <div class="item padding-15">
-          <h1 class="no-margin text-capitalize">Parker</h1>
+          <h1 class="no-mitem-one argin text-capitalize">Parker</h1>
           <div class="text-center">
             <div itemscope="" itemtype="http://schema.org/PostalAddress">
               <h1 class="roboto no-margin-top"> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a></h1>
@@ -425,33 +434,31 @@ transform:translate3d(-500%, 0, 0)
         </div>
         <div class="item" id="slideshow"> 
           <!-- define each background-image in CSS -->
-          
           <div></div>
           <!-- #slideshow div:nth-of-type(1) --> 
-          <span> Vivamus sed turpis sed sem varius suscipit.</span>
+          <span> Welcome to DCL in Parker!</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(2) --> 
-          <span> Pellentesque habitant morbi tristique senectus.</span>
+          <span> Home to the Recording Studio</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(3) --> 
-          <span> Praesent consequat eros ut arcu. </span>
+          <span> ...and great meeting spaces </span>
           <div></div>
           <!-- #slideshow div:nth-of-type(4) --> 
-          <span>Morbi ultrices tortor sollicitudin elit lobortis scelerisque.</span>
+          <span>Where you can join with friends</span>
           <div></div>
           
           <!-- #slideshow div:nth-of-type(5) --> 
-          <span>Morbi ultrices tortor sollicitudin elit lobortis scelerisque.</span>
+          <span>Find a great book</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(6) --> 
-          <span>Morbi ultrices tortor sollicitudin elit lobortis scelerisque.</span>
+          <span>Brainstorm the next big thing</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(7) --> 
-          <span>Morbi ultrices tortor sollicitudin elit lobortis scelerisque.</span>
+          <span>Have some time alone</span>
           <div></div>
-          
           <!-- #slideshow div:nth-of-type(8) --> 
-          <span> Vivamus sed turpis sed sem varius suscipit.</span> </div>
+          <span> ...or get down to work!</span> </div>
       </div>
     </div>
   </div>
