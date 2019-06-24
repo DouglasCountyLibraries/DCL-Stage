@@ -55,7 +55,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
+.today-heading {
+	font-size: 6em;
+	font-weight: 700;
+	line-height: 1em;
+	color: #ddd;
+	
+}
+	.calendar {
+		background: #fff url("calendar-background.png") top right/cover;
+		height: 533px;
+	}
 .item-wrapper {
 	display: flex;
 	align-items: center;
@@ -64,6 +74,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	width: 50%;
 	text-align: center;
 }
+/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 #slideshow {
 	position: relative;
 	overflow: hidden;
@@ -230,15 +241,15 @@ transform:translate3d(-500%, 0, 0)
 	font-size: 2em
 }
 }
-	
-	@media (max-width: 992px) {
+
+@media (max-width: 992px) {
 .item-wrapper {
 	flex-direction: column;
 }
-		.item {width: 100%;}
-	}
-	
-	
+.item {
+	width: 100%;
+}
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -459,6 +470,23 @@ transform:translate3d(-500%, 0, 0)
           <div></div>
           <!-- #slideshow div:nth-of-type(8) --> 
           <span> ...or get down to work!</span> </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="item-wrapper">
+      <div class="item calendar"></div>
+      <div class="item">
+        <div class="today-heading"> 
+          <script>
+    var d=new Date()
+    var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+    var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+    document.write(weekday[d.getDay()] + ", ")
+    document.write(monthname[d.getMonth()] + " ")
+       document.write(d.getDate() + "")
+		  </script>
+		  </div><div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">Parker Events Calendar</a></div>
       </div>
     </div>
   </div>
