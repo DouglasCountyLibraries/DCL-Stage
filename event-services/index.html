@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,10 +56,43 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    if (document.cookie.indexOf("shown=true")<10) {
+        var show = function(){
+                $('#myModal').modal('show');
+        };
+        $(window).load(function(){
+            var timer = window.setTimeout(show,0);
+        });
+    }
+    document.cookie = "shown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+});
+</script>
+	
 <!-- Facebook Pixel Code -->
-
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '323565307821038'); 
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
+&noscript=1"/>
+</noscript>
 <!-- End Facebook Pixel Code -->
-
 <style>
 .reserve-a-space-active {
 	background-color: #f5f5f5;
@@ -234,7 +268,7 @@ opacity: 1
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -408,6 +442,25 @@ opacity: 1
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
+	
+	
+	
+	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content bg-salmon padding-30">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="white" aria-hidden="true">&times;</span></button>
+        <div class="text-center">
+			<h3 class="white">Limited Time Offer!</h3><div class="white">Book a Select Service event of 4 consecutive hours before December 31, 2019, and receive complimentary water service.</div>
+          <a href="#select-service" class="btn btn-primary margin-top-15 margin-bottom-40 text-uppercase white" data-dismiss="modal">Book Now!</a> </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	
+	
+	
+	
   <div class="row border-top padding-bottom-15">
     <div class="container">
       <div class="text-center">
@@ -655,7 +708,7 @@ function showSlides(n) {
   timer = setTimeout(showSlides, 8000);
 } 
 </script> 
-<script>
+<script type="text/javascript">
 $(document).ready(function() {
   if(window.location.href.indexOf('#self-service-get-started') != -1) {
     $('#self-service-get-started').modal('show')
@@ -673,4 +726,5 @@ $(document).ready(function() {
 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
