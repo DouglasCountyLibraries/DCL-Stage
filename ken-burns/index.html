@@ -55,17 +55,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-.today-heading {
-	font-size: 6em;
-	font-weight: 700;
-	line-height: 1em;
-	color: #ddd;
-	
-}
-	.calendar {
-		background: #fff url("calendar-background.png") top right/cover;
-		height: 533px;
-	}
 .item-wrapper {
 	display: flex;
 	align-items: center;
@@ -73,6 +62,22 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .item {
 	width: 50%;
 	text-align: center;
+}
+.today-heading {
+	font-size: 4em;
+	font-weight: 700;
+	line-height: 1em;
+	color: rgba(255,255,255,.8);
+}
+.calendar {
+	background: #fff url("calendar-background.png") top right/cover;
+	padding: 200px 15px;
+}
+.faded-background {
+	padding: 5px 8px;
+	background: rgba(0,0,0,.3);
+}
+.storytime {
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 #slideshow {
@@ -432,7 +437,7 @@ transform:translate3d(-500%, 0, 0)
     <div class="container-md no-padding">
       <div class="item-wrapper">
         <div class="item padding-15">
-          <h1 class="no-mitem-one argin text-capitalize">Parker</h1>
+          <h1 class="no-margin text-capitalize">Parker</h1>
           <div class="text-center">
             <div itemscope="" itemtype="http://schema.org/PostalAddress">
               <h1 class="roboto no-margin-top"> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a></h1>
@@ -475,18 +480,51 @@ transform:translate3d(-500%, 0, 0)
   </div>
   <div class="row">
     <div class="item-wrapper">
-      <div class="item calendar"></div>
       <div class="item">
-        <div class="today-heading"> 
-          <script>
+        <div class="calendar">
+          <div class="today-heading"> 
+            <script>
     var d=new Date()
     var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
     var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
     document.write(weekday[d.getDay()] + ", ")
     document.write(monthname[d.getMonth()] + " ")
        document.write(d.getDate() + "")
-		  </script>
-		  </div><div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">Parker Events Calendar</a></div>
+		  </script> 
+          </div>
+          <div class="text-center margin-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=2,3,7,15,16,18,20,22,24,25,35,36,37&lib=1005" target="_blank" class="btn btn-lg btn-primary text-uppercase">Parker Events Calendar</a></div>
+          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank" class="faded-background white font-weight-400 text-uppercase">View All DCL Events &raquo;</a></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="storytime">
+          <h2 class="no-margin-top">Parker Storytime</h2>
+          <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
+            <ul class="list-unstyled">
+              <li>
+                <h5 class="text-uppercase">Monday-Friday</h5>
+              </li>
+              <li>9:30AM-Baby</li>
+              <li>10:15AM-Toddler</li>
+              <li>11:15AM-Preschool</li>
+              <li>
+                <h5 class="text-uppercase">Saturday</h5>
+              </li>
+              <li>10:15AM-All Ages</li>
+            </ul>
+          </div>
+          <div class="padding-top-15">
+            <ul class="list-unstyled">
+              <li>
+                <h4 class="roboto">Special Storytime</h4>
+              </li>
+              <li>
+                <h5 class="text-uppercase">Monday</h5>
+              </li>
+              <li>7PM-Storytime Discover-All Ages</li>
+            </ul>
+          </div>
+          <a class="text-uppercase" href="../storytime/">View Storytime Hours at all Locations &raquo;</a> </div>
       </div>
     </div>
   </div>
