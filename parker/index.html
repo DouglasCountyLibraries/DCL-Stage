@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +14,7 @@
 
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Parker | Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
+<title>Page Title | Douglas County Libraries</title>
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -56,92 +53,242 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-  <script type="text/javascript">
-   $(function() {
-    var images = ['parker-one.jpg', 'parker-two.jpg', 'parker-three.jpg', 'parker-four.jpg', 'parker-five.jpg'];
-    $('.location-background').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
-   });
-  </script>
-  <style>
-.using-the-library-active {
-	background-color: #f5f5f5;
-}
-.eventList.width {
-	font-family: "Ubuntu", arial, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	text-rendering: optimizeLegibility;
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<style>
+.item-wrapper {
 	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+	align-items: center;
 }
-#eventsinfo .item {
-	font-size: 0px;
+.item {
+	width: 50%;
+	text-align: center;
 }
-#eventsinfo .location, #eventsinfo .branch, .description br {
+.today-heading {
+	font-size: 4em;
+	font-weight: 700;
+	line-height: 1em;
+	color: rgba(255,255,255,.8);
+}
+.calendar {
+	background: #fff url("calendar-background.jpg") top right/cover;
+	padding: 200px 15px;
+}
+.dcl-local-wrapper {
+	padding: 15px;
+}
+.dcl-local {
+	background: #fff url("dcl-local-background.jpg") center left/cover;
+	height: 515px;
+}
+.playscapes {
+	background: #fff url("playscape-background.jpg") center left/cover;
+	height: 515px;
+}
+.testimonials {
+	padding: 30px;
+}
+.text-shadow {
+	text-shadow: 0px 2px 8px rgba(0,0,0,.9);
+}
+.carousel-cell {
+	width: 100%;
+	padding: 0 0 50px 0;
+}
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+.flickity-page-dots {
+	bottom: 20px;
+	opacity: .5;
+}
+.flickity-prev-next-button {
 	display: none;
 }
-#eventsinfo .item {
-	background-color: rgba(255,255,255,.9);
-	margin: 5px;
-	padding: 30px;
-	max-width: 450px;
+.flickity-viewport {
+	transition: height 0.6s;
 }
-#eventsinfo .item:hover, #eventsinfo .item:focus {
-	cursor: pointer;
-	background-color: rgba(255,255,255,1);
-	box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 0;
-	transition: all .4s ease-out;
-	-webkit-transition: all .4s ease;
+/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
+#slideshow {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 32%;
+} /* (img px height / img px width x 100) = padding-bottom % */
+#slideshow div {
+	position: absolute;
+	z-index: 2;
+	width: 105%;
+	height: 105%;
+	top: -5%;
+	left: -5%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0;
+	-webkit-transition: opacity 3s, -webkit-transform 8s;
+	-ms-transition: opacity 3s, -ms-transform 8s;
+	transition: opacity 3s, transform 8s;
 }
-#eventsinfo .item .title {
-	font-size: 24px;
-	font-weight: 300;
-	line-height: 1.2;
-	letter-spacing: -0.8px;
+/* slide two */
+#slideshow div {
+	-webkit-transform-origin: top right;
+	-ms-transform-origin: top right;
+	transform-origin: top right;
 }
-#eventsinfo .item .title a, #eventsinfo .item .title a:hover, #eventsinfo .item .title a:focus {
-	color: #666;
-	text-decoration: none;
+/* slide three */
+#slideshow div:nth-of-type(2n+1) {
+	-webkit-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
-#eventsinfo #eventdate {
-	font-size: 16px;
-	text-align: left;
-	padding-right: 20px;
-	float: left;
+/* slide four */
+#slideshow div:nth-of-type(3n+1) {
+	-webkit-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
-#eventsinfo .description {
-	font-size: 16px;
-	margin: 8px 0;
+/* slide five */
+#slideshow div:nth-of-type(4n+1) {
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 }
-#eventsinfo .time {
-	font-size: 16px;
+/* slide six */
+#slideshow div:nth-of-type(5n+1) {
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 }
-#eventsinfo #noevent {
-	text-align: center;
-	color: white;
-	font-size: 18px;
-	text-transform: uppercase;
+/* slide seven */
+#slideshow div:nth-of-type(6n+1) {
+	-webkit-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
-.location-events {
-	padding-bottom: 60px;
+/* slide eight */
+#slideshow div:nth-of-type(7n+1) {
+	-webkit-transform-origin: top right;
+	-ms-transform-origin: top right;
+	transform-origin: top right;
+}
+/* slide one */
+#slideshow div:nth-of-type(8n+1) {
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: bottom left;
+}
+#slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
+	z-index: 1
+}
+#slideshow .fx, #slideshow .fx1 {
+	-webkit-transform: scale(1.1) translate(1.5%);
+	-ms-transform: scale(1.1) translate(1.5%);
+	transform: scale(1.1) translate(1.5%);
+	opacity: 1
+}
+#slideshow div:nth-of-type(1) {
+	background-image: url("one.jpg")
+}
+#slideshow div:nth-of-type(2) {
+	background-image: url("two.jpg")
+}
+#slideshow div:nth-of-type(3) {
+	background-image: url("three.jpg")
+}
+#slideshow div:nth-of-type(4) {
+	background-image: url("four.jpg")
+}
+#slideshow div:nth-of-type(5) {
+	background-image: url("five.jpg")
+}
+#slideshow div:nth-of-type(6) {
+	background-image: url("six.jpg")
+}
+#slideshow div:nth-of-type(7) {
+	background-image: url("seven.jpg")
+}
+#slideshow div:nth-of-type(8) {
+	background-image: url("eight.jpg")
+}
+/* captions */
+#slideshow span {
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	display: inline-block;
+	margin: 3%;
+	font-size: 4.5vw;
+	color: transparent;
+}
+#slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
+	z-index: 1;
+}
+#slideshow .fx + span, #slideshow .fx1 + span {
+	color: #fff;
+	-webkit-animation: caption 7s 1s both;
+	animation: caption 7s 1s both;
+}
+-webkit-keyframes caption {
+ 0% {
+opacity:0;
+-webkit-transform:translate3d(300%, 0, 0)
+}
+ 20% {
+opacity:1;
+-webkit-transform:none
+}
+ 70% {
+opacity:1;
+-webkit-transform:none
+}
+ 100% {
+opacity:0;
+-webkit-transform:translate3d(-500%, 0, 0)
+}
+}
+@keyframes caption {
+ 0% {
+opacity:0;
+transform:translate3d(300%, 0, 0)
+}
+ 20% {
+opacity:1;
+transform:none
+}
+ 70% {
+opacity:1;
+transform:none
+}
+ 100% {
+opacity:0;
+transform:translate3d(-500%, 0, 0)
+}
+}
+
+@media(min-width:42em) { /* bigger than 672px */
+#slideshow span {
+	margin: 2em;
+	font-size: 2.5em
+}
 }
 
 @media (max-width: 992px) {
-.eventList.width {
+.item-wrapper {
 	flex-direction: column;
 }
-.location-events {
-	padding-bottom: 15px;
+.item {
+	width: 100%;
 }
 }
 </style>
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) --> 
+<!-- Google Tag Manager (noscript) -->
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -315,40 +462,73 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row location-background padding-top-15 padding-bottom-40">
-    <div class="container text-center">
-      <h1 class="no-margin-bottom font-weight-400 white text-capitalize fade-in-text">Parker</h1>
-      <div class="white font-weight-500 text-uppercase margin-bottom-10">Manager: Amy Long <a href="tel:+13037917323" class="white margin-left-5">(303) 791-7323</a></div>
-      <h4 class="white font-weight-400 margin-lg-100"> <i style="font-size:18px;padding:5px 5px 0 0;vertical-align:top;" class="fas fa-home"></i> A Nextdoor Neighborhood <a class="white text-underline" href="https://nextdoor.com/pages/parker-library-parker-co/recommend/" target="_blank">Favorite</a>. This library is home to <a class="white text-underline" href="../reserve-a-space/#recording-studio">The Recording Studio</a>, where patrons can use state-of-the-art software and equipment to create videos, musical compositions, animations, e-books and more.</h4>
-    </div>
-  </div>
-  <div class="row no-gutter sub-nav-row">
-    <div class="sub-nav">
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border-first equal-height">
-        <h5 class="no-margin text-uppercase"> <a href="#" class="show" data-toggle="modal" data-target="#storytime-modal"><i class="fas fa-comment fa-flip-horizontal"></i>Storytime</a> </h5>
-      </div>
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../reserve-a-space/"><i class="fas fa-check-square"></i>Reserve a Space</a></h5>
-      </div>
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=2,3,7,15,16,18,20,22,24,25,35,36,37&lib=1005" target="_blank" class="show"><i class="fas fa-calendar"></i>Parker Events Calendar</a></h5>
-      </div>
-      <div class="col-md-6 col-lg-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../used-book-sales/"><i class="fas fa-book"></i>Used Book Sales</a></h5>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade text-center" id="storytime-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content padding-bottom-60">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h2 class="modal-title" id="myModalLabel">Parker Storytime</h2>
+  <div class="row bg-gray-5">
+    <div class="container-md no-padding">
+      <div class="item-wrapper">
+        <div class="item padding-15">
+          <h1 class="no-margin text-capitalize">Parker</h1>
+          <div class="text-center">
+            <div itemscope="" itemtype="http://schema.org/PostalAddress">
+              <h1 class="roboto no-margin-top"> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a></h1>
+            </div>
+            <h4 class="text-uppercase no-margin-top"><span class="margin-left-10 margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
+              <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
+              <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></h4>
+          </div>
+          <div class="text-uppercase margin-bottom-10">Manager: Amy Long <a href="tel:+13037917323" class="font-weight-400 margin-left-5">(303) 791-7323</a></div>
         </div>
-        <div class="modal-body">
-          <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
+        <div class="item" id="slideshow"> 
+          <!-- define each background-image in CSS -->
+          <div></div>
+          <!-- #slideshow div:nth-of-type(1) --> 
+          <span> Welcome to DCL in Parker!</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(2) --> 
+          <span> Home to the Recording Studio</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(3) --> 
+          <span> ...and great meeting spaces </span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(4) --> 
+          <span>Where you can join with friends</span>
+          <div></div>
+          
+          <!-- #slideshow div:nth-of-type(5) --> 
+          <span>Find a great book</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(6) --> 
+          <span>Brainstorm the next big thing</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(7) --> 
+          <span>Have some time alone</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(8) --> 
+          <span> ...or get down to work!</span> </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="item-wrapper">
+      <div class="item">
+        <div class="calendar">
+          <div class="today-heading"> 
+            <script>
+    var d=new Date()
+    var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+    var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+    document.write(weekday[d.getDay()] + ", ")
+    document.write(monthname[d.getMonth()] + " ")
+       document.write(d.getDate() + "")
+		  </script> 
+          </div>
+          <div class="text-center margin-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=2,3,7,15,16,18,20,22,24,25,35,36,37&lib=1005" target="_blank" class="btn btn-lg btn-primary text-uppercase">Parker Events Calendar</a></div>
+          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank" class="text-shadow white font-weight-400 text-uppercase">View All DCL Events &raquo;</a></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="storytime">
+          <h2 class="no-margin-top text-uppercase">Parker Storytime</h2>
+          <div class="padding-bottom-15" style="border-bottom:1px solid #e5e5e5">
             <ul class="list-unstyled">
               <li>
                 <h5 class="text-uppercase">Monday-Friday</h5>
@@ -373,87 +553,105 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
               <li>7PM-Storytime Discover-All Ages</li>
             </ul>
           </div>
-        </div>
-        <a class="text-uppercase" href="../storytime/">View Storytime Hours at all Locations &raquo;</a> </div>
-    </div>
-  </div>
-  <div class="row bg-gray-10 padding-top-30 padding-bottom-30">
-    <div class="container">
-      <div class="text-center">
-        <div itemscope itemtype="http://schema.org/PostalAddress">
-          <h1 class="roboto no-margin-top"> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a></h1>
-        </div>
-        <h4 class="text-uppercase no-margin-top"><span class="margin-left-10 margin-right-10">Mon-Thu:&nbsp;9AM-9PM</span><br class="insert-break">
-          <span class="margin-left-10 margin-right-10">Fri-Sat:&nbsp;9AM-5PM</span><br class="insert-break">
-          <span class="margin-left-10 margin-right-10">Sun:&nbsp;12-5PM</span></h4>
+          <a class="text-uppercase font-weight-400" href="../storytime/">View Storytime Hours at all Locations &raquo;</a> </div>
       </div>
     </div>
   </div>
-  <div class="row padding-top-30 padding-bottom-40">
-    <div class="container">
-      <h1 class="text-uppercase text-center font-weight-400 no-margin">Featured Author Event</h1>
-      <div class="margin-lg-200 padding-top-20"> <a href="https://dcl.bibliocommons.com/item/show/1440672114"><img class="pull-left margin-right-15 shadow-low shadow-low-hover" src="feather-thief.jpg" alt="The Feather Thief"></a>
-        <div class="book-item">
-          <div class="large-text">An evening with...</div>
-          <h1 class="no-margin text-uppercase font-weight-400">Kirk W. Johnson</h1>
-          <h4>Tuesday, June 25, 6:30PM</h4>
-          If you enjoy true-crime stories, don’t miss this author event! Johnson will talk about the real-life crime that inspired his latest book, <i><a href="https://dcl.bibliocommons.com/item/show/1440672114">The Feather Thief: Beauty, Obsession, and the Natural History Heist of the Century</a></i>. A book sale and signing will follow his presentation. <span class="text-uppercase">Adults.</span>
-          <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=153275" class="btn btn-primary text-uppercase" target="_blank">Register Now</a></div>
+  <div class="row">
+    <div class="item-wrapper bg-gray-5">
+      <div class="item">
+        <div class="dcl-local-wrapper">
+          <div class="text-left margin-lg-100">
+            <h1 class="text-center text-uppercase">DCL Local</h1>
+            <h4 class="roboto text-center">Show your library card at participating DCL Local merchants to receive special offers of <a href="#food-drink">Food &amp; Drink</a>, <a href="#shopping-services">Shopping &amp; Services</a> and <a href="#classes-experiences">Classes &amp; Experiences</a>.</h4>
+            <!-- <ul class="margin-lg-200 margin-lg-50">
+              <li>Cheyenne Mountain Zoo</li>
+              <li>The Chicken Shack</li>
+              <li>Hall of Justice Comics and Collectibles</li>
+              <li>Hokulia Shave Ice</li>
+              <li>Love Me Twice</li>
+              <li>The Perfect Fit</li>
+              <li>Petit Parker</li>
+              <li>Purgatory Cellars Winery, Parker</li>
+              <li>Welcome Home Brewery</li>
+              <li>Wings Over the Rockies Exploration of Flight</li>
+			  </ul>-->
+            <div class="text-center">Did you know you can use your library card to reserve free passes to one of our local participating cultural institutions?</div>
+          </div>
+          <div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">See All Offers</a></div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="video-challenge" class="row bg-black">
-    <div class="container">
-      <div class="col-md-6"><img src="video-challenge.jpg" alt="Movin' & Groovin' Video Challenge" class="img-responsive image-center"></div>
-      <div class="col-md-6 text-center padding-bottom-30">
-        <h1 class="boogaloo white jumbo-text">Movin' &amp; Groovin' Summer Adventures Video Challenge</h1>
-        <h4 class="boogaloo white">Create a video that moves us to tears or laughter, inspires us with heart, or gets us groovin' to the beat. Entries due Sunday, September 1, 2019.</h4>
-        <div> <a class="text-uppercase btn btn-warning margin-top-15" href="video-challenge/">Sign Up Now!</a></div>
+      <div class="item">
+        <div class="dcl-local"> </div>
       </div>
     </div>
   </div>
-  <div id="events" class="row location-events bg-teal">
-    <div class="container-md no-padding">
-      <h1 class="white text-uppercase text-center font-weight-400">Featured Branch Events</h1>
-      <div id="eventsinfo"></div>
-      <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Parker-Event&lib=ALL&nd=90&dm=html&IncludeDateHtml=1"></script> 
-    </div>
-  </div>
-  
-  <!-- art exhibit goes here<div class="row bg-gray-5 padding-top-40 padding-bottom-30">
-    <div class="container margin-lg-100">
-      <div class="col-md-4 padding-bottom-15 text-center"><img class="img-responsive center-block" alt="" src="https://placehold.it/400x250"> </div>
-      <div class="col-md-8 text-center text-left-md">
-        <div>
-          <h1 class="no-margin-bottom text-uppercase font-weight-400">Title</h1>
-          <h4>DEC 10–FEB 8</h4>
-          <div>Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
-        </div>
+  <div class="row">
+    <div class="item-wrapper">
+      <div class="item">
+        <div class="playscapes"> </div>
       </div>
-    </div>
-  </div>-->
-  
-  <div id="art" class="row padding-top-30 padding-bottom-40">
-    <div class="container text-center">
-      <h4 class="roboto margin-lg-200">Douglas County Libraries supports the arts by featuring stunning public art and donating display space at select branches for local artists.</h4>
-      <button data-target="#artModal" data-toggle="modal" class="btn btn-primary text-uppercase margin-top-10" type="button">Exhibit Your Work</button>
-      <!-- Modal -->
-      <div aria-labelledby="artModalLabel" role="dialog" tabindex="-1" id="artModal" class="modal fade">
-        <div role="document" class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
-              <h4 id="artModalLabel" class="modal-title">Interested in Exhibiting Your Work?</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="JotFormIFrame" allowtransparency="true" src="https://form.jotform.us/62295606038155" frameborder="0" style="width:100%;height:650px;border:none;" scrolling="no"></iframe>
+      <div class="item">
+        <div class="testimonials">
+          <div class="text-center">
+            <h1 class="text-center text-uppercase">Playscape info goes here</h1>
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.30, "autoPlay": 6000 }'>
+              <div class="carousel-cell">
+                <div class="">
+                  <blockquote>"What beautiful and spacious meeting rooms with lots of built-in tech capabilities! Perfect for hosting our organization's guest speaker event. Not to mention the incredibly friendly and helpful staff. Thank you!" <small> <a href="https://www.facebook.com/jessica.fredrickson.779/posts/10155318788053890:0" target="_blank">Jessica F. on Facebook</a></small></blockquote>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div>
+                  <div class="">
+                    <blockquote>"It can be hard to find meeting space in our district, but fortunately our local libraries have beautiful meeting spaces you can book for free! The furniture is all flexible and there are so many great options! Yay Douglas County Libraries!" <small> <a href="https://www.instagram.com/p/BasXfVshyMx/" target="_blank">athomeintheclassroom on Instagram</a></small></blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div>
+                  <div class="">
+                    <blockquote>"We have rented meeting space here before and it was a very simple and easy process and the spaces are amazing and perfect. There are a variety of spaces to choose from and each one is accommodating for our meeting needs from 10-100 people." <small> <a href="https://goo.gl/maps/7uFNSEXKHxS2" target="_blank">Brandi W. on Google</a></small></blockquote>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  <!--[if gte IE 9]><!--> 
+  <script>
+/* http://cssmojo.com/ken-burns-effect/ */
+function kbSlideshow() { // set .fx1 class on 1st img on page load
+	window.setInterval(kenBurns, 6000); // calls kenBurns() function every 4 secs
+	var images = document.getElementById('slideshow').getElementsByTagName('div'),
+        numberOfImages = images.length, i = 1; // track loop - 1 (not 0) as 1st img is styled on page load
+	images[0].className = "fx1"; // style 1st img on page load
+	function kenBurns() {
+		if (i==numberOfImages) { i = 0; }
+        	images[i].className = "fx"; // set .fx class on each img
+		// clean up one before last to avoid bounce effect - can't remove .fx from previous
+        	if (i===0) { images[numberOfImages-2].className = ""; }
+        	if (i===1) { images[numberOfImages-1].className = ""; }
+        	if (i>1) { images[i-2].className = ""; }
+        	i++;
+		}
+	}
+setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
+</script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
+  <script>
+	var cards = $(".carousel-cell");
+for (var i = 0; i < cards.length; i++) {
+  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+  cards.eq(target1).before(cards.eq(target2));
+}
+ </script> 
+  <!--<![endif]--> 
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
   <div class="bg-gray-10 clearfix padding-bottom-20">
@@ -509,22 +707,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<script>
-function OpenInNewTab(url ){
-  var win=window.open(url, '_blank');
-  win.focus();
-}
-$("#eventsinfo .item").click(function(){
-     var url = $(this).find("a").attr("href");
-     OpenInNewTab(url);
-     return false;
-});
-	</script> 
-<!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
