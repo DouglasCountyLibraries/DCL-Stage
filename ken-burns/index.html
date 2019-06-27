@@ -54,6 +54,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
 .item-wrapper {
 	display: flex;
@@ -76,18 +77,38 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .dcl-local-wrapper {
 	padding: 15px;
 }
-.playscapes {
+.dcl-local {
 	background: #fff url("dcl-local-background.jpg") center left/cover;
 	height: 515px;
 }
-.dcl-local {
-	
+.playscapes {
+	background: #fff url("playscape-background.jpg") center left/cover;
+	height: 515px;
 }
+	.testimonials {
+		padding: 30px;
+	}
 .faded-background {
 	padding: 5px 8px;
 	background: rgba(0,0,0,.3);
 }
-.storytime {
+.carousel-cell {
+	width: 100%;
+	padding: 0 0 50px 0;
+}
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+.flickity-page-dots {
+	bottom: 20px;
+	opacity: .5;
+}
+.flickity-prev-next-button {
+	display: none;
+}
+.flickity-viewport {
+	transition: height 0.6s;
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 #slideshow {
@@ -542,10 +563,10 @@ transform:translate3d(-500%, 0, 0)
     <div class="item-wrapper bg-gray-5">
       <div class="item">
         <div class="dcl-local-wrapper">
-          <div class="dcl-local text-left">
+          <div class="text-left">
             <h1 class="text-center text-uppercase">DCL Local</h1>
             <h4 class="roboto text-center margin-lg-100">Show your library card at participating DCL Local merchants to receive special offers of <a href="#food-drink">Food &amp; Drink</a>, <a href="#shopping-services">Shopping &amp; Services</a> and <a href="#classes-experiences">Classes &amp; Experiences</a>.</h4>
-           <!-- <ul class="margin-lg-200 margin-lg-50">
+            <!-- <ul class="margin-lg-200 margin-lg-50">
               <li>Cheyenne Mountain Zoo</li>
               <li>The Chicken Shack</li>
               <li>Hall of Justice Comics and Collectibles</li>
@@ -556,13 +577,47 @@ transform:translate3d(-500%, 0, 0)
               <li>Purgatory Cellars Winery, Parker</li>
               <li>Welcome Home Brewery</li>
               <li>Wings Over the Rockies Exploration of Flight</li>
-			  </ul>--><div class="text-center">Did you know you can use your library card to reserve free passes to one of our local participating cultural institutions?</div>
-          </div><div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">See All Offers</a></div>
+			  </ul>-->
+            <div class="text-center">Did you know you can use your library card to reserve free passes to one of our local participating cultural institutions?</div>
+          </div>
+          <div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">See All Offers</a></div>
         </div>
       </div>
       <div class="item">
+        <div class="dcl-local"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="item-wrapper">
+      <div class="item">
         <div class="playscapes"> </div>
       </div>
+      <div class="item"><div class="testimonials">
+        <div class="text-center">
+          <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.30, "autoPlay": 6000 }'>
+            <div class="carousel-cell">
+              <div class="">
+                <blockquote>"What beautiful and spacious meeting rooms with lots of built-in tech capabilities! Perfect for hosting our organization's guest speaker event. Not to mention the incredibly friendly and helpful staff. Thank you!" <small> <a href="https://www.facebook.com/jessica.fredrickson.779/posts/10155318788053890:0" target="_blank">Jessica F. on Facebook</a></small></blockquote>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>
+                <div class="">
+                  <blockquote>"It can be hard to find meeting space in our district, but fortunately our local libraries have beautiful meeting spaces you can book for free! The furniture is all flexible and there are so many great options! Yay Douglas County Libraries!" <small> <a href="https://www.instagram.com/p/BasXfVshyMx/" target="_blank">athomeintheclassroom on Instagram</a></small></blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>
+                <div class="">
+                  <blockquote>"We have rented meeting space here before and it was a very simple and easy process and the spaces are amazing and perfect. There are a variety of spaces to choose from and each one is accommodating for our meeting needs from 10-100 people." <small> <a href="https://goo.gl/maps/7uFNSEXKHxS2" target="_blank">Brandi W. on Google</a></small></blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		  </div></div>
     </div>
   </div>
   
@@ -586,6 +641,15 @@ function kbSlideshow() { // set .fx1 class on 1st img on page load
 	}
 setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
 </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
+  <script>
+	var cards = $(".carousel-cell");
+for (var i = 0; i < cards.length; i++) {
+  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+  cards.eq(target1).before(cards.eq(target2));
+}
+ </script> 
   <!--<![endif]--> 
   <!-- InstanceEndEditable --> </div>
 <div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
