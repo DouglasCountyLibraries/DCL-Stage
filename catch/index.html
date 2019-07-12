@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,11 +56,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<!-- pinterest - do not remove -->
-<meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
-<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-<!-- pinterest - do not remove -->
-<style>
+	<script>
+	$(function(){
+    $(".alien-orbit").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*50)+"px",
+                top:(Math.random()*50)+"px",
+            });
+        }
+    });
+	});</script>
+	<style>
 #amazon-message {
 	color: #fff;
 	background-color: #007800;
@@ -106,10 +114,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	position: absolute;
 	left: 48%;
 	top: 800px;
-	-webkit-animation: myOrbit 1.5s linear infinite;
-	-moz-animation: myOrbit 1.5s linear infinite;
-	-o-animation: myOrbit 1.5s linear infinite;
-	animation: myOrbit 1.5s linear infinite;
+	-webkit-animation: myOrbit 20s linear infinite;
+	-moz-animation: myOrbit 20s linear infinite;
+	-o-animation: myOrbit 20s linear infinite;
+	animation: myOrbit 20s linear infinite;
 }
 .summer-reading h1 a {
 	font-family: 'Orbitron', sans-serif;
@@ -207,7 +215,7 @@ transform: rotate(360deg) translateX(800px) rotate(-360deg);
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
 <!-- BC Log In Bar -->
@@ -467,4 +475,5 @@ transform: rotate(360deg) translateX(800px) rotate(-360deg);
 
 <!-- End Structured Data -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
