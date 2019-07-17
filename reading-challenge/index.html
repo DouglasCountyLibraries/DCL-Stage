@@ -61,19 +61,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-	.item-wrapper {
-		display: flex;
-		
-		align-content: center;
-		justify-content: center;
-	}
-	.item.one {
-		min-width: 370px;
-	}
-	.item {
-		
-		padding: 10px;
-	}
+.item-wrapper {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.item.one {
+	min-width: 370px;
+	padding: 0 10px;
+}
+.item {
+	padding: 10px;
+}
 /* carousel height, as percentage of width */
 /* inherit height from parent */
 * {
@@ -81,7 +80,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .carousel-cell {
 	width: 100%;
-	padding: 15px 0 20px;
+	padding: 0 0 20px;
 }
 .carousel-cell:before {
 	display: block;
@@ -114,11 +113,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	vertical-align: bottom;
 }
 
+@media (max-width: 1275px) {
+.item-wrapper {
+	flex-wrap: wrap;
+}
+.item {
+	text-align: center;
+}
+}
+
 @media (min-width: 992px) {
 .shelf {
-	
 	background: url("new-shelf.jpg") bottom center repeat-x;
-
 }
 .shelf-shadow {
 	background: #fff url("shelf-shadow.jpg");
@@ -304,65 +310,60 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top padding-top-15 padding-bottom-30">
-    <div class="container"><img class="pull-left img-responsive" src="reading-challenge-logo.png" alt="2019 Reading Challenge">
-      <h4 class="roboto no-margin-top">Our Reading Challenge is back for a fourth year to help you get more from your reading life.</h4>
-      <div>Our challenge will help you broaden your reading in 2019 to select titles you may not have picked yourself. We hope you find a new favorite. We know you have busy lives, so we’re not asking you to complete 20-plus challenge items. We’ve picked 12 fun categories, which averages out to a book a month.</div>
+    <div class="container">
+      <div class="col-md-5 col-lg-4"> <img class="img-responsive image-center" src="reading-challenge-logo.png" alt="2019 Reading Challenge"> </div>
+      <div class="col-md-7 col-lg-8 text-center text-left-md">
+        <h4 class="roboto">Our Reading Challenge is back for a fourth year to help you get more from your reading life.</h4>
+        <div>Our challenge will help you broaden your reading in 2019 to select titles you may not have picked yourself. We hope you find a new favorite. We know you have busy lives, so we’re not asking you to complete 20-plus challenge items. We’ve picked 12 fun categories, which averages out to a book a month.</div>
+      </div>
     </div>
   </div>
-  <div class="row"><div class="container item-wrapper">
-    <div class="item one">
-      <div class="icon-circle-teal">1</div>
-      <h3 class="text-center">Sign Up!</h3>
-      <div>Get started! Enter your email below to join the 2019 DCL Reading Challenge. We’ll send you a DCL Reading Challenge kit complete with book trackers as well as a link to log your reading. </div>
-      <iframe src="https://signup.e2ma.net/signup/1890141/1812544/" width="100%" height="420" frameborder="0"></iframe>
+  <div class="row">
+    <div class="container item-wrapper">
+      <div class="item one">
+        <div class="icon-circle-teal">1</div>
+        <h3 class="text-center">Sign Up!</h3>
+        <div>Get started! Enter your email below to join the 2019 DCL Reading Challenge. We’ll send you a DCL Reading Challenge kit complete with book trackers as well as a link to log your reading. </div>
+        <iframe src="https://signup.e2ma.net/signup/1890141/1812544/" width="100%" height="420" frameborder="0"></iframe>
+      </div>
+      <div class="item two">
+        <div style="padding-left:3px" class="icon-circle-teal">2</div>
+        <h3 class="text-center">Choose Incredible Books</h3>
+        <div>As readers, we know this is sometimes easier said than done. Sometimes a book sounds like it is going to be great, but it turns out to be a dud. We’re here to help! Ask a DCL staff member for recommendations (either in one of our libraries or through our <a href="https://form.jotform.com/52116765656966" target="_blank">Just for You service).</a> We’ll also update this page with staff selections for each category. Stay tuned! </div>
+      </div>
+      <div class="item three">
+        <div style="padding-left:3px" class="icon-circle-teal">3</div>
+        <h3 class="text-center">Keep Track</h3>
+        <div class="padding-bottom-15">Part of our <a href="dcl-reading-challenge-kit.pdf" target="_blank">Reading Challenge kit</a> includes a printable bookmark and progress tracker; however, you don’t need to use them to complete the challenge. Stick to whatever method of logging you like: a simple journal, GoodReads, Instagram, Excel, or even your Completed Shelf in the DCL catalog. Choose whatever method works for you. </div>
+        To finish the challenge, click on the link to our form where you can enter all the titles for each category. You’ll automatically be entered to win a DCL prize. </div>
+      <div class="item four">
+        <div style="padding-left:3px" class="icon-circle-teal">4</div>
+        <h3 class="text-center">Share!</h3>
+        <div>Let your fellow book lovers know what you’re reading. Share snapshots of what you’re reading for the challenge on social media using the hashtag #DCLReadingChallenge. We’re on Twitter, Instagram and Facebook; tag us @dclcolorado. </div>
+        <h2 class="nothing">Happy Reading!</h2>
+      </div>
     </div>
-  
- 
-    <div class="item two">
-      <div style="padding-left:3px" class="icon-circle-teal">2</div>
-      <h3 class="text-center">Choose Incredible Books</h3>
-      <div>As readers, we know this is sometimes easier said than done. Sometimes a book sounds like it is going to be great, but it turns out to be a dud. We’re here to help! Ask a DCL staff member for recommendations (either in one of our libraries or through our <a href="https://form.jotform.com/52116765656966" target="_blank">Just for You service).</a> We’ll also update this page with staff selections for each category. Stay tuned! </div>
-    </div>
- 
- 
-    <div class="item three">
-      <div style="padding-left:3px" class="icon-circle-teal">3</div>
-      <h3 class="text-center">Keep Track</h3>
-      <div class="padding-bottom-15">Part of our <a href="dcl-reading-challenge-kit.pdf" target="_blank">Reading Challenge kit</a> includes a printable bookmark and progress tracker; however, you don’t need to use them to complete the challenge. Stick to whatever method of logging you like: a simple journal, GoodReads, Instagram, Excel, or even your Completed Shelf in the DCL catalog. Choose whatever method works for you. </div>
-      To finish the challenge, click on the link to our form where you can enter all the titles for each category. You’ll automatically be entered to win a DCL prize. </div>
- 
-  
-    <div class="item four">
-      <div style="padding-left:3px" class="icon-circle-teal">4</div>
-      <h3 class="text-center">Share!</h3>
-      <div>Let your fellow book lovers know what you’re reading. Share snapshots of what you’re reading for the challenge on social media using the hashtag #DCLReadingChallenge. We’re on Twitter, Instagram and Facebook; tag us @dclcolorado. </div>
-      <h2 class="nothing">Happy Reading!</h2>
-	  </div></div>
-	</div>
+  </div>
   <div class="row shelf">
     <div class="container text-center">
-      <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 7000 }'>
+      <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 6000 }'>
         <div class="carousel-cell">
-          <div class="row text-center">
-            <h2><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1443647667">Staff Picks for the "Novel Based on a True Story or Event" Category</a></h2>
+          <div class="text-center">
+            <h3><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1443647667">Staff Picks for the "Novel Based on a True Story or Event" Category</a></h3>
             <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1443647667">See Entire List &raquo;</a></div>
           </div>
-          <div class="row">
-            <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1438872114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780385541695/MC.GIF" alt="I Was Anastasia"></a> <a href="https://dcl.bibliocommons.com/item/show/1387398114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780425284681/MC.GIF" alt="Before We Were Yours"></a> <a href="https://dcl.bibliocommons.com/item/show/1027668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780061992254/MC.GIF" alt="The One and Only Ivan"></a> <a href="https://dcl.bibliocommons.com/item/show/1027655114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525478812/MC.GIF" alt="The Fault in Our Stars"></a> <a href="https://dcl.bibliocommons.com/item/show/21167114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780060264307/MC.GIF" alt="Little House in the Big Woods"></a> </div>
-          </div>
+          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1438872114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780385541695/MC.GIF" alt="I Was Anastasia"></a> <a href="https://dcl.bibliocommons.com/item/show/1387398114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780425284681/MC.GIF" alt="Before We Were Yours"></a> <a href="https://dcl.bibliocommons.com/item/show/1027668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780061992254/MC.GIF" alt="The One and Only Ivan"></a> <a href="https://dcl.bibliocommons.com/item/show/1027655114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525478812/MC.GIF" alt="The Fault in Our Stars"></a> <a href="https://dcl.bibliocommons.com/item/show/21167114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780060264307/MC.GIF" alt="Little House in the Big Woods"></a> </div>
         </div>
         <div class="carousel-cell">
-          <div class="row text-center">
-            <h2><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1443647667">Staff Picks for the "Novel Based on a True Story or Event" Category</a></h2>
+          <div class="text-center">
+            <h3><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1443647667">Staff Picks for the "Novel Based on a True Story or Event" Category</a></h3>
             <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1443647667">See Entire List &raquo;</a></div>
           </div>
-          <div class="row">
-            <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1438872114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780385541695/MC.GIF" alt="I Was Anastasia"></a> <a href="https://dcl.bibliocommons.com/item/show/1387398114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780425284681/MC.GIF" alt="Before We Were Yours"></a> <a href="https://dcl.bibliocommons.com/item/show/1027668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780061992254/MC.GIF" alt="The One and Only Ivan"></a> <a href="https://dcl.bibliocommons.com/item/show/1027655114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525478812/MC.GIF" alt="The Fault in Our Stars"></a> <a href="https://dcl.bibliocommons.com/item/show/21167114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780060264307/MC.GIF" alt="Little House in the Big Woods"></a> </div>
-          </div>
+          <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1438872114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780385541695/MC.GIF" alt="I Was Anastasia"></a> <a href="https://dcl.bibliocommons.com/item/show/1387398114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780425284681/MC.GIF" alt="Before We Were Yours"></a> <a href="https://dcl.bibliocommons.com/item/show/1027668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780061992254/MC.GIF" alt="The One and Only Ivan"></a> <a href="https://dcl.bibliocommons.com/item/show/1027655114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525478812/MC.GIF" alt="The Fault in Our Stars"></a> <a href="https://dcl.bibliocommons.com/item/show/21167114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780060264307/MC.GIF" alt="Little House in the Big Woods"></a> </div>
         </div>
       </div>
     </div>
-	</div>
+  </div>
   <div class="row shelf-shadow padding-bottom-80">
     <div class="container margin-lg-200">
       <div class="padding-top-40">
