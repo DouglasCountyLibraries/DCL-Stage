@@ -56,12 +56,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.container-fluid {
-	background: #eee;
-}
-.item-wrapper {
-	background: #fff;
-}
 .info-text {
 	color: #333;
 	font-size: .8em;
@@ -242,7 +236,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-size: 4.5vw;
 	color: transparent;
 }
-
+#slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
+	z-index: 1;
+}
+#slideshow .fx + span, #slideshow .fx1 + span {
+	color: #fff;
+	-webkit-animation: caption 7s 1s both;
+	animation: caption 7s 1s both;
+}
 -webkit-keyframes caption {
 0% {
 opacity:0;
@@ -272,6 +273,12 @@ opacity:0;
 }
 }
 
+@media(min-width:42em) { /* bigger than 672px */
+#slideshow span {
+	margin: 2em;
+	font-size: 2.5em
+}
+}
 
 @media (max-width: 992px) {
 .item-wrapper {
@@ -459,10 +466,10 @@ opacity:0;
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
+  <div class="row bg-gray-5">
     <div class="container-md no-padding">
       <div class="item-wrapper">
-        <div class="item padding-15 margin-top-5">
+        <div class="item padding-15">
           <h1 class="no-margin text-capitalize">Parker</h1>
           <div> <a class="info-text" data-placement="top" tabindex="0" role="button" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Just look for our network, &quot;wireless.dclibraries&quot;. No login or library card required.">Free Wifi</a> <a class="info-text" href="#">Laptops/Desktops</a> <a class="info-text" href="#">Playscapes</a> <a class="info-text" href="#">Recording Studio</a> <a class="info-text" href="../library-basics/#print-copy">Print/Copy</a> <a class="info-text" href="../used-book-sales/">Used Book Sales</a> </div>
           <div class="text-center">
@@ -478,40 +485,39 @@ opacity:0;
         <div class="item" id="slideshow"> 
           <!-- define each background-image in CSS -->
           <div></div>
-          <!-- #slideshow div:nth-of-type(1) -->
+          <!-- #slideshow div:nth-of-type(1) --> 
           
           <div></div>
-          <!-- #slideshow div:nth-of-type(2) -->
+          <!-- #slideshow div:nth-of-type(2) --> 
           
           <div></div>
-          <!-- #slideshow div:nth-of-type(3) -->
+          <!-- #slideshow div:nth-of-type(3) --> 
           
           <div></div>
-          <!-- #slideshow div:nth-of-type(4) -->
-          
+          <!-- #slideshow div:nth-of-type(4) --> 
+         
           <div></div>
           
-          <!-- #slideshow div:nth-of-type(5) -->
+          <!-- #slideshow div:nth-of-type(5) --> 
           
           <div></div>
-          <!-- #slideshow div:nth-of-type(6) -->
+          <!-- #slideshow div:nth-of-type(6) --> 
           
           <div></div>
-          <!-- #slideshow div:nth-of-type(7) -->
+          <!-- #slideshow div:nth-of-type(7) --> 
           
           <div></div>
           <!-- #slideshow div:nth-of-type(8) --> 
-        </div>
+          </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="container-md no-padding">
-      <div class="item-wrapper">
-        <div class="item">
-          <div class="calendar">
-            <div class="today-heading"> 
-              <script>
+    <div class="item-wrapper">
+      <div class="item">
+        <div class="calendar">
+          <div class="today-heading"> 
+            <script>
     var d=new Date()
     var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
     var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
@@ -519,91 +525,86 @@ opacity:0;
     document.write(monthname[d.getMonth()] + " ")
        document.write(d.getDate() + "")
 		  </script> 
-            </div>
-            <div class="text-center margin-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=2,3,7,15,16,18,20,22,24,25,35,36,37&lib=1005" target="_blank" class="btn btn-lg btn-primary text-uppercase">Parker Events Calendar</a></div>
-            <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank" class="text-shadow white font-weight-400 text-uppercase">View All DCL Events &raquo;</a></div>
           </div>
+          <div class="text-center margin-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=&et=2,3,7,15,16,18,20,22,24,25,35,36,37&lib=1005" target="_blank" class="btn btn-lg btn-primary text-uppercase">Parker Events Calendar</a></div>
+          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank" class="text-shadow white font-weight-400 text-uppercase">View All DCL Events &raquo;</a></div>
         </div>
-        <div class="item">
-          <div class="storytime">
-            <h2 class="no-margin-top text-uppercase">Parker Storytime</h2>
-            <div class="padding-bottom-15" style="border-bottom:1px solid #e5e5e5">
-              <ul class="list-unstyled">
-                <li>
-                  <h5 class="text-uppercase">Monday-Friday</h5>
-                </li>
-                <li>9:30AM-Baby</li>
-                <li>10:15AM-Toddler</li>
-                <li>11:15AM-Preschool</li>
-                <li>
-                  <h5 class="text-uppercase">Saturday</h5>
-                </li>
-                <li>10:15AM-All Ages</li>
-              </ul>
-            </div>
-            <div class="padding-top-15">
-              <ul class="list-unstyled">
-                <li>
-                  <h4 class="roboto">Special Storytime</h4>
-                </li>
-                <li>
-                  <h5 class="text-uppercase">Monday</h5>
-                </li>
-                <li>7PM-Storytime Discover-All Ages</li>
-              </ul>
-            </div>
-            <a class="text-uppercase font-weight-400" href="../storytime/">View Storytime Hours at all Locations &raquo;</a> </div>
-        </div>
+      </div>
+      <div class="item">
+        <div class="storytime">
+          <h2 class="no-margin-top text-uppercase">Parker Storytime</h2>
+          <div class="padding-bottom-15" style="border-bottom:1px solid #e5e5e5">
+            <ul class="list-unstyled">
+              <li>
+                <h5 class="text-uppercase">Monday-Friday</h5>
+              </li>
+              <li>9:30AM-Baby</li>
+              <li>10:15AM-Toddler</li>
+              <li>11:15AM-Preschool</li>
+              <li>
+                <h5 class="text-uppercase">Saturday</h5>
+              </li>
+              <li>10:15AM-All Ages</li>
+            </ul>
+          </div>
+          <div class="padding-top-15">
+            <ul class="list-unstyled">
+              <li>
+                <h4 class="roboto">Special Storytime</h4>
+              </li>
+              <li>
+                <h5 class="text-uppercase">Monday</h5>
+              </li>
+              <li>7PM-Storytime Discover-All Ages</li>
+            </ul>
+          </div>
+          <a class="text-uppercase font-weight-400" href="../storytime/">View Storytime Hours at all Locations &raquo;</a> </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="container-md no-padding">
-      <div class="item-wrapper">
-        <div class="item">
-          <div class="dcl-local-wrapper">
-            <div class="text-left margin-lg-100">
-              <h1 class="text-center text-uppercase">DCL Local</h1>
-              <h4 class="roboto text-center">Show your library card at participating DCL Local merchants to receive special offers of <a href="#food-drink">Food &amp; Drink</a>, <a href="#shopping-services">Shopping &amp; Services</a> and <a href="#classes-experiences">Classes &amp; Experiences</a>.</h4>
-              <div class="text-center">Did you know you can use your library card to reserve free passes to one of our local participating cultural institutions?</div>
-            </div>
-            <div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">See All Offers</a></div>
+    <div class="item-wrapper bg-gray-5">
+      <div class="item">
+        <div class="dcl-local-wrapper">
+          <div class="text-left margin-lg-100">
+            <h1 class="text-center text-uppercase">DCL Local</h1>
+            <h4 class="roboto text-center">Show your library card at participating DCL Local merchants to receive special offers of <a href="#food-drink">Food &amp; Drink</a>, <a href="#shopping-services">Shopping &amp; Services</a> and <a href="#classes-experiences">Classes &amp; Experiences</a>.</h4>
+            <div class="text-center">Did you know you can use your library card to reserve free passes to one of our local participating cultural institutions?</div>
           </div>
+          <div class="text-center margin-15"><a href="#" class="btn btn-lg btn-primary text-uppercase">See All Offers</a></div>
         </div>
-        <div class="item">
-          <div class="dcl-local"> </div>
-        </div>
+      </div>
+      <div class="item">
+        <div class="dcl-local"> </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="container-md no-padding">
-      <div class="item-wrapper">
-        <div class="item">
-          <div class="playscapes"> </div>
-        </div>
-        <div class="item">
-          <div class="testimonials">
-            <div class="text-center">
-              <h1 class="text-center text-uppercase">Playscape info goes here</h1>
-              <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.30, "autoPlay": 6000 }'>
-                <div class="carousel-cell">
+    <div class="item-wrapper">
+      <div class="item">
+        <div class="playscapes"> </div>
+      </div>
+      <div class="item">
+        <div class="testimonials">
+          <div class="text-center">
+            <h1 class="text-center text-uppercase">Playscape info goes here</h1>
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.04, "friction": 0.30, "autoPlay": 6000 }'>
+              <div class="carousel-cell">
+                <div class="">
+                  <blockquote>"What beautiful and spacious meeting rooms with lots of built-in tech capabilities! Perfect for hosting our organization's guest speaker event. Not to mention the incredibly friendly and helpful staff. Thank you!" <small> <a href="https://www.facebook.com/jessica.fredrickson.779/posts/10155318788053890:0" target="_blank">Jessica F. on Facebook</a></small></blockquote>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div>
                   <div class="">
-                    <blockquote>"What beautiful and spacious meeting rooms with lots of built-in tech capabilities! Perfect for hosting our organization's guest speaker event. Not to mention the incredibly friendly and helpful staff. Thank you!" <small> <a href="https://www.facebook.com/jessica.fredrickson.779/posts/10155318788053890:0" target="_blank">Jessica F. on Facebook</a></small></blockquote>
+                    <blockquote>"It can be hard to find meeting space in our district, but fortunately our local libraries have beautiful meeting spaces you can book for free! The furniture is all flexible and there are so many great options! Yay Douglas County Libraries!" <small> <a href="https://www.instagram.com/p/BasXfVshyMx/" target="_blank">athomeintheclassroom on Instagram</a></small></blockquote>
                   </div>
                 </div>
-                <div class="carousel-cell">
-                  <div>
-                    <div class="">
-                      <blockquote>"It can be hard to find meeting space in our district, but fortunately our local libraries have beautiful meeting spaces you can book for free! The furniture is all flexible and there are so many great options! Yay Douglas County Libraries!" <small> <a href="https://www.instagram.com/p/BasXfVshyMx/" target="_blank">athomeintheclassroom on Instagram</a></small></blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div>
-                    <div class="">
-                      <blockquote>"We have rented meeting space here before and it was a very simple and easy process and the spaces are amazing and perfect. There are a variety of spaces to choose from and each one is accommodating for our meeting needs from 10-100 people." <small> <a href="https://goo.gl/maps/7uFNSEXKHxS2" target="_blank">Brandi W. on Google</a></small></blockquote>
-                    </div>
+              </div>
+              <div class="carousel-cell">
+                <div>
+                  <div class="">
+                    <blockquote>"We have rented meeting space here before and it was a very simple and easy process and the spaces are amazing and perfect. There are a variety of spaces to choose from and each one is accommodating for our meeting needs from 10-100 people." <small> <a href="https://goo.gl/maps/7uFNSEXKHxS2" target="_blank">Brandi W. on Google</a></small></blockquote>
                   </div>
                 </div>
               </div>
