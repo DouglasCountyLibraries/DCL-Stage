@@ -1,6 +1,6 @@
 
 //var baseURI = "http:///dev.dclcollections.dcl.lan/";
-var baseURI = "https://dclcollections.douglascountylibraries.org/";
+var baseURI = "https://collectiontest.dclibraries.org/";
 var baseDCLOrgURI = "https://www.dcl.org/whats-new/";
 // <div id="covers-${title}" class ="container shelf-container text-center
 var a = window.location.toString(); 
