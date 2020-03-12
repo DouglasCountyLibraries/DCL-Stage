@@ -1,7 +1,7 @@
 
 //var baseURI = "http:///dev.dclcollections.dcl.lan/";
-var baseURI = "https://collectiontest.dclibraries.org/";
-var baseDCLOrgURI = "http://stage.dcl.org/whats-new/";
+var baseURI = "https://collectiontest.douglascountylibraries.org";
+var baseDCLOrgURI = "http://stage.dcl.org/whats-new-two/";
 // <div id="covers-${title}" class ="container shelf-container text-center
 var a = window.location.toString(); 
 var allKeyName;
@@ -24,7 +24,7 @@ function createAllPageTitle(title)
 {
   var x = [
      '<div class="text-center">',
-      '<h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">What&#39;s New</h1>',
+      '<h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">What's New</h1>',
       '<div class="separator-container padding-bottom-15">',
        ' <div class="separator line-separator"><i class="fas fa-star"></i></div>',
      ' </div>',
@@ -41,8 +41,8 @@ function createPreShelf(title, keyName, seq)
     '<div class="row shelf">',
  
   ' <div id="covers-' + seq + '" class ="container shelf-container text-center"> ',
-    ' <h1 class="no-margin"><a href="all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h1> ',
-		' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div></div> '
+    ' <h1 class="no-margin"><a href="../whats-new - Copy/all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h1> ',
+		' <div><a class="text-uppercase" href="../whats-new - Copy/all.html?key=' + keyName + '&title=' + title + '">See Entire List »</a></div></div> '
 	].join('\n');
     return x;
 }
@@ -247,10 +247,10 @@ function createBookList(val,KeyName) {
     else if (val.ImageSource == 'URL')
     {
 
-        x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + val.ImageURL + '" alt=' + val.Title + '"></a>';
+        x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="../whats-new - Copy/' + val.ImageURL + '" alt=' + val.Title + '"></a>';
     }
 	else{
-		 x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="' + baseURI + '/api/images/' + val.Isbn + '" alt="' + val.Title + '"></a>';
+		 x = ' <a href="https://dcl.bibliocommons.com/item/show/' + bib + '"><img class ="cover-image" src="../whats-new - Copy/' + baseURI + '/api/images/' + val.Isbn + '" alt="' + val.Title + '"></a>';
 	}
        
   
