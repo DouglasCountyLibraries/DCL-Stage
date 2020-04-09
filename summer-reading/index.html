@@ -15,6 +15,9 @@
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
 <title>Summer Reading | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Summer Reading, Summer Events, The Great Summer Reading Road Trip">
+<meta name="description" content="The Great Summer Reading Road Trip. Pack your bags for a fun-filled, book-filled summer. Summer Reading Program for babies, kids, teens and adults.">
+<meta property="og:image" content="https://www.dcl.org/summer-reading/mobile-billboard.png">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -54,10 +57,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+	
 <style>
 .grand-hotel {
 	font-family: 'Grand Hotel', cursive;
 	font-size: 3.5em;
+	text-shadow: -1px 2px 0 rgba(0,0,0,.5);
 }
 .sky-row {
 	background: #386799 url("landscape.jpg") bottom left repeat-x;
@@ -65,6 +70,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .content-row {
 	background: #375972 linear-gradient(#375972, #578ec7);
 	border-top: 5px solid #d6d6d8;
+}
+.goal-row {
+	background: #578ec7;
+}
+.btn-primary {
+	background-color: #375972;
+}
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+	background-color: #457097;
 }
 .sign-wrapper {
 	display: flex;
@@ -204,6 +218,31 @@ background-position: 2700px 0;
 .mobile-sign-three {
 	margin-bottom: 250px;
 }
+.item-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.goal-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.goal-heading {
+	text-align: center;
+}
+.goal-one {
+	order: 1;
+}
+.goal-two {
+	order: 2;
+}
+.item {
+	margin: 15px 30px;
+	width: 500px;
+}
 
 @media (min-width: 981px) {
 .mobile-sky-row {
@@ -214,6 +253,32 @@ background-position: 2700px 0;
 @media (max-width: 980px) {
 .sky-row {
 	display: none;
+}
+.item {
+	margin: 0;
+	width: 100%;
+}
+}
+
+@media (min-width: 1200px) {
+.goal-row {
+	background: #578ec7 url("goal-bottom.jpg") center bottom repeat-x;
+}
+.goal-heading {
+	margin-top: -15px;
+	margin-bottom: -75px;
+	margin-right: 420px;
+	text-align: left;
+}
+.goal-two {
+	width: 300px;
+	text-align: left;
+}
+.goal-one {
+	order: 2;
+}
+.goal-two {
+	order: 1;
 }
 }
 </style>
@@ -400,10 +465,10 @@ background-position: 2700px 0;
         <div class="vibrate"><a href="registration/"><img src="registration.gif" alt="Register Now!"></a></div>
       </div>
       <div class="sign-two">
-        <div class="vibrate"><a href="#" data-toggle="modal" data-target="#modalone"><img src="activities.gif" alt="Road Trip Activities"></a></div>
+        <div class="vibrate"><a href="activities/"><img src="activities.gif" alt="Road Trip Activities"></a></div>
       </div>
       <div class="sign-three">
-        <div class="vibrate"><a href="#" data-toggle="modal" data-target="#modalone"><img src="scrapbook.gif" alt="Road Trip Scrapbook"></a></div>
+        <div class="vibrate"><a href="scrapbook/"><img src="scrapbook.gif" alt="Road Trip Scrapbook"></a></div>
       </div>
     </div>
   </div>
@@ -411,30 +476,34 @@ background-position: 2700px 0;
     <div class="mobile-sign-wrapper">
       <div class="mobile-billboard"><img class="img-responsive" src="mobile-billboard.png" alt="The Great Summer Reading Road Trip"></div>
       <div class="mobile-sign-one vibrate"> <a href="registration/"><img class="img-responsive" src="registration.gif" alt="Register Now!"></a> </div>
-      <div class="mobile-sign-two vibrate"> <a href="#" data-toggle="modal" data-target="#modalone"><img class="img-responsive" src="activities.gif" alt="Road Trip Activities"></a> </div>
-      <div class="mobile-sign-three vibrate"> <a href="#" data-toggle="modal" data-target="#modalone"><img class="img-responsive" src="scrapbook.gif" alt="Road Trip Scrapbook"></a> </div>
+      <div class="mobile-sign-two vibrate"> <a href="activities/"><img class="img-responsive" src="activities.gif" alt="Road Trip Activities"></a> </div>
+      <div class="mobile-sign-three vibrate"> <a href="scrapbook/"><img class="img-responsive" src="scrapbook.gif" alt="Road Trip Scrapbook"></a> </div>
     </div>
   </div>
   <div class="row far-lane"></div>
   <div class="row near-lane"></div>
   <div class="row content-row">
-    <div class="container white text-center padding-bottom-30">
-      <h1 class="grand-hotel no-margin-bottom white">Come to our Kickoff Party!</h1>
-      <h3 class="roboto white">Saturday, June 1, 10AM-2PM, at all DCL locations.</h3>
-      <h4 class="white no-margin-bottom">Bouncy House, Games, Food Truck, Book Fair and much more!</h4>
-      <div class="margin-top-30 margin-bottom-15"> <a href="http://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=summer+reading+kickoff&lib=ALL&nd=45" target="_blank" class="text-uppercase btn btn-primary">Register Now!</a></div>
-      <div>Kickoff Parties sponsored in part by Smile Doctors.</div>
+    <div class="container white text-center padding-bottom-15">
+      <h1 class="grand-hotel white">Summer Reading Prizes!</h1>
+      <div class="item-wrapper">
+        <div class="item">
+          <h2 class="roboto white no-margin-top">Sign-up Prizes</h2>
+          <div class="white">Visit any DCL location to pick up your Summer Reading sign-up prizes, while supplies last. Summer Reading sign-up gift coupons and vouchers courtesy of Texas Roadhouse and <a class="white text-underline" href="summer-reading-rapids-voucher.pdf" target="_blank">Colorado Rapids</a>.</div>
+          <img class="margin-top-5 margin-bottom-15" src="texas-roadhouse.png" alt="Summer Reading sign-up gifts courtesy of Texas Roadhouse"></div>
+        <div class="item">
+          <h2 class="roboto white no-margin-top">Finishing Prizes</h2>
+          <div>Collect a prize when you complete a challenge, or just for having an awesome summer! Kids can get a fun beach ball and free youth admission to <a class="white text-underline" href="https://goo.gl/maps/s1AF5B4iwjptUcxP9" target="_blank">The Patch in Elizabeth</a>. Teens and adults can get a special-edition reusable book bag. Visit us in person to pick up your prize while supplies last! </div>
+        </div>
+      </div>
     </div>
   </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="modalone">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content padding-15">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="padding-30 text-center">
-          <h4 class="roboto no-margin-top">Pre-register for summer reading to get early access to reading program events.</h4>
-          <div class="margin-top-30"> <a href="registration/" class="text-uppercase btn btn-primary">Register Now!</a></div>
+  <div class="row goal-row">
+    <div class="container white">
+      <h2 class="roboto white goal-heading">Help us meet our community goal of 16,775 people signed up!</h2>
+      <div class="goal-wrapper">
+        <div class="goal-one"><img class="img-responsive center-block" src="gas-station.png" alt="Gas Station"></div>
+        <div class="goal-two">
+          <div id="goal">If we meet our goal, the Douglas County Libraries Foundation will donate $500 to Nature’s Educators, a top-rated nonprofit educational wildlife organization in Douglas County. <div class="margin-top-15 sharethis-inline-share-buttons"></div></div>
         </div>
       </div>
     </div>
@@ -494,7 +563,9 @@ background-position: 2700px 0;
     <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="scripts" -->
+<script src="https://platform-api.sharethis.com/js/sharethis.js#property=5d02c6c54351e90012650885&product=inline-share-buttons"></script>	
+<!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
 <!-- End Structured Data -->
