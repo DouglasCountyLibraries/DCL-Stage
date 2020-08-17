@@ -14,9 +14,9 @@
 
 <!-- End Google Tag Manager -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Parents & Teachers | Douglas County Libraries</title>
+<title>Authors and Events | Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
+<meta name="description" content="Douglas County Libraries offers a variety of programs and events, from author events, to immersive experiences, to fun for the whole family.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -55,26 +55,140 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<!-- Push Notifications Start - Do Not Remove -->
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script> 
+<script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "39124fd4-c082-4c81-b009-95f47620ab0e",
+      autoRegister: true,
+    welcomeNotification: {
+        "title": "Welcome!",
+        "message": "Thanks for subscribing to get DCL event news first.",
+    },
+      notifyButton: {
+        enable: false
+      }
+    }]);
+  </script> 
+<!-- Push Notifications End - Do Not Remove -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.kids-teens-active {
+/* carousel height, as percentage of width */
+/* inherit height from parent */
+* {
+	box-sizing: border-box;
+}
+.carousel-cell {
+	width: 100%;
+	white-space: nowrap;
+}
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+.flickity-prev-next-button {
+	display: none;
+}
+@font-face {
+	font-family: 'Sunshine Script';
+	src: url('../shared-assets/web-fonts/sunshine_script-webfont.woff2') format('woff2'), url('../shared-assets/web-fonts/sunshine_script-webfont.woff') format('woff'), url('../shared-assets/web-fonts/sunshine_script-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.sunshine {
+	font-family: 'Sunshine Script', cursive;
+}
+h1.sunshine.green {
+	font-size: 3.5em;
+	color: #115252;
+}
+h2.sunshine.green {
+	font-size: 2.5em;
+	color: #115252;
+}
+.green {
+	color: #115252;
+}
+.wrapper-row {
+	background: linear-gradient(#bad1d5, #93bcbe);
+}
+.sub-title {
+	color: #E6E6E8;
+}
+.events-active {
 	background-color: #f5f5f5;
 }
-.teachables-box {
+.sub-nav-item a, .sub-nav-item a:hover {
+	padding: 19px 15px 15px 15px;
+}
+.author-wrapper, .event-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.event-item {
+	margin: 15px;
+}
+.author-item {
 	background: #fff;
-	padding: 40px 30px 0;
-	margin: 115px 0 0;
+	padding: 30px 35px 40px 35px;
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	margin: 5px;
 }
-.teachables-background {
-	background: url("teachables.jpg") repeat-x center center;
+.author-item h2 {
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
 }
-.teacher-box {
-	background-color: #fff;
-	padding: 15px 30px 40px;
+.author-item h4 {
+	margin: 0;
+	padding-bottom: 15px;
+}
+.dropdown-menu.dropdown-event-menu a {
+	color: #b0852e;
+	padding: 0;
+	line-height: 1.6em;
+}
+.dropdown-menu.dropdown-event-menu a:hover {
+	text-decoration: underline;
+}
+.dropdown-menu.dropdown-event-menu {
+	min-width: 100%;
+	padding: 15px;
+}
+.bg-white.padding-top-20.padding-right-40.padding-bottom-40.padding-left-40.shadow-low.equal-height {
+	max-width: 610px;
+	margin: 0 auto;
 }
 
-@media (max-width: 460px) {
-.margin-fix {
-	margin-bottom: 10px;
+@media (max-width: 480px) {
+.author-item h2 {
+	text-align: center;
+}
+.author-item h4 {
+	text-align: center;
+}
+}
+
+@media (min-width: 600px) {
+.author-item {
+	max-width: 600px;
+}
+}
+
+@media (min-width: 992px) {
+.event-item {
+	max-width: 400px;
+}
+}
+
+@media (min-width: 992px) {
+.top-padding {
+	padding-top: 30px;
 }
 }
 </style>
@@ -255,157 +369,198 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     <div id="global-alert" class="container-md" style="display:none;"></div>
   </div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top padding-bottom-20">
+  <div class="row border-top">
     <div class="container">
-      <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Parents & Teachers</h1>
+      <div class="text-center padding-bottom-30">
+        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Authors & Events</h1>
         <div class="separator-container">
-          <div class="separator line-separator"><i class="fas fa-users"></i></div>
+          <div class="separator line-separator"><i class="fas fa-bookmark"></i></div>
         </div>
-        <h4 class="roboto">DCL is proud to help you build bright futures for kids! We offer on-site and online services and resources especially for parents and teachers, bring programs directly to schools, and <a href="../birthday-parties/">host your child's birthday party</a> and <a href="../camp-dcl/">Camp DCL!</a> <a href="../newsletters/">Sign up for our eNewsletter</a>. </h4>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-bottom-40">
-    <div id="parents" class="container">
-      <h1 class="text-center padding-bottom-15 text-uppercase font-weight-400">Parents</h1>
-      <div class="row">
-        <div class="container margin-lg-200">
-          <div class="col-md-3"><img class="img-responsive center-block" src="1000-books.png" alt="1000 Books Before Kindergarten"></div>
-          <div class="col-md-9 text-center text-left-md">
-            <div id="1000-books">
-              <h2 class="roboto"><a href="../1000-books/">1000 Books Before Kindergarten</a></h2>
-              <div class="large-text">This national initiative encourages regular reading to babies and toddlers to increase their potential for school success.</div>
+  <!-- four panel nav if needed
+  <div class="row no-gutter sub-nav-row">
+    <div class="sub-nav">
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank"><i class="fas fa-calendar"></i>Events Calendar</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#featured-events"><i class="fas fa-star"></i>Featured Events</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
+        <div class="dropdown"><a class="show" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <h5 class="white font-weight-400 text-center-md no-margin text-uppercase"><i class="fab fa-pagelines"></i>Events at my Branch <span class="caret"></span></h5>
+          </a>
+          <div class="dropdown-menu dropdown-event-menu">
+            <ul class="list-unstyled text-capitalize text-center-md">
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1000&nd=365" target="_blank">Castle Pines</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1001&nd=365" target="_blank">Castle Rock</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1004&nd=365" target="_blank">Highlands Ranch</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1002&nd=365" target="_blank">Lone Tree</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1003&nd=365" target="_blank">Louviers</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1005&nd=365" target="_blank">Parker</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1006&nd=365" target="_blank">Roxborough</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="../past-authors/"><i class="fas fa-history"></i>Past Authors</a></h5>
+      </div>
+    </div>
+  </div>-->
+  
+  <div class="row no-gutter sub-nav-row">
+    <div class="sub-nav">
+      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border-first equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank"><i class="fas fa-calendar"></i>Events Calendar</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#featured-events"><i class="fas fa-star"></i>Featured Events</a></h5>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border equal-height">
+        <div class="dropdown"><a class="show" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <h5 class="white font-weight-400 text-center-md no-margin text-uppercase"><i class="fab fa-pagelines"></i>Events at my Branch <span class="caret"></span></h5>
+          </a>
+          <div class="dropdown-menu dropdown-event-menu">
+            <ul class="list-unstyled text-capitalize text-center-md">
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1000&nd=365" target="_blank">Castle Pines</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1001&nd=365" target="_blank">Castle Rock</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1004&nd=365" target="_blank">Highlands Ranch</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1002&nd=365" target="_blank">Lone Tree</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1003&nd=365" target="_blank">Louviers</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1005&nd=365" target="_blank">Parker</a></li>
+              <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&lib=1006&nd=365" target="_blank">Roxborough</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="#other-author-events"><i class="fas fa-glass-martini-alt"></i>Author Events</a></h5>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-15 sub-nav-item sub-nav-border equal-height">
+        <h5 class="no-margin text-uppercase"><a class="show" href="../past-authors/"><i class="fas fa-history"></i>Past Authors</a></h5>
+      </div>
+    </div>
+  </div>
+  <div id="featured-events" class="row">
+    <div class="container">
+      <div class="text-center padding-top-15 padding-bottom-30">
+        <h1 class="jumbo-text text-uppercase font-weight-400">Featured Events</h1>
+        <h4 class="roboto margin-lg-200 text-center">Don't miss these special library events! Check out our <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37&lib=ALL" target="_blank">Events Calendar</a> for more fun happenings at all DCL locations.</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row wrapper-row green padding-top-30 padding-bottom-20">
+    <h1 class="sunshine green text-center no-margin-top">A Storybook Holiday</h1>
+    <div class="container no-gutter no-padding text-center">
+      <div class="col-md-4 col-md-push-4 text-center"><img class="img-responsive image-center" src="../storybook-holiday/nutcraker-logo.png" alt="Storybook Holiday, The Nutcracker">
+        <div class="carousel" data-flickity='{ "wrapAround": true, "adaptiveHeight": true, "pageDots": false, "selectedAttraction": 0.15, "friction": 0.35, "autoPlay": 3000 }'>
+          <div class="carousel-cell">
+            <div>
+              <h3 class="green font-weight-400 text-uppercase">Visit with Santa</h3>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div>
+              <h3 class="green font-weight-400 text-uppercase">Live Ballet Performances</h3>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div>
+              <h3 class="green font-weight-400 text-uppercase">Music & Entertainment</h3>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div>
+              <h3 class="green font-weight-400 text-uppercase">Make-and-Take Gifts</h3>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div>
+              <h3 class="green font-weight-400 text-uppercase">Tasty Light Bites</h3>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div>
+              <h3 class="green font-weight-400 text-uppercase">Hot Cocoa Concoctions</h3>
             </div>
           </div>
         </div>
+        <div class="green text-center padding-right-15 padding-left-15 padding-bottom-15">Celebrate the holiday season with DCL!</div>
       </div>
-      <div class="col-md-6">
-        <div id="battle-of-the-books">
-          <h2 class="roboto"><a href="http://blogs.douglascountylibraries.org/battleofthebooks/" target="_blank">Battle of the Books</a></h2>
-          <div>This bowl-style trivia tournament all about books engages hundreds of young minds every year. Dozens of teams in grades 3-6 compete for the chance to become <a href="http://blogs.douglascountylibraries.org/battleofthebooks/" target="_blank">Battle of the Books</a> champions.</div>
+      <div class="top-padding col-md-4 col-md-pull-4 text-center padding-bottom-15">
+        <h2 class="sunshine green no-margin">Evening Edition</h2>
+        <div>Saturday, December 7, 5-9PM </div>
+        <div>Adults: $25</div>
+        <div>Kids, Ages 3-12: $20</div>
+        <a href="https://www.eventbrite.com/e/a-storybook-holiday-the-nutcracker-evening-edition-tickets-69906561407?aff=FeaturedEvents" target="_blank" class="icon margin-15 text-uppercase btn btn-primary btn-lg">Buy Tickets</a> </div>
+      <div class="top-padding col-md-4 text-center padding-bottom-15">
+        <h2 class="sunshine green no-margin">Brunch Edition</h2>
+        <div>Sunday, December 8, 9-11AM</div>
+        <div>Adults: $22</div>
+        <div>Kids, Ages 3-12: $18</div>
+        <a href="https://www.eventbrite.com/e/a-storybook-holiday-the-nutcracker-brunch-edition-tickets-69926647485?aff=FeaturedEvents" target="_blank" class="icon margin-15 text-uppercase btn btn-primary btn-lg">Buy Tickets</a> </div>
+    </div>
+  </div>
+  <div class="row padding-bottom-15 padding-top-30">
+    <div class="container-md">
+      <div class="event-wrapper">
+        <div class="event-item"> <img class="img-responsive center-block" src="fly-dcl.jpg" alt="Fly DCL">
+          <div class="text-center padding-top-15">Learn about and experience the diverse cultures of four countries aboard DCL! <span class="text-uppercase">All Ages.</span><br>
+            Castle Rock, Saturday, October 19, 10AM.
+            <div class="text-center"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=142616" target="_blank" class="btn btn-primary text-uppercase margin-15">Register Now</a></div>
+          </div>
         </div>
-        <div id="bark-for-books">
-          <h2 class="roboto">Bark for Books</h2>
-          <div>Bark for Books helps budding and struggling readers build confidence and self-esteem by reading out loud to trained therapy dogs without the stress of being judged.</div>
-          <div class="dropdown"> <a href="#" class="btn btn-primary text-uppercase margin-top-15 dropdown-toggle" data-toggle="dropdown">View Calendar <span class="caret"></span></a>
-            <div class="dropdown-menu">
-              <div class="padding-15" style="border-bottom:1px solid #ccc;">Choose a Location:</div>
-              <div class="padding-30 text-capitalize">
-                <ul class="list-unstyled">
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=bark%20for%20books&df=list&cn=0&lib=1000&nd=365" target="_blank">Castle Pines</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=bark%20for%20books&df=list&cn=0&lib=1001&nd=365" target="_blank">Castle Rock</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=bark%20for%20books&df=list&cn=0&lib=1004&nd=365" target="_blank">Highlands Ranch</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=bark%20for%20books&df=list&cn=0&lib=1002&nd=365" target="_blank">Lone Tree</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=bark%20for%20books&df=list&cn=0&lib=1005&nd=365" target="_blank">Parker</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=bark%20for%20books&df=list&cn=0&lib=1006&nd=365" target="_blank">Roxborough</a></li>
-                </ul>
-              </div>
-            </div>
+        <div class="event-item"> <img class="img-responsive center-block" src="fall-fest.jpg" alt="TLC Presents: Fall Fest">
+          <div class="text-center padding-top-15">Celebrate fall with games, crafts, tasty treats, and more! Costumes are encouraged. <span class="text-uppercase">All Ages.</span><br>
+            Parker & Lone Tree, various dates, 6PM.
+            <div class="text-center"><a href="http://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=fall+fest&lib=1002,1005&nd=60" target="_blank" class="btn btn-primary text-uppercase margin-15">Register Now</a></div>
+          </div>
+        </div>
+        <div class="event-item"> <img class="img-responsive center-block" src="book-lovers.jpg" alt="Book Lovers">
+          <div class="text-center padding-top-15">Discover great new reads at an evening of book talks, with special guests and door prizes! <span class="text-uppercase">Adults.</span><br>
+            Various dates & locations, 6:30PM.
+            <div class="text-center"><a href="http://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=book+lovers&lib=ALL&nd=60" target="_blank" class="btn btn-primary text-uppercase margin-15">Register Now</a></div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div id="reading-buddies">
-          <h2 class="roboto"><a href="../reading-buddies/">Reading Buddies</a></h2>
-          <div>This unique program matches trained teen Big Buddies with struggling readers, Little Buddies, in grades 1-3. Buddies meet weekly for two months to read and enjoy literacy-based games. Does your child struggle with motivation, confidence and skill when it comes to reading? </div>
-          <div class="margin-top-15"> <a href="../reading-buddies/reading-buddies-form/" target="_blank" class="btn btn-primary text-uppercase margin-right-15 margin-fix">Apply Now</a><span><a class="text-nowrap" href="../reading-buddies/">Is Reading Buddies right for my child?</a></span> </div>
-        </div>
-        <div id="reading-levels">
-          <h2 class="roboto">Reading Levels</h2>
-          <div>Looking for the right books to match your child's reading level and foster growth? <a href="http://www.arbookfind.com/" target="_blank">AR BookFinder</a> and <a href="http://www.scholastic.com/bookwizard/" target="_blank">Scholastic's Book Wizard</a> can help. </div>
-        </div>
-      </div>
     </div>
   </div>
-  <div class="row bg-teal padding-top-20 padding-bottom-30">
+  <div class="row bg-teal">
+    <div class="container text-center padding-30 margin-lg-100">
+      <h4 class="roboto white no-margin-top"><a href="../newsletters/" class="white text-underline">Become a DCL insider</a> and be the first to access ticket sales for our events! You’ll also get the inside scoop on great reads and upcoming events.</h4>
+    </div>
+  </div>
+  <div id="other-author-events" class="row bg-gray-5 padding-bottom-30">
     <div class="container">
-      <h4 class="roboto white margin-lg-100 text-center">Did you know parents/guardians have the option to limit their children’s borrowing if they’re under the age of 15? <a class="white text-underline" href="../fines-fees-borrowing/#parental-controls">Learn more</a> about parental controls. </h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container">
-      <h1 class="text-center padding-bottom-15 text-uppercase font-weight-400">Teachers</h1>
-    </div>
-  </div>
-  <div id="teachables" class="row teachables-background">
-    <div class="container">
-      <div class="col-md-8 col-md-push-2">
-        <div class="teachables-box"><img class="img-responsive image-center" src="scholastic-teachables-logo.png" alt="Scholastic Teachables">
-          <h4 class="roboto text-center margin-top-5">Thousands of ready-to-go lessons, mini-books, activities and more for elementary grades. </h4>
-          <div class="text-center"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=scholastic-teachables" target="_blank" class="btn btn-primary text-uppercase margin-top-15">Get Started Now</a></div>
-        </div>
+      <div class="text-center padding-top-15">
+        <h1>Author Events</h1>
+        <h4 class="roboto margin-lg-100 text-center">Spend an evening with these diverse authors and hear the stories behind their stories. We regularly host bestsellers, local authors, children's writers, and more.</h4>
       </div>
     </div>
   </div>
-  <div class="row padding-top-80 padding-bottom-30">
-    <div class="container">
-      <div id="page-to-stage" class="col-md-4 padding-bottom-40"><img src="page-stage.png" alt="Page to Stage" class="img-responsive center-block">
-        <h2 class="roboto text-center">Page to Stage</h2>
-        <div>Page to Stage brings literature to life! Every year, we bring a classic tale to schools across the county in the form of a traveling theater production especially for kids in grades K-5.</div>
-      </div>
-      <div id="epic-reads" class="col-md-4 padding-bottom-40"><img src="epic-reads.png" alt="Epic Reads" class="img-responsive center-block">
-        <h2 class="roboto text-center">Epic Reads</h2>
-        <div>Library staff from your closest DCL branch will come to your school to <a href="../read-listen-watch/#epic-reads">recommend just-right books</a> to your students in a fun and interactive way.</div>
-      </div>
-      <div id="book-an-archivist" class="col-md-4 padding-bottom-40"><img src="archivist.png" alt="Book an Archivist" class="img-responsive center-block">
-        <h2 class="roboto text-center">Book an Archivist</h2>
-        <div>Got history? We do! Archivists and local historians from the <a href="http://douglascountyhistory.org" target="_blank">DCL Archives & Local History</a> can visit your school to talk about local history and how they keep track of it. </div>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5 padding-top-40 padding-bottom-15">
-    <div class="container text-center text-left-sm margin-lg-100">
-      <div class="col-sm-6 padding-bottom-30">
-        <div class="teacher-box">
-          <h4 class="text-center">Educator eNewsletter</h4>
-          <div class="margin-top-15">Our Educator eNewsletter comes out in January, May and August, helping you get ready for each new semester and for keeping students engaged over the long summer break.</div>
-          <div class="margin-top-15 text-center"> <a href="https://douglascountylibraries.us2.list-manage.com/subscribe/post?u=ce6cbc555943d4da19c920862&amp;id=50aeae1af7" target="_blank" type="button" class="btn btn-primary">Sign Up Now</a> </div>
-        </div>
-      </div>
-      <div class="col-sm-6 padding-bottom-30">
-        <div class="teacher-box">
-          <h4 class="text-center">DCL School Liaison</h4>
-          <div class="margin-top-15">Did you know you have your very own DCL School Liaison? Get started by leaving a comment on our form along with your contact information. We’d love to visit your classroom!</div>
-          <div class="margin-top-15 text-center"><!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-four">Contact Us</button>
+  <div class="row bg-gray-5 padding-bottom-60">
+    <div class="container-md">
+      <div class="author-wrapper">
+        <div class="author-item">
+          <h2>Local Author Showcase</h2>
+          <h4>Parker, Saturday, November 16, 2PM</h4>
+          <div class="book-item"><a href="https://dcl.bibliocommons.com/item/show/1607548114"><img class="pull-left margin-right-15 shadow-low shadow-low-hover" src="https://secure.syndetics.com/index.aspx?isbn=9781733643122/MC.GIF" alt="Hidden in the Hills"></a></div>
+          <div class="book-item">A panel of local authors will join us to talk about their work and books, ranging from juvenile, YA and adult fiction to memoirs and cookbooks. A book sale and signing will follow the authors’ presentations. <span class="text-uppercase">Adults.</span>
+            <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=140517" target="_blank" class="btn btn-primary text-uppercase">Register Now</a></div>
           </div>
-          <!-- Modal -->
-          <div id="modal-four" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-four">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3 class="text-center modal-title">Contact a DCL School Liaison</h3>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://form.jotform.com/61675777905168" frameborder="0" style="width:100%;height:550px;border:none;" scrolling="yes"></iframe>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="author-item">
+          <h2>High Altitude Baking: Tips & Tricks</h2>
+          <h4>Roxborough, Sunday, November 17, 2PM</h4>
+          <div class="book-item"><a href="https://dcl.bibliocommons.com/item/show/1530737114"><img class="pull-left margin-right-15 shadow-low shadow-low-hover" src="https://secure.syndetics.com/index.aspx?isbn=9781513261256/MC.GIF" alt="Sugar High"></a></div>
+          <div class="book-item">Food blogger and author Nicole Hampton joins us to share helpful tips and tricks from her cookbook, <i><a href="https://dcl.bibliocommons.com/item/show/1530737114">Sugar High: Sweet & Savory Baking in Your High-Altitude Kitchen</a></i>. A book sale will follow the author’s talk. <span class="text-uppercase">Adults.</span>
+            <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=152222" target="_blank" class="btn btn-primary text-uppercase">Register Now</a></div>
           </div>
         </div>
       </div>
-      <div class="clearfix"></div>
-      <div class="col-sm-6 padding-bottom-30">
-        <div class="teacher-box">
-          <h4 class="text-center">Resources by Request</h4>
-          <div class="margin-top-15">Resources by Request is like having a personal shopper at the library. We'll compile a set of materials on any topic, author or genre for use in your classroom&mdash;all you have to do is come pick them up.</div>
-          <div class="text-center"> <a href="resources-by-request/" class="btn btn-primary text-uppercase margin-top-15">Get Started</a> </div>
-        </div>
-      </div>
-      <div class="col-sm-6 padding-bottom-30">
-        <div class="teacher-box">
-          <h4 class="text-center">Library Tours</h4>
-          <div class="margin-top-15">Library Tours are available to your class. Tours typically last 30 minutes, but may vary depending on the branch and services requested. Set a date to come see how things work!</div>
-          <div class="text-center"> <a href="library-tours/" class="btn btn-primary text-uppercase margin-top-15">Get Started</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-teal padding-top-20 padding-bottom-30">
-    <div class="container">
-      <h4 class="roboto white margin-lg-50 text-center">Did you know we offer other services of interest for educators? Stream instructional films and lessons from <a class="white text-underline" href="../digital-media/#kanopy">Kanopy</a>,  find teacher resources from <a class="white text-underline"  href="../research/all-databases/#educator-resources">Educator’s Explora</a>, and discover more great resources in our <a class="white text-underline"  href="../research/">research databases</a>!</h4>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -464,13 +619,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script type="text/javascript">
-$(document).ready(function() {
-  if(window.location.href.indexOf('#reading-buddies-get-started') != -1) {
-    $('#reading-buddies-get-started').modal('show')
-  };
-});
-</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
 <!-- InstanceEndEditable --> 
 <!-- Structured Data --> 
 
