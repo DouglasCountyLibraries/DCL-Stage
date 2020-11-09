@@ -3,20 +3,10 @@
  * comments/questions? djarrett at dclibraries dot org
    ==================================================== */
 
-// josh's script to pull in the alert
 // smooth page scroll for page anchors
 // jQuery match-height plugin
 // flip
-// sticky		
-
-// pull the alert into the global-alert div
-/* ------------------------------------------------------------ */
-
-jQuery.get("https://s3.amazonaws.com/website.alert/alert.txt")
-  .done(function( data ) {
-    /*alert( "Data Loaded: " + data );*/
-	if ( data !=null ){	jQuery("#global-alert").show().append( data );}
-  });
+// sticky
   
 // smooth page scroll for page anchors
 /* ------------------------------------------------------------ */
