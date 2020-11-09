@@ -69,14 +69,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .digital-media-active {
 	background-color: #f5f5f5;
 }
-.sub-nav .show .material-icons {
-	font-size: 19px;
-	vertical-align: top;
-	margin-right: 10px;
-}
-.large-text {
-	color: #666;
-}
+    .item-wrapper {
+        display: flex;
+    }
+    .item {
+        padding: 0 15px;
+
+    }
+    .item.grow {
+        flex-grow: 2;
+    }
 .gray-row, .white-row {
 	border-top: 1px solid #ddd;
 	padding: 0 0 25px;
@@ -86,9 +88,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .gray-row.last, .white-row.last {
 	border-bottom: 1px solid #ddd;
-}
-.fa-check {
-	color: #bbb;
 }
 .gray-circle {
 	border: 10px solid #f5f5f5;
@@ -102,35 +101,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .white-bottom-bkg {
 	background: #fff url(white-bottom.gif) center center repeat-x;
 }
-.gray-row h4.want, .white-row h4.want {
-	padding-top: 0px;
-}
-.page-heading {
-	text-align: center;
-}
-.page-heading h1 {
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 48px;
-}
-.page-heading h4 {
-	font-family: "Roboto Slab", palantino, serif;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 1.3;
-	letter-spacing: -0.4px;
-	text-rendering: optimizeLegibility;
-}
-.page-heading h5 {
-	font-size: 22px;
-	color: #bbb;
-	margin: 5px 0 15px 0;
-}
-.page-heading h5 a {
-	text-transform: uppercase;
-	font-weight: 400;
-	margin: 0 15px;
-}
+
 .library-card {
 	transform: rotate(-5deg);
 	box-shadow: 1px 5px 8px 1px rgba(0,0,0,.2);
@@ -138,21 +109,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 
 @media (max-width: 415px) {
-.page-heading h1 {
-	font-size: 42px;
-}
-.page-heading h5 {
-	font-size: 18px;
-}
-.page-heading h5 a {
-	margin: 0 10px;
-}
 }
 
 @media (min-width:992px) {
-.gray-row h4, .white-row h4 {
-	padding-top: 12px;
-}
+
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -379,24 +339,22 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">E-Books</h1>
   </div>
   <div class="row gray-row">
-    <div class="container">
-      <div class="">
-        <h3><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h3>
+    <div class="container item-wrapper">
+      <div class="item grow">
+        <h4><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h4>
         <div>Access a collection of e-books to enjoy on your desktop, laptop, tablet or mobile device. </div>
-        <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
+        <h4><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h4>
         <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
       </div>
-      <div class="">
+      <div class="item">
         <h4>Useful apps include:</h4>
         <ul>
           <li><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a></li>
           <li><a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive</a></li>
           <li><a href="https://www.adobe.com/solutions/ebook/digital-editions.html" target="_blank">Adobe Digital Editions</a> or <a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive desktop app</a> (for Adobe EPUB formats and transferring to readers)</li>
         </ul>
-      </div>
-      <div class="">
-        <h4>OverDrive Support:</h4>
-        <ul>
+        <h4 class="no-margin-top">OverDrive Support:</h4>
+        <ul class="no-margin-bottom">
           <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
           <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
         </ul>
@@ -404,30 +362,31 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row">
-    <div class="container">
-      <div class="">
-        <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
+    <div class="container item-wrapper">
+      <div class="item grow">
+        <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
         <div>Instantly stream (or download via mobile app for <a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>) e-books, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
       </div>
-      <div class="">
+      <div class="item">
         <h4>Hoopla Support:</h4>
         <ul>
           <li><a href="https://www.hoopladigital.com/help" target="_blank">Help</a></li>
-            <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Technical Support</a></li>
+          <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="container">
-      <div class="col-md-6">
+    <div class="container item-wrapper">
+      <div class="item grow">
         <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
-        <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
+        <div>Safely search for e-books, animated picture books, and read-along chapter books for the younger set. Get the mobile app for <a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a>.</div>
       </div>
-      <div class="col-md-6">
-        <h4>You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
+      <div class="item">
+        <h4>TumbleBooks Support:</h4>
+        <ul>
+          <li><a href="https://asp.tumblebooks.com/Help.aspx" target="_blank">Help</a></li>
+          <li><a href="mailto:info@tumblebooks.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
         </ul>
       </div>
     </div>
@@ -623,7 +582,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row bg-teal text-center padding-top-30 padding-bottom-30">
     <div class="container">
-      <h4 class="roboto white no-margin-top">Having trouble? Fill out our <a class="white text-underline" href="digital-media-help-form/">Help Form</a> and get answers.<!--hide for now--><!--, or get one-on-one <a href="../adult-education/tech-tutoring-form/">Tech Tutoring</a> by appointment.--></h4>
+      <h4 class="white no-margin-top">Many Digital Media items are also listed <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/search?query=all&searchType=catalogue&locked=true&f_CIRC=ONLINE">in the catalog</a>.<!--hide for now--><!--, or get one-on-one <a href="../adult-education/tech-tutoring-form/">Tech Tutoring</a> by appointment.--></h4>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
