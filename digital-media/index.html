@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,7 +76,23 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .item.right {
 	flex-shrink: 0;
-	width: 400px;
+	width: 240px;
+}
+.fa-ul > li {
+	position: inherit;
+	padding: 3px 0;
+}
+.fa-ul {
+	margin-left: 0;
+}
+.fa-li {
+	left: 5px;
+	position: relative;
+	text-align: left;
+	top: 0;
+	width: 30px;
+	color: #888;
+	line-height: .9em;
 }
 .gray-row, .white-row {
 	border-top: 1px solid #ddd;
@@ -337,7 +352,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">E-Books</h1>
   </div>
   <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h4>
         <div>Access a collection of e-books to enjoy on your desktop, laptop, tablet or mobile device. </div>
@@ -345,14 +360,13 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
       </div>
       <div class="item right">
-        <h4>Useful apps include:</h4>
-        <ul>
-          <li><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a></li>
-          <li><a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive</a></li>
-          <li><a href="https://www.adobe.com/solutions/ebook/digital-editions.html" target="_blank">Adobe Digital Editions</a> or <a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive desktop app</a> (for Adobe EPUB formats and transferring to readers)</li>
+        <h4>Get the app:</h4>
+        <ul class="fa-ul">
+          <li><i class="fa-li fas fa-tablet-alt"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a></li>
+          <li><i class="fa-li fas fa-tablet-alt"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a></li>
         </ul>
         <h4 class="no-margin-top">OverDrive Support:</h4>
-        <ul class="no-margin-bottom">
+        <ul>
           <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
           <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
         </ul>
@@ -360,10 +374,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
-        <div>Instantly stream (or download via mobile app for <a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>) e-books, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
+        <div>Instantly stream or download e-books, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
+                  <div class="margin-top-5">Get the app: <i class="fa-li fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a> <i class="fa-li fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> </div>
       </div>
       <div class="item right">
         <h4>Hoopla Support:</h4>
@@ -375,10 +390,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
-        <div>Safely search for e-books, animated picture books, and read-along chapter books for the younger set. Get the mobile app for <a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a>.</div>
+        <div>Safely search for e-books, animated picture books, and read-along chapter books for the younger set.</div>
+        <div class="margin-top-5">Get the app: <i class="fa-li fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a> <i class="fa-li fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> </div>
       </div>
       <div class="item right">
         <h4>TumbleBooks Support:</h4>
@@ -401,9 +417,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Audiobooks</h1>
   </div>
   <div class="row white-row">
-      
-      
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h4>
         <div>Access a collection of e-books to enjoy on your desktop, laptop, tablet or mobile device. </div>
@@ -411,24 +425,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
       </div>
       <div class="item right">
-        <h4>Useful apps include:</h4>
-        <ul>
-          <li><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a></li>
-          <li><a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive</a></li>
-          <li><a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive desktop app</a> (for MP3 format and to transfer to MP3 players)</li>
-        </ul>
-        <h4 class="no-margin-top">OverDrive Support:</h4>
+        <h4>Get the <a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> or <a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> app</h4>
+        <h4>OverDrive Support:</h4>
         <ul class="no-margin-bottom">
           <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
           <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
         </ul>
       </div>
     </div>
-      
-      
   </div>
   <div class="row white-row">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
         <div>Instantly stream (or download via mobile app for <a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>) audiobooks, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
@@ -443,7 +450,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row white-row last">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
         <div>Safely search for audiobooks for the younger set. Get the mobile app for <a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a>.</div>
@@ -469,13 +476,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Magazines</h1>
   </div>
   <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div id="flipster" class="item">
         <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=flipster" target="_blank">Flipster</a></h4>
         <div>Download digital magazines to read on your desktop, laptop, tablet or mobile device. Get the Flipster mobile app for <a href="https://play.google.com/store/apps/details?id=com.eis.mae.flipster.readerapp" target="_blank">Android</a>or <a href="https://apps.apple.com/us/app/flipster-digital-magazines/id797106282" target="_blank">iOS</a>.</div>
-
-
-      </div>      <div class="item right">
+      </div>
+      <div class="item right">
         <h4>Flipster Support:</h4>
         <ul>
           <li><a href="https://connect.ebsco.com/s/topic/0TO1H000000HHfUWAW/flipster?language=en_US" target="_blank">Help</a></li>
@@ -485,10 +491,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="container item-wrapper margin-lg-100">
+    <div class="container item-wrapper margin-lg-200 margin-md-100">
       <div class="item">
         <h4><a href="https://dcl.overdrive.com/collection/1064685?sortBy=title" target="_blank">OverDrive</a></h4>
-        <div>Access a variety of digital magazines to enjoy on your desktop, laptop, tablet or mobile device using the <a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby </a>app (Android, iOS, Windows) or <a href="https://www.overdrive.com/apps/#download" target="_blank">OverDrive</a> app (Android, iOS, Desktop, Kindle Fire). </div>
+        <div>Access a variety of digital magazines to enjoy on your desktop, laptop, tablet or mobile device using the <a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby </a>app (Android, iOS, Windows) or <a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> app (Android, iOS, Desktop, Kindle Fire). </div>
       </div>
       <div class="item right">
         <h4 class="no-margin-top">OverDrive Support:</h4>
@@ -653,5 +659,4 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
