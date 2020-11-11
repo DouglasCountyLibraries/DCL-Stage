@@ -74,13 +74,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .item {
 	padding: 0 15px;
+	flex: 1;
 }
-.item.right {
-	flex-shrink: 0;
-	width: 240px;
+.item.left {
+	min-width: 530px;
 }
 .icon {
-	color: #888;
+	color: #999;
 	margin: 0 5px 0 10px;
 }
 .gray-row, .white-row {
@@ -341,66 +341,74 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">E-Books</h1>
   </div>
   <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4> <a href="https://dcl.overdrive.com/" target="_blank">Overdrive</a></h4>
-        <div>Access a collection of e-books to enjoy on your desktop, laptop, tablet or mobile device. </div>
-        <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
-      </div>
-      <div class="item right">
-        <h4>OverDrive Support:</h4>
-        <ul>
-          <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
-          <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h4>
-        <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
-        <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
-      </div>
-      <div class="item right">
-        <h4>OverDrive Support:</h4>
-        <ul>
-          <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
-          <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://dcl.overdrive.com/" target="_blank">Overdrive</a></h4>
+          <div>Access a collection of e-books to enjoy on your desktop, laptop, tablet or mobile device. </div>
+          <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
+        </div>
+        <div class="item right">
+          <h4>OverDrive Support:</h4>
+          <ul>
+            <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
+            <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
-        <div>Instantly stream or download e-books, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
-        <div class="margin-top-5">Get the app: <i class="icon ios fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a> <i class="icon android fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> </div>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h4>
+          <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
+          <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
+        </div>
+        <div class="item right">
+          <h4>OverDrive Support:</h4>
+          <ul>
+            <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
+            <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="item right">
-        <h4>Hoopla Support:</h4>
-        <ul>
-          <li><a href="https://www.hoopladigital.com/help" target="_blank">Help</a></li>
-          <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
-        </ul>
+    </div>
+  </div>
+  <div class="row gray-row">
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
+          <div>Instantly stream or download e-books, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
+          <div class="margin-top-5">Get the app: <i class="icon ios fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a> <i class="icon android fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> </div>
+        </div>
+        <div class="item right">
+          <h4>Hoopla Support:</h4>
+          <ul>
+            <li><a href="https://www.hoopladigital.com/help" target="_blank">Help</a></li>
+            <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
-        <div>Safely search for e-books, animated picture books, and read-along chapter books for the younger set.</div>
-        <div class="margin-top-5">Get the app: <i class="icon fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a> <i class="icon fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> </div>
-      </div>
-      <div class="item right">
-        <h4>TumbleBooks Support:</h4>
-        <ul>
-          <li><a href="https://asp.tumblebooks.com/Help.aspx" target="_blank">Help</a></li>
-          <li><a href="mailto:info@tumblebooks.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
+          <div>Safely search for e-books, animated picture books, and read-along chapter books for the younger set.</div>
+          <div class="margin-top-5">Get the app: <i class="icon fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a> <i class="icon fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> </div>
+        </div>
+        <div class="item right">
+          <h4>TumbleBooks Support:</h4>
+          <ul>
+            <li><a href="https://asp.tumblebooks.com/Help.aspx" target="_blank">Help</a></li>
+            <li><a href="mailto:info@tumblebooks.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -416,50 +424,74 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Audiobooks</h1>
   </div>
   <div class="row white-row">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4><a href="http://www.emedia2go.org/" target="_blank">OverDrive</a></h4>
-        <div>Access a collection of e-books to enjoy on your desktop, laptop, tablet or mobile device. </div>
-        <h4><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h4>
-        <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
-      </div>
-      <div class="item right">
-        <h4>Get the <a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> or <a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> app</h4>
-        <h4>OverDrive Support:</h4>
-        <ul class="no-margin-bottom">
-          <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
-          <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://dcl.overdrive.com/" target="_blank">Overdrive</a></h4>
+          <div>Access a collection of audiobooks to enjoy on your desktop, laptop, tablet or mobile device.</div>
+          <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
+        </div>
+        <div class="item right">
+          <h4>OverDrive Support:</h4>
+          <ul>
+            <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
+            <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row white-row">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
-        <div>Instantly stream (or download via mobile app for <a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>) audiobooks, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h4>
+          <div>Safely search audiobooks for readers 12 and younger. Filter by format, subject, device or reading level.</div>
+          <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
+        </div>
+        <div class="item right">
+          <h4>OverDrive Support:</h4>
+          <ul>
+            <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
+            <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="item right">
-        <h4>Hoopla Support:</h4>
-        <ul>
-          <li><a href="https://www.hoopladigital.com/help" target="_blank">Help</a></li>
-          <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
-        </ul>
+    </div>
+  </div>
+  <div class="row white-row">
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
+          <div>Instantly stream or download audiobooks, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
+          <div class="margin-top-5">Get the app: <i class="icon ios fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a> <i class="icon android fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> </div>
+        </div>
+        <div class="item right">
+          <h4>Hoopla Support:</h4>
+          <ul>
+            <li><a href="https://www.hoopladigital.com/help" target="_blank">Help</a></li>
+            <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row white-row last">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
-        <div>Safely search for audiobooks for the younger set. Get the mobile app for <a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a>.</div>
-      </div>
-      <div class="item right">
-        <h4>TumbleBooks Support:</h4>
-        <ul>
-          <li><a href="https://asp.tumblebooks.com/Help.aspx" target="_blank">Help</a></li>
-          <li><a href="mailto:info@tumblebooks.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
+          <div>Safely search for audiobooks for the younger set.</div>
+          <div class="margin-top-5">Get the app: <i class="icon ios fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/tumblebooks/id998074198" target="_blank">iOS</a> <i class="icon android fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a> </div>
+        </div>
+        <div class="item right">
+          <h4>TumbleBooks Support:</h4>
+          <ul>
+            <li><a href="https://asp.tumblebooks.com/Help.aspx" target="_blank">Help</a></li>
+            <li><a href="mailto:info@tumblebooks.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -475,32 +507,38 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Magazines</h1>
   </div>
   <div class="row gray-row">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div id="flipster" class="item">
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=flipster" target="_blank">Flipster</a></h4>
-        <div>Download digital magazines to read on your desktop, laptop, tablet or mobile device. Get the Flipster mobile app for <a href="https://play.google.com/store/apps/details?id=com.eis.mae.flipster.readerapp" target="_blank">Android</a>or <a href="https://apps.apple.com/us/app/flipster-digital-magazines/id797106282" target="_blank">iOS</a>.</div>
-      </div>
-      <div class="item right">
-        <h4>Flipster Support:</h4>
-        <ul>
-          <li><a href="https://connect.ebsco.com/s/topic/0TO1H000000HHfUWAW/flipster?language=en_US" target="_blank">Help</a></li>
-          <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Customer Support</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=flipster" target="_blank">Flipster</a></h4>
+          <div>Download digital magazines to read on your desktop, laptop, tablet or mobile device.</div>
+          <div class="margin-top-5">Get the app: <i class="icon ios fab fa-apple fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.eis.mae.flipster.readerapp" target="_blank">iOS</a> <i class="icon android fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.eis.mae.flipster.readerapp" target="_blank">Android</a> </div>
+        </div>
+        <div class="item right">
+          <h4>Flipster Support:</h4>
+          <ul>
+            <li><a href="https://connect.ebsco.com/s/topic/0TO1H000000HHfUWAW/flipster?language=en_US" target="_blank">Help</a></li>
+            <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Customer Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="container item-wrapper margin-lg-200 margin-md-100">
-      <div class="item">
-        <h4><a href="https://dcl.overdrive.com/collection/1064685?sortBy=title" target="_blank">OverDrive</a></h4>
-        <div>Access a variety of digital magazines to enjoy on your desktop, laptop, tablet or mobile device using the <a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby </a>app (Android, iOS, Windows) or <a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> app (Android, iOS, Desktop, Kindle Fire). </div>
-      </div>
-      <div class="item right">
-        <h4 class="no-margin-top">OverDrive Support:</h4>
-        <ul class="no-margin-bottom">
-          <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
-          <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://dcl.overdrive.com/collection/1064685" target="_blank">Overdrive</a></h4>
+          <div>Access a variety of digital magazines to enjoy on your desktop, laptop, tablet or mobile device.</div>
+          <div class="margin-top-5">Get the app: <i class="icon fas fa-mobile"></i><a href="https://www.overdrive.com/apps/libby/" target="_blank">Libby</a> <i class="icon fas fa-tablet"></i><a href="https://www.overdrive.com/apps/overdrive/#download" target="_blank">OverDrive</a> </div>
+        </div>
+        <div class="item right">
+          <h4>OverDrive Support:</h4>
+          <ul>
+            <li><a href="https://help.overdrive.com/en-us/home.htm" target="_blank">Help</a></li>
+            <li><a href="https://frontline.overdrive.com/?Lib=Douglas+County+Libraries" target="_blank">Tech Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -516,52 +554,55 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Movies, TV & Kids Videos</h1>
   </div>
   <div class="row white-row">
-    <div class="container item-wrapper margin-lg-100">
-      <div class="item">
-        <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
-        <div>Instantly stream (or download via mobile app) audiobooks and e-books, digital movies, TV, and music, including kids' materials. There's no waiting, and items are returned automatically.</div>
-      </div>
-      <div class="item right">
-        <h4>You'll need:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>One-time setup of a Hoopla account using your DCL credentials</li>
-        </ul>
-        <h4 class="want">You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>Hoopla mobile app (<a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a>)</li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h4>
+          <div>Instantly stream or download digital movies and TV, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
+          <div class="margin-top-5">Get the app: <i class="icon ios fab fa-apple fa-lg"></i><a href="https://apps.apple.com/us/app/hoopla-digital/id580643740" target="_blank">iOS</a> <i class="icon android fab fa-android fa-lg"></i><a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&hl=en" target="_blank">Android</a> </div>
+        </div>
+        <div class="item right">
+          <h4>Hoopla Support:</h4>
+          <ul>
+            <li><a href="https://www.hoopladigital.com/help" target="_blank">Help</a></li>
+            <li><a href="mailto:feedback@hoopladigital.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row white-row">
-    <div class="container item-wrapper margin-lg-100">
-      <div id="kanopy" class="col-md-6">
-        <h4> <a href="https://dcl.kanopy.com/" target="_blank">Kanopy</a></h4>
-        <div>Instantly stream up to four films per month&mdash;choose from a library that’s six times larger than Netflix and that includes the Criterion Collection and the Paramount Pictures Collection. There's no waiting, and items are returned automatically. Access to the <a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a> and <a href="https://www.kanopy.com/category/supplier/great-courses" target="_blank">Great Courses</a> collections is unlimited.</div>
-      </div>
-      <div class="col-md-6">
-        <h4>You'll need:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>One-time setup of a Kanopy account using your DCL credentials</li>
-        </ul>
-        <h4 class="want">You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>Kanopy <a href="https://help.kanopystreaming.com/hc/en-us/sections/207299708-Mobile-TV-Apps" target="_blank">mobile and TV apps</a></li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4> <a href="https://dcl.kanopy.com/" target="_blank">Kanopy</a></h4>
+          <div>Instantly stream up to four films per month&mdash;choose from a library that’s six times larger than Netflix and that includes the Criterion Collection and the Paramount Pictures Collection. There's no waiting, and items are returned automatically. Access to the <a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a> and <a href="https://www.kanopy.com/category/supplier/great-courses" target="_blank">Great Courses</a> collections is unlimited. Set up a Kanopy account using your DCL credentials. </div>
+          <div class="margin-top-5">Get the app: <i class="icon ios fas fa-tv"></i><a href="https://help.kanopystreaming.com/hc/en-us/sections/207299708-Mobile-TV-Apps" target="_blank">Kanopy</a></div>
+        </div>
+        <div class="item right">
+          <h4>Kanopy Support:</h4>
+          <ul>
+            <li><a href="https://help.kanopy.com/hc/en-us/categories/200923998-For-Viewers" target="_blank">Help</a></li>
+            <li><a href="https://help.kanopy.com/hc/en-us/requests/new" target="_blank">Support & Feedback</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="row white-row last">
-    <div class="container item-wrapper margin-lg-100">
-      <div class="col-md-6">
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
-        <div>Safely search for e-books and audiobooks, animated picture books, read-along chapter books, and videos for the younger set.</div>
-      </div>
-      <div class="col-md-6">
-        <h4>You might want:</h4>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check"></i>TumbleBooks mobile app (<a href="https://play.google.com/store/apps/details?id=com.perfectedtech.tumblebooks" target="_blank">Android</a>, <a href="https://itunes.apple.com/us/app/tumblebooks/id998074198?mt=8" target="_blank">iOS</a>)</li>
-        </ul>
+    <div class="container margin-lg-200 margin-md-100">
+      <div class="item-wrapper">
+        <div class="item left">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h4>
+          <div>Find and watch videos for the younger set.</div>
+        </div>
+        <div class="item right">
+          <h4>TumbleBooks Support:</h4>
+          <ul>
+            <li><a href="https://asp.tumblebooks.com/Help.aspx" target="_blank">Help</a></li>
+            <li><a href="mailto:info@tumblebooks.com?subject=Douglas County Libraries Customer Issue" target="_blank">Email Support</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
