@@ -371,7 +371,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row">
-    <div id="overdrive-kids" class="item-wrapper">
+    <div id="overdrive-kids-ebooks" class="item-wrapper">
       <div class="item item-left">
         <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
         <div>Safely search e-books for readers 12 and younger, including read-alongs for preschoolers. Filter by format, subject, device or reading level.</div>
@@ -387,7 +387,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row">
-    <div class="item-wrapper">
+    <div id="hoopla-ebooks" class="item-wrapper">
       <div class="item item-left">
         <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
         <div>Instantly stream or download e-books, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
@@ -403,7 +403,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="item-wrapper">
+    <div id="tumblebooks-ebooks" class="item-wrapper">
       <div class="item item-left">
         <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
         <div>Safely search for e-books, animated picture books, and read-along chapter books for the younger set.</div>
@@ -430,7 +430,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Audiobooks</h1>
   </div>
   <div class="row white-row">
-    <div class="item-wrapper">
+    <div id="overdrive-audiobooks" class="item-wrapper">
       <div class="item item-left">
         <h3> <a href="https://dcl.overdrive.com/" target="_blank">OverDrive</a></h3>
         <div>Access a collection of audiobooks to enjoy on your desktop, laptop, tablet or mobile device.</div>
@@ -446,7 +446,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row white-row">
-    <div class="item-wrapper">
+    <div id="overdrive-kids-audiobooks" class="item-wrapper">
       <div class="item item-left">
         <h3><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
         <div>Safely search audiobooks for readers 12 and younger. Filter by format, subject, device or reading level.</div>
@@ -462,7 +462,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row white-row">
-    <div class="item-wrapper">
+    <div id="hoopla-audiobooks" class="item-wrapper">
       <div class="item item-left">
         <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
         <div>Instantly stream or download audiobooks, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
@@ -478,7 +478,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row white-row last">
-    <div class="item-wrapper">
+    <div id="tumblebooks-audiobooks" class="item-wrapper">
       <div class="item item-left">
         <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
         <div>Safely search for audiobooks for the younger set.</div>
@@ -505,7 +505,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Magazines</h1>
   </div>
   <div class="row gray-row">
-    <div class="item-wrapper">
+    <div id="flipster" class="item-wrapper">
       <div class="item item-left">
         <h3> <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=flipster" target="_blank">Flipster</a></h3>
         <div>Download digital magazines to read on your desktop, laptop, tablet or mobile device.</div>
@@ -520,7 +520,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row gray-row last">
-    <div class="item-wrapper">
+    <div id="overdrive-magazines" class="item-wrapper">
       <div class="item item-left">
         <h3> <a href="https://dcl.overdrive.com/collection/1064685" target="_blank">Overdrive</a></h3>
         <div>Access a variety of digital magazines to enjoy on your desktop, laptop, tablet or mobile device.</div>
@@ -547,7 +547,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Movies, TV & Kids Videos</h1>
   </div>
   <div class="row white-row">
-    <div class="item-wrapper">
+    <div id="hoopla-video" class="item-wrapper">
       <div class="item item-left">
         <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
         <div>Instantly stream or download digital movies and TV, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
@@ -563,25 +563,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row white-row">
-    <div class="">
-      <div class="item-wrapper">
-        <div class="item item-left">
-          <h3> <a href="https://dcl.kanopy.com/" target="_blank">Kanopy</a></h3>
-          <div>Instantly stream up to four films per month. There's no waiting, and items are returned automatically. Access to the <a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a> and <a href="https://www.kanopy.com/category/supplier/great-courses" target="_blank">Great Courses</a> collections is unlimited. Set up a Kanopy account using your DCL credentials. </div>
-          <div class="margin-top-5">Get the app: <i class="icon ios fas fa-tv"></i><a href="https://help.kanopystreaming.com/hc/en-us/sections/207299708-Mobile-TV-Apps" target="_blank">Kanopy</a></div>
-        </div>
-        <div class="item item-right">
-          <h4>Kanopy Support:</h4>
-          <ul>
-            <li><a href="https://help.kanopy.com/hc/en-us/categories/200923998-For-Viewers" target="_blank">Help</a></li>
-            <li><a href="https://help.kanopy.com/hc/en-us/requests/new" target="_blank">Support & Feedback</a></li>
-          </ul>
-        </div>
+    <div id="kanopy" class="item-wrapper">
+      <div class="item item-left">
+        <h3> <a href="https://dcl.kanopy.com/" target="_blank">Kanopy</a></h3>
+        <div>Instantly stream up to four films per month. There's no waiting, and items are returned automatically. Access to the <a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a> and <a href="https://www.kanopy.com/category/supplier/great-courses" target="_blank">Great Courses</a> collections is unlimited. Set up a Kanopy account using your DCL credentials. </div>
+        <div class="margin-top-5">Get the app: <i class="icon ios fas fa-tv"></i><a href="https://help.kanopystreaming.com/hc/en-us/sections/207299708-Mobile-TV-Apps" target="_blank">Kanopy</a></div>
+      </div>
+      <div class="item item-right">
+        <h4>Kanopy Support:</h4>
+        <ul>
+          <li><a href="https://help.kanopy.com/hc/en-us/categories/200923998-For-Viewers" target="_blank">Help</a></li>
+          <li><a href="https://help.kanopy.com/hc/en-us/requests/new" target="_blank">Support & Feedback</a></li>
+        </ul>
       </div>
     </div>
   </div>
   <div class="row white-row last">
-    <div class="item-wrapper">
+    <div id="tumblebooks-video" class="item-wrapper">
       <div class="item item-left">
         <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
         <div>Find and watch videos for the younger set.</div>
@@ -608,7 +606,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-top padding-bottom-15 text-uppercase font-weight-400">Music</h1>
   </div>
   <div class="row gray-row">
-    <div class="item-wrapper padding-bottom-15">
+    <div id="hoopla-music" class="item-wrapper padding-bottom-15">
       <div class="item item-left">
         <h3> <a href="https://www.hoopladigital.com/" target="_blank">Hoopla</a></h3>
         <div>Instantly stream or download music, including kids’ materials. There’s no waiting, and items are returned automatically. Simply set up a Hoopla account using your DCL credentials.</div>
