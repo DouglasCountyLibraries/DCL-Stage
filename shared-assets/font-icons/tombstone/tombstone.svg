@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="tombstone" horiz-adv-x="1000" >
+<font-face font-family="tombstone" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="tombstone" unicode="&#xe800;" d="M870 850h-740c-72 0-130-58-130-130v-740c0-72 58-130 130-130h740c72 0 130 58 130 130v740c0 72-58 130-130 130z m-94-680l0 0h69v-104h-690v104h69v426l25 15c82 50 166 76 251 76s169-25 251-76l25-15v-426z m-448 0h345v366c-59 32-116 47-173 47s-114-15-172-47v-366z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

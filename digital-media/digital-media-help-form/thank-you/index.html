@@ -123,11 +123,11 @@ svg {
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- pull alert.txt into the global-alert div --> 
+<!-- pull alert.txt into the general-alert div -->
 <script>
 $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
-    if ( data !=null ){	$("#global-alert").show().append( data );}
+    if ( data !=null ){	$("#general-alert").show().append( data );}
 });
 </script> 
 <!-- Google Tag Manager (noscript) --> 
@@ -191,7 +191,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <li><a href="../../../staff-recommendations/">Staff Recommendations</a></li>
           <li><a href="../../../business/">DCL for Business</a></li>
           <li><a href="../../../adult-education/">Adult Education & Test Prep</a></li>
-          <li><a href="../../../join-our-team/">Join Our Team</a></li>
         </ul>
       </li>
       <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
@@ -253,7 +252,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                   <li><a href="../../../staff-recommendations/">Staff Recommendations</a></li>
                   <li><a href="../../../business/">DCL for Business</a></li>
                   <li><a href="../../../adult-education/">Adult Education & Test Prep</a></li>
-                  <li><a href="../../../join-our-team/">Join Our Team</a></li>
                 </ul>
               </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
@@ -302,7 +300,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
-  <div id="global-alert" style="display:none;"></div>
+  <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
+  <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top padding-bottom-40">
     <div class="container text-center">
@@ -317,60 +316,61 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
-<div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
-  <div class="bg-gray-10 clearfix">
-    <div class="col-sm-6">
-      <div class="text-center csn">
+<div class="row no-margin bg-gray-10">
+  <div class="container text-center">
+    <div class="social-footer">
+      <div class="social-left">
         <h4><a href="../../../safety-notice/">Community Safety Notice</a></h4>
-        <!--to add back, remove csn class above
-          <h4>2020&nbsp;Census: <span class="text-nowrap"><a href="https://2020census.gov/" target="_blank">Website</a> <span style="font-size:14px">&bull;</span> <a href="https://2020census.gov/content/dam/2020census/materials/partners/2019-10/census101.pdf" target="_blank">Quick Info</a> <span style="font-size:14px">&bull;</span> <a href="https://2020census.gov/content/dam/2020census/materials/languages/guides/English-Guide.pdf" target="_blank">Guide</a></span></h4>--> 
+        <h4><a href="../../../taxes/">Tax Information</a></h4>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="text-center">
+      <div class="social-right">
         <h4>Customer Service: <span class="text-nowrap"><a href="tel:+13037917323">(303) 791-7323</a></span></h4>
+        <div class="social-links-wrapper"> <a class="margin-right-5" title="Friend us on Facebook" href="https://www.facebook.com/DCLColorado" target="_blank"><i class="fab fa-facebook fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Twitter" href="https://twitter.com/DCLcolorado" target="_blank"> <i class="fab fa-twitter fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Instagram" href="https://www.instagram.com/dclcolorado/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a> <a class="margin-right-5" title="Check us out on Pinterest" href="https://pinterest.com/dougcolibraries/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a> <a class="margin-right-5" title="Check out our Youtube Channel" href="https://www.youtube.com/user/dclwebteam" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a> <a title="Visit us on Flickr" href="http://www.flickr.com/photos/douglascountylibraries/" target="_blank"> <i class="fab fa-flickr fa-2x"></i></a> </div>
       </div>
-      <div class="social-links-wrapper text-center"> <a class="margin-right-5" title="Friend us on Facebook" href="https://www.facebook.com/DCLColorado" target="_blank"><i class="fab fa-facebook fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Twitter" href="https://twitter.com/DCLcolorado" target="_blank"> <i class="fab fa-twitter fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Instagram" href="https://www.instagram.com/dclcolorado/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a> <a class="margin-right-5" title="Check us out on Pinterest" href="https://pinterest.com/dougcolibraries/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a> <a class="margin-right-5" title="Check out our Youtube Channel" href="https://www.youtube.com/user/dclwebteam" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a> <a title="Visit us on Flickr" href="http://www.flickr.com/photos/douglascountylibraries/" target="_blank"> <i class="fab fa-flickr fa-2x"></i></a> </div>
     </div>
   </div>
 </div>
-<footer class="footer bg-gray-20 padding-top-60 padding-bottom-60">
+<footer class="row no-margin bg-gray-20">
   <div class="container">
-    <div class="col-sm-3">
-      <h5 class="font-weight-500 no-margin">About</h5>
-      <ul>
-        <li><a href="../../../who-we-are/">Who We Are</a></li>
-        <li><a href="../../../join-our-team/">Join Our Team</a></li>
-        <li><a href="../../../press-kit/">Press Kit</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-2 col-md-3">
-      <h5 class="font-weight-500 no-margin">Contact</h5>
-      <ul>
-        <li><a href="https://help.dcl.org/" target="_blank">Help</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-4 col-md-3">
-      <h5 class="font-weight-500 no-margin">Connect</h5>
-      <ul>
-        <li><a href="../../../newsletters/">eNews Sign-Up</a></li>
-        <li><a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a></li>
-        <li><a href="https://blogs.douglascountylibraries.org">DCL Blog</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-3">
-      <h5 class="font-weight-500 no-margin">Support</h5>
-      <ul>
-        <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate</a></li>
-        <li><a href="../../../foundation/">Foundation</a></li>
-        <li><a href="../../../volunteer/">Volunteer</a></li>
-      </ul>
+    <div class="footer-nav">
+      <div>
+        <h5>About</h5>
+        <ul>
+          <li><a href="../../../who-we-are/">Who We Are</a></li>
+          <li><a href="../../../join-our-team/">Join Our Team</a></li>
+          <li><a href="../../../press-kit/">Press Kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://help.dcl.org/" target="_blank">Help</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../../../newsletters/">eNews Sign-Up</a></li>
+          <li><a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a></li>
+          <li><a href="https://dclblog.org/">DCL Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate</a></li>
+          <li><a href="../../../foundation/">Foundation</a></li>
+          <li><a href="../../../volunteer/">Volunteer</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</footer>
-<div class="copyright bg-gray-90">
-  <div class="container padding-top-15 padding-bottom-80">
-    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+</footer><div class="row no-margin bg-gray-90">
+  <div class="container">
+    <div class="copyright">
+      <div class="copyright-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank">Use the Classic Catalog &raquo;</a></div>
+      <div class="copyright-right">&copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="text-nowrap" href="tel:+13037917323">(303) 791-7323</a></div>
+    </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" -->

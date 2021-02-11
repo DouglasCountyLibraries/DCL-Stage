@@ -65,89 +65,89 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
-<style>
+<style>  
 .sub-list {
-    list-style-type: circle;
+	list-style-type: circle;
 }
 .giving-row {
-    background: #0289a7;
+	background: #0289a7;
 }
 .red-text {
-    color: #000;
-    font-weight: 400;
+	color: #000;
+	font-weight: 400;
 }
 .red-text a:active, .red-text a:hover, .red-text a:focus {
-    color: #873928;
-    text-decoration: none;
+	color: #873928;
+	text-decoration: none;
 }
 .photo-row {
-    background: #0289a7;
+	background: #0289a7;
 }
 .item-wrapper {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
 }
 .item {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 .carousel-cell {
-    text-align: center;
-    width: 100%;
+	text-align: center;
+	width: 100%;
 }
 .carousel-cell:before {
-    display: block;
-    text-align: center;
+	display: block;
+	text-align: center;
 }
 /* big buttons, no circle */
 .flickity-prev-next-button {
-    width: 50px;
-    height: 50px;
-    background: transparent;
+	width: 50px;
+	height: 50px;
+	background: transparent;
 }
 .flickity-prev-next-button:hover {
-    background: transparent;
+	background: transparent;
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-    fill: #efeeed;
+	fill: #efeeed;
 }
 .flickity-prev-next-button.no-svg {
-    color: #efeeed;
+	color: #efeeed;
 }
 .flickity-prev-next-button {
-    top: 30%;
+	top: 30%;
 }
 .flickity-viewport {
-    transition: height 0.6s;
+	transition: height 0.6s;
 }
 
 @media (max-width: 1200px) {
 .text-center.headings {
-    position: relative;
-    top: -53px;
+	position: relative;
+	top: -53px;
 }
 .tree-background {
-    background: #0e74bc;
+	background: #0e74bc;
 }
 .feature-one {
-    font-size: 150px;
-    line-height: 175px;
+	font-size: 150px;
+	line-height: 175px;
 }
 .feature-two {
-    font-size: 90px;
-    line-height: 0px;
+	font-size: 90px;
+	line-height: 0px;
 }
 }
 
 @media (min-width: 480px) {
 #box-two, #box-three, #box-four {
-    border-left: none;
+	border-left: none;
 }
 }
 @media (min-width: 768px) {
 #box-two, #box-four {
-    border-left: 1px solid rgba(255,255,255,.6);
+	border-left: 1px solid rgba(255,255,255,.6);
 }
 @media (min-width: 992px) {
 .item {
@@ -168,11 +168,11 @@ width: 25%;
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- pull alert.txt into the global-alert div --> 
+<!-- pull alert.txt into the general-alert div -->
 <script>
 $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
-    if ( data !=null ){	$("#global-alert").show().append( data );}
+    if ( data !=null ){	$("#general-alert").show().append( data );}
 });
 </script> 
 <!-- Google Tag Manager (noscript) --> 
@@ -236,7 +236,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <li><a href="../staff-recommendations/">Staff Recommendations</a></li>
           <li><a href="../business/">DCL for Business</a></li>
           <li><a href="../adult-education/">Adult Education & Test Prep</a></li>
-          <li><a href="../join-our-team/">Join Our Team</a></li>
         </ul>
       </li>
       <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
@@ -298,7 +297,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                   <li><a href="../staff-recommendations/">Staff Recommendations</a></li>
                   <li><a href="../business/">DCL for Business</a></li>
                   <li><a href="../adult-education/">Adult Education & Test Prep</a></li>
-                  <li><a href="../join-our-team/">Join Our Team</a></li>
                 </ul>
               </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
@@ -347,8 +345,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </nav>
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
-  <div id="global-alert" style="display:none;"></div>
+  <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
+  <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
+  <div class="modal fade" id="cgdModal-pops" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog cgd-modal" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="text-center cgd-background">
+        <div class="grateful-modal">Today is Colorado Gives Day!</div>
+        <div class="little-modal">Please support the DCL Foundation by <a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">donating today</a>.</div>
+      </div>
+    </div>
+  </div>
   <div class="row padding-bottom-20 border-top">
     <div class="container">
       <div class="text-center">
@@ -375,7 +383,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <h5 class="no-margin text-uppercase"><a class="show" href="five-year-foundation-report.pdf" target="_blank"><i class="fas fa-file"></i>Five Year Report</a></h5>
       </div>
       <div class="col-sm-12 col-md-8 col-lg-15 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="foundation-annual-report.pdf" target="_blank"><i class="fas fa-file"></i>2016 Annual Report</a></h5>
+        <h5 class="no-margin text-uppercase"><a class="show" href="dcl-foundation-2020-annual-report.pdf" target="_blank"><i class="fas fa-archive"></i>Annual Report</a></h5>
       </div>
     </div>
   </div>
@@ -394,7 +402,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="item">
           <div id="box-one"></div>
           <h2 class="roboto text-center white">Scholarships & Support</h2>
-          <div class="margin-left-15 margin-right-15">The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a class="white text-underline" href="../camp-dcl/">Camp DCL</a> for kids and <a class="white text-underline" href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+13036887641" class="white">(303) 688-7641</a>.</div>
+          <div class="margin-left-15 margin-right-15">The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a class="white text-underline" href="../camp-dcl/">Camp DCL</a> for kids and <a class="white text-underline" href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+17203489509" class="white">(720) 348-9509</a>.</div>
         </div>
         <div class="item">
           <div id="box-two"></div>
@@ -406,10 +414,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <h2 class="roboto text-center white"><a class="white" href="../summer-reading/">Summer Reading</a></h2>
           <div class="margin-left-15 margin-right-15">Each year, Douglas County Libraries' <a class="text-underline white" href="../summer-reading/">summer reading program</a> encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
         </div>
-        <div class="item">
+        <div id="exploration-stations" class="item">
           <div id="box-four"></div>
-          <h2 class="roboto text-center white">Fête des Fables Gala</h2>
-          <div class="margin-left-15 margin-right-15">Our annual gala, in addition to traditional cash donations, is a primary way that we fund our support of ECL programs. Each year, Fête des Fables invites guests to enjoy cocktails and a sumptuous meal, shop a fantastic silent auction, and mingle with friends old and new, while celebrating a classic story in a charming venue. We will miss hosting this year's gala, but invite you to support the Foundation's ongoing fundraising efforts with a donation today.</div>
+          <h2 class="roboto text-center white">Exploration Stations</h2>
+          <div class="margin-left-15 margin-right-15">The Foundation supports exciting new ways to inspire a love of discovery and connection in our community, and one of those ways is through Exploration Stations. Located at both Parker Adventist and Castle Rock Adventist hospitals, these interactive areas for kids are located near the family birth centers. The stations include interactive software programs, books, puzzles, activities, and toys that provide learning opportunities as well as entertainment for children.</div>
         </div>
       </div>
     </div>
@@ -424,8 +432,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['summer-reading-one.jpg', 'summer-reading-two.jpg', 'summer-reading-three.jpg', 'summer-reading-four.jpg', 'summer-reading-five.jpg', 'summer-reading-six.jpg'];
     $('<img alt="Cause an Effect" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
 	
-	var images = ['gala-one.jpg', 'gala-two.jpg', 'gala-three.jpg', 'gala-four.jpg', 'gala-five.jpg', 'gala-six.jpg', 'gala-seven.jpg', 'gala-eight.jpg', 'gala-nine.jpg', 'gala-ten.jpg', 'gala-eleven.jpg'];
-    $('<img alt="Fete des Fables Gala" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
+	var images = ['station-one.jpg', 'station-two.jpg', 'station-three.jpg', 'station-four.jpg', 'station-five.jpg', 'station-six.jpg'];
+    $('<img alt="Exploration Stations" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
 </script>
   <div class="row">
     <div class="container margin-lg-200 text-center padding-top-15 padding-bottom-40">
@@ -479,11 +487,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <li>Attend Fête des Fables Gala</li>
               <li>Workplace Giving/Matching Gifts</li>
               <li><a href="naming-rights.pdf" target="_blank">Naming Rights</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#bookplate">Memorial Bookplate</a></li>
+              <li><a href="#bookplate" data-toggle="modal" data-target="#bookplate">Memorial Bookplate</a></li>
               <li>Tribute Gifts</li>
             </div>
             <div class="col-md-6">
-              <li><a href="#" data-toggle="modal" data-target="#king-soopers">King Soopers Community Rewards</a></li>
+              <li><a href="#soopers" data-toggle="modal" data-target="#king-soopers">King Soopers Community Rewards</a></li>
               <li><a href="https://smile.amazon.com/ch/84-1207775" target="_blank">Shop Using AmazonSmile</a></li>
               <li><a href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A3DWH3KNEEAD5M&merchant=A3DWH3KNEEAD5M&redirect=true" target="_blank">Shop Our Online Bookstore</a></li>
               <li><a href="https://carshelpingcharities.org/cobrand/douglas-county-libraries/" target="_blank">Donate Your Car</a></li>
@@ -508,8 +516,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div id="donate-materials" class="col-md-6">
         <h4 class="roboto">Donate Materials</h4>
-        <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. Donations will be accepted at library welcome desks during regular business hours.</div>
-        <div class="padding-top-15">We appreciate your call at <a href="tel:+13037917323">(303) 791-7323</a> in advance of large donations (more than you can carry from your vehicle). Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
+        <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. </div>
+        <div class="padding-top-15 margin-bottom-10">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
+        <ul style="padding-left: 15px;">
+          <li>Castle Rock: Wednesdays, 3-7PM</li>
+          <li>Highlands Ranch: Saturdays, 10AM-2PM</li>
+          <li>Lone Tree: Mondays, 10AM-2PM</li>
+          <li>Parker: Thursdays, 10AM-2PM</li>
+        </ul>
+        <div class="padding-top-15 margin-bottom-10">Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
         <ul style="padding-left: 15px;">
           <li>Items in poor condition</li>
           <li>Textbooks older than five years</li>
@@ -518,12 +533,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <li>VHS or music cassette tapes</li>
           <li>Computer books older than five years</li>
         </ul>
-        <div><a href="#" type="button" class="margin-top-15 margin-bottom-10 btn btn-primary" data-toggle="modal" data-target="#schedule">Schedule a Donation</a></div>
-   
-      <h4 class="roboto">Planned Giving</h4>
-      <div>Designate a gift to the Foundation in your will, or via other options. Questions? Contact Amber DeBerry at <a href="tel:+13036887641 ">(303) 688-7641 </a>.</div>
-    </div>   </div>
-    <div> </div>
+        <h4 class="roboto">Planned Giving</h4>
+        <div>Designate a gift to the Foundation in your will, or via other options. Questions? Contact Rachel Malis at <a href="tel:+17203489509">(720) 348-9509</a>.</div>
+      </div>
+    </div>
   </div>
   <div class="row bg-lavender">
     <div class="container">
@@ -536,8 +549,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="container">
       <h4 class="white no-margin-top">The Douglas County Libraries Foundation delivers funding and resources to help sustain the Douglas County Libraries to positively impact our community members so they can grow and thrive.</h4>
       <h2 class="white roboto no-margin">Questions or comments?</h2>
-      <a href="#" type="button" class="margin-top-15 margin-bottom-10 btn btn-lg btn-primary" data-toggle="modal" data-target="#mediamodal">Contact the Foundation</a>
-      <div class="white">or call <a href="tel:+13036887641" class="white">(303) 688-7641</a></div>
+      <a href="#contact" type="button" class="margin-top-15 margin-bottom-10 btn btn-lg btn-primary" data-toggle="modal" data-target="#mediamodal">Contact the Foundation</a>
+      <div class="white">or call <a href="tel:+17203489509" class="white">(720) 348-9509</a></div>
     </div>
   </div>
   
@@ -577,7 +590,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <ul class="padding-top-15">
             <li>Donation: $100</li>
             <li>Good for the life of the book</li>
-            <li>Contact Amber DeBerry with questions or requests at <a href="tel:+13036887641 ">(303) 688-7641</a>.</li>
+            <li>Contact Rachel Malis with questions or requests at <a href="tel:+17203489509">(720) 348-9509</a>.</li>
           </ul>
         </div>
       </div>
@@ -612,60 +625,61 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
-<div class="social-footer bg-gray-10 padding-top-15 padding-bottom-20">
-  <div class="bg-gray-10 clearfix">
-    <div class="col-sm-6">
-      <div class="text-center csn">
+<div class="row no-margin bg-gray-10">
+  <div class="container text-center">
+    <div class="social-footer">
+      <div class="social-left">
         <h4><a href="../safety-notice/">Community Safety Notice</a></h4>
-        <!--to add back, remove csn class above
-          <h4>2020&nbsp;Census: <span class="text-nowrap"><a href="https://2020census.gov/" target="_blank">Website</a> <span style="font-size:14px">&bull;</span> <a href="https://2020census.gov/content/dam/2020census/materials/partners/2019-10/census101.pdf" target="_blank">Quick Info</a> <span style="font-size:14px">&bull;</span> <a href="https://2020census.gov/content/dam/2020census/materials/languages/guides/English-Guide.pdf" target="_blank">Guide</a></span></h4>--> 
+        <h4><a href="../taxes/">Tax Information</a></h4>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="text-center">
+      <div class="social-right">
         <h4>Customer Service: <span class="text-nowrap"><a href="tel:+13037917323">(303) 791-7323</a></span></h4>
+        <div class="social-links-wrapper"> <a class="margin-right-5" title="Friend us on Facebook" href="https://www.facebook.com/DCLColorado" target="_blank"><i class="fab fa-facebook fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Twitter" href="https://twitter.com/DCLcolorado" target="_blank"> <i class="fab fa-twitter fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Instagram" href="https://www.instagram.com/dclcolorado/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a> <a class="margin-right-5" title="Check us out on Pinterest" href="https://pinterest.com/dougcolibraries/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a> <a class="margin-right-5" title="Check out our Youtube Channel" href="https://www.youtube.com/user/dclwebteam" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a> <a title="Visit us on Flickr" href="http://www.flickr.com/photos/douglascountylibraries/" target="_blank"> <i class="fab fa-flickr fa-2x"></i></a> </div>
       </div>
-      <div class="social-links-wrapper text-center"> <a class="margin-right-5" title="Friend us on Facebook" href="https://www.facebook.com/DCLColorado" target="_blank"><i class="fab fa-facebook fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Twitter" href="https://twitter.com/DCLcolorado" target="_blank"> <i class="fab fa-twitter fa-2x"></i></a> <a class="margin-right-5" title="Follow us on Instagram" href="https://www.instagram.com/dclcolorado/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a> <a class="margin-right-5" title="Check us out on Pinterest" href="https://pinterest.com/dougcolibraries/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a> <a class="margin-right-5" title="Check out our Youtube Channel" href="https://www.youtube.com/user/dclwebteam" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a> <a title="Visit us on Flickr" href="http://www.flickr.com/photos/douglascountylibraries/" target="_blank"> <i class="fab fa-flickr fa-2x"></i></a> </div>
     </div>
   </div>
 </div>
-<footer class="footer bg-gray-20 padding-top-60 padding-bottom-60">
+<footer class="row no-margin bg-gray-20">
   <div class="container">
-    <div class="col-sm-3">
-      <h5 class="font-weight-500 no-margin">About</h5>
-      <ul>
-        <li><a href="../who-we-are/">Who We Are</a></li>
-        <li><a href="../join-our-team/">Join Our Team</a></li>
-        <li><a href="../press-kit/">Press Kit</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-2 col-md-3">
-      <h5 class="font-weight-500 no-margin">Contact</h5>
-      <ul>
-        <li><a href="https://help.dcl.org/" target="_blank">Help</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-4 col-md-3">
-      <h5 class="font-weight-500 no-margin">Connect</h5>
-      <ul>
-        <li><a href="../newsletters/">eNews Sign-Up</a></li>
-        <li><a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a></li>
-        <li><a href="https://blogs.douglascountylibraries.org">DCL Blog</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-3">
-      <h5 class="font-weight-500 no-margin">Support</h5>
-      <ul>
-        <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate</a></li>
-        <li><a href="../foundation/">Foundation</a></li>
-        <li><a href="../volunteer/">Volunteer</a></li>
-      </ul>
+    <div class="footer-nav">
+      <div>
+        <h5>About</h5>
+        <ul>
+          <li><a href="../who-we-are/">Who We Are</a></li>
+          <li><a href="../join-our-team/">Join Our Team</a></li>
+          <li><a href="../press-kit/">Press Kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://help.dcl.org/" target="_blank">Help</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../newsletters/">eNews Sign-Up</a></li>
+          <li><a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a></li>
+          <li><a href="https://dclblog.org/">DCL Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate</a></li>
+          <li><a href="../foundation/">Foundation</a></li>
+          <li><a href="../volunteer/">Volunteer</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</footer>
-<div class="copyright bg-gray-90">
-  <div class="container padding-top-15 padding-bottom-80">
-    <div class="eee"> <span class="pull-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank" class="wheat">Use the Classic Catalog &raquo;</a></span><span class="pull-right"> &copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a class="wheat" href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="wheat text-nowrap" href="tel:+13037917323">(303) 791-7323</a></span> </div>
+</footer><div class="row no-margin bg-gray-90">
+  <div class="container">
+    <div class="copyright">
+      <div class="copyright-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank">Use the Classic Catalog &raquo;</a></div>
+      <div class="copyright-right">&copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="text-nowrap" href="tel:+13037917323">(303) 791-7323</a></div>
+    </div>
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
