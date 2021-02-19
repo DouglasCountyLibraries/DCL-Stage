@@ -67,19 +67,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.item-wrapper {
-	display: flex;
-	align-content: center;
-	flex-wrap: wrap;
-}
-.item {
-	padding-bottom: 30px;
-}
-.box-wrapper {
+.box-wrapper, .item-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
+}
+.item {
+	flex: 1;
+	margin: 15px;
+	min-width: 400px;
 }
 .box-item {
 	flex: 1;
@@ -103,41 +100,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	width: 100px;
 }
 
-@media (min-width: 480px) {
-#box-two, #box-three, #box-four {
-	border-left: none;
-}
-}
-@media (min-width: 768px) {
-#box-two, #box-four {
-	border-left: 1px solid rgba(255,255,255,.6);
-}
-@media (min-width: 992px) {
-.item {
-width: 50%;
-}
-#box-two, #box-four {
-border-left: 1px solid rgba(255,255,255,.6);
-}
-@media (min-width: 1200px) {
-#box-two, #box-three, #box-four {
-border-left: 1px solid rgba(255,255,255,.6);
-}
-.item {
-width: 25%;
-}
-}
-@media (min-width: 1200px) {
-.margin-lg-185 {
-padding-left: 185px;
-padding-right: 185px;
-}
-}
 @media (max-width: 992px) {
 .box-item {
-flex-direction: column;
-min-width: 100%;
-margin: 5px;
+	flex-direction: column;
+	min-width: 100%;
+	margin: 5px;
+}
+}
+
+@media (max-width: 992px) {
+.item {
+	flex-direction: column;
+	min-width: 100%;
+	margin: 15px 5px;
 }
 }
 </style>
@@ -324,7 +299,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row padding-bottom-20 border-top">
+  <div class="row border-top">
     <div class="container">
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Foundation</h1>
@@ -335,28 +310,28 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="container-md no-gutter no-padding">
+  <div class="row padding-bottom-30">
+    <div class="container">
       <div class="item-wrapper">
         <div class="item">
           <div id="box-one"></div>
           <h3 class="text-center font-weight-400">Scholarships & Support</h3>
-          <div class="margin-left-15 margin-right-15">The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a href="../camp-dcl/">Camp DCL</a> for kids and <a href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+17203489509" class="text-nowrap">(720) 348-9509</a>.</div>
+          <div>The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a href="../camp-dcl/">Camp DCL</a> for kids and <a href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+17203489509" class="text-nowrap">(720) 348-9509</a>.</div>
         </div>
         <div class="item">
           <div id="box-two"></div>
           <h3 class="text-center font-weight-400">Cuddle Up & Read</h3>
-          <div class="margin-left-15 margin-right-15">Through partnerships with area hospitals, <a href="../cuddle-up-and-read/">Cuddle Up & Read</a> provides new parents with a fun and meaningful introduction to the library and our early literacy services. The program includes small gifts for mom and baby and an invitation to get baby a library card. We also distribute DCL growth charts, complete with reading suggestions and library service information, to parents through participating pediatricians’ offices across the county. </div>
+          <div>Through partnerships with area hospitals, <a href="../cuddle-up-and-read/">Cuddle Up & Read</a> provides new parents with a fun and meaningful introduction to the library and our early literacy services. The program includes small gifts for mom and baby and an invitation to get baby a library card. We also distribute DCL growth charts, complete with reading suggestions and library service information, to parents through participating pediatricians’ offices across the county. </div>
         </div>
         <div class="item">
           <div id="box-three"></div>
           <h3 class="text-center font-weight-400">Summer Reading</h3>
-          <div class="margin-left-15 margin-right-15">Each year, Douglas County Libraries' <a href="../summer-reading/">summer reading program</a> encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
+          <div>Each year, Douglas County Libraries' <a href="../summer-reading/">summer reading program</a> encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
         </div>
         <div id="exploration-stations" class="item">
           <div id="box-four"></div>
           <h3 class="text-center font-weight-400">Exploration Stations</h3>
-          <div class="margin-left-15 margin-right-15">The Foundation supports exciting new ways to inspire a love of discovery and connection in our community, and one of those ways is through Exploration Stations. Located at both Parker Adventist and Castle Rock Adventist hospitals, these interactive areas for kids are located near the family birth centers. The stations include interactive software programs, books, puzzles, activities, and toys that provide learning opportunities as well as entertainment for children.</div>
+          <div>The Foundation supports exciting new ways to inspire a love of discovery and connection in our community, and one of those ways is through Exploration Stations. Located at both Parker Adventist and Castle Rock Adventist hospitals, these interactive areas for kids are located near the family birth centers. The stations include interactive software programs, books, puzzles, activities, and toys that provide learning opportunities as well as entertainment for children.</div>
         </div>
       </div>
     </div>
