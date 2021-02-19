@@ -86,9 +86,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .print-item {
 	flex: 1;
 	padding: 5px 30px 35px;
-	margin: 5px;
+	margin: 5px 35px;
 	background: #fff url("box-background.gif") top center repeat-x;
-	max-width: 400px;
+	max-width: 325px;
 	border-radius: 3px;
 }
 .icon-circle-gray {
@@ -112,6 +112,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+@media (max-width: 992px) {
+.box-item, .print-item {
+	flex-direction: column;
+	min-width: 100%;
+	margin: 5px;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
