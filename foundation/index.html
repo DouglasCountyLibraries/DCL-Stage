@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,7 +66,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
-<style>  
+<style>
 .sub-list {
 	list-style-type: circle;
 }
@@ -168,7 +169,7 @@ width: 25%;
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- pull alert.txt into the general-alert div -->
+<!-- pull alert.txt into the general-alert div --> 
 <script>
 $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
@@ -368,34 +369,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row no-gutter sub-nav-row">
-    <div class="sub-nav">
-      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border-first equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../volunteer/"><i class="fas fa-clock"></i>Give Time</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank"><i class="fas fa-dollar-sign"></i>Give Money</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="#other-ways" target="_blank"><i class="fas fa-edit"></i>Other Ways to Give</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-15 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="five-year-foundation-report.pdf" target="_blank"><i class="fas fa-file"></i>Five Year Report</a></h5>
-      </div>
-      <div class="col-sm-12 col-md-8 col-lg-15 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="dcl-foundation-2020-annual-report.pdf" target="_blank"><i class="fas fa-archive"></i>Annual Report</a></h5>
-      </div>
-    </div>
-  </div>
-  <div class="row giving-row">
-    <div class="container padding-top-30 padding-bottom-60">
-      <div class="text-center">
-        <h1 class="white no-margin-bottom jumbo-text text-uppercase font-weight-400"> Funding the Future </h1>
-        <h2 class="no-margin-top"> <a class="white" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788#1" target="_blank">Giving Now for Generations to Come</a></h2>
-        <div><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788#1" target="_blank"><img src="cg-logo.png" alt="Colorado Gives"></a></div>
-      </div>
-    </div>
-  </div>
   <div class="row photo-row white">
     <div class="container-md no-gutter no-padding">
       <div class="item-wrapper">
@@ -435,109 +408,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['station-one.jpg', 'station-two.jpg', 'station-three.jpg', 'station-four.jpg', 'station-five.jpg', 'station-six.jpg'];
     $('<img alt="Exploration Stations" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
 </script>
-  <div class="row">
-    <div class="container margin-lg-200 text-center padding-top-15 padding-bottom-40">
-      <h1 class="roboto padding-bottom-15">What Your Gift Means</h1>
-      <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 7000 }'>
-        <div class="carousel-cell">
-          <div><img alt="Niki Weninger" class="img-circle" src="niki.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"Some children came out of a classroom, and they were so full of joy! The library so inspired these kids! If we could capture that magic and take it into our workplace, or home, or community, how different would this world be?" <small>Niki Weninger</small></blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div><img alt="Joe Henry" class="img-circle" src="joe.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"A library is so important to the growth of our children, and to us, as individuals." <small>Joe Henry</small></blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div><img alt="Opp Slawson" class="img-circle" src="opp.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"The library's literacy program helped me interact with people and, more importantly, gave me the opportunity to teach. When I came to this country, I didn't speak English. Someone took the time to teach me. That's how the library adds magic to my life." <small>Opp Slawson</small></blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div><img alt="Suresh Damle" class="img-circle" src="suresh.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"People, whether they are young or old, can all get involved in libraries. The library is not something that's only limited to certain age groups." <small>Suresh Damle</small></blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5 padding-top-15 padding-bottom-40">
-    <div id="other-ways" class="container no-padding">
-      <h1 class="text-center">Other Ways to Give</h1>
-      <div class="col-md-6">
-        <h4 class="roboto">Donate by Mail</h4>
-        <div>Mail a check, payable to Douglas County Libraries Foundation, to:<br>
-          Douglas County Libraries Foundation<br>
-          100 S. Wilcox St.<br>
-          Castle Rock, CO 80104<br>
-          (Include a note on the check to designate your donation for a specific program or branch) </div>
-        <div>
-          <h4 class="roboto">Make an Impact</h4>
-          <ul class="clearfix" style="padding-left: 15px;">
-            <div class="col-md-6">
-              <li>Attend Fête des Fables Gala</li>
-              <li>Workplace Giving/Matching Gifts</li>
-              <li><a href="naming-rights.pdf" target="_blank">Naming Rights</a></li>
-              <li><a href="#bookplate" data-toggle="modal" data-target="#bookplate">Memorial Bookplate</a></li>
-              <li>Tribute Gifts</li>
-            </div>
-            <div class="col-md-6">
-              <li><a href="#soopers" data-toggle="modal" data-target="#king-soopers">King Soopers Community Rewards</a></li>
-              <li><a href="https://smile.amazon.com/ch/84-1207775" target="_blank">Shop Using AmazonSmile</a></li>
-              <li><a href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A3DWH3KNEEAD5M&merchant=A3DWH3KNEEAD5M&redirect=true" target="_blank">Shop Our Online Bookstore</a></li>
-              <li><a href="https://carshelpingcharities.org/cobrand/douglas-county-libraries/" target="_blank">Donate Your Car</a></li>
-            </div>
-          </ul>
-        </div>
-        <div id="tax-refund">
-          <h4 class="roboto">Tax Refund Sharing</h4>
-          <div class="margin-bottom-10">Are you getting a Colorado state tax refund this year? Consider sharing it for libraries and literacy!</div>
-          <ul style="padding-left: 15px;">
-            <li>Donate as much or as little of your refund as you wish. </li>
-            <li>Your donation is tax-deductible when you do your taxes next year.</li>
-            <li>Donating is easy. Use the Voluntary Contributions form DR0104CH. On line 19, write in:</li>
-          </ul>
-          <ul class="sub-list">
-            <li>Douglas County Libraries</li>
-            <li>Registration number 20043004512</li>
-            <li>The amount of your donation (less than or equal to the amount of your refund)</li>
-          </ul>
-          <div>For more information, visit <a href="https://refundwhatmatters.org/" target="_blank">ReFUND CO</a>.</div>
-        </div>
-      </div>
-      <div id="donate-materials" class="col-md-6">
-        <h4 class="roboto">Donate Materials</h4>
-        <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. </div>
-        <div class="padding-top-15 margin-bottom-10">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
-        <ul style="padding-left: 15px;">
-          <li>Castle Rock: Wednesdays, 3-7PM</li>
-          <li>Highlands Ranch: Saturdays, 10AM-2PM</li>
-          <li>Lone Tree: Mondays, 10AM-2PM</li>
-          <li>Parker: Thursdays, 10AM-2PM</li>
-        </ul>
-        <div class="padding-top-15 margin-bottom-10">Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
-        <ul style="padding-left: 15px;">
-          <li>Items in poor condition</li>
-          <li>Textbooks older than five years</li>
-          <li>Encyclopedias</li>
-          <li>Magazines or condensed books older than three years</li>
-          <li>VHS or music cassette tapes</li>
-          <li>Computer books older than five years</li>
-        </ul>
-        <h4 class="roboto">Planned Giving</h4>
-        <div>Designate a gift to the Foundation in your will, or via other options. Questions? Contact Rachel Malis at <a href="tel:+17203489509">(720) 348-9509</a>.</div>
-      </div>
-    </div>
-  </div>
   <div class="row bg-lavender">
     <div class="container">
       <div class="text-center padding-top-30 padding-bottom-30">
@@ -554,48 +424,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   
-  <!-- Modal -->
-  <div class="modal fade" id="king-soopers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center no-margin">Enroll your King Soopers card and DCL will<br>
-            earn 5% every time you use it.</h3>
-        </div>
-        <div class="modal-body">
-          <div>
-            <ul>
-              <li>Go to <a href="https://www.kingsoopers.com/account/communityrewards/" target="_blank">King Soopers Community Rewards</a></li>
-              <li>Search for "Douglas County Libraries"</li>
-              <li>Click Enroll</li>
-            </ul>
-          </div>
-          <div class="text-center padding-top-30"><img src="king-soopers.gif" alt="King Soopers Community Rewards Signup"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="bookplate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center no-margin">Memorial Bookplate</h3>
-        </div>
-        <div class="modal-body text-left padding-right-30 padding-left-30 padding-bottom-30">
-          <div>Honor your loved ones with a memorial bookplate. Our acquisitions team will choose an appropriate book to represent your special person and place a bookplate inside it with the message of your choice. You can choose to see the book prior to its circulation in our libraries.</div>
-          <ul class="padding-top-15">
-            <li>Donation: $100</li>
-            <li>Good for the life of the book</li>
-            <li>Contact Rachel Malis with questions or requests at <a href="tel:+17203489509">(720) 348-9509</a>.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Modal -->
   <div class="modal fade" id="mediamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -647,6 +475,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <ul>
           <li><a href="../who-we-are/">Who We Are</a></li>
           <li><a href="../foundation/">Our Foundation</a></li>
+          <li><a href="../join-our-team/">Join Our Team</a></li>
           <li><a href="../press-kit/">Press Kit</a></li>
         </ul>
       </div>
@@ -654,7 +483,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <h5>Contact</h5>
         <ul>
           <li><a href="https://help.dcl.org/" target="_blank">Help</a></li>
-            <li><a href="../join-our-team/">Join Our Team</a></li>
         </ul>
       </div>
       <div>
@@ -668,14 +496,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div>
         <h5>Support</h5>
         <ul>
-          <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate Online Now</a></li>
-          <li><a href="#">Other Ways to Give</a></li>
+          <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate Now</a></li>
+          <li><a href="../donate/">Ways to Give</a></li>
           <li><a href="../volunteer/">Volunteer</a></li>
         </ul>
       </div>
     </div>
   </div>
-</footer><div class="row no-margin bg-gray-90">
+</footer>
+<div class="row no-margin bg-gray-90">
   <div class="container">
     <div class="copyright">
       <div class="copyright-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank">Use the Classic Catalog &raquo;</a></div>
@@ -744,4 +573,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

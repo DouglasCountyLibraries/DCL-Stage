@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,6 +69,33 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
+    .box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.box-item {
+	flex: 1;
+	padding: 5px 30px 35px;
+	margin: 5px 5px;
+	background: #fff url("box-background.gif") top center repeat-x;
+	min-width: 270px;
+	border-radius: 3px;
+}
+.icon-circle-gray {
+	border: 6px solid #f5f5f5;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #fff;
+	font-size: 42px;
+	height: 100px;
+	line-height: 88px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+}
 .dropdown-menu.dropdown-menu-center {
 	width: 330px;
 }
@@ -81,7 +109,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- pull alert.txt into the general-alert div -->
+<!-- pull alert.txt into the general-alert div --> 
 <script>
 $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
@@ -269,78 +297,30 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div class="separator line-separator"><i class="fas fa-tag"></i></div>
         </div>
       </div>
-      <h4 class="roboto margin-lg-100 text-center margin-bottom-30">Welcome! If you <a href="http://getacard.org/v2/index.html" target="_blank">need a library card</a> or are a new cardholder, explore some frequently asked <a href="https://help.dcl.org/hc/en-us/categories/360000951211-Borrowing-My-Account" target="_blank">account questions here</a>. Recover your <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a> or <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a>. For quick access, add DCL.org to your <a href="#" data-toggle="modal" data-target="#modalone">mobile device's home screen</a>.</h4>
-      <!-- Modal -->
-      <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="modalone">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h3 class="text-center modal-title">Add DCL.org to Your Home Screen</h3>
-            </div>
-            <div class="padding-left-30 padding-bottom-40 padding-right-30">
-              <h2 class="roboto">iOS</h2>
-              <ol>
-                <li class="margin-bottom-10">Open Safari and go to DCL.org.</li>
-                <li class="margin-bottom-10">At the bottom of the screen, tap the <img class="v-align-top" src="ios-share.gif" alt="Safari Share Icon"> share icon.</li>
-                <li class="margin-bottom-10">Tap the <img class="v-align-top" src="ios-add.gif" alt="Safari Add Icon"> "Add to Home Screen" icon.</li>
-                <li class="margin-bottom-10">Enter a name for the homescreen icon and tap "Add."</li>
-              </ol>
-              <h2 class="roboto">Android</h2>
-              <ol>
-                <li class="margin-bottom-10">Open Chrome and go to DCL.org.</li>
-                <li class="margin-bottom-10">Tap the <img src="android-menu.gif" alt="Menu Icon"> menu button, then "Add to Home Screen."</li>
-                <li class="margin-bottom-10">Enter a name for the homescreen icon and tap "Add."</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h4 class="roboto margin-lg-100 text-center margin-bottom-30">Welcome! If you <a href="http://getacard.org/v2/index.html" target="_blank">need a library card</a> or are a new cardholder, explore some frequently asked <a href="https://help.dcl.org/hc/en-us/categories/360000951211-Borrowing-My-Account" target="_blank">account questions here</a>. Recover your <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a> or <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a>. To donate materials, please review our <a href="#donate-books-and-more">Donate Books & More</a> guidelines.</h4>
     </div>
   </div>
-  <div class="row">
-    <div class="container">
-      <div class="col-md-6">
-        <div class="padding-top-30 col-sm-3">
-          <div style="padding-top:3px;" class="icon-circle-teal"><i class="far fa-credit-card"></i></div>
-        </div>
-        <div class="col-sm-9">
-          <h2><a href="http://getacard.org/v2/index.html" target="_blank">Get a Library Card</a></h2>
-          <div><a href="http://getacard.org/v2/index.html" target="_blank">Register here</a> to get a DCL library card, or to recover your <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a> or <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a>. <a href="../library-perks/">See some of the perks</a> that come with your new card!</div>
-        </div>
+  <div class="row bg-gray-5 padding-top-30 padding-bottom-60">
+    <div class="container box-wrapper">
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="far fa-credit-card"></i></div>
+        <h3 class="text-center text-uppercase margin-top-10 font-weight-400">Library Card</h3>
+        <div><a href="http://getacard.org/v2/index.html" target="_blank">Register here</a> to get a DCL library card, or to recover your <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a> or <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a>. <a href="../library-perks/">See some of the perks</a> that come with your new card!</div>
       </div>
-      <div class="col-md-6">
-        <div class="padding-top-30 col-sm-3">
-          <div class="icon-circle-teal"><i class="fas fa-thumbs-up"></i></div>
-        </div>
-        <div class="col-sm-9">
-          <h2><a href="../request-title/">Request a Title</a></h2>
-          <div>Can't find what you're looking for in the catalog? Here are a few more options.</div>
-        </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-thumbs-up"></i></div>
+        <h3 class="text-center text-uppercase margin-top-10 font-weight-400">Request a Title</h3>
+        <div>Can't find what you're looking for in the catalog? Here are a <a href="../request-title/">few more options</a>.</div>
       </div>
-    </div>
-  </div>
-  <div class="row padding-bottom-40">
-    <div class="container">
-      <div class="col-md-6">
-        <div class="padding-top-30 col-sm-3">
-          <div style="padding-top:5px;" class="icon-circle-teal"><i class="far fa-comment-alt"></i></div>
-        </div>
-        <div class="col-sm-9">
-          <h2 class="hidden-lg hidden-md"><a href="sms:+17208938008">Text Alerts</a></h2>
-          <div class="hidden-lg hidden-md"><a href="sms:+17208938008">Text the word "signup" to 720-893-8008</a> to get account information via text. We’ll let you know when your holds are available for pickup, and when items are due or overdue. Standard texting rates apply.</div>
-          <h2 class="hidden-xs hidden-sm">Text Alerts</h2>
-          <div class="hidden-xs hidden-sm">Text the word "signup" to 720-893-8008 to get account information via text. We'll let you know when your holds are available for pickup, and when items are due or overdue. Standard texting rates apply.</div>
-        </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="far fa-comment-alt"></i></div>
+        <h4 class="text-center">Text Alerts</h4>
+        <div><a href="sms:+17208938008">Text the word "signup" to 720-893-8008</a> to get account information via text. We’ll let you know when your holds are available for pickup, and when items are due or overdue. Standard texting rates apply.</div>
       </div>
-      <div class="col-md-6">
-        <div class="padding-top-30 col-sm-3">
-          <div style="padding: 4px 0 0 3px;" class="icon-circle-teal"><i class="fas fa-truck"></i></div>
-        </div>
-        <div class="col-sm-9">
-          <h2><a class="text-left" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="To find out if you qualify, or to volunteer as a Homebound Delivery driver, call us at (303) 791-7323 and ask for the Branch Volunteer Coordinator at your home library.">Homebound Delivery</a></h2>
-          <div>Qualified cardholders can have library materials delivered right to their doors if they are unable to come to the library due to illness or disability. </div>
-        </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-truck"></i></div>
+        <h4><a class="text-center" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="To find out if you qualify, or to volunteer as a Homebound Delivery driver, call us at (303) 791-7323 and ask for the Branch Volunteer Coordinator at your home library.">Homebound Delivery</a></h4>
+        <div>Qualified cardholders can have library materials delivered right to their doors if they are unable to come to the library due to illness or disability. </div>
       </div>
     </div>
   </div>
@@ -402,6 +382,28 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center padding-top-30 margin-lg-200 margin-md-100">To pay with your Visa or MasterCard credit card, see a DCL staff member; $1&nbsp;minimum. There is a $5&nbsp;maximum per print/copy job.</div>
     </div>
   </div>
+  <div class="row bg-teal white padding-top-15 padding-bottom-40">
+    <div id="donate-books-and-more" class="container">
+      <h1 class="white text-center">Donate Books & More</h1>
+      <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. </div>
+      <div class="padding-top-15 margin-bottom-10">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
+      <ul style="padding-left: 15px;">
+        <li>Castle Rock: Wednesdays, 3-7PM</li>
+        <li>Highlands Ranch: Saturdays, 10AM-2PM</li>
+        <li>Lone Tree: Mondays, 10AM-2PM</li>
+        <li>Parker: Thursdays, 10AM-2PM</li>
+      </ul>
+      <div class="padding-top-15 margin-bottom-10">Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
+      <ul style="padding-left: 15px;">
+        <li>Items in poor condition</li>
+        <li>Textbooks older than five years</li>
+        <li>Encyclopedias</li>
+        <li>Magazines or condensed books older than three years</li>
+        <li>VHS or music cassette tapes</li>
+        <li>Computer books older than five years</li>
+      </ul>
+    </div>
+  </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
@@ -425,6 +427,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <ul>
           <li><a href="../who-we-are/">Who We Are</a></li>
           <li><a href="../foundation/">Our Foundation</a></li>
+          <li><a href="../join-our-team/">Join Our Team</a></li>
           <li><a href="../press-kit/">Press Kit</a></li>
         </ul>
       </div>
@@ -432,7 +435,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <h5>Contact</h5>
         <ul>
           <li><a href="https://help.dcl.org/" target="_blank">Help</a></li>
-            <li><a href="../join-our-team/">Join Our Team</a></li>
         </ul>
       </div>
       <div>
@@ -446,14 +448,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div>
         <h5>Support</h5>
         <ul>
-          <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate Online Now</a></li>
-          <li><a href="#">Other Ways to Give</a></li>
+          <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate Now</a></li>
+          <li><a href="../donate/">Ways to Give</a></li>
           <li><a href="../volunteer/">Volunteer</a></li>
         </ul>
       </div>
     </div>
   </div>
-</footer><div class="row no-margin bg-gray-90">
+</footer>
+<div class="row no-margin bg-gray-90">
   <div class="container">
     <div class="copyright">
       <div class="copyright-left"><a href="http://hip.douglascountylibraries.org/ipac20/ipac.jsp?profile=" target="_blank">Use the Classic Catalog &raquo;</a></div>
@@ -506,4 +509,5 @@ $(function () {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
