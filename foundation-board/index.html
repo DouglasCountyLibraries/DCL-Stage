@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,6 +77,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 10px;
 	background: #fff;
 	width: 350px;
+	border-radius: 3px;
+}
+.item.gray {
+	background: #f5f5f5;
 }
 .item.alt {
 	padding: 10px 20px 55px;
@@ -276,7 +281,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row padding-bottom-20 border-top">
+  <div class="row margin-bottom-10 border-top">
     <div class="container">
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Foundation Board of Directors</h1>
@@ -287,50 +292,33 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row no-gutter sub-nav-row">
-    <div class="sub-nav">
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border-first equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../volunteer/"><i class="fas fa-clock"></i>Give Time</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank"><i class="fas fa-dollar-sign"></i>Give Money</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../foundation/#other-ways"><i class="fas fa-edit"></i>Other Ways to Give</a></h5>
-      </div>
-      <div class="col-sm-6 col-md-3 sub-nav-item sub-nav-border equal-height">
-        <h5 class="no-margin text-uppercase"><a class="show" href="../foundation/dcl-foundation-2020-annual-report.pdf" target="_blank"><i class="fas fa-archive"></i>Annual Report</a></h5>
-      </div>
-    </div>
-  </div>
   <div id="board-directors">
-    <div class="row bg-gray-5 padding-top-40 padding-bottom-40">
+    <div class="row padding-bottom-40">
       <div class="container no-padding">
-        <h1 class="text-uppercase text-uppercase text-center no-margin-top font-weight-400">Board of Directors</h1>
         <div class="item-wrapper">
-          <div class="item">
+          <div class="item gray">
             <h3 class="no-margin-bottom">Laureen Boll</h3>
             <h6 class="text-capitalize no-margin-top">Chair</h6>
             <img alt="Laureen Boll, Chair" class="img-circle center-block" src="laureen.jpg" />
             <div class="margin-top-10">Appointed 2019</div>
           </div>
-          <div class="item">
+          <div class="item gray">
             <h3 class="no-margin-bottom">Shelly Humphreys</h3>
             <h6 class="text-capitalize no-margin-top">Vice-Chair</h6>
             <img alt="Shelly Humphreys, Vice-Chair" class="img-circle center-block" src="shelly.jpg" />
             <div class="margin-top-10">Appointed 2017</div>
           </div>
-          <div class="item">
+          <div class="item gray">
             <h3>Linda Boyle</h3>
             <img alt="Linda Boyle" class="align-fix img-circle center-block" src="linda.jpg" />
             <div class="margin-top-10">Appointed 2019</div>
           </div>
-          <div class="item">
+          <div class="item gray">
             <h3>Krystie Kania</h3>
             <img alt="Krystie Kania" class="img-circle center-block" src="krystie.jpg" />
             <div class="margin-top-10">Appointed 2019</div>
           </div>
-          <div class="item">
+          <div class="item gray">
             <h3>Dawn Vaughn</h3>
             <img alt="Dawn Vaughn" class="img-circle center-block" src="dawn.jpg" />
             <div class="margin-top-10">Appointed 2021</div>
@@ -338,7 +326,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </div>
-    <div class="row bg-gray-10 padding-top-40 padding-bottom-40">
+    <div class="row bg-gray-5 padding-top-40 padding-bottom-40">
       <div class="container">
         <h1 class="text-uppercase text-center no-margin-top font-weight-400">Foundation Leadership</h1>
         <div class="item-wrapper">
@@ -370,12 +358,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row text-center padding-top-40 padding-bottom-40">
+  <div class="row white bg-teal text-center padding-top-40 padding-bottom-40">
     <div class="container">
-      <h4 class="no-margin-top">The Douglas County Libraries Foundation delivers funding and resources to help sustain the Douglas County Libraries to positively impact our community members so they can grow and thrive.</h4>
-      <h2 class="roboto no-margin">Questions or comments?</h2>
+      <h2 class="white roboto no-margin">Questions or comments?</h2>
       <a href="#" type="button" class="margin-10 btn btn-lg text-uppercase btn-primary" data-toggle="modal" data-target="#mediamodal">Contact the Foundation</a>
-      <div>or call <a href="tel:+17203489509" class="margin-5 font-weight-400 text-uppercase">(720) 348-9509</a></div>
+      <div>or call <a href="tel:+17203489509" class="white text-nowrap">(720) 348-9509</a></div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="mediamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -491,4 +478,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

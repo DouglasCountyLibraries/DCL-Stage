@@ -67,23 +67,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.sub-list {
-	list-style-type: circle;
-}
-.giving-row {
-	background: #0289a7;
-}
-.red-text {
-	color: #000;
-	font-weight: 400;
-}
-.red-text a:active, .red-text a:hover, .red-text a:focus {
-	color: #873928;
-	text-decoration: none;
-}
-.photo-row {
-	background: #0289a7;
-}
 .item-wrapper {
 	display: flex;
 	align-content: center;
@@ -92,53 +75,32 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .item {
 	padding-bottom: 30px;
 }
-.carousel-cell {
+.box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.box-item {
+	flex: 1;
+	padding: 5px 30px 35px;
+	margin: 5px 35px;
+	background: #fff url("box-background.gif") top center repeat-x;
+	max-width: 325px;
+	border-radius: 3px;
+}
+.icon-circle-gray {
+	border: 6px solid #f5f5f5;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #fff;
+	font-size: 42px;
+	height: 100px;
+	line-height: 90px;
+	margin: 0 auto;
 	text-align: center;
-	width: 100%;
-}
-.carousel-cell:before {
-	display: block;
-	text-align: center;
-}
-/* big buttons, no circle */
-.flickity-prev-next-button {
-	width: 50px;
-	height: 50px;
-	background: transparent;
-}
-.flickity-prev-next-button:hover {
-	background: transparent;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-	fill: #efeeed;
-}
-.flickity-prev-next-button.no-svg {
-	color: #efeeed;
-}
-.flickity-prev-next-button {
-	top: 30%;
-}
-.flickity-viewport {
-	transition: height 0.6s;
-}
-
-@media (max-width: 1200px) {
-.text-center.headings {
-	position: relative;
-	top: -53px;
-}
-.tree-background {
-	background: #0e74bc;
-}
-.feature-one {
-	font-size: 150px;
-	line-height: 175px;
-}
-.feature-two {
-	font-size: 90px;
-	line-height: 0px;
-}
+	width: 100px;
 }
 
 @media (min-width: 480px) {
@@ -163,6 +125,19 @@ border-left: 1px solid rgba(255,255,255,.6);
 }
 .item {
 width: 25%;
+}
+}
+@media (min-width: 1200px) {
+.margin-lg-185 {
+padding-left: 185px;
+padding-right: 185px;
+}
+}
+@media (max-width: 992px) {
+.box-item {
+flex-direction: column;
+min-width: 100%;
+margin: 5px;
 }
 }
 </style>
@@ -349,15 +324,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="modal fade" id="cgdModal-pops" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog cgd-modal" role="document">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="text-center cgd-background">
-        <div class="grateful-modal">Today is Colorado Gives Day!</div>
-        <div class="little-modal">Please support the DCL Foundation by <a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">donating today</a>.</div>
-      </div>
-    </div>
-  </div>
   <div class="row padding-bottom-20 border-top">
     <div class="container">
       <div class="text-center">
@@ -365,31 +331,31 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="separator-container">
           <div class="separator line-separator"><i class="fas fa-bookmark"></i></div>
         </div>
-        <h4 class="roboto">Your support of the Douglas County Libraries Foundation helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. Our libraries are critical to education, neighborhood development, workforce development, and economic development. </h4>
+        <h4 class="roboto margin-lg-185">The Douglas County Libraries Foundation delivers funding and resources to help sustain the Douglas County Libraries to positively impact our community members so they can grow and thrive.</h4>
       </div>
     </div>
   </div>
-  <div class="row photo-row white">
+  <div class="row">
     <div class="container-md no-gutter no-padding">
       <div class="item-wrapper">
         <div class="item">
           <div id="box-one"></div>
-          <h2 class="roboto text-center white">Scholarships & Support</h2>
-          <div class="margin-left-15 margin-right-15">The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a class="white text-underline" href="../camp-dcl/">Camp DCL</a> for kids and <a class="white text-underline" href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+17203489509" class="white">(720) 348-9509</a>.</div>
+          <h3 class="text-center font-weight-400">Scholarships & Support</h3>
+          <div class="margin-left-15 margin-right-15">The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a href="../camp-dcl/">Camp DCL</a> for kids and <a href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+17203489509" class="text-nowrap">(720) 348-9509</a>.</div>
         </div>
         <div class="item">
           <div id="box-two"></div>
-          <h2 class="roboto text-center white"><a class="white" href="../cuddle-up-and-read/">Cuddle Up & Read</a></h2>
-          <div class="margin-left-15 margin-right-15">Through partnerships with area hospitals, <a class="white text-underline" href="../cuddle-up-and-read/">Cuddle Up & Read</a> provides new parents with a fun and meaningful introduction to the library and our early literacy services. The program includes small gifts for mom and baby and an invitation to get baby a library card. We also distribute DCL growth charts, complete with reading suggestions and library service information, to parents through participating pediatricians’ offices across the county. </div>
+          <h3 class="text-center font-weight-400">Cuddle Up & Read</h3>
+          <div class="margin-left-15 margin-right-15">Through partnerships with area hospitals, <a href="../cuddle-up-and-read/">Cuddle Up & Read</a> provides new parents with a fun and meaningful introduction to the library and our early literacy services. The program includes small gifts for mom and baby and an invitation to get baby a library card. We also distribute DCL growth charts, complete with reading suggestions and library service information, to parents through participating pediatricians’ offices across the county. </div>
         </div>
         <div class="item">
           <div id="box-three"></div>
-          <h2 class="roboto text-center white"><a class="white" href="../summer-reading/">Summer Reading</a></h2>
-          <div class="margin-left-15 margin-right-15">Each year, Douglas County Libraries' <a class="text-underline white" href="../summer-reading/">summer reading program</a> encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
+          <h3 class="text-center font-weight-400">Summer Reading</h3>
+          <div class="margin-left-15 margin-right-15">Each year, Douglas County Libraries' <a href="../summer-reading/">summer reading program</a> encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
         </div>
         <div id="exploration-stations" class="item">
           <div id="box-four"></div>
-          <h2 class="roboto text-center white">Exploration Stations</h2>
+          <h3 class="text-center font-weight-400">Exploration Stations</h3>
           <div class="margin-left-15 margin-right-15">The Foundation supports exciting new ways to inspire a love of discovery and connection in our community, and one of those ways is through Exploration Stations. Located at both Parker Adventist and Castle Rock Adventist hospitals, these interactive areas for kids are located near the family birth centers. The stations include interactive software programs, books, puzzles, activities, and toys that provide learning opportunities as well as entertainment for children.</div>
         </div>
       </div>
@@ -408,46 +374,37 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['station-one.jpg', 'station-two.jpg', 'station-three.jpg', 'station-four.jpg', 'station-five.jpg', 'station-six.jpg'];
     $('<img alt="Exploration Stations" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
 </script>
-  <div class="row bg-lavender">
-    <div class="container">
-      <div class="text-center padding-top-30 padding-bottom-30">
-        <h2 class="no-margin"><a class="white" href="../foundation-board/">Foundation Board of Directors</a></h2>
+  <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
+    <div class="container box-wrapper">
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-hands-helping"></i></div>
+        <h3 class="font-weight-400 text-center">Ways to Give</h3>
+        <div>Your <a href="../donate/index.html">support of the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </div>
+      </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-university"></i></div>
+        <h3 class="font-weight-400 text-center">Board of Directors</h3>
+        <div>The <a href="../foundation-board/">Foundation’s Board of Directors</a> oversees the <a href="foundation-annual-report.pdf">business and affairs</a> of the Foundation and the <a href="five-year-foundation-report.pdf">fundraising activities</a> that are vital to supporting all of the programs and services of the district. </div>
       </div>
     </div>
   </div>
-  <div style="background-color: #0289a7;" class="row text-center padding-top-40 padding-bottom-40">
+  <div class="row white bg-teal text-center padding-top-40 padding-bottom-40">
     <div class="container">
-      <h4 class="white no-margin-top">The Douglas County Libraries Foundation delivers funding and resources to help sustain the Douglas County Libraries to positively impact our community members so they can grow and thrive.</h4>
       <h2 class="white roboto no-margin">Questions or comments?</h2>
-      <a href="#contact" type="button" class="margin-top-15 margin-bottom-10 btn btn-lg btn-primary" data-toggle="modal" data-target="#mediamodal">Contact the Foundation</a>
-      <div class="white">or call <a href="tel:+17203489509" class="white">(720) 348-9509</a></div>
+      <a href="#" type="button" class="margin-10 btn btn-lg text-uppercase btn-primary" data-toggle="modal" data-target="#mediamodal">Contact the Foundation</a>
+      <div>or call <a href="tel:+17203489509" class="white text-nowrap">(720) 348-9509</a></div>
     </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="mediamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <h3 class="text-center modal-title">Contact the Foundation</h3>
-        </div>
-        <div class="modal-body">
-          <iframe class="embed-responsive-item" src="https://form.jotform.com/92044974642159" frameborder="0" style="width: 100%;height:400px;border:none;" scrolling="no"> </iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal fade" id="schedule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <h3 class="text-center modal-title">Schedule a Donation</h3>
-        </div>
-        <div class="modal-body">
-          <iframe class="embed-responsive-item" src="https://form.jotform.com/202655299471160" frameborder="0" style="width: 100%;height:655px;border:none;" scrolling="no"> </iframe>
+    <!-- Modal -->
+    <div class="modal fade" id="mediamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h3 class="text-center modal-title">Contact the Foundation</h3>
+          </div>
+          <div class="modal-body">
+            <iframe class="embed-responsive-item" src="https://form.jotform.com/92044974642159" frameborder="0" style="width: 100%;height:435px;border:none;" scrolling="no"> </iframe>
+          </div>
         </div>
       </div>
     </div>
