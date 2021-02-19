@@ -69,7 +69,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-    .box-wrapper {
+.box-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -78,9 +78,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .box-item {
 	flex: 1;
 	padding: 5px 30px 35px;
-	margin: 5px 5px;
+	margin: 5px 35px;
 	background: #fff url("box-background.gif") top center repeat-x;
-	min-width: 270px;
+	min-width: 490px;
+	border-radius: 3px;
+}
+.print-item {
+	flex: 1;
+	padding: 5px 30px 35px;
+	margin: 5px;
+	background: #fff url("box-background.gif") top center repeat-x;
+	max-width: 400px;
 	border-radius: 3px;
 }
 .icon-circle-gray {
@@ -304,40 +312,42 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="container box-wrapper">
       <div class="box-item">
         <div class="icon-circle-gray"><i class="far fa-credit-card"></i></div>
-        <h3 class="text-center text-uppercase margin-top-10 font-weight-400">Library Card</h3>
+        <h3 class="text-center margin-top-10 font-weight-400">Get a Library Card</h3>
         <div><a href="http://getacard.org/v2/index.html" target="_blank">Register here</a> to get a DCL library card, or to recover your <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a> or <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a>. <a href="../library-perks/">See some of the perks</a> that come with your new card!</div>
       </div>
       <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-thumbs-up"></i></div>
-        <h3 class="text-center text-uppercase margin-top-10 font-weight-400">Request a Title</h3>
+        <div class="icon-circle-gray"><i class="fas fa-search"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Request a Title</h3>
         <div>Can't find what you're looking for in the catalog? Here are a <a href="../request-title/">few more options</a>.</div>
       </div>
       <div class="box-item">
         <div class="icon-circle-gray"><i class="far fa-comment-alt"></i></div>
-        <h4 class="text-center">Text Alerts</h4>
-        <div><a href="sms:+17208938008">Text the word "signup" to 720-893-8008</a> to get account information via text. We’ll let you know when your holds are available for pickup, and when items are due or overdue. Standard texting rates apply.</div>
+        <h3 class="text-center margin-top-10 font-weight-400">Text Alerts</h3>
+        <div>Text the word "signup" to <a class="text-nowrap" href="sms:+17208938008?&body=signup">720-893-8008</a> to get account information via text. We’ll let you know when your holds are available for pickup, and when items are due or overdue. Standard texting rates apply.</div>
       </div>
       <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-truck"></i></div>
-        <h4><a class="text-center" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="To find out if you qualify, or to volunteer as a Homebound Delivery driver, call us at (303) 791-7323 and ask for the Branch Volunteer Coordinator at your home library.">Homebound Delivery</a></h4>
-        <div>Qualified cardholders can have library materials delivered right to their doors if they are unable to come to the library due to illness or disability. </div>
+        <div class="icon-circle-gray"><i class="fas fa-truck-pickup"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Homebound Delivery</h3>
+        <div><a class="text-center" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="To find out if you qualify, or to volunteer as a Homebound Delivery driver, call us at (303) 791-7323 and ask for the Branch Volunteer Coordinator at your home library.">Qualified cardholders</a> can have library materials delivered right to their doors if they are unable to come to the library due to illness or disability. </div>
       </div>
     </div>
   </div>
   <div id="fines-fees-borrowing" class="row white bg-teal padding-top-15 padding-bottom-60">
-    <div class="container">
-      <h1 class="white text-center">Fines, Fees & Borrowing</h1>
-      <div class="text-center padding-top-15 margin-lg-200">Most materials check out for three weeks. Magazines and DVDs under 200 minutes check out for one week, and each customer may have up to 200 physical items checked out at any one time. The late fee for most materials is 20 cents per day, with a three&#8209;day grace period.</div>
-      <div class="text-center margin-top-30"> <a href="https://dcl.bibliocommons.com/fines" target="_blank" class="text-uppercase btn btn-primary">Pay Your Fines</a> <a href="../fines-fees-borrowing/" class="white margin-left-10 text-uppercase">Learn More &raquo;</a></div>
+    <div class="container text-center margin-lg-150">
+      <h1 class="white">Fines, Fees & Borrowing</h1>
+      <div>Most materials check out for three weeks. Magazines and DVDs under 200 minutes check out for one week, and each customer may have up to 200 physical items checked out at any one time. The late fee for most materials is 20 cents per day, with a three&#8209;day grace period.</div>
+      <div class="text-center margin-top-30"> <a href="https://dcl.bibliocommons.com/fines" target="_blank" class="text-uppercase btn btn-primary">Pay Your Fines</a> <a href="../fines-fees-borrowing/" class="white margin-left-10 text-uppercase font-weight-400">Learn More &raquo;</a></div>
     </div>
   </div>
-  <div id="print-copy" class="row padding-top-15">
-    <div class="container">
-      <h1 class="text-center">Print &amp; Copy</h1>
-      <div class="col-md-7 margin-lg-30">
-        <h2 class="roboto">Printing</h2>
-        <div>Print on the library's public printers during library hours regardless of device, network or location. Large documents and PDFs may take a few minutes to print; jobs not picked up within two hours of being sent will be deleted.</div>
-        <h2 class="roboto">Printing Prices</h2>
+  <div id="print-copy" class="row bg-gray-5 padding-top-15">
+    <div class="container text-center margin-lg-150">
+      <h1>Print &amp; Copy</h1>
+      <div>Print on the library's public printers during library hours regardless of device, network or location. Large documents and PDFs may take a few minutes to print; jobs not picked up within two hours of being sent will be deleted.</div>
+    </div>
+    <div class="container box-wrapper">
+      <div class="print-item">
+        <div class="icon-circle-gray"><i class="fas fa-print"></i></div>
+        <h3 class="font-weight-400 text-center">Printing Prices</h3>
         <div>Letter size
           <ul>
             <li>Black & white: 10 cents per page; 20 cents per double-sided page</li>
@@ -345,8 +355,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </ul>
         </div>
       </div>
-      <div class="col-md-5 margin-lg-30">
-        <h2 class="roboto">Copying Prices</h2>
+      <div class="print-item">
+        <div class="icon-circle-gray"><i class="fas fa-copy"></i></div>
+        <h3 class="font-weight-400 text-center">Copying Prices</h3>
         <div>Letter & legal size
           <ul>
             <li>Black & white: 10 cents per page; 20 cents per double-sided page</li>
@@ -362,9 +373,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-40">
+  <div class="row bg-gray-5 padding-bottom-40">
     <div class="container">
-      <div class="dropdown text-center"> <a data-toggle="dropdown" class="btn btn-primary text-uppercase margin-top-15 dropdown-toggle">Print Now <span class="caret"></span></a>
+      <div class="dropdown text-center"> <a data-toggle="dropdown" class="btn btn-primary text-uppercase margin-top-30 dropdown-toggle">Print Now <span class="caret"></span></a>
         <div class="dropdown-menu dropdown-menu-center">
           <div style="border-bottom:1px solid #ccc;" class="padding-15 text-center large-text">Choose a Location:</div>
           <div class="padding-15 text-capitalize font-weight-400 center-column">
@@ -379,29 +390,37 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </div>
         </div>
       </div>
-      <div class="text-center padding-top-30 margin-lg-200 margin-md-100">To pay with your Visa or MasterCard credit card, see a DCL staff member; $1&nbsp;minimum. There is a $5&nbsp;maximum per print/copy job.</div>
+      <div class="text-center padding-top-15 margin-bottom-10 margin-lg-200 margin-md-100">To pay with your Visa or MasterCard credit card, see a DCL staff member; $1&nbsp;minimum. There is a $5&nbsp;maximum per print/copy job.</div>
     </div>
   </div>
-  <div class="row bg-teal white padding-top-15 padding-bottom-40">
+  <div style="padding: 15px 0 50px;" class="row bg-teal white">
     <div id="donate-books-and-more" class="container">
       <h1 class="white text-center">Donate Books & More</h1>
-      <div>Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. </div>
-      <div class="padding-top-15 margin-bottom-10">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
-      <ul style="padding-left: 15px;">
-        <li>Castle Rock: Wednesdays, 3-7PM</li>
-        <li>Highlands Ranch: Saturdays, 10AM-2PM</li>
-        <li>Lone Tree: Mondays, 10AM-2PM</li>
-        <li>Parker: Thursdays, 10AM-2PM</li>
-      </ul>
-      <div class="padding-top-15 margin-bottom-10">Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
-      <ul style="padding-left: 15px;">
-        <li>Items in poor condition</li>
-        <li>Textbooks older than five years</li>
-        <li>Encyclopedias</li>
-        <li>Magazines or condensed books older than three years</li>
-        <li>VHS or music cassette tapes</li>
-        <li>Computer books older than five years</li>
-      </ul>
+      <div class="text-center">Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the Douglas County Libraries Foundation. </div>
+        
+        <div class="margin-lg-100">
+      <div class="col-md-7">
+        <div class="padding-top-15 margin-bottom-10">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
+        <ul>
+          <li>Castle Rock: Wednesdays, 3-7PM</li>
+          <li>Highlands Ranch: Saturdays, 10AM-2PM</li>
+          <li>Lone Tree: Mondays, 10AM-2PM</li>
+          <li>Parker: Thursdays, 10AM-2PM</li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <div class="padding-top-15 margin-bottom-10">Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
+        <ul>
+          <li>Items in poor condition</li>
+          <li>Textbooks older than five years</li>
+          <li>Encyclopedias</li>
+          <li>Magazines or condensed books older than three years</li>
+          <li>VHS or music cassette tapes</li>
+          <li>Computer books older than five years</li>
+        </ul>
+      </div>
+        
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
