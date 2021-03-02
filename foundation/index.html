@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,6 +67,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
+.give-row {
+	background: #f5f5f5 url("row-background.gif") top center repeat-x;
+}
 .box-wrapper, .item-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -84,6 +88,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: #fff url("box-background.gif") top center repeat-x;
 	max-width: 325px;
 	border-radius: 3px;
+}
+.icon-circle-gray-lg {
+	border: 6px solid #f5f5f5;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #fff;
+	font-size: 70px;
+	height: 150px;
+	line-height: 135px;
+	margin: 0 auto;
+	text-align: center;
+	width: 150px;
 }
 .icon-circle-gray {
 	border: 6px solid #f5f5f5;
@@ -309,7 +326,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row bg-gray-5 give-row padding-bottom-15">
+    <div class="container text-center">
+      <div class="icon-circle-gray-lg"><i class="fas fa-hands-helping"></i></div>
+      <h2 class="font-weight-400 text-uppercase margin-top-10">Ways to Give</h2>
+      <h4 class="margin-lg-100">Your <a href="../donate/">support of the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </h4>
+    </div>
+  </div>
+  <div class="row bg-gray-5 padding-bottom-30">
     <div class="container">
       <div class="item-wrapper">
         <div class="item">
@@ -348,6 +372,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['station-one.jpg', 'station-two.jpg', 'station-three.jpg', 'station-four.jpg', 'station-five.jpg', 'station-six.jpg'];
     $('<img alt="Exploration Stations" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
 </script>
+    
+    <!--
+    
   <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
     <div class="container box-wrapper">
       <div class="box-item">
@@ -362,6 +389,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
+    -->
+    
+    
   <div class="row white bg-teal text-center padding-top-40 padding-bottom-40">
     <div class="container">
       <h2 class="white roboto no-margin">Questions or comments?</h2>
@@ -504,4 +534,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
