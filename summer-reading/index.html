@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
@@ -22,9 +22,9 @@
 
 <!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Donate | Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="The Douglas County Libraries Foundation delivers funding and resources to help sustain the Douglas County Libraries to positively impact our community members so they can grow and thrive.">
+<title>Summer Reading | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Summer Reading, Summer Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
+<meta name="description" content="Summer Reading begins June 2020! Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -64,72 +64,295 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700&display=swap" rel="stylesheet">
 <style>
-.box-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+.banner-row {
+    background: #329b8d;
+    padding-bottom: 45px;
 }
-.box-item {
-	flex: 1;
-	padding: 5px 30px 35px;
-	margin: 5px 35px;
-	background: #fff url("box-background.gif") top center repeat-x;
-	min-width: 490px;
-	border-radius: 3px;
+.banner-row-image {
+    background: linear-gradient(#cf372e 0%, #fed973 20%, #eb7545 50%, #ef7175 60%, #cf372e 100%);
+    background-size: 300% 300%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
-.icon-circle-gray {
-	border: 6px solid #f5f5f5;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #4f878c;
-	background-color: #fff;
-	font-size: 42px;
-	height: 100px;
-	line-height: 90px;
-	margin: 0 auto;
-	text-align: center;
-	width: 100px;
+@-webkit-keyframes AnimationName {
+0% {
+background-position:0% 75%
+}
+50% {
+background-position:100% 25%
+}
+100% {
+background-position:0% 75%
+}
+}
+@keyframes AnimationName {
+0% {
+background-position:0% 75%
+}
+50% {
+background-position:100% 25%
+}
+100% {
+background-position:0% 75%
+}
+}
+.source {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+}
+h1.source, h2.source {
+    color: #17144b;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+}
+h1.blue.source, h2.blue.source {
+    color: #5cbdb9;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+}
+.smaller, .smaller:hover, .smaller:focus {
+    font-size: .85em;
+    font-weight: 400;
+    text-decoration: none;
+}
+.green-row {
+    background: #329b8d;
+    padding: 40px 0 25px;
+}
+.orange-row {
+    background: #FBB040;
+    color: #17144b;
+    padding: 35px 0 30px;
+}
+.orange-row a {
+    color: #17144b;
+}
+.blue-row {
+    background: #17144b;
+    padding: 40px 0 65px;
+    color: #5cbdb9;
+}
+.blue-row a {
+    color: #5cbdb9;
+}
+.dot-row {
+    background: #329b8d;
+}
+.static-container {
+    position: relative;
+}
+.button-group {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.one a, .two a, .three a {
+    color: #17144b;
+    padding: 5px 0;
+    border: 4px solid rgba(255,255,255,.8);
+    border-radius: 2px;
+    width: 300px;
+    display: block;
+    margin: 8px 0;
+    box-shadow: 0px 4px 4px rgba(23,20,75,.6);
+}
+.one a:hover, .one a:focus, .two a:hover, .two a:focus, .three a:hover, .three a:focus {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    border: 4px solid rgba(255,255,255,1);
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    box-shadow: 0px 4px 16px rgba(23,20,75,.9);
+}
+.one a {
+    background: #ef7376;
+}
+.one a:hover {
+    background: #cf372e;
+}
+.two a {
+    background: #5cbdb9;
+}
+.two a:hover {
+    background: #17144b;
+}
+.three a {
+    background: #FBB040;
+}
+.three a:hover {
+    background: #f07c1f;
+}
+.jello:hover {
+    -webkit-animation: jello-vertical 1s both;
+    animation: jello-vertical 1s both;
+}
+@-webkit-keyframes jello-vertical {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+30% {
+-webkit-transform: scale3d(0.75, 1.15, 1);
+transform: scale3d(0.75, 1.15, 1);
+}
+40% {
+-webkit-transform: scale3d(1.15, 0.75, 1);
+transform: scale3d(1.15, 0.75, 1);
+}
+50% {
+-webkit-transform: scale3d(0.85, 1.05, 1);
+transform: scale3d(0.85, 1.05, 1);
+}
+65% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+75% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+transform: scale3d(0.95, 1.05, 1);
+}
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+}
+@keyframes jello-vertical {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+30% {
+-webkit-transform: scale3d(0.75, 1.15, 1);
+transform: scale3d(0.75, 1.15, 1);
+}
+40% {
+-webkit-transform: scale3d(1.15, 0.75, 1);
+transform: scale3d(1.15, 0.75, 1);
+}
+50% {
+-webkit-transform: scale3d(0.85, 1.05, 1);
+transform: scale3d(0.85, 1.05, 1);
+}
+65% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+75% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+transform: scale3d(0.95, 1.05, 1);
+}
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+}
+.fish-wrapper {
+    display: flex;
+    align-items: center;
+}
+.fish-box {
+    flex-grow: 4;
+}
+.text-box {
+    padding: 15px;
+    width: 30%;
+}
+.fish-row a {
+    color: #5cbdb9;
+}
+.fish-row {
+    background: #17144b url("fish-background.jpg") repeat-x bottom center;
+    color: #5cbdb9;
+    padding-bottom: 30px;
+    -webkit-animation: slide 90s linear infinite;
+    animation: slide 90s linear infinite;
+}
+@-webkit-keyframes slide {
+from {
+background-position: 0 0;
+}
+to {
+background-position: -2500px 0;
+}
+}
+@keyframes slide {
+from {
+background-position: 0 0;
+}
+to {
+background-position: -2500px 0;
+}
+}
+.swimming {
+    animation: swim linear 25s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: swim linear 25s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes swim {
+0% {
+opacity:1;
+transform:  translate(0px, 0px) scaleX(1.00) scaleY(1.00);
+}
+20% {
+opacity:0.9;
+transform:  translate(5px, 20px) scaleX(0.90) scaleY(0.90);
+}
+60% {
+opacity:0.8;
+transform:  translate(-8px, -25px) scaleX(0.60) scaleY(0.60);
+}
+90% {
+opacity:1;
+transform:  translate(10px, -25px) scaleX(1.00) scaleY(1.00);
+}
+100% {
+opacity:1;
+transform:  translate(0px, 0px) scaleX(1.00) scaleY(1.00);
+}
+}
+@-webkit-keyframes swim {
+0% {
+opacity:1;
+-webkit-transform:  translate(0px, 0px) scaleX(1.00) scaleY(1.00);
+}
+20% {
+opacity:0.9;
+-webkit-transform:  translate(5px, 20px) scaleX(0.90) scaleY(0.90);
+}
+60% {
+opacity:0.8;
+-webkit-transform:  translate(-8px, -25px) scaleX(0.60) scaleY(0.60);
+}
+90% {
+opacity:1;
+-webkit-transform:  translate(10px, -25px) scaleX(1.00) scaleY(1.00);
+}
+100% {
+opacity:1;
+-webkit-transform:  translate(0px, 0px) scaleX(1.00) scaleY(1.00);
+}
 }
 
-@media (max-width: 992px) {
-.box-item {
-	flex-direction: column;
-	min-width: 100%;
-	margin: 5px;
+@media (min-width: 992px) {
+.button-group {
+    font-size: 30px;
+    text-transform: uppercase;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
 }
+.fish-row {
+    padding-bottom: 100px;
 }
-.carousel-cell {
-	text-align: center;
-	width: 100%;
+.banner-row-image {
+    border-bottom: 45px solid #329B8D;
 }
-.carousel-cell:before {
-	display: block;
-	text-align: center;
-}
-/* big buttons, no circle */
-.flickity-prev-next-button {
-	width: 50px;
-	height: 50px;
-	background: transparent;
-}
-.flickity-prev-next-button:hover {
-	background: transparent;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-	fill: #efeeed;
-}
-.flickity-prev-next-button.no-svg {
-	color: #efeeed;
-}
-.flickity-prev-next-button {
-	top: 30%;
-}
-.flickity-viewport {
-	transition: height 0.6s;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -315,185 +538,39 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row padding-bottom-20 border-top">
+  <div class="row banner-row">
+    <div class="banner-row-image"><img class="hidden-sm hidden-md hidden-lg img-responsive center-block" src="summer-reading-small.png" alt="Summer Reading"><img class="hidden-xs img-responsive center-block" src="summer-reading.png" alt="Summer Reading"></div>
+    <div class="static-container container">
+      <ul class="source list-inline text-center button-group">
+        <li class="one jello"><a href="registration/">Registration</a></li>
+        <li class="three jello"><a href="scrapbook/">Scrapbook</a></li>
+        <br>
+        <li class="jello"><a href="jokes.pdf" target="_blank" class="white smaller">Splishy-Splashy Jokes</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row orange-row">
     <div class="container">
-      <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Ways to Give</h1>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fas fa-hands-helping"></i></div>
-        </div>
-        <h4 class="roboto margin-lg-100">Your support of the <a href="../foundation/">Douglas County Libraries Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries.</h4>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5 padding-top-30 padding-bottom-40">
-    <div class="container box-wrapper">
-      <div class="box-item">
-        <div class="icon-circle-gray"><i class="far fa-envelope-open"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Donate Today</h3>
-        <ul>
-          <li>Donate now via <a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788#1" target="_blank">ColoradoGives.org</a>.</li>
-          <li>
-            <div>Mail a check<span class="asterisk-space">*</span> payable to Douglas County Libraries Foundation to:</div>
-            <div style="margin-left: 25px" class="margin-top-5 margin-bottom-5">Douglas County Libraries Foundation<br>
-              100 S. Wilcox St.<br>
-              Castle Rock, CO 80104</div>
-            <div><span class="asterisk-space">*</span>Include an optional note on the check to designate your donation for a specific program or branch.</div>
-          </li>
-        </ul>
-      </div>
-      <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-sun"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Everyday Giving</h3>
-        <ul class="no-margin-bottom">
-          <li>Enroll in <a href="#soopers" data-toggle="modal" data-target="#king-soopers">King Soopers Community Rewards</a>, link your Shopper's Card, and the Foundation will earn donations at no added cost to you.</li>
-          <li>Shop using <a href="https://smile.amazon.com/ch/84-1207775" target="_blank">AmazonSmile</a> and Amazon will donate .5% of eligible purchases to the Foundation.</li>
-          <li>The Foundation <a href="../library-basics/#donate-books-and-more">collects donations</a> of new and used books and offers them for sale at discounted prices. <a href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A3DWH3KNEEAD5M&merchant=A3DWH3KNEEAD5M&redirect=true" target="_blank">Shop our bookstore now!</a></li>
-        </ul>
-      </div>
-      <div id="additional-ways" class="box-item">
-        <div class="icon-circle-gray"><i class="far fa-calendar-check"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Additional Ways to Support</h3>
-        <ul>
-          <li>Purchase <a href="naming-rights.pdf" target="_blank">Naming Rights</a> to one of our many opportunities at most branches.</li>
-          <li>Honor your loved one with a <a href="#bookplate" data-toggle="modal" data-target="#bookplate">memorial bookplate</a>.</li>
-          <li>Attend our annual Fête des Fables Gala.</li>
-          <li>Contact us for information about Tribute Gifts, Workplace Giving and/or Matching Gifts.</li>
-          <li>Donate all or part of your <a href="#refund" data-toggle="modal" data-target="#refund">Colorado state tax refund</a>.</li>
-        </ul>
-      </div>
-      <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-coins"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Planned & Legacy Giving</h3>
-        <div>Designate a gift to the Foundation in your will or trust to help ensure the success of our libraries for generations to come:</div>
-        <ul class="margin-top-5 margin-bottom-5">
-          <li>Tax ID: 84-1207775</li>
-          <li>Address (if needed):</li>
-          <div style="margin-left: 25px" class="margin-top-5 margin-bottom-5">Douglas County Libraries Foundation<br>
-            100 S. Wilcox St.<br>
-            Castle Rock, CO 80104</div>
-        </ul>
-      </div>
-      <h5 class="padding-top-30 no-margin">Questions? Contact Rachel Malis at <a href="tel:+13037643311">(303) 764-3311</a>.</h5>
-    </div>
-  </div>
-  <div class="row white bg-teal text-center padding-top-40 padding-bottom-60">
-    <div class="container margin-lg-150">
-      <h1 class="no-margin jumbo-text white text-uppercase font-weight-400">Other Ways to Give</h1>
-      <h4 class="white no-margin-top">Give of Your Time or Donate Materials</h4>
-      <div>Douglas County Libraries gratefully accepts donations of new and used books, music CDs, and DVDs. Before donating, please <a class="white text-underline" href="../library-basics/#donate-books-and-more">review these guidelines</a>. Volunteering at the library helps to provide resources for learning and leisure to improve the lives of the people in our communities. Learn more about <a class="white text-underline" href="../volunteer/">volunteer opportunities</a> at DCL.</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container margin-lg-200 text-center padding-top-15 padding-bottom-15">
-      <h1 class="no-margin-bottom jumbo-text text-uppercase font-weight-400">Funding the Future</h1>
-      <h4 class="no-margin-top">Giving Now for Generations to Come</h4>
-      <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 7000 }'>
-        <div class="carousel-cell">
-          <div><img alt="Niki Weninger" class="img-circle" src="niki.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"Some children came out of a classroom, and they were so full of joy! The library so inspired these kids! If we could capture that magic and take it into our workplace, or home, or community, how different would this world be?" <small>Niki Weninger</small></blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div><img alt="Joe Henry" class="img-circle" src="joe.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"A library is so important to the growth of our children, and to us, as individuals." <small>Joe Henry</small></blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div><img alt="Opp Slawson" class="img-circle" src="opp.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"The library's literacy program helped me interact with people and, more importantly, gave me the opportunity to teach. When I came to this country, I didn't speak English. Someone took the time to teach me. That's how the library adds magic to my life." <small>Opp Slawson</small></blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div><img alt="Suresh Damle" class="img-circle" src="suresh.jpg" />
-            <div class="padding-top-15">
-              <blockquote>"People, whether they are young or old, can all get involved in libraries. The library is not something that's only limited to certain age groups." <small>Suresh Damle</small></blockquote>
-            </div>
-          </div>
+      <div class="text-center margin-lg-200 margin-md-100">
+        <div class="pull-right hidden-xs"><img class="img-responsive" src="surfboards.png" alt="Surfboards"></div>
+        <h2 class="source">Welcome to Splash Into Summer!</h2>
+        <div class="text-left-sm large-text">
+          <div>You're invited to have a great summer: reading, soaking up the sun, and keeping cool while enjoying tons of fun summer activities.</div>
+          <div class="margin-top-15 margin-bottom-30"> We've suggested 1000 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the reading log. We aren't set on you reading 1000 minutes, we just want you to read and have fun while doing it! </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row giving-row">
-    <div class="container padding-bottom-60">
-      <div class="text-center">
-        <div><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788#1" target="_blank"><img src="cg-logo.png" alt="Colorado Gives"></a></div>
+  <div class="row fish-row">
+    <div class="container-md">
+      <h2 class="blue source text-center padding-top-15 padding-bottom-30">Help us meet our community goal of 8 million minutes read!</h2>
+      <div class="fish-wrapper margin-lg-100">
+        <div class="large-text text-box boxes hidden-xs hidden-sm">Watch our school of fish grow and help us meet our goal. If we meet our goal, the <a class="text-underline" href="../foundation/">Douglas County Libraries Foundation</a> will donate $1000 to the COVID-19 Recovery Fund through the Douglas County Community Foundation (DCCF).</div>
+        <div class="meter-box boxes"><img class="img-responsive image-center" src="minutes.png" alt="Goal Meter"></div>
+        <div class="fish-box boxes swimming"><img class="img-responsive image-center" src="fish.png" alt="Fish"></div>
+        <div class="hidden-xs fish-box boxes swimming"><img class="img-responsive image-center" src="few-fish.png" alt="Fish"></div>
       </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="king-soopers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center no-margin">King Soopers Community Rewards</h3>
-        </div>
-        <div class="modal-body">
-          <div>
-            <ul>
-              <li>Go to <a href="https://www.kingsoopers.com/account/communityrewards/" target="_blank">King Soopers Community Rewards &raquo;</a></li>
-              <li>Search for "Douglas County Libraries" or "ri433"</li>
-              <li>Click Enroll</li>
-            </ul>
-          </div>
-          <div class="text-center padding-bottom-15"><img src="king-soopers.gif" alt="King Soopers Community Rewards Signup"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="bookplate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center no-margin">Memorial Bookplate</h3>
-        </div>
-        <div class="modal-body text-left padding-right-30 padding-left-30 padding-bottom-30">
-          <div class="text-center padding-bottom-15"><img src="bookplate.jpg" alt="DCL Bookplate Example"></div>
-          <div>Our acquisitions team will choose an appropriate book to represent your special person and place a bookplate inside it with the message of your choice. You can choose to see the book prior to its circulation in our libraries.</div>
-          <ul class="padding-top-15 no-margin-bottom">
-            <li>Donation: $100</li>
-            <li>Good for the life of the book</li>
-            <li>Contact Rachel Malis with questions or requests at <a href="tel:+13037643311">(303) 764-3311</a>.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="refund" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center no-margin">Donate From Your State Tax Refund</h3>
-        </div>
-        <div class="modal-body text-left padding-right-30 padding-left-30 padding-bottom-30">
-          <div>
-            <ul>
-              <li>Use Voluntary Contributions form DR0104CH</li>
-              <li>Enter the following on line 19&mdash;Donate to a Colorado Nonprofit Fund:</li>
-              <ul class="margin-top-10 margin-bottom-10">
-                <li>The amount of your donation</li>
-                <li>Registration number 20043004512</li>
-                <li>Douglas County Libraries Foundation</li>
-              </ul>
-              <li>For more information, visit <a href="https://refundwhatmatters.org/" target="_blank">ReFUND CO</a>.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="large-text text-center hidden-md hidden-lg padding-30">Watch our school of fish grow and help us meet our goal. If we meet our goal, the <a class="text-underline" href="../foundation/">Douglas County Libraries Foundation</a> will donate $1000 to the COVID-19 Recovery Fund through the Douglas County Community Foundation (DCCF).</div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -558,26 +635,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
 <script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
-<script type="text/javascript">
-$(document).ready(function() {
-  if(window.location.href.indexOf('#king-soopers') != -1) {
-    $('#king-soopers').modal('show');
-  }
-});
-</script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
-<script>
-	var cards = $(".carousel-cell");
-for (var i = 0; i < cards.length; i++) {
-  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
-  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
-  cards.eq(target1).before(cards.eq(target2));
-}
- </script> 
+	  $(".card-grid").flip({
+		  axis: 'x'
+	  });
+		</script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
