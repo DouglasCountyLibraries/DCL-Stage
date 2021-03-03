@@ -362,7 +362,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="large-text white margin-lg-100"> Submit your best summer-of-fun or <a class="white text-underline" href="https://facebook.com/DCLColorado/" target="_blank">Splash Into Summer photo here</a> or use #DCLSplashIntoSummer on Twitter, Instagram or Facebook to win. The photo with the most likes wins! </div>
       </div>
     </div>
-    <div id="random-img" class="photo-wrapper container"> <img class="photo" src="one.jpg" alt="Photo Five"><img class="photo" src="two.jpg" alt="Photo Two"><img class="photo" src="three.jpg" alt="Photo Three"><img class="photo" src="four.jpg" alt="Photo Four"> <img class="photo" src="five.jpg" alt="Photo Five"> <img class="photo" src="six.jpg" alt="Photo Six"> <img class="photo" src="seven.jpg" alt="Photo Seven"> <img class="photo" src="eight.jpg" alt="Photo Eight"> <img class="photo" src="nine.jpg" alt="Photo Nine"><img class="photo" src="ten.jpg" alt="Photo Ten"><img class="photo" src="eleven.jpg" alt="Photo Eleven"><img class="photo" src="twelve.jpg" alt="Photo Twelve"><img class="photo" src="thirteen.jpg" alt="Photo Thirteen"><img class="photo" src="fourteen.jpg" alt="Photo Fourteen"></div>
+    <div class="photo-wrapper container"> <img class="photo" src="one.jpg" alt="Photo Five"><img class="photo" src="two.jpg" alt="Photo Two"><img class="photo" src="three.jpg" alt="Photo Three"><img class="photo" src="four.jpg" alt="Photo Four"></div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
@@ -425,13 +425,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" -->
-	<!--randomize div-->
-  <script>
-$('#random-img>').map(function(i,t) {
-     var s=$(t).siblings();
-     s.eq(Math.round(s.length*Math.random())).after(t)
-})
-</script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
