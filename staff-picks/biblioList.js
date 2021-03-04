@@ -77,9 +77,9 @@ $(document).ready(function () {
 function doBiblioList(val) {
   //Noteworthy|New & Noteworthy||5|True|Biblio|975832667|10
   //ListenToThis|Listen To This||5|True|Biblio|963743517|10
-  //NowFeaturing|Now Featuring||5|True|Biblio|/991669947|24
+  //NowFeaturing|Now Featuring||5|True|Biblio|991669947|24
   //EpicReads|Epic Reads||5|True|Biblio|994069717|10
-  //ReadingNowAdult|What We Are Reading Now Adult||5|True|Biblio|1826346254|10
+  //DCLAdults|What We Are Reading Now Adult|5|True|Biblio|1826346254|10
   title = val.DisplayName;
   if (val.KeyName == 'Noteworthy') {
     var myel = $('#Noteworthy').append(createPreShelf(title, val.KeyName, '10'));
@@ -111,11 +111,11 @@ function doBiblioList(val) {
     getRandomCollectionList(val.KeyName, '10');
     $('#EpicReads').append(createPostShelves(title));
   }
-  if (val.KeyName == 'ReadingNowAdult') {
-    var myel = $('#ReadingNowAdult').append(createPreShelf(title, val.KeyName, '10'));
+  if (val.KeyName == 'DCLAdults') {
+    var myel = $('#DCLAdults').append(createPreShelf(title, val.KeyName, '10'));
     console.log('val', val.KeyName)
     getRandomCollectionList(val.KeyName, '10');
-    $('#ReadingNowAdult').append(createPostShelves(title));
+    $('#DCLAdults').append(createPostShelves(title));
   }
 }
 
@@ -225,8 +225,8 @@ function getRandomCollectionList(KeyName, divid) {
         if (KeyName == "EpicReads") {
           $('#covers-EpicReads').append(createBookList(val, KeyName));
         }
-        if (KeyName == "ReadingNowAdult") {
-          $('#covers-ReadingNowAdult').append(createBookList(val, KeyName));
+        if (KeyName == "DCLAdults") {
+          $('#covers-DCLAdults').append(createBookList(val, KeyName));
         }
 
       }
