@@ -80,7 +80,7 @@ function doBiblioList(val) {
   //NowFeaturing|Now Featuring||5|True|Biblio|991669947|10
   //EpicReads|Epic Reads||5|True|Biblio|994069717|10
   //DCLAdults|What We Are Reading Now Adults|5|True|Biblio|1826346254|10
-  //DCLAdults|What We Are Reading Now Kids|5|True|Biblio|1826350329|10
+  //DCLKids|What We Are Reading Now Kids|5|True|Biblio|1826350329|10
   title = val.DisplayName;
   if (val.KeyName == 'Noteworthy') {
     var myel = $('#Noteworthy').append(createPreShelf(title, val.KeyName, '10'));
