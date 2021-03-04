@@ -249,9 +249,6 @@ function getRandomCollectionList(KeyName, divid) {
                 if (KeyName == "EpicReads") {
                     $('#covers-EpicReads').append(createBookList(val, KeyName));
                 }
-                 if (KeyName == "StorytimeFavorites") {
-                    $('#covers-StorytimeFavorites').append(createBookList(val, KeyName));
-                }
                 if (KeyName == "GreatBooksGreatKids") {
                     $('#covers-GreatBooksGreatKids').append(createBookList(val, KeyName));
                 }
