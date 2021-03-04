@@ -83,6 +83,8 @@ function doBiblioList(val) {
     //ListenToThis|Listen To This||5|True|Biblio|963743517|10
     //NowFeaturing|Now Featuring||5|True|Biblio|/991669947|24
     //EpicReads|Epic Reads||5|True|Biblio|994069717|10
+    //DCLAdults|What We Are Reading Now Adults||5|True|Biblio|1826346254|10
+    //DCLKids|What We Are Reading Now Kids||5|True|Biblio|1826350329|10
     title = val.DisplayName;
     if (val.KeyName == 'Noteworthy') {
         var myel = $('#Noteworthy').append(createPreShelf(title, val.KeyName, '10'));
@@ -113,6 +115,18 @@ function doBiblioList(val) {
         console.log('val', val.KeyName)
         getRandomCollectionList(val.KeyName, '10');
         $('#EpicReads').append(createPostShelves(title));
+    }
+        if (val.KeyName == 'DCLAdults') {
+        var myel = $('#DCLAdults').append(createPreShelf(title, val.KeyName, '10'));
+        console.log('val', val.KeyName)
+        getRandomCollectionList(val.KeyName, '10');
+        $('#DCLAdults').append(createPostShelves(title));
+    }
+        if (val.KeyName == 'DCLKids') {
+        var myel = $('#DCLKids').append(createPreShelf(title, val.KeyName, '10'));
+        console.log('val', val.KeyName)
+        getRandomCollectionList(val.KeyName, '10');
+        $('#DCLKids').append(createPostShelves(title));
     }	
 }
 function getCollectionSet() {
@@ -222,7 +236,12 @@ function getRandomCollectionList(KeyName, divid) {
                 if (KeyName == "EpicReads") {
                     $('#covers-EpicReads').append(createBookList(val, KeyName));
                 }
-              
+                if (KeyName == "DCLAdults") {
+                    $('#covers-DCLAdults').append(createBookList(val, KeyName));
+                }
+                if (KeyName == "DCLKids") {
+                    $('#covers-DCLKids').append(createBookList(val, KeyName));
+                }
             }
 
             console.log('val', val.Title)
