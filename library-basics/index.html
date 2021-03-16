@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -118,6 +119,87 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	flex-direction: column;
 	min-width: 100%;
 	margin: 5px;
+}
+}
+.slide {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.slide {
+	-webkit-animation: slide 16s both;
+	animation: slide 16s both;
+}
+@-webkit-keyframes slide {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+opacity: 1;
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+opacity: 1;
+}
+}
+@keyframes slide {
+0% {
+-webkit-transform: translateX(-100vw);
+transform: translateX(-100vw);
+opacity: 1;
+}
+30% {
+-webkit-transform: translateX(50vw);
+transform: translateX(50vw);
+opacity: 1;
+}
+60% {
+-webkit-transform: translateX(50vw);
+transform: translateX(50vw);
+opacity: 1;
+}
+100% {
+-webkit-transform: translateX(100vw);
+transform: translateX(100vw);
+opacity: 1;
+}
+}
+.bubble {
+	-webkit-animation: bubble 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+	animation: bubble 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+}
+@-webkit-keyframes bubble {
+0% {
+-webkit-transform: scale(0);
+transform: scale(0);
+opacity: 1;
+}
+100% {
+-webkit-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+}
+}
+@keyframes bubble {
+0% {
+-webkit-transform: scale(0);
+transform: scale(0);
+opacity: 1;
+}
+10% {
+-webkit-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+}
+90% {
+-webkit-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+}
+100% {
+-webkit-transform: scale(0);
+transform: scale(0);
+opacity: 1;
 }
 }
 </style>
@@ -428,6 +510,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
+  <div class="slide"><img class="bubble" src="https://placehold.it/75" alt=""><img src="https://placehold.it/120" alt=""></div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
@@ -533,4 +616,5 @@ $(function () {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
