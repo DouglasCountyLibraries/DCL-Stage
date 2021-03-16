@@ -123,8 +123,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .slide {
 	position: fixed;
-	bottom: 0;
+	bottom: -3px;
 	left: 0;
+	width: 270px;
+	height: 222px;
+}
+.slide img {
 }
 .slide {
 	-webkit-animation: slide 16s both;
@@ -132,13 +136,23 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 @-webkit-keyframes slide {
 0% {
--webkit-transform: translateX(0);
-transform: translateX(0);
+-webkit-transform: translateX(-100vw);
+transform: translateX(-100vw);
+opacity: 1;
+}
+30% {
+-webkit-transform: translateX(45vw);
+transform: translateX(45vw);
+opacity: 1;
+}
+60% {
+-webkit-transform: translateX(45vw);
+transform: translateX(45vw);
 opacity: 1;
 }
 100% {
--webkit-transform: translateX(100%);
-transform: translateX(100%);
+-webkit-transform: translateX(100vw);
+transform: translateX(100vw);
 opacity: 1;
 }
 }
@@ -149,13 +163,13 @@ transform: translateX(-100vw);
 opacity: 1;
 }
 30% {
--webkit-transform: translateX(50vw);
-transform: translateX(50vw);
+-webkit-transform: translateX(45vw);
+transform: translateX(45vw);
 opacity: 1;
 }
 60% {
--webkit-transform: translateX(50vw);
-transform: translateX(50vw);
+-webkit-transform: translateX(45vw);
+transform: translateX(45vw);
 opacity: 1;
 }
 100% {
@@ -174,9 +188,19 @@ opacity: 1;
 transform: scale(0);
 opacity: 1;
 }
-100% {
+10% {
 -webkit-transform: scale(1);
 transform: scale(1);
+opacity: 1;
+}
+90% {
+-webkit-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+}
+100% {
+-webkit-transform: scale(0);
+transform: scale(0);
 opacity: 1;
 }
 }
@@ -510,7 +534,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="slide"><img class="bubble" src="https://placehold.it/75" alt=""><img src="https://placehold.it/120" alt=""></div>
+  <div class="slide"><img style="margin-left:50px;height:182px;width:220px;" class="bubble" src="talk-bubble.png" alt=""><img style="height:40px;width:73px;" src="trish.png" alt=""></div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
