@@ -118,38 +118,32 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .box-item, .print-item {
 	flex-direction: column;
 	min-width: 100%;
-	margin: 5px;
+	margin: 15px;
 }
 }
 .slide:hover, .slide:focus {
-	bottom: 5px;
+	bottom: 10px;
 }
 .slide {
 	position: fixed;
-	bottom: -4px;
+	bottom: 0;
 	left: 0;
 	width: 270px;
 	height: 222px;
 	-webkit-transition-duration: 0.1s;
 	transition-duration: 0.1s;
 }
+
 .slide {
-	-webkit-animation: slide 8s both;
-	animation: slide 8s both;
+	-webkit-animation: slide 30s linear;
+	animation: slide 30s linear;
 }
 @-webkit-keyframes slide {
 0% {
--webkit-transform: translateX(-100vw);
-transform: translateX(-100vw);
+-webkit-transform: translateX(-5vw);
+transform: translateX(-5vw);
 }
-30% {
--webkit-transform: translateX(45vw);
-transform: translateX(45vw);
-}
-70% {
--webkit-transform: translateX(45vw);
-transform: translateX(45vw);
-}
+
 100% {
 -webkit-transform: translateX(100vw);
 transform: translateX(100vw);
@@ -157,25 +151,18 @@ transform: translateX(100vw);
 }
 @keyframes slide {
 0% {
--webkit-transform: translateX(-100vw);
-transform: translateX(-100vw);
+-webkit-transform: translateX(-5vw);
+transform: translateX(-5vw);
 }
-30% {
--webkit-transform: translateX(45vw);
-transform: translateX(45vw);
-}
-70% {
--webkit-transform: translateX(45vw);
-transform: translateX(45vw);
-}
+
 100% {
 -webkit-transform: translateX(100vw);
 transform: translateX(100vw);
 }
 }
 .bubble {
-	-webkit-animation: bubble 2.6s 2.7s both;
-	animation: bubble 2.6s 2.7s both;
+	-webkit-animation: bubble 6s 8s both;
+	animation: bubble 6s 8s both;
 }
 @-webkit-keyframes bubble {
 0% {
@@ -203,6 +190,20 @@ opacity: 1;
 }
 100% {
 opacity: 0;
+}
+}
+.trish {
+	width: 75px;
+	height: 40px;
+	background: url('trish.png') left center;
+	animation: play .1s steps(2) infinite;
+}
+@keyframes play {
+from {
+background-position: 0px 0px;
+}
+to {
+background-position: -150px 0px;
 }
 }
 </style>
@@ -514,7 +515,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <a href="https://www.dcl.org/keep-growing">
-  <div class="slide"><img style="margin-left:50px;height:182px;width:220px;" class="bubble" src="talk-bubble.png" alt="Sign up for Saturday fun and giveaways!"><img style="height:40px;width:73px;" src="trish.png" alt="Trish, the ladybug from marketing"></div>
+  <div class="slide"><img style="margin-left:50px;height:182px;width:220px;" class="bubble" src="talk-bubble.png" alt="Sign up for Saturday fun and giveaways!">
+    <div class="trish"></div>
+  </div>
   </a> <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
