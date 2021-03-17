@@ -126,24 +126,22 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .slide {
 	position: fixed;
-	bottom: 0;
+	bottom: -2px;
 	left: 0;
 	width: 270px;
 	height: 222px;
 	-webkit-transition-duration: 0.1s;
 	transition-duration: 0.1s;
 }
-
 .slide {
-	-webkit-animation: slide 30s linear;
-	animation: slide 30s linear;
+	-webkit-animation: slide 30s cubic-bezier(0, 0, 0, 0) 3s both;
+	animation: slide 30s cubic-bezier(0, 0, 0, 0) 3s both;
 }
 @-webkit-keyframes slide {
 0% {
--webkit-transform: translateX(-5vw);
-transform: translateX(-5vw);
+-webkit-transform: translateX(-100px);
+transform: translateX(-100px);
 }
-
 100% {
 -webkit-transform: translateX(100vw);
 transform: translateX(100vw);
@@ -151,18 +149,17 @@ transform: translateX(100vw);
 }
 @keyframes slide {
 0% {
--webkit-transform: translateX(-5vw);
-transform: translateX(-5vw);
+-webkit-transform: translateX(-100px);
+transform: translateX(-100px);
 }
-
 100% {
 -webkit-transform: translateX(100vw);
 transform: translateX(100vw);
 }
 }
 .bubble {
-	-webkit-animation: bubble 6s 8s both;
-	animation: bubble 6s 8s both;
+	-webkit-animation: bubble 8s 12s both;
+	animation: bubble 8s 12s both;
 }
 @-webkit-keyframes bubble {
 0% {
