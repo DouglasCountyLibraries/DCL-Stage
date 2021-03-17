@@ -158,17 +158,17 @@ transform: translateX(100vw);
 }
 }
 .bubble {
-	-webkit-animation: bubble 8s 12s both;
-	animation: bubble 8s 12s both;
+	-webkit-animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
+	animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
 }
 @-webkit-keyframes bubble {
 0% {
 opacity: 0;
 }
-10% {
+1% {
 opacity: 1;
 }
-90% {
+99% {
 opacity: 1;
 }
 100% {
@@ -179,10 +179,10 @@ opacity: 0;
 0% {
 opacity: 0;
 }
-10% {
+1% {
 opacity: 1;
 }
-90% {
+99% {
 opacity: 1;
 }
 100% {
