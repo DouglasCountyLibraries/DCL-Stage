@@ -37,6 +37,9 @@
   }
 }
 .bubble {
+  margin-left: 50px;
+  height: 182px;
+  width: 220px;
   -webkit-animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
   animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
 }
