@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+.slide:hover, .slide:focus {
+  bottom: 10px;
+}
+.slide {
+  position: fixed;
+  bottom: -3px;
+  left: 0;
+  width: 270px;
+  height: 222px;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.slide {
+  -webkit-animation: slide 30s cubic-bezier(0, 0, 0, 0) 3s both;
+  animation: slide 30s cubic-bezier(0, 0, 0, 0) 3s both;
+}
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+  }
+}
+.bubble {
+  -webkit-animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
+  animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
+}
+@-webkit-keyframes bubble {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bubble {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.trish {
+  width: 75px;
+  height: 40px;
+  background: url('../images/trish.png') left center;
+  animation: play .1s steps(2) infinite;
+}
+@keyframes play {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -150px 0px;
+  }
+}
+@media (max-width: 992px) {
+  .bubble {
+    -webkit-animation: bubble 5s cubic-bezier(0, 0, 0, 0) 6s both;
+    animation: bubble 5s cubic-bezier(0, 0, 0, 0) 6s both;
+  }
+  .slide {
+    -webkit-animation: slide 15s cubic-bezier(0, 0, 0, 0) 3s both;
+    animation: slide 15s cubic-bezier(0, 0, 0, 0) 3s both;
+  }
+}

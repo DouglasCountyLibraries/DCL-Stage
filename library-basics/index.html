@@ -65,6 +65,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link type="text/css" rel="stylesheet" href="../shared-assets/css/trish.css">
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
@@ -121,88 +122,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 15px;
 }
 }
-.slide:hover, .slide:focus {
-	bottom: 10px;
-}
-.slide {
-	position: fixed;
-	bottom: -2px;
-	left: 0;
-	width: 270px;
-	height: 222px;
-	-webkit-transition-duration: 0.1s;
-	transition-duration: 0.1s;
-}
-.slide {
-	-webkit-animation: slide 30s cubic-bezier(0, 0, 0, 0) 3s both;
-	animation: slide 30s cubic-bezier(0, 0, 0, 0) 3s both;
-}
-@-webkit-keyframes slide {
-0% {
--webkit-transform: translateX(-100px);
-transform: translateX(-100px);
-}
-100% {
--webkit-transform: translateX(100vw);
-transform: translateX(100vw);
-}
-}
-@keyframes slide {
-0% {
--webkit-transform: translateX(-100px);
-transform: translateX(-100px);
-}
-100% {
--webkit-transform: translateX(100vw);
-transform: translateX(100vw);
-}
-}
-.bubble {
-	-webkit-animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
-	animation: bubble 6s cubic-bezier(0, 0, 0, 0) 12s both;
-}
-@-webkit-keyframes bubble {
-0% {
-opacity: 0;
-}
-1% {
-opacity: 1;
-}
-99% {
-opacity: 1;
-}
-100% {
-opacity: 0;
-}
-}
-@keyframes bubble {
-0% {
-opacity: 0;
-}
-1% {
-opacity: 1;
-}
-99% {
-opacity: 1;
-}
-100% {
-opacity: 0;
-}
-}
-.trish {
-	width: 75px;
-	height: 40px;
-	background: url('trish.png') left center;
-	animation: play .1s steps(2) infinite;
-}
-@keyframes play {
-from {
-background-position: 0px 0px;
-}
-to {
-background-position: -150px 0px;
-}
-}
+
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -512,7 +432,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <a href="https://www.dcl.org/keep-growing">
-  <div class="slide"><img style="margin-left:50px;height:182px;width:220px;" class="bubble" src="talk-bubble.png" alt="Sign up for Saturday fun and giveaways!">
+  <div class="slide"><img style="margin-left:50px;height:182px;width:220px;" class="bubble" src="../shared-assets/images/talk-bubble.png" alt="Sign up for Saturday fun and giveaways!">
     <div class="trish"></div>
   </div>
   </a> <!-- InstanceEndEditable --> </div>
