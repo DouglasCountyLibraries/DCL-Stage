@@ -81,7 +81,7 @@ $(document).ready(function () {
 function doBiblioList(val) {
     //Noteworthy|New & Noteworthy||5|True|Biblio|975832667|10
     //ListenToThis|Listen To This||5|True|Biblio|963743517|10
-    //NowFeaturing|Now Featuring||5|True|Biblio|/991669947|24
+    //NowFeaturing|Now Featuring||5|True|Biblio|991669947|10
     //EpicReads|Epic Reads||5|True|Biblio|994069717|10
     //DCLAdults|What We Are Reading Now Adults||5|True|Biblio|1826346254|10
     //DCLKids|What We Are Reading Now Kids||5|True|Biblio|1826350329|10
