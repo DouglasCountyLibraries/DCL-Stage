@@ -65,6 +65,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 20,
+            time: 4000
+        });
+    });
+  </script>
 <link rel="stylesheet" href="https://use.typekit.net/bvq6jlu.css">
 <style>
 .futura {
@@ -81,6 +89,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-family: roboto, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+}
+.dark-text {
+	color: #040012;
 }
 .logo-wrapper {
 	margin: 0 auto;
@@ -106,6 +117,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	color: #fff;
 	background: radial-gradient(#0fb79d, #0f4991);
 }
+.box-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
 .link-wrapper {
 	width: 325px;
 	display: flex;
@@ -116,6 +131,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	text-align: center;
 	padding: 20px 0;
 	font-size: 22px;
+	margin-right: 23%;
 }
 .link, .link:visited, .link:active {
 	width: 300px;
@@ -135,10 +151,39 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .alt-link-wrapper {
 	margin-top: 15px;
 }
+.astronaut-background {
+	background: url("astronaut.svg") center right/cover;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 120px 0px;
+}
+.turquoise-row {
+	background: #5dbab7;
+	color: #17144b;
+	padding: 20px 0 25px;
+}
+.turquoise-row a {
+	color: #17144b;
+}
+.wave-row-top {
+	background: transparent url(wave-top.png) center center repeat-x;
+	height: 75px;
+}
+.wave-row-bottom {
+	background: transparent url(wave-bottom.png) center center repeat-x;
+	height: 75px;
+}
+.minutes-row {
+	background: #040012;
+}
 .planet-row {
 	background: transparent url("planets.jpg") top center repeat;
 	-webkit-animation: float 320s linear infinite;
 	animation: float 320s linear infinite;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #040012;
 }
 @-webkit-keyframes float {
 from {
@@ -181,14 +226,7 @@ h1.blue.source, h2.blue.source {
 	background: #329b8d;
 	padding: 40px 0 25px;
 }
-.orange-row {
-	background: #FBB040;
-	color: #17144b;
-	padding: 35px 0 30px;
-}
-.orange-row a {
-	color: #17144b;
-}
+
 .blue-row {
 	background: #17144b;
 	padding: 40px 0 65px;
@@ -247,16 +285,7 @@ h1.blue.source, h2.blue.source {
 	padding: 15px;
 	width: 30%;
 }
-.fish-row a {
-	color: #5cbdb9;
-}
-.fish-row {
-	background: #17144b url("fish-background.jpg") repeat-x bottom center;
-	color: #5cbdb9;
-	padding-bottom: 30px;
-	-webkit-animation: slide 90s linear infinite;
-	animation: slide 90s linear infinite;
-}
+
 @-webkit-keyframes slide {
 from {
 background-position: 0 0;
@@ -517,35 +546,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row planet-row">
     <div class="logo-wrapper"><img src="galaxy-dcl.svg" alt="Galaxy DCL"> </div>
-    <div class="">
-      <div class="link-wrapper futura"> <a href="registration/" class="link">Registration</a><a href="giveaways/" class="link">Giveaways</a><a href="scrapbook/" class="link">Scrapbook</a>
-        <div class="alt-link-wrapper">
-          <div class="futura alt-link"><a href="#" target="_blank" class="white">Summer Reading Events</a></div>
-          <div class="futura alt-link"><a href="#" target="_blank" class="white">Out-of-This-World Jokes</a></div>
+    <div class="astronaut-background">
+      <div class="box-wrapper">
+        <div class="link-wrapper futura"> <a href="registration/" class="link">Registration</a><a href="giveaways/" class="link">Giveaways</a><a href="scrapbook/" class="link">Scrapbook</a>
+          <div class="alt-link-wrapper">
+            <div class="futura alt-link"><a href="#" target="_blank" class="white">Summer Reading Events</a></div>
+            <div class="futura alt-link"><a href="#" target="_blank" class="white">Out-of-This-World Jokes</a></div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="wave-row-top"></div>
+    <div class="turquoise-row">
+      <div class="container">
+        <div class="text-center margin-lg-200 margin-md-100">
+          <h2 class="futura-bold dark-text text-uppercase">Lift Off to Galaxy DCL!</h2>
+          <div class="text-left-sm large-text">
+            <div>You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</div>
+            <div class="margin-top-15">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the reading log [link to pdf]. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-row-bottom"></div>
   </div>
-  <div class="row orange-row">
+  <div class="row minutes-row">
     <div class="container">
-      <div class="text-center margin-lg-200 margin-md-100">
-        <div class="pull-right hidden-xs"><img class="img-responsive" src="surfboards.png" alt="Surfboards"></div>
-        <h2 class="source">Lift Off to Galaxy DCL!</h2>
-        <div class="text-left-sm large-text">
-          <div>You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</div>
-          <div class="margin-top-15 margin-bottom-30">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the reading log [link to pdf]. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row fish-row">
-    <div class="container-md">
-      <h2 class="blue source text-center padding-top-15 padding-bottom-30">Help us meet our community goal of 8 million minutes read!</h2>
-      <div class="fish-wrapper margin-lg-100">
-        <div class="large-text text-box boxes hidden-xs hidden-sm">Watch our rocket make its way through the galaxy and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
-        <div class="meter-box boxes"><img class="img-responsive image-center" src="minutes.png" alt="Goal Meter"></div>
-        <div class="fish-box boxes swimming"><img class="img-responsive image-center" src="fish.png" alt="Fish"></div>
-      </div>
+      <h2 class="futura-bold white text-uppercase text-center padding-top-15 padding-bottom-30">Help us meet our community goal of 8 million minutes read!</h2>
+      <div class="white">Watch the numbers count up and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
+      <div class="white"><span class="counter">4,977</span></div>
     </div>
   </div>
   <div class="row shirt-row">
@@ -620,11 +649,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
-	  $(".card-grid").flip({
-		  axis: 'x'
-	  });
-		</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> 
+<script src="jquery.counterup.min.js"></script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
