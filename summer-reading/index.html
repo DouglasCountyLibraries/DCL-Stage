@@ -68,8 +68,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script>
     jQuery(document).ready(function( $ ) {
         $('.counter').counterUp({
-            delay: 20,
-            time: 4000
+            delay: 2,
+            time: 12000
         });
     });
   </script>
@@ -175,6 +175,33 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .minutes-row {
 	background: #040012;
+}
+.minutes-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.minutes-item {
+	padding: 15px;
+}
+.minutes-item.one {
+	max-width: 600px;
+}
+.minutes-item.two {
+	background: transparent url("globe.png") center center no-repeat;
+	height: 325px;
+	width: 325px;
+    	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.counter {
+	font-size: 60px;
+	line-height: 58px;
 }
 .planet-row {
 	background: transparent url("planets.jpg") top center repeat;
@@ -559,9 +586,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="wave-row-top"></div>
     <div class="turquoise-row">
       <div class="container">
-        <div class="text-center margin-lg-200 margin-md-100">
+        <div class="">
           <h2 class="futura-bold dark-text text-uppercase">Lift Off to Galaxy DCL!</h2>
-          <div class="text-left-sm large-text">
+          <div class="large-text">
             <div>You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</div>
             <div class="margin-top-15">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the reading log [link to pdf]. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
           </div>
@@ -572,9 +599,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row minutes-row">
     <div class="container">
-      <h2 class="futura-bold white text-uppercase text-center padding-top-15 padding-bottom-30">Help us meet our community goal of 8 million minutes read!</h2>
-      <div class="white">Watch the numbers count up and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
-      <div class="white"><span class="counter">4,977</span></div>
+      
+      <div class="minutes-wrapper">
+        <div class="minutes-item one white"><h3 class="futura-bold white text-uppercase">Help us meet our community goal of 8 million minutes read!</h3>Watch the numbers count up and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
+        <div class="minutes-item two"> <div class="counter futura-bold dark-text">2,344,977</div><h4 class="no-margin-top futura dark-text text-uppercase">Minutes Read</h4></div>
+      </div>
     </div>
   </div>
   <div class="row shirt-row">
