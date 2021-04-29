@@ -322,6 +322,19 @@ transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 }
 
+@media (max-width: 1100px) {
+.astronaut-background {
+	background-position: center;
+}
+.link-wrapper {
+	margin-right: 0;
+}
+.box-wrapper {
+	display: flex;
+	justify-content: center;
+}
+}
+
 @media (max-width: 954px) {
 .shirt-item.one {
 	order: 2;
@@ -339,6 +352,27 @@ transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 
 @media (min-width: 955px) {
 .button-two {
+	display: none;
+}
+}
+
+@media (max-width: 600px) {
+.astronaut-background {
+	background: url("astronaut-alt.png") center bottom no-repeat;
+	padding: 0 0 300px;
+	margin-bottom: -75px;
+}
+.logo-one {
+	display: none;
+}
+.logo-wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+}
+}
+
+@media (min-width: 601px) {
+.logo-two {
 	display: none;
 }
 }
@@ -527,7 +561,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row planet-row">
-    <div class="logo-wrapper"><img src="galaxy-dcl.svg" alt="Galaxy DCL"> </div>
+    <div class="logo-wrapper"><img class="logo-one" src="galaxy-dcl.svg" alt="Galaxy DCL"> <img class="logo-two" src="galaxy-dcl-alt.svg" alt="Galaxy DCL"></div>
     <div class="astronaut-background">
       <div class="box-wrapper">
         <div class="link-wrapper futura"> <a href="registration/" class="link">Registration</a><a href="giveaways/" class="link">Giveaways</a><a href="scrapbook/" class="link">Scrapbook</a>
