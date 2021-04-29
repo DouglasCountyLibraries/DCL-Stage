@@ -295,10 +295,16 @@ transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 transform:  translate(100px, 10px) scaleX(0.90) scaleY(0.90);
 }
 50% {
-transform:  translate(130px, -10px) scaleX(0.70) scaleY(0.70);
+transform:  translate(130px, -10px) scaleX(0.50) scaleY(0.50);
+}
+60% {
+transform:  translate(140px, -10px) scaleX(0.55) scaleY(0.55);
 }
 75% {
 transform:  translate(110px, 10px) scaleX(.90) scaleY(.90);
+}
+96% {
+transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 100% {
 transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
@@ -306,19 +312,25 @@ transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 @-webkit-keyframes fly {
 0% {
--webkit-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
+transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 25% {
--webkit-transform:  translate(80px, 20px) scaleX(0.90) scaleY(0.90);
+transform:  translate(100px, 10px) scaleX(0.90) scaleY(0.90);
 }
 50% {
--webkit-transform:  translate(100px, 10px) scaleX(0.70) scaleY(0.70);
+transform:  translate(130px, -10px) scaleX(0.50) scaleY(0.50);
+}
+60% {
+transform:  translate(140px, -10px) scaleX(0.55) scaleY(0.55);
 }
 75% {
--webkit-transform:  translate(80px, -10px) scaleX(.90) scaleY(.90);
+transform:  translate(110px, 10px) scaleX(.90) scaleY(.90);
+}
+96% {
+transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 100% {
--webkit-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
+transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 }
 
@@ -592,7 +604,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           Watch our rocket make its way through the galaxy and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
         <div class="minutes-item two">
           <div class="counter futura-bold dark-text">185,000</div>
-          <h4 class="no-margin-top futura dark-text text-uppercase">Minutes Read</h4>
+          <h4 class="no-margin futura dark-text text-uppercase">Minutes Read</h4>
         </div>
       </div>
     </div>
