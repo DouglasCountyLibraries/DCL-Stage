@@ -187,7 +187,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding: 50px 0 65px;
 }
 .minutes-item {
-	padding: 15px;
+	padding: 15px 15px 25px;
 }
 .minutes-item.one, .shirt-item.two {
 	max-width: 600px;
@@ -207,7 +207,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	line-height: 58px;
 }
 .shirt-row {
-	background: linear-gradient(#030011 3%, #14045c 100%);
+	background: linear-gradient(#030011 1%, #14045c 100%);
 }
 .shirt-wrapper {
 	display: flex;
@@ -319,6 +319,27 @@ transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 100% {
 -webkit-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
+}
+}
+
+@media (max-width: 954px) {
+.shirt-item.one {
+	order: 2;
+}
+.shirt-item.two {
+	order: 1;
+}
+.button-one {
+	display: none;
+}
+.minutes-wrapper {
+	padding: 50px 0 0;
+}
+}
+
+@media (min-width: 955px) {
+.button-two {
+	display: none;
 }
 }
 </style>
@@ -510,8 +531,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="astronaut-background">
       <div class="box-wrapper">
         <div class="link-wrapper futura"> <a href="registration/" class="link">Registration</a><a href="giveaways/" class="link">Giveaways</a><a href="scrapbook/" class="link">Scrapbook</a>
-          <div class="alt-link-wrapper">
-            <div class="futura alt-link"><a href="#" target="_blank" class="white">Summer Reading Events</a></div>
+          <div class="alt-link-wrapper"> 
+            <!--<div class="futura alt-link"><a href="#" target="_blank" class="white">Summer Reading Events</a></div>-->
             <div class="futura alt-link"><a href="#" target="_blank" class="white">Out-of-This-World Jokes</a></div>
           </div>
         </div>
@@ -544,12 +565,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row shirt-row">
     <div class="shirt-wrapper">
-      <div class="shirt-item one"><img src="t-shirt.png" alt=""></div>
+      <div class="shirt-item one"><img src="t-shirt.png" alt="">
+        <div class="button-two text-center padding-top-30 padding-bottom-15"><a href="#" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
+      </div>
       <div class="shirt-item two white">
         <h5 class="futura-bold white text-uppercase no-margin">Summer Reading Tees</h5>
         <h3 class="futura-bold white text-uppercase no-margin-top">On Sale Now!</h3>
-        Sport one of our summery tees to support the <a class="white text-underline" href="#">Douglas County Libraries Foundation</a>. Our unisex t-shirts come in kids sizes S-L for $12 plus tax, and adult sizes S-4XL for $15 plus tax. Pre-order by May 10 for pickup and payment at Summer Reading kickoff on June 5 or your preferred library after that, while supplies last; limited supplies available. Net proceeds benefit the DCL Foundation. Thank you for your support.
-        <div class="padding-top-15 padding-bottom-15"><a href="#" class="futura-bold btn btn-primary btn-custom btn-lg">Buy Now</a></div>
+        Sport one of our summery tees to support the <a class="white text-underline" href="#">Douglas County Libraries Foundation</a>. Our unisex t-shirts come in kids sizes S-M for $12 plus tax, and adult sizes S-XL for $15 plus tax. Pre-order by May 10 for pickup and payment at Summer Reading kickoff on June 5 or your preferred library after that, while supplies last; limited supplies available. Net proceeds benefit the DCL Foundation. Thank you for your support.
+        <div class="button-one padding-top-15 padding-bottom-15"><a href="#" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
       </div>
       <div></div>
     </div>
