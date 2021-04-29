@@ -173,6 +173,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: transparent url(wave-bottom.png) center center repeat-x;
 	height: 75px;
 }
+.galaxy-wrapper {
+	max-width: 925px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 .minutes-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -184,7 +189,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .minutes-item {
 	padding: 15px;
 }
-.minutes-item.one {
+.minutes-item.one, .shirt-item.two {
 	max-width: 600px;
 }
 .minutes-item.two {
@@ -200,6 +205,33 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .counter {
 	font-size: 60px;
 	line-height: 58px;
+}
+.shirt-row {
+	background: linear-gradient(#030011 3%, #14045c 100%);
+}
+.shirt-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding: 20px 0 65px;
+}
+.shirt-item {
+	padding: 15px;
+}
+.btn-custom {
+	background: #fff;
+}
+a.btn.btn-custom {
+	color: #030011;
+}
+a.btn.btn-custom:hover {
+	color: #fff;
+}
+.btn-custom:active, .btn-custom:hover, .btn-custom:focus {
+	background-color: #ea3f18;
+	color: #fff;
 }
 .planet-row {
 	background: transparent url("planets.jpg") top center repeat;
@@ -487,13 +519,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
     <div class="wave-row-top"></div>
     <div class="turquoise-row">
-      <div class="container">
-        <div class="">
-          <h2 class="futura-bold dark-text text-uppercase">Lift Off to Galaxy DCL!</h2>
-          <div class="large-text">
-            <div>You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</div>
-            <div class="margin-top-15">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the reading log [link to pdf]. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
-          </div>
+      <div class="galaxy-wrapper">
+        <h2 class="futura-bold dark-text text-uppercase">Lift Off to Galaxy DCL!</h2>
+        <div class="large-text">
+          <div>You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</div>
+          <div class="margin-top-10">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the reading log [link to pdf]. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
         </div>
       </div>
     </div>
@@ -513,14 +543,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row shirt-row">
-    <div class="container-md">
-      <h2 class="blue source text-center padding-top-15 padding-bottom-30">Summer Reading Tees</h2>
-      <h2 class="blue source text-center padding-top-15 padding-bottom-30">On Sale Now!</h2>
-      <div class="shirt-wrapper margin-lg-100">
-        <div class="large-text text-box boxes hidden-xs hidden-sm">Sport one of our summery tees to support the <a href="#">Douglas County Libraries Foundation</a>. Our unisex t-shirts come in kids sizes S-L for $12 plus tax, and adult sizes S-4XL for $15 plus tax. Pre-order by May 10 for pickup and payment at Summer Reading kickoff on June 5 or your preferred library after that, while supplies last; limited supplies available. Net proceeds benefit the DCL Foundation. Thank you for your support. </div>
-        <a href="#" class="btn btn-primary btn-lg">Buy Now</a>
-        <div></div>
+    <div class="shirt-wrapper">
+      <div class="shirt-item one"><img src="t-shirt.png" alt=""></div>
+      <div class="shirt-item two white">
+        <h5 class="futura-bold white text-uppercase no-margin">Summer Reading Tees</h5>
+        <h3 class="futura-bold white text-uppercase no-margin-top">On Sale Now!</h3>
+        Sport one of our summery tees to support the <a class="white text-underline" href="#">Douglas County Libraries Foundation</a>. Our unisex t-shirts come in kids sizes S-L for $12 plus tax, and adult sizes S-4XL for $15 plus tax. Pre-order by May 10 for pickup and payment at Summer Reading kickoff on June 5 or your preferred library after that, while supplies last; limited supplies available. Net proceeds benefit the DCL Foundation. Thank you for your support.
+        <div class="padding-top-15 padding-bottom-15"><a href="#" class="futura-bold btn btn-primary btn-custom btn-lg">Buy Now</a></div>
       </div>
+      <div></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
