@@ -95,7 +95,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .table-bordered > thead > tr > th {
 	border-bottom: 0px;
 }
-.planet-row, .minutes-row, .shirt-row {
+.planet-row, .minutes-row, .item-row {
 	font-family: roboto, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -138,8 +138,20 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	color: #fff;
 	text-decoration: none;
 }
-.alt-link-wrapper {
-	margin-top: 15px;
+.alt-link, .alt-link:visited, .alt-link:active {
+	background: linear-gradient(#6964ad, #281284);
+	color: #fff;
+	padding: 15px 25px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+.alt-link:hover {
+	background: radial-gradient(#6964ad, #281284);
+	color: #fff;
+	text-decoration: none;
 }
 .globs-background {
 	background: url("globs.png") center bottom no-repeat;
@@ -169,60 +181,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	max-width: 550px;
 	padding: 15px;
 }
-.minutes-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	padding: 50px 0 65px;
-}
-.minutes-item {
-	padding: 15px 15px 25px;
-}
-.minutes-item.one, .shirt-item.two {
-	max-width: 600px;
-}
-.minutes-item.two {
-	background: transparent url("../globe.png") center center no-repeat;
-	height: 325px;
-	width: 325px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-}
-.counter {
-	font-size: 60px;
-	line-height: 58px;
-}
-.shirt-row {
+.item-row {
 	background: linear-gradient(#030011 1%, #14045c 100%);
+	padding: 45px 15px 75px;
 }
-.shirt-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	padding: 20px 0 65px;
-}
-.shirt-item {
-	padding: 15px;
-}
-.btn-custom {
-	background: #fff;
-}
-a.btn.btn-custom {
-	color: #030011;
-}
-a.btn.btn-custom:hover {
-	color: #fff;
-}
-.btn-custom:active, .btn-custom:hover, .btn-custom:focus {
-	background-color: #ea3f18;
-	color: #fff;
+.item-wrapper {
+	max-width: 725px;
+	margin: 0 auto;
+	padding: 10px 0;
 }
 .planet-row {
 	background: transparent url("../planets.jpg") top center repeat;
@@ -322,39 +288,7 @@ transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
 }
 }
 
-@media (max-width: 1100px) {
-.astronaut-background {
-	background-position: center;
-}
-}
-
-@media (max-width: 954px) {
-.shirt-item.one {
-	order: 2;
-}
-.shirt-item.two {
-	order: 1;
-}
-.button-one {
-	display: none;
-}
-.minutes-wrapper {
-	padding: 50px 0 0;
-}
-}
-
-@media (min-width: 955px) {
-.button-two {
-	display: none;
-}
-}
-
 @media (max-width: 800px) {
-.astronaut-background {
-	background: url("../astronaut-alt.png") center bottom no-repeat;
-	padding: 0 0 300px;
-	margin-bottom: -75px;
-}
 .logo-one {
 	display: none;
 }
@@ -563,9 +497,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
     <div class="wave-row-top"></div>
-      
-      
-      
     <div class="turquoise-row">
       <div class="galaxy-wrapper">
         <div class="galaxy-item">
@@ -579,26 +510,32 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </div>
-      
-      
-      
-      
     <div class="wave-row-bottom"></div>
   </div>
-  <div class="row shirt-row">
-    <div class="shirt-wrapper">
-      <div class="shirt-item one"><img src="../t-shirt.png" alt="">
-        <div class="button-two text-center padding-top-30 padding-bottom-15"><a href="../t-shirts" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
-      </div>
-      <div class="shirt-item two white">
-        <h5 class="futura-bold white text-uppercase no-margin">Summer Reading Tees</h5>
-        <h3 class="futura-bold white text-uppercase no-margin-top">On Sale Now!</h3>
-        Sport one of our summery tees to support the <a class="white text-underline" href="../foundation">Douglas County Libraries Foundation</a>. Our unisex t-shirts come in kids sizes S-M for $12 plus tax, and adult sizes S-XL for $15 plus tax. Pre-order by May 10 for pickup and payment at Summer Reading kickoff on June 5 or your preferred library after that, while supplies last; limited supplies available. Net proceeds benefit the DCL Foundation. Thank you for your support.
-        <div class="button-one padding-top-15 padding-bottom-15"><a href="../t-shirts" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
-      </div>
+  <div class="row item-row">
+    <div class="item-wrapper white">
+      <h2 class="futura-bold white text-uppercase">Prizes</h2>
+      <h5 class="futura-bold white">Sign-Up Prizes</h5>
+      <div class="white">Visit any DCL location to pick up your Summer Reading sign-up prizes, while supplies last. Summer Reading sign-up gift coupons and vouchers courtesy of Rocket Fizz and Parry’s Pizza. See coupons and vouchers for full details.</div>
+      <div></div>
+    </div>
+    <div class="item-wrapper white">
+      <h5 class="futura-bold white">Mid-Way Prizes</h5>
+      <div class="white">Celebrate being halfway to your goal! Stop by the library for a free flying foam rocket if you’re under 13. Those over 13 can receive a coupon for a free book from any of our Second Chapter Bookstores, plus a fun vinyl decal.</div>
+      <div></div>
+    </div>
+    <div class="item-wrapper white">
+      <h5 class="futura-bold white">Finishing Prizes</h5>
+      <div class="white">Collect a prize when you complete your challenge, or just for having a stellar summer! Kids ages 0-12 can earn a FREE BOOK. Teens can earn an awesome fanny pack, and adults will be rewarded with a space-themed reusable book bag.</div>
+      <div></div>
+    </div>
+    <div class="item-wrapper text-center">
+      <h4 class="futura white">Take your Summer Reading offline </h4>
+      <div class="padding-top-30"><a href="../summer-reading-log.pdf" target="_blank" class="alt-link">Download a Reading Log</a> </div>
       <div></div>
     </div>
   </div>
+  
   <!-- Modal -->
   <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">
