@@ -85,6 +85,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .dark-text {
 	color: #040012;
 }
+.smaller {
+	font-size: .8em;
+	text-transform: uppercase;
+	vertical-align: middle !important;
+	font-weight: normal;
+	color: #888;
+}
+.table-bordered > thead > tr > th {
+	border-bottom: 0px;
+}
 .planet-row, .minutes-row, .shirt-row {
 	font-family: roboto, sans-serif;
 	font-weight: 400;
@@ -95,25 +105,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	text-align: center;
 	max-width: 900px;
 	padding: 30px 10px 20px;
-}
-.links-group {
-	font-size: 30px;
-	text-transform: uppercase;
-	padding-top: 40px;
-}
-.links a {
-	background: linear-gradient(#0fb79d, #0f4991);
-	color: #fff;
-	padding: 5px 0;
-	border-radius: 2px;
-	width: 300px;
-	display: block;
-	margin: 12px 0;
-}
-.links a:hover, .links a:focus {
-	text-decoration: none;
-	color: #fff;
-	background: radial-gradient(#0fb79d, #0f4991);
 }
 .box-wrapper {
 	display: flex;
@@ -127,37 +118,36 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	align-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 20px 0;
+	padding: 45px 0 80px;
 	font-size: 22px;
 }
 .link, .link:visited, .link:active {
 	width: 300px;
-	background: linear-gradient(#0fb79d, #0f4991);
+	background: linear-gradient(#e09a2f, #8b1121);
 	color: #fff;
 	margin: 5px 10px;
 	padding: 15px 5px;
 	border-radius: 2px;
 	text-transform: uppercase;
 	text-decoration: none;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
 }
 .link:hover {
-	background: radial-gradient(#0fb79d, #0f4991);
+	background: radial-gradient(#e09a2f, #8b1121);
 	color: #fff;
 	text-decoration: none;
 }
 .alt-link-wrapper {
 	margin-top: 15px;
 }
-.astronaut-background {
-	background: url("../astronaut.svg") center right/cover;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 120px 0px;
+.globs-background {
+	background: url("globs.png") center bottom no-repeat;
 }
 .turquoise-row {
 	background: #a982e8;
 	color: #17144b;
-	padding: 45px 0 65px;
+	padding: 60px 0 65px;
 }
 .turquoise-row a {
 	color: #17144b;
@@ -171,9 +161,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	height: 75px;
 }
 .galaxy-wrapper {
-	max-width: 925px;
-	margin: 0 auto;
-	padding: 0 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.galaxy-item {
+	max-width: 550px;
+	padding: 15px;
 }
 .minutes-wrapper {
 	display: flex;
@@ -560,34 +554,36 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row planet-row">
-    <div class="logo-wrapper">
-      <h1 class="futura-bold no-margin-top jumbo-text white text-uppercase">Registration</h1>
-      <img class="logo-one" src="../galaxy-dcl.svg" alt="Galaxy DCL"> <img class="logo-two" src="../galaxy-dcl-alt.svg" alt="Galaxy DCL"></div>
-    <div class="box-wrapper">
-      <div class="link-wrapper futura"> <a href="https://dclibraries.beanstack.org/" target="_blank" class="link">Register Now!</a> </div>
-    </div>
-    <div class="wave-row-top"></div>
-    <div class="turquoise-row">
-      <div class="galaxy-wrapper">
-        <h2 class="futura-bold dark-text text-uppercase">Lift Off to Galaxy DCL!</h2>
-        <h5 class="futura-bold dark-text">You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</h5>
-        <div class="large-text dark-text">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the <a class="text-underline" href="../summer-reading-log.pdf">reading log</a>. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
+    <div class="globs-background">
+      <div class="logo-wrapper">
+        <h1 class="futura-bold no-margin-top jumbo-text white text-uppercase">Registration</h1>
+        <img class="logo-one" src="../galaxy-dcl.svg" alt="Galaxy DCL"> <img class="logo-two" src="../galaxy-dcl-alt.svg" alt="Galaxy DCL"></div>
+      <div class="box-wrapper">
+        <div class="link-wrapper futura"> <a href="https://dclibraries.beanstack.org/" target="_blank" class="link">Register Now!</a> </div>
       </div>
     </div>
-    <div class="wave-row-bottom"></div>
-  </div>
-  <div class="row minutes-row">
-    <div class="container">
-      <div class="minutes-wrapper">
-        <div class="minutes-item one white"><img class="flying" src="../rocket.png" alt="">
-          <h3 class="futura-bold white text-uppercase">Help us meet our community goal of 8 million minutes read!</h3>
-          Watch our rocket make its way through the galaxy and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
-        <div class="minutes-item two">
-          <div class="counter futura-bold dark-text">185,000</div>
-          <h4 class="no-margin futura dark-text text-uppercase">Minutes Read</h4>
+    <div class="wave-row-top"></div>
+      
+      
+      
+    <div class="turquoise-row">
+      <div class="galaxy-wrapper">
+        <div class="galaxy-item">
+          <h5 class="futura-bold no-margin-top dark-text">Help us meet our community goal</h5>
+          <div class="large-text dark-text">If we meet our community goal of 8 million minutes read, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
+        </div>
+        <div class="galaxy-item">
+          <h5 class="futura-bold no-margin-top dark-text">Help your school earn $500</h5>
+          <div class="large-text dark-text">Help your school earn $500
+            All you have to do is sign up (and remind your friends and classmates to sign up!) and be sure to include your school name and your grade when you register. The school with the most sign-ups by July 31 will be awarded $500. Award recipients announced in August. See <a href="#" class="text-underline" data-toggle="modal" data-target="#modalone">contest rules and restrictions</a>, and <a href="#" class="text-underline" data-toggle="modal" data-target="#modalone">schools currently in the lead</a>. </div>
         </div>
       </div>
     </div>
+      
+      
+      
+      
+    <div class="wave-row-bottom"></div>
   </div>
   <div class="row shirt-row">
     <div class="shirt-wrapper">
@@ -601,6 +597,62 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="button-one padding-top-15 padding-bottom-15"><a href="../t-shirts" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
       </div>
       <div></div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center modal-title">Contest Rules and Restrictions</h3>
+        </div>
+        <div class="modal-body padding-30">
+          <div>Contest applies only to K-12 students in schools located in Douglas County and accredited by the Colorado Department of Education. Awards will be given to one school at each level: elementary, middle, high, and charter/other.</div>
+          <div class="padding-top-15">Sign-ups are tallied through Beanstack online registration. The school in each category with the most sign-ups as a percentage of 2020-2021 enrollment earns the award.</div>
+          <div class="padding-top-15 padding-bottom-15">Contest runs May 1-July 31. Prizes courtesy of Douglas County Libraries Foundation. Award recipients will be notified in August 2021.</div>
+          <h4 class="no-margin-top text-center">Who's Ahead? *</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered table-condensed" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="smaller">First Place</th>
+                  <th class="smaller">Second Place</th>
+                  <th class="smaller">Third Place</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="smaller">Elementary</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="smaller">Middle</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="smaller">High</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="smaller">Charter/Other</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center padding-bottom-15">* Leader board will be updated each Monday through August 2, 2021.</div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
