@@ -66,31 +66,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700&display=swap" rel="stylesheet">
 <style>
-.futura {
-	font-family: futura-pt, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+.source {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
 }
-.futura-bold {
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-.roboto-regular {
-	font-family: roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+h1.source, h2.source, h3.source, h4.source {
+    font-family: 'Source Serif Pro', serif;
+    color: #17144b;
+    font-weight: 700;
 }
 .details {
     margin-top: 279px;
 }
-    
-    .page-row {
- 	font-family: roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;       
-    }   
-    
 .full-page, .modal-content {
     background: #f2e8c3 url("sand-background.jpg");
     color: #17144b;
@@ -536,18 +523,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row page-row">
-   
-     
+  <div class="row full-page">
+    <div class="banner-row">
+      <div class="banner-row-image"><img class="small-img img-responsive center-block" src="fifteen-days-small.png" alt="15 Days of Giveaways"><img class="large-img img-responsive center-block" src="fifteen-days.png" alt="15 Days of Giveaways"></div>
       <div class="container">
-        <div class="">
-          <h1 class="futura-bold">Sign Up to Win!</h1>
-          <h4 class="futura-bold">Is your name written in the stars? We’re giving away 90 awesome prizes to Summer Reading participants who sign up for the program June 5-15. What could you win? Launch into Summer Reading and find out!</h4>
+        <div class="rules text-center text-left-sm text-left-md text-left-lg">
+          <h1 class="source">Sign Up to Win!</h1>
+          <h4 class="source">Do you feel lucky? We're giving away 135 awesome prizes to Summer Reading participants who sign up for the program June 1-15. What could you win? Throw your sunhat in the ring today to find out.</h4>
         </div>
-        <div class="large-text">
-          <div>Each day features a random drawing for that day's prize. Everyone registered May 1-June 15 will be entered into the prize drawings. If you are chosen as a winner, we will contact you to arrange prize delivery. Winners will also be announced via DCL’s digital channels (first name, last initial). No purchase necessary, and registration is free.</div>
+        <div class="large-text text-center text-left-sm text-left-md text-left-lg">
+          <div>Each day features a random drawing for that day's prize. Everyone registered May 1-June 15 will be entered into grand prize drawings on June 14-15.  If you are chosen as a winner, we will contact you the week of June 15 to schedule the drop-off or pick-up of your prize. No purchase necessary, and registration is free.</div>
         </div>
-        <div class="prize-button"><a class="" href="../registration/">Register Now!</a></div>
+        <div class="prize-button"><a class="jello" href="../registration/">Register Now!</a></div>
       </div>
       <div class="prizes-row">
         <div class="prizes-wrapper">
@@ -600,7 +587,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </div>
         </div>
       </div>
-   
+    </div>
   </div>
   
   <!-- modal one -->
