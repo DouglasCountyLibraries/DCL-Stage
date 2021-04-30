@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,109 +65,141 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/bvq6jlu.css">
 <style>
-.banner-row {
-    background: #17144b;
+.futura {
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
-.banner-row-image {
-    background: linear-gradient(10deg, #cf372e 0%, #fed973 50%, #cf372e 100%);
-    background-size: 250% 250%;
-    -webkit-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+.futura-bold {
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
 }
-@-webkit-keyframes AnimationName {
-0% {
-background-position:0% 75%
+.roboto-regular {
+	font-family: roboto, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
-50% {
-background-position:100% 25%
+.dark-text {
+	color: #040012;
 }
-100% {
-background-position:0% 75%
+.planet-row {
+	background: #040012 url("../planets.jpg") top center repeat-x;
+	-webkit-animation: float 320s linear infinite;
+	animation: float 320s linear infinite;
+	font-family: roboto, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+@-webkit-keyframes float {
+from {
+background-position: 1736px 0;
+}
+to {
+background-position: 0 0;
 }
 }
-@keyframes AnimationName {
-0% {
-background-position:0% 75%
+@keyframes float {
+from {
+background-position: 1736px 0;
 }
-50% {
-background-position:100% 25%
-}
-100% {
-background-position:0% 75%
+to {
+background-position: 0 0;
 }
 }
-.source {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
+.galaxy-wrapper {
+	max-width: 925px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-h1.source, h2.source {
-    color: #fff;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 600;
+.logo-wrapper {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 900px;
+	padding: 30px 10px 20px;
 }
-h1.blue.source, h2.blue.source {
-    color: #5cbdb9;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 600;
+.item-wrapper {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
-.blue-row {
-    background: linear-gradient(#1c3059 20%, #5cbdb9 100%);
-    background: url(fish.png) center top, linear-gradient(#1c3059 20%, #5cbdb9 100%);
-    color: #17144b;
-    padding: 20px 0 60px;
+.item {
+	padding: 0 15px;
 }
-.blue-row a {
-    color: #fff;
+.item.one {
+	max-width: 600px;
 }
 .photo-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px auto 40px auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 15px auto 60px auto;
 }
 .photo {
-    -webkit-backface-visibility: hidden;
-    background: #fff;
-    padding: 15px 15px 40px 15px;
-    width: 350px;
-    height: 350px;
-    -webkit-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -moz-box-shadow: 0px 6px 10px rgba(0,0,0,.4);
-    -webkit-box-shadow: 0px 6px 10px rgba(0,0,0,.4);
-    box-shadow: 0px 6px 10px rgba(0,0,0,.4);
-    margin-top: -25px;
+	-webkit-backface-visibility: hidden;
+	background: #fff;
+	padding: 15px 15px 40px 15px;
+	width: 350px;
+	height: 350px;
+	-webkit-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-moz-box-shadow: 0px 6px 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0px 6px 10px rgba(0,0,0,.4);
+	box-shadow: 0px 6px 10px rgba(0,0,0,.4);
+	margin-top: -25px;
 }
 .photo:nth-child(even) {
-    -webkit-backface-visibility: hidden;
-    -o-transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -moz-box-shadow: 0px 3px 10px rgba(0,0,0,.4);
-    -webkit-box-shadow: 0px 3px 10px rgba(0,0,0,.4);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.4);
-    margin-top: 10px;
+	-webkit-backface-visibility: hidden;
+	-o-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-moz-box-shadow: 0px 3px 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0px 3px 10px rgba(0,0,0,.4);
+	box-shadow: 0px 3px 10px rgba(0,0,0,.4);
+	margin-top: 10px;
 }
 .photo:nth-child(3n) {
-    -webkit-backface-visibility: hidden;
-    -o-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -moz-box-shadow: 0px 9px 10px rgba(0,0,0,.4);
-    -webkit-box-shadow: 0px 9px 10px rgba(0,0,0,.4);
-    box-shadow: 0px 9px 10px rgba(0,0,0,.4);
+	-webkit-backface-visibility: hidden;
+	-o-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-moz-box-shadow: 0px 9px 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0px 9px 10px rgba(0,0,0,.4);
+	box-shadow: 0px 9px 10px rgba(0,0,0,.4);
 }
 .photo:nth-child(5n) {
-    -webkit-backface-visibility: hidden;
-    -o-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -moz-box-shadow: 0px 4px 10px rgba(0,0,0,.4);
-    -webkit-box-shadow: 0px 4px 10px rgba(0,0,0,.4);
-    box-shadow: 0px 4px 10px rgba(0,0,0,.4);
+	-webkit-backface-visibility: hidden;
+	-o-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-moz-box-shadow: 0px 4px 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0px 4px 10px rgba(0,0,0,.4);
+	box-shadow: 0px 4px 10px rgba(0,0,0,.4);
+}
+
+@media (max-width: 800px) {
+.logo-one, .item.two {
+	display: none;
+}
+.logo-wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 10px 10px 25px;
+}
+.photo-wrapper {
+	margin: 65px auto 60px auto;
+}
+}
+
+@media (min-width: 801px) {
+.logo-two, .earth-alt {
+	display: none;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -352,17 +385,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row banner-row">
-    <div class="banner-row-image"><img class="hidden-sm hidden-md hidden-lg img-responsive center-block" src="scrapbook-small.png" alt="Summer Reading Scrapbook"><img class="hidden-xs img-responsive center-block" src="scrapbook.png" alt="Summer Reading Scrapbook"></div>
-  </div>
-  <div class="row blue-row">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="source white">Hey, Douglas County! Enter our photo contest to win our Ultimate Splash Into Summer Prize Package.</h2>
-        <div class="large-text white margin-lg-100"> Submit your best summer-of-fun or <a class="white text-underline" href="https://facebook.com/DCLColorado/" target="_blank">Splash Into Summer photo here</a> or use #DCLSplashIntoSummer on Twitter, Instagram or Facebook to win. The photo with the most likes wins! </div>
-      </div>
+  <div class="planet-row row">
+    <div>
+      <div class="earth-alt text-center"><img src="earth-alt.png" alt=""></div>
+      <div class="logo-wrapper">
+        <h1 class="futura-bold no-margin-top jumbo-text white text-uppercase">Scrapbook</h1>
+        <img class="logo-one" src="../galaxy-dcl.svg" alt="Galaxy DCL"> <img class="logo-two" src="../galaxy-dcl-alt.svg" alt="Galaxy DCL"></div>
     </div>
-    <div class="photo-wrapper container"> <img class="photo" src="one.jpg" alt="Photo Five"><img class="photo" src="two.jpg" alt="Photo Two"><img class="photo" src="three.jpg" alt="Photo Three"><img class="photo" src="four.jpg" alt="Photo Four"></div>
+    <div>
+      <div class="item-wrapper">
+        <div class="item one">
+          <h4 class="futura-bold white no-margin-top">Hey, Douglas County! Enter our photo contest to win our Ultimate Galaxy DCL Prize, a $100 Amazon gift card. </h4>
+          <div class="large-text white"> Submit your best far-out-summer or <a class="white text-underline" href="https://www.facebook.com/DCLColorado/" target="_blank">Galaxy DCL photo here</a> or use #tobooksandbeyond on Twitter, Instagram or Facebook to win. The photo with the most votes wins!</div>
+        </div>
+        <div class="item two"><img src="earth.png" alt=""></div>
+      </div>
+      <div class="photo-wrapper container-md"> <img class="photo" src="one.jpg" alt=""></div>
+    </div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
@@ -424,8 +463,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
@@ -464,4 +502,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
