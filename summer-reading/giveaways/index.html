@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,8 +65,21 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/bvq6jlu.css">
 <style>
+@font-face {
+	font-family: 'Ultima';
+	src: url('../../shared-assets/web-fonts/MBFUltima.woff2') format('woff2'), url('../../shared-assets/web-fonts/MBFUltima.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+h1.ultima {
+	font-family: 'Ultima', sans-serif;
+	color: #fff;
+	font-size: 90px;
+	margin-top: 0;
+}
 .futura {
 	font-family: futura-pt, sans-serif;
 	font-weight: 400;
@@ -81,127 +95,150 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-weight: 400;
 	font-style: normal;
 }
-.details {
-    margin-top: 279px;
-}
-    
-    .page-row {
- 	font-family: roboto, sans-serif;
+.intro-row {
+	background: #0051d2 url(intro-background.jpg) center bottom/cover;
+	font-family: roboto, sans-serif;
 	font-weight: 400;
-	font-style: normal;       
-    }   
-    
-.full-page, .modal-content {
-    background: #f2e8c3 url("sand-background.jpg");
-    color: #17144b;
+	font-style: normal;
+	padding: 30px 15px 0;
+}
+.reg-link, .reg-link:visited, .reg-link:active {
+	width: 300px;
+	background: linear-gradient(#e09a2f, #8b1121);
+	color: #fff;
+	margin: 30px auto 0 auto;
+	padding: 15px 5px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	display: block;
+	text-align: center;
+}
+.reg-link:hover {
+	background: radial-gradient(#e09a2f, #8b1121);
+	color: #fff;
+	text-decoration: none;
+}
+.wave-row-top {
+	background: transparent url(wave-top.jpg) center center repeat-x;
+	height: 115px;
+}
+.details {
+	margin-top: 279px;
 }
 .modal-content {
-    color: #17144b;
-    padding: 30px 25px 25px 25px;
-    text-align: center;
+	color: #17144b;
+	padding: 30px 25px 25px 25px;
+	text-align: center;
 }
 .modal-content h1 {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
-    color: #17144b;
-    text-transform: uppercase;
-    font-size: 24px;
-    margin: 0 auto 15px auto;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #17144b;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-top: 15px;
 }
 .modal-content h2 {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
-    color: #17144b;
-    text-transform: uppercase;
-    font-size: 24px;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #17144b;
+	text-transform: uppercase;
+	font-size: 24px;
 }
 .modal-content h4 {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
-    color: #17144b;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #17144b;
 }
 button.close {
-    margin-top: -15px;
+	margin-top: -15px;
 }
 .rules {
-    width: 100%;
-    margin-top: -3%;
+	width: 100%;
+	margin-top: -3%;
 }
 .prizes-row {
-    padding-bottom: 40px;
+	background: #070725 url("prize-background.jpg") center center repeat;
+	padding-bottom: 40px;
 }
 .prizes-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 .item {
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    margin: 40px;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	margin: 40px;
 }
 .item h1, .item h1 a {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
-    color: #17144b;
-    text-align: center;
-    font-size: 24px;
-    margin: 15px auto;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	margin: 15px auto;
 }
 .item h1.details {
-    margin-top: 272px;
+	margin-top: 272px;
 }
 .item.one {
-    background: url(one.png) center center/cover;
+	background: url(one.png) center center/cover;
 }
 .item.two {
-    background: url(two.png) center center/cover;
+	background: url(two.png) center center/cover;
 }
 .item.three {
-    background: url(three.png) center center/cover;
+	background: url(three.png) center center/cover;
 }
 .item.four {
-    background: url(four.png) center center/cover;
+	background: url(four.png) center center/cover;
 }
 .item.five {
-    background: url(five.png) center center/cover;
+	background: url(five.png) center center/cover;
 }
 .item.six {
-    background: url(six.png) center center/cover;
+	background: url(six.png) center center/cover;
 }
 .item.seven {
-    background: url(seven.png) center center/cover;
+	background: url(seven.png) center center/cover;
 }
 .item.eight {
-    background: url(eight.png) center center/cover;
+	background: url(eight.png) center center/cover;
 }
 .item.nine {
-    background: url(nine.png) center center/cover;
+	background: url(nine.png) center center/cover;
 }
 .item.ten {
-    background: url(ten.png) center center/cover;
+	background: url(ten.png) center center/cover;
 }
 .item.eleven {
-    background: url(eleven.png) center center/cover;
+	background: url(eleven.png) center center/cover;
 }
 .item.twelve {
-    background: url(twelve.png) center center/cover;
+	background: url(twelve.png) center center/cover;
 }
 .item.thirteen {
-    background: url(thirteen.png) center center/cover;
+	background: url(thirteen.png) center center/cover;
 }
 .item.fourteen {
-    background: url(fourteen.png) center center/cover;
+	background: url(fourteen.png) center center/cover;
 }
 .item.fifteen {
 /*background: url(fifteen.png) center center/cover;*/
 }
 .headlines-flyin {
-    -webkit-animation: headlines-flyin 0.6s ease-out both;
-    animation: headlines-flyin 0.6s ease-out both;
+	-webkit-animation: headlines-flyin 0.6s ease-out both;
+	animation: headlines-flyin 0.6s ease-out both;
 }
 @-webkit-keyframes headlines-flyin {
 0% {
@@ -224,13 +261,13 @@ transform: rotate(0) scale(1);
 }
 }
 .modal-backdrop.in {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 .modal-dialog-centered {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
 min-height: calc(100% - (.5rem * 2));
 }
 
@@ -239,117 +276,35 @@ min-height: calc(100% - (.5rem * 2));
 min-height: calc(100% - (1.75rem * 2));
 }
 }
-.prize-button {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-.prize-button a {
-    display: block;
-    color: #17144b;
-    padding: 5px 0;
-    border: 4px solid rgba(255,255,255,.8);
-    border-radius: 2px;
-    width: 300px;
-    text-align: center;
-    background: #ef7376;
-    margin: 15px 0;
-    box-shadow: 0px 4px 4px rgba(23,20,75,.6);
-}
-.prize-button a:hover, .prize-button a:focus {
-    text-decoration: none;
-    background: #cf372e;
-    color: rgba(255,255,255,1);
-    border: 4px solid rgba(255,255,255,1);
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
-    box-shadow: 0px 4px 16px rgba(23,20,75,.9);
-}
-.jello:hover {
-    -webkit-animation: jello-vertical 1s both;
-    animation: jello-vertical 1s both;
-}
-@-webkit-keyframes jello-vertical {
-0% {
--webkit-transform: scale3d(1, 1, 1);
-transform: scale3d(1, 1, 1);
-}
-30% {
--webkit-transform: scale3d(0.75, 1.15, 1);
-transform: scale3d(0.75, 1.15, 1);
-}
-40% {
--webkit-transform: scale3d(1.15, 0.75, 1);
-transform: scale3d(1.15, 0.75, 1);
-}
-50% {
--webkit-transform: scale3d(0.85, 1.05, 1);
-transform: scale3d(0.85, 1.05, 1);
-}
-65% {
--webkit-transform: scale3d(1.05, 0.95, 1);
-transform: scale3d(1.05, 0.95, 1);
-}
-75% {
--webkit-transform: scale3d(0.95, 1.05, 1);
-transform: scale3d(0.95, 1.05, 1);
-}
-100% {
--webkit-transform: scale3d(1, 1, 1);
-transform: scale3d(1, 1, 1);
+
+@media (max-width: 700px) {
+h1.ultima {
+	font-size: 70px;
 }
 }
-@keyframes jello-vertical {
-0% {
--webkit-transform: scale3d(1, 1, 1);
-transform: scale3d(1, 1, 1);
-}
-30% {
--webkit-transform: scale3d(0.75, 1.15, 1);
-transform: scale3d(0.75, 1.15, 1);
-}
-40% {
--webkit-transform: scale3d(1.15, 0.75, 1);
-transform: scale3d(1.15, 0.75, 1);
-}
-50% {
--webkit-transform: scale3d(0.85, 1.05, 1);
-transform: scale3d(0.85, 1.05, 1);
-}
-65% {
--webkit-transform: scale3d(1.05, 0.95, 1);
-transform: scale3d(1.05, 0.95, 1);
-}
-75% {
--webkit-transform: scale3d(0.95, 1.05, 1);
-transform: scale3d(0.95, 1.05, 1);
-}
-100% {
--webkit-transform: scale3d(1, 1, 1);
-transform: scale3d(1, 1, 1);
+
+@media (max-width: 525px) {
+h1.ultima {
+	font-size: 46px;
 }
 }
 
 @media (min-width: 768px) {
 .rules {
-    width: 70%;
-    margin-top: -14%;
+	width: 70%;
+	margin-top: -14%;
 }
 .small-img {
-    display: none;
+	display: none;
 }
 }
 
 @media (max-width: 768px) {
 .large-img {
-    display: none;
-}
-.prize-button a {
-    margin: 15px auto 0 auto;
+	display: none;
 }
 .item {
-    margin: 10px;
+	margin: 10px;
 }
 }
 </style>
@@ -536,71 +491,56 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="perm-alert" class="row">All Douglas County Libraries locations are open with modified <a class="text-underline" href="https://www.dcl.org/safety-notice/">hours, services, and safety protocols</a>.</div>
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row page-row">
-   
-     
+  <div class="row intro-row">
+    <div class="container roboto-regular">
+      <h1 class="jumbo-text white ultima">10 Days of Giveaways</h1>
+      <h1 class="white futura-bold text-uppercase no-margin">June 5-15</h1>
+      <h4 class="white futura text-uppercase no-margin-top">Sign Up to Win!</h4>
+      <div class="white large-text">Is your name written in the stars? We’re giving away 90 awesome prizes to Summer Reading participants who sign up for the program June 5-15. What could you win? Launch into Summer Reading and find out!</div>
+      <div class="white margin-top-10"> Each day features a random drawing for that day's prize. Everyone registered May 1-June 15 will be entered into the prize drawings. If you are chosen as a winner, we will contact you to arrange prize delivery. Winners will also be announced via DCL’s digital channels (first name, last initial). No purchase necessary, and registration is free. </div>
+      <div class="futura text-center"> <a href="../registration/" class="reg-link">Register Now!</a> </div>
+    </div>
+  </div>
+  <div class="row wave-row-top"></div>
+  <div>
+    <div class="row prizes-row">
       <div class="container">
-        <div class="">
-          <h1 class="futura-bold">Sign Up to Win!</h1>
-          <h4 class="futura-bold">Is your name written in the stars? We’re giving away 90 awesome prizes to Summer Reading participants who sign up for the program June 5-15. What could you win? Launch into Summer Reading and find out!</h4>
-        </div>
-        <div class="large-text">
-          <div>Each day features a random drawing for that day's prize. Everyone registered May 1-June 15 will be entered into the prize drawings. If you are chosen as a winner, we will contact you to arrange prize delivery. Winners will also be announced via DCL’s digital channels (first name, last initial). No purchase necessary, and registration is free.</div>
-        </div>
-        <div class="prize-button"><a class="" href="../registration/">Register Now!</a></div>
-      </div>
-      <div class="prizes-row">
         <div class="prizes-wrapper">
           <div class="item one">
-            <h1 class="details"><a href="#one" data-toggle="modal" data-target="#one">Details</a></h1>
+            <h1 class="text-uppercase">Day 1 Giveaway!</h1>
+            <img src="prizes/one.jpg" alt="">
+            <h1><a href="#one" data-toggle="modal" data-target="#one">Details</a></h1>
           </div>
-          <div class="item two">
-            <h1 class="details"><a href="#two" data-toggle="modal" data-target="#two">Details</a></h1>
+          <div class="item two"> 
+            <!--<h1 class="details"><a href="#two" data-toggle="modal" data-target="#two">Details</a></h1>--> 
           </div>
-          <div class="item three">
-            <h1 class="details"><a href="#three" data-toggle="modal" data-target="#three">Details</a></h1>
+          <div class="item three"> 
+            <!--<h1 class="details"><a href="#three" data-toggle="modal" data-target="#three">Details</a></h1>--> 
           </div>
-          <div class="item four">
-            <h1 class="details"><a href="#four" data-toggle="modal" data-target="#four">Details</a></h1>
+          <div class="item four"> 
+            <!--<h1 class="details"><a href="#four" data-toggle="modal" data-target="#four">Details</a></h1>--> 
           </div>
-          <div class="item five">
-            <h1 class="details"><a href="#five" data-toggle="modal" data-target="#five">Details</a></h1>
+          <div class="item five"> 
+            <!--<h1 class="details"><a href="#five" data-toggle="modal" data-target="#five">Details</a></h1>--> 
           </div>
-          <div class="item six">
-            <h1 class="details"><a href="#six" data-toggle="modal" data-target="#six">Details</a></h1>
+          <div class="item six"> 
+            <!--<h1 class="details"><a href="#six" data-toggle="modal" data-target="#six">Details</a></h1>--> 
           </div>
-          <div class="item seven">
-            <h1 class="details"><a href="#seven" data-toggle="modal" data-target="#seven">Details</a></h1>
+          <div class="item seven"> 
+            <!--<h1 class="details"><a href="#seven" data-toggle="modal" data-target="#seven">Details</a></h1>--> 
           </div>
-          <div class="item eight">
-            <h1 class="details"><a href="#eight" data-toggle="modal" data-target="#eight">Details</a></h1>
+          <div class="item eight"> 
+            <!--<h1 class="details"><a href="#eight" data-toggle="modal" data-target="#eight">Details</a></h1>--> 
           </div>
-          <div class="item nine">
-            <h1 class="details"><a href="#nine" data-toggle="modal" data-target="#nine">Details</a></h1>
+          <div class="item nine"> 
+            <!--<h1 class="details"><a href="#nine" data-toggle="modal" data-target="#nine">Details</a></h1>--> 
           </div>
-          <div class="item ten">
-            <h1 class="details"><a href="#ten" data-toggle="modal" data-target="#ten">Details</a></h1>
-          </div>
-          <div class="item eleven">
-            <h1 class="details"><a href="#eleven" data-toggle="modal" data-target="#eleven">Details</a></h1>
-          </div>
-          <div class="item twelve">
-            <h1 class="details"><a href="#twelve" data-toggle="modal" data-target="#twelve">Details</a></h1>
-          </div>
-          <div class="item thirteen">
-            <h1 class="details"><a href="#thirteen" data-toggle="modal" data-target="#thirteen">Details</a></h1>
-          </div>
-          <div class="item fourteen">
-            <h1 class="details"><a href="#fourteen" data-toggle="modal" data-target="#fourteen">Details</a></h1>
-          </div>
-          <div class="item fifteen">
-            <h1 class="text-uppercase">Day 15 Giveaway!</h1>
-            <img src="prizes/fifteen.png" alt="">
-            <h1><a href="#fifteen" data-toggle="modal" data-target="#fifteen">Details</a></h1>
+          <div class="item ten"> 
+            <!--<h1 class="details"><a href="#ten" data-toggle="modal" data-target="#ten">Details</a></h1>--> 
           </div>
         </div>
       </div>
-   
+    </div>
   </div>
   
   <!-- modal one -->
@@ -611,9 +551,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         </div>
         <h1>Day 1 Giveaway!</h1>
-        <img src="prizes/one.png" alt="">
-        <h4>Round Beach Towel</h4>
-        <div class="large-text">You'll need a great beach towel while splashing around this summer, and this 100% velour round towel is perfect for that! Details: 59" diameter, machine washable. </div>
+        <img src="prizes/one.jpg" alt="">
+        <h4>Moon Lamp</h4>
+        <div class="large-text">Bask in the glow of this 3D moon lamp, featuring dual color (white and yellow) and adjustable brightness. Details: 4.7” diameter; rechargeable battery.</div>
       </div>
     </div>
   </div>
@@ -743,76 +683,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <!-- modal eleven -->
-  <div class="modal fade" id="eleven" tabindex="-1" role="dialog" aria-labelledby="prize-modal">
-    <div class="modal-dialog modal-dialog-centered headlines-flyin" role="document">
-      <div class="modal-content">
-        <div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <h1>Day 11 Giveaway!</h1>
-        <img src="prizes/eleven.png" alt="">
-        <h4>Whole Foods Gift Card, $50</h4>
-        <div class="large-text">This gift card will give you a little extra financial freedom to splurge on your next grocery outing.</div>
-      </div>
-    </div>
-  </div>
-  <!-- modal twelve -->
-  <div class="modal fade" id="twelve" tabindex="-1" role="dialog" aria-labelledby="prize-modal">
-    <div class="modal-dialog modal-dialog-centered headlines-flyin" role="document">
-      <div class="modal-content">
-        <div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <h1>Day 12 Giveaway!</h1>
-        <img src="prizes/twelve.png" alt="">
-        <h4>Chaise Lounger Pool Float</h4>
-        <div class="large-text">Voted best pool float in 2019! This fabric-covered inflatable floating chair is perfect for your lake or pool adventures, and features a mesh seat, backrest, ottoman and cup holder. It also folds flat for easy portability and storage. </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal thirteen -->
-  <div class="modal fade" id="thirteen" tabindex="-1" role="dialog" aria-labelledby="prize-modal">
-    <div class="modal-dialog modal-dialog-centered headlines-flyin" role="document">
-      <div class="modal-content">
-        <div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <h1>Day 13 Giveaway!</h1>
-        <img src="prizes/thirteen.png" alt="">
-        <h4>Home Depot Gift Card, $60</h4>
-        <div class="large-text">This gift card will come in handy for shopping all your home improvement needs.</div>
-      </div>
-    </div>
-  </div>
-  <!-- modal fourteen -->
-  <div class="modal fade" id="fourteen" tabindex="-1" role="dialog" aria-labelledby="prize-modal">
-    <div class="modal-dialog modal-dialog-centered headlines-flyin" role="document">
-      <div class="modal-content">
-        <div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <h1>Day 14 Giveaway!</h1>
-        <img src="prizes/fourteen.png" alt="">
-        <h4>Grand Prize: Inflatable Stand-Up Paddleboard</h4>
-        <div class="large-text">This lightweight inflatable paddleboard is ideal for recreational paddlers of all skill levels. The package includes the stand-up paddleboard, 3-piece paddle, coil leash, center fin, backpack for storage/portability, pump, and waterproof phone case. Dimensions: 10'L x 32"W x 6"H, weighing 18 pounds; max weight capacity of 280 pounds. </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal fifteen -->
-  <div class="modal fade" id="fifteen" tabindex="-1" role="dialog" aria-labelledby="prize-modal">
-    <div class="modal-dialog modal-dialog-centered headlines-flyin" role="document">
-      <div class="modal-content">
-        <div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <h1>Day 15 Giveaway!</h1>
-        <img src="prizes/fifteen.png" alt="">
-        <h4>Grand Prize: Sweet Treat Truck Party for Your Neighborhood, 1.5 Hours</h4>
-        <div class="large-text">Treat yourself, your family, and your neighbors to a truckload of sweet treats and summer fun! A stocked ice cream truck will park in your neighborhood for 1.5 hours to serve refreshingly cool treats curbside, at no cost to you.</div>
-      </div>
-    </div>
-  </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
@@ -912,4 +782,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
