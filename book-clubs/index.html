@@ -72,10 +72,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .item-wrapper {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .item {
 	background: #fff;
 	margin: 10px;
+	max-width: 436px;
 }
 
 @media (min-width: 768px) {
@@ -326,7 +329,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
-    <div class="container no-gutter">
+    <div class="container-md no-gutter">
       <div class="item-wrapper">
         <div class="item"><img src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/904339467.png" alt="20 Mile Book Club">
           <div class="item-inner">
