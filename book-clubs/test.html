@@ -342,9 +342,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="container no-padding-left no-padding-right padding-top-30 text-center">
       <div class="filters">
         <div class="col-sm-8 col-md-4 padding-bottom-15">
-          <div class="text-uppercase small margin-bottom-5">Size:</div>
-          <select class="form-control filter-select" value-group="size">
-            <option value="*">ALL BOOK CLUBS</option>
+          
+          <select class="form-control filter-select font-weight-400" value-group="location">
+            <option value="">ANY LOCATION</option>
             <option value=".virtual">VIRTUAL</option>
             <option value=".castle-pines">CASTLE PINES</option>
             <option value=".castle-rock">CASTLE ROCK</option>
@@ -356,10 +356,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </select>
         </div>
         <div class="col-sm-8 col-md-4 padding-bottom-15">
-          <div class="text-uppercase small margin-bottom-5">Color:</div>
-          <select class="form-control filter-select" value-group="color">
-            <option value="*">ALL BOOK CLUBS</option>
+          
+          <select class="form-control filter-select font-weight-400" value-group="audience">
+            <option value="">ANY AGE GROUP</option>
             <option value=".adult">ADULT</option>
+            <option value=".adult">TEEN</option>
             <option value=".child">CHILD</option>
           </select>
         </div>
@@ -515,17 +516,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <script>
-    // external js: isotope.pkgd.js
-
 // init Isotope
 var $grid = $('.grid').isotope({
    itemSelector: '.element-item',
-  layoutMode: 'fitRows'
-});
+  layoutMode: 'fitRows',
 
+});
 // store filter for each group
 var filters = {};
-
 $('.filters').on( 'change', function( event ) {
   var $select = $( event.target );
   // get group key
@@ -537,7 +535,6 @@ $('.filters').on( 'change', function( event ) {
   // set filter for Isotope
   $grid.isotope({ filter: filterValue });
 });
-
 // flatten object by concatting values
 function concatValues( obj ) {
   var value = '';
@@ -546,8 +543,7 @@ function concatValues( obj ) {
   }
   return value;
 }
-
-    </script> 
+</script> 
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
