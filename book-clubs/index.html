@@ -76,17 +76,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	align-items: center;
 }
 .element-item {
-	padding: 2px;
+	padding: 3px;
+	border-radius: 2px;
 }
 .element-wrapper {
 	background-color: #fff;
-	border: 1px solid #fff;
 }
 .item-inner {
 	padding: 0 34px 30px;
 }
 .element-wrapper {
-	min-height: 700px;
+	min-height: 785px;
 }
 
 @media (min-width: 768px) {
@@ -112,7 +112,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	width: 100%;
 }
 .element-wrapper {
-	min-height: 775px;
+	min-height: 780px;
+}
+}
+
+@media (min-width: 1355px) {
+.custom.container {
+	width: 1355px;
 }
 }
 </style>
@@ -335,7 +341,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
-    <div class="container no-gutter">
+    <div class="custom container no-gutter">
       <div class="grid">
         <div class="element-item parker adult">
           <div class="element-wrapper"><img class="img-responsive center-block" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/904339467.png" alt="20 Mile Book Club">
