@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,7 +64,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link type="text/css" rel="stylesheet" href="../shared-assets/css/trish.css">
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
@@ -77,20 +75,28 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	justify-content: center;
 }
 .box-item {
-	flex: 1;
 	padding: 5px 30px 35px;
-	margin: 5px 35px;
+	margin: 5px 20px;
 	background: #fff url("box-background.gif") top center repeat-x;
-	min-width: 490px;
 	border-radius: 3px;
+	width: 450px;
 }
 .print-item {
 	flex: 1;
 	padding: 5px 30px 35px;
-	margin: 5px 35px;
+	margin: 5px 20px;
 	background: #fff url("box-background.gif") top center repeat-x;
-	max-width: 325px;
+	max-width: 450px;
 	border-radius: 3px;
+}
+.exceptions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.alt-listitem {
+	list-style: none;
+	margin: 0 0 5px -25px;
 }
 .icon-circle-gray {
 	border: 6px solid #f5f5f5;
@@ -119,7 +125,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .box-item, .print-item {
 	flex-direction: column;
 	min-width: 100%;
-	margin: 15px;
+	margin: 5px;
 }
 }
 </style>
@@ -314,11 +320,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div class="separator line-separator"><i class="fas fa-tag"></i></div>
         </div>
       </div>
-      <h4 class="roboto margin-lg-100 text-center margin-bottom-30">Welcome! If you <a href="http://getacard.org/v2/index.html" target="_blank">need a library card</a> or are a new cardholder, explore some frequently asked <a href="https://help.dcl.org/hc/en-us/categories/360000951211-Borrowing-My-Account" target="_blank">account questions here</a>. Recover your <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a> or <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a>. To donate materials, please review our <a href="#donate-books-and-more">Donate Books & More</a> guidelines.</h4>
+      <div class="roboto margin-lg-150 text-center margin-bottom-30">
+        <h4 class="roboto">Welcome! If you <a href="http://getacard.org/v2/index.html" target="_blank">need a library card</a> or are a new cardholder, explore some frequently asked <a href="https://help.dcl.org/hc/en-us/categories/360000951211-Borrowing-My-Account" target="_blank">account questions here</a>. Recover your <a href="http://getacard.org/v2/index.html#recoverPasswordTab" target="_blank">PIN</a> or <a href="http://getacard.org/v2/index.html#recoverBarcodeTab" target="_blank">library card number</a>.</h4>
+        <h5>To donate materials, please review our <a href="#donate-books-and-more">Donate Books & More</a> guidelines.</h5>
+      </div>
     </div>
   </div>
   <div class="row bg-gray-5 padding-top-30 padding-bottom-60">
-    <div class="container box-wrapper">
+    <div class="container-md box-wrapper">
       <div class="box-item">
         <div class="icon-circle-gray"><i class="far fa-credit-card"></i></div>
         <h3 class="text-center margin-top-10 font-weight-400">Get a Library Card</h3>
@@ -328,6 +337,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="icon-circle-gray"><i class="fas fa-search"></i></div>
         <h3 class="text-center margin-top-10 font-weight-400">Request a Title</h3>
         <div>Can't find what you're looking for in the catalog? Here are a <a href="../request-title/">few more options</a>.</div>
+      </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-car-alt"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Park & Pick-Up Holds</h3>
+        <div class="margin-bottom-5">Use our curbside service to pick up holds at your preferred DCL location<span class="asterisk-space">*</span> <a class="text-center" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<ul class='padding-left-15'><li>Look for the parking spaces set aside for this service.</li><li>If all marked spots are full, please wait in your car for a space to become available.</li><li>Once you are parked in a numbered space, call or text the number on the sign with the required information.</li></ul>">following these instructions</a>. Book Club Express kits may also be picked up using this service.</div>
+        <div class="small"><span class="asterisk-space">*</span>Not available at Louviers.</div>
       </div>
       <div class="box-item">
         <div class="icon-circle-gray"><i class="far fa-comment-alt"></i></div>
@@ -357,7 +372,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="print-item">
         <div class="icon-circle-gray"><i class="fas fa-print"></i></div>
         <h3 class="font-weight-400 text-center">Printing Prices</h3>
-        <div>Letter size
+        <div>
+          <div class="margin-bottom-5">Letter size</div>
           <ul>
             <li>Black & white: 10 cents per page; 20 cents per double-sided page</li>
             <li>Color: 25 cents per page; no double-sided color printing</li>
@@ -367,13 +383,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="print-item">
         <div class="icon-circle-gray"><i class="fas fa-copy"></i></div>
         <h3 class="font-weight-400 text-center">Copying Prices</h3>
-        <div>Letter & legal size
+        <div>
+          <div class="margin-bottom-5">Letter & legal size</div>
           <ul>
             <li>Black & white: 10 cents per page; 20 cents per double-sided page</li>
             <li>Color: 25 cents per page; 50 cents per double-sided page</li>
           </ul>
         </div>
-        <div>11-inch by 17-inch
+        <div>
+          <div class="margin-bottom-5">11-inch by 17-inch</div>
           <ul>
             <li>Black & white: 20 cents per page; 40 cents per double-sided page</li>
             <li>Color: 50 cents per page; $1 per double-sided page</li>
@@ -399,26 +417,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </div>
         </div>
       </div>
-      <div class="text-center padding-top-15 margin-bottom-10 margin-lg-200 margin-md-100">To pay with your Visa or MasterCard credit card, see a DCL staff member; $1&nbsp;minimum. There is a $5&nbsp;maximum per print/copy job.</div>
+      <div class="text-center padding-top-15 margin-bottom-10 margin-lg-200 margin-md-100">See a DCL staff member to pay with your Visa or MasterCard ($1&nbsp;minimum).</div>
     </div>
   </div>
-  <div id="donate-books-and-more" style="padding: 15px 0 50px;" class="row bg-teal white">
-    <div class="container">
+  <div id="donate-books-and-more" class="row bg-teal white">
+    <div class="container padding-top-15 padding-bottom-50">
       <h1 class="white text-center">Donate Books & More</h1>
-      <div class="text-center">Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the <a class="white text-underline" href="../foundation/">Douglas County Libraries Foundation</a>. </div>
-      <div class="margin-lg-100">
-        <div class="col-md-7">
-          <div class="padding-top-15 margin-bottom-10">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
+      <div class="text-center margin-bottom-10 margin-lg-150">Douglas County Libraries accepts donations of new and used books, music CDs and DVDs for ongoing and special book sales, or for further donation to organizations that distribute materials to underserved populations. Book sales benefit the <a class="white text-underline" href="../foundation/">Douglas County Libraries Foundation</a>. </div>
+      <div class="margin-lg-200">
+        <div class="margin-bottom-10 text-center">Book donations are accepted during regular business hours at all locations, excluding Louviers. If your donation fills more than two boxes, please contact us to <a class="white text-underline" href="#schedule" data-toggle="modal" data-target="#schedule">schedule a donation</a>.</div>
+        <div class="exceptions">
           <ul>
-            <li>Castle Rock: Wednesdays, 3-7PM</li>
-            <li>Highlands Ranch: Saturdays, 10AM-2PM</li>
-            <li>Lone Tree: Mondays, 10AM-2PM</li>
-            <li>Parker: Thursdays, 10AM-2PM</li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <div class="padding-top-15 margin-bottom-10">Dated receipts are available upon request; we are not able to quote a value for donated items. Please do not donate:</div>
-          <ul>
+            <li class="alt-listitem">Please do not donate:</li>
             <li>Items in poor condition</li>
             <li>Textbooks older than five years</li>
             <li>Encyclopedias</li>
@@ -427,14 +437,25 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <li>Computer books older than five years</li>
           </ul>
         </div>
+        <div class="text-center">Dated receipts are available upon request; we are not able to quote a value for donated items.</div>
       </div>
     </div>
   </div>
-  <a href="https://www.dcl.org/keep-growing">
-  <div class="slide"><img class="bubble" src="../shared-assets/images/talk-bubble.png" alt="Sign up for Saturday fun and giveaways!">
-    <div class="trish"></div>
+  <!-- Modal -->
+  <div class="modal fade" id="schedule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h3 class="text-center modal-title">Schedule a Donation</h3>
+        </div>
+        <div class="modal-body">
+          <iframe class="embed-responsive-item" src="https://form.jotform.com/202655299471160" frameborder="0" style="width: 100%;height:655px;border:none;" scrolling="no"> </iframe>
+        </div>
+      </div>
+    </div>
   </div>
-  </a> <!-- InstanceEndEditable --> </div>
+  <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
     <div class="social-footer">
@@ -539,5 +560,4 @@ $(function () {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
