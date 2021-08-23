@@ -73,6 +73,47 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 15px 15px 17px 15px;
 	vertical-align: bottom;
 }
+.cover-image-alt {
+	/* box-shadow: 0 5px 15px -7px #000; */
+	height: 275px;
+	/* height: auto; */
+	/* width: auto; */
+	/* position: relative; */
+	/* top: 20px; */
+	/* transition: all 0.4s ease-in-out; */
+	background: #fff;
+	margin: 10px 3px 5px !important;
+}
+.cover-image-alt:hover, .cover-image-alt:focus {
+}
+.epic-item {
+	box-shadow: 0 5px 15px -7px #000;
+	/* max-height: 275px; */
+	height: auto;
+	width: auto;
+	position: relative;
+	top: 20px;
+	transition: all 0.4s ease-in-out;
+	background: #fff;
+	margin: 15px 15px 17px 15px;
+}
+.epic-item:hover, .epic-item:focus {
+	top: 2px;
+	transition: all 0.4s ease-in-out;
+	transform: scale(1.1);
+}
+.epic-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.epic-title {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: -15px;
+	/* font-weight: 400; */
+	margin-top: 6px;
+}
 #covers-outer > ul {
 	margin: 0;
 	padding: 0;
@@ -290,7 +331,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h1 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1671792099">Epic Reads</a></h1>
   </div>
   <div class="row shelf">
-    <div class="container shelf-container text-center"><a href="https://dcl.bibliocommons.com/list/share/692283576/1663243799"><img class="cover-image" src="epic-reads-1-3.jpg" alt="Epic Reads Grade 1-3"></a><a href="https://dcl.bibliocommons.com/list/share/692283576/1657232119"><img class="cover-image" src="epic-reads-4-6.jpg" alt="Epic Reads Grade 4-6"></a><a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1662424079"><img class="cover-image" src="epic-reads-7-8.jpg" alt="Epic Reads Grade 7-8"></a></div>
+    <div class="container shelf-container text-center epic-wrapper">
+      <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576/1663243799">
+        <div class="epic-title">Grades 1-3</div>
+        <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1663243799.png" alt="Epic Reads Grades 1-3"></a></div>
+      <div class="epic-item"> <a href="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1657232119.png">
+        <div class="epic-title">Grades 4-6</div>
+        <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1657232119.png" alt="Epic Reads Grades 4-6"></a></div>
+      <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1662424079">
+        <div class="epic-title">Grades 7-8</div>
+        <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1662424079.png" alt="Epic Reads Grades 7-8"></a></div>
+    </div>
   </div>
   <div class="row shelf-shadow padding-bottom-60">
     <div class="container margin-lg-200">
