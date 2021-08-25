@@ -69,9 +69,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-#online-learning, #activities {
-	padding: 40px 0 55px;
-}
 .red-text a:hover {
 	color: darkred;
 }
@@ -111,6 +108,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	flex: 1;
 	margin: 30px 15px;
 	min-width: 400px;
+}
+.card-item {
+	margin: 30px 15px;
+	width: 375px;
 }
 
 @media (max-width: 992px) {
@@ -318,6 +319,20 @@ opacity:0;
 	overflow: hidden;
 	padding-bottom: 45%;
 	width: 100%;
+}
+}
+
+@media (max-width: 1620px) {
+.custom-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+}
+
+@media (max-width: 810px) {
+.card-item {
+	width: 100%;
+	margin: 30px;
 }
 }
 </style>
@@ -556,7 +571,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <!-- #slideshow div:nth-of-type(9) --> 
       <span></span> </div>
   </div>
-  <div id="activites" class="row padding-top-40 padding-bottom-40">
+  <div id="activites" class="row padding-top-60 padding-bottom-60">
     <div class="container">
       <div class="box-item-wrapper">
         <div id="check-out-colorado" class="box-item">
@@ -583,24 +598,34 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div id="online-learning" class="row bg-gray-5">
-    <div class="container margin-lg-100 text-center padding-top-30 padding-bottom-30">
+    <div class="container margin-lg-100 text-center padding-top-60">
       <h1 class="text-uppercase no-margin-top font-weight-400">Online Learning</h1>
-      <h4 class="roboto padding-bottom-15">These resources make learning a new language or new technology skills simple and convenient. Learn from the privacy of your own home&mdash;or your local library or coffee shop.</h4>
-      <div id="mango" class="col-md-6 text-center padding-bottom-30"> <img class="img-responsive image-center" src="mango-languages.jpg" alt="Mango Languages">
-        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a></h3>
-        <div>Online language learning from German to Spanish, Russian to Mandarin Chinese. No downloads are required, and an app is available.</div>
-      </div>
-      <div id="linkedin-learning" class="col-md-6 text-center padding-bottom-30"> <img class="img-responsive image-center" src="linkedin-learning.jpg" alt="LinkedIn Learning">
-        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=linkedin" target="_blank">LinkedIn Learning</a></h3>
-        <div>Learn software, creative, business and technology skills from video courses taught by industry experts. Over 16,000 courses are available in seven languages.</div>
-      </div>
-      <div id="creativebug" class="col-md-6 text-center padding-bottom-30"> <img class="img-responsive image-center" src="creativebug.jpg" alt="Creativebug">
-        <h3><a href="https://creativebug.com/lib/dcl" target="_blank">Creativebug</a></h3>
-        <div>Watch more than 1,000 DIY classes from renowned artists&mdash;anytime, anywhere. Create a Creativebug account using your library card and PIN, and start crafting!</div>
-      </div>
-      <div id="prenda" class="col-md-6 text-center padding-bottom-30"> <img class="img-responsive image-center" src="creativebug.jpg" alt="Prenda Code Club">
-        <h3><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=prenda-code-club" target="_blank">Prenda Code Club</a></h3>
-        <div>Learn how to code using this self-guided online software program, which includes hundreds of coding tutorials and dozens of real-world projects.</div>
+      <h4 class="roboto no-margin-bottom">These resources make learning a new language or new technology skills simple and convenient. Learn from the privacy of your own home&mdash;or your local library or coffee shop.</h4>
+    </div>
+  </div>
+  <div class="row bg-gray-5 padding-bottom-60">
+    <div class="custom-container">
+      <div class="box-item-wrapper">
+        <div id="mango" class="card-item">
+          <div><img class="img-responsive center-block" src="mango-languages.jpg" alt="Mango Languages"></div>
+          <h3 class="text-center"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a></h3>
+          <div>Online language learning from German to Spanish, Russian to Mandarin Chinese. No downloads are required, and an app is available.</div>
+        </div>
+        <div id="linkedin-learning" class="card-item">
+          <div><img class="img-responsive center-block" src="linkedin-learning.jpg" alt="LinkedIn Learning"></div>
+          <h3 class="text-center"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=linkedin" target="_blank">LinkedIn Learning</a></h3>
+          <div>Learn software, creative, business and technology skills from video courses taught by industry experts. Over 16,000 courses are available in seven languages.</div>
+        </div>
+        <div id="prenda" class="card-item">
+          <div><img class="img-responsive center-block" src="prenda.jpg" alt="Prenda Code Club"></div>
+          <h3 class="text-center"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=prenda-code-club" target="_blank">Prenda Code Club</a></h3>
+          <div>Learn how to code using this self-guided online software program, which includes hundreds of coding tutorials and dozens of real-world projects.</div>
+        </div>
+        <div id="creativebug" class="card-item">
+          <div><img class="img-responsive center-block" src="creativebug.jpg" alt="Creativebug"></div>
+          <h3 class="text-center"><a href="https://creativebug.com/lib/dcl" target="_blank">Creativebug</a></h3>
+          <div>Watch more than 1,000 DIY classes from renowned artists&mdash;anytime, anywhere. Create a Creativebug account using your library card and PIN, and start crafting!</div>
+        </div>
       </div>
     </div>
   </div>
