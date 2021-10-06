@@ -76,7 +76,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	align-items: center;
 }
 .element-item {
-    width: 25%;
+width: 25%;
 	padding: 3px;
 	border-radius: 2px;
 }
@@ -90,25 +90,26 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding: 0 34px 30px;
 }
 .element-wrapper {
-	min-height: 690px;
+	
 }
 
 
-@media (min-width: 790px) and (max-width: 1500px) {
+@media (max-width: 1500px) {
 .element-item {
 	width: 33.333%;
 }
 .element-wrapper {
-	min-height: 785px;
+	
 }
 }
 
 @media (max-width: 767px) {
 .element-item {
 	width: 100%;
+    height: 100%;
 }
 .element-wrapper {
-	min-height: 780px;
+	
 }
 }
 
@@ -439,8 +440,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <script>
 // init Isotope
 var $grid = $('.grid').isotope({
-   itemSelector: '.element-item',
-  layoutMode: 'fitRows'
+ 
+      itemSelector: '.element-item'
 });
 // store filter for each group
 var filters = {};
