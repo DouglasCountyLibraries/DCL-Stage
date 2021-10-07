@@ -68,13 +68,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
 <!-- pinterest - do not remove --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script> 
+<!-- launch modal on page load -->
 <script type="text/javascript">
-            $(document).ready(function() {
-                 if ($.cookie('cgdpop') == null) {
-                     $('#cgdModal').modal('show');
-                     $.cookie('cgdpop', '100');
-                 }
-             });
+    $(window).on('load', function() {
+        $('#cgdModal').modal('show');
+    });
 </script>
 <style>
 @font-face {
