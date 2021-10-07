@@ -1716,11 +1716,11 @@ h6.responsive-text {
 .border {
   border: 6px solid #eee;
 }
-/* removed while permanent alert is in place
+
 .border-top {
   border-top: 6px solid #eee;
 }
-*/
+
 .border-right {
   border-right: 6px solid #eee;
 }
