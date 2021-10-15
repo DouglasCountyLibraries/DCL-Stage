@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+﻿<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,9 +22,9 @@
 
 <!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Research Databases | Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
+<title>DCL for Business | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Business, Small Business, Business Resources, Market Research, Advice, Research, Databases">
+<meta name="description" content="DCL for Business offers a variety of information services and resources for entrepreneurs and small businesses. ">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -65,75 +64,56 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.research-active {
+.using-the-library-active {
 	background-color: #f5f5f5;
 }
-.ebsco-search {
-	max-width: 450px;
-	margin: 0 auto;
-}
-.border-top-thin {
-	border-top: 3px solid #f5f5f5;
-}
-.new.form-control {
-	border: 2px solid #ddd;
-	height: 45px;
-}
-.page-nav {
+.item-wrapper {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	text-transform: uppercase;
+	flex-wrap: wrap;
 }
-.page-nav-item a {
-	color: #000;
-	font-weight: 400;
-	border: 2px solid #ddd;
-	padding: 10px 0;
-	display: inline-block;
-	width: 275px;
-	white-space: nowrap;
-	background: #fff;
-	border-radius: 3px;
+.item {
+	padding: 5px 30px;
 	text-align: center;
-	margin: 5px;
 }
-.page-nav-item a:hover {
-	color: #000;
-	background: #f5f5f5;
-	border: 2px solid #ddd;
-	text-decoration: none;
+.front {
+	background-color: rgba(255,255,255,.65);
 }
-.logo-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
+.front:hover {
+	background-color: rgba(255,255,255,1);
 }
-.logo-item {
-	margin: 3px 15px;
+.number-card {
+	height: 200px;
+	text-align: center;
 }
-.databases {
-	max-width: 550px;
-	margin: 0 auto;
+.card-grid:hover, .card-grid:focus {
+	cursor: pointer;
 }
-.databases > h4 {
-	margin-bottom: 0;
-	padding-top: 15px;
+.number {
+	font-size: 20px;
+	padding-bottom: 15px;
+	color: #666;
+	text-transform: uppercase;
+	font-weight: 400
 }
-.logo-hover {
-	opacity: 0.7;
-	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+.number > span {
+	background-color: rgba(255,255,255,.7);
+	border-radius: 50%;
+	color: #666;
+	font-weight: 400;
+	margin-right: 5px;
+	padding: 7px 14px;
+	border: 2px solid #666;
 }
-.logo-hover:hover {
-	opacity: 1;
-	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+.business-frame {
+	height: 1020px;
 }
 
-@media (max-width: 450px) {
-.ebsco-search {
-	max-width: auto;
+@media (max-width: 540px) {
+.business-frame {
+	height: 1120px;
 }
 }
 </style>
@@ -216,7 +196,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <li><a href="../read-listen-watch/">Read, Listen, Watch</a></li>
           <li><a href="../kids-events/">Kids Events</a></li>
           <li><a href="../parents-teachers/">Parents & Teachers</a></li>
-          <li><a href="students/">Homework Help</a></li>
+          <li><a href="../research/students/">Homework Help</a></li>
           <li><a href="../teens/">Teens</a></li>
         </ul>
       </li>
@@ -277,7 +257,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                   <li><a href="../read-listen-watch/">Read, Listen, Watch</a></li>
                   <li><a href="../kids-events/">Kids Events</a></li>
                   <li><a href="../parents-teachers/">Parents & Teachers</a></li>
-                  <li><a href="students/">Homework Help</a></li>
+                  <li><a href="../research/students/">Homework Help</a></li>
                   <li><a href="../teens/">Teens</a></li>
                 </ul>
               </li>
@@ -319,115 +299,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="container text-center">
-      <h1 class="text-uppercase jumbo-text font-weight-400">Research</h1>
-    </div>
-  </div>
-  <div class="row padding-bottom-15">
-    <div class="page-nav">
-      <div class="page-nav-item"><a href="students/">Student Databases</a></div>
-      <div class="page-nav-item"><a href="../business/">DCL for Business</a></div>
-      <div class="page-nav-item"><a href="https://archives.dcl.org/digital/custom/resources" target="_blank">Archives & Local History</a></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container text-center margin-lg-50">
-      <h4 class="roboto no-margin-top">Use the search feature below to access a wealth of information on your chosen topic from magazines, journals and other educational research databases.</h4>
-    </div>
-  </div>
-  <div class="row padding-bottom-15">
-    <div class="container text-center">
-      <div class="ebsco-search"> 
-        <script src="//support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
-        <form class="ebscohostCustomSearchBox margin-top-10 margin-bottom-10 search research-search" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
-          <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
-          <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://douglascountylibraries.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&scope=site&type=0&site=eds-live&lang=en" />
-          <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
-          <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
-          <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
-          <div class="input-group">
-            <input id="ebscohostsearchtext" class="new form-control" placeholder="Search Articles &raquo;" name="ebscohostsearchtext" type="text" />
-            <span class="input-group-btn">
-            <button type="submit" value="Search" class="btn btn-search ebscohost-search-button"> <i class="fas fa-search"></i> </button>
-            </span></div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="row margin-bottom-30">
-    <div class="logo-wrapper container">
-      <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank"><img class="img-responsive center-block logo-hover" src="consumer-reports.png" alt="Consumer Reports"/></a></div>
-      <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica" target="_blank"><img class="img-responsive center-block logo-hover" src="britannica.png" alt="Britannica"/></a></div>
-      <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=morningstar" target="_blank"><img class="img-responsive center-block logo-hover" src="morningstar.png" alt="Morningstar Investments"/></a></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container text-center margin-lg-150">
-      <div>Access the following databases for free either at the library or online using your library card. Students can get help with school work using the <a href="#">student databases</a>, entrepreneurs and small businesses using <a href="#">DCL for Business</a> and history & genealogy research using <a href="#">DCL Archives & Local History</a> resources.</div>
-    </div>
-  </div>
-  <div class="row padding-bottom-60">
-    <div class="container">
-      <div class="databases">
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=academic-search-complete" target="_blank">Academic Search Complete</a></h4>
-        <div>Full-text article database of scholarly and peer-reviewed journals covering a variety of subjects, including biology, chemistry, psychology and physics.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=adult-learning-center" target="_blank">Adult Learning Center</a></h4>
-        <div>Live assistance from Brainfuse on passing the GED, preparing for the U.S. citizenship test, writing a resume, and getting help with Microsoft Office.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=ancestryplus" target="_blank">AncestryPlus</a></h4>
-        <div>Comprehensive genealogy and local history resource using census, vital and immigration records, and more.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=biography" target="_blank">Biography in Context</a></h4>
-        <div>Biographical entries from encyclopedias and journal articles about noteworthy world figures.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica" target="_blank">Britannica</a></h4>
-        <div>Targeted search levels for children, young adults, and an adult reference center. Current events and primary sources are included.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica-escolar" target="_blank">Britannica Escolar</a></h4>
-        <div>Britannica in Spanish for elementary and secondary school-level research.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=enciclopedia-moderna" target="_blank">Britannica Moderna</a></h4>
-        <div>Britannica in Spanish for high school and college-level research.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=colorado-grants" target="_blank">Colorado Grants Guide</a></h4>
-        <div class="text-uppercase small">Colorado Grants Guide Online</div>
-        <div>Profiles of local foundations and trusts, corporations, national funders, government agencies, and religious organizations.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-health" target="_blank">Consumer Health Complete</a></h4>
-        <div>Full-text resource of more than 250 health reference books and encyclopedias, covering mainstream and holistic medicine.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank">Consumer Reports</a></h4>
-        <div>Resource for consumer research on products and services.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=culturegrams" target="_blank">CultureGrams</a></h4>
-        <div>Illustrated resource featuring cultural and geographical information on provinces, states and world topics.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=global-issues" target="_blank">Global Issues in Context</a></h4>
-        <div>Search by issue or topic to get specific global viewpoints, reference information, statistics, articles, reports and more.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=fof-history-resources" target="_blank">History Resources: Facts on File</a></h4>
-        <div>Research portal for American History, Modern World History, and Ancient & Medieval History Online. </div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank">Homework HelpNow</a></h4>
-        <div class="text-uppercase small">Brainfuse</div>
-        <div>Live homework help and tutoring, including a writing lab, skills building, test prep, and Spanish-speaking tutors, for students of all ages. Live Chess Tutoring is now a Featured Service!</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=gale-legalforms" target="_blank">Legal Forms</a></h4>
-        <div class="text-uppercase small">Gale Legal Forms</div>
-        <div>State-specific, professional legal documents covering hundreds of legal subjects and issues, and an attorney directory.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=literature-resource" target="_blank">Literature Resource Center</a></h4>
-        <div>Background information about writers from around the world, including essays on their work.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=morningstar" target="_blank">Morningstar Investments</a></h4>
-        <div>Data research and investment analysis on stocks, funds and industries.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=myheritage" target="_blank">MyHeritage</a></h4>
-        <div>Billions of historical documents, and millions of historical photos, for genealogical research, starting from the 16th century. Available from home.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=newspaper-source" target="_blank">Newspaper Source Plus</a></h4>
-        <div>Digital resource of global news content, including millions of articles from newspapers, newswires and news magazines, plus television and radio transcripts.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=opposing-viewpoints" target="_blank">Opposing Viewpoints in Context</a></h4>
-        <div>Background information, arguments and statistics related to current social issues.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=terc" target="_blank">Peterson’s Test Prep</a></h4>
-        <div class="text-uppercase small">Gale Presents</div>
-        <div>Online tests and prep tools for academic and professional exams. Also includes school scholarship info and a resume builder.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=gvrl" target="_blank">Reference E-Books</a></h4>
-        <div class="text-uppercase small">Gale Virtual Reference Library</div>
-        <div>A searchable database by topic or subject, including the arts, literature, business, history and medicine.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=science-reference" target="_blank">Science Reference Center</a></h4>
-        <div>Full-text articles on biology, chemistry, earth and space sciences, and more from hundreds of science encyclopedias, reference books and periodicals.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=value-line" target="_blank">Value Line Investing Research</a></h4>
-        <div class="text-uppercase small">Value Line</div>
-        <div>Investment and research tools for analyzing stocks, companies, industries, markets and economies.</div>
-        <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=world-almanac-for-kids" target="_blank">World Almanac for Kids</a></h4>
-        <div>Grade-appropriate content on various subjects and topics, as well as resources for homework help and teacher support.</div>
-      </div>
-    </div>
+ <div class="row text-center border-top padding-top-100 padding-bottom-120">
+    <h1 class="jumbo-text text-uppercase font-weight-400">New Design Goes Here</h1>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
@@ -489,7 +362,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> 
+<script>
+	  $(".card-grid").flip();
+		</script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
@@ -528,5 +405,4 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
