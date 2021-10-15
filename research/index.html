@@ -76,6 +76,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .border-top-thin {
 	border-top: 3px solid #f5f5f5;
 }
+.new.form-control {
+	border: 2px solid #ddd;
+	height: 45px;
+}
 .page-nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -83,7 +87,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	text-transform: uppercase;
 }
 .page-nav-item a {
-	color: #666;
+	color: #000;
 	font-weight: 400;
 	border: 2px solid #ddd;
 	padding: 10px 0;
@@ -94,14 +98,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	border-radius: 3px;
 	text-align: center;
 	margin: 5px;
-	transition-duration: .5s;
 }
 .page-nav-item a:hover {
-	color: #fff;
-	background: #4e3b59;
-	border: 2px solid #4e3b59;
+	color: #000;
+	background: #f5f5f5;
+	border: 2px solid #ddd;
 	text-decoration: none;
-	transition-duration: .5s;
 }
 .logo-wrapper {
 	display: flex;
@@ -330,11 +332,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="container text-center margin-lg-100">
+    <div class="container text-center margin-lg-50">
       <h4 class="roboto no-margin-top">Use the search feature below to access a wealth of information on your chosen topic from magazines, journals and other educational research databases.</h4>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row padding-bottom-15">
     <div class="container text-center">
       <div class="ebsco-search"> 
         <script src="//support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
@@ -345,7 +347,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
           <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
           <div class="input-group">
-            <input id="ebscohostsearchtext" class="form-control" placeholder="Search Articles &raquo;" name="ebscohostsearchtext" type="text" />
+            <input id="ebscohostsearchtext" class="new form-control" placeholder="Search Articles &raquo;" name="ebscohostsearchtext" type="text" />
             <span class="input-group-btn">
             <button type="submit" value="Search" class="btn btn-search ebscohost-search-button"> <i class="fas fa-search"></i> </button>
             </span></div>
@@ -353,7 +355,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row border-top-thin padding-top-30 margin-bottom-30">
+  <div class="row margin-bottom-30">
     <div class="logo-wrapper container">
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank"><img class="img-responsive center-block logo-hover" src="consumer-reports.png" alt="Consumer Reports"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica" target="_blank"><img class="img-responsive center-block logo-hover" src="britannica.png" alt="Britannica"/></a></div>
@@ -361,8 +363,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="container text-center margin-lg-200">
-      <div>Access the following databases for free either at the library or online using your library card. Get help with school work, personal finances, business research, learning, genealogy and more.</div>
+    <div class="container text-center margin-lg-150">
+      <div>Access the following databases for free either at the library or online using your library card. Students can get help with school work using the <a href="#">student databases</a>, entrepreneurs and small businesses using <a href="#">DCL for Business</a> and history & genealogy research using <a href="#">DCL Archives & Local History</a> resources.</div>
     </div>
   </div>
   <div class="row padding-bottom-60">
