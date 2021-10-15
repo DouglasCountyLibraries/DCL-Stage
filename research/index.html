@@ -69,16 +69,39 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .research-active {
 	background-color: #f5f5f5;
 }
+.ebsco-search {
+	max-width: 450px;
+	margin: 0 auto;
+}
+.border-top-thin {
+	border-top: 3px solid #f5f5f5;
+}
+.logo-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+.logo-item {
+	margin: 3px 15px;
+}
 .databases > h4 {
 	margin-bottom: 0;
 	padding-top: 15px;
 }
 .logo-hover {
-	opacity: 0.7
+	opacity: 0.7;
+	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
 }
 .logo-hover:hover {
 	opacity: 1;
 	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+}
+
+@media (max-width: 450px) {
+.ebsco-search {
+	max-width: auto;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -274,8 +297,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="container text-center">
-      <div class="col-sm-6 col-sm-push-3"> 
+    <div class="container text-center padding-bottom-30">
+      <div class="ebsco-search"> 
         <script src="//support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
         <form class="ebscohostCustomSearchBox margin-top-10 margin-bottom-10 search research-search" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
           <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
@@ -292,7 +315,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row margin-top-10 padding-bottom-15">
+  <div class="row border-top-thin padding-top-30 margin-bottom-30">
+    <div class="logo-wrapper container">
+      <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank"><img class="img-responsive center-block logo-hover" src="consumer-reports.png" alt="Consumer Reports"/></a></div>
+      <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica" target="_blank"><img class="img-responsive center-block logo-hover" src="britannica.png" alt="Britannica"/></a></div>
+      <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=morningstar" target="_blank"><img class="img-responsive center-block logo-hover" src="morningstar.png" alt="Morningstar Investments"/></a></div>
+    </div>
+  </div>
+  <div class="row">
     <div class="container text-center margin-lg-200">
       <div>Access the following databases for free either at the library or online using your library card. Get help with school work, personal finances, business research, learning, genealogy and more.</div>
     </div>
