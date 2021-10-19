@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
@@ -24,7 +24,7 @@
 <!-- InstanceBeginEditable name="title" -->
 <title>DCL for Business | Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Business, Small Business, Business Resources, Market Research, Advice, Research, Databases">
-<meta name="description" content="DCL for Business offers a variety of information services and resources for entrepreneurs and small businesses. ">
+<meta name="description" content="DCL for Business offers a variety of information services and resources for entrepreneurs and small businesses.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -64,56 +64,98 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-.item-wrapper {
+.ebsco-search {
+	max-width: 450px;
+	margin: 0 auto;
+}
+.border-top-thin {
+	border-top: 3px solid #f5f5f5;
+}
+.new.form-control {
+	border: 2px solid #ddd;
+	height: 45px;
+}
+.page-nav {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
-}
-.item {
-	padding: 5px 30px;
-	text-align: center;
-}
-.front {
-	background-color: rgba(255,255,255,.65);
-}
-.front:hover {
-	background-color: rgba(255,255,255,1);
-}
-.number-card {
-	height: 200px;
-	text-align: center;
-}
-.card-grid:hover, .card-grid:focus {
-	cursor: pointer;
-}
-.number {
-	font-size: 20px;
-	padding-bottom: 15px;
-	color: #666;
+	justify-content: center;
 	text-transform: uppercase;
-	font-weight: 400
 }
-.number > span {
-	background-color: rgba(255,255,255,.7);
-	border-radius: 50%;
-	color: #666;
+.page-nav-item a {
+	color: #000;
 	font-weight: 400;
-	margin-right: 5px;
-	padding: 7px 14px;
-	border: 2px solid #666;
+	border: 2px solid #ddd;
+	padding: 10px 0;
+	display: inline-block;
+	width: 275px;
+	white-space: nowrap;
+	background: #fff;
+	border-radius: 3px;
+	text-align: center;
+	margin: 5px;
 }
-.business-frame {
-	height: 1020px;
+.page-nav-item a:hover, .page-nav-item a:focus {
+	color: #000;
+	background: #f5f5f5;
+	border: 2px solid #ddd;
+	text-decoration: none;
+}
+.logo-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	padding-top: 5px;
+}
+.logo-item {
+	margin: 3px 15px;
+}
+.databases {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1030px;
+}
+.database-item {
+	border-bottom: 2px solid #f5f5f5;
+	padding: 6px 0 20px;
+	width: 475px;
+	margin: 0 20px;
+}
+.database-item:last-of-type {
+	border-bottom: 0;
+}
+.database-item > h4 {
+	margin-bottom: 0;
+}
+.logo-hover {
+	opacity: 0.7;
+	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+}
+.logo-hover:hover {
+	opacity: 1;
+	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
 }
 
-@media (max-width: 540px) {
-.business-frame {
-	height: 1120px;
+@media (max-width: 1030px) {
+.databases {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 475px;
+}
+}
+
+@media (max-width: 525px) {
+.ebsco-search {
+	max-width: auto;
+}
+.databases, .database-item {
+	width: auto;
 }
 }
 </style>
@@ -299,8 +341,55 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
- <div class="row text-center border-top padding-top-100 padding-bottom-120">
-    <h1 class="jumbo-text text-uppercase font-weight-400">New Design Goes Here</h1>
+  <div class="row border-top">
+    <div class="container text-center">
+      <h1 class="text-uppercase jumbo-text font-weight-400">DCL for Buiness</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container text-center">
+      <h4 class="roboto no-margin-top margin-lg-100">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
+      <div class="margin-lg-200 margin-md-100">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque.</div>
+    </div>
+  </div>
+  <div class="row padding-top-30 padding-bottom-60">
+    <div class="database-wrapper">
+      <div class="databases">
+          
+          
+        <div class="database-item">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-insights" target="_blank">Business Insights: Essentials</a></h4>
+          <div>Business and industry overviews, rankings, market data, and investment and financial reports.</div>
+        </div>
+          
+          
+        <div class="database-item">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-source-premier" target="_blank">Business Source Premier</a></h4>
+          <div>Economic data, company profiles, industry information and market research from more than 2,200 popular and academic business publications.</div>
+        </div>
+          
+          
+        <div class="database-item">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=demographicsnow" target="_blank">DemographicsNow</a></h4>
+          <div>Demographic data useful for opening a business, finding audiences for products/services, and analyzing the needs of a given population.</div>
+        </div>
+          
+          
+        <div class="database-item">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=plunkett-research" target="_blank">Market Research</a></h4>
+          <p class="text-uppercase small">Plunkett Research</p><div>Worldwide market research, industry statistics, trends and in-depth analysis of top companies.</div>
+        </div>
+          
+          
+        <div class="database-item">
+          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=referenceusa" target="_blank">Reference Solutions</a></h4><p class="text-uppercase small">Formerly ReferenceUSA</p>
+          <div>Business and residential info on over 25 million businesses and more than 262 million consumers in the U.S. and Canada.</div>
+        </div>
+          
+
+      </div>
+    </div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
@@ -362,11 +451,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<script>
-	  $(".card-grid").flip();
-		</script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
