@@ -141,6 +141,22 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	opacity: 1;
 	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
 }
+    .shelf-container img {
+	margin: 15px 15px 17px 15px;
+	vertical-align: bottom;
+}
+    @media (min-width: 992px) {
+.shelf {
+	border-bottom: 20px solid transparent;
+	border-image: url("new-shelf.jpg") 30 30 30 30 round round;
+	border-top: 0 none;
+	padding-bottom: 0;
+}
+.shelf-shadow {
+	background: #fff url("shelf-shadow.jpg");
+	background-repeat: repeat-x;
+}
+}
 
 @media (max-width: 1030px) {
 .databases {
@@ -348,14 +364,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="container text-center">
+    <div class="container text-center padding-bottom-30">
       <h4 class="roboto no-margin-top margin-lg-100">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
       <div class="margin-lg-200 margin-md-100">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque.</div>
     </div>
   </div>
-  <div class="row padding-top-30 padding-bottom-60">
-    <div class="database-wrapper">
-      <div class="databases">
+  <div class="row bg-gray-5 padding-bottom-30">
+    <div class="database-wrapper"><h2 class="text-center">Business Databases</h2>
+        <div class="databases">
         <div class="database-item">
           <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-insights" target="_blank">Business Insights: Essentials</a></h4>
           <div>Business and industry overviews, rankings, market data, and investment and financial reports.</div>
@@ -379,6 +395,19 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div>Business and residential info on over 25 million businesses and more than 262 million consumers in the U.S. and Canada.</div>
         </div>
       </div>
+    </div>
+  </div>
+    
+    
+      <div class="text-center padding-top-15">
+    <h2 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1790528029">Business Books of Interest</a></h2><div><a class="text-uppercase" href="all.html?key=ComingSoonFiction&amp;title=Adult Fiction">See Entire List »</a></div>
+  </div>
+  <div class="row shelf">
+    <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1485412114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780735219090/MC.GIF" alt="Where the Crawdads Sing"></a> <a href="https://dcl.bibliocommons.com/item/show/1584415114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780399562488/MC.GIF" alt="The Giver of Stars"></a> <a href="https://dcl.bibliocommons.com/item/show/1620444114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525538233/MC.GIF" alt="Long Range"></a> <a href="https://dcl.bibliocommons.com/item/show/1636927114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781538761465/MC.GIF" alt="Walk the Wire"></a> <a href="https://dcl.bibliocommons.com/item/show/1636922114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780385545938/MC.GIF" alt="Camino Winds"></a> </div>
+  </div>
+  <div class="row shelf-shadow padding-bottom-60">
+    <div class="container text-center">
+      <div class="padding-top-30 margin-lg-200">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
