@@ -65,55 +65,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-.ebsco-search {
-	max-width: 450px;
-	margin: 0 auto;
-}
 .border-top-thin {
 	border-top: 3px solid #f5f5f5;
-}
-.new.form-control {
-	border: 2px solid #ddd;
-	height: 45px;
-}
-.page-nav {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-transform: uppercase;
-}
-.page-nav-item a {
-	color: #000;
-	font-weight: 400;
-	border: 2px solid #ddd;
-	padding: 10px 0;
-	display: inline-block;
-	width: 275px;
-	white-space: nowrap;
-	background: #fff;
-	border-radius: 3px;
-	text-align: center;
-	margin: 5px;
-}
-.page-nav-item a:hover, .page-nav-item a:focus {
-	color: #000;
-	background: #f5f5f5;
-	border: 2px solid #ddd;
-	text-decoration: none;
-}
-.logo-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	padding-top: 5px;
-}
-.logo-item {
-	margin: 3px 15px;
 }
 .databases {
 	margin: 0 auto;
@@ -133,24 +91,44 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .database-item > h4 {
 	margin-bottom: 0;
 }
-.logo-hover {
-	opacity: 0.7;
-	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+.carousel-cell {
+	width: 100%;
+	padding: 0 0 20px;
 }
-.logo-hover:hover {
-	opacity: 1;
-	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+.carousel-cell:before {
+	display: block;
+	text-align: center;
 }
-    .shelf-container img {
+/* big buttons, no circle */
+.flickity-prev-next-button {
+	width: 50px;
+	height: 50px;
+	background: transparent;
+}
+.flickity-prev-next-button:hover {
+	background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+	fill: #efeeed;
+}
+.flickity-prev-next-button.no-svg {
+	color: #efeeed;
+}
+.flickity-prev-next-button {
+	top: 66%;
+}
+.flickity-viewport {
+	transition: height 0.6s;
+}
+.shelf-container img {
 	margin: 15px 15px 17px 15px;
 	vertical-align: bottom;
 }
-    @media (min-width: 992px) {
+
+@media (min-width: 992px) {
 .shelf {
-	border-bottom: 20px solid transparent;
-	border-image: url("new-shelf.jpg") 30 30 30 30 round round;
-	border-top: 0 none;
-	padding-bottom: 0;
+	background: url("new-shelf.jpg") bottom center repeat-x;
 }
 .shelf-shadow {
 	background: #fff url("shelf-shadow.jpg");
@@ -365,13 +343,21 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row">
     <div class="container text-center padding-bottom-30">
-      <h4 class="roboto no-margin-top margin-lg-100">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
-      <div class="margin-lg-200 margin-md-100">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque.</div>
+      <h4 class="roboto no-margin-top margin-lg-100">Information Services for Entrepreneurs and Small Businesses</h4>
+      <div class="margin-lg-200 margin-md-100">Our specially trained business librarians offer boutique-style service to fit your needs&mdash;market information, competitive intelligence, data on industry trends, sample business plans, and more.</div>
+      <div class="text-center margin-top-30"> <!-- Button trigger modal --> 
+        <a href="#" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-one">How can we help?</a> </div>
+    </div>
+  </div>
+  <div class="row bg-gray-5">
+    <div class="container text-center padding-top-30">
+      <h2 class="no-margin-top text-center">Business Databases</h2>
+      <div class="margin-lg-100">Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications.</div>
     </div>
   </div>
   <div class="row bg-gray-5 padding-bottom-30">
-    <div class="database-wrapper"><h2 class="text-center">Business Databases</h2>
-        <div class="databases">
+    <div class="database-wrapper">
+      <div class="databases">
         <div class="database-item">
           <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-insights" target="_blank">Business Insights: Essentials</a></h4>
           <div>Business and industry overviews, rankings, market data, and investment and financial reports.</div>
@@ -397,13 +383,41 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-    
-    
-      <div class="text-center padding-top-15">
-    <h2 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1790528029">Business Books of Interest</a></h2><div><a class="text-uppercase" href="all.html?key=ComingSoonFiction&amp;title=Adult Fiction">See Entire List »</a></div>
-  </div>
-  <div class="row shelf">
-    <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1485412114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780735219090/MC.GIF" alt="Where the Crawdads Sing"></a> <a href="https://dcl.bibliocommons.com/item/show/1584415114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780399562488/MC.GIF" alt="The Giver of Stars"></a> <a href="https://dcl.bibliocommons.com/item/show/1620444114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525538233/MC.GIF" alt="Long Range"></a> <a href="https://dcl.bibliocommons.com/item/show/1636927114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781538761465/MC.GIF" alt="Walk the Wire"></a> <a href="https://dcl.bibliocommons.com/item/show/1636922114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780385545938/MC.GIF" alt="Camino Winds"></a> </div>
+  <div class="row shelf padding-top-15">
+    <div class="container text-center">
+      <div class="bottom-carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.01, "friction": 0.40, "autoPlay": 6000 }'> 
+        <!--carousel group begins-->
+        <div class="carousel-cell">
+          <div class="text-center">
+            <h2>Business Books List One</h2>
+            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1742652329">See Entire List &raquo;</a></div>
+          </div>
+          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1434455114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780312577230/MC.GIF" alt="The Great Alone"></a> <a href="https://dcl.bibliocommons.com/item/show/1388096114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781250123077/MC.GIF" alt="Come Sundown"></a> <a href="https://dcl.bibliocommons.com/item/show/1300151114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525955092/MC.GIF" alt="Fool Me Once"></a> <a href="https://dcl.bibliocommons.com/item/show/990686114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780062049803/MC.GIF" alt="State of Wonder"></a> <a href="https://dcl.bibliocommons.com/item/show/1113584114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781451645828/MC.GIF" alt="Ordinary Grace"></a> </div>
+        </div>
+        <!--carousel group ends--> 
+        
+        <!--carousel group begins-->
+        <div class="carousel-cell">
+          <div class="text-center">
+            <h2>Business Books List Two</h2>
+            <div class="text-uppercase font-weight-400"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1784427379">See Entire List </a> or visit <a class="text-uppercase font-weight-400" href="../staff-picks/">Featured DCL Staff Recommendations</a></div>
+          </div>
+          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1679674114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780812996708/MC.GIF" alt="Miss Benson's Beetle"></a> <a href="https://dcl.bibliocommons.com/item/show/1683828114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781368048200/MC.GIF" alt="Rebel Rose"></a> <a href="https://dcl.bibliocommons.com/item/show/1593063114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780525656159/MC.GIF" alt="The Secrets We Kept"></a> <a href="https://dcl.bibliocommons.com/item/show/1680787114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780062674180/MC.GIF" alt="Soulswift"></a> <a href="https://dcl.bibliocommons.com/item/show/1683831114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781984812230/MC.GIF&client=dougp&type=xw12&oclc=" alt="Super Fake Love Song"></a> </div>
+        </div>
+        <!--carousel group ends--> 
+        
+        <!--carousel group begins-->
+        <div class="carousel-cell">
+          <div class="text-center">
+            <h2>Business Books List Three</h2>
+            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1736762769">See Entire List &raquo;</a></div>
+          </div>
+          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1493710114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780062686572/MC.GIF" alt="The Locksmith's Daughter"></a> <a href="https://dcl.bibliocommons.com/item/show/1555842114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781460398760/MC.GIF" alt="The Lost Girls of Paris"></a> <a href="https://dcl.bibliocommons.com/item/show/1552733114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781501198670/MC.GIF" alt="Code Name"></a> <a href="https://dcl.bibliocommons.com/item/show/1132872114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781476706122/MC.GIF" alt="Red Sparrow"></a> <a href="https://dcl.bibliocommons.com/item/show/1354425114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780143129189/MC.GIF" alt="The English Teacher"></a> </div>
+        </div>
+        <!--carousel group ends--> 
+        
+      </div>
+    </div>
   </div>
   <div class="row shelf-shadow padding-bottom-60">
     <div class="container text-center">
@@ -470,7 +484,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
+<script>
+	var cards = $(".carousel-cell");
+for (var i = 0; i < cards.length; i++) {
+  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+  cards.eq(target1).before(cards.eq(target2));
+}
+ </script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
