@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,7 +73,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .border-top-thin {
 	border-top: 3px solid #f5f5f5;
 }
-    .item-wrapper {
+.item-wrapper {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -80,6 +81,22 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .item {
 	padding: 5px 30px;
 	text-align: center;
+}
+.red-check .fa-check {
+	color: #D36A50;
+}
+.fa-ul > li {
+	margin-bottom: 15px;
+}
+.checklist-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	flex-direction: column;
+}
+.checklist {
+	max-width: 50rem;
+	margin: 0 auto;
 }
 .databases {
 	margin: 0 auto;
@@ -432,29 +449,24 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="padding-top-30 margin-lg-200">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
     </div>
   </div>
-      <div class="row bg-gray-5 padding-top-30">
-    <div class="container text-center">
-      <h4 class="roboto">Our specially trained business librarians are here to help you with your research.</h4>
-    </div>
-  </div>
   <div class="row bg-gray-5">
-    <div class="container">
-      <div class="item-wrapper">
-        <div class="item">
-          <div><img alt="Colbe Galston, Highlands Ranch" class="img-circle" src="colbe.jpg" />
-            <h4 class="no-margin-bottom">Colbe Galston</h4>
-          </div>
+    <div class="container padding-top-40 padding-bottom-60">
+      <div class="checklist-wrapper">
+        <h4 class="roboto text-center no-margin padding-bottom-15">Our specially trained business librarians are here to help you with your research.</h4>
+        <div class="checklist">
+          <ul class="fa-ul red-check">
+            <li><i class="fa-li fa fa-check fa-lg"></i>Curabitur at est et risus vestibulum pharetra.</li>
+            <li><i class="fa-li fa fa-check fa-lg"></i>Curabitur at est et risus vestibulum pharetra.</li>
+            <li><i class="fa-li fa fa-check fa-lg"></i>Curabitur at est et risus vestibulum pharetra.</li>
+            <li><i class="fa-li fa fa-check fa-lg"></i>Curabitur at est et risus vestibulum pharetra.</li>
+            <li><i class="fa-li fa fa-check fa-lg"></i>Curabitur at est et risus vestibulum pharetra.</li>
+          </ul>
         </div>
-        <div class="item">
-          <div><img alt="Patty Van Eysden, Castle Rock" class="img-circle" src="patty.jpg" />
-            <h4 class="no-margin-bottom">Patty Van Eysden</h4>
-          </div>
-        </div>
-      </div>  <div class="text-center padding-top-30 padding-bottom-40"> <!-- Button trigger modal --> 
-    <a href="#" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-one">How can we help?</a> </div>
+        <div class="text-center margin-top-15"> <!-- Button trigger modal --> 
+          <a href="#" class="btn text-uppercase btn-primary" data-toggle="modal" data-target="#red-check-service-get-started">How can we help?</a> </div>
+      </div>
     </div>
   </div>
-
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
@@ -564,4 +576,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
