@@ -72,6 +72,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .border-top-thin {
 	border-top: 3px solid #f5f5f5;
 }
+    .item-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.item {
+	padding: 5px 30px;
+	text-align: center;
+}
 .databases {
 	margin: 0 auto;
 	display: flex;
@@ -351,7 +360,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row bg-gray-5">
     <div class="container text-center padding-top-30">
       <h2 class="no-margin-top text-center">Business Databases</h2>
-      <div class="margin-lg-100">Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications.</div>
+      <div class="margin-lg-100">Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications. Access the databases for free either at the library or online using your library card.</div>
     </div>
   </div>
   <div class="row bg-gray-5 padding-bottom-30">
@@ -423,6 +432,29 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="padding-top-30 margin-lg-200">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
     </div>
   </div>
+      <div class="row bg-gray-5 padding-top-30">
+    <div class="container text-center">
+      <h4 class="roboto">Our specially trained business librarians are here to help you with your research.</h4>
+    </div>
+  </div>
+  <div class="row bg-gray-5">
+    <div class="container">
+      <div class="item-wrapper">
+        <div class="item">
+          <div><img alt="Colbe Galston, Highlands Ranch" class="img-circle" src="colbe.jpg" />
+            <h4 class="no-margin-bottom">Colbe Galston</h4>
+          </div>
+        </div>
+        <div class="item">
+          <div><img alt="Patty Van Eysden, Castle Rock" class="img-circle" src="patty.jpg" />
+            <h4 class="no-margin-bottom">Patty Van Eysden</h4>
+          </div>
+        </div>
+      </div>  <div class="text-center padding-top-30 padding-bottom-40"> <!-- Button trigger modal --> 
+    <a href="#" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal-one">How can we help?</a> </div>
+    </div>
+  </div>
+
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
