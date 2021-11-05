@@ -127,7 +127,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	width: 475px;
 	margin: 0 20px;
 }
-.database-item:last-of-type {
+.database-item:nth-last-of-type(1), .database-item:nth-last-of-type(2) {
 	border-bottom: 0;
 }
 .database-item > h4 {
@@ -148,6 +148,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	display: flex;
 	flex-direction: column;
 	width: 475px;
+}
+.database-item:nth-last-of-type(2) {
+	border-bottom: 2px solid #f5f5f5;
 }
 }
 
