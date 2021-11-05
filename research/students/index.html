@@ -69,17 +69,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .research-active {
 	background-color: #f5f5f5;
 }
-.ebsco-search {
-	max-width: 450px;
-	margin: 0 auto;
-}
-.border-top-thin {
-	border-top: 3px solid #f5f5f5;
-}
-.new.form-control {
-	border: 2px solid #ddd;
-	height: 45px;
-}
 .page-nav {
 	display: flex;
 	flex-direction: column;
@@ -104,60 +93,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: #f5f5f5;
 	border: 2px solid #ddd;
 	text-decoration: none;
-}
-.logo-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	padding-top: 5px;
-}
-.logo-item {
-	margin: 3px 15px;
-}
-.databases {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	width: 1030px;
-}
-.database-item {
-	border-bottom: 2px solid #f5f5f5;
-	padding: 6px 0 20px;
-	width: 475px;
-	margin: 0 20px;
-}
-.database-item:last-of-type {
-	border-bottom: 0;
-}
-.database-item > h4 {
-	margin-bottom: 0;
-}
-.logo-hover {
-	opacity: 0.7;
-	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
-}
-.logo-hover:hover {
-	opacity: 1;
-	transition: top 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
-}
-
-@media (max-width: 1030px) {
-.databases {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	width: 475px;
-}
-}
-
-@media (max-width: 525px) {
-.ebsco-search {
-	max-width: auto;
-}
-.databases, .database-item {
-	width: auto;
-}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -337,11 +272,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <h1 class="text-uppercase jumbo-text font-weight-400">Student Databases</h1>
     </div>
   </div>
-
   <div class="row">
     <div class="container text-center">
       <h4 class="roboto no-margin-top margin-lg-100">Access all sorts of information for your studies using these database resources.</h4>
-
     </div>
   </div>
   <div class="row padding-bottom-15 padding-top-30">
@@ -349,8 +282,13 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="page-nav-item"><a href="elementary-school/">Elementary School</a></div>
       <div class="page-nav-item"><a href="middle-school/">Middle School</a></div>
       <div class="page-nav-item"><a href="high-school/">High School</a></div>
-    </div>      
-    </div><div class="row"><div class="container text-center padding-bottom-40 margin-lg-200"><div class="text-center padding-top-30 ">There’s something for all ages and grades, including live tutoring and <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank">homework HelpNow.</a> Access the databases for free either at the library or online using your personal or school library card.</div></div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container text-center padding-bottom-40 margin-lg-200">
+      <div class="text-center padding-top-30 ">There’s something for all ages and grades, including live tutoring and <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank">homework HelpNow.</a> Access the databases for free either at the library or online using your personal or school library card.</div>
+    </div>
+  </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
