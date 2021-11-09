@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -104,7 +105,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	width: 1030px;
 }
 .database-item {
-	border-bottom: 2px solid #f5f5f5;
+	border-bottom: 2px solid #e6e4e2;
 	padding: 6px 0 20px;
 	width: 475px;
 	margin: 0 20px;
@@ -167,12 +168,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	flex-direction: column;
 	width: 475px;
 }
+.database-item:nth-last-of-type(2) {
+	border-bottom: 2px solid #e6e4e2;
+}
 }
 
 @media (max-width: 525px) {
-.ebsco-search {
-	max-width: auto;
-}
 .databases, .database-item {
 	width: auto;
 }
@@ -434,23 +435,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row shelf-shadow padding-bottom-40">
     <div class="container">
-          <div class="container padding-top-40">
-      <div class="checklist-wrapper">
-        <h4 class="roboto text-center no-margin padding-bottom-15">Our specially trained business librarians are here to help you with your research.</h4>
-        <div class="checklist">
-          <ul class="fa-ul red-check">
-            <li><i class="fa-li fa fa-check fa-lg"></i>Help starting a new business with sample business plans, registration and other startup information.</li>
-            <li><i class="fa-li fa fa-check fa-lg"></i>Market information, competitive intelligence, industry trends, and operation assistance for established businesses.</li>
-            <li><i class="fa-li fa fa-check fa-lg"></i>Instruction and best practices for using and understanding the wealth of data reported in the above business databases.</li>
-          </ul>
+      <div class="container padding-top-40">
+        <div class="checklist-wrapper">
+          <h4 class="roboto text-center no-margin padding-bottom-15">Our specially trained business librarians are here to help you with your research.</h4>
+          <div class="checklist">
+            <ul class="fa-ul red-check">
+              <li><i class="fa-li fa fa-check fa-lg"></i>Help starting a new business with sample business plans, registration and other startup information.</li>
+              <li><i class="fa-li fa fa-check fa-lg"></i>Market information, competitive intelligence, industry trends, and operation assistance for established businesses.</li>
+              <li><i class="fa-li fa fa-check fa-lg"></i>Instruction and best practices for using and understanding the wealth of data reported in the above business databases.</li>
+            </ul>
+          </div>
+          <div class="text-center margin-lg-200">
+            <div>In addition, our libraries offer <a href="../reserve-a-space/">meeting rooms and study rooms</a> that may be reserved for uninterrupted work, meetings with clients, and group presentations, with free wireless internet access.</div>
+            <div class="margin-top-5 margin-lg-100"><i>Contact us now with your business question!</i></div>
+          </div>
+          <div class="text-center margin-top-20"> <a href="#contact-us" class="btn btn-lg btn-primary">Contact Us</a> </div>
         </div>
-        <div class="text-center margin-lg-200">
-          <div>In addition, our libraries offer <a href="../reserve-a-space/">meeting rooms and study rooms</a> that may be reserved for uninterrupted work, meetings with clients, and group presentations, with free wireless internet access.</div>
-          <div class="margin-top-5 margin-lg-100"><i>Contact us now with your business question!</i></div>
-        </div>
-        <div class="text-center margin-top-20"> <a href="#contact-us" class="btn btn-lg btn-primary">Contact Us</a> </div>
       </div>
-    </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -562,4 +563,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
