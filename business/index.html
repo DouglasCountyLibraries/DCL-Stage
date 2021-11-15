@@ -79,7 +79,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	flex-wrap: wrap;
 }
 .item {
-	padding: 5px 30px;
+	padding: 30px;
 	text-align: center;
 }
 .red-check .fa-check {
@@ -174,9 +174,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 600px) {
 .databases, .database-item {
 	width: auto;
+}
+.item {
+	padding: 15px;
+	text-align: center;
 }
 }
 </style>
@@ -436,8 +440,20 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row bg-gray-5">
     <div class="container padding-top-40 padding-bottom-40">
+      <h4 class="text-center no-margin">Our specially trained business librarians are here to help you with your research.</h4>
+      <div class="item-wrapper">
+        <div class="item">
+          <div><img alt="Colbe Galston, Highlands Ranch" class="img-circle" src="colbe.jpg">
+            <h5 class="no-margin-bottom">Colbe Galston</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div><img alt="Patty Van Eysden, Castle Rock" class="img-circle" src="patty.jpg">
+            <h5 class="no-margin-bottom">Patty Van Eysden</h5>
+          </div>
+        </div>
+      </div>
       <div class="checklist-wrapper">
-        <h4 class="text-center no-margin padding-bottom-15">Our specially trained business librarians are here to help you with your research.</h4>
         <div class="checklist">
           <ul class="fa-ul red-check">
             <li><i class="fa-li fa fa-check fa-lg"></i>Help starting a new business with sample business plans, registration and other startup information.</li>
