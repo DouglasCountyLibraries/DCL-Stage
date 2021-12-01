@@ -66,12 +66,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 </head>
 <body>
 <!-- pull alert.txt into the general-alert div --> 
-<script>
+<!--<script>
 $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script> 
+</script>-->
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -234,8 +234,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row text-center border-top padding-top-100 padding-bottom-120">
-    <h1 class="jumbo-text text-uppercase font-weight-400">Go to <a href="https://www.dcl.org/">dcl.org</a></h1>
+    <div class="row text-center border-top padding-top-100 padding-bottom-120"><h1>This site is for development & staging only</h1>
+    <h1 class="jumbo-text font-weight-400">GO TO <a href="https://www.dcl.org/">dcl.org</a></h1>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
