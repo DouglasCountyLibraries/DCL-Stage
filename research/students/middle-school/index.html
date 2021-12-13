@@ -77,21 +77,24 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .page-nav-item a {
 	color: #000;
 	font-weight: 400;
-	border: 2px solid #ddd;
+	border: 2px solid #eee;
 	padding: 10px 0;
 	display: inline-block;
 	width: 275px;
 	white-space: nowrap;
-	background: #fff;
-	border-radius: 3px;
+	background: #f5f5f5;
 	text-align: center;
 	margin: 5px;
 }
 .page-nav-item a:hover, .page-nav-item a:focus {
 	color: #000;
-	background: #f5f5f5;
+	background: #fff;
 	border: 2px solid #ddd;
 	text-decoration: none;
+}
+    .pagenav-icon {
+	margin-right: 8px;
+	color: #4f878c;
 }
 .databases {
 	margin: 0 auto;
@@ -310,9 +313,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row padding-bottom-15">
     <div class="page-nav">
-      <div class="page-nav-item"><a href="../elementary-school/">Elementary School</a></div>
-      <div class="page-nav-item"><a href="../high-school/">High School</a></div>
-      <div class="page-nav-item"><a href="../../">Research Databases</a></div>
+      <div class="page-nav-item"><a href="../elementary-school/"><i class="pagenav-icon fas fa-child"></i>Elementary School</a></div>
+      <div class="page-nav-item"><a href="../high-school/"><i class="pagenav-icon fas fa-user-graduate"></i>High School</a></div>
+      <div class="page-nav-item"><a href="../../"><i class="pagenav-icon fas fa-th-list"></i>Research Databases</a></div>
     </div>
   </div>
   <div class="row">
