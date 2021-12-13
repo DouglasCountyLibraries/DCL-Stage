@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,7 +74,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0 auto;
 }
 .border-top-thin {
-	border-top: 3px solid #f5f5f5;
+	border-top: 4px solid #f5f5f5;
 }
 .small.red {
 	color: #ad1a27;
@@ -87,33 +88,37 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .page-nav-item a {
 	color: #000;
 	font-weight: 400;
-	border: 2px solid #ddd;
+	border: 2px solid #eee;
 	padding: 10px 0;
 	display: inline-block;
 	width: 275px;
 	white-space: nowrap;
-	background: #fff;
-	border-radius: 3px;
+	background: #f5f5f5;
 	text-align: center;
 	margin: 5px;
 }
 .page-nav-item a:hover, .page-nav-item a:focus {
 	color: #000;
-	background: #f5f5f5;
+	background: #fff;
 	border: 2px solid #ddd;
 	text-decoration: none;
+}
+.pagenav-icon {
+	margin-right: 5px;
+	color: #4f878c;
 }
 .logo-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	padding-top: 5px;
+	padding: 30px 0 30px;
 }
 .logo-item {
 	margin: 3px 22px;
 }
 .databases {
+	border-top: 2px solid #f5f5f5;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -170,7 +175,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -340,14 +345,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row padding-bottom-15">
     <div class="page-nav">
-      <div class="page-nav-item"><a href="students/">Student Databases</a></div>
-      <div class="page-nav-item"><a href="../business/">DCL for Business</a></div>
-      <div class="page-nav-item"><a href="https://archives.dcl.org/digital/custom/resources" target="_blank">Archives & Local History</a></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container text-center margin-lg-50">
-      <h4 class="roboto no-margin-top">Use the search feature below to access a wealth of information on your chosen topic from magazines, journals and other educational research databases.</h4>
+      <div class="page-nav-item"><a href="students/"><i class="pagenav-icon fas fa-graduation-cap"></i>Student Databases</a></div>
+      <div class="page-nav-item"><a href="../business/"><i class="pagenav-icon fas fa-building"></i>DCL for Business</a></div>
+      <div class="page-nav-item"><a href="https://archives.dcl.org/digital/custom/resources" target="_blank"><i class="pagenav-icon fas fa-history"></i>Archives & Local History</a></div>
     </div>
   </div>
   <div class="row padding-bottom-15">
@@ -367,18 +367,27 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             </span></div>
         </form>
       </div>
-      <div class="padding-top-15">Access the following databases for free either at the library or online using your <a href="http://getacard.org/v2/index.html" target="_blank">library card</a>.</div>
     </div>
   </div>
-  <div class="row margin-bottom-15">
+  <div class="row padding-bottom-30">
+    <div class="container text-center margin-lg-150">
+      <h4 class="roboto no-margin">Use the search feature above to access a wealth of information on your chosen topic from magazines, journals and other educational research databases.</h4>
+    </div>
+  </div>
+  <div class="row border-top-thin padding-bottom-15">
     <div class="logo-wrapper container">
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank"><img class="img-responsive center-block logo-hover" src="consumer-reports.png" alt="Consumer Reports"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica" target="_blank"><img class="img-responsive center-block logo-hover" src="britannica.png" alt="Britannica"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=morningstar" target="_blank"><img class="img-responsive center-block logo-hover" src="morningstar.png" alt="Morningstar Investments"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=culturegrams" target="_blank"><img class="img-responsive center-block logo-hover" src="culture-grams.png" alt="Culture Grams"/></a></div>
     </div>
+    <div class="container">
+      <div class="text-center">
+        <h4 class="roboto no-margin">Access the following databases for free either at the library or online using your <a href="http://getacard.org/v2/index.html" target="_blank">library card</a>.</h4>
+      </div>
+    </div>
   </div>
-  <div class="row padding-bottom-60">
+  <div class="row padding-top-15 padding-bottom-60">
     <div class="database-wrapper">
       <div class="databases">
         <div class="database-item">
@@ -594,4 +603,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
