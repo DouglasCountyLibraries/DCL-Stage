@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,12 +93,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	border: 2px solid #ddd;
 	text-decoration: none;
 }
-    .pagenav-icon {
+.pagenav-icon {
 	margin-right: 8px;
 	color: #4f878c;
 }
 .databases {
-	border-top: 2px solid #f5f5f5;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -143,7 +143,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -309,22 +309,22 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row border-top">
     <div class="container text-center">
       <h1 class="text-uppercase jumbo-text font-weight-400 no-margin-bottom">Student Databases</h1>
-      <h3 class="text-uppercase font-weight-400 margin-top-5">Elementary School</h3>
+      <h3 class="text-uppercase font-weight-400 margin-top-5 no-margin-bottom">Elementary School</h3>
     </div>
   </div>
-  <div class="row padding-bottom-15">
+  <div class="row">
+    <div class="container text-center">
+      <h4 class="roboto margin-top-5 margin-lg-150">Access the following databases for free either at the library or online using your personal or school library card.</h4>
+    </div>
+  </div>
+  <div class="row">
     <div class="page-nav">
       <div class="page-nav-item"><a href="../middle-school/"><i class="pagenav-icon fas fa-user"></i>Middle School</a></div>
       <div class="page-nav-item"><a href="../high-school/"><i class="pagenav-icon fas fa-user-graduate"></i>High School</a></div>
       <div class="page-nav-item"><a href="../../"><i class="pagenav-icon fas fa-th-list"></i>Research Databases</a></div>
     </div>
   </div>
-  <div class="row">
-    <div class="container text-center">
-      <h4 class="roboto no-margin margin-lg-150">Access the following databases for free either at the library or online using your personal or school library card.</h4>
-    </div>
-  </div>
-  <div class="row padding-top-20 padding-bottom-60">
+  <div class="row padding-bottom-40">
     <div class="database-wrapper">
       <div class="databases">
         <div class="database-item">
@@ -471,4 +471,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

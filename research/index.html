@@ -112,13 +112,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	padding: 30px 0 30px;
+	padding: 20px 0 5px;
 }
 .logo-item {
 	margin: 3px 22px;
 }
 .databases {
-	border-top: 2px solid #f5f5f5;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -154,6 +153,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .database-item:nth-last-of-type(2) {
 	border-bottom: 2px solid #f5f5f5;
+}
+.logo-wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px 0 20px;
 }
 }
 
@@ -340,7 +344,13 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
     <div class="container text-center">
-      <h1 class="text-uppercase jumbo-text font-weight-400">Research</h1>
+      <h1 class="text-uppercase jumbo-text font-weight-400 no-margin-bottom">Research</h1>
+    </div>
+  </div>
+  <div class="row padding-bottom-15">
+    <div class="container text-center">
+      <h4 class="roboto margin-top-5">Access the following databases for free either at the library or online using your <a href="http://getacard.org/v2/index.html" target="_blank">library card</a>.</h4>
+      <div class="margin-lg-200">Use the search feature below to access a wealth of information on your chosen topic from magazines, journals and other educational research databases.</div>
     </div>
   </div>
   <div class="row padding-bottom-15">
@@ -350,7 +360,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="page-nav-item"><a href="https://archives.dcl.org/digital/custom/genealogy" target="_blank"><i class="pagenav-icon fas fa-history"></i>Genealogy & Local History</a></div>
     </div>
   </div>
-  <div class="row padding-bottom-15">
+  <div class="row">
     <div class="container text-center">
       <div class="ebsco-search"> 
         <script src="//support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
@@ -369,25 +379,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
-    <div class="container text-center margin-lg-150">
-      <h4 class="roboto no-margin">Use the search feature above to access a wealth of information on your chosen topic from magazines, journals and other educational research databases.</h4>
-    </div>
-  </div>
-  <div class="row border-top-thin">
-    <div class="logo-wrapper container">
+  <div class="row">
+    <div class="logo-wrapper">
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=consumer-reports" target="_blank"><img class="img-responsive center-block logo-hover" src="consumer-reports.png" alt="Consumer Reports"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=britannica" target="_blank"><img class="img-responsive center-block logo-hover" src="britannica.png" alt="Britannica"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=morningstar" target="_blank"><img class="img-responsive center-block logo-hover" src="morningstar.png" alt="Morningstar Investments"/></a></div>
       <div class="logo-item"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=culturegrams" target="_blank"><img class="img-responsive center-block logo-hover" src="culture-grams.png" alt="Culture Grams"/></a></div>
     </div>
-    <div class="container">
-      <div class="text-center">
-        <h4 class="roboto no-margin padding-bottom-15">Access the following databases for free either at the library or online using your <a href="http://getacard.org/v2/index.html" target="_blank">library card</a>.</h4>
-      </div>
-    </div>
   </div>
-  <div class="row padding-top-15 padding-bottom-60">
+  <div class="row padding-bottom-40">
     <div class="database-wrapper">
       <div class="databases">
         <div class="database-item">

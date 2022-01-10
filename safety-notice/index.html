@@ -22,9 +22,9 @@
 
 <!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
-<title>DCL for Business | Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Business, Small Business, Business Resources, Market Research, Advice, Research, Databases">
-<meta name="description" content="DCL for Business offers a variety of information services and resources for entrepreneurs and small businesses.">
+<title>Community Safety Notice | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
+<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -64,123 +64,81 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.using-the-library-active {
-	background-color: #f5f5f5;
+:focus {
+	outline: -webkit-focus-ring-color auto 0px;
 }
-.margin-top-20 {
-	margin-top: 20px;
+.table-contents {
+	position: sticky;
+	top: 2rem;
+	margin-top: 25px;
 }
-.item-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+.section-nav li.active > a {
+	color: #666;
+	font-weight: 400;
 }
-.item {
-	padding: 30px 30px 15px;
-	text-align: center;
-}
-.red-check .fa-check {
-	color: #D36A50;
-}
-.fa-ul > li {
-	margin-bottom: 15px;
-}
-.checklist-wrapper {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	flex-direction: column;
-}
-.checklist {
-	max-width: 50rem;
-	margin: 0 auto;
-}
-.databases {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	width: 980px;
-}
-.database-item {
-	border-bottom: 2px solid #e6e4e2;
-	padding: 6px 0 20px;
-	width: 450px;
-	margin: 0 20px;
-}
-.database-item:last-of-type {
-	border-bottom: 0;
-	padding-bottom: 15px;
-}
-.database-item > h4 {
-	margin-bottom: 0;
-}
-.carousel-cell {
-	width: 100%;
-	padding: 0 0 20px;
-}
-.carousel-cell:before {
+.section-nav a {
+	text-decoration: none;
 	display: block;
-	text-align: center;
+	padding: .125rem 0;
+	color: #999;
+	transition: all 50ms ease-in-out;
 }
-/* big buttons, no circle */
-.flickity-prev-next-button {
-	width: 50px;
-	height: 50px;
-	background: transparent;
+.section-nav a:hover, .section-nav a:focus {
+	color: #333;
 }
-.flickity-prev-next-button:hover {
-	background: transparent;
+.sidebar-heading {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 400;
 }
-/* arrow color */
-.flickity-prev-next-button .arrow {
-	fill: #efeeed;
+.safety-heading {
+	padding-top: 15px;
 }
-.flickity-prev-next-button.no-svg {
-	color: #efeeed;
+.light-gray {
+	color: #999;
+	white-space: nowrap;
 }
-.flickity-prev-next-button {
-	top: 66%;
+.jumps li a {
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #666;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 8px 0 5px 0;
+	font-size: 18px;
+	border-bottom: 2px solid #ededed;
 }
-.flickity-viewport {
-	transition: height 0.6s;
+.border-line {
+	border-bottom: 2px solid #ededed;
 }
-.shelf-container img {
-	margin: 15px 15px 17px 15px;
-	vertical-align: bottom;
-}
-
-@media (min-width: 992px) {
-.shelf {
-	background: url("new-shelf.jpg") bottom center repeat-x;
-}
-.shelf-shadow {
-	background: #fff url("shelf-shadow.jpg");
-	background-repeat: repeat-x;
-}
-}
-
-@media (max-width: 980px) {
-.databases {
+.find.form-control {
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	width: 450px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
-.database-item:nth-last-of-type(2) {
-	border-bottom: 2px solid #e6e4e2;
+.form-control:focus {
+	border-color: #999;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+mark {
+	background: #ffc9aa;
+	color: #000;
+}
+.welcome-heading {
+	padding-top: 0;
 }
 }
-
-@media (max-width: 600px) {
-.databases, .database-item {
-	width: auto;
+.logo-hover {
+	transition: transform .2s;
+	display: inline-block;
 }
-.item {
-	padding: 15px;
-	text-align: center;
-}
+.logo-hover:hover {
+	-ms-transform: scale(1.03); /* IE 9 */
+	-webkit-transform: scale(1.03); /* Safari 3-8 */
+	transform: scale(1.03);
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -356,115 +314,171 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
-    <div class="container text-center">
-      <h1 class="text-uppercase jumbo-text font-weight-400">DCL for Business</h1>
+    <div class="text-center">
+      <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Welcome!</h1>
+      <div class="separator-container">
+        <div class="separator line-separator"><i class="fas fa-door-open"></i></div>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="container text-center">
-      <h4 class="roboto no-margin-top margin-lg-100">Information Services for Entrepreneurs and Small Businesses</h4>
-      <div class="margin-lg-100">Our specially trained business librarians offer boutique-style service to fit your needs&mdash;market information, competitive intelligence, data on industry trends, sample business plans, and more. Contact us with your business idea or question and a business librarian will respond in one business day.</div>
-      <div class="text-center margin-top-20"> <a href="form/" target="_blank" class="btn btn-primary btn-lg">Contact Us</a> </div>
+    <div class="container margin-lg-100 border-line padding-bottom-20">
+      <h4 class="roboto margin-bottom-5 text-center">All Douglas County Libraries locations are open and operating under county and <a href="D 2021 103 Face Covering Order.pdf" target="_blank">state guidelines</a>.</h4>
     </div>
   </div>
-  <div class="row shelf">
-    <div class="container text-center">
-      <div class="bottom-carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.01, "friction": 0.40, "autoPlay": 6000 }'> 
-        <!--carousel group begins-->
-        <div class="carousel-cell">
-          <div class="text-center">
-            <h2>Business for Creatives</h2>
-            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1854975299">See Entire List &raquo;</a></div>
-          </div>
-          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1609080114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781614294986/MC.GIF" alt="Creativity, Spirituality & Making A Buck"></a> <a href="https://dcl.bibliocommons.com/item/show/1514257114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781524761714/MC.GIF" alt="The Creative Curve"></a> <a href="https://dcl.bibliocommons.com/item/show/1284410114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781608682560/MC.GIF" alt="Building your Business the Right-brain Way"></a> <a href="https://dcl.bibliocommons.com/item/show/1086544114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780307587107/MC.GIF" alt="Handmade to Sell"></a> <a href="https://dcl.bibliocommons.com/item/show/1070222114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781603429894/MC.GIF" alt="Grow your Handmade Business"></a> </div>
-        </div>
-        <!--carousel group ends--> 
-        
-        <!--carousel group begins-->
-        <div class="carousel-cell">
-          <div class="text-center">
-            <h2>Business Startups</h2>
-            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1868140989">See Entire List &raquo;</a></div>
-          </div>
-          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1661536114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780231194525/MC.GIF" alt="Startup Myths and Models"></a> <a href="https://dcl.bibliocommons.com/item/show/1693722114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781642504125/MC.GIF" alt="The Entrepreneur's Paradox"></a> <a href="https://dcl.bibliocommons.com/item/show/1693839114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780593137024/MC.GIF" alt="Why Startups Fail"></a> <a href="https://dcl.bibliocommons.com/item/show/1693842114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781413327588/MC.GIF" alt="The Women's Small Business Start-up Kit"></a> <a href="https://dcl.bibliocommons.com/item/show/1670904114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780995404403/MC.GIF" alt="The 7 Day Startup"></a> </div>
-        </div>
-        <!--carousel group ends--> 
-        
-        <!--carousel group begins-->
-        <div class="carousel-cell">
-          <div class="text-center">
-            <h2>The Business Plan</h2>
-            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1992774469">See Entire List &raquo;</a></div>
-          </div>
-          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1550598114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781401957476/MC.GIF" alt="Choose"></a> <a href="https://dcl.bibliocommons.com/item/show/1470164114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780749480844/MC.GIF" alt="Starting A Business From Home"></a> <a href="https://dcl.bibliocommons.com/item/show/1440668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781476794358/MC.GIF" alt="Burn the Business Plan"></a> <a href="https://dcl.bibliocommons.com/item/show/1561379114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781933895826/MC.GIF" alt="Successful Business Plan Secrets & Strategies S Plan Guide!"></a> <a href="https://dcl.bibliocommons.com/item/show/1516381114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781413325454/MC.GIF" alt="How to Write A Business Plan"></a> </div>
-        </div>
-        <!--carousel group ends--> 
-        
+  <div class="row hidden-sm hidden-md hidden-lg">
+    <div class="container no-padding text-center">
+      <ul class="jumps nav nav-pills nav-justified">
+        <li> <a href="#operations">Library Operations</a></li>
+        <li> <a href="#services">Library Services</a></li>
+        <li> <a href="#safety">Health & Safety</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container no-padding margin-top-10">
+    <div class="table-contents col-sm-3 padding-bottom-60 hidden-xs">
+      <div class="padding-bottom-15">
+        <input class="find form-control" type="text" placeholder="Find on Page »">
+      </div>
+      <nav class="section-nav">
+        <ul class="list-unstyled">
+          <li><a class="sidebar-heading" href="#operations">Library Operations</a>
+            <ul class="list-unstyled margin-left-10">
+              <li><a href="#hours">Hours</a></li>
+              <li><a href="#borrowing-holds-fines">Borrowing, Holds & Fines</a></li>
+              <li><a href="#book-drops-donations">Book Drops & Donations</a></li>
+              <li><a href="#storytime-events-playscapes">Storytime, Events & Playscapes</a></li>
+              <li><a href="#spaces">Spaces</a></li>
+            </ul>
+          </li>
+          <li><a class="sidebar-heading" href="#services">Library Services</a>
+            <ul class="list-unstyled margin-left-10">
+              <li><a href="#park-pickup">Park & Pick-Up Holds Service</a></li>
+              <li><a href="#digital-library">Digital Library</a></li>
+            </ul>
+          </li>
+          <li><a class="sidebar-heading" href="#safety">Health & Safety</a>
+            <ul class="list-unstyled margin-left-10">
+              <li><a href="#protect">Protect Yourself & Others</a></li>
+              <li><a href="#protocols">Safety Precautions & Protocols</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="context"> 
+      
+      <!--######-->
+      <div class="col-sm-9">
+        <section id="operations">
+          <h3 class="text-uppercase font-weight-400">Library Operations</h3>
+          <section id="hours">
+            <h4>Hours</h4>
+            <div class="padding-bottom-15">Modified services are available at all DCL locations during our current operating hours:</div>
+            <ul class="list-unstyled">
+              <li>Monday-Thursday, 9AM-7PM</li>
+              <li>Friday-Saturday, 9AM-5PM</li>
+              <li>Sunday, 12-5PM</li>
+              <li>Louviers only: Tuesday, 3-7PM &amp; Saturday 9AM-12PM</li>
+            </ul>
+            <div class="padding-bottom-15 border-line"> <a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a> services are available by appointment only; call <a class="text-nowrap" href="tel:+13036887730 ">(303) 688-7730</a>.</div>
+          </section>
+          <section id="borrowing-holds-fines">
+            <h4>Borrowing, Holds & Fines</h4>
+            <div class="padding-bottom-15 border-line">Standard borrowing timelines and fines on late returns apply. <a href="../request-title/">Materials Request</a> and Interlibrary Loan (ILL) are available. Learn more about <a href="../fines-fees-borrowing/">fines, fees and borrowing</a>.</div>
+          </section>
+          <section id="book-drops-donations">
+            <h4>Book Drops & Donations</h4>
+            <div class="padding-bottom-15">All DCL book drops are open and accepting returns of checked-out items.</div>
+            <div class="padding-bottom-15">Book donations are important to us. Due to current restrictions and fewer volunteers to process donations, we've implemented some temporary changes. Book donations are accepted on a limited basis at our Castle Pines, Castle Rock, Highlands Ranch, Lone Tree, and Parker locations during the times listed below. We are currently accepting donations of only two 18”x14”x12” boxes or less per household.</div>
+            <div class="border-line padding-bottom-15">
+              <ul class="no-margin-bottom">
+                <li>Castle Pines: Wednesdays, 10AM-2PM</li>
+                <li>Castle Rock: Wednesdays, 3-7PM</li>
+				<li>Highlands Ranch: Saturdays, 10AM-2PM</li>
+                <li>Lone Tree: Mondays, 10AM-2PM</li>
+                <li>Parker: Thursdays, 10AM-2PM</li>
+              </ul>
+            </div>
+          </section>
+          <section id="storytime-events-playscapes">
+            <h4>Storytime, Events & Playscapes</h4>
+            <div class="padding-bottom-15">In-library Storytimes and most other library events remain unavailable.</div>
+            <div class="padding-bottom-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=virtual+storytime&lib=1008&nd=90" target="_blank">Virtual Storytime</a> fun and activities happen each weekday at 10:30AM. Library staff lead songs, rhymes, reading and fingerplays to keep nurturing those all-important emerging reading skills. Virtual Storytime also is available through <a href="https://www.storyblocks.org/" target="_blank">Storyblocks</a>, a project of Colorado Libraries for Early Literacy (CLEL).</div>
+            <div class="padding-bottom-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=outdoor+storytime&lib=all&nd=90" target="_blank">Outdoor Storytime</a> for kids ages 0-5 is available each weekday through July 30. Times and locations vary, and registration is required as space is limited. You may register online or with library staff. Thank you for keeping Storytime allergen-free. </div>
+			<div class="padding-bottom-15 border-line">Playscapes and other interactive features are now open, including the new U-Fix-It Pit Stop at Parker, Little Letters Post Office at Castle Pines, The Market at Highlands Ranch, Playful Pets at Lone Tree, and Mission Control at Roxborough.</div>
+          </section>
+          <section id="spaces">
+            <h4>Spaces</h4>
+            <div class="padding-bottom-15">Meeting rooms are open and available for public use. Study rooms are also available, and drop-in use of empty meeting and study rooms is permitted.</div>
+            <div class="padding-bottom-15 border-line">Contact Event & Hospitality Services at <a href="tel:+13036887605" target="_blank">(303) 688-7605</a> for information specific to DCL meeting rooms.</div>
+          </section>
+        </section>
+      </div>
+      
+      <!--######-->
+      <div class="col-sm-9 col-sm-push-3">
+        <section id="services">
+          <h3 class="text-uppercase font-weight-400">Library Services</h3>
+          <section id="park-pickup">
+            <h4>Park & Pick-Up Holds Service</h4>
+            <div class="padding-bottom-15">Pick-Up Hours: Monday-Saturday, 9AM-5PM & Sunday, 12-5PM. </div>
+            <div class="padding-bottom-15">Use our curbside service to pick up holds at your preferred DCL location<span class="asterisk-space">*</span>, following these instructions. Book Club Express kits may also be picked up using this service:</div>
+            <div class="padding-bottom-15 border-line">
+              <ol class="no-margin-bottom">
+                <li>Look for the parking spaces set aside for this service. Note that there may be a longer wait for delivery to your car. Thank you for your patience and understanding.</li>
+                <li>If all marked spots are full, please wait in your car for a space to become available. We will work as quickly as possible to serve you, but there may be a wait during busy times. Please be prepared.</li>
+                <li>Keep your phone handy. Once you are parked in a numbered space, call or text the number on the sign with the required information.</li>
+                <li>Health regulations prevent us from touching your vehicle. Please be prepared to open and close your own trunk for delivery of held items.</li>
+              </ol>
+              <div class="margin-top-5"><span class="asterisk-space">*</span>Not available at Louviers.</div>
+            </div>
+          </section>
+          <section id="digital-library">
+            <h4>Our Digital Library is Open</h4>
+            <div class="padding-bottom-15">Our <a href="../digital-media/">digital library</a> is always open—and it's been enhanced to accommodate more digital checkouts (now up to 12 borrows per month) and less wait time (decreased ratio of holds to copies, now just 3:1). You may Skip the Line on <a href="https://dcl.overdrive.com/" target="_blank">OverDrive</a> and through the <a href="https://www.overdrive.com/apps/libby/?utm_origin=lightning&utm_page_genre=tout&utm_list=meet_libby&utm_content=libby_tout_learnmore_06019018" target="_blank">Libby app</a> for instant checkout of items, similar to Your Lucky Day items in our branches. And you'll see that familiar shamrock.</div>
+            <div class="padding-bottom-15 border-line">Access a variety of digital <a href="../library-perks/">library perks</a>, from crafting classes to online learning and more.</div>
+          </section>
+        </section>
+      </div>
+      
+      <!--######-->
+      <div class="col-sm-9 col-sm-push-3">
+        <section id="safety">
+          <h3 class="text-uppercase font-weight-400">Health & Safety</h3>
+          <section id="protect">
+            <h4>Protect Yourself & Others</h4>
+            <div class="padding-bottom-15">Individuals age eleven and older who are not fully vaccinated are encouraged to wear a mask. Disposable masks are available for customers.</div>
+            <!-- <div class="padding-bottom-15">Food is currently not permitted in the library in keeping with the state's Level Red mandate prohibiting indoor dining. Beverages are acceptable, keeping in mind mask mandates.</div> -->
+            <div class="padding-bottom-15 border-line">Hand sanitizer stations are set up at library entrances, public service desks, cash-handling points, and other heavily used areas.</div>
+          </section>
+          <section id="protocols">
+            <h4>Safety Precautions & Protocols</h4>
+            <div class="padding-bottom-15">Enhanced in-library cleaning and disinfecting procedures are ongoing using <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2-covid-19" target="_blank">EPA-registered disinfectants</a>. Common areas; hard surfaces such as stair rails, door handles, and elevator buttons;  reserved rooms; and restrooms are cleaned at least four times a day. Hard flooring is thoroughly cleaned once each day.</div>
+            <div class="padding-bottom-15">Plexiglass partitions are in place at public service desks.</div>
+            <div class="padding-bottom-15 border-line">Signage throughout all libraries encourages hand hygiene. Protocols and systems are in place to increase air circulation in library buildings.</div>
+          </section>
+        </section>
       </div>
     </div>
   </div>
-  <div id="databases" class="row shelf-shadow">
-    <div class="container text-center padding-top-40">
-      <h1 class="no-margin-top text-center">Business Databases</h1>
-      <div class="margin-lg-100">Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications. Access the databases for free either at the library or online using your <a href="http://getacard.org/v2/index.html" target="_blank">library card</a>.</div>
-    </div>
+  <div class="row">
+    <div class="container text-center padding-top-40 padding-bottom-40"> <a href="https://www.douglas.co.us/douglascovid19/" target="_blank"><img class="logo-hover" src="community-response-logo.jpg" alt="Douglas County Community Response Logo"></a> </div>
   </div>
-  <div class="row padding-bottom-30">
-    <div class="database-wrapper">
-      <div class="databases">
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-insights" target="_blank">Business Insights: Essentials</a></h4>
-          <div>Business and industry overviews, rankings, market data, and investment and financial reports.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-source-premier" target="_blank">Business Source Premier</a></h4>
-          <div>Economic data, company profiles, industry information and market research from more than 2,200 popular and academic business publications.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=demographicsnow" target="_blank">DemographicsNow</a></h4>
-          <div>Demographic data useful for opening a business, finding audiences for products/services, and analyzing the needs of a given population.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=plunkett-research" target="_blank">Market Research</a></h4>
-          <div class="text-uppercase small">Plunkett Research</div>
-          <div>Worldwide market research, industry statistics, trends and in-depth analysis of top companies.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=referenceusa" target="_blank">Reference Solutions</a></h4>
-          <div class="text-uppercase small">Formerly ReferenceUSA</div>
-          <div>Business and residential info on over 25 million businesses and more than 262 million consumers in the U.S. and Canada.</div>
-        </div>
-      </div>
-    </div>
+  <div class="row bg-teal">
+    <div class="container padding-top-30 padding-bottom-40 white margin-lg-100 text-center">We're doing all we can to ensure the safety and health of DCL staff and our community. As the situation surrounding COVID-19 changes, we will continue to communicate with you via email and will post ongoing updates to this page and through our social media channels. Thank you for your support and understanding as we navigate this situation together. We wish you and your loved ones good health. </div>
   </div>
-  <div class="row bg-gray-5">
-    <div class="container padding-top-40 padding-bottom-40">
-      <h4 class="text-center no-margin">Our specially trained business librarians are here to help you with your research.</h4>
-      <div class="item-wrapper">
-        <div class="item">
-          <div><img alt="Colbe Galston, Highlands Ranch" class="img-circle" src="colbe.jpg">
-            <h5 class="no-margin-bottom">Colbe Galston</h5>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="schedule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h3 class="text-center modal-title">Schedule a Donation</h3>
         </div>
-        <div class="item">
-          <div><img alt="Patty Van Eysden, Castle Rock" class="img-circle" src="patty.jpg">
-            <h5 class="no-margin-bottom">Patty Van Eysden</h5>
-          </div>
+        <div class="modal-body">
+          <iframe class="embed-responsive-item" src="https://form.jotform.com/202655299471160" frameborder="0" style="width: 100%;height:655px;border:none;" scrolling="no"> </iframe>
         </div>
-      </div>
-      <div class="checklist-wrapper">
-        <div class="checklist">
-          <ul class="fa-ul red-check">
-            <li><i class="fa-li fa fa-check fa-lg"></i>Help starting a new business with sample business plans, registration and other startup information.</li>
-            <li><i class="fa-li fa fa-check fa-lg"></i>Market information, competitive intelligence, industry trends, and operation assistance for established businesses.</li>
-            <li><i class="fa-li fa fa-check fa-lg"></i>Instruction and best practices for using and understanding the wealth of data reported in the above business databases.</li>
-          </ul>
-        </div>
-        <div class="text-center margin-lg-200">
-          <div>In addition, our libraries offer <a href="../reserve-a-space/">meeting rooms and study rooms</a> that may be reserved for uninterrupted work, meetings with clients, and group presentations, with free wireless internet access.</div>
-          <h5 class="no-margin-bottom margin-top-15"><i>Contact us now with your business question!</i></h5>
-        </div>
-        <div class="text-center margin-top-20"> <a href="form/" target="_blank" class="btn btn-lg btn-primary">Contact Us</a> </div>
       </div>
     </div>
   </div>
@@ -529,52 +543,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script> 
 <script>
-	var cards = $(".carousel-cell");
-for (var i = 0; i < cards.length; i++) {
-  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
-  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
-  cards.eq(target1).before(cards.eq(target2));
-}
- </script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
-<script type="application/ld+json">
-{
-	"@context": "http://schema.org",
-	"@type": "Library",
-	"address": {
-		"@type": "PostalAddress",
-		"addressLocality": "Castle Rock",
-		"addressRegion": "CO",
-		"postalCode": "80104",
-		"streetAddress": "100 S. Wilcox Street"
-	},
-	"telephone": "(303) 791-7323",
-	"name": "Douglas County Libraries",
-	"url": "https://www.dcl.org/",
-	"image": "https://www.dcl.org/locations/castle-rock.jpg",
-	"description": "Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.",
-	"logo": "https://www.dcl.org/dcl-logo.png",
-	"priceRange": "Free",
+$(function() {
+  $("input").on("input.highlight", function() {
+    // Determine specified search term
+    var searchTerm = $(this).val();
+    // Highlight search term inside a specific context
+    $("#context").unmark().mark(searchTerm);
+  }).trigger("input.highlight").focus();
+});</script> 
+<script>window.addEventListener('DOMContentLoaded', () => {
 
-	"potentialAction": {
-		"@type": "SearchAction",
-		"target": "https://dcl.bibliocommons.com/v2/search?query=search_term_string",
-		"query-input": "required name=search_term_string"
-	},
-	"sameAs": ["https:\/\/dcl.bibliocommons.com",
-		"https:\/\/www.blogs.douglascountylibraries.org",
-		"https:\/\/help.dcl.org/",
-		"https:\/\/www.douglascountylibraries.org/",
-		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
-		"https:\/\/www.instagram.com\/dclcolorado",
-		"https:\/\/www.youtube.com\/user\/dclwebteam",
-		"https:\/\/pinterest.com\/dougcolibraries",
-		"https:\/\/twitter.com\/DCLcolorado"
-	]
-}
-</script> 
-<!-- InstanceEndEditable -->
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});</script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
