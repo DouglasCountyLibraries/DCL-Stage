@@ -147,16 +147,21 @@ Push Notifications End - Removed for Now -->
 	min-width: 100%;
 	padding: 15px;
 }
-.cj-row {
-}
+
 .cj-wrapper {
 	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
 	align-items: center;
 	justify-content: center;
+    padding: 0 10px;
 }
+    .cj-item.one img {
+        width: 575px;
+	height: 500px;
+    }
 .cj-item.two {
 	padding: 30px 30px 40px;
-	width: 525px;
 	background: #f5f5f5;
 }
 
@@ -167,39 +172,12 @@ Push Notifications End - Removed for Now -->
 }
 }
 
-@media (max-width: 1700px) {
-.cj-item.three {
-	display: none;
-}
-}
-
-@media (max-width: 1200px) {
-.cj-wrapper {
-	flex-direction: column;
-	background: #fff;
-}
-.cj-item.two {
-	background: #243243;
-	width: 891px;
-	text-align: center;
-}
-}
-
-@media (max-width: 891px) {
-.cj-item.two {
-	width: 100%;
-}
-}
-
 @media (max-width: 480px) {
 .author-item h2 {
 	text-align: center;
 }
 .author-item h4 {
 	text-align: center;
-}
-.cj-item.two {
-	padding: 30px 10px 40px;
 }
 }
 
@@ -436,7 +414,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row padding-bottom-60">
     <div class="page-nav">
       <div class="page-nav-item"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank"><i class="pagenav-icon fas fa-calendar"></i>Events Calendar</a></div>
       <div class="page-nav-item"><a href="#featured-events"><i class="pagenav-icon fas fa-star"></i>Featured Events</a></div>
@@ -444,19 +422,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="page-nav-item"><a href="../past-authors/"><i class="pagenav-icon fas fa-history"></i>Past Authors</a></div>
     </div>
   </div>
-  <div class="row cj-row">
-    <div class="container-md no-padding">
-      <div class="cj-wrapper">
-        <div class="cj-item one"> <img class="img-responsive" src="cj-box.jpg" alt="C.J. Box"> </div>
-        <div class="cj-item two">
-          <h5 class="no-margin">DCL Presents:</h5>
-          <h1 class="no-margin-top text-uppercase font-weight-400">C.J. Box</h1>
-          <div>Douglas County Libraries is pleased to host <i>New York Times</i> bestselling author C.J. Box. The award-winning author will talk about his new thriller in the Joe Pickett series, <i><a class="text-underline" href="https://dcl.bibliocommons.com/v2/record/S114C1724969">Shadows Reel</a></i>.</div>
-          <div class="padding-top-15"> The $35 ticket purchase includes a reserved seat at the author’s presentation, one complimentary drink, a hardcover copy of <i>Shadows Reel</i>, and a place in the signing line.</div>
-          <h4 class="text-uppercase no-margin-bottom padding-top-15 font-weight-400"><a href="https://goo.gl/maps/Efotsu9CD8SwPmm97" target="_blank">Lone Tree Arts Center</a></h4>
-          <div>Thursday, March 10, 2022, 7PM</div>
-          <div class="padding-top-30"><a class="btn btn-warning btn-lg text-uppercase font-weight-400" href="https://www.lonetreeartscenter.org/showinfo.php?id=1415" target="_blank">Buy Tickets</a></div>
-        </div>
+  <div class="row padding-bottom-80">
+    <div class="cj-wrapper">
+      <div class="cj-item one"> <img class="img-responsive" src="cj-box.jpg" alt="C.J. Box"> </div>
+      <div class="cj-item two">
+        <h5 class="no-margin">DCL Presents:</h5>
+        <h1 class="no-margin-top text-uppercase font-weight-400">C.J. Box</h1>
+        <div>Douglas County Libraries is pleased to host <i>New York Times</i> bestselling author C.J. Box. The award-winning author will talk about his new thriller in the Joe Pickett series, <i><a href="https://dcl.bibliocommons.com/v2/record/S114C1724969">Shadows Reel</a></i>.</div>
+        <div class="margin-top-5"> The $35 ticket purchase includes a reserved seat at the author’s presentation, one complimentary drink, a hardcover copy of <i>Shadows Reel</i>, and a place in the signing line.</div>
+        <h3 class="no-margin-bottom"><a href="https://goo.gl/maps/Efotsu9CD8SwPmm97" target="_blank">Lone Tree Arts Center</a></h3>
+        <div class="large-text">Thursday, March 10, 2022, 7PM</div>
+        <div class="padding-top-15"><a class="btn btn-lg btn-primary" href="https://www.lonetreeartscenter.org/showinfo.php?id=1415" target="_blank">Buy Tickets</a></div>
       </div>
     </div>
   </div>
