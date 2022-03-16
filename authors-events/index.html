@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -219,6 +220,78 @@ Push Notifications End - Removed for Now -->
 }
 }
 </style>
+<style>
+  .align-bottom {
+	margin-top: auto;
+	text-align: center;
+}
+.gray-circle {
+	border: 6px solid #f5f5f5;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #fff;
+	font-size: 70px;
+	height: 150px;
+	line-height: 135px;
+	margin: 0 auto;
+	text-align: center;
+	width: 150px;
+}
+.white-circle {
+	border: 6px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #f5f5f5;
+	font-size: 70px;
+	height: 150px;
+	line-height: 135px;
+	margin: 0 auto;
+	text-align: center;
+	width: 150px;
+}
+.icon-circle-gray {
+	border: 6px solid #f5f5f5;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #fff;
+	font-size: 42px;
+	height: 100px;
+	line-height: 90px;
+	margin: -84px auto 0 auto;
+	text-align: center;
+	width: 100px;
+}
+.box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+        .box-item {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 30px 30px 35px;
+	margin: 35px;
+	min-width: 490px;
+	background: #fff;
+	border-radius: 3px;
+}
+
+.print-item {
+	flex: 1;
+	padding: 5px 30px 35px;
+	margin: 5px 35px;
+	background: #fff url("../shared-assets/images/box-background.jpg") top center repeat-x;
+	max-width: 325px;
+	border-radius: 3px;
+}
+ 
+    </style>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -228,7 +301,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -423,11 +496,40 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div id="featured-events" class="row ">
+  <div id="featured-events" class="row bg-gray-5">
     <div class="container text-center">
       <div class="padding-top-15">
         <h1>Featured Events</h1>
         <h4>Don't miss these special library events!</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-gray-5 padding-bottom-100 padding-top-60 margin-bottom-60">
+    <div class="container box-wrapper">
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
+        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
+        Sunday, March 27, 8AM, Parker</div>
+        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary margin-top-15">Buy Tickets</a></div>
+      </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Heading</h3>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</div>
+        <div class="align-bottom"> <a href="#" class="btn btn-lg btn-primary margin-top-15">Action Item</a></div>
+      </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Heading</h3>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</div>
+        <div class="align-bottom"> <a href="#" class="btn btn-lg btn-primary margin-top-15">Action Item</a></div>
+      </div>
+      <div class="box-item">
+        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Heading</h3>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</div>
+        <div class="align-bottom"> <a href="#" class="btn btn-lg btn-primary margin-top-15">Action Item</a></div>
       </div>
     </div>
   </div>
@@ -620,4 +722,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
