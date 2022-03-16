@@ -148,19 +148,16 @@ Push Notifications End - Removed for Now -->
 	padding: 15px;
 }
 .cj-row {
-
-
 }
 .cj-wrapper {
 	display: flex;
 	align-items: center;
-
 	justify-content: center;
 }
 .cj-item.two {
 	padding: 30px 30px 40px;
 	width: 525px;
-    background: #f5f5f5;
+	background: #f5f5f5;
 }
 
 @media (max-width: 1300px) {
@@ -222,35 +219,9 @@ Push Notifications End - Removed for Now -->
 }
 </style>
 <style>
-  .align-bottom {
+.align-bottom {
 	margin-top: auto;
 	text-align: center;
-}
-.gray-circle {
-	border: 6px solid #f5f5f5;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #4f878c;
-	background-color: #fff;
-	font-size: 70px;
-	height: 150px;
-	line-height: 135px;
-	margin: 0 auto;
-	text-align: center;
-	width: 150px;
-}
-.white-circle {
-	border: 6px solid #fff;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #4f878c;
-	background-color: #f5f5f5;
-	font-size: 70px;
-	height: 150px;
-	line-height: 135px;
-	margin: 0 auto;
-	text-align: center;
-	width: 150px;
 }
 .icon-circle-gray {
 	border: 6px solid #f5f5f5;
@@ -266,60 +237,24 @@ Push Notifications End - Removed for Now -->
 	width: 100px;
 }
 .box-wrapper {
+	max-width: 1150px;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 }
-
-        .box-item {
+.box-item {
 	display: flex;
 	flex: 1;
+	width: 400px;
 	flex-direction: column;
 	padding: 30px 30px 35px;
-	margin: 35px;
-	min-width: 490px;
+	margin: 84px 0 0;
 	background: #fff;
 	border-radius: 3px;
 }
-
-.print-item {
-	flex: 1;
-	padding: 5px 30px 35px;
-	margin: 5px 35px;
-	background: #fff url("../shared-assets/images/box-background.jpg") top center repeat-x;
-	max-width: 325px;
-	border-radius: 3px;
-}
-    a.btn.btn-primary.sbh {
-	text-transform: uppercase;
-	border: 0;
-	background: #125a36;
-	color: #fff;
-	font-weight: 400;
-	font-size: 18px;
-	padding: 14px 18px;
-}
-        a.btn.btn-primary.mg {
-	text-transform: uppercase;
-	border: 0;
-	background: #7d472f;
-	color: #fff;
-	font-weight: 400;
-	font-size: 18px;
-	padding: 14px 18px;
-}
-            a.btn.btn-primary.sm {
-	text-transform: uppercase;
-	border: 0;
-	background: #46597a;
-	color: #fff;
-	font-weight: 400;
-	font-size: 18px;
-	padding: 14px 18px;
-}
- 
-    </style>
+</style>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -520,72 +455,52 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div>Thursday, March 10, 2022, 7PM</div>
           <div class="padding-top-30"><a class="btn btn-warning btn-lg text-uppercase font-weight-400" href="https://www.lonetreeartscenter.org/showinfo.php?id=1415" target="_blank">Buy Tickets</a></div>
         </div>
-        
       </div>
     </div>
   </div>
   <div id="featured-events" class="row bg-gray-5">
     <div class="container text-center">
-      <div class="padding-top-15">
+      <div class="padding-top-40">
         <h1>Featured Events</h1>
         <h4>Don't miss these special library events!</h4>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-bottom-100 padding-top-60 margin-bottom-60">
-    <div class="container box-wrapper">
+  <div class="row bg-gray-5 padding-bottom-100 padding-top-30 padding-bottom-30">
+    <div class="box-wrapper">
       <div class="box-item">
         <div class="icon-circle-gray" style="background: url(sbh.jpg);"></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
-        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
-        Sunday, March 27, 8AM, Parker</div>
-        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary sbh margin-top-15">Buy Tickets</a></div>
-      </div>
-     <div class="box-item">
-        <div class="icon-circle-gray" style="background: url(mg.jpg);"></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
-        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
-        Sunday, March 27, 8AM, Parker</div>
-        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary mg margin-top-15">Buy Tickets</a></div>
-      </div>
-     <div class="box-item">
-        <div class="icon-circle-gray" style="background: url(sm.jpg);"></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
-        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
-        Sunday, March 27, 8AM, Parker</div>
-        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary sm margin-top-15">Buy Tickets</a></div>
+        <h3 class="no-margin-bottom text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
+        <div class="large-text text-center margin-bottom-5">That Hungry Little Bug</div>
+        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! Ages 2-5.</div>
+        <div class="align-bottom">
+          <div class="large-text text-center margin-top-5">Sunday, March 27, 8AM, Parker</div>
+          <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary margin-top-15">Buy Tickets</a></div>
       </div>
       <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Heading</h3>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</div>
-        <div class="align-bottom"> <a href="#" class="btn btn-lg btn-primary margin-top-15">Action Item</a></div>
+        <div class="icon-circle-gray" style="background: url(mg.jpg);"></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Master Gardeners</h3>
+        <div>Get tips for successful seed starting in Colorado from those in the know. Adults.</div>
+        <div class="align-bottom">
+          <div class="large-text text-center margin-top-5">Various dates & locations</div>
+          <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=master+gardeners&lib=ALL&nd=90" target="_blank" class="btn btn-lg btn-primary margin-top-15">Register Now</a></div>
       </div>
-    </div>
-  </div>
-  <div class="row padding-bottom-15">
-    <div class="container-md">
-      <div class="event-wrapper">
-        <div class="event-item"> <img class="img-responsive center-block" src="storybook-holiday.jpg" alt="Storybook Holiday">
-          <div class="text-center padding-top-15">Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! <span class="text-uppercase">Ages 2-5.</span><br>
-            Sunday, March 27, 8AM, Parker</div>
-          <div class="register"><a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-primary btn-lg text-uppercase margin-15">Buy Tickets</a></div>
-        </div>
-        <div class="event-item"> <img class="img-responsive center-block" src="master-gardeners.jpg" alt="Master Gardeners">
-          <div class="text-center padding-top-15">Get tips for successful seed starting in Colorado from those in the know. <span class="text-uppercase">Adults.</span><br>
-            Various dates & locations.</div>
-          <div class="register"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=master+gardeners&lib=ALL&nd=90" target="_blank" class="btn btn-primary btn-lg text-uppercase margin-15">Register Now</a></div>
-        </div>
-        <div class="event-item"> <img class="img-responsive center-block" src="small-business-events.jpg" alt="Fairy Tale Ball">
-          <div class="text-center padding-top-15">What do you need to know to start a successful business? Find out in this workshop for new business owners and entrepreneurs. <span class="text-uppercase">Adults.</span><br>
-            Various dates & locations.</div>
-          <div class="register"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=fired+up&lib=ALL&nd=365" target="_blank" class="btn btn-primary btn-lg text-uppercase margin-15">Register Now</a></div>
-        </div>
-        <div class="event-item"> <img class="img-responsive center-block" src="book-lovers.jpg" alt="Book Lovers">
-          <div class="text-center padding-top-15">Discover great new reads at an evening of book talks, with special guests and door prizes! <span class="text-uppercase">Adults.</span><br>
-            Various dates & locations.</div>
-          <div class="register"><a href="http://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=book+lovers&lib=ALL&nd=180" target="_blank" class="btn btn-primary btn-lg text-uppercase margin-15">Register Now</a></div>
-        </div>
+      <div class="box-item">
+        <div class="icon-circle-gray" style="background: url(sm.jpg);"></div>
+        <h3 class="no-margin-bottom text-center margin-top-10 font-weight-400">Fired Up</h3>
+        <div class="large-text text-center margin-bottom-5">I Want to Start a Business!</div>
+        <div>What do you need to know to start a successful business? Find out in this workshop for new business owners and entrepreneurs. Adults.</div>
+        <div class="align-bottom">
+          <div class="large-text text-center margin-top-5">Various dates & locations</div>
+          <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=fired+up&lib=ALL&nd=365" target="_blank" class="btn btn-lg btn-primary margin-top-15">Register Now</a></div>
+      </div>
+      <div class="box-item">
+        <div class="icon-circle-gray" style="background: url(bl.jpg);"></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Book Lovers</h3>
+        <div>Discover great new reads at an evening of book talks, with special guests and door prizes! Adults.</div>
+        <div class="align-bottom">
+          <div class="large-text text-center margin-top-5">Various dates & locations</div>
+          <a href="http://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=book+lovers&lib=ALL&nd=180" target="_blank" class="btn btn-lg btn-primary margin-top-15">Register Now</a></div>
       </div>
     </div>
   </div>
