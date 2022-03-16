@@ -246,13 +246,15 @@ Push Notifications End - Removed for Now -->
 }
 .box-item {
 	display: flex;
-	flex: 1;
-	width: 400px;
+	width: 500px;
 	flex-direction: column;
 	padding: 30px 30px 35px;
-	margin: 84px 0 0;
+	margin: 75px auto 10px;
 	background: #fff;
 	border-radius: 3px;
+	border-left: 10px solid #f5f5f5;
+	border-right: 10px solid #f5f5f5;
+	min-height: 325px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -460,19 +462,19 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div id="featured-events" class="row bg-gray-5">
     <div class="container text-center">
-      <div class="padding-top-40">
+      <div class="padding-top-30">
         <h1>Featured Events</h1>
         <h4>Don't miss these special library events!</h4>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-bottom-100 padding-top-30 padding-bottom-30">
+  <div class="row bg-gray-5 padding-bottom-100">
     <div class="box-wrapper">
       <div class="box-item">
         <div class="icon-circle-gray" style="background: url(sbh.jpg);"></div>
         <h3 class="no-margin-bottom text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
         <div class="large-text text-center margin-bottom-5">That Hungry Little Bug</div>
-        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! Ages 2-5.</div>
+        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! Ages&nbsp;2-5.</div>
         <div class="align-bottom">
           <div class="large-text text-center margin-top-5">Sunday, March 27, 8AM, Parker</div>
           <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary margin-top-15">Buy Tickets</a></div>
