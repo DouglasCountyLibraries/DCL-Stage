@@ -148,18 +148,19 @@ Push Notifications End - Removed for Now -->
 	padding: 15px;
 }
 .cj-row {
-	color: #fff;
-	background: #243243;
+
+
 }
 .cj-wrapper {
 	display: flex;
 	align-items: center;
-	background: #243243;
+
 	justify-content: center;
 }
 .cj-item.two {
 	padding: 30px 30px 40px;
 	width: 525px;
+    background: #f5f5f5;
 }
 
 @media (max-width: 1300px) {
@@ -289,6 +290,33 @@ Push Notifications End - Removed for Now -->
 	background: #fff url("../shared-assets/images/box-background.jpg") top center repeat-x;
 	max-width: 325px;
 	border-radius: 3px;
+}
+    a.btn.btn-primary.sbh {
+	text-transform: uppercase;
+	border: 0;
+	background: #125a36;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 14px 18px;
+}
+        a.btn.btn-primary.mg {
+	text-transform: uppercase;
+	border: 0;
+	background: #7d472f;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 14px 18px;
+}
+            a.btn.btn-primary.sm {
+	text-transform: uppercase;
+	border: 0;
+	background: #46597a;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 14px 18px;
 }
  
     </style>
@@ -484,15 +512,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="cj-wrapper">
         <div class="cj-item one"> <img class="img-responsive" src="cj-box.jpg" alt="C.J. Box"> </div>
         <div class="cj-item two">
-          <h5 class="no-margin white">DCL Presents:</h5>
-          <h1 class="no-margin-top white text-uppercase font-weight-400">C.J. Box</h1>
-          <div>Douglas County Libraries is pleased to host <i>New York Times</i> bestselling author C.J. Box. The award-winning author will talk about his new thriller in the Joe Pickett series, <i><a class="white text-underline" href="https://dcl.bibliocommons.com/v2/record/S114C1724969">Shadows Reel</a></i>.</div>
+          <h5 class="no-margin">DCL Presents:</h5>
+          <h1 class="no-margin-top text-uppercase font-weight-400">C.J. Box</h1>
+          <div>Douglas County Libraries is pleased to host <i>New York Times</i> bestselling author C.J. Box. The award-winning author will talk about his new thriller in the Joe Pickett series, <i><a class="text-underline" href="https://dcl.bibliocommons.com/v2/record/S114C1724969">Shadows Reel</a></i>.</div>
           <div class="padding-top-15"> The $35 ticket purchase includes a reserved seat at the author’s presentation, one complimentary drink, a hardcover copy of <i>Shadows Reel</i>, and a place in the signing line.</div>
-          <h4 class="text-uppercase white no-margin-bottom padding-top-15 font-weight-400"><a class="white" href="https://goo.gl/maps/Efotsu9CD8SwPmm97" target="_blank">Lone Tree Arts Center</a></h4>
+          <h4 class="text-uppercase no-margin-bottom padding-top-15 font-weight-400"><a href="https://goo.gl/maps/Efotsu9CD8SwPmm97" target="_blank">Lone Tree Arts Center</a></h4>
           <div>Thursday, March 10, 2022, 7PM</div>
           <div class="padding-top-30"><a class="btn btn-warning btn-lg text-uppercase font-weight-400" href="https://www.lonetreeartscenter.org/showinfo.php?id=1415" target="_blank">Buy Tickets</a></div>
         </div>
-        <div class="cj-item three"><img climg-responsiveass="" src="shadows-reel.jpg" alt="C.J. Box"> </div>
+        
       </div>
     </div>
   </div>
@@ -507,23 +535,25 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row bg-gray-5 padding-bottom-100 padding-top-60 margin-bottom-60">
     <div class="container box-wrapper">
       <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
+        <div class="icon-circle-gray" style="background: url(sbh.jpg);"></div>
         <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
         <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
         Sunday, March 27, 8AM, Parker</div>
-        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary margin-top-15">Buy Tickets</a></div>
+        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary sbh margin-top-15">Buy Tickets</a></div>
       </div>
-      <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Heading</h3>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</div>
-        <div class="align-bottom"> <a href="#" class="btn btn-lg btn-primary margin-top-15">Action Item</a></div>
+     <div class="box-item">
+        <div class="icon-circle-gray" style="background: url(mg.jpg);"></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
+        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
+        Sunday, March 27, 8AM, Parker</div>
+        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary mg margin-top-15">Buy Tickets</a></div>
       </div>
-      <div class="box-item">
-        <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Heading</h3>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at turpis est. Duis tincidunt sem sed massa faucibus pharetra. Etiam ut tellus eros, et consequat arcu.</div>
-        <div class="align-bottom"> <a href="#" class="btn btn-lg btn-primary margin-top-15">Action Item</a></div>
+     <div class="box-item">
+        <div class="icon-circle-gray" style="background: url(sm.jpg);"></div>
+        <h3 class="text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
+        <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! AGES 2-5.<br>
+        Sunday, March 27, 8AM, Parker</div>
+        <div class="align-bottom"> <a href="https://www.eventbrite.com/e/a-storybook-holiday-that-hungry-little-bug-tickets-250338417947" target="_blank" class="btn btn-lg btn-primary sm margin-top-15">Buy Tickets</a></div>
       </div>
       <div class="box-item">
         <div class="icon-circle-gray"><i class="fas fa-dog"></i></div>
