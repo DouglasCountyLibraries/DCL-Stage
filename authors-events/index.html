@@ -147,28 +147,49 @@ Push Notifications End - Removed for Now -->
 	min-width: 100%;
 	padding: 15px;
 }
-
 .cj-wrapper {
 	display: flex;
 	max-width: 1200px;
-	margin: 0 auto;
+	background: #f5f5f5;
+	margin: 0 auto 80px;
 	align-items: center;
 	justify-content: center;
-    padding: 0 10px;
+	border-left: 10px solid #fff;
+	border-right: 10px solid #fff;
 }
-    .cj-item.one img {
-        width: 575px;
+.cj-item.one {
+	background: url("cj-box.jpg") -200px 0 no-repeat;
+	border-right: 15px solid #fff;
+	width: 500px;
 	height: 500px;
-    }
+}
 .cj-item.two {
-	padding: 30px 30px 40px;
-	background: #f5f5f5;
+	flex: 1;
+	padding: 30px 30px 35px;
 }
 
 @media (max-width: 1300px) {
 .event-item {
 	max-width: 400px;
 	flex: auto;
+}
+}
+
+@media (max-width: 925px) {
+.cj-wrapper {
+	flex-direction: column;
+	background: #fff;
+	margin: 0 auto 40px;
+}
+.cj-item.one {
+	background: url("cj-box.jpg") center center no-repeat;
+	border-right: 0;
+	width: 100%;
+	height: 500px;
+}
+.cj-item.two {
+	text-align: center;
+	padding: 20px 0;
 }
 }
 
@@ -422,9 +443,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="page-nav-item"><a href="../past-authors/"><i class="pagenav-icon fas fa-history"></i>Past Authors</a></div>
     </div>
   </div>
-  <div class="row padding-bottom-80">
+  <div class="row">
     <div class="cj-wrapper">
-      <div class="cj-item one"> <img class="img-responsive" src="cj-box.jpg" alt="C.J. Box"> </div>
+      <div class="cj-item one"></div>
       <div class="cj-item two">
         <h5 class="no-margin">DCL Presents:</h5>
         <h1 class="no-margin-top text-uppercase font-weight-400">C.J. Box</h1>
@@ -484,8 +505,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row bg-teal">
     <div class="container text-center padding-top-50 padding-bottom-50">
-      <h4 class="white no-margin-top"><a href="../newsletters/" class="white text-underline">Become a DCL insider</a> and be the first to access ticket sales for our events!</h4>
-      <h5 class="white">You’ll also get the inside scoop on great reads and upcoming events.</h5>
+      <h4 class="white no-margin-top margin-lg-200"><a href="../newsletters/" class="white text-underline">Become a DCL insider</a> and be the first to access ticket sales for our events! You’ll also get the inside scoop on great reads and upcoming events.</h4>
     </div>
   </div>
   <div id="other-author-events" class="row bg-gray-5 padding-bottom-30">
@@ -520,8 +540,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div id="collection-consideration" class="row bg-teal">
     <div class="container text-center padding-top-50 padding-bottom-50">
-      <h4 class="white no-margin-top">Are you a local author interested in adding your work to our collection?</h4>
-      <h5 class="white"> <a class="white text-underline" href="collection-consideration/">Apply now</a> to be considered.</h5>
+      <h4 class="white no-margin-top margin-lg-200">Are you a local author interested in adding your work to our collection? <a class="white text-underline" href="collection-consideration/">Apply now</a> to be considered.</h4>
     </div>
   </div>
   <!-- <div class="row bg-gray-5 padding-bottom-15">
