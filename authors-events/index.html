@@ -84,68 +84,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </script> 
 Push Notifications End - Removed for Now -->
 <style>
-.btn.btn-primary.btn-custom.btn-lg {
-	background: linear-gradient(#fff, #ACAEAF);
-	color: #000;
-	font-weight: 600;
-	text-transform: uppercase;
-	-webkit-box-shadow: 0px 1px 15px 0px #000;
-	-moz-box-shadow: 0px 1px 15px 0px #000;
-	box-shadow: 0px 1px 15px 0px #000;
-}
-.btn.btn-primary.btn-custom.btn-lg:hover, .btn.btn-primary.btn-custom.btn-lg:focus {
-	background: linear-gradient(#fff, #DAA520);
-	color: #000;
-	-webkit-box-shadow: 0px 10px 25px 0px #000;
-	-moz-box-shadow: 0px 10px 25px 0px #000;
-	box-shadow: 0px 10px 25px 0px #000;
-}
 .events-active {
 	background-color: #f5f5f5;
-}
-.author-wrapper, .event-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.event-item {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	margin: 15px;
-}
-.register {
-	margin-top: auto;
-	text-align: center;
-}
-.author-item {
-	background: #fff;
-	padding: 30px 35px 40px 35px;
-	margin: 5px;
-}
-.author-item h2 {
-	text-transform: uppercase;
-	font-weight: 400;
-	margin: 0;
-}
-.author-item h4 {
-	margin: 0;
-	padding-bottom: 15px;
-}
-.book-item img {
-	height: 200px;
-}
-.dropdown-menu.dropdown-event-menu a {
-	color: #b0852e;
-	padding: 0;
-	line-height: 1.6em;
-}
-.dropdown-menu.dropdown-event-menu a:hover {
-	text-decoration: underline;
-}
-.dropdown-menu.dropdown-event-menu {
-	min-width: 100%;
-	padding: 15px;
 }
 .cj-wrapper {
 	display: flex;
@@ -168,13 +108,6 @@ Push Notifications End - Removed for Now -->
 	padding: 30px 30px 35px;
 }
 
-@media (max-width: 1300px) {
-.event-item {
-	max-width: 400px;
-	flex: auto;
-}
-}
-
 @media (max-width: 925px) {
 .cj-wrapper {
 	flex-direction: column;
@@ -190,23 +123,6 @@ Push Notifications End - Removed for Now -->
 .cj-item.two {
 	text-align: center;
 	padding: 20px 0;
-}
-}
-
-@media (max-width: 480px) {
-.author-item h2 {
-	text-align: center;
-}
-.author-item h4 {
-	text-align: center;
-}
-}
-
-@media (min-width: 600px) {
-.event-item {
-}
-.author-item {
-	max-width: 600px;
 }
 }
 
@@ -254,6 +170,41 @@ Push Notifications End - Removed for Now -->
 	border-left: 10px solid #f5f5f5;
 	border-right: 10px solid #f5f5f5;
 	min-height: 325px;
+}
+.author-wrapper {
+	display: flex;
+	max-width: 1000px;
+	background: #f5f5f5;
+	margin: 0 auto 90px;
+	align-items: center;
+	justify-content: center;
+	border-left: 10px solid #fff;
+	border-right: 10px solid #fff;
+}
+.author-item.one {
+	border-right: 15px solid #fff;
+}
+.author-item.one img {
+	height: 400px;
+}
+.author-item.two {
+	flex: 1;
+	padding: 30px 30px 35px;
+}
+
+@media (max-width: 675px) {
+.author-wrapper {
+	flex-direction: column;
+	background: #fff;
+	margin: 0 auto 50px;
+}
+.author-item.one {
+	border-right: 0;
+}
+.author-item.two {
+	text-align: center;
+	padding: 20px 0;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -428,10 +379,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
+  <div class="row border-top padding-bottom-15">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400">Authors & Events</h1>
+        <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Authors & Events</h1><h4 class="roboto margin-top-5"><a href="../newsletters/">Become a DCL insider</a> and be the first to access ticket sales for our events!</h4><div>You’ll also get the inside scoop on great reads and upcoming events.</div>
       </div>
     </div>
   </div>
@@ -440,7 +391,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="page-nav-item"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank"><i class="pagenav-icon fas fa-calendar"></i>Events Calendar</a></div>
       <div class="page-nav-item"><a href="#featured-events"><i class="pagenav-icon fas fa-star"></i>Featured Events</a></div>
       <div class="page-nav-item"><a href="#other-author-events"><i class="pagenav-icon fas fa-glass-martini-alt"></i>Author Events</a></div>
-      <div class="page-nav-item"><a href="../past-authors/"><i class="pagenav-icon fas fa-history"></i>Past Authors</a></div>
     </div>
   </div>
   <div class="row">
@@ -461,15 +411,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="container text-center">
       <div class="padding-top-30">
         <h1>Featured Events</h1>
-        <h4>Don't miss these special library events!</h4>
+        <h4 class="no-margin-bottom">Don't miss these special library events!</h4>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-bottom-100">
+  <div class="row bg-gray-5 padding-bottom-80">
     <div class="box-wrapper">
       <div class="box-item">
         <div class="icon-circle-gray" style="background: url(sbh.jpg);"></div>
-        <h3 class="no-margin-bottom text-center margin-top-10 font-weight-400">Storybook Holiday</h3>
+        <h2 class="no-margin-bottom text-center margin-top-10">Storybook Holiday</h2>
         <div class="large-text text-center margin-bottom-5">That Hungry Little Bug</div>
         <div>Celebrate spring and new beginnings with everyone's favorite little caterpillar. Costumes are encouraged! Ages&nbsp;2-5.</div>
         <div class="align-bottom">
@@ -478,7 +428,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div class="box-item">
         <div class="icon-circle-gray" style="background: url(mg.jpg);"></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Master Gardeners</h3>
+        <h2 class="text-center margin-top-10">Master Gardeners</h2>
         <div>Get tips for successful seed starting in Colorado from those in the know. Adults.</div>
         <div class="align-bottom">
           <div class="large-text text-center margin-top-5">Various dates & locations</div>
@@ -486,7 +436,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div class="box-item">
         <div class="icon-circle-gray" style="background: url(sm.jpg);"></div>
-        <h3 class="no-margin-bottom text-center margin-top-10 font-weight-400">Fired Up</h3>
+        <h2 class="no-margin-bottom text-center margin-top-10">Fired Up</h2>
         <div class="large-text text-center margin-bottom-5">I Want to Start a Business!</div>
         <div>What do you need to know to start a successful business? Find out in this workshop for new business owners and entrepreneurs. Adults.</div>
         <div class="align-bottom">
@@ -495,7 +445,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div class="box-item">
         <div class="icon-circle-gray" style="background: url(bl.jpg);"></div>
-        <h3 class="text-center margin-top-10 font-weight-400">Book Lovers</h3>
+        <h2 class="text-center margin-top-10">Book Lovers</h2>
         <div>Discover great new reads at an evening of book talks, with special guests and door prizes! Adults.</div>
         <div class="align-bottom">
           <div class="large-text text-center margin-top-5">Various dates & locations</div>
@@ -503,38 +453,31 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row bg-teal">
-    <div class="container text-center padding-top-50 padding-bottom-50">
-      <h4 class="white no-margin-top margin-lg-200"><a href="../newsletters/" class="white text-underline">Become a DCL insider</a> and be the first to access ticket sales for our events! You’ll also get the inside scoop on great reads and upcoming events.</h4>
-    </div>
-  </div>
-  <div id="other-author-events" class="row bg-gray-5 padding-bottom-30">
+  <div id="other-author-events" class="row padding-bottom-30">
     <div class="container">
-      <div class="text-center padding-top-15">
+      <div class="text-center padding-top-30">
         <h1>Author Events</h1>
         <h4 class="margin-lg-150 no-margin-bottom text-center">Spend an evening with these diverse authors and hear the stories behind their stories. We regularly host bestsellers, local authors, children's writers, and more.</h4>
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-bottom-60">
-    <div class="container-md">
-      <div class="author-wrapper">
-        <div class="author-item">
-          <h2>Local Author Showcase</h2>
-          <h4>Castle Rock, Saturday, March 12, 1PM</h4>
-          <div class="book-item"><a href="https://dcl.bibliocommons.com/v2/record/S114C1738283"><img class="pull-left margin-right-15 shadow-low shadow-low-hover" src="https://www.dcl.org/shared-assets/images/hosted/allowed.jpg" alt="You Are Allowed"></a></div>
-          <div class="book-item">Several local authors will join us to talk about their books, which include titles for audiences from children to adults in a variety of genres. A book sale and signing will follow the author talks. <span class="text-uppercase">Adults.</span>
-            <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=184779" target="_blank" class="btn btn-primary btn-lg text-uppercase">Register Now</a></div>
-          </div>
-        </div>
-        <div class="author-item">
-          <h2>Sandra Dallas</h2>
-          <h4>Highlands Ranch, Friday, April 29, 6:30PM</h4>
-          <div class="book-item"><a href="https://dcl.bibliocommons.com/v2/record/S114C1727247"><img class="pull-left margin-right-15 shadow-low shadow-low-hover" src="https://www.syndetics.com/index.aspx?isbn=9781250277886&issn=/MC.JPG" alt="Little Souls"></a></div>
-          <div class="book-item">Meet <i>New York Times</i> bestselling, award-winning author Sandra Dallas when she joins us to talk about her new novel, <i>Little Souls</i>. A book sale will follow the author's presentation, courtesy of BookBar. <span class="text-uppercase">Adults.</span>
-            <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=198611" target="_blank" class="btn btn-primary btn-lg text-uppercase">Register Now</a></div>
-          </div>
-        </div>
+  <div class="row padding-bottom-15">
+    <div class="author-wrapper">
+      <div class="author-item one"><a href="https://dcl.bibliocommons.com/v2/record/S114C1727247"><img src="https://www.syndetics.com/index.aspx?isbn=9781250277886&issn=/LC.JPG" alt="Little Souls"></a></div>
+      <div class="author-item two">
+        <h2 class="no-margin-top">Sandra Dallas</h2>
+        <h4>Highlands Ranch, Friday, April 29, 6:30PM</h4>
+        <div>Meet <i>New York Times</i> bestselling, award-winning author Sandra Dallas when she joins us to talk about her new novel, <i>Little Souls</i>. A book sale will follow the author's presentation, courtesy of BookBar. ADULTS.</div>
+        <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=198611" target="_blank" class="btn btn-primary btn-lg text-uppercase">Register Now</a></div>
+      </div>
+    </div>
+    <div class="author-wrapper">
+      <div class="author-item one"><a href="https://dcl.bibliocommons.com/v2/record/S114C1733011"><img src="https://www.syndetics.com/index.aspx?isbn=9780593328545&issn=/LC.JPG" alt="Any Other Family"></a></div>
+      <div class="author-item two">
+        <h2 class="no-margin-top">Local Author Showcase</h2>
+        <h4>Castle Rock, Saturday, March 12, 1PM</h4>
+        <div>Several local authors will join us to talk about their books, which include titles for audiences from children to adults in a variety of genres. A book sale and signing will follow the author talks. ADULTS.</div>
+        <div class="margin-top-15"><a href="#" target="_blank" class="btn btn-primary btn-lg text-uppercase">Register Now</a></div>
       </div>
     </div>
   </div>
@@ -543,26 +486,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <h4 class="white no-margin-top margin-lg-200">Are you a local author interested in adding your work to our collection? <a class="white text-underline" href="collection-consideration/">Apply now</a> to be considered.</h4>
     </div>
   </div>
-  <!-- <div class="row bg-gray-5 padding-bottom-15">
-    <div class="container-md">
-      <div class="author-wrapper">
-        <div class="author-item">
-          <h2>Local Author Showcase</h2>
-          <h4>Parker, Saturday, November 20, 2PM</h4>
-          <div class="book-item"><a href="https://dcl.bibliocommons.com/v2/record/S114C1686893"><img class="pull-left margin-right-15 shadow-low shadow-low-hover" src="https://www.syndetics.com/index.aspx?isbn=9781532094743&issn=/MC.JPG" alt="Forgotten"></a></div>
-          <div class="book-item">Several local authors will join us to talk about their books, which include titles for audiences from children to adults in a variety of genres. A book sale and signing will follow the author talks. <span class="text-uppercase">Adults.</span>
-            <div class="margin-top-15"><a href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=171536" target="_blank" class="btn btn-primary text-uppercase">Register Now</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="collection-consideration" class="row bg-teal">
-    <div class="container text-center padding-top-30 padding-bottom-30 margin-lg-200">
-      <h5 class="white no-margin-top">Are you a local author interested in adding your work to our collection?<br>
-        <a class="white text-underline" href="collection-consideration/">Apply now to be considered</a>.</h5>
-    </div>
-  </div> --> 
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
