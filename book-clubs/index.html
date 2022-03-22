@@ -79,7 +79,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0 auto;
 }
 .bib-covers {
-	height: inherit;
+	min-height: 575px;
 	width: 436px;
 	margin: 0 auto;
 	display: block;
@@ -101,7 +101,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding: 10px;
 }
 .item-inner {
-	padding: 0 25px 30px;
+	padding: 0 25px 25px;
 }
 .item-inner {
 	margin-top: -5px;
@@ -115,25 +115,25 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 
 @media (max-width: 600px) {
-.element-item, .grid {
-	width: 600px!important;
-	height: auto;
-}
 }
 
 @media (min-width: 275px) and (max-width: 599px) {
-.element-item, .grid {
-	width: 100%!important;
-	height: auto;
-}
 }
 
-@media (min-width: 275px) and (max-width: 400px) {
+@media (min-width: 275px) and (max-width: 475px) {
 .bib-covers {
+	min-height: inherit;
 	height: 395px;
 	width: 300px;
 	margin: 0 auto;
 	display: block;
+}
+.element-item {
+	padding-top: 10px;
+}
+.element-item, .grid {
+	width: 100%!important;
+	height: auto;
 }
 }
 
@@ -467,37 +467,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center padding-top-20"><a href="http://www.eventkeeper.com/kitkeeper/index.cfm?curOrg=dclibs" target="_blank" class="btn btn-lg btn-primary">Reserve a Kit Now!</a></div>
     </div>
   </div>
-  <script>
-// init Isotope
-var $grid = $('.grid').isotope({
-      itemSelector: '.element-item',
-      masonry: {
-  columnWidth: 456,
-  isFitWidth: true
-}
-});
-// store filter for each group
-var filters = {};
-$('.filter').on( 'change', function( event ) {
-  var $select = $( event.target );
-  // get group key
-  var filterGroup = $select.attr('value-group');
-  // set filter for group
-  filters[ filterGroup ] = event.target.value;
-  // combine filters
-  var filterValue = concatValues( filters );
-  // set filter for Isotope
-  $grid.isotope({ filter: filterValue });
-});
-// flatten object by concatting values
-function concatValues( obj ) {
-  var value = '';
-  for ( var prop in obj ) {
-    value += obj[ prop ];
-  }
-  return value;
-}
-</script> 
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
@@ -558,7 +527,39 @@ function concatValues( obj ) {
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> 
+<script>
+// init Isotope
+var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      masonry: {
+  columnWidth: 456,
+  isFitWidth: true
+}
+});
+// store filter for each group
+var filters = {};
+$('.filter').on( 'change', function( event ) {
+  var $select = $( event.target );
+  // get group key
+  var filterGroup = $select.attr('value-group');
+  // set filter for group
+  filters[ filterGroup ] = event.target.value;
+  // combine filters
+  var filterValue = concatValues( filters );
+  // set filter for Isotope
+  $grid.isotope({ filter: filterValue });
+});
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+</script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
