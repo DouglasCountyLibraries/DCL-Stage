@@ -112,6 +112,43 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0;
 	padding: 0;
 }
+.box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.box-item {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 5px 15px;
+	/* width: 578px; */
+	background: #fff;
+	border-radius: 3px;
+}
+.box-item-inner {
+	padding: 5px 30px 35px;
+}
+.icon-circle-gray {
+	border: 6px solid #f5f5f5;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #4f878c;
+	background-color: #fff;
+	font-size: 42px;
+	height: 100px;
+	line-height: 90px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+}
+.white-bottom-row {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+	background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+}
 
 @media (min-width: 992px) {
 .shelf {
@@ -301,12 +338,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row padding-bottom-20 border-top">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Read, Listen, Watch</h1>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fas fa-book"></i></div>
-        </div>
+        <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Read, Listen, Watch</h1>
       </div>
-      <h4 class="roboto text-center">These engaging e-books and downloadable resources make learning fun and easy.<br>
+      <h4 class="roboto margin-top-5 text-center">These engaging e-books and downloadable resources make learning fun and easy.<br>
         Looking for recommendations? <a href="../staff-picks/">Check out our featured staff picks</a>.</h4>
     </div>
   </div>
@@ -374,23 +408,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div id="digital-media" class="row bg-gray-5 padding-top-15 padding-bottom-15">
-    <div class="container">
-      <h1 class="text-center">Kids' Digital Media</h1>
-      <div class="col-md-4 padding-top-30 padding-bottom-40" id="check-out-colorado">
-        <div style="padding: 3px 0 0;" class="icon-circle-teal"><i class="fas fa-child"></i> </div>
-        <h2 class="text-center"><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h2>
-        <div class="text-center">Safe e-book search for readers 12 and younger. Filter by format, subject, device or reading level. Includes read-alongs for preschoolers!</div>
+  <div id="digital-media" class="row bg-gray-5 padding-top-15 padding-bottom-60">
+    <h1 class="text-center">Kids' Digital Media</h1>
+    <div class="container no-padding box-wrapper">
+      <div id="check-out-colorado" class="box-item">
+        <div class="white-bottom-row">
+          <div class="icon-circle-gray"><i class="fas fa-child"></i></div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10"><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
+          <div>Safe e-book search for readers 12 and younger. Filter by format, subject, device or reading level. Includes read-alongs for preschoolers!</div>
+        </div>
       </div>
-      <div class="col-md-4 padding-top-30 padding-bottom-40" id="tumble-books">
-        <div style="padding: 4px 5px 0;" class="icon-circle-teal"><i class="fas fa-rocket"></i> </div>
-        <h2 class="text-center"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h2>
-        <div class="text-center">Access animated, talking picture books, read-along chapter books, and National Geographic kids’ videos for your mobile device. <span class="red-text font-weight-400">Access to Tumblebooks will end on April 30, 2022.</span></div>
+      <div id="tumble-books" class="box-item">
+        <div class="white-bottom-row">
+          <div class="icon-circle-gray"><i class="fas fa-rocket"></i></div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
+          <div>Access animated, talking picture books, read-along chapter books, and National Geographic kids’ videos for your mobile device. <span class="red-text font-weight-400">Access to Tumblebooks will end on April 30, 2022.</span></div>
+        </div>
       </div>
-      <div class="col-md-4 padding-top-30 padding-bottom-40" id="kanopy-kids">
-        <div style="padding: 2px 0 0;" class="icon-circle-teal"><i class="fas fa-photo-video"></i> </div>
-        <h2 class="text-center"><a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a></h2>
-        <div class="text-center">Unlimited access to educational streaming videos for kids of all ages, as well as movies, storytime videos, classic tales, and much more.</div>
+      <div id="kanopy-kids" class="box-item">
+        <div class="white-bottom-row">
+          <div class="icon-circle-gray"><i class="fas fa-photo-video"></i></div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10"><a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a></h3>
+          <div>Unlimited access to educational streaming videos for kids of all ages, as well as movies, storytime videos, classic tales, and much more.</div>
+        </div>
       </div>
     </div>
   </div>
