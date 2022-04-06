@@ -132,8 +132,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .box-item-inner {
 	padding: 5px 30px 35px;
 }
-.icon-circle-gray {
-	border: 6px solid #f5f5f5;
+.gray-circle-wrapper {
+	border: 6px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 112px;
+	margin: 0 auto;
+	width: 112px;
+}
+.gray-circle {
+	border: 6px solid #e6e4e2;
 	border-radius: 50%;
 	box-sizing: border-box;
 	color: #4f878c;
@@ -424,7 +432,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="box-wrapper">
       <div id="check-out-colorado" class="box-item">
         <div class="white-bottom-row">
-          <div class="icon-circle-gray"><i class="fas fa-child"></i></div>
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fas fa-child"></i></div>
+          </div>
         </div>
         <div class="box-item-inner">
           <h3 class="text-center margin-top-10"><a href="https://dcl.overdrive.com/library/kids" target="_blank">OverDrive Kids</a></h3>
@@ -433,7 +443,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div id="tumble-books" class="box-item">
         <div class="white-bottom-row">
-          <div class="icon-circle-gray"><i class="fas fa-rocket"></i></div>
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fas fa-rocket"></i></div>
+          </div>
         </div>
         <div class="box-item-inner">
           <h3 class="text-center margin-top-10"><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=tumblebooks" target="_blank">TumbleBooks</a></h3>
@@ -442,7 +454,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div id="kanopy-kids" class="box-item">
         <div class="white-bottom-row">
-          <div class="icon-circle-gray"><i class="fas fa-photo-video"></i></div>
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fas fa-photo-video"></i></div>
+          </div>
         </div>
         <div class="box-item-inner">
           <h3 class="text-center margin-top-10"><a href="https://dcl.kanopy.com/kids" target="_blank">Kanopy Kids</a></h3>
