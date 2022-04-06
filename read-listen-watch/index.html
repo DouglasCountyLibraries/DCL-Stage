@@ -117,6 +117,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 .box-item {
 	display: flex;
@@ -160,6 +162,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .shelf-shadow {
 	background: #fff url("shelf-shadow.jpg");
 	background-repeat: repeat-x;
+}
+}
+
+@media (max-width: 750px) {
+.box-wrapper {
+	flex-direction: column;
+}
+.box-item {
+	text-align: center;
 }
 }
 </style>
@@ -408,9 +419,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div id="digital-media" class="row bg-gray-5 padding-top-15 padding-bottom-60">
-    <h1 class="text-center">Kids' Digital Media</h1>
-    <div class="container no-padding box-wrapper">
+  <div id="digital-media" class="row bg-gray-5 padding-top-30 padding-bottom-80">
+    <h2 class="text-center">Kids' Digital Media</h2>
+    <div class="box-wrapper">
       <div id="check-out-colorado" class="box-item">
         <div class="white-bottom-row">
           <div class="icon-circle-gray"><i class="fas fa-child"></i></div>
