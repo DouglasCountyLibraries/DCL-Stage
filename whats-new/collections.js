@@ -1,7 +1,7 @@
 
 //var baseURI = "http:///dev.dclcollections.dcl.lan/";
-var baseURI = "https://collectiontest.dclibraries.org/";
-var baseDCLOrgURI = "http://stage.dcl.org/whats-new/";
+var baseURI = "https://dclcollections.douglascountylibraries.org/";
+var baseDCLOrgURI = "https://www.dcl.org/whats-new/";
 // <div id="covers-${title}" class ="container shelf-container text-center
 var a = window.location.toString(); 
 var allKeyName;
@@ -24,10 +24,7 @@ function createAllPageTitle(title)
 {
   var x = [
      '<div class="text-center">',
-      '<h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">What&#39;s New</h1>',
-      '<div class="separator-container padding-bottom-15">',
-       ' <div class="separator line-separator"><i class="fas fa-star"></i></div>',
-     ' </div>',
+      '<h1 class="jumbo-text text-uppercase font-weight-400">What&#39;s New</h1>',
    ' </div>',
      ' <h1 class="no-margin">' + title + '</h1>  '
 	 ].join('\n');
