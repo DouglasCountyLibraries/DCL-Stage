@@ -69,24 +69,60 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .whats-new-active {
 	background-color: #f5f5f5;
 }
-.shelf-container img {
-	margin: 15px 15px 17px 15px;
-	vertical-align: bottom;
-}
 #gen {
 	padding-bottom: 40px;
 }
-
-@media (min-width: 992px) {
+.shelf-container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.shelf-container img {
+	margin: 15px 15px 8px 15px;
+	vertical-align: bottom;
+}
+.shelf > ul {
+	padding: 0;
+}
+#covers-outer > ul {
+	margin: 0;
+	padding: 0;
+}
 .shelf {
 	border-bottom: 20px solid transparent;
-	border-image: url("new-shelf.jpg") 30 30 30 30 round round;
+	border-image: url("shelf.jpg") 30 round;
 	border-top: 0 none;
 	padding-bottom: 0;
+	margin: 0 5px;
 }
 .shelf-shadow {
-	background: #fff url("shelf-shadow.jpg");
-	background-repeat: repeat-x;
+	background: #fff url("shelf-shadow.jpg") repeat-x;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 30px solid #fff;
+	border-right: 30px solid #fff;
+	padding: 0 15px;
+}
+
+@media (max-width: 1050px) {
+.cover-image {
+	max-width: 155px;
+}
+}
+@media (max-width: 992px) {
+.shelf-container img {
+	margin: 15px 5px 8px 5px;
+}
+@media (max-width: 875px) {
+.shelf {
+border-bottom: 0;
+border-image: none;
+}
+.shelf-shadow {
+background: none;
+}
+.shelf-container {
+max-width: 575px;
 }
 }
 </style>
