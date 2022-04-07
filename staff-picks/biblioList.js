@@ -12,10 +12,7 @@ function createAllPageTitle(title)
 {
   var x = [
      '<div class="text-center">',
-      '<h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">What' + "'s"  + 'New</h1>',
-      '<div class="separator-container padding-bottom-15">',
-       ' <div class="separator line-separator"><i class="fas fa-star"></i></div>',
-     ' </div>',
+      '<h1 class="jumbo-text text-uppercase font-weight-400">What' + "'s"  + 'New</h1>',
    ' </div>',
      ' <h1 class="no-margin">' + title + '</h1>  '
 	 ].join('\n');
