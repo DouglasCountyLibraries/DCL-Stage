@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,6 +76,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 #gen {
 	padding-bottom: 40px;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
 @media (min-width: 992px) {
@@ -95,6 +98,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	border-right: 30px solid #fff;
 }
 }
+
+@media (max-width: 1050px) {
+.cover-image {
+	max-width: 155px;
+}
+}
+@media (max-width: 992px) {
+.shelf-container img {
+	margin: 15px 5px 8px 5px;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -105,7 +118,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -267,7 +280,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
-  <!-- InstanceBeginEditable name="Content" --> 
+  <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
     <div class="text-center">
       <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">What's New</h1>
@@ -341,8 +354,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" -->
-
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
@@ -378,7 +390,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 		"https:\/\/twitter.com\/DCLcolorado"
 	]
 }
-</script>
+</script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
