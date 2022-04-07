@@ -26,7 +26,7 @@ function createAllPageTitle(title)
      '<div class="text-center">',
       '<h1 class="jumbo-text text-uppercase font-weight-400">What&#39;s New</h1>',
    ' </div>',
-     ' <h1 class="no-margin">' + title + '</h1>  '
+     ' <h2 class="no-margin-bottom">' + title + '</h2>  '
 	 ].join('\n');
       
     return x;
@@ -38,8 +38,8 @@ function createPreShelf(title, keyName, seq)
     '<div class="row shelf">',
  
   ' <div id="covers-' + seq + '" class ="container shelf-container text-center"> ',
-    ' <h1 class="no-margin"><a href="all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h1> ',
-		' <div><a class="text-uppercase" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div></div> '
+    ' <h2 class="no-margin-bottom"><a href="all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h2> ',
+		' <div><a class="text-uppercase font-weight-400" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div></div> '
 	].join('\n');
     return x;
 }
@@ -49,7 +49,6 @@ function createPostShelves(title, keyName)
     var x = [
  '</div>',
  '<div class ="row shelf-shadow padding-bottom-80">',
- '<div style="text-align:center; padding-top:0.1cm">',
 ' </div>',
  ].join('\n');
 
