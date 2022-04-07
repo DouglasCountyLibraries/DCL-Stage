@@ -106,10 +106,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	transition: all 0.4s ease-in-out;
 	transform: scale(1.05);
 }
+.epic-row {
+	max-width: 1170px;
+	margin: 0 auto;
+}
 .epic-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	border-bottom: 20px solid transparent;
+	border-image: url("new-shelf.jpg") 30 round;
+	margin: 0 5px;
 }
 .epic-title {
 	text-transform: uppercase;
@@ -169,7 +176,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
 	background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
 }
-    
 .shelf {
 	border-bottom: 20px solid transparent;
 	border-image: url("new-shelf.jpg") 30 round;
@@ -184,13 +190,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin-right: auto;
 	border-left: 30px solid #fff;
 	border-right: 30px solid #fff;
-}    
-    
- @media (max-width: 992px) {
+}
+@media (max-width: 992px) {
 .shelf-container img {
 	margin: 15px 5px 8px 5px;
-
-}   
+}
     
 /*
 @media (min-width: 992px) {
@@ -219,10 +223,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 
 @media (max-width: 750px) {
 .box-wrapper {
-	flex-direction: column;
+flex-direction: column;
 }
 .box-item {
-	text-align: center;
+text-align: center;
 }
 }
 </style>
@@ -410,65 +414,59 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <h2 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1960235203">Epic Reads</a></h2>
   </div>
   <div class="row">
-    <div class="container shelf shelf-container text-center epic-wrapper">
-      <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1959673259">
-        <div class="epic-title">Grades 1-3</div>
-        <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1959673259.png" alt="Epic Reads Grades 1-3"></a></div>
-      <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1959679789">
-        <div class="epic-title">Grades 4-6</div>
-        <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1959679789.png" alt="Epic Reads Grades 4-6"></a></div>
-      <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1959683533">
-        <div class="epic-title">Grades 6-8</div>
-        <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1959683533.png" alt="Epic Reads Grades 7-8"></a></div>
+    <div class="epic-row">
+      <div class="epic-wrapper">
+        <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1959673259">
+          <div class="epic-title">Grades 1-3</div>
+          <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1959673259.png" alt="Epic Reads Grades 1-3"></a></div>
+        <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1959679789">
+          <div class="epic-title">Grades 4-6</div>
+          <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1959679789.png" alt="Epic Reads Grades 4-6"></a></div>
+        <div class="epic-item"> <a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1959683533">
+          <div class="epic-title">Grades 6-8</div>
+          <img class="cover-image-alt" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1959683533.png" alt="Epic Reads Grades 7-8"></a></div>
+      </div>
     </div>
   </div>
   <div class="row padding-bottom-60">
-    
-      <div class="shelf-shadow">
-        <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> These are the books DCL’s youth librarians will be talking about in schools throughout the school year. These specially chosen reads for kids in grades 1-8 include everything from fiction, nonfiction and sci-fi to fantasy, mystery, humor and more. Enjoy!
-          <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1960235203">See Entire List &raquo;</a></div>
-        </div>
+    <div class="shelf-shadow">
+      <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> These are the books DCL’s youth librarians will be talking about in schools throughout the school year. These specially chosen reads for kids in grades 1-8 include everything from fiction, nonfiction and sci-fi to fantasy, mystery, humor and more. Enjoy!
+        <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1960235203">See Entire List &raquo;</a></div>
       </div>
-   
+    </div>
   </div>
   <div id="great-books" class="text-center">
     <h2 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1271170057">Great Books for Great Kids</a></h2>
   </div>
   <div id="GreatBooksGreatKids"></div>
   <div class="row padding-bottom-60">
-   
-      <div class="shelf-shadow">
-        <div class="padding-top-40 text-center margin-lg-250 margin-lg-100">Keep your kids reading all year long with these fun books. From adventurous, to suspenseful, to downright hilarious&mdash;and just about everything in between&mdash;these specially curated, kid-friendly reads offer something for everyone.
-          <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1271170057">See Entire List &raquo;</a></div>
-        </div>
+    <div class="shelf-shadow">
+      <div class="padding-top-40 text-center margin-lg-250 margin-lg-100">Keep your kids reading all year long with these fun books. From adventurous, to suspenseful, to downright hilarious&mdash;and just about everything in between&mdash;these specially curated, kid-friendly reads offer something for everyone.
+        <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1271170057">See Entire List &raquo;</a></div>
       </div>
-    
+    </div>
   </div>
   <div id="storytime-favorites" class="text-center">
     <h2 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/695845537">Storytime Favorites</a></h2>
   </div>
   <div id="StorytimeFavorites"></div>
   <div class="row padding-bottom-60">
-   
-      <div class="shelf-shadow">
-        <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> These are the hand-picked favorites of our children's librarians. These books incorporate fun, play and learning in a way that encourages literacy growth. Enjoy some or all of these with your growing reader!
-          <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/695845537">See Entire List &raquo;</a></div>
-        </div>
+    <div class="shelf-shadow">
+      <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> These are the hand-picked favorites of our children's librarians. These books incorporate fun, play and learning in a way that encourages literacy growth. Enjoy some or all of these with your growing reader!
+        <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/695845537">See Entire List &raquo;</a></div>
       </div>
-    
+    </div>
   </div>
   <div id="reading-now" class="text-center">
     <h2 class="no-margin-bottom"><a href="https://dcl.bibliocommons.com/list/share/692278051_dclkids/1826350329">What We Are Reading Now</a></h2>
   </div>
   <div id="DCLKids"></div>
   <div class="row padding-bottom-60">
-   
-      <div class="shelf-shadow">
-        <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> The DCL book team spends a lot of time poring over children’s books for our collection, from Storytime favorites that inspire a love of reading to great reads for older kids. Not surprisingly, they love to dive into those same books. These are just some that the team is currently reading.
-          <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dclkids/1826350329">See Entire List &raquo;</a></div>
-        </div>
+    <div class="shelf-shadow">
+      <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> The DCL book team spends a lot of time poring over children’s books for our collection, from Storytime favorites that inspire a love of reading to great reads for older kids. Not surprisingly, they love to dive into those same books. These are just some that the team is currently reading.
+        <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dclkids/1826350329">See Entire List &raquo;</a></div>
       </div>
-   
+    </div>
   </div>
   <div id="digital-media" class="row bg-gray-5 padding-top-30 padding-bottom-80">
     <h2 class="text-center">Kids' Digital Media</h2>
