@@ -100,6 +100,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: #fff;
 	margin: 15px 15px 17px 15px;
 	border: 1px solid #ddd;
+	text-align: center;
 }
 .epic-item:hover, .epic-item:focus {
 	top: 2px;
@@ -183,7 +184,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding-bottom: 0;
 	margin: 0 5px;
 }
-.shelf-shadow {
+.shelf-shadow, .epic-shelf-shadow {
 	background: #fff url("shelf-shadow.jpg") repeat-x;
 	max-width: 1170px;
 	margin-left: auto;
@@ -195,32 +196,29 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .shelf-container img {
 	margin: 15px 5px 8px 5px;
 }
-    
-/*
-@media (min-width: 992px) {
+@media (max-width: 875px) {
 .shelf {
-	border-bottom: 20px solid transparent;
-	border-image: url("new-shelf.jpg") 30 round;
-	border-top: 0 none;
-	padding-bottom: 0;
+border-bottom: 0;
+border-image: none;
 }
 .shelf-shadow {
-	background: #fff url("shelf-shadow.jpg") repeat-x;
-	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
-	border-left: 30px solid #fff;
-	border-right: 30px solid #fff;
+background: none;
 }
 }
-
 @media (max-width: 991px) {
 .shelf-container {
-	max-width: 600px;
+max-width: 600px;
 }
 }
-    */
-
+@media (max-width: 752px) {
+.epic-wrapper {
+border-bottom: 0;
+border-image: none;
+}
+.epic-shelf-shadow {
+background: none;
+}
+}
 @media (max-width: 750px) {
 .box-wrapper {
 flex-direction: column;
@@ -429,7 +427,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row padding-bottom-60">
-    <div class="shelf-shadow">
+    <div class="epic-shelf-shadow">
       <div class="padding-top-40 text-center margin-lg-250 margin-lg-100"> These are the books DCL’s youth librarians will be talking about in schools throughout the school year. These specially chosen reads for kids in grades 1-8 include everything from fiction, nonfiction and sci-fi to fantasy, mystery, humor and more. Enjoy!
         <div class="padding-top-15"><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/1960235203">See Entire List &raquo;</a></div>
       </div>
