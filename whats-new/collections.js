@@ -24,9 +24,9 @@ function createAllPageTitle(title)
 {
   var x = [
      '<div class="text-center">',
-      '<h1 class="jumbo-text text-uppercase font-weight-400">What&#39;s New</h1>',
+      '<h1 class="jumbo-text text-uppercase margin-bottom-5 font-weight-400">What&#39;s New</h1>',
    ' </div>',
-     ' <h2 class="no-margin-bottom">' + title + '</h2>  '
+     ' <h2 class="no-margin">' + title + '</h2>  '
 	 ].join('\n');
       
     return x;
@@ -37,7 +37,7 @@ function createPreShelf(title, keyName, seq)
     var x = [
     '<div class="row shelf">',
  
-  ' <div id="covers-' + seq + '" class ="container shelf-container text-center"> ',
+  ' <div id="covers-' + seq + '" class ="shelf-container text-center"> ',
     ' <h2 class="no-margin-bottom"><a href="all.html?key=' + keyName + '&title=' + title + '">' +decodedTitle+ '</a></h2> ',
 		' <div><a class="text-uppercase font-weight-400" href="all.html?key=' + keyName + '&title=' + title + '">See Entire List &raquo;</a></div></div> '
 	].join('\n');
