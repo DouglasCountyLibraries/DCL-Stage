@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- InstanceBeginEditable name="title" -->
 <title>What's New | Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
+<meta name="description" content="See what’s new and on order in books, movies and audiobooks for adults, kids and teens at Douglas County Libraries.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -86,26 +87,24 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<!--
-###################################################
-##### Attach JS, CSS or <head> content start  #####
-###################################################
--->
+<script src="collections.js"></script>
 <style>
 .whats-new-active {
 	background-color: #f5f5f5;
+}
+.custom-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1170px;
+	margin: 0 auto;
+	justify-content: center;
+	padding-bottom: 60px;
 }
 #largeCoverList img {
 	margin: 15px 15px 17px 15px;
 	vertical-align: bottom;
 }
 </style>
-<script src="collections.js"></script>
-<!--
-#################################################
-##### Attach JS, CSS or <head> content end  #####
-#################################################
--->
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -282,29 +281,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
-  <!-- InstanceBeginEditable name="Content" --> 
-  <!--
-################################
-##### <div> content start  #####
-################################
--->
-  
+  <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top shelf">
     <div id="allCovers" class ="container shelf-container text-center"> </div>
   </div>
-	<div class="container no-padding text-center padding-bottom-80" id="largeCoverList"> </div>
-   <div class="row bg-lavender">
+  <div class="custom-container" id="largeCoverList"> </div>
+  <div class="row bg-teal">
     <div class="container">
-      <div class="text-center padding-top-30 padding-bottom-30">
-        <div class="nothing white"><a class="white" href="../staff-recommendations/">Looking for your next great read?</a></div>
+      <div class="text-center padding-top-40 padding-bottom-40">
+        <h5 class="white"><i>Looking for your next great read? We have <a class="white text-underline" href="../staff-recommendations/">recommendations!</a></i></h5>
       </div>
     </div>
   </div>
-  <!--
-###############################
-##### </div> content end  #####
-###############################
---> 
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container">
@@ -363,24 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<!--
-#############################################
-##### scripts to fire at </body> start  #####
-#############################################
-getlargeList("ComingSoonTeens")
---> 
-<script type="application/javascript">
-
-</script> 
-
-<!--
-###########################################
-##### scripts to fire at </body> end  #####
-###########################################
---> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" -->
-
+<!-- InstanceBeginEditable name="scripts" --><!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
@@ -416,7 +387,8 @@ getlargeList("ComingSoonTeens")
 		"https:\/\/twitter.com\/DCLcolorado"
 	]
 }
-</script>
+</script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
