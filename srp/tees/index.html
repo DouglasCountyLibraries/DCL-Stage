@@ -98,22 +98,30 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin-top: 10px;
 	font-size: 14px;
 }
-.custom-container {
+.tee-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 0 10px;
 }
-.tee-name {
-	font-size: 18px;
-	font-weight: 400;
-	margin-bottom: 0;
-	text-transform: uppercase;
+.tee-item.two {
+	max-width: 220px;
 }
 .thumbnails.list-unstyled > li {
-	display: inline-flex;
-	flex-direction: column;
-	padding: 25px;
+	padding: 5px;
+}
+.selected-tee {
+	font-weight: 400;
+}
+.selected-tee:focus {
+	color: #333;
+	text-decoration: none;
+}
+.selected-tee img {
+	margin-right: 10px;
+}
+.details-link {
+	margin-left: 36px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -310,26 +318,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
   <div class="row">
     <div class="custom-container">
-      <div class="item">
-        <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails"> <a href="gc-red-zoom.jpg"> <img class="img-responsive" src="gc-red.jpg" alt="" /> </a> </div>
-      </div>
-      <div class="item">
-        <ul class="list-unstyled thumbnails">
-          <li> <a href="gc-green-zoom.jpg" data-standard="gc-green.jpg"> <img class="img-responsive"  src="gc-green-thumb.jpg" alt="" /> </a>
-            <div class="text-center">
-              <h5 class="tee-name">Books Are Magic</h5>
-              <div>Heather Military Green</div>
-              <div><a href="#" data-toggle="modal" data-target="#gctgmodal" class="text-uppercase font-weight-400">Details &amp; Sizing</a></div>
-            </div>
-          </li>
-          <li> <a href="gc-red-zoom.jpg" data-standard="gc-red.jpg"> <img class="img-responsive" src="gc-red-thumb.jpg" alt="" /> </a>
-            <div class="text-center">
-              <h5 class="tee-name">Great Characters</h5>
-              <div>Heather Cardinal Red</div>
-              <div><a href="#" data-toggle="modal" data-target="#gctrmodal" class="text-uppercase font-weight-400">Details &amp; Sizing</a></div>
-            </div>
-          </li>
-        </ul>
+      <div class="tee-wrapper">
+        <div class="tee-item">
+          <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails"> <a href="gc-red-zoom.jpg"> <img class="img-responsive" src="gc-red.jpg" alt="" /> </a> </div>
+          <div class="text-center">
+            <h4>Great Characters Tee</h4>
+          </div>
+        </div>
+        <div class="tee-item two">
+          <ul class="list-unstyled thumbnails">
+            <li> <a class="selected-tee" href="gc-green-zoom.jpg" data-standard="gc-green.jpg"> <img src="gc-green-thumb.jpg" alt="" />Heather Military Green</a> </li>
+            <li> <a class="selected-tee" href="gc-red-zoom.jpg" data-standard="gc-red.jpg"> <img src="gc-red-thumb.jpg" alt="" />Heather Cardinal Red</a>
+            <li>
+              <div><a href="#" data-toggle="modal" data-target="#gctrmodal" class="details-link text-uppercase font-weight-400">Details &amp; Sizing</a></div>
+            </li>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
