@@ -1495,13 +1495,18 @@ h6.responsive-text {
   transition: all .4s ease-out;
 }
 .panel-heading.panel-nav {
-  background-color: #d36a50;
-  color: #fff;
+  background-color: #f5f5f5;
+  color: #000;
+  border: 2px solid #eee;
+  border-radius: 2px;
+  font-weight: 400;
+  padding: 10px 10px 0;
 }
 .panel > .panel-nav:hover, .panel > .panel-nav:focus {
   cursor: pointer;
-  background-color: #AA5440;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #ddd;
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease-out;
   -ms-transition: all .4s ease-out;
@@ -2237,9 +2242,11 @@ h1.page-title {
   font-weight: 400;
   margin: 0;
 }
-h1.entry-title, h2.entry-title {
-  font-size: 26px;
-  padding-bottom: 10px;
+h1.entry-title {
+  font-size: 24px;
+}
+h2.entry-title {
+  font-size: 22px;
 }
 h2.comments-title {
   font-size: 22px;
