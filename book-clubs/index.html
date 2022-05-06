@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,13 +72,23 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .list-wrapper {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	padding-top: 15px;
+	max-width: 750px;
+	margin: 0 auto;
+}
+.list-items {
+	min-width: 300px;
+}
+    .list-items div {
+	padding-bottom: 5px;
 }
 .list-items > h5 {
 	color: #fff;
-	margin: 0;
+	margin: 10px 0 5px;
+	text-transform: uppercase;
+	font-size: 18px;
 }
 .grid {
 	margin: 0 auto;
@@ -118,6 +129,25 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0;
 	color: #333;
 }
+.club-item-wrapper {
+	display: flex;
+	max-width: 800px;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+.club-item {
+	margin: 40px 40px 20px;
+	transition-duration: 0.4s;
+}
+.club-item:hover, .club-item:focus {
+	transform: scale(1.05);
+	transition-duration: 0.4s;
+}
+.bce-wrapper {
+	display: flex;
+}
 
 @media (min-width: 275px) and (max-width: 475px) {
 .bib-covers {
@@ -148,6 +178,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0 auto;
 }
 }
+
+@media (max-width: 767px) {
+.club-item {
+	margin: 20px;
+}
+}
+
+@media (max-width: 575px) {
+.club-item {
+	margin: 20px 5px 0;
+}
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -158,7 +200,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -324,6 +366,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row border-top padding-bottom-40">
     <div class="container text-center">
       <h1 class="jumbo-text no-margin-bottom text-uppercase font-weight-400 fade-in-text">Book Clubs</h1>
+      <h1 class="text-uppercase font-weight-400 no-margin">& Book Club Express</h1>
       <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you! Reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
       <div class="padding-top-20"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank" class="btn btn-lg btn-primary">View Book Club Calendar</a></div>
     </div>
@@ -572,18 +615,46 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div id="bce" class="row bg-teal">
-    <div class="container margin-lg-100 white padding-top-40 padding-bottom-50">
+    <div class="container white padding-top-40 padding-bottom-50">
       <h2 class="white text-center no-margin-top">Book Club Express</h2>
-      <h4 class="white text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</h4>
-      <div class="white text-center">New kits now available:</div>
+      <h4 class="white margin-lg-100 text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</h4>
+      <div class="white text-center">New kits now available!</div>
       <div class="list-wrapper">
         <div class="list-items">
-          <h5><i>All That is Secret</i> by Patricia Raybon</h5>
-          <h5><i>A Long Petal of the Sea</i> by Isabel Allende</h5>
+          <h5>January:</h5>
+          <div><i>Finlay Donovan is Killing It</i> by Elle Cosimano</div>
+          <div><i>Of Women and Salt</i> by Gabriella Garcia</div>
+        </div>
+        <div class="list-items">
+          <h5>February:</h5>
+          <div><i>All That is Secret</i> by Patricia Raybon</div>
+          <div><i>A Long Petal of the Sea</i> by Isabel Allende</div>
+        </div>
+        <div class="list-items">
+          <h5>March:</h5>
+          <div><i>It Ends With Us</i> by Colleen Hoover</div>
+          <div><i>Klara And The Sun</i> by Kazuro Ishiguro</div>
+        </div>
+        <div class="list-items">
+          <h5>April:</h5>
+          <div><i>Who is Maud Dixon</i> by Alexandra Andrews</div>
+          <div><i>Between Two Kingdoms</i> by Suleika Jaouad</div>
         </div>
       </div>
       <div class="text-center padding-top-30 padding-bottom-30"><a href="http://www.eventkeeper.com/kitkeeper/index.cfm?curOrg=dclibs" target="_blank" class="btn btn-lg btn-primary">Reserve a Kit Now!</a></div>
       <div class="text-center">Please limit your checkouts to one adult kit or two juvenile kits at a time.</div>
+    </div>
+  </div>
+  <div class="row padding-top-60 padding-bottom-60">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="no-margin">Digital Book Clubs</h2>
+        <h4 class="margin-top-5 no-margin-bottom">Looking for digital options? Join an online book club!</h4>
+      </div>
+      <div class="club-item-wrapper">
+        <div class="club-item"><a href="https://theclub.hoopladigital.com/" target="_blank"><img class="img-responsive" src="hoopla-book-club.jpg" alt="Hoopla Book Club Hub"></a></div>
+        <div class="club-item"><a href="https://biglibraryread.com/" target="_blank"><img class="img-responsive" src="big-library-read.jpg" alt="Big Library Read"></a></div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -717,4 +788,5 @@ function concatValues( obj ) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
