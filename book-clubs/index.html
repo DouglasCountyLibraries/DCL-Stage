@@ -363,13 +363,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top padding-bottom-40">
+  <div class="row border-top">
     <div class="container text-center">
       <h1 class="jumbo-text no-margin-bottom text-uppercase font-weight-400 fade-in-text">Book Clubs</h1>
-      <h1 class="text-uppercase font-weight-400 no-margin">& <a class="text-gray" href="#bce">Book Club Express</a></h1>
+      <h1 class="text-uppercase font-weight-400 no-margin">& Book Club Express</h1>
       <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you!</h4>
-      <h4 class="bce margin-top-5">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
-      <div class="padding-top-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank" class="btn btn-lg btn-primary">View Book Club Calendar</a></div>
+      <h4 class="bce margin-top-5 margin-bottom-15">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
+    </div>
+  </div>  <div class="row padding-bottom-30">
+    <div class="page-nav">
+      <div class="page-nav-item"><a href="#bce"><i class="pagenav-icon fa-regular fa-bags-shopping"></i>Book Club Express</a></div>
+      <div class="page-nav-item"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank"><i class="pagenav-icon fa-regular fa-calendar"></i>Book Club Calendar</a></div>
+      <div class="page-nav-item"><a href="#digital-bookclubs"><i class="pagenav-icon fa-regular fa-book-open-reader"></i>Digital Book Clubs</a></div>
     </div>
   </div>
   <div class="row bg-gray-5">
@@ -646,7 +651,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center">Please limit your checkouts to one adult kit or two juvenile kits at a time.</div>
     </div>
   </div>
-  <div class="row padding-top-40 padding-bottom-50">
+  <div id="digital-bookclubs" class="row padding-top-40 padding-bottom-50">
     <div class="container">
       <div class="text-center">
         <h2 class="no-margin">Digital Book Clubs</h2>
