@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +48,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css" integrity="sha256-qQHUQX+gGGYfpC7Zdni08sr+h0ymXr0avmIASucY4FM=" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -64,7 +65,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background-color: #f5f5f5;
 }
 .text-gray, a.text-gray:hover, a.text-gray:focus, a.text-gray:active, a.text-gray:visited {
-  color: #666;
+	color: #666;
+}
+h4.bce {
+	font-size: 23px;
 }
 .list-wrapper {
 	display: flex;
@@ -196,7 +200,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -363,7 +367,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="container text-center">
       <h1 class="jumbo-text no-margin-bottom text-uppercase font-weight-400 fade-in-text">Book Clubs</h1>
       <h1 class="text-uppercase font-weight-400 no-margin">& <a class="text-gray" href="#bce">Book Club Express</a></h1>
-      <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you!</h4><h5 class="margin-top-5">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h5>
+      <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you!</h4>
+      <h4 class="bce margin-top-5">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
       <div class="padding-top-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank" class="btn btn-lg btn-primary">View Book Club Calendar</a></div>
     </div>
   </div>
@@ -784,4 +789,5 @@ function concatValues( obj ) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
