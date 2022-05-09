@@ -63,6 +63,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
+.text-gray, a.text-gray:hover, a.text-gray:focus, a.text-gray:active, a.text-gray:visited {
+  color: #666;
+}
 .list-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -74,7 +77,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .list-items {
 	min-width: 300px;
 }
-    .list-items div {
+.list-items div {
 	padding-bottom: 5px;
 }
 .list-items > h5 {
@@ -359,9 +362,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row border-top padding-bottom-40">
     <div class="container text-center">
       <h1 class="jumbo-text no-margin-bottom text-uppercase font-weight-400 fade-in-text">Book Clubs</h1>
-      <h1 class="text-uppercase font-weight-400 no-margin">& Book Club Express</h1>
-      <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you! Reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
-      <div class="padding-top-20"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank" class="btn btn-lg btn-primary">View Book Club Calendar</a></div>
+      <h1 class="text-uppercase font-weight-400 no-margin">& <a class="text-gray" href="#bce">Book Club Express</a></h1>
+      <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you!</h4><h5 class="margin-top-5">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h5>
+      <div class="padding-top-15"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank" class="btn btn-lg btn-primary">View Book Club Calendar</a></div>
     </div>
   </div>
   <div class="row bg-gray-5">
