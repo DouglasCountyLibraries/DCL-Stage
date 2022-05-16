@@ -77,9 +77,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	color: #000;
 }
 .farmer.brew-tour-heading {
-	font-size: 175px;
-	-webkit-animation: text-animation 0.6s 2s both;
-	animation: text-animation 0.6s 2s both;
+	font-size: 200px;
+	-webkit-animation: text-animation 1s 1s both;
+	animation: text-animation 1s 1s both;
+	line-height: .8em;
+	margin-left: 8px;
 }
 .larosa {
 	font-family: "Larosa Regular", sans-serif;
@@ -88,6 +90,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: #3a627f;
 	color: #fff;
 }
+    .intro-container {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 30px 15px 40px;
+    }
 @-webkit-keyframes text-animation {
 0% {
 text-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac;
@@ -286,15 +293,16 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row intro-row">
-    <div class="custom-container padding-bottom-40">
-      <div class="text-center">
+  <div class="intro-container">
+    <div class="text-center">
+      <div><img class="img-responsive image-center" src="brew-tour-logo.png" alt="Douglas County Libraries"></div>
         <h1 class="farmer brew-tour-heading">BReW ToUR</h1>
       </div>
-      <div class="margin-lg-150 text-center">
+      <div class="text-center">
         <h4 class="white">Our 2022 Brew Tour includes some great Douglas County breweries and coffee shops.</h4>
         <h5 class="no-margin-bottom white">Log your visits to the different participating partner establishments to earn points, unlock rewards, and get entered into our Grand Prize drawing. </h5>
         <div><a style="width:125px;" href="#" class="margin-15 btn btn-primary btn-lg">Register</a><a style="width:125px;" href="#" class="margin-15 btn btn-primary btn-lg">Sign In</a></div>
-        <div class="margin-lg-150"><i>*Participants must register and log visits on Beanstack to be eligible for all prizes and rewards. Grand Prize drawing will be held by October 5, 2022.</i></div>
+        <div class=""><i>*Participants must register and log visits on Beanstack to be eligible for all prizes and rewards. Grand Prize drawing will be held by October 5, 2022.</i></div>
       </div>
     </div>
   </div>
