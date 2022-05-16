@@ -62,13 +62,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <style>
 @font-face {
 	font-family: 'The Farmer Textured';
-	src: url('../shared-assets/web-fonts/TheFarmerTexturedRounded.woff2') format('woff2'), url('../shared-assets/web-fonts/TheFarmerTexturedRounded.woff') format('woff'), url('TheFarmerTexturedRounded.ttf') format('truetype');
+	src: url('../shared-assets/web-fonts/TheFarmerTexturedRounded.woff2') format('woff2'), url('../shared-assets/web-fonts/TheFarmerTexturedRounded.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Larosa Regular';
-	src: url('../shared-assets/web-fonts/LarosaRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/LarosaRegular.woff') format('woff'), url('TheFarmerTexturedRounded.ttf') format('truetype');
+	src: url('../shared-assets/web-fonts/LarosaRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/LarosaRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Larosa Bold';
+	src: url('../shared-assets/web-fonts/LarosaBold.woff2') format('woff2'), url('../shared-assets/web-fonts/LarosaBold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -87,7 +93,7 @@ h1.farmer {
 	font-family: "Larosa Regular", sans-serif;
 }
 h2.larosa {
-	color: #000;
+	color: #2f2e33;
 	font-size: 46px;
 	margin-top: 10px;
 }
@@ -98,17 +104,31 @@ h2.larosa {
 .intro-container {
 	max-width: 1060px;
 	margin: 0 auto;
-	padding: 60px 15px 100px;
+	padding: 55px 15px 90px;
 }
-.larosa.margin-30.btn.btn-primary.btn-custom {
+.btn.btn-primary.btn-custom {
+	font-family: "Larosa Bold", sans-serif;
 	font-size: 30px;
-	padding: 15px 0 7px;
+	padding: 15px 0 6px;
 	width: 230px;
-	border-radius: 40px;
+	border-radius: 45px;
 	background: #cd6639;
 	border: 3px solid #2f2e33;
 	box-shadow: none;
 	color: #2f2e33;
+	margin: 30px 15px;
+}
+.btn.btn-primary.btn-custom-alt {
+	font-family: "Larosa Bold", sans-serif;
+	font-size: 24px;
+	padding: 15px 0 9px;
+	width: 300px;
+	border-radius: 30px;
+	background: #cd6639;
+	border: 3px solid #2f2e33;
+	box-shadow: none;
+	color: #2f2e33;
+	margin: 30px 10px;
 }
 .divider {
 	background: #ebd9ac url("divider.jpg") center center repeat-x;
@@ -125,6 +145,21 @@ h2.larosa {
 }
 .mountains {
 	text-align: center;
+}
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+	padding: 10px;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+	border: 2px solid #2f2e33;
+}
+.caps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.caps img {
+	padding: 10px;
+	justify-content: center;
 }
 @-webkit-keyframes text-animation {
 0% {
@@ -331,9 +366,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div class="text-center">
         <h4 class="white">Our 2022 Brew Tour includes some great Douglas County breweries and coffee shops.</h4>
-        <h5 class="no-margin-bottom white">Log your visits to the different participating partner establishments to earn points, unlock rewards, and get entered into our Grand Prize drawing. </h5>
-        <div><a href="#" class="larosa margin-30 btn btn-primary btn-custom">Register</a><a href="#" class="larosa margin-30 btn btn-primary btn-custom">Sign In</a></div>
-        <div class=""><i>*Participants must register and log visits on Beanstack to be eligible for all prizes and rewards. Grand Prize drawing will be held by October 5, 2022.</i></div>
+        <h5 class="no-margin-bottom white margin-lg-100">Log your visits to the different participating partner establishments to earn points, unlock rewards, and get entered into our Grand Prize drawing. </h5>
+        <div><a href="#" class="btn btn-primary btn-custom">Register</a><a href="#" class="btn btn-primary btn-custom">Sign In</a></div>
+        <div class="margin-lg-200"><i>*Participants must register and log visits on Beanstack to be eligible for all prizes and rewards. Grand Prize drawing will be held by October 5, 2022.</i></div>
       </div>
     </div>
   </div>
@@ -368,7 +403,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </table>
       </div>
       <div><i>*Brew Tour swag rewards available for pickup at your nearest DCL location.</i></div>
-      <div class="text-center"><a href="#" class="margin-30 btn btn-primary btn-lg">Brew Tour Events</a></div>
+      <div class="text-center"><a href="#" class="btn btn-primary btn-custom-alt">Brew Tour Events</a></div>
     </div>
   </div>
   <div class="row padding-top-30 padding-bottom-60">
