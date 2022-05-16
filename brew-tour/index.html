@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +48,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css" integrity="sha256-qQHUQX+gGGYfpC7Zdni08sr+h0ymXr0avmIASucY4FM=" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -59,17 +60,57 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-.using-the-library-active {
-	background-color: #f5f5f5;
+@font-face {
+	font-family: 'The Farmer Textured';
+	src: url('../shared-assets/web-fonts/TheFarmerTexturedRounded.woff2') format('woff2'), url('../shared-assets/web-fonts/TheFarmerTexturedRounded.woff') format('woff'), url('TheFarmerTexturedRounded.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-.caps > img {
-	padding: 15px;
+@font-face {
+	font-family: 'Larosa Regular';
+	src: url('../shared-assets/web-fonts/LarosaRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/LarosaRegular.woff') format('woff'), url('TheFarmerTexturedRounded.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-.caps {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	justify-content: center;
+.farmer {
+	font-family: "The Farmer Textured", sans-serif;
+	color: #000;
+}
+.farmer.brew-tour-heading {
+	font-size: 175px;
+	-webkit-animation: text-animation 0.6s 2s both;
+	animation: text-animation 0.6s 2s both;
+}
+.larosa {
+	font-family: "Larosa Regular", sans-serif;
+}
+.intro-row {
+	background: #3a627f;
+	color: #fff;
+}
+@-webkit-keyframes text-animation {
+0% {
+text-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac;
+-webkit-transform: translateX(0) translateY(0);
+transform: translateX(0) translateY(0);
+}
+100% {
+text-shadow: 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
+-webkit-transform: translateX(-8px) translateY(-8px);
+transform: translateX(-8px) translateY(-8px);
+}
+}
+@keyframes text-amimation {
+0% {
+text-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac;
+-webkit-transform: translateX(0) translateY(0);
+transform: translateX(0) translateY(0);
+}
+100% {
+text-shadow: 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
+-webkit-transform: translateX(-8px) translateY(-8px);
+transform: translateX(-8px) translateY(-8px);
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -81,7 +122,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -244,14 +285,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="container padding-bottom-40">
+  <div class="row intro-row">
+    <div class="custom-container padding-bottom-40">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400">DCL Brew Tour</h1>
+        <h1 class="farmer brew-tour-heading">BReW ToUR</h1>
       </div>
       <div class="margin-lg-150 text-center">
-        <h4 class="roboto">Our 2022 Brew Tour includes some great Douglas County breweries and coffee shops.</h4>
-        <h5 class="no-margin-bottom">Log your visits to the different participating partner establishments to earn points, unlock rewards, and get entered into our Grand Prize drawing. </h5>
+        <h4 class="white">Our 2022 Brew Tour includes some great Douglas County breweries and coffee shops.</h4>
+        <h5 class="no-margin-bottom white">Log your visits to the different participating partner establishments to earn points, unlock rewards, and get entered into our Grand Prize drawing. </h5>
         <div><a style="width:125px;" href="#" class="margin-15 btn btn-primary btn-lg">Register</a><a style="width:125px;" href="#" class="margin-15 btn btn-primary btn-lg">Sign In</a></div>
         <div class="margin-lg-150"><i>*Participants must register and log visits on Beanstack to be eligible for all prizes and rewards. Grand Prize drawing will be held by October 5, 2022.</i></div>
       </div>
@@ -403,4 +444,5 @@ $(function () {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
