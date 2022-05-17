@@ -147,6 +147,14 @@ h2.larosa {
 	color: #2f2e33;
 	margin: 30px 15px;
 }
+.btn.btn-primary.btn-custom:hover, .btn.btn-primary.btn-custom:focus {
+	-webkit-animation: box-animation .8s 0s both;
+	animation: box-animation .8s 0s both;
+	color: #ebd9ac;
+	background: #2f2e33;
+	border: 3px solid #2f2e33;
+	text-decoration: none;
+}
 .btn.btn-primary.btn-custom-alt {
 	font-family: "Larosa Bold", sans-serif;
 	font-size: 24px;
@@ -158,6 +166,14 @@ h2.larosa {
 	box-shadow: none;
 	color: #2f2e33;
 	margin: 30px 10px;
+}
+.btn.btn-primary.btn-custom-alt:hover, .btn.btn-primary.btn-custom-alt:focus {
+	-webkit-animation: box-animation-alt .8s 0s both;
+	animation: box-animation-alt .8s 0s both;
+	color: #ebd9ac;
+	background: #2f2e33;
+	border: 3px solid #2f2e33;
+	text-decoration: none;
 }
 .prizes-row {
 	background: #ebd9ac;
@@ -183,9 +199,18 @@ h2.larosa {
 	margin-top: -70px;
 	margin-bottom: -30px;
 }
+.hover-animation {
+	color: #2f2e33;
+}
+.hover-animation:hover, .hover-animation:focus {
+	-webkit-animation: text-animation 1.2s 0s both;
+	animation: text-animation 1.2s 0s both;
+	color: #000;
+	text-decoration: none;
+}
 .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
 	padding: 10px;
-    border: 2px solid #2f2e33;
+	border: 2px solid #2f2e33;
 }
 @-webkit-keyframes text-animation {
 0% {
@@ -209,6 +234,54 @@ transform: translateX(0) translateY(0);
 text-shadow: 0px 0px #ebd9ac, 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
 -webkit-transform: translateX(-8px) translateY(-8px);
 transform: translateX(-8px) translateY(-8px);
+}
+}
+@-webkit-keyframes box-animation {
+0% {
+box-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac;
+-webkit-transform: translateX(0) translateY(0);
+transform: translateX(0) translateY(0);
+}
+100% {
+box-shadow: 0px 0px #ebd9ac, 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
+-webkit-transform: translateX(-3px) translateY(-3px);
+transform: translateX(-3px) translateY(-3px);
+}
+}
+@keyframes box-amimation {
+0% {
+box-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac;
+-webkit-transform: translateX(0) translateY(0);
+transform: translateX(0) translateY(0);
+}
+100% {
+box-shadow: 0px 0px #ebd9ac, 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
+-webkit-transform: translateX(-3px) translateY(-3px);
+transform: translateX(-3px) translateY(-3px);
+}
+}
+@-webkit-keyframes box-animation-alt {
+0% {
+box-shadow: 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66;
+-webkit-transform: translateX(0) translateY(0);
+transform: translateX(0) translateY(0);
+}
+100% {
+box-shadow: 0px 0px #d79e66, 1px 1px #d79e66, 2px 2px #d79e66, 3px 3px #d79e66, 4px 4px #d79e66, 5px 5px #d79e66, 6px 6px #d79e66, 7px 7px #d79e66, 8px 8px #d79e66;
+-webkit-transform: translateX(-3px) translateY(-3px);
+transform: translateX(-3px) translateY(-3px);
+}
+}
+@keyframes box-amimation-alt {
+0% {
+box-shadow: 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66, 0 0 #d79e66;
+-webkit-transform: translateX(0) translateY(0);
+transform: translateX(0) translateY(0);
+}
+100% {
+box-shadow: 0px 0px #d79e66, 1px 1px #d79e66, 2px 2px #d79e66, 3px 3px #d79e66, 4px 4px #d79e66, 5px 5px #d79e66, 6px 6px #d79e66, 7px 7px #d79e66, 8px 8px #d79e66;
+-webkit-transform: translateX(-3px) translateY(-3px);
+transform: translateX(-3px) translateY(-3px);
 }
 }
 </style>
