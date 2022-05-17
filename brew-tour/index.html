@@ -78,16 +78,43 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-weight: normal;
 	font-style: normal;
 }
+.farmer {
+	font-family: "The Farmer Textured", sans-serif;
+	color: #2f2e33;
+}
 h1.farmer {
 	font-family: "The Farmer Textured", sans-serif;
 	color: #2f2e33;
+}
+ul.farmer {
+	font-family: "The Farmer Textured", sans-serif;
+	color: #2f2e33;
+	font-size: 54px;
+	margin: 0;
+}
+ul.farmer > li {
+	white-space: nowrap;
+	line-height: 40px;
+	padding: 10px 0;
+}
+.sub-title {
+	font-family: "Larosa Regular", sans-serif;
+	font-size: 18px;
+	white-space: nowrap;
+	margin-left: 5px;
+}
+.partners {
+	display: flex;
+	flex-direction: column;
+	max-width: 435px;
+	margin: 0 auto;
 }
 .farmer.brew-tour-heading {
 	font-size: 200px;
 	-webkit-animation: text-animation 1s 1s both;
 	animation: text-animation 1s 1s both;
 	line-height: .8em;
-	margin: 30px 0 20px 13px;
+	margin: 30px 0 30px 13px;
 }
 .larosa {
 	font-family: "Larosa Regular", sans-serif;
@@ -98,13 +125,13 @@ h2.larosa {
 	margin-top: 10px;
 }
 .intro-row {
-	background: #3a627f url("divider.jpg") bottom center repeat-x;
+	background: #3a627f;
 	color: #fff;
 }
 .intro-container {
 	max-width: 1060px;
 	margin: 0 auto;
-	padding: 55px 15px 90px;
+	padding: 65px 15px 90px;
 }
 .btn.btn-primary.btn-custom {
 	font-family: "Larosa Bold", sans-serif;
@@ -134,30 +161,30 @@ h2.larosa {
 	background: #ebd9ac;
 	color: #000;
 }
-.prizes-container {
+.partner-container {
 	max-width: 1060px;
 	margin: 0 auto;
-	padding: 40px 15px 40px;
+	padding: 90px 15px 75px;
+
 }
 .partner-row {
 	background: #d79e66;
 	color: #000;
-	padding: 80px 0 100px;
+}
+.prizes-container {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 40px 15px 60px;
+}
+    .hops {
+	margin-top: -50px;
+	margin-bottom: -50px;
 }
 .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
 	padding: 10px;
 }
 .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
 	border: 2px solid #2f2e33;
-}
-.caps {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.caps img {
-	padding: 10px;
-	justify-content: center;
 }
 @-webkit-keyframes text-animation {
 0% {
@@ -166,7 +193,7 @@ text-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 
 transform: translateX(0) translateY(0);
 }
 100% {
-text-shadow: 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
+text-shadow: 0px 0px #ebd9ac, 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
 -webkit-transform: translateX(-8px) translateY(-8px);
 transform: translateX(-8px) translateY(-8px);
 }
@@ -178,7 +205,7 @@ text-shadow: 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 0 #ebd9ac, 0 
 transform: translateX(0) translateY(0);
 }
 100% {
-text-shadow: 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
+text-shadow: 0px 0px #ebd9ac, 1px 1px #ebd9ac, 2px 2px #ebd9ac, 3px 3px #ebd9ac, 4px 4px #ebd9ac, 5px 5px #ebd9ac, 6px 6px #ebd9ac, 7px 7px #ebd9ac, 8px 8px #ebd9ac;
 -webkit-transform: translateX(-8px) translateY(-8px);
 transform: translateX(-8px) translateY(-8px);
 }
@@ -403,12 +430,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div><i>*Brew Tour swag rewards available for pickup at your nearest DCL location.</i></div>
       <div class="text-center"><a href="#" class="btn btn-primary btn-custom-alt">Brew Tour Events</a></div>
     </div>
-  </div>
+    </div><div class="hops"><img src="hops.png" class="center-block"></div>
   <div class="row partner-row">
-    <div class="container">
+    <div class="partner-container">
       <h2 class="larosa text-center">Brew Tour Partners</h2>
-      <div class="caps"><img src="../outside-the-lines/105-west-brewing.png"><img src="../outside-the-lines/3-freaks-brewery.png"> <img src="../outside-the-lines/barnett-and-son-brewing.png"> <img src="../outside-the-lines/downhill-brewing-company.png"> <img src="../outside-the-lines/grist-brewing-company.png"> <img src="../outside-the-lines/living-the-dream-brewing.png"> <img src="../outside-the-lines/lone-tree-brewing.png"> <img src="../outside-the-lines/monk-and-mongoose.png"> <img src="../outside-the-lines/rockyard-brewing-company.png"> </div>
-      <div class="text-center padding-top-30"><i>Must be over 21 to consume alcohol. Please drink responsibly.</i></div>
+      <div class="partners">
+        <ul class="farmer list-unstyled">
+          <li>3 Freaks<span class="sub-title">Brewery</span></li>
+          <li>Barnett & Son<span class="sub-title">Brewing Co.</span></li>
+          <li>Burly<span class="sub-title">Brewing Company</span></li>
+          <li>Living the Dream<span class="sub-title">Brewing</span></li>
+          <li>Downhill<span class="sub-title">Brewing</span></li>
+          <li>Festive Cup<span class="sub-title">Coffee and Gift Boutique</span></li>
+          <li>Monk & Mongoose<span class="sub-title">Coffee Co</span></li>
+          <li>Welcome Home<span class="sub-title">Brewery</span></li>
+        </ul>
+      </div>
+      <div class="text-center"><i>Must be over 21 to consume alcohol. Please drink responsibly.</i></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
