@@ -58,312 +58,235 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<script>
-    jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 2,
-            time: 12000
-        });
-    });
-  </script>
-<link rel="stylesheet" href="https://use.typekit.net/bvq6jlu.css">
+<script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sancreek&display=swap" rel="stylesheet">
 <style>
-.futura {
-	font-family: futura-pt, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.futura-bold {
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-.roboto-regular {
-	font-family: roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.dark-text {
-	color: #040012;
-}
-.planet-row, .minutes-row, .shirt-row {
-	font-family: roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.logo-wrapper {
+.custom-container {
+	max-width: 1170px;
 	margin: 0 auto;
-	max-width: 900px;
-	padding: 30px 10px 30px;
 }
-.box-wrapper {
-	display: flex;
-	justify-content: flex-end;
+.custom-container.one {
+	padding: 40px 10px 70px;
+}
+.custom-container.two {
+	padding: 70px 10px 0;
+}
+.custom-container.three {
+	padding: 0 10px 60px;
+	background: transparent url("magic-trick.png") top center no-repeat;
+	margin-top: -35px;
+	z-index: 100;
+	position: relative;
+}
+.custom-container.four {
+	padding: 110px 10px 100px;
+	max-width: 1250px;
+}
+h1.sancreek {
+	font-family: 'Sancreek', serif;
+	text-transform: uppercase;
+	font-size: 120px;
+	margin: 0;
+	line-height: 120px;
+}
+h1.noto, h2.noto, h3.noto, h4.noto, h5.noto {
+	font-family: 'Noto Serif', serif;
+	text-transform: uppercase;
+}
+h3.sancreek {
+	font-family: 'Sancreek', serif;
+	text-transform: uppercase;
+	font-size: 60px;
+	margin: 0;
+}
+h4.sancreek {
+	font-family: 'Sancreek', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 0;
+}
+.smaller {
+	font-size: .8em;
+	text-transform: uppercase;
+	vertical-align: middle !important;
+	font-weight: normal;
+	color: #888;
+}
+.intro-text {
+	font-size: 18px;
+	font-weight: 400;
+}
+.red-shadow {
+	text-shadow: 0px 0px 15px #851734;
+}
+.orange-shadow {
+	text-shadow: 0px 0px 15px #e55d11;
+}
+.background-one {
+	background: radial-gradient(circle at center, #ca2c43 0%, #851734 60%, #4e0d1f 100%);
+}
+.background-two {
+	background: transparent url("bubbles.png") center top repeat-x;
+}
+.background-three {
+	background: transparent url("banner-flags.png") center top repeat-x;
+}
+.background-four {
+	background: #25144b;
+}
+.background-five {
+	background: linear-gradient(#25144b 0%, #25144b 2%, #6743be 58%, #25144b 60%, #000 100%);
+}
+.background-six {
+	background: radial-gradient(circle at center, #e57639 0%, #ce540f 60%, #b64a0e 90%, #a8440d 100%);
+	box-shadow: inset 0px 5px 100px 5px rgba(0,0,0,.3);
+}
+.background-seven {
+	background: transparent url("bubbles.png") center top repeat-x;
+}
+.separator-one {
+	height: 20px;
+	background: transparent url("separator-one.png") center center repeat-x;
+	margin-top: -20px;
+}
+.separator-two {
+	height: 20px;
+	background: transparent url("separator-two.png") center center repeat-x;
+	position: relative;
+	bottom: -20px;
+	margin-top: -20px;
 }
 .link-wrapper {
 	width: 325px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
 	text-align: center;
 	padding: 20px 0;
 	font-size: 22px;
-	margin-right: 23%;
+	margin: 0 auto;
 }
 .link, .link:visited, .link:active {
 	width: 300px;
-	background: linear-gradient(#0fb79d, #0f4991);
+	background: linear-gradient(#8556f4, #452d7f);
 	color: #fff;
-	margin: 5px 10px;
+	margin: 10px;
 	padding: 15px 5px;
-	border-radius: 2px;
+	border-radius: 3px;
 	text-transform: uppercase;
 	text-decoration: none;
-	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1);
+	font-weight: 500;
+	border: 3px solid #fff;
 }
 .link:hover {
-	background: radial-gradient(#0fb79d, #0f4991);
+	background: #8556f4;
 	color: #fff;
 	text-decoration: none;
+	box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.4);
+	transition-duration: 0.4s;
+}
+.link.tee-link {
+	width: 175px;
+	display: inherit;
+	text-align: center;
+	margin: 25px auto;
 }
 .alt-link-wrapper {
-	margin-top: 15px;
-}
-.astronaut-background {
-	background: url("astronaut.svg") center right/cover;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 120px 0px;
-}
-.turquoise-row {
-	background: #5dbab7;
-	color: #17144b;
-	padding: 45px 0 65px;
-}
-.turquoise-row a {
-	color: #17144b;
-}
-.wave-row-top {
-	background: transparent url(wave-top.png) center center repeat-x;
-	height: 75px;
-}
-.wave-row-bottom {
-	background: transparent url(wave-bottom.png) center center repeat-x;
-	height: 75px;
-}
-.galaxy-wrapper {
-	max-width: 925px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-.minutes-wrapper {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	padding: 50px 0 65px;
 }
-.minutes-item {
-	padding: 15px 15px 25px;
+.alt-link {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 5px 20px;
+	white-space: nowrap;
 }
-.minutes-item.one, .shirt-item.two {
-	max-width: 600px;
-}
-.minutes-item.two {
-	background: transparent url("globe.png") center center no-repeat;
-	height: 325px;
-	width: 325px;
+.prize-wrapper {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-content: center;
-	align-items: center;
+	padding: 30px 10px 0;
+}
+.prize-item {
+	background: radial-gradient(#6743be 0%, #452d7f 100%);
+	padding: 30px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.minutes-read {
+	text-align: center;
+	color: #F8B7CB;
+	margin: 0;
+	padding: 20px 0 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 32px;
 }
 .counter {
-	font-size: 60px;
-	line-height: 58px;
+	font-size: 55px;
+	font-weight: 900;
+	color: #000;
+	text-align: center;
+	padding-top: 255px;
 }
-.shirt-row {
-	background: linear-gradient(#030011 1%, #14045c 100%);
+.counter:not(.is-visible) {
+	visibility: hidden;
 }
-.shirt-wrapper {
+.box-one:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	padding-top: 30px;
+	border-bottom: 8px dotted #fff;
+}
+.box-two {
+	padding-top: 30px;
+	margin-bottom: 25px;
+}
+.tee-wrapper {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.tee-item-two {
+	padding: 0 10px;
+}
+
+@media (max-width: 1125px) {
+.tee-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	align-items: center;
-	padding: 20px 0 65px;
 }
-.shirt-item {
-	padding: 15px;
-}
-.btn-custom {
-	background: #fff;
-}
-a.btn.btn-custom {
-	color: #030011;
-}
-a.btn.btn-custom:hover {
-	color: #fff;
-}
-.btn-custom:active, .btn-custom:hover, .btn-custom:focus {
-	background-color: #ea3f18;
-	color: #fff;
-}
-.planet-row {
-	background: transparent url("planets.jpg") top center repeat;
-	-webkit-animation: float 320s linear infinite;
-	animation: float 320s linear infinite;
-	color: #040012;
-}
-@-webkit-keyframes float {
-from {
-background-position: 1736px 0;
-}
-to {
-background-position: 0 0;
-}
-}
-@keyframes float {
-from {
-background-position: 1736px 0;
-}
-to {
-background-position: 0 0;
-}
-}
-.minutes-row {
-	background: transparent url("rocket-background.jpg") top center repeat;
-	-webkit-animation: float 4s linear infinite;
-	animation: float 4s linear infinite;
-}
-@-webkit-keyframes float {
-from {
-background-position: 1455px 0;
-}
-to {
-background-position: 0 0;
-}
-}
-@keyframes float {
-from {
-background-position: 1455px 0;
-}
-to {
-background-position: 0 0;
-}
-}
-.flying {
-	animation: fly linear 20s;
-	animation-iteration-count: infinite;
-	transform-origin: 50% 50%;
-	-webkit-animation: fly linear 20s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-transform-origin: 50% 50%;
-}
-@keyframes fly {
-0% {
-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
-}
-25% {
-transform:  translate(100px, 10px) scaleX(0.90) scaleY(0.90);
-}
-50% {
-transform:  translate(130px, -10px) scaleX(0.50) scaleY(0.50);
-}
-60% {
-transform:  translate(140px, -10px) scaleX(0.55) scaleY(0.55);
-}
-75% {
-transform:  translate(110px, 10px) scaleX(.90) scaleY(.90);
-}
-96% {
-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
-}
-100% {
-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
-}
-}
-@-webkit-keyframes fly {
-0% {
-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
-}
-25% {
-transform:  translate(100px, 10px) scaleX(0.90) scaleY(0.90);
-}
-50% {
-transform:  translate(130px, -10px) scaleX(0.50) scaleY(0.50);
-}
-60% {
-transform:  translate(140px, -10px) scaleX(0.55) scaleY(0.55);
-}
-75% {
-transform:  translate(110px, 10px) scaleX(.90) scaleY(.90);
-}
-96% {
-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
-}
-100% {
-transform:  translate(60px, 0px) scaleX(1.00) scaleY(1.00);
+.tee-item-two {
+	order: 3;
+	padding: 15px 10px;
+	max-width: 800px;
+	text-align: center;
 }
 }
 
-@media (max-width: 1100px) {
-.astronaut-background {
-	background-position: center;
-}
-.link-wrapper {
-	margin-right: 0;
-}
-.box-wrapper {
-	display: flex;
-	justify-content: center;
-}
-}
-
-@media (max-width: 954px) {
-.shirt-item.one {
-	order: 2;
-}
-.shirt-item.two {
-	order: 1;
-}
-.button-one {
-	display: none;
-}
-.minutes-wrapper {
-	padding: 50px 0 0;
-}
-}
-
-@media (min-width: 955px) {
-.button-two {
-	display: none;
-}
-}
-
-@media (max-width: 600px) {
-.astronaut-background {
-	background: url("astronaut-alt.png") center bottom no-repeat;
-	padding: 0 0 300px;
-	margin-bottom: -75px;
-}
-.logo-one {
-	display: none;
-}
-.logo-wrapper {
-	max-width: 400px;
+@media (max-width: 875px) {
+.prize-wrapper {
+	flex-direction: column;
+	padding: 30px 10px 0;
+	max-width: 500px;
 	margin: 0 auto;
 }
 }
 
-@media (min-width: 601px) {
-.logo-two {
-	display: none;
+@media (max-width: 850px) {
+.tee-item-one img, .tee-item-three img {
+	max-width: 350px;
+}
+.tee-item-two {
+	max-width: 700px;
+	text-align: center;
 }
 }
 </style>
@@ -539,54 +462,190 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row planet-row">
-    <div class="logo-wrapper"><img class="logo-one" src="galaxy-dcl.svg" alt="Galaxy DCL"> <img class="logo-two" src="galaxy-dcl-alt.svg" alt="Galaxy DCL"></div>
-    <div class="astronaut-background">
-      <div class="box-wrapper">
-        <div class="link-wrapper futura"> <a href="registration/" class="link">Registration</a><a href="giveaways/" class="link">10 Days of Giveaways</a><a href="scrapbook/" class="link">Scrapbook</a>
-          <div class="alt-link-wrapper">
-            <div class="futura alt-link"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=kickoff&et=35&&ag=724&lib=ALL&nd=180" target="_blank" class="white">Galactic Kickoff Events</a></div>
-            <div class="futura alt-link"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=summer+reading+event+great&et=35&&ag=724&lib=ALL&nd=180" target="_blank" class="white">Stellar Summer Events </a></div>
-            <div class="futura alt-link"><a href="jokes.pdf" target="_blank" class="white">Out-of-This-World Jokes</a></div>
+  <div class="row">
+    <div class="background-one">
+      <div class="background-two">
+        <div class="background-three">
+          <div class="custom-container one white">
+            <div class="text-center">
+              <h1 class="noto red-shadow white">Unlock the</h1>
+              <h1 class="sancreek red-shadow white">Magic</h1>
+              <h3 class="noto red-shadow white no-margin-top">Pull a Great Summer out of the Hat!</h3>
+              <h5 class="noto red-shadow white">2022 Summer Reading for All Ages</h5>
+              <h5 class="white red-shadow margin-top-5">Saturday, June 4-Sunday, July 31</h5>
+            </div>
+            <div class="intro-text text-center red-shadow margin-lg-125 margin-md-100">Join us for a magical summer of reading, exciting activities, prizes, and giveaways. We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read.<!--You can also do the supplemental activities we suggest <a class="white text-underline" href="#" target="_blank">on the reading log</a>.--> We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it!</div>
+            <div class="link-wrapper"> <a class="link" href="https://dclibraries.beanstack.org/reader365" target="_blank">Register Now!</a><a class="link" href="https://dclibraries.beanstack.org/users/sign_in" target="_blank">Sign In</a></div>
+            <div class="alt-link-wrapper">
+              <div class="alt-link"><a class="white" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=summer+reading+kickoff+party&lib=ALL&nd=60" target="_blank">Ta-da! Kickoff Events</a></div>
+              <div class="alt-link"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=a+summer+reading+event&lib=ALL&nd=90" target="_blank" class="white">Dazzling Summer Events</a></div>
+              <!--<div class="alt-link"><a class="white" href="#">Amusing Jokes</a></div>
+              <div class="alt-link"><a class="white" href="#">Tricks for Kids</a></div>--> 
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="wave-row-top"></div>
-    <div class="turquoise-row">
-      <div class="galaxy-wrapper">
-        <h2 class="futura-bold dark-text text-uppercase">Lift Off to Galaxy DCL!</h2>
-        <h5 class="futura-bold dark-text">You’re invited to soar into a great summer of reading, stargazing, and stellar summer activities.</h5>
-        <div class="large-text dark-text">We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read. You can also do the supplemental activities we suggest on the <a class="text-underline" href="summer-reading-log.pdf">reading log</a>. We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it! </div>
-      </div>
-    </div>
-    <div class="wave-row-bottom"></div>
   </div>
-  <div class="row minutes-row">
-    <div class="container">
-      <div class="minutes-wrapper">
-        <div class="minutes-item one white"><img class="flying" src="rocket.png" alt="">
-          <h3 class="futura-bold white text-uppercase">Help us meet our community goal of 8 million minutes read!</h3>
-          Watch our rocket make its way through the galaxy and help us meet our goal. If we meet our goal, the Douglas County Libraries Foundation will donate $1,000 to the Douglas Land Conservancy, which works to protect open space from development in Douglas, Elbert and Jefferson Counties.</div>
-        <div class="minutes-item two">
-          <div class="counter futura-bold dark-text">185,000</div>
-          <h4 class="no-margin futura dark-text text-uppercase">Minutes Read</h4>
+  <div id="prizes" class="row white background-four">
+    <div class="custom-container two">
+      <h3 class="text-center sancreek white">Prizes</h3>
+      <h5 class="text-center white">Prizes will be available beginning June 4</h5>
+      <div class="prize-wrapper">
+        <div class="prize-item">
+          <h4 class="noto white no-margin-top">Sign-Up Prizes</h4>
+          <div>Visit any DCL location to pick up your Summer Reading sign-up prizes, while supplies last.</div>
+          <ul>
+            <li>Ages 0-2: Rubber ducky</li>
+            <li>Ages 3-12: Pirates Cove free admission gift coupon*</li>
+            <li>Ages 13-17: Smoothie King free gift coupon*</li>
+            <li>Ages 18+: Park Meadows Free valet parking coupon*</li>
+          </ul>
+          <div>*See coupon for full details.</div>
+        </div>
+        <div class="prize-item">
+          <h4 class="noto white no-margin-top">Mid-Way Prizes</h4>
+          <div>Celebrate being halfway to your goal! Stop by the library to pick up your prize.</div>
+          <ul>
+            <li>Ages 0-2: Bubble tube</li>
+            <li>Ages 3-12: Cards plus tricks and game sheet</li>
+            <li>Ages 13-17: Rocket Fizz gift coupon* and Second Chapter Bookstore free book coupon*</li>
+            <li>Ages 18+: Second Chapter Bookstore free book coupon*</li>
+          </ul>
+          <div>*See coupon for full details.</div>
+        </div>
+        <div class="prize-item">
+          <h4 class="noto white no-margin-top">Finishing Prizes</h4>
+          <div>Collect a prize when you complete your challenge, or just for having a magical summer!</div>
+          <ul>
+            <li>Ages 0-12: Free new book</li>
+            <li>Ages 13+: Canvas pouch</li>
+          </ul>
+          <div>*Finishing prizes available through August 7, or while supplies </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row shirt-row">
-    <div class="shirt-wrapper">
-      <div class="shirt-item one"><img src="t-shirt.png" alt="">
-        <div class="button-two text-center padding-top-30 padding-bottom-15"><a href="t-shirts/" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
+  <div id="minutes" class="row white background-five">
+    <div class="custom-container three text-center">
+      <div class="counter-wrapper">
+        <div class="counter">1,426</div>
+        <h4 class="minutes-read">Minutes Read</h4>
       </div>
-      <div class="shirt-item two white">
-        <h5 class="futura-bold white text-uppercase no-margin">Summer Reading Tees</h5>
-        <h3 class="futura-bold white text-uppercase no-margin-top">On Sale Now!</h3>
-        Sport one of our summery tees to support the <a class="white text-underline" href="foundation/">Douglas County Libraries Foundation</a>. Our unisex t-shirts come in kids sizes S-M for $12 plus tax, and adult sizes S-XL for $15 plus tax. Pre-order by May 10 for pickup and payment at Summer Reading kickoff on June 5 or your preferred library after that, while supplies last; limited supplies available. Net proceeds benefit the DCL Foundation. Thank you for your support.
-        <div class="button-one padding-top-15 padding-bottom-15"><a href="t-shirts/" class="futura-bold btn btn-primary btn-custom btn-lg">Order Now</a></div>
+      <div class="margin-lg-175 margin-md-100">
+        <div class="box-one">
+          <h4 class="no-margin-top margin-lg-175 margin-md-100 noto white">Help us meet our community goal of 8.5 million minutes read!</h4>
+          <div>Watch the minutes materialize and help us meet our goal. If we meet our goal, the <a class="text-underline white" href="../foundation/">Douglas County Libraries Foundation</a> will donate $1,000 to AllHealth Network, which works to enhance the quality of life for individuals and families in our community through compassionate, integrated behavioral health services.</div>
+        </div>
       </div>
-      <div></div>
+      <div class="margin-lg-200 margin-md-100">
+        <div class="box-two">
+          <h4 class="no-margin-top noto white">Help your school earn $500!</h4>
+          All you have to do is sign up (and remind your friends and classmates to sign up!) and be sure to include your school name and your grade when you register. The school with the most sign-ups by July 31 will be awarded $500. Award recipients announced in August. See contest <a href="#" class="white text-underline" data-toggle="modal" data-target="#modalrules">rules and restrictions</a>, and schools <a href="#" class="white text-underline" data-toggle="modal" data-target="#modalleaderboard">currently in the lead</a>. </div>
+      </div>
+      <!--<div class="text-center white">
+        <div>Take your Summer Reading offline</div>
+        <h5 class="noto white margin-top-5">Download a <a class="white text-underline" href="#">Reading Log</a></h5>
+      </div>--> 
+    </div>
+  </div>
+  <div id="tees" class="row">
+    <div class="background-one">
+      <div class="background-seven">
+        <div class="custom-container four">
+          <h4 class="text-center sancreek white red-shadow">Summer Reading Tees</h4>
+          <h4 class="noto white text-center no-margin-top red-shadow">On Sale Now!</h4>
+          <div class="tee-wrapper">
+            <div class="tee-item-one"><img src="bam-tee.png?5122" alt="Books Are Magic Tee"></div>
+            <div class="tee-item-two">
+              <div class="white red-shadow font-weight-400">Sport one of our summery tees to support the <a class="text-underline white" href="../foundation/">Douglas County Libraries Foundation</a>—choose from two styles. The unisex t-shirts come in youth sizes S-L for $15 plus tax, and adult sizes S-XXL for $18 plus tax. Order by June 5—pick up and pay at your preferred library. Supply chain disruptions may delay order availability and limit supply. Color may vary. You will be contacted by email when your order arrives. Payment required at time of pickup.</div>
+              <div><a class="link tee-link" href="tees/">Order Now!</a></div>
+            </div>
+            <div class="tee-item-three"><img src="gc-tee.png?5122" alt="Great Characters Tee"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="row bg-gray-5 padding-top-30 padding-bottom-60">
+    <div class="custom-container">
+      <div class="text-center">
+        <h2 class="margin-top-5">10 Days of Giveaways</h2>
+        <h4 class="no-margin-bottom margin-top-5">June 4-13</h4>
+        <h5 class="margin-top-5">Sign up to win!</h5>
+      </div>
+      <div>Look what we have up our sleeve! We’re giving away 105 prizes to Summer Reading participants who sign up to read. What could you win? Unlock the Magic of Summer Reading and find out!</div>
+      <div class="padding-top-15">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-July 15 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL’s digital channels (first name, last initial). No purchase necessary and registration is free.</div>
+    </div>
+  </div>--> 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalrules" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center modal-title">Contest Rules and Restrictions</h3>
+        </div>
+        <div class="modal-body padding-30">
+          <div>Contest applies only to K-12 students in schools located in Douglas County and accredited by the Colorado Department of Education. Awards will be given to one school at each level: elementary, middle, high, and other (e.g., charter, K-12).</div>
+          <div class="padding-top-15">Sign-ups are tallied through Beanstack online registration. The school in each category with the most sign-ups as a percentage of 2021-2022 enrollment earns the award.</div>
+          <div class="padding-top-15 padding-bottom-15">Contest runs May 1-July 31. Prizes courtesy of Douglas County Libraries Foundation. Award recipients will be notified in August 2022.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalleaderboard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center modal-title">Who's Ahead?</h3>
+        </div>
+        <div class="modal-body padding-30">
+          <div class="table-responsive">
+            <table class="table table-bordered table-condensed" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="smaller">First Place</th>
+                  <th class="smaller">Second Place</th>
+                  <th class="smaller">Third Place</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="smaller">Elementary</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="smaller">Middle</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="smaller">High</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="smaller">Other (Charter/K-12)</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center padding-bottom-15">*Leader board will be updated each Monday through August 1, 2022.</div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -650,7 +709,28 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script src="jquery.counterup.min.js"></script> 
+<script id="rendered-js" >
+const counterUp = window.counterUp.default;
+
+const callback = entries => {
+  entries.forEach(entry => {
+    const el = entry.target;
+    if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+      counterUp(el, {
+        duration: 15000,
+        delay: 36 });
+
+      el.classList.add('is-visible');
+    }
+  });
+};
+
+const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+const el = document.querySelector('.counter');
+IO.observe(el);
+//# sourceURL=pen.js
+    </script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
