@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +48,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css" integrity="sha256-qQHUQX+gGGYfpC7Zdni08sr+h0ymXr0avmIASucY4FM=" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -68,17 +69,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	margin: 0 auto;
 }
 .custom-container.one {
-	padding: 40px 10px 70px;
+	padding: 40px 10px 60px;
 }
 .custom-container.two {
-	padding: 70px 10px 0;
+	padding: 70px 10px 75px;
 }
 .custom-container.three {
 	padding: 0 10px 60px;
-	background: transparent url("magic-trick.png") top center no-repeat;
-	margin-top: -35px;
-	z-index: 100;
-	position: relative;
+	background: transparent url("magic-trick.png") center 70px no-repeat;/* margin-top: -35px; */
+	/* z-index: 100; */
+	/* position: relative; */
 }
 .custom-container.four {
 	padding: 110px 10px 100px;
@@ -117,6 +117,17 @@ h4.sancreek {
 .intro-text {
 	font-size: 18px;
 	font-weight: 400;
+	padding-bottom: 30px;
+	max-width: 975px;
+	margin: 0 auto;
+}
+.giveaway-text {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	padding-bottom: 30px;
+	max-width: 975px;
+	margin: 0 auto;
 }
 .red-shadow {
 	text-shadow: 0px 0px 15px #851734;
@@ -158,14 +169,39 @@ h4.sancreek {
 	bottom: -20px;
 	margin-top: -20px;
 }
+.section-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.section-nav-item a {
+	color: #25144b;
+	font-weight: 400;
+	padding: 14px 0;
+	display: inline-block;
+	width: 170px;
+	white-space: nowrap;
+	background: rgba(255,255,255,.9);
+	text-align: center;
+	margin: 5px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+.section-nav-item a:hover, .s-nav-item a:focus {
+	color: #000;
+	background: #fff;
+	text-decoration: none;
+}
 .link-wrapper {
-	width: 325px;
+	width: 750px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
 	padding: 20px 0;
 	font-size: 22px;
 	margin: 0 auto;
+	justify-content: center;
 }
 .link, .link:visited, .link:active {
 	width: 300px;
@@ -197,6 +233,7 @@ h4.sancreek {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-top: 30px;
 }
 .alt-link {
 	font-size: 20px;
@@ -299,7 +336,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -471,11 +508,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <h1 class="noto red-shadow white">Unlock the</h1>
               <h1 class="sancreek red-shadow white">Magic</h1>
               <h3 class="noto red-shadow white no-margin-top">Pull a Great Summer out of the Hat!</h3>
-              <h5 class="noto red-shadow white">2022 Summer Reading for All Ages</h5>
-              <h5 class="white red-shadow margin-top-5">Saturday, June 4-Sunday, July 31</h5>
+              <h2 class="noto red-shadow white no-margin-top">2022 Summer Reading for All Ages</h2>
+              <h5 class="noto red-shadow white no-margin-bottom">Saturday, June 4-Sunday, July 31</h5>
             </div>
-            <div class="intro-text text-center red-shadow margin-lg-125 margin-md-100">Join us for a magical summer of reading, exciting activities, prizes, and giveaways. We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read.<!--You can also do the supplemental activities we suggest <a class="white text-underline" href="#" target="_blank">on the reading log</a>.--> We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it!</div>
             <div class="link-wrapper"> <a class="link" href="https://dclibraries.beanstack.org/reader365" target="_blank">Register Now!</a><a class="link" href="https://dclibraries.beanstack.org/users/sign_in" target="_blank">Sign In</a></div>
+            <div class="intro-text text-center red-shadow">Join us for a magical summer of reading, exciting activities, prizes, and giveaways. We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge! You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read.<!--You can also do the supplemental activities we suggest <a class="white text-underline" href="#" target="_blank">on the reading log</a>.--> We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it!</div>
+            <div class="section-nav">
+              <div class="section-nav-item"><a href="#giveaways">Giveaways</a></div>
+              <div class="section-nav-item"><a href="#prizes">Prizes</a></div>
+              <div class="section-nav-item"><a href="#goals">Goals</a></div>
+              <div class="section-nav-item"><a href="#tees">Tees</a></div>
+            </div>
             <div class="alt-link-wrapper">
               <div class="alt-link"><a class="white" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=summer+reading+kickoff+party&lib=ALL&nd=60" target="_blank">Ta-da! Kickoff Events</a></div>
               <div class="alt-link"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=a+summer+reading+event&lib=ALL&nd=90" target="_blank" class="white">Dazzling Summer Events</a></div>
@@ -483,6 +526,48 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="alt-link"><a class="white" href="#">Tricks for Kids</a></div>--> 
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="giveaways" class="row white background-four">
+    <div class="custom-container two">
+      <h3 class="text-center sancreek white">10 Days of Giveaways</h3>
+      <h5 class="noto white text-center no-margin-bottom">June 4-13, Sign up to Win!</h5>
+      <div class="giveaway-text">Look what we have up our sleeve! We’re giving away 105 prizes to Summer Reading participants who sign up to read. What could you win? Unlock the Magic of Summer Reading and find out!
+        
+        Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-July 15 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL’s digital channels (first name, last initial). No purchase necessary and registration is free. </div>
+      <div class="prize-wrapper">
+        <div class="prize-item">
+          <h4 class="noto white no-margin-top">Sign-Up Prizes</h4>
+          <div>Visit any DCL location to pick up your Summer Reading sign-up prizes, while supplies last.</div>
+          <ul>
+            <li>Ages 0-2: Rubber ducky</li>
+            <li>Ages 3-12: Pirates Cove free admission gift coupon*</li>
+            <li>Ages 13-17: Smoothie King free gift coupon*</li>
+            <li>Ages 18+: Park Meadows Free valet parking coupon*</li>
+          </ul>
+          <div>*See coupon for full details.</div>
+        </div>
+        <div class="prize-item">
+          <h4 class="noto white no-margin-top">Mid-Way Prizes</h4>
+          <div>Celebrate being halfway to your goal! Stop by the library to pick up your prize.</div>
+          <ul>
+            <li>Ages 0-2: Bubble tube</li>
+            <li>Ages 3-12: Cards plus tricks and game sheet</li>
+            <li>Ages 13-17: Rocket Fizz gift coupon* and Second Chapter Bookstore free book coupon*</li>
+            <li>Ages 18+: Second Chapter Bookstore free book coupon*</li>
+          </ul>
+          <div>*See coupon for full details.</div>
+        </div>
+        <div class="prize-item">
+          <h4 class="noto white no-margin-top">Finishing Prizes</h4>
+          <div>Collect a prize when you complete your challenge, or just for having a magical summer!</div>
+          <ul>
+            <li>Ages 0-12: Free new book</li>
+            <li>Ages 13+: Canvas pouch</li>
+          </ul>
+          <div>*Finishing prizes available through August 7, or while supplies </div>
         </div>
       </div>
     </div>
@@ -526,8 +611,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div id="minutes" class="row white background-five">
+  <div id="goals" class="row white background-five">
     <div class="custom-container three text-center">
+      <h3 class="text-center sancreek white">Goals</h3>
       <div class="counter-wrapper">
         <div class="counter">1,426</div>
         <h4 class="minutes-read">Minutes Read</h4>
@@ -770,4 +856,5 @@ IO.observe(el);
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
