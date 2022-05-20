@@ -76,7 +76,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .custom-container.three {
 	padding: 70px 10px 90px;
-	background: transparent url("magic-trick.png") center 140px no-repeat;
+	background: transparent url("magic-trick.png") center 155px no-repeat;
 }
 .custom-container.four {
 	padding: 70px 10px 90px;
@@ -172,25 +172,25 @@ h4.sancreek {
 	text-transform: uppercase;
 }
 .section-nav-item a {
-	color: #25144b;
+	color: #fff;
 	font-weight: 400;
 	padding: 14px 0;
 	display: inline-block;
 	width: 170px;
 	white-space: nowrap;
-	background: rgba(255,255,255,.9);
+	background: #d98b28;
 	text-align: center;
 	margin: 5px;
 	border-radius: 3px;
 	font-size: 18px;
+	letter-spacing: 1.25px;
 }
-.section-nav-item a:hover, .s-nav-item a:focus {
-	color: #000;
+.section-nav-item a:hover, .section-nav-item a:focus {
+	color: #25144b;
 	background: #fff;
 	text-decoration: none;
 }
 .link-wrapper {
-	width: 750px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
@@ -268,12 +268,16 @@ h4.sancreek {
 .giveaway-item {
 	display: flex;
 	background: radial-gradient(#6743be 0%, #452d7f 100%);
-	padding: 30px;
+	padding: 30px 30px 40px;
 	margin: 5px;
 	border-radius: 3px;
 }
 .giveaway-item > ul {
 	padding: 0 30px;
+	margin-bottom: 0;
+}
+.giveaway-item > ul > li, .prize-item > ul > li {
+	padding: 4px 0;
 }
 .minutes-read {
 	text-align: center;
@@ -286,9 +290,9 @@ h4.sancreek {
 .counter {
 	font-size: 55px;
 	font-weight: 900;
-	color: #000;
+	color: transparent;
 	text-align: center;
-	padding-top: 255px;
+	padding-top: 270px;
 }
 .counter:not(.is-visible) {
 	visibility: hidden;
@@ -312,6 +316,16 @@ h4.sancreek {
 }
 .tee-item-two {
 	padding: 0 10px;
+}
+
+@media (max-width: 745px) {
+.section-nav {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.giveaway-item, .goal-wrapper {
+	flex-direction: column;
+}
 }
 
 @media (max-width: 1125px) {
@@ -560,7 +574,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <h5 class="noto white text-center">June 4-13, Register Now to Win!</h5>
       <div class="giveaway-text">
         <div class="margin-bottom-10">Look what we have up our sleeve! We’re giving away 105 prizes to Summer Reading participants who register to read. What could you win? Unlock the Magic of Summer Reading and find out!</div>
-        <div class="alt-text">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-July 15 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL's digital channels (first name, last initial). No purchase necessary and registration is free.</div>
+        <div class="alt-text">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-June 13 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL's digital channels (first name, last initial). No purchase necessary and registration is free.</div>
       </div>
       <div class="giveaway-wrapper">
         <div class="giveaway-item">
