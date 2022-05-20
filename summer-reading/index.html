@@ -72,7 +72,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding: 40px 10px 75px;
 }
 .custom-container.two {
-	padding: 60px 10px 100px;
+	padding: 60px 10px 80px;
 }
 .custom-container.three {
 	padding: 85px 10px 65px;
@@ -118,7 +118,7 @@ h4.sancreek {
 	text-align: center;
 	font-size: 18px;
 	font-weight: 400;
-	max-width: 975px;
+	max-width: 870px;
 	margin: 0 auto;
 }
 .alt-text {
@@ -140,7 +140,7 @@ h4.sancreek {
 	background: transparent url("banner-flags.png") center top repeat-x;
 }
 .background-four {
-	background: #25144b;
+	background: linear-gradient(#431761, #26153f);
 }
 .background-five {
 	background: #283478 url("magic-trick.jpg") center top no-repeat;
@@ -262,14 +262,9 @@ h4.sancreek {
 .giveaway-wrapper {
 	display: flex;
 	justify-content: center;
-	padding: 30px 10px 0;
 }
 .giveaway-item {
-	display: flex;
-	background: radial-gradient(#6743be 0%, #452d7f 100%);
-	padding: 30px 30px 40px;
-	margin: 5px;
-	border-radius: 3px;
+	text-align: center;
 }
 .giveaway-item > ul {
 	padding: 0 30px;
@@ -277,6 +272,13 @@ h4.sancreek {
 }
 .giveaway-item > ul > li, .prize-item > ul > li {
 	padding: 4px 0;
+}
+.giveaway-item > img {
+	border-radius: 10px;
+	transform: rotate(-5deg);
+	box-shadow: -4px 3px 8px 0px rgba(0,0,0,1);
+	-webkit-backface-visibility: hidden;
+	margin: 25px 0 15px;
 }
 .minutes-read {
 	text-align: center;
@@ -576,11 +578,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <h5 class="noto white text-center">June 4-13, Register Now for a Chance to Win!</h5>
       <div class="giveaway-text">
         <div class="margin-bottom-10">Look what we have up our sleeve! We’re giving away more than 100 prizes to Summer Reading participants who register to read. What could you win? Unlock the Magic of Summer Reading and find out!</div>
-        <div class="alt-text">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-June 13 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL's digital channels (first name, last initial). No purchase necessary and registration is free.</div>
       </div>
       <div class="giveaway-wrapper">
-        <div class="giveaway-item">
-          <ul>
+        <div class="giveaway-item"><img src="pirates-cove-gift-card.jpg" alt="$50 Pirates Cove Gift Card">
+          <h2 class="noto white">June 4 Giveaway:</h2>
+          <h5 class="noto white">$50 Pirates Cove Gift Card</h5>
+          <!--<ul>
             <li>June 4 Giveaway: $50 Pirates Cove gift card</li>
             <li>June 5 Giveaway: $50 Rocket Fizz gift card </li>
             <li>June 6 Giveaway: $50 AMC Movies gift card </li>
@@ -593,8 +596,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <li>June 11 Giveaway: $100 Outlets at Castle Rock gift card </li>
             <li>June 12 Giveaway: $100 Park Meadows gift card </li>
             <li>June 13 Giveaway: $150 Amazon gift card </li>
-          </ul>
+          </ul>--> 
         </div>
+      </div>
+      <div class="giveaway-text">
+        <div class="alt-text text">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-June 13 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be notified via email. No purchase necessary and registration is free.</div>
       </div>
     </div>
   </div>
