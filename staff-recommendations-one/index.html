@@ -59,6 +59,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<script src="../shared-assets/js/biblioList.js?6722"></script>
 <style>
 .using-the-library-active {
 	background-color: #f5f5f5;
@@ -110,6 +111,65 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
 	background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
 	background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+}
+.shelf-container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.shelf-container img {
+	margin: 15px 15px 7px 15px;
+	vertical-align: bottom;
+}
+.shelf > ul {
+	padding: 0;
+}
+#covers-outer > ul {
+	margin: 0;
+	padding: 0;
+}
+.shelf {
+	border-bottom: 20px solid transparent;
+	border-image: url("../shared-assets/images/shelf.jpg") 30 round;
+	border-top: 0 none;
+	padding-bottom: 0;
+	margin: 0 5px;
+}
+.shelf-shadow {
+	background: #fff url("../shared-assets/images/shelf-shadow.png") repeat-x;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 30px solid #fff;
+	border-right: 30px solid #fff;
+	padding: 0 15px;
+}
+
+@media (max-width: 1050px) {
+.cover-image {
+	max-width: 155px;
+}
+}
+
+@media (max-width: 992px) {
+.shelf-container img {
+	margin: 15px 5px 8px 5px;
+}
+}
+
+@media (max-width: 875px) {
+.shelf {
+	border-bottom: 0;
+	border-image: none;
+}
+.shelf-shadow {
+	background: none;
+}
+.shelf-container {
+	max-width: 575px;
+}
+.shelf-container img {
+	vertical-align: top;
+}
 }
 
 @media (max-width: 915px) {
@@ -308,7 +368,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row bg-gray-5 padding-top-40 padding-bottom-30">
+  <div class="row bg-gray-5 padding-top-40 padding-bottom-60">
     <div class="box-wrapper">
       <div class="box-item">
         <div class="white-bottom-row">
@@ -318,7 +378,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
         <div class="box-item-inner">
           <h3 class="text-center margin-top-10"><a href="../staff-recommendations/readers-advisory">Just for You</a></h3>
-          <div>Looking for a good read, but fresh out of ideas? We can help! Tell us what you're interested in — even what you're <i>not</i> interested in — and our Readers Advisory staff will provide personalized reading suggestions just for you.</div>
+          <div>Looking for a good read, but fresh out of ideas? We can help! Tell us what you're interested in&mdash;even what you're <i>not</i> interested in&mdash;and our Readers Advisory staff will provide personalized reading suggestions just for you.</div>
         </div>
       </div>
       <div class="box-item">
@@ -345,11 +405,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-15 border-top">
+  <div class="row padding-top-40 padding-bottom-15">
     <div class="container">
-      <div class="text-center">
-        <h1 class="">Featured Staff Picks</h1>
-        <div>We're excited about all books&mdash;we're librarians! But we're especially jazzed about these new and noteworthy titles&mdash;add one to your reading list today!</div>
+      <div class="text-center margin-lg-150">
+        <h1 class="no-margin">Featured Staff Picks</h1>
+        <h4 class="margin-top-5 margin-bottom-10">We're excited about all books&mdash;we're librarians! But we're especially jazzed about these new and noteworthy titles&mdash;add one to your reading list today!</h4>
+        <div class="margin-bottom-10">Looking for recommendations for kids? Check out <a href="../read-listen-watch/">Read, Listen, Watch</a>.</div>
         <a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">View All Staff Picks &raquo;</a> </div>
     </div>
   </div>
