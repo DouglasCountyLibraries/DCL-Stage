@@ -61,40 +61,50 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
 .location li {
-    line-height: 1.6em;
-    font-weight: 400;
+	line-height: 1.6em;
+	font-weight: 400;
 }
 .dropdown-menu.dropdown-menu-center {
-    padding: 15px 30px;
+	padding: 15px 30px;
+}
+.custom-spacing {
+	margin: 0 3px;
 }
 .flickity-page-dots .dot {
-    background-color: #fff;
+	background-color: #fff;
 }
 .flickity-page-dots {
-    bottom: -30px;
-    opacity: .5;
+	bottom: -30px;
+	opacity: .5;
 }
 .flickity-prev-next-button {
-    display: none;
+	display: none;
 }
 .carousel-cell {
-    border-right: 1px solid rgba(255,255,255,.6);
+	border-right: 1px solid rgba(255,255,255,.6);
 }
 .panel {
-    cursor: inherit;
+	cursor: inherit;
 }
 .award-wrapper {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .award-item {
-    flex-basis: 48%;
-    padding: 15px;
+	flex-basis: 48%;
+	padding: 15px;
+}
+.survey-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.survey-item {
+	flex-basis: 44%;
 }
 
 @media (max-width: 992px) {
-.award-wrapper {
-    flex-direction: column;
+.award-wrapper, .survey-wrapper {
+	flex-direction: column;
 }
 }
 </style>
@@ -271,24 +281,16 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row padding-bottom-40 border-top">
-    <div class="container text-center">
-      <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Volunteer</h1>
-      <div class="separator-container">
-        <div class="separator line-separator"><i class="fas fa-exchange-alt"></i></div>
-        <h4 class="roboto no-margin-bottom">When you volunteer at Douglas County Libraries, you become an invaluable part of our team, helping us provide resources for learning and leisure to improve the lives of the people in our communities. You also gain valuable skills, give back to your community, and meet people from diverse backgrounds in a pleasant environment. We value our volunteers’ contributions! Join us!</h4>
-      </div>
-      <h4 class="">For more information on current availability, visit <a href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24034" target="_blank">Volunteer Connect Douglas County</a> or:</h4>
-      <div class="dropdown text-center"> <a class="btn btn-lg btn-primary margin-top-5 text-uppercase" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose a Location <span class="caret"></span></a>
+    <div class="container text-center margin-lg-50">
+      <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Volunteer</h1>
+      <h4 class="roboto margin-top-5">When you volunteer at Douglas County Libraries, you become an invaluable part of our team, helping us provide resources for learning and leisure to improve the lives of the people in our communities.</h4>
+      <div class="padding-bottom-15 margin-lg-150">You also gain valuable skills, give back to your community, and meet people from diverse backgrounds in a pleasant environment. We value our volunteers’ contributions! Join us!</div>
+      <div class="dropdown text-center"> <a class="btn btn-lg btn-primary margin-top-5 text-uppercase" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Started <span class="caret"></span></a>
         <div class="dropdown-menu dropdown-menu-center">
           <div class="text-capitalize">
             <ul class="list-unstyled location">
-              <li><a target="blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24015">Castle Pines </a></li>
-              <li><a target="_blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24018">Castle Rock</a></li>
-              <li><a target="_blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24019">Highlands Ranch</a></li>
-              <li><a target="_blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24020">Lone Tree</a></li>
-              <li><a target="_blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24021">Louviers</a></li>
-              <li><a target="_blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24022">Parker</a></li>
-              <li><a target="_blank" href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24023">Roxborough</a></li>
+              <li class="margin-top-5 margin-bottom-10"><a target="blank" href="https://app.betterimpact.com/PublicEnterprise/74d8b81b-e9ef-40d3-9ff9-259825082a07">View Opportunities<span class="custom-spacing">/</span>Apply Now</a></li>
+              <li><a target="_blank" href="https://app.betterimpact.com/Login/LoginNoSearch/?agencyGuid=74d8b81b-e9ef-40d3-9ff9-259825082a07">Current Volunteer Login</a></li>
             </ul>
           </div>
         </div>
@@ -307,7 +309,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
-              <div class="panel-body">Help other adults learn and practice English and basic literacy, prepare for high school equivalency exams, or learn to use modern technology. Tutors personalize lessons to individual student needs. Some restrictions apply. </div>
+              <div class="panel-body">Help other adults learn and practice English and basic literacy, prepare for high school equivalency exams, or learn to use modern technology. Tutors personalize lessons to individual student needs. <a class="text-uppercase" href="https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=74d8b81b-e9ef-40d3-9ff9-259825082a07&gviGuid=27df146e-0723-49bd-ada3-1d4ca0888a9f&searchUrl=https%253a%252f%252fapp.betterimpact.com%252fPublicEnterprise%252fEnterpriseSearch%253fEnterpriseGuid%253d74d8b81b-e9ef-40d3-9ff9-259825082a07%2526SearchType%253dOrganization%2526SearchId%253d35471" target="_blank">Apply Now &raquo;</a> </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab">
+              <div class="panel-title">
+                <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAlt" aria-expanded="true" aria-controls="collapseAlt">Archives & Local History</div>
+              </div>
+            </div>
+            <div id="collapseAlt" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">Assist with scanning documents, updating records, recording and transcribing oral histories, and other processing tasks to help make archival resources available to the community. <a class="text-uppercase" href="https://app.betterimpact.com/PublicEnterprise/EnterpriseSearch?EnterpriseGuid=74d8b81b-e9ef-40d3-9ff9-259825082a07&SearchType=Organization&SearchId=35472" target="_blank">Apply Now &raquo;</a></div>
             </div>
           </div>
           <div class="panel panel-default">
@@ -373,7 +385,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
             <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel">
-              <div class="panel-body"><a href="../teens/">TLC offers teens an ongoing opportunity</a> to earn community service hours while planning library events for kids and teens, and helping shape library collections for young adults.</div>
+              <div class="panel-body"><a href="../teens/">TLC offers teens</a> an ongoing opportunity to earn community service hours while planning library events for kids and teens, and helping shape library collections for young adults.</div>
             </div>
           </div>
           <div class="panel panel-default">
@@ -383,7 +395,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
             <div id="collapseTwelve" class="panel-collapse collapse in" role="tabpanel">
-              <div class="panel-body"><a href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24061" target="_blank">Volunteer</a> for special events, birthday parties, library collection maintenance, administrative tasks and more.</div>
+              <div class="panel-body">Volunteer for special events, birthday parties, library collection maintenance, administrative tasks and more.</div>
             </div>
           </div>
         </div>
@@ -398,14 +410,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
             <div id="collapseTwenty" class="panel-collapse collapse in" role="tabpanel">
-              <div class="panel-body">Douglas County residents ages 16 and up can perform court-ordered restitution for minor offenses with us. Tasks usually include shelving and cleaning. Some restrictions apply. Visit <a href="https://volunteerconnectdc.civicore.com/index.php?section=volOpportunities&action=listing_resultsSavedSearch&fwID=24036" target="_blank">Volunteer Connect Douglas County</a> to get started.</div>
+              <div class="panel-body">Douglas County residents ages 16 and up can perform court-ordered restitution for minor offenses with us. Tasks usually include shelving and cleaning. Some restrictions apply.</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row bg-teal padding-top-60">
+  <div id="survey" class="row bg-teal padding-top-60">
     <div class="container-lg no-padding">
       <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "wrapAround": true, "autoPlay": 4000 }'>
         <div class="carousel-cell"><img src="images/one.jpg" alt="Volunteers"></div>
@@ -436,33 +448,42 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row text-center bg-teal padding-top-15 padding-bottom-60">
-    <div class="container">
-      <h1 class="roboto white text-center">Volunteer News</h1>
-      <div class="col-md-6 padding-bottom-15 white text-left-md margin-lg-30">Congratulations to DCL volunteer Nichole Walters, who was named the 2019 Colorado Association of Libraries' Outstanding Volunteer. Nichole's volunteer efforts have helped support our Homebound Delivery program, DCL Foundation, and literacy-based programs. </div>
-      <div class="col-md-6 white text-left-md margin-lg-30">Recently, DCL recognized 76 volunteers with the President's Volunteer Service Award, the nation's most prestigious service award. Seven of the 76 awards were gold-level service awards. Congratulations to all of our award winners! </div>
+  <div id="survey-comments" class="row bg-teal padding-top-15 padding-bottom-30">
+    <div class="container text-center">
+      <ul class="list-unstyled white margin-top-30">
+        <li class="margin-bottom-5"><i>"Volunteering at the library was one of the best things I did for myself."</i></li>
+        <li class="margin-bottom-5"><i>"I've loved volunteering at DCL! The library had such a wonderful impact on my childhood and it's been great to give back."</i></li>
+        <li class="margin-bottom-5"><i>"Staff are just so appreciative and they let me know how much this really helps them."</i></li>
+        <li class="margin-bottom-5"><i>"Everyone is so supportive and caring. It feels like a home away from home."</i></li>
+      </ul>
+    </div>
+  </div>
+  <div id="survey-results" class="row padding-top-15 padding-bottom-50">
+    <h2 class="roboto text-center">Results from our recent survey:</h2>
+    <div class="survey-wrapper container">
+      <div class="survey-item">
+        <ul class="no-margin">
+          <li> DCL volunteers highly recommend volunteering at DCL to others.</li>
+          <li>They feel welcome, valued, supported and appreciated.</li>
+          <li>The environment is fun, safe, stress-free and pleasant.</li>
+          <li>Volunteers give their time because they value the library, giving back to the community, helping others, and learning how the library functions.</li>
+          <li>Volunteers enjoy being recognized with Second Chapter Bookstore coupons, treats and goodies, and emails.</li>
+        </ul>
+      </div>
+      <div class="survey-item">
+        <ul class="no-margin">
+          <li>Volunteers want to stay in the know and make sure others are aware of our great services and programs. As a result, we will continue to ask your help to spread the word about all that we offer to our community!</li>
+          <li>Volunteers learn a variety of new skills at DCL, including: interacting with the community, teaching and tutoring, merchandising techniques, typing faster, how a library works, helping kids read, how to be a more effective reader, lesson planning for ESL students, people skills, how to be more social, being flexible, and identifying interesting books to read. </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="row bg-gray-5">
     <div class="container">
       <div class="text-center padding-top-15 padding-bottom-40">
-        <h2 class="roboto">Questions or comments? We want to hear from you.</h2>
+        <h4 class="roboto">Questions or comments? We want to hear from you.</h4>
         <div class="text-center padding-top-15"> <!-- Button trigger modal --> 
           <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Contact The Volunteer Team</a> </div>
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="text-center modal-title">Contact the Volunteer Team</h3>
-              </div>
-              <div class="modal-body">
-                <iframe class="embed-responsive-item" src="https://form.jotform.com/72406776645162" frameborder="0" style="width: 100%;height:400px;border:none;" scrolling="no"> </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -473,8 +494,22 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="text-left-md margin-top-10">Douglas County Libraries is a Certified Organization for the national and prestigious Presidential Volunteer Service Award.</div>
       </div>
       <div class="award-item">
-        <div><img src="service-enterprise-certified.jpg" alt="Service Enterprise Certified"></div>
+        <div><img src="sec.jpg" alt="Service Enterprise Certified"></div>
         <div class="text-left-md margin-top-10">DCL is proud to be Service Enterprise Certified, a designation that signifies our commitment to best practices for engaging volunteers. The national Service Enterprise Initiative, led by Points of Light, helps nonprofit organizations leverage volunteers and their skills to address community needs.</div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center modal-title">Contact the Volunteer Team</h3>
+        </div>
+        <div class="modal-body">
+          <iframe class="embed-responsive-item" src="https://form.jotform.com/72406776645162" frameborder="0" style="width: 100%;height:400px;border:none;" scrolling="no"> </iframe>
+        </div>
       </div>
     </div>
   </div>
