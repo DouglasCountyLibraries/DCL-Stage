@@ -102,11 +102,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	padding: 15px;
 }
 .survey-wrapper {
-	display: flex;
-	justify-content: space-between;
-}
-.survey-item {
-	flex-basis: 44%;
+	max-width: 750px;
 }
 .databases {
 	margin: 0 auto;
@@ -179,7 +175,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 
 @media (max-width: 992px) {
-.award-wrapper, .survey-wrapper {
+.award-wrapper {
 	flex-direction: column;
 }
 }
@@ -467,27 +463,21 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
     <h4 class="text-center margin-top-30">Results from our recent survey:</h4>
     <div class="survey-wrapper container">
-      <div class="survey-item">
-        <ul class="fa-ul no-margin-bottom">
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>DCL volunteers highly recommend volunteering at DCL to others.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>They feel welcome, valued, supported and appreciated.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>The environment is fun, safe, stress-free and pleasant.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers give their time because they value the library, giving back to the community, helping others, and learning how the library functions.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers enjoy being recognized with Second Chapter Bookstore coupons, treats and goodies, and emails.</li>
-        </ul>
-      </div>
-      <div class="survey-item">
-        <ul class="fa-ul no-margin-bottom">
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers want to stay in the know and make sure others are aware of our great services and programs. As a result, we will continue to ask your help to spread the word about all that we offer to our community!</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers learn a variety of new skills at DCL, including: interacting with the community, teaching and tutoring, merchandising techniques, typing faster, how a library works, helping kids read, how to be a more effective reader, lesson planning for ESL students, people skills, how to be more social, being flexible, and identifying interesting books to read. </li>
-        </ul>
-      </div>
+      <ul class="fa-ul no-margin-bottom">
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>DCL volunteers highly recommend volunteering at DCL to others.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>They feel welcome, valued, supported and appreciated.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>The environment is fun, safe, stress-free and pleasant.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers give their time because they value the library, giving back to the community, helping others, and learning how the library functions.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers enjoy being recognized with Second Chapter Bookstore coupons, treats and goodies, and emails.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers want to stay in the know and make sure others are aware of our great services and programs. As a result, we will continue to ask your help to spread the word about all that we offer to our community!</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers learn a variety of new skills at DCL, including: interacting with the community, teaching and tutoring, merchandising techniques, typing faster, how a library works, helping kids read, how to be a more effective reader, lesson planning for ESL students, people skills, how to be more social, being flexible, and identifying interesting books to read. </li>
+      </ul>
     </div>
   </div>
   <div class="row bg-gray-5">
     <div class="container">
-      <div class="text-center padding-top-15 padding-bottom-50">
-        <div class="large-text">Questions or comments? We want to hear from you!</div>
+      <div class="text-center padding-top-30 padding-bottom-50">
+        <h4 class="no-margin">Questions or comments? We want to hear from you!</h4>
         <div class="text-center padding-top-15"> <!-- Button trigger modal --> 
           <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Contact Us</a> </div>
       </div>
