@@ -421,18 +421,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center"><i>*Some restrictions apply.</i></div>
     </div>
   </div>
-
   <div id="survey-results" class="row bg-gray-5">
-	  <div class="text-center">
-	 <h1>Volunteer Feedback</h1>
-              <ul class="list-unstyled">
-        <li class="margin-bottom-5"><i>"Volunteering at the library was one of the best things I did for myself."</i></li>
-        <li class="margin-bottom-5"><i>"I've loved volunteering at DCL! The library had such a wonderful impact on my childhood and it's been great to give back."</i></li>
-        <li class="margin-bottom-5"><i>"Staff are just so appreciative and they let me know how much this really helps them."</i></li>
-        <li class="margin-bottom-5"><i>"Everyone is so supportive and caring. It feels like a home away from home."</i></li>
-      </ul>
-	  
-	  <h4>Results from our recent survey:</h4></div>
+    <div class="text-center">
+      <h1>Volunteer Feedback</h1>
+      <div class="container">
+        <div class="random-comment large-text"><i>"Volunteering at the library was one of the best things I did for myself."</i></div>
+        <div class="random-comment large-text"><i>"I've loved volunteering at DCL! The library had such a wonderful impact on my childhood and it's been great to give back."</i></div>
+        <div class="random-comment large-text"><i>"Staff are just so appreciative and they let me know how much this really helps them."</i></div>
+        <div class="random-comment large-text"><i>"Everyone is so supportive and caring. It feels like a home away from home."</i></div>
+      </div>
+    </div>
+    <h4 class="text-center">Results from our recent survey:</h4>
     <div class="survey-wrapper container">
       <div class="survey-item">
         <ul class="no-margin">
@@ -556,6 +555,12 @@ for (var i = 0; i < cards.length; i++) {
   cards.eq(target1).before(cards.eq(target2));
 }
  </script> 
+
+<!--randomize div--> 
+<script>
+var random = Math.floor(Math.random() * $('.random-comment').length);
+$('.random-comment').hide().eq(random).show();
+</script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
