@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -63,31 +64,34 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	line-height: 1.6em;
 	font-weight: 400;
 }
-	.fas.fa-check {
-		color: #d36a50;
-	}
-	.fa-ul > li {
-	position: inherit;
+.fa-solid.fa-check.fa-lg {
+	color: #d36a50;
 	padding: 3px 0;
 }
-.dropdown-menu.dropdown-menu-center {
-	padding: 15px 30px;
+.fa-ul > li {
+	padding: 5px 0;
 }
-.custom-spacing {
-	margin: 0 3px;
-}
-.flickity-page-dots .dot {
-	background-color: #fff;
-}
-.flickity-page-dots {
-	bottom: -30px;
-	opacity: .5;
-}
-.flickity-prev-next-button {
-	display: none;
+.custom-container {
+	max-width: 1610px;
+	margin: 0 auto;
 }
 .carousel-cell {
-	border-right: 1px solid rgba(255,255,255,.6);
+	margin-right: 10px;
+}
+.flickity-prev-next-button {
+	width: 50px;
+	height: 50px;
+	background: transparent;
+}
+.flickity-prev-next-button:hover {
+	background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+	fill: #efeeed;
+}
+.flickity-prev-next-button.no-svg {
+	color: #efeeed;
 }
 .award-wrapper {
 	display: flex;
@@ -189,7 +193,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -360,9 +364,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center"> <a href="https://app.betterimpact.com/PublicEnterprise/74d8b81b-e9ef-40d3-9ff9-259825082a07" target="_blank" class="btn btn-lg btn-primary margin-top-5">Apply Now / Log In</a> </div>
     </div>
   </div>
-  <div id="survey" class="row bg-teal padding-top-60 padding-bottom-60">
-    <div class="container-lg no-padding">
-      <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "wrapAround": true, "autoPlay": 4000 }'>
+  <div class="row bg-teal padding-top-60 padding-bottom-60">
+    <div class="custom-container no-padding">
+      <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "pageDots": false, "wrapAround": true, "autoPlay": 4000 }'>
         <div class="carousel-cell"><img src="images/one.jpg" alt=""></div>
         <div class="carousel-cell"><img src="images/two.jpg" alt=""></div>
         <div class="carousel-cell"><img src="images/three.jpg" alt="s"></div>
@@ -392,10 +396,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="database-wrapper">
+    <div class="padding-top-40">
       <div class="text-center">
-        <h1 class="no-margin-bottom">Volunteer Opportunities</h1>
-        <h4>Apply now for opportunities related to these areas of interest:</h4>
+        <h2 class="no-margin-top margin-bottom-5">Volunteer Opportunities</h2>
+        <h4 class="no-margin">Apply now for opportunities related to these areas of interest:</h4>
       </div>
       <div class="databases">
         <div class="database-item">
@@ -410,52 +414,50 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="database-wrapper">
-      <div class="text-center">
-        <h4>Find additional areas of interest by location or availability:</h4>
-      </div>
-      <div class="databases">
-        <div class="database-item">
-          <h4>Court-Ordered Volunteers</h4>
-          <div>Douglas County residents ages 16 and up can perform court-ordered restitution for minor offenses with us. Tasks usually include shelving and cleaning.*</div>
-        </div>
-        <div class="database-item">
-          <h4>General/Administrative</h4>
-          <div>Shelve or repair materials, or help with clerical needs, Storytime/events, or stocking our used book stores.</div>
-        </div>
-        <div class="database-item">
-          <h4>Homebound Delivery</h4>
-          <div>Deliver library materials to the homes of qualified card holders who are unable to come to the library due to illness or disability.</div>
-        </div>
-        <div class="database-item">
-          <h4>Reading Buddies</h4>
-          <div>A unique program that matches trained teen volunteers to struggling readers, grades 1-3. Buddies meet weekly for two months to read and enjoy literacy-based games. </div>
-        </div>
-        <div class="database-item">
-          <h4>Reading in Child Care Centers</h4>
-          <div>Read aloud in child care centers, promoting early literacy and bringing the fun of Storytime to children who might not be able to come to the library.*</div>
-        </div>
-        <div class="database-item">
-          <h4>Special Events</h4>
-          <div>Help with event setup and tear-down, plus act as a greeter/usher or man an activity station.</div>
-        </div>
-        <div class="database-item">
-          <h4>Teen Library Council</h4>
-          <div>TLC offers teens an ongoing opportunity to earn community service hours while planning library events for kids and teens, and helping shape library collections for young adults.</div>
-        </div>
-      </div>
-      <div class="text-center"><i>*Some restrictions apply.</i></div>
+    <div class="text-center">
+      <h4 class="no-margin-bottom">Find additional areas of interest by location or availability:</h4>
     </div>
-    <div class="text-center padding-top-20"> <a href="https://app.betterimpact.com/PublicEnterprise/74d8b81b-e9ef-40d3-9ff9-259825082a07" target="_blank" class="btn btn-lg btn-primary">Apply Now / Log In</a> </div>
+    <div class="databases">
+      <div class="database-item">
+        <h4>Court-Ordered Volunteers</h4>
+        <div>Douglas County residents ages 16 and up can perform court-ordered restitution for minor offenses with us. Tasks usually include shelving and cleaning.*</div>
+      </div>
+      <div class="database-item">
+        <h4>General/Administrative</h4>
+        <div>Shelve or repair materials, or help with clerical needs, Storytime/events, or stocking our used book stores.</div>
+      </div>
+      <div class="database-item">
+        <h4>Homebound Delivery</h4>
+        <div>Deliver library materials to the homes of qualified card holders who are unable to come to the library due to illness or disability.</div>
+      </div>
+      <div class="database-item">
+        <h4>Reading Buddies</h4>
+        <div>A unique program that matches trained teen volunteers to struggling readers, grades 1-3. Buddies meet weekly for two months to read and enjoy literacy-based games. </div>
+      </div>
+      <div class="database-item">
+        <h4>Reading in Child Care Centers</h4>
+        <div>Read aloud in child care centers, promoting early literacy and bringing the fun of Storytime to children who might not be able to come to the library.*</div>
+      </div>
+      <div class="database-item">
+        <h4>Special Events</h4>
+        <div>Help with event setup and tear-down, plus act as a greeter/usher or man an activity station.</div>
+      </div>
+      <div class="database-item">
+        <h4>Teen Library Council</h4>
+        <div>TLC offers teens an ongoing opportunity to earn community service hours while planning library events for kids and teens, and helping shape library collections for young adults.</div>
+      </div>
+    </div>
+    <div class="text-center"><i>*Some restrictions apply.</i></div>
+    <div class="text-center padding-top-20 padding-bottom-50"> <a href="https://app.betterimpact.com/PublicEnterprise/74d8b81b-e9ef-40d3-9ff9-259825082a07" target="_blank" class="btn btn-lg btn-primary">Apply Now / Log In</a> </div>
   </div>
   <div class="row white-top-row">
     <div class="white-circle-wrapper">
-      <div class="gray-circle"><i class="fas fa-comment-smile"></i></div>
+      <div class="gray-circle"><i class="fa-regular fa-comment-smile"></i></div>
     </div>
   </div>
   <div id="survey-results" class="row bg-gray-5">
     <div class="text-center">
-      <h1>Volunteer Feedback</h1>
+      <h2 class="margin-top-10 margin-bottom-5">Volunteer Feedback</h2>
       <div class="container">
         <div class="random-comment large-text"><i>"Volunteering at the library was one of the best things I did for myself."</i></div>
         <div class="random-comment large-text"><i>"I've loved volunteering at DCL! The library had such a wonderful impact on my childhood and it's been great to give back."</i></div>
@@ -463,29 +465,29 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="random-comment large-text"><i>"Everyone is so supportive and caring. It feels like a home away from home."</i></div>
       </div>
     </div>
-    <h3 class="text-center">Results from our recent survey:</h3>
+    <h4 class="text-center margin-top-30">Results from our recent survey:</h4>
     <div class="survey-wrapper container">
       <div class="survey-item">
-        <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>DCL volunteers highly recommend volunteering at DCL to others.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>They feel welcome, valued, supported and appreciated.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>The environment is fun, safe, stress-free and pleasant.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Volunteers give their time because they value the library, giving back to the community, helping others, and learning how the library functions.</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Volunteers enjoy being recognized with Second Chapter Bookstore coupons, treats and goodies, and emails.</li>
+        <ul class="fa-ul no-margin-bottom">
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>DCL volunteers highly recommend volunteering at DCL to others.</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>They feel welcome, valued, supported and appreciated.</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>The environment is fun, safe, stress-free and pleasant.</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers give their time because they value the library, giving back to the community, helping others, and learning how the library functions.</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers enjoy being recognized with Second Chapter Bookstore coupons, treats and goodies, and emails.</li>
         </ul>
       </div>
       <div class="survey-item">
-        <ul class="fa-ul no-margin">
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Volunteers want to stay in the know and make sure others are aware of our great services and programs. As a result, we will continue to ask your help to spread the word about all that we offer to our community!</li>
-          <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Volunteers learn a variety of new skills at DCL, including: interacting with the community, teaching and tutoring, merchandising techniques, typing faster, how a library works, helping kids read, how to be a more effective reader, lesson planning for ESL students, people skills, how to be more social, being flexible, and identifying interesting books to read. </li>
+        <ul class="fa-ul no-margin-bottom">
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers want to stay in the know and make sure others are aware of our great services and programs. As a result, we will continue to ask your help to spread the word about all that we offer to our community!</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check fa-lg"></i></span>Volunteers learn a variety of new skills at DCL, including: interacting with the community, teaching and tutoring, merchandising techniques, typing faster, how a library works, helping kids read, how to be a more effective reader, lesson planning for ESL students, people skills, how to be more social, being flexible, and identifying interesting books to read. </li>
         </ul>
       </div>
     </div>
   </div>
   <div class="row bg-gray-5">
     <div class="container">
-      <div class="text-center padding-top-15 padding-bottom-40">
-        <h4>Questions or comments? We want to hear from you!</h4>
+      <div class="text-center padding-top-15 padding-bottom-50">
+        <div class="large-text">Questions or comments? We want to hear from you!</div>
         <div class="text-center padding-top-15"> <!-- Button trigger modal --> 
           <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Contact Us</a> </div>
       </div>
@@ -493,13 +495,13 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row white-bottom-row">
     <div class="white-circle-wrapper">
-      <div class="gray-circle"><i class="fas fa-certificate"></i></div>
+      <div class="gray-circle"><i class="fa-solid fa-file-certificate"></i></div>
     </div>
   </div>
-  <div id="certifications" class="row">
+  <div id="certifications" class="row padding-bottom-80">
     <div class="container text-center">
-      <h1>Certifications</h1>
-      <div class="award-wrapper padding-15">
+      <h2 class="margin-top-10 margin-bottom-5">Certifications</h2>
+      <div class="award-wrapper">
         <div class="award-item">
           <div><img src="pvsa-logo.jpg" alt="The President's Volunteer Service Service Award"></div>
           <div class="text-left-md margin-top-10">Douglas County Libraries is a Certified Organization for the national and prestigious Presidential Volunteer Service Award.</div>
@@ -640,4 +642,5 @@ $('.random-comment').hide().eq(random).show();
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
