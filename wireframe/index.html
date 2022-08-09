@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -105,6 +106,12 @@ Push Notifications End - Removed for Now -->
 	margin: -84px auto 0 auto;
 	text-align: center;
 	width: 100px;
+}
+.items {
+	text-align: center;
+	padding-bottom: 100px;
+	max-width: 500px;
+	margin: 0 auto;
 }
 .item-wrapper {
 	display: flex;
@@ -166,7 +173,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -330,6 +337,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row padding-top-30 padding-bottom-20">
+    <div class="items">
+      <div><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969"><img src="nontrad.gif" alt="Top 15 Items"></a></div>
+      <h4 class="text-uppercase font-weight-400"><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969">Top 15 items</a> you didn't know you could borrow from your local library.</h4><div>Pro Tip: DCL has <a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">even more items</a>!</div>
+    </div>
     <div class="author-wrapper">
       <div class="author-item one"><a href="https://dcl.bibliocommons.com/v2/record/S981C12238712"><img src="gambit.jpg" alt="The Queen's Gambit"></a></div>
       <div class="author-item white two">
@@ -446,4 +457,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
