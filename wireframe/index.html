@@ -81,7 +81,7 @@ Push Notifications End - Removed for Now -->
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <style>
 .wedding-container {
-	background: url(wedding.jpg) bottom center no-repeat;
+	background: url(wedding-background.jpg) bottom center no-repeat;
 	height: 787px;
 }
 .wedding-wrapper {
@@ -92,16 +92,25 @@ h1.wedding {
 	font-size: 110px;
 	color: #fff;
 	text-align: center;
-	padding-top: 45px;
+	padding-top: 10px;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
 }
-h4.wedding, h4.wedding a {
-	font-family: 'Kaushan Script', cursive;
-	font-size: 46px;
+h4.wedding {
+	font-size: 36px;
 	color: #fff;
 	text-align: center;
 	padding-top: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.wedding, .wedding a {
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	padding-top: 0;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+	font-weight: 400;
 }
 custom-list > li {
 	padding-bottom: 15px;
@@ -392,8 +401,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
     <div id="wedding" class="wedding-wrapper">
       <div class="wedding-container">
-        <h1 class="wedding">Say I Do at DCL</h1>
-        <h4 class="wedding"><a href="https://www.dcl.org/say-i-do/">Tell Me More</a>!</h4>
+        <h1 class="wedding">Say Yes to DCL!</h1>
+        <h4 class="wedding">Make a date or set the date, we’ll save you a seat!</h4>
+        <div class="wedding"><i>Celebrate your love story here. Check out our <a class="text-underline" href="https://www.dcl.org/say-i-do/">wedding and shower packages</a></i>.</div>
       </div>
     </div>
   </div>
