@@ -76,9 +76,34 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     }]);
   </script> 
 Push Notifications End - Removed for Now -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <style>
-.custom-list > li {
+.wedding-container {
+	background: url(wedding.jpg) bottom center no-repeat;
+	height: 787px;
+}
+.wedding-wrapper {
+	padding: 30px 0 120px;
+}
+h1.wedding {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 110px;
+	color: #fff;
+	text-align: center;
+	padding-top: 45px;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+h4.wedding, h4.wedding a {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 46px;
+	color: #fff;
+	text-align: center;
+	padding-top: 0;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+custom-list > li {
 	padding-bottom: 15px;
 }
 .fa-ul.custom-list {
@@ -163,6 +188,18 @@ Push Notifications End - Removed for Now -->
 	text-align: left;
 }
 }
+	@media (max-width: 760px) {
+		h1.wedding {
+
+	font-size: 66px;
+
+}
+		h4.wedding, h4.wedding a {
+
+	font-size: 32px;
+
+}
+	}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -336,10 +373,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row padding-top-30 padding-bottom-20">
+  <div class="row padding-top-30">
     <div class="items">
       <div><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969"><img src="nontrad.gif" alt="Top 15 Items"></a></div>
-      <h4 class="text-uppercase font-weight-400"><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969">Top 15 items</a> you didn't know you could borrow from your local library.</h4><div>Pro Tip: DCL has <a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">even more items</a>!</div>
+      <h4 class="text-uppercase font-weight-400"><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969">Top 15 items</a> you didn't know you could borrow from your local library.</h4>
+      <div>Pro Tip: DCL has <a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">even more items</a>!</div>
     </div>
     <div class="author-wrapper">
       <div class="author-item one"><a href="https://dcl.bibliocommons.com/v2/record/S981C12238712"><img src="gambit.jpg" alt="The Queen's Gambit"></a></div>
@@ -353,6 +391,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <li><span class="fa-li"><i class="fas fa-chess-queen"></i></span>Get <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank" class="white text-underline">live chess tutoring</a> with HelpNow. Log in and choose “Featured Service”.</li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="wedding-wrapper">
+      <div class="wedding-container">
+        <h1 class="wedding">Say I Do at DCL</h1>
+        <h4 class="wedding"><a href="https://www.dcl.org/say-i-do/">Tell Me More</a>!</h4>
       </div>
     </div>
   </div>
