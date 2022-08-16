@@ -78,6 +78,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 Push Notifications End - Removed for Now -->
 
 <style>
+.row.wedding {
+	background: #fff url(brew-background.jpg);
+}
 .wedding-container {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	background: url(wedding-couple.jpg) right top/cover;
@@ -116,6 +119,10 @@ h4.wedding {
 	font-weight: 500;
 	margin: 0;
 }
+.details {
+	border-left: 6px solid #ffcdd6;
+	padding-left: 20px;
+}
 .wedding, .wedding a {
 	font-size: 24px;
 	color: #fff;
@@ -127,7 +134,7 @@ h4.wedding {
 	padding: 10px;
 }
 .wed-item img {
-	border: 3px solid #ffcdd6;
+	border: 6px solid #ffcdd6;
 	border-radius: 3px;
 }
 .wed-item-wrapper {
@@ -136,6 +143,37 @@ h4.wedding {
 	margin: 0 auto;
 	margin-top: -175px;
 }
+.row.brew-tour {
+	background: #fff url(brew-background.jpg);
+	padding: 120px 15px;
+}
+.brew-tour-wrapper {
+	background: transparent url(brew-tour.jpg) right center no-repeat;
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.brew-tour-item.one {
+	background: #fff;
+	padding: 60px;
+	margin: 80px 0 90px;
+	max-width: 480px;
+	border-radius: 3px;
+}
+	.brew-tour-item.one > h2 {
+		font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+		font-weight: 400;
+		color: #000;
+		margin: 0;
+	}
+.brew-tour-item.one > h5 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	padding-top: 45px;
+}
+	}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -313,16 +351,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="wedding-container">
       <div class="wedding-wrapper">
         <h1 class="wedding"><a class="white" href="https://www.dcl.org/say-i-do/">Say Yes to DCL</a>!</h1>
-        <h4 class="wedding">Make a date or set the date, we’ll save you a seat!</h4>
-        <div class="wedding"><i>Celebrate your love story here. Check out our <a class="text-underline" href="https://www.dcl.org/say-i-do/">wedding and shower packages</a></i>.</div>
+        <div class="details">
+          <h4 class="wedding">Make a date or set the date, we’ll save you a seat!</h4>
+          <div class="wedding"><i>Celebrate your love story here. Check out our <a class="text-underline" href="https://www.dcl.org/say-i-do/">wedding and shower packages</a></i>.</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row wedding">
     <div class="wed-item-wrapper">
       <div class="wed-item"><img class="img-responsive" src="one.jpg" alt=""></div>
       <div class="wed-item"><img class="img-responsive" src="two.jpg" alt=""></div>
       <div class="wed-item"><img class="img-responsive" src="three.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="row brew-tour">
+    <div class="brew-tour-wrapper"><div class="brew-tour-item one"><h2>Enjoy the <a href="#">Brew Tour</a> here, there, everywhere!</h2><h5>And <a href="#">find your perfect match</a>.</h5></div>
+      
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
