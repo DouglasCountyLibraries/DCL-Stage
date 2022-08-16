@@ -134,8 +134,8 @@ h4.wedding {
 	padding: 10px;
 }
 .wed-item img {
-	border: 6px solid #fae3df;
-	border-radius: 3px;
+	border: 6px solid #f7eef0;
+	border-radius: 2px;
 }
 .wed-item-wrapper {
 	display: flex;
@@ -145,7 +145,7 @@ h4.wedding {
 }
 .row.brew-tour {
 	background: #fff url(brew-background.jpg);
-	padding: 120px 15px;
+	padding: 140px 15px 155px;
 }
 .brew-tour-wrapper {
 	background: transparent url(brew-tour.jpg) right bottom no-repeat;
@@ -159,6 +159,7 @@ h4.wedding {
 	margin: 65px 0 125px;
 	max-width: 480px;
 	border-radius: 3px;
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,.05);
 }
 .brew-tour-item.one > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -173,6 +174,48 @@ h4.wedding {
 	margin: 0;
 	padding-top: 45px;
 }
+.row.longmire {
+	background: #ebe6e9 url(longmire-background.jpg) left top repeat-x;
+	padding-bottom: 100px;
+}
+.longmire-wrapper {
+	display: flex;
+	max-width: 594px;
+	margin: 0 auto;
+	background: #222;
+	flex-direction: column;
+	border-radius: 3px;
+}
+.longmire-details {
+	padding: 30px 30px 35px;
+	background: #fff;
+	border-top: 8px solid #ebe6e9;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.longmire-wrapper > h2 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	margin: 0;
+	font-size: 60px;
+	text-align: center;
+	border-bottom: 6px solid #fff;
+	padding: 20px 15px 25px;
+}
+.longmire-details > h4 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #333;
+	margin: 0;
+}
+.longmire-details > h5 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -370,6 +413,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="brew-tour-item one">
         <h2>Enjoy the <a href="https://www.dcl.org/brew-tour/">Brew Tour</a> here, there, everywhere!</h2>
         <h5>And <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2121333879">find your perfect match</a>.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="row longmire">
+    <div class="longmire-wrapper">
+      <h2>Date Night</h2>
+      <div> <img class="img-responsive" src="longmire-series.gif" alt="Longmire Series"> </div>
+      <div class="longmire-details">
+        <h5>Meet bestselling author Craig Johnson at Highlands Ranch.</h5>
+        <h4>Tickets <a href="https://www.eventbrite.com/e/dcl-presents-an-evening-with-nyt-bestselling-author-craig-johnson-tickets-394446258377?aff=featuredevents" target="_blank">on sale now</a>!</h4>
+        <h5><a href="https://dcl.bibliocommons.com/v2/search?query=Walt%20Longmire%20Mystery&searchType=series">Best of Longmire</a></h5>
       </div>
     </div>
   </div>
