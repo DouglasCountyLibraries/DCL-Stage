@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -75,135 +76,65 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     }]);
   </script> 
 Push Notifications End - Removed for Now -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
 <style>
 .wedding-container {
-	background: url(wedding-background.jpg) bottom center no-repeat;
-	height: 787px;
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	background: url(wedding-couple.jpg) right top/cover;
+	height: 780px;
+	max-width: 2800px;
+	margin: 0 auto;
 }
 .wedding-wrapper {
-	padding: 60px 0 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	height: 700px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-h1.wedding {
-	font-family: 'Kaushan Script', cursive;
-	font-size: 110px;
+h1.wedding, h1.wedding a {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 700;
 	color: #fff;
-	text-align: center;
-	padding-top: 10px;
+	margin: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+h1.wedding:hover, h1.wedding a:hover {
+	text-decoration: none;
 }
 h4.wedding {
-	font-size: 36px;
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-size: 32px;
 	color: #fff;
-	text-align: center;
 	padding-top: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	font-weight: 400;
-	margin-bottom: 0;
+	font-weight: 500;
+	margin: 0;
 }
 .wedding, .wedding a {
-	font-size: 22px;
+	font-size: 24px;
 	color: #fff;
-	text-align: center;
 	padding-top: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+	text-shadow: 0 4px 4px rgb(0, 0, 0);
 	font-weight: 400;
 }
-custom-list > li {
-	padding-bottom: 15px;
+.wed-item {
+	padding: 10px;
 }
-.fa-ul.custom-list {
-	margin-left: 25px;
-}
-.fas.fa-chess-queen {
-	color: #ffceb0;
-}
-.light-text {
-	color: #666;
-}
-.align-bottom {
-	margin-top: auto;
-	text-align: center;
-}
-.icon-circle-gray {
-	border: 6px solid #f5f5f5;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #4f878c;
-	background-color: #fff;
-	font-size: 42px;
-	height: 100px;
-	line-height: 90px;
-	margin: -84px auto 0 auto;
-	text-align: center;
-	width: 100px;
-}
-.items {
-	text-align: center;
-	padding-bottom: 100px;
-	max-width: 500px;
-	margin: 0 auto;
-}
-.item-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0 auto;
-}
-.item {
-	display: flex;
-	flex-direction: column;
-	margin: 45px 20px 20px 20px;
-	width: 450px;
-	background-color: #fff;
-	padding: 0 30px 35px;
+.wed-item img {
+	border: 3px solid #ffcdd6;
 	border-radius: 3px;
 }
-.author-wrapper {
+.wed-item-wrapper {
 	display: flex;
-	max-width: 1000px;
-	background: #37272a;
-	margin: 0 auto 70px;
-	align-items: center;
-	justify-content: center;
-}
-.author-item.one {
-	border-right: 3px solid #fff;
-}
-.author-item.one img {
-	height: 550px;
-}
-.author-item.two {
-	flex: 1;
-	padding: 30px 30px 35px;
-}
-
-@media (max-width: 900px) {
-.author-wrapper {
-	flex-direction: column;
-	margin: 0 auto 50px;
-}
-.author-item.one {
-	border-right: 0;
-}
-.author-item.two {
-	text-align: center;
-	padding: 20px 0;
-}
-.custom-list > li {
-	text-align: left;
-}
-}
-
-@media (max-width: 760px) {
-h1.wedding {
-	font-size: 66px;
-}
-h4.wedding, h4.wedding a {
-	font-size: 28px;
-}
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: -175px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -215,7 +146,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -378,32 +309,20 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row padding-top-30">
-    <div class="items">
-      <div><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969"><img src="nontrad.gif" alt="Top 15 Items"></a></div>
-      <h4 class="text-uppercase font-weight-400"><a href="https://dcl.bibliocommons.com/list/share/733651617/1970978969">Top 15 items</a> you didn't know you could borrow from your local library.</h4>
-      <div>Pro Tip: DCL has <a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">even more items</a>!</div>
-    </div>
-    <div id="chess" class="author-wrapper">
-      <div class="author-item one"><a href="https://dcl.bibliocommons.com/v2/record/S981C12238712"><img src="gambit.jpg" alt="The Queen's Gambit"></a></div>
-      <div class="author-item white two">
-        <h2 class="white no-margin-top">Interested in Chess?</h2>
-        <h4 class="white">We've got you covered!</h4>
-        <div>
-          <ul class="fa-ul custom-list">
-            <li><span class="fa-li"><i class="fas fa-chess-queen"></i></span>Checkout the original “The Queen’s Gambit” <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/record/S981C12238712">audiobook or e-book</a>.</li>
-            <li><span class="fa-li"><i class="fas fa-chess-queen"></i></span><a class="white text-underline" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=chess&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180">Join a pick-up game</a> at your local DCL library branch. All ages welcome!</li>
-            <li><span class="fa-li"><i class="fas fa-chess-queen"></i></span>Get <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=brainfuse" target="_blank" class="white text-underline">live chess tutoring</a> with HelpNow. Log in and choose “Featured Service”.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="wedding" class="wedding-wrapper">
-      <div class="wedding-container">
-        <h1 class="wedding">Say Yes to DCL!</h1>
+  <div class="row">
+    <div class="wedding-container">
+      <div class="wedding-wrapper">
+        <h1 class="wedding"><a class="white" href="https://www.dcl.org/say-i-do/">Say Yes to DCL</a>!</h1>
         <h4 class="wedding">Make a date or set the date, we’ll save you a seat!</h4>
         <div class="wedding"><i>Celebrate your love story here. Check out our <a class="text-underline" href="https://www.dcl.org/say-i-do/">wedding and shower packages</a></i>.</div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="wed-item-wrapper">
+      <div class="wed-item"><img class="img-responsive" src="one.jpg" alt=""></div>
+      <div class="wed-item"><img class="img-responsive" src="two.jpg" alt=""></div>
+      <div class="wed-item"><img class="img-responsive" src="three.jpg" alt=""></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -507,4 +426,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
