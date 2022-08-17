@@ -161,7 +161,6 @@ h4.wedding {
 	margin: 65px 0 125px;
 	max-width: 480px;
 	border-radius: 3px;
-	box-shadow: 0px 0px 40px 0px rgba(0,0,0,.05);
 }
 .brew-tour-item.one > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -177,34 +176,28 @@ h4.wedding {
 	padding-top: 45px;
 }
 .row.longmire {
-	background: #ebe6e9 url(longmire-background.jpg) left top repeat-x;
-	padding-bottom: 100px;
+	background: #ebe6e9 url(longmire-bkg.jpg) left top repeat-x;
+	padding-bottom: 150px;
 }
 .longmire-wrapper {
 	display: flex;
-	max-width: 594px;
-	margin: 0 auto;
-	background: #66010f;
-	flex-direction: column;
-	border-radius: 3px;
+	justify-content: center;
 }
 .longmire-details {
-	padding: 30px 30px 35px;
+	padding: 60px;
 	background: #fff;
-	border-top: 8px solid #ebe6e9;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.longmire-wrapper > h2 {
+.longmire-details > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #fff;
+	color: #66010f;
 	margin: 0;
 	font-size: 60px;
-	text-align: center;
-	border-bottom: 6px solid #fff;
-	padding: 20px 15px 25px;
 }
 .longmire-details > h4 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -220,7 +213,7 @@ h4.wedding {
 	margin: 0;
 }
 .longmire-details > h5:last-of-type {
-	margin-top: 15px;
+	margin-top: 45px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -423,9 +416,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row longmire">
     <div class="longmire-wrapper">
-      <h2>Date Night</h2>
-      <div> <img class="img-responsive" src="longmire-series.gif" alt="Longmire Series"> </div>
+      <div> <img class="img-responsive" src="longmire.gif" alt="Longmire Series"> </div>
       <div class="longmire-details">
+        <h2>Date Night</h2>
         <h5>Meet bestselling author Craig Johnson at Highlands Ranch.</h5>
         <h4>Tickets <a href="https://www.eventbrite.com/e/dcl-presents-an-evening-with-nyt-bestselling-author-craig-johnson-tickets-394446258377?aff=featuredevents" target="_blank">on sale now</a>!</h4>
         <h5><a href="https://dcl.bibliocommons.com/v2/search?query=Walt%20Longmire%20Mystery&searchType=series">Best of Longmire</a></h5>
