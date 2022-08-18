@@ -85,21 +85,30 @@ Push Notifications End - Removed for Now -->
 	justify-content: center;
 	margin: 0 auto;
 }
-.slideshow-content {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+.content-wrapper {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 100;
 	left: 0;
-	text-align: center;
 	right: 0;
-	top: 43%;
+	min-height: 1050px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.slideshow-content {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 	font-size: 23px;
 	color: #fff;
 	padding-top: 0;
 	text-shadow: 0 4px 4px rgb(0, 0, 0);
 	font-weight: 400;
+	align-self: center;
+	padding-bottom: 100px;
 }
 .slideshow-content > h1:first-of-type {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -171,29 +180,30 @@ Push Notifications End - Removed for Now -->
 	-webkit-transition: opacity 3s, -webkit-transform 8s;
 	transition: opacity 3s, transform 8s;
 }
-#slideshow div:nth-of-type(9n+1) {
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
+	#slideshow div:nth-of-type(9n+1) {
+	-webkit-transform-origin: bottom left;
+	transform-origin: bottom left;
 }
+
 #slideshow div {
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
 }
 #slideshow div:nth-of-type(2n+1) {
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
 #slideshow div:nth-of-type(3n+1) {
 	-webkit-transform-origin: top right;
 	transform-origin: top right;
 }
 #slideshow div:nth-of-type(4n+1) {
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
 }
 #slideshow div:nth-of-type(5n+1) {
-	-webkit-transform-origin: center center;
-	transform-origin: center center;
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
 }
 #slideshow div:nth-of-type(6n+1) {
 	-webkit-transform-origin: bottom right;
@@ -388,13 +398,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row no-gutter">
     <div class="slideshow-row">
-      <div class="slideshow-content">
-        <h1>A Storybook Holiday</h1>
-        <h1>Halloween</h1>
-        <div><i>Eat, Drink and Be Scary, Good, Scary, Good…</i></div>
-        <div class="tickets">
-          <h4><a href="#">Get tickets</a></h4>
-          <h4>to Dr. Jekyll & Mr. Hyde</h4>
+      <div class="content-wrapper">
+        <div class="slideshow-content">
+          <h1>A Storybook Holiday</h1>
+          <h1>Halloween</h1>
+          <div><i>Eat, Drink and Be Scary, Good, Scary, Good…</i></div>
+          <div class="tickets">
+            <h4><a href="#">Get tickets</a></h4>
+            <h4>to Dr. Jekyll & Mr. Hyde</h4>
+          </div>
         </div>
       </div>
       <div id="slideshow" class="slideshow-image main"> 
