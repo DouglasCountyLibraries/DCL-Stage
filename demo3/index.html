@@ -78,104 +78,94 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 Push Notifications End - Removed for Now -->
 
 <style>
-.row.wedding {
+.row.healthy {
 	background: #fff url(brew-background.jpg);
 }
-.wedding-container {
+.healthy-container {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	background: url(wedding-couple.jpg) right top/cover;
-	height: 780px;
+	background: url("mind-body.jpg") left bottom/cover;
+	height: 675px;
 	max-width: 2800px;
 	margin: 0 auto;
 }
-.wedding-wrapper {
+.healthy-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	height: 700px;
+	height: 480px;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+	justify-content: flex-end;
 }
-h1.wedding, h1.wedding a {
+h1.healthy {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 80px;
 	font-weight: 700;
 	color: #fff;
 	margin: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	padding-bottom: 10px;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
 }
-h1.wedding:hover, h1.wedding a:hover {
-	text-decoration: none;
-	color: #ffcdd6;
+h1.healthy:after {
+	content: 'Mind';
+	animation-name: head;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
-h4.wedding {
+@keyframes head {
+0% {
+opacity:1;
+}
+50% {
+opacity:1;
+content: "Body"
+}
+100% {
+opacity:1;
+content: "Mind"
+}
+}
+h4.healthy {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-size: 32px;
 	color: #fff;
 	padding-top: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+	text-shadow: 0 10px 20px rgba(0, 0, 0, .8);
 	font-weight: 500;
 	margin: 0;
 }
 .details {
-	border-left: 6px solid #ffcdd6;
+	border-left: 6px solid #fff;
 	padding-left: 20px;
 }
-.wedding, .wedding a {
+.healthy {
 	font-size: 24px;
 	color: #fff;
 	padding-top: 0;
-	text-shadow: 0 4px 4px rgb(0, 0, 0);
+	text-shadow: 0 4px 9px rgba(0, 0, 0, .9);
 	font-weight: 400;
+	max-width: 625px;
 }
-.wed-item {
-	padding: 10px;
+	.small-text, .small-text a, .small-text a:hover, .small-text a:focus {
+	color: #fff;
+	padding-top: 5px;
+		text-decoration: none;
 }
-.wed-item img {
-	border: 6px solid #f7eef0;
-	border-radius: 2px;
-}
-.wed-item-wrapper {
+.box-item-wrapper {
 	display: flex;
-	max-width: 1200px;
-	margin: 0 auto;
-	margin-top: -175px;
-	padding-bottom: 160px;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-.row.brew-tour {
-	background: #fff url(brew-background.jpg);
-	padding: 140px 15px 155px;
+.box-item {
+	margin: 15px;
+	width: 385px;
 }
-.brew-tour-wrapper {
-	background: transparent url(brew-tour.jpg) right bottom no-repeat;
-	display: flex;
-	max-width: 1150px;
-	margin: 0 auto;
+.row.box-row {
+	
+	padding: 0 15px 155px;
+	margin-top: -100px;
 }
-.brew-tour-item.one {
-	background: #fff;
-	padding: 60px;
-	margin: 65px 0 125px;
-	max-width: 480px;
-	border-radius: 3px;
-}
-.brew-tour-item.one > h2 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-	margin: 0;
-}
-.brew-tour-item.one > h5 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-	margin: 0;
-	padding-top: 45px;
-}
+
 .row.longmire {
 	background: #ebe6e9 url(longmire-bkg.jpg) left top repeat-x;
 	padding-bottom: 150px;
@@ -215,196 +205,6 @@ h4.wedding {
 }
 .longmire-details > h5:last-of-type {
 	margin-top: 45px;
-}
-</style>
-	<style>
-/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
-.slideshow-row {
-	background: #1c1c06;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-}
-.content-wrapper {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 100;
-	left: 0;
-	right: 0;
-	min-height: 1050px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-.slideshow-content {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	font-size: 23px;
-	color: #fff;
-	padding-top: 0;
-	text-shadow: 0 4px 4px rgb(0, 0, 0);
-	font-weight: 400;
-	align-self: center;
-	padding-bottom: 100px;
-}
-.slideshow-content > h1:first-of-type {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	text-transform: uppercase;
-	font-size: 43px;
-	font-weight: 400;
-	color: #fff;
-	margin: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	line-height: 40px;
-}
-.slideshow-content > h1 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	text-transform: uppercase;
-	font-size: 80px;
-	font-weight: 700;
-	color: #fff;
-	margin: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	line-height: 70px;
-}
-.tickets > h4 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-size: 30px;
-	color: #fff;
-	padding-top: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	font-weight: 400;
-	margin: 0;
-}
-.tickets > h4 a {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-size: 44px;
-	color: #fff;
-	/* margin-top: 19px; */
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	font-weight: 600;
-	border-top: 3px solid #fff;
-	border-bottom: 3px solid #fff;
-	text-transform: uppercase;
-}
-.tickets > h4 a:hover, .tickets > h4 a:focus {
-	text-decoration: none;
-	color: red;
-}
-.tickets > h4:last-of-type {
-	padding: 15px 0 25px;
-}
-.tickets {
-	padding: 40px 0 0;
-}
-#slideshow {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 0%;
-	width: 100%;
-	min-height: 1050px;
-} /* (img px height / img px width x 100) = padding-bottom % */
-#slideshow div {
-	position: absolute;
-	z-index: 2;
-	width: 105%;
-	height: 105%;
-	top: -5%;
-	left: -5%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0;
-	-webkit-transition: opacity 3s, -webkit-transform 8s;
-	transition: opacity 3s, transform 8s;
-}
-/* slide two */
-#slideshow div {
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
-}
-/* slide three */
-#slideshow div:nth-of-type(2n+1) {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide four */
-#slideshow div:nth-of-type(3n+1) {
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
-}
-/* slide five */
-#slideshow div:nth-of-type(4n+1) {
-	-webkit-transform-origin: top center;
-	transform-origin: top center;
-}
-/* slide six */
-#slideshow div:nth-of-type(5n+1) {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide seven */
-#slideshow div:nth-of-type(6n+1) {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide eight */
-#slideshow div:nth-of-type(7n+1) {
-	-webkit-transform-origin: top center;
-	transform-origin: top center;
-}
-/* slide nine */
-#slideshow div:nth-of-type(8n+1) {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide one */
-#slideshow div:nth-of-type(9n+1) {
-	-webkit-transform-origin: top center;
-	transform-origin: top center;
-}
-#slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
-	z-index: 1
-}
-#slideshow .fx, #slideshow .fx1 {
-	-webkit-transform: scale(1.1) translate(1.5%);
-	-ms-transform: scale(1.1) translate(1.5%);
-	transform: scale(1.1) translate(1.5%);
-	opacity: 1
-}
-#slideshow div:nth-of-type(1) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/one.jpg")
-}
-#slideshow div:nth-of-type(2) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/two.jpg")
-}
-#slideshow div:nth-of-type(3) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/three.jpg")
-}
-#slideshow div:nth-of-type(4) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/four.jpg")
-}
-#slideshow div:nth-of-type(5) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/five.jpg")
-}
-#slideshow div:nth-of-type(6) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/six.jpg")
-}
-#slideshow div:nth-of-type(7) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/seven.jpg")
-}
-#slideshow div:nth-of-type(8) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/eight.jpg")
-}
-#slideshow div:nth-of-type(9) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/nine.jpg")
-}
-#slideshow div:nth-of-type(10) {
-	background-image: url("http://stage.dcl.org/demo2/slideshow/ten.jpg")
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -448,7 +248,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <span class="input-group-btn">
             <button type="submit" value="search" class="btn btn-search"><i class="fas fa-search"></i></button>
             </span> </div>
-          <div class="text-right"><span class="small margin-right-80"><a href="../search/">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+          <div class="text-right"><span class="small margin-right-80"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
         </form>
       </div>
     </div>
@@ -468,37 +268,37 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
         </ul>
       </li>
-      <li class="whats-new-active"><a href="../whats-new/">What's New</a> </li>
+      <li class="whats-new-active"><a href="../whats-new">What's New</a> </li>
       <li class="dropdown using-the-library-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
         <ul class="dropdown-menu">
-          <li><a href="../locations/">Hours & Locations</a></li>
-          <li><a href="../library-basics/">Library Basics</a></li>
-          <li><a href="../library-perks/">Library Perks</a></li>
-          <li><a href="../book-clubs/">Book Clubs</a></li>
-          <li><a href="../staff-recommendations/">Staff Recommendations</a></li>
-          <li><a href="../business/">DCL for Business</a></li>
-          <li><a href="../adult-education/">Adult Education & Test Prep</a></li>
+          <li><a href="../locations">Hours & Locations</a></li>
+          <li><a href="../library-basics">Library Basics</a></li>
+          <li><a href="../library-perks">Library Perks</a></li>
+          <li><a href="../book-clubs">Book Clubs</a></li>
+          <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+          <li><a href="../business">DCL for Business</a></li>
+          <li><a href="../adult-education">Adult Education & Test Prep</a></li>
         </ul>
       </li>
       <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="../storytime/">Storytime</a></li>
-          <li><a href="../read-listen-watch/">Read, Listen, Watch</a></li>
-          <li><a href="../kids-events/">Kids Events</a></li>
-          <li><a href="../parents-teachers/">Parents & Teachers</a></li>
-          <li><a href="../research/students/">Homework Help</a></li>
-          <li><a href="../teens/">Teens</a></li>
+          <li><a href="../storytime">Storytime</a></li>
+          <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
+          <li><a href="../kids-events">Kids Events</a></li>
+          <li><a href="../parents-teachers">Parents & Teachers</a></li>
+          <li><a href="../research/students">Homework Help</a></li>
+          <li><a href="../teens">Teens</a></li>
         </ul>
       </li>
-      <li class="digital-media-active"><a href="../digital-media/">Digital Media</a> </li>
-      <li class="reserve-a-space-active"><a href="../reserve-a-space/">Reserve a Space</a> </li>
+      <li class="digital-media-active"><a href="../digital-media">Digital Media</a> </li>
+      <li class="reserve-a-space-active"><a href="../reserve-a-space">Reserve a Space</a> </li>
       <li class="dropdown events-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="../authors-events/">Featured Events</a></li>
+          <li><a href="../authors-events">Featured Events</a></li>
           <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">Events Calendar</a></li>
         </ul>
       </li>
-      <li class="research-active"><a href="../research/">Research</a> </li>
+      <li class="research-active"><a href="../research">Research</a> </li>
     </ul>
   </div>
 </nav>
@@ -524,37 +324,37 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                   <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
                 </ul>
               </li>
-              <li class="whats-new-active mobile-nav-heading"><a href="../whats-new/">What's New</a> </li>
+              <li class="whats-new-active mobile-nav-heading"><a href="../whats-new">What's New</a> </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#using-the-library">Library Info <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="using-the-library" class="nav mobile-nav-list collapse">
-                  <li><a href="../locations/">Hours & Locations</a></li>
-                  <li><a href="../library-basics/">Library Basics</a></li>
-                  <li><a href="../library-perks/">Library Perks</a> </li>
-                  <li><a href="../book-clubs/">Book Clubs</a></li>
-                  <li><a href="../staff-recommendations/">Staff Recommendations</a></li>
-                  <li><a href="../business/">DCL for Business</a></li>
-                  <li><a href="../adult-education/">Adult Education & Test Prep</a></li>
+                  <li><a href="../locations">Hours & Locations</a></li>
+                  <li><a href="../library-basics">Library Basics</a></li>
+                  <li><a href="../library-perks">Library Perks</a> </li>
+                  <li><a href="../book-clubs">Book Clubs</a></li>
+                  <li><a href="../staff-recommendations">Staff Recommendations</a></li>
+                  <li><a href="../business">DCL for Business</a></li>
+                  <li><a href="../adult-education">Adult Education & Test Prep</a></li>
                 </ul>
               </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="kids-teens" class="nav mobile-nav-list collapse">
-                  <li><a href="../storytime/">Storytime</a></li>
-                  <li><a href="../read-listen-watch/">Read, Listen, Watch</a></li>
-                  <li><a href="../kids-events/">Kids Events</a></li>
-                  <li><a href="../parents-teachers/">Parents & Teachers</a></li>
-                  <li><a href="../research/students/">Homework Help</a></li>
-                  <li><a href="../teens/">Teens</a></li>
+                  <li><a href="../storytime">Storytime</a></li>
+                  <li><a href="../read-listen-watch">Read, Listen, Watch</a></li>
+                  <li><a href="../kids-events">Kids Events</a></li>
+                  <li><a href="../parents-teachers">Parents & Teachers</a></li>
+                  <li><a href="../research/students">Homework Help</a></li>
+                  <li><a href="../teens">Teens</a></li>
                 </ul>
               </li>
-              <li class="digital-media-active mobile-nav-heading"><a href="../digital-media/">Digital Media</a> </li>
-              <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space/">Reserve a Space</a> </li>
+              <li class="digital-media-active mobile-nav-heading"><a href="../digital-media">Digital Media</a> </li>
+              <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space">Reserve a Space</a> </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#library-events">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="library-events" class="nav mobile-nav-list collapse">
-                  <li><a href="../authors-events/">Featured Events</a></li>
+                  <li><a href="../authors-events">Featured Events</a></li>
                   <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">Events Calendar</a></li>
                 </ul>
               </li>
-              <li class="research-active mobile-nav-heading"><a href="../research/">Research</a> </li>
+              <li class="research-active mobile-nav-heading"><a href="../research">Research</a> </li>
             </ul>
           </div>
         </div>
@@ -564,7 +364,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="mobile-search" class="collapse bg-gray-10">
     <div class="container">
       <form id="searchFormTwo" class="search" action="https://dcl.bibliocommons.com/search">
-        <div class="text-right clearfix margin-bottom-5"><span class="small margin-right-60"><a href="../search/">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
+        <div class="text-right clearfix margin-bottom-5"><span class="small margin-right-60"><a href="../search">Website Search</a></span><span class="small"><a href="https://dcl.bibliocommons.com/search">Advanced Search</a></span></div>
         <div class="input-group">
           <input type="hidden" value="smart" name="t" id="search_param_two">
           <input placeholder="Search" type="text" name="q" class="form-control">
@@ -580,79 +380,52 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row">
-    <div class="wedding-container">
-      <div class="wedding-wrapper">
-        <h1 class="wedding"><a class="white" href="https://www.dcl.org/say-i-do/">Say Yes to DCL</a>!</h1>
+    <div class="healthy-container">
+      <div class="healthy-wrapper">
+        <h1 class="healthy">Healthy </h1>
         <div class="details">
-          <h4 class="wedding">Make a date or set the date, we’ll save you a seat!</h4>
-          <div class="wedding"><i>Celebrate your love story at DCL. Learn more about our <a class="text-underline" href="https://www.dcl.org/say-i-do/">wedding and shower packages</a></i>.</div>
+          <div class="healthy">Staying active socially, mentally and physically can improve your overall health. At DCL, we offer tools, resources and events that help make your wellness journey more enjoyable.</div><div class="small-text">Photo: <a href="https://stocksnap.io/author/200" target="_blank">Matthew Henry</a></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row wedding">
-    <div class="wed-item-wrapper">
-      <div class="wed-item"><img class="img-responsive" src="one.jpg" alt=""></div>
-      <div class="wed-item"><img class="img-responsive" src="two.jpg" alt=""></div>
-      <div class="wed-item"><img class="img-responsive" src="three.jpg" alt=""></div>
-    </div>
-  </div>
-  <div class="row no-gutter">
-    <div class="slideshow-row">
-      <div class="content-wrapper">
-        <div class="slideshow-content">
-          <h1>A Storybook Holiday</h1>
-          <h1>Halloween</h1>
-          <div><i>Eat, Drink and Be Scary, Good, Scary, Good…</i></div>
-          <div class="tickets">
-            <h4><a href="#">Get tickets</a></h4>
-            <h4>to Dr. Jekyll & Mr. Hyde</h4>
-          </div>
+
+  <div class="row box-row">
+    <div class="box-item-wrapper">
+      <div class="box-item">
+        <div><img class="img-responsive" src="check-out-colorado.jpg" alt="Check Out Colorado"></div>
+        <div class="box-content">
+          <h3 class="text-center"><a href="https://dcl.bibliocommons.com/item/show/1350439114">Check Out Colorado</a></h3>
+          <div>A limited number of backpacks containing a pass good for admission to any Colorado State Park are available for checkout from our welcome desks. <a href="https://dcl.bibliocommons.com/item/show/1350439114">Check now for availability</a>. </div>
         </div>
       </div>
-      <div id="slideshow" class="slideshow-image main"> 
-        <!-- define each background-image in CSS -->
-        <div></div>
-        <!-- #slideshow div:nth-of-type(1) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(2) --> 
-        <span></span>
-        <div></div>
-        
-        <!-- #slideshow div:nth-of-type(3) --> 
-        <span></span>
-        <div></div>
-        
-        <!-- #slideshow div:nth-of-type(4) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(5) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(6) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(7) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(8) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(9) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(10) --> 
-        <span></span> </div>
+      <div class="flex-break"></div>
+      <div class="box-item">
+        <div><img class="img-responsive" src="oculus.jpg" alt="Nontraditional Items"></div>
+        <div class="box-content">
+          <h3 class="text-center"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">Nontraditional Items</a></h3>
+          <div>We offer more than just books and movies! Check out a sewing machine, microscope, drawing tool and more for your next project.</div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div><img class="img-responsive" src="care-kits.jpg" alt="DCL Care Kits"></div>
+        <div class="box-content">
+          <h3 class="text-center"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=anywhere%3A(care%20kit)%20%20%20-anywhere%3A(curriculum)&searchType=bl&suppress=true&f_FORMAT=KIT">DCL Care Kits</a></h3>
+          <div>Our specialized, self-contained kits for kids, adults and caregivers contain materials to help those struggling with anxiety, loss related to suicide, and memory issues. Kits check out for three weeks.</div>
+        </div>
+      </div>
     </div>
   </div>
+	
+	
+
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
     <div class="social-footer">
       <div class="social-left">
-        <h4><a href="../safety-notice/">Community Safety Notice</a></h4>
-        <h4><a href="../taxes/">Tax Information</a></h4>
+        <h4><a href="../safety-notice">Community Safety Notice</a></h4>
+        <h4><a href="../taxes">Tax Information</a></h4>
       </div>
       <div class="social-right">
         <h4>Customer Service: <span class="text-nowrap"><a href="tel:+13037917323">(303) 791-7323</a></span></h4>
@@ -667,10 +440,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div>
         <h5>About</h5>
         <ul>
-          <li><a href="../who-we-are/">Who We Are</a></li>
-          <li><a href="../foundation/">Our Foundation</a></li>
-          <li><a href="../join-our-team/">Join Our Team</a></li>
-          <li><a href="../press-kit/">Press Kit</a></li>
+          <li><a href="../who-we-are">Who We Are</a></li>
+          <li><a href="../foundation">Our Foundation</a></li>
+          <li><a href="../join-our-team">Join Our Team</a></li>
+          <li><a href="../press-kit">Press Kit</a></li>
         </ul>
       </div>
       <div>
@@ -682,7 +455,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div>
         <h5>Connect</h5>
         <ul>
-          <li><a href="../newsletters/">eNews Sign-Up</a></li>
+          <li><a href="../newsletters">eNews Sign-Up</a></li>
           <li><a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a></li>
           <li><a href="https://dclblog.org/">DCL Blog</a></li>
         </ul>
@@ -691,8 +464,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <h5>Support</h5>
         <ul>
           <li><a href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=36788" target="_blank">Donate Online</a></li>
-          <li><a href="../donate/">Ways to Give</a></li>
-          <li><a href="../volunteer/">Volunteer</a></li>
+          <li><a href="../donate">Ways to Give</a></li>
+          <li><a href="../volunteer">Volunteer</a></li>
         </ul>
       </div>
     </div>
@@ -706,27 +479,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <script>
-/* http://cssmojo.com/ken-burns-effect/ */
-function kbSlideshow() { // set .fx1 class on 1st img on page load
-	window.setInterval(kenBurns, 6000); // calls kenBurns() function every 4 secs
-	var images = document.getElementById('slideshow').getElementsByTagName('div'),
-        numberOfImages = images.length, i = 1; // track loop - 1 (not 0) as 1st img is styled on page load
-	images[0].className = "fx1"; // style 1st img on page load
-	function kenBurns() {
-		if (i==numberOfImages) { i = 0; }
-        	images[i].className = "fx"; // set .fx class on each img
-		// clean up one before last to avoid bounce effect - can't remove .fx from previous
-        	if (i===0) { images[numberOfImages-2].className = ""; }
-        	if (i===1) { images[numberOfImages-1].className = ""; }
-        	if (i>1) { images[i-2].className = ""; }
-        	i++;
-		}
-	}
-setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
-</script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
-	
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
