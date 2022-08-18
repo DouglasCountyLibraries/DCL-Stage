@@ -79,11 +79,10 @@ Push Notifications End - Removed for Now -->
 <style>
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	background: #000;
+	background: #1c1c06;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* max-width: 1610px; */
 	margin: 0 auto;
 }
 .slideshow-content {
@@ -95,25 +94,22 @@ Push Notifications End - Removed for Now -->
 	left: 0;
 	text-align: center;
 	right: 0;
-	top: 42%;
-	font-size: 24px;
+	top: 43%;
+	font-size: 23px;
 	color: #fff;
 	padding-top: 0;
 	text-shadow: 0 4px 4px rgb(0, 0, 0);
 	font-weight: 400;
 }
-.slideshow-image.main {
-	min-height: 900px;
-}
 .slideshow-content > h1:first-of-type {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 43px;
-	font-weight: 600;
+	font-weight: 400;
 	color: #fff;
 	margin: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-	line-height: 30px;
+	line-height: 40px;
 }
 .slideshow-content > h1 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -123,24 +119,43 @@ Push Notifications End - Removed for Now -->
 	color: #fff;
 	margin: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+	line-height: 70px;
 }
-
-.slideshow-content > h4 {
+.tickets > h4 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-size: 48px;
+	font-size: 30px;
 	color: #fff;
 	padding-top: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
 	font-weight: 400;
 	margin: 0;
-	padding-bottom: 30px;
+}
+.tickets > h4 a {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-size: 44px;
+	color: #fff;
+	/* margin-top: 19px; */
+	text-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+	font-weight: 600;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	text-transform: uppercase;
+}
+.tickets > h4 a:hover, .tickets > h4 a:focus {
+	text-decoration: none;
+}
+.tickets > h4:last-of-type {
+	padding: 15px 0 25px;
+}
+.tickets {
+	padding: 40px 0 0;
 }
 #slideshow {
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 0%;
 	width: 100%;
-	min-height: 900px;
+	min-height: 1050px;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
 	position: absolute;
@@ -161,16 +176,16 @@ Push Notifications End - Removed for Now -->
 	transform-origin: top left;
 }
 #slideshow div {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
 }
 #slideshow div:nth-of-type(2n+1) {
 	-webkit-transform-origin: top left;
 	transform-origin: top left;
 }
 #slideshow div:nth-of-type(3n+1) {
-	-webkit-transform-origin: bottom left;
-	transform-origin: bottom left;
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
 }
 #slideshow div:nth-of-type(4n+1) {
 	-webkit-transform-origin: top right;
@@ -190,8 +205,8 @@ Push Notifications End - Removed for Now -->
 }
 /* slide one */
 #slideshow div:nth-of-type(8n+1) {
-	-webkit-transform-origin: center center;
-	transform-origin: center center;
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
 }
 #slideshow .fx, #slideshow .fx1 {
 	-webkit-transform: scale(1.1) translate(1.5%);
@@ -372,10 +387,16 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row no-gutter">
-    <div class="slideshow-content">
-      <h1>A Storybook Holiday</h1><h1>Halloween</h1><h4><a class="white text-underline" href="#">Get tickets</a> to Dr. Jekyll & Mr. Hyde</h4><div><i>Eat, Drink and Be Scary, Good, Scary, Good…</i></div>
-    </div>
     <div class="slideshow-row">
+      <div class="slideshow-content">
+        <h1>A Storybook Holiday</h1>
+        <h1>Halloween</h1>
+        <div><i>Eat, Drink and Be Scary, Good, Scary, Good…</i></div>
+        <div class="tickets">
+          <h4><a href="#">Get tickets</a></h4>
+          <h4>to Dr. Jekyll & Mr. Hyde</h4>
+        </div>
+      </div>
       <div id="slideshow" class="slideshow-image main"> 
         <!-- define each background-image in CSS -->
         <div class="random-slide" style="background-image: url('slideshow/one.jpg')"></div>
@@ -467,14 +488,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
-	var cards = $(".random-slide");
-for (var i = 0; i < cards.length; i++) {
-  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
-  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
-  cards.eq(target1).before(cards.eq(target2));
-}
- </script> 
 <script>
 /* http://cssmojo.com/ken-burns-effect/ */
 function kbSlideshow() { // set .fx1 class on 1st img on page load
