@@ -180,48 +180,89 @@ Push Notifications End - Removed for Now -->
 	-webkit-transition: opacity 3s, -webkit-transform 8s;
 	transition: opacity 3s, transform 8s;
 }
-	#slideshow div:nth-of-type(9n+1) {
-	-webkit-transform-origin: bottom left;
-	transform-origin: bottom left;
-}
-
+/* slide two */
 #slideshow div {
 	-webkit-transform-origin: top right;
 	transform-origin: top right;
 }
+/* slide three */
 #slideshow div:nth-of-type(2n+1) {
 	-webkit-transform-origin: bottom right;
 	transform-origin: bottom right;
 }
+/* slide four */
 #slideshow div:nth-of-type(3n+1) {
 	-webkit-transform-origin: top right;
 	transform-origin: top right;
 }
+/* slide five */
 #slideshow div:nth-of-type(4n+1) {
 	-webkit-transform-origin: top center;
 	transform-origin: top center;
 }
+/* slide six */
 #slideshow div:nth-of-type(5n+1) {
-	-webkit-transform-origin: bottom center;
-	transform-origin: bottom center;
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right;
 }
+/* slide seven */
 #slideshow div:nth-of-type(6n+1) {
 	-webkit-transform-origin: bottom right;
 	transform-origin: bottom right;
 }
+/* slide eight */
 #slideshow div:nth-of-type(7n+1) {
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
-}
-/* slide one */
-#slideshow div:nth-of-type(8n+1) {
 	-webkit-transform-origin: top center;
 	transform-origin: top center;
 }
+/* slide nine */
+#slideshow div:nth-of-type(8n+1) {
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right;
+}
+/* slide one */
+#slideshow div:nth-of-type(9n+1) {
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+}
+#slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
+	z-index: 1
+}
 #slideshow .fx, #slideshow .fx1 {
 	-webkit-transform: scale(1.1) translate(1.5%);
+	-ms-transform: scale(1.1) translate(1.5%);
 	transform: scale(1.1) translate(1.5%);
 	opacity: 1
+}
+#slideshow div:nth-of-type(1) {
+	background-image: url("slideshow/one.jpg")
+}
+#slideshow div:nth-of-type(2) {
+	background-image: url("slideshow/two.jpg")
+}
+#slideshow div:nth-of-type(3) {
+	background-image: url("slideshow/three.jpg")
+}
+#slideshow div:nth-of-type(4) {
+	background-image: url("slideshow/four.jpg")
+}
+#slideshow div:nth-of-type(5) {
+	background-image: url("slideshow/five.jpg")
+}
+#slideshow div:nth-of-type(6) {
+	background-image: url("slideshow/six.jpg")
+}
+#slideshow div:nth-of-type(7) {
+	background-image: url("slideshow/seven.jpg")
+}
+#slideshow div:nth-of-type(8) {
+	background-image: url("slideshow/eight.jpg")
+}
+#slideshow div:nth-of-type(9) {
+	background-image: url("slideshow/nine.jpg")
+}
+#slideshow div:nth-of-type(10) {
+	background-image: url("slideshow/nine.jpg")
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -409,34 +450,40 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </div>
         </div>
       </div>
-      <div id="slideshow" class="slideshow-image main"> 
-        <!-- define each background-image in CSS -->
-        <div class="random-slide" style="background-image: url('slideshow/one.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(1) -->
-        <div class="random-slide" style="background-image: url('slideshow/two.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(2) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/three.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(3) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/four.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(4) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/five.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(5) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/six.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(6) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/seven.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(7) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/eight.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(8) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/nine.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(9) --> 
-      </div>
+  <div id="slideshow" class="slideshow-image main"> 
+      <!-- define each background-image in CSS -->
+      <div></div>
+      <!-- #slideshow div:nth-of-type(1) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(2) --> 
+      <span></span>
+      <div></div>
+      
+      <!-- #slideshow div:nth-of-type(3) --> 
+      <span></span>
+      <div></div>
+      
+      <!-- #slideshow div:nth-of-type(4) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(5) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(6) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(7) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(8) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(9) --> 
+      <span></span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(10) --> 
+      <span></span> </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
