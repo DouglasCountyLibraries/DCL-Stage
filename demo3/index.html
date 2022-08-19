@@ -161,14 +161,31 @@ h4.healthy {
 	padding: 100px 0 120px;
 }
 .box-item {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
 	margin: 15px;
 	width: 385px;
 	background: #f4d3ea;
 	padding: 60px;
 }
 .row.box-row {
-	padding: 0 15px 155px;
+	padding: 0 15px;
 	margin-top: -60px;
+	margin-bottom: -60px;
+	position: relative;
+}
+.row.book-row {
+	background: #21244a;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0 140px;
+}
+	.row.book-row h4 {
+
+	color: #fff;
+
 }
 .row.longmire {
 	background: #ebe6e9 url(longmire-bkg.jpg) left top repeat-x;
@@ -417,6 +434,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
+  <div class="row book-row"><h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4><h2>Read These</h2><div>Did you know? A Binge Box is a collection of movies you can borrow with one checkout. Hoopla BingePass gives you extra borrowing power too. 
+</div></div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
