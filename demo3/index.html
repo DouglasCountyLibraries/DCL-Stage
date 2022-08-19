@@ -156,7 +156,7 @@ h4.healthy {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	max-width: 1400px;
+	max-width: 1420px;
 	margin: 0 auto;
 	padding: 100px 0 120px;
 }
@@ -166,9 +166,9 @@ h4.healthy {
 	font-weight: 400;
 	color: #000;
 	margin: 15px;
-	width: 385px;
+	width: 395px;
 	background: #f4d3ea;
-	padding: 60px;
+	padding: 40px 40px 60px;
 }
 .row.box-row {
 	padding: 0 15px;
@@ -177,55 +177,41 @@ h4.healthy {
 	position: relative;
 }
 .row.book-row {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
 	background: #21244a;
 	color: #fff;
 	text-align: center;
-	padding: 100px 0 140px;
+	padding: 160px 0 130px;
 }
-	.row.book-row h4 {
-
+.book-wrapper {
+	max-width: 590px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.row.book-row h4 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #fff;
-
-}
-.row.longmire {
-	background: #ebe6e9 url(longmire-bkg.jpg) left top repeat-x;
-	padding-bottom: 150px;
-}
-.longmire-wrapper {
-	display: flex;
-	justify-content: center;
-}
-.longmire-details {
-	padding: 60px;
-	background: #fff;
-	border-radius: 3px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.longmire-details > h2 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #66010f;
+	font-weight: 400;
 	margin: 0;
+}
+.row.book-row h2, .row.book-row h2 a {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #fff;
 	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 0 5px 0;
 }
-.longmire-details > h4 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-size: 32px;
-	font-weight: 400;
-	color: #333;
-	margin: 0;
+.row.book-row h2 a:hover {
+	color: #f4d3ea;
+	text-decoration: none;
 }
-.longmire-details > h5 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-	margin: 0;
+
+@media (max-width: 1300px) {
+.box-item-wrapper {
+	max-width: 950px;
 }
-.longmire-details > h5:last-of-type {
-	margin-top: 45px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -416,26 +402,30 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="box-item">
         <div><img class="img-responsive center-block" src="beans.png" alt="Check Out Colorado"></div>
         <div class="box-content">
-          <div>Coffee Chat is a great way to start your day each Tuesday. </div>
+          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=coffee+chat&lib=ALL&nd=180" target="_blank">Coffee Chat</a> is a great way to start your day each Tuesday. </div>
         </div>
       </div>
-      <div class="flex-break"></div>
       <div class="box-item">
         <div><img class="img-responsive center-block" src="chess.png" alt="Nontraditional Items"></div>
         <div class="box-content">
-          <div>Join a pick-up chess game at your local DCL branch. All ages and skill levels welcome! </div>
+          <div>Join a <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=chess&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">pick-up chess game</a> at your local DCL branch. All ages and skill levels welcome! </div>
         </div>
       </div>
       <div class="box-item">
         <div><img class="img-responsive center-block" src="alltrails.png" alt="DCL Care Kits"></div>
         <div class="box-content">
-          <div>Take a hike, but first use your library card to get the free AllTrails Pro upgrade. </div>
+          <div>Take a hike, but first use your library card to get the free <a href="https://www.dcl.org/library-perks/">AllTrails Pro</a> upgrade. Pro tip: Borrow <a href="https://dcl.bibliocommons.com/v2/record/S114C1709128">trekking poles</a> for the trail.</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row book-row"><h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4><h2>Read These</h2><div>Did you know? A Binge Box is a collection of movies you can borrow with one checkout. Hoopla BingePass gives you extra borrowing power too. 
-</div></div>
+  <div class="row book-row">
+    <div class="book-wrapper">
+      <h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4>
+      <h2><a href="https://dcl.bibliocommons.com/list/share/692278051/2149961319">Read These</a></h2>
+      <div><i>Did you know?</i> A <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/search?query=binge+box&searchType=smart">Binge Box</a> is a collection of movies you can borrow with one checkout. <a class="white text-underline" href="https://www.hoopladigital.com/browse/binge" target="_blank">Hoopla BingePass</a> gives you extra borrowing power too. </div>
+    </div>
+  </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
