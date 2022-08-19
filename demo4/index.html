@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -76,23 +77,51 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </script> 
 Push Notifications End - Removed for Now -->
 <style>
+.row.brew-row {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 0 90px;
+	background: #5e3d29;
+}
+.brew-tour {
+	max-width: 400px;
+	margin-top: -285px;
+	position: relative;
+	z-index: 1000;
+	background: #5e3d29;
+	margin-right: 20%;
+	padding: 50px 60px 0 60px;
+	color: #fff;
+}
+.brew-tour h1 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+	line-height: 50px;
+}
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	background: #ccc;
+	background: #5e3d29;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
+	margin-top: 60px;
 }
-
 #slideshow {
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 0%;
-	width: 100%;
-	min-height: 600px;
-	
-} /* (img px height / img px width x 100) = padding-bottom % */
+	/* width: 100%; */
+	min-height: 700px;
+	width: 1650px;
+	margin-top: -60px;
+	background: #fff;
+}/* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
 	position: absolute;
 	z-index: 2;
@@ -165,31 +194,31 @@ Push Notifications End - Removed for Now -->
 	background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(2) {
-	background-image: url("slideshow/one.jpg")
+	background-image: url("slideshow/two.jpg")
 }
 #slideshow div:nth-of-type(3) {
-	background-image: url("slideshow/one.jpg")
+	background-image: url("slideshow/three.jpg")
 }
 #slideshow div:nth-of-type(4) {
-	background-image: url("slideshow/one.jpg")
+	background-image: url("slideshow/two.jpg")
 }
 #slideshow div:nth-of-type(5) {
-	background-image: url("slideshow/five.jpg")
+	background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(6) {
-	background-image: url("slideshow/six.jpg")
+	background-image: url("slideshow/two.jpg")
 }
 #slideshow div:nth-of-type(7) {
-	background-image: url("slideshow/seven.jpg")
+	background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(8) {
-	background-image: url("slideshow/eight.jpg")
+	background-image: url("slideshow/two.jpg")
 }
 #slideshow div:nth-of-type(9) {
-	background-image: url("slideshow/nine.jpg")
+	background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(10) {
-	background-image: url("slideshow/ten.jpg")
+	background-image: url("slideshow/two.jpg")
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -201,7 +230,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -366,7 +395,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row">
     <div class="slideshow-row">
-
       <div id="slideshow" class="slideshow-image main"> 
         <!-- define each background-image in CSS -->
         <div></div>
@@ -402,6 +430,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <!-- #slideshow div:nth-of-type(10) --> 
         <span></span> </div>
     </div>
+  </div>
+  <div class="row brew-row">
+    <div class="brew-tour">
+      <h1>Good Things Are Brewing!</h1>
+      DCL Brew Tour – Through September 30
+      Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? Learn more.</div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
@@ -522,4 +556,5 @@ setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
