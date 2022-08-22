@@ -143,7 +143,7 @@ h4.brew-text {
 	flex-wrap: wrap;
 	max-width: 1420px;
 	margin: 0 auto;
-	padding: 13px 0 90px;
+	padding: 13px 0 0px;
 	margin-top: -115px;
 }
 .box-item {
@@ -160,12 +160,63 @@ h4.brew-text {
 	font-size: 22px;
 	line-height: 24px;
 }
-	.box-item img {
-		padding-bottom: 20px;
-	}
+.box-item img {
+	padding-bottom: 20px;
+}
 .row.box-row {
 	background: transparent url(full-bloom.webp);
 	padding: 0 15px;
+}
+.row.fete {
+	background: #0a2421 url(trees.jpg) center top repeat-x;
+	padding: 80px 15px 40px;
+}
+.fete-wrapper {
+	display: flex;
+	max-width: 1025px;
+	margin: 0 auto;
+	/* justify-content: center; */
+}
+.fete-item.one {
+	background: #fff;
+	padding: 100px;
+	margin: 65px 0;
+	flex-basis: 100%;
+}
+.fete-item.one > h2 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 700;
+	color: #333;
+	margin: 0;
+	font-size: 42px;
+	text-transform: uppercase;
+}
+.fete-item.one > h5 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	padding-top: 15px;
+}
+.fete-item.two {
+	background: #d1e4d7;
+	padding: 100px;
+	margin: 65px 0;
+	flex-basis: 100%;
+	
+}
+.fete-item.two > h2 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+}
+.fete-item.two > h5 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	padding-top: 15px;
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
@@ -506,9 +557,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <h3>Through September 30</h3>
       Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="white text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
   </div>
-	
-	
-	  <div class="row box-row">
+  <div class="row box-row">
     <div class="box-item-wrapper">
       <div class="box-item">
         <div><img class="img-responsive center-block" src="the-wonder.jpg" alt="The Wonder"></div>
@@ -527,6 +576,21 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="box-content">
           <div>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books to love</a>!</div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="row fete">
+    <div class="fete-wrapper">
+      <div class="fete-item one">
+        <h2>Deep in the Forest</h2>
+        <h5>Celebrate the timeless tale of Hansel & Gretel at our 7th Annual Fête des Fables Gala, benefiting the DCL Foundation. Enjoy fine dining and drinks, axe throwing, a classic silent auction, and much more. GET TICKETS > </h5>
+      </div>
+      <div class="fete-item two">
+        <h2>Babysitter’s Toolkit:</h2>
+        <h5>&#10141; Kanopy Kids Videos </h5>
+        <h5>&#10141; 10 Tales of Hansel & Gretel </h5>
+        <h5>&#10141; Karaoke! </h5>
+        <h5>&#10141; Crazy Forts Night </h5>
       </div>
     </div>
   </div>
