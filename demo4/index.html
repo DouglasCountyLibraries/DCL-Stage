@@ -79,16 +79,16 @@ Push Notifications End - Removed for Now -->
 <style>
 .row.brew-row {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
+	color: #f4ecd9;
 	display: flex;
 	justify-content: flex-end;
-	background: #5e3d29;
+	background: #1c1d1d;
 }
 .row.brew-tour-info {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
-	background: #5e3d29;
-	padding: 60px 15px 60px;
+	color: #f4ecd9;
+	background: #1c1d1d;
+	padding: 60px 15px 160px;
 }
 .info-wrapper {
 	max-width: 725px;
@@ -98,18 +98,20 @@ Push Notifications End - Removed for Now -->
 	font-size: 20px;
 	font-weight: 400;
 }
-.brew-text {
+h4.brew-text {
 	font-weight: 600;
 	font-size: 42px;
 	text-transform: uppercase;
 	white-space: nowrap;
+	color: #f4ecd9;
+	margin: 0;
 }
 .brew-tour {
 	max-width: 400px;
 	margin-top: -290px;
 	position: relative;
 	z-index: 1000;
-	background: #5e3d29;
+	background: #1c1d1d;
 	margin-right: 15%;
 	padding: 40px 60px 0 60px;
 	color: #fff;
@@ -119,25 +121,55 @@ Push Notifications End - Removed for Now -->
 	text-transform: uppercase;
 	font-size: 60px;
 	font-weight: 700;
-	color: #fff;
+	color: #f4ecd9;
 	margin: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
 	line-height: 50px;
 	padding-top: 10px;
 }
-.info-wrapper h4 {
+.info-wrapper h3 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	padding-bottom: 20px;
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 400;
-	color: #fff;
+	color: #f4ecd9;
 	margin: 0;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
 	line-height: 30px;
 }
+.box-item-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1420px;
+	margin: 0 auto;
+	padding: 13px 0 90px;
+	margin-top: -115px;
+}
+.box-item {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
+	margin: 15px;
+	width: 395px;
+	background: #fff;
+	padding: 40px 40px 60px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 24px;
+}
+	.box-item img {
+		padding-bottom: 20px;
+	}
+.row.box-row {
+	background: transparent url(full-bloom.webp);
+	padding: 0 15px;
+}
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	background: #5e3d29;
+	background: #1c1d1d;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -470,8 +502,33 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row brew-tour-info">
     <div class="info-wrapper">
-      <h4><span class="brew-text">DCL Brew Tour</span> – Through September 30</h4>
+      <h4 class="brew-text">DCL Brew Tour</h4>
+      <h3>Through September 30</h3>
       Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="white text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
+  </div>
+	
+	
+	  <div class="row box-row">
+    <div class="box-item-wrapper">
+      <div class="box-item">
+        <div><img class="img-responsive center-block" src="the-wonder.jpg" alt="The Wonder"></div>
+        <div class="box-content">
+          <div>May we offer a <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2121333879">book to go with your brew</a>? </div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div><img class="img-responsive center-block" src="survive-the-night.jpg" alt="Survive the Night"></div>
+        <div class="box-content">
+          <div><a href="https://dcl.bibliocommons.com/list/share/692278051/2140423619">Thirsty for a good read</a>? </div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div><img class="img-responsive center-block" src="be-frank-with-me.jpg" alt="Be Frank with Me"></div>
+        <div class="box-content">
+          <div>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books to love</a>!</div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
