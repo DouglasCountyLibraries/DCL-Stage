@@ -88,7 +88,7 @@ Push Notifications End - Removed for Now -->
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #f4ecd9;
 	background: #1c1d1d;
-	padding: 60px 15px 160px;
+	padding: 90px 15px 195px;
 }
 .info-wrapper {
 	max-width: 725px;
@@ -169,19 +169,21 @@ h4.brew-text {
 }
 .row.fete {
 	background: #0a2421 url(trees.jpg) center top repeat-x;
-	padding: 80px 15px 40px;
+	padding: 100px 15px 115px;
 }
 .fete-wrapper {
 	display: flex;
-	max-width: 1025px;
+	max-width: 1100px;
 	margin: 0 auto;
 	/* justify-content: center; */
+	align-content: center;
+	/* align-items: center; */
+	background: #fbf3df;
 }
 .fete-item.one {
-	background: #fff;
+	background: #fbf3df;
 	padding: 100px;
-	margin: 65px 0;
-	flex-basis: 100%;
+	margin: 65px 0 75px;
 }
 .fete-item.one > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -191,25 +193,33 @@ h4.brew-text {
 	font-size: 42px;
 	text-transform: uppercase;
 }
+.fete-item.one > h4 a {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 700;
+	color: #333;
+	margin: 0;
+	font-size: 30px;
+	text-transform: uppercase;
+}
 .fete-item.one > h5 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 400;
 	color: #000;
 	margin: 0;
-	padding-top: 15px;
+	padding: 15px 0;
 }
 .fete-item.two {
 	background: #d1e4d7;
 	padding: 100px;
-	margin: 65px 0;
-	flex-basis: 100%;
-	
+	margin: 65px -40px 75px 0;
+	min-width: 500px;
 }
 .fete-item.two > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 400;
 	color: #000;
-	margin: 0;
+	margin: 0 0 15px;
+	font-size: 26px;
 }
 .fete-item.two > h5 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -583,14 +593,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="fete-wrapper">
       <div class="fete-item one">
         <h2>Deep in the Forest</h2>
-        <h5>Celebrate the timeless tale of Hansel & Gretel at our 7th Annual Fête des Fables Gala, benefiting the DCL Foundation. Enjoy fine dining and drinks, axe throwing, a classic silent auction, and much more. GET TICKETS > </h5>
+        <h5>Celebrate the timeless tale of Hansel & Gretel at our 7th Annual Fête des Fables Gala, benefiting the DCL Foundation. Enjoy fine dining and drinks, axe throwing, a classic silent auction, and much more.</h5>
+        <h4><a href="https://www.eventbrite.com/e/fete-des-fables-deep-in-the-forest-tickets-391228865067" target="_blank">Get Tickets</a></h4>
       </div>
       <div class="fete-item two">
         <h2>Babysitter’s Toolkit:</h2>
-        <h5>&#10141; Kanopy Kids Videos </h5>
-        <h5>&#10141; 10 Tales of Hansel & Gretel </h5>
-        <h5>&#10141; Karaoke! </h5>
-        <h5>&#10141; Crazy Forts Night </h5>
+        <h5>&#10141;&nbsp;&nbsp;Kanopy Kids Videos </h5>
+        <h5>&#10141;&nbsp;&nbsp;10 Tales of Hansel & Gretel </h5>
+        <h5>&#10141;&nbsp;&nbsp;Karaoke! </h5>
+        <h5>&#10141;&nbsp;&nbsp;Crazy Forts Night </h5>
       </div>
     </div>
   </div>
