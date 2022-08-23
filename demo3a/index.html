@@ -180,13 +180,13 @@ h4.healthy {
 	font-weight: 400;
 	background: #21244a;
 	color: #fff;
-	text-align: center;
-	padding: 115px 0 0;
+	padding: 120px 0 85px 0;
 }
 .book-wrapper {
-	max-width: 590px;
+	max-width: 900px;
 	margin: 0 auto;
 	padding: 15px;
+	display: flex;
 }
 .row.book-row h4 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -206,35 +206,33 @@ h4.healthy {
 	color: #f4d3ea;
 	text-decoration: none;
 }
-	.speech-bubble-wrapper {
-	display: flex;
-	justify-content: flex-end;
-	padding-top: 15px;
-	margin-right: 0;
+.speech-bubble-wrapper {
+	/* display: flex; */
+	/* justify-content: flex-end; */
+	/* padding-top: 15px; */
+	/* margin-right: 0; */
+	margin-top: -45px;
 }
 .speech-bubble {
 	position: relative;
 	background: rgba(255,255,255,.2);
 	border-radius: 1em;
-
 	padding: 30px 40px 35px;
-
 	max-width: 400px;
 }
-
 .speech-bubble::after {
 	content: '';
 	position: absolute;
-	top: 0;
-	left: 70%;
+	top: 50%;
+	left: 0;
 	width: 0;
 	height: 0;
 	border: 26px solid transparent;
-	border-bottom-color: rgba(255,255,255,.2);
-	border-top: 0;
+	border-right-color: rgba(255,255,255,.2);
+	border-bottom: 0;
 	border-left: 0;
-	margin-left: -13px;
-	margin-top: -26px;
+	margin-left: -26px;
+	margin-top: -13px;
 }
 
 @media (max-width: 1300px) {
@@ -450,11 +448,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row book-row">
     <div class="book-wrapper">
-      <h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4>
-      <h2><a href="https://dcl.bibliocommons.com/list/share/692278051/2149961319">Read These</a></h2>
-     <div class="speech-bubble-wrapper"> <div class="speech-bubble">
-        <h4><i>Did you know?</i></h4> A <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/search?query=binge+box&searchType=smart">Binge Box</a> is a collection of movies you can borrow with one checkout. <a class="white text-underline" href="https://www.hoopladigital.com/browse/binge" target="_blank">Hoopla BingePass</a> gives you extra borrowing power too. 
-		</div></div>
+      <div class="book-item text-right padding-right-60">
+        <h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4>
+        <h2><a href="https://dcl.bibliocommons.com/list/share/692278051/2149961319">Read These</a></h2>
+      </div>
+      <div class="book-item">
+        <div class="speech-bubble-wrapper">
+          <div class="speech-bubble">
+            <h4><i>Did you know?</i></h4>
+            A <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/search?query=binge+box&searchType=smart">Binge Box</a> is a collection of movies you can borrow with one checkout. <a class="white text-underline" href="https://www.hoopladigital.com/browse/binge" target="_blank">Hoopla BingePass</a> gives you extra borrowing power too. </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
