@@ -79,21 +79,27 @@ Push Notifications End - Removed for Now -->
 <style>
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	background: #f5f5f5;
+	background: #f2aeee;
 	display: flex;
 	align-items: center;
 	/* justify-content: center; */
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: 20px auto 30px;
 }
 .slideshow-content {
 	/* flex: 1 1; */
-	padding: 0 30px;
+	padding: 0 60px;
 	width: 720px;
+	text-align: center;
 }
-.slideshow-content h4 {
-	font-size: 20px;
-	color: #333;
+.slideshow-content, .slideshow-content h1, .slideshow-content h2, .slideshow-content h3, .slideshow-content h4 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #000;
+}
+.slideshow-content h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .slideshow-image.main {
 	min-height: 640px;
@@ -102,7 +108,8 @@ Push Notifications End - Removed for Now -->
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 0%;
-	width: 720px;/* border-right: 15px solid #fff; */
+	width: 720px;
+	background: #fff;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
 	position: absolute;
@@ -202,18 +209,77 @@ Push Notifications End - Removed for Now -->
 #slideshow div:nth-of-type(10) {
 	background-image: url("slideshow/ten.jpg")
 }
-.book-row {
-	background: #f5f5f5;
+.logo {
+	text-align: center;
+	margin: 0 auto;
+}
+.logo-row {
+	background: #2f2e33;
 	display: flex;
 	align-items: center;
 	/* justify-content: center; */
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: 0 auto 30px;
+	padding: 10px 0;
 }
-.b-content {
-	/* flex: 1 1; */
-	padding: 0 30px;
+.logo-content {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	padding: 0 60px;
 	width: 720px;
+	font-weight: 400;
+}
+.book-row {
+	background: #30cbd9;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	max-width: 1440px;
+	margin: 0 auto 30px;
+}
+.book-content {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #000;
+	font-size: 28px;
+	text-align: center;
+	padding: 0 60px;
+	width: 720px;
+	font-weight: 400;
+	font-style: italic;
+}
+.book-content > div {
+	padding-bottom: 30px;
+}
+.book-content a {
+	color: #000;
+	border-bottom: 3px solid #000;
+	padding-bottom: 3px;
+}
+.book-content a:hover {
+	color: #666;
+	border-bottom: 3px solid #666;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+.gala-row {
+	background: #f2762e;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	max-width: 1440px;
+	margin: 0 auto 30px;
+	position: relative;
+}
+.gala-content {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #000;
+	font-size: 28px;
+	text-align: center;
+	padding: 0 60px;
+	width: 720px;
+	font-weight: 400;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -387,7 +453,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- End Mobile Navbar -->
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
-  <!-- InstanceBeginEditable name="Content" -->
+  <!-- InstanceBeginEditable name="Content" --> 
+  
+  <!--  <div class="row">
+    <div class="logo-row">
+      <div class="logo-content">
+        
+        <div><i>Good Things Are Brewing!</i></div>
+      </div>
+      <div class="logo"><img class="img-responsive image-center" src="brew-tour-logo.png" alt=""></div>
+    </div>
+  </div>-->
+  
   <div class="row">
     <div class="slideshow-row">
       <div id="slideshow" class="slideshow-image main"> 
@@ -426,17 +503,32 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <span></span> </div>
       <div class="slideshow-content">
         <div class="info-wrapper">
-          <h1>Good Things Are Brewing!</h1>
-          <h4 class="brew-text">DCL Brew Tour</h4>
+          <h4>Good Things Are Brewing!</h4>
+          <h1>DCL Brew Tour</h1>
           <h3>Through September 30</h3>
-          Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="white text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
+          <div>Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="white text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
+        </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="book-row">
-      <div class="book-content"> Content goes here </div>
-      <div class="book-image"><img class="img-responsive" src="https://source.unsplash.com/720x640/?woman" alt=""></div>
+      <div class="book-content">
+        <div>May we offer <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2121333879">a book</a> to go with your brew? </div>
+        <div>Thirsty for a <a href="https://dcl.bibliocommons.com/list/share/692278051/2140423619">good read</a>? </div>
+        <div>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books </a>to love!</div>
+      </div>
+      <div class="book-image"><img class="img-responsive" src="books.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="row padding-bottom-30">
+    <div class="gala-row">
+      <div class="gala-image"><img class="img-responsive" src="hansel-gretel.jpg" alt=""></div>
+      <div class="gala-content">
+        <h2>Deep in the Forest</h2>
+        <h5>Celebrate the timeless tale of Hansel & Gretel at our 7th Annual Fête des Fables Gala, benefiting the DCL Foundation. Enjoy fine dining and drinks, axe throwing, a classic silent auction, and much more.</h5>
+        <h4><a href="https://www.eventbrite.com/e/fete-des-fables-deep-in-the-forest-tickets-391228865067" target="_blank">Get Tickets</a></h4>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
