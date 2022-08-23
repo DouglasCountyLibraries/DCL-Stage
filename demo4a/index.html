@@ -79,16 +79,25 @@ Push Notifications End - Removed for Now -->
 <style>
 .row.brew-row {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #f4ecd9;
+	color: #ffff;
 	display: flex;
 	justify-content: flex-end;
-	background: #1c1d1d;
+	background: #cd6639;
 }
 .row.brew-tour-info {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #f4ecd9;
-	background: #1c1d1d;
-	padding: 90px 15px 205px;
+	color: #fff;
+	background: #cd6639;
+	padding: 80px 15px 205px;
+}
+.intro {
+	text-align: center;
+	font-size: 39px;
+	font-weight: 400;
+	color: #cd6639;
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-style: italic;
+	padding-bottom: 10px;
 }
 .info-wrapper {
 	max-width: 725px;
@@ -98,43 +107,50 @@ Push Notifications End - Removed for Now -->
 	font-size: 20px;
 	font-weight: 400;
 }
+.hops {
+	text-align: center;
+	margin-top: -210px;
+	position: relative;
+	z-index: 1000;
+	padding-bottom: 30px;
+}
 h4.brew-text {
 	font-weight: 600;
-	font-size: 42px;
+	font-size: 66px;
 	text-transform: uppercase;
 	white-space: nowrap;
-	color: #f4ecd9;
+	color: #fff;
 	margin: 0;
 }
 .brew-tour {
-	max-width: 400px;
-	margin-top: -290px;
+	max-width: 290px;
+	margin-top: -215px;
 	position: relative;
 	z-index: 1000;
-	background: #1c1d1d;
+	background: #cd6639;
 	margin-right: 15%;
 	padding: 40px 60px 0 60px;
 	color: #fff;
 }
 .brew-tour h1 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	text-transform: uppercase;
-	font-size: 60px;
-	font-weight: 700;
-	color: #f4ecd9;
+	font-size: 38px;
+	font-weight: 500;
+	color: #fff;
 	margin: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
-	line-height: 50px;
+	/* text-shadow: 0 10px 20px rgba(0, 0, 0, .4); */
+	line-height: 48px;
 	padding-top: 10px;
+	border-radius: 3px;
 }
 .info-wrapper h3 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	padding-bottom: 20px;
 	font-size: 26px;
 	font-weight: 400;
-	color: #f4ecd9;
+	color: #fff;
 	margin: 0;
-	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+	/* text-shadow: 0 10px 20px rgba(0, 0, 0, .4); */
 	line-height: 30px;
 }
 .box-item-wrapper {
@@ -170,6 +186,7 @@ h4.brew-text {
 .row.fete {
 	background: #06311d url(trees.jpg) center top repeat-x;
 	padding: 100px 15px 120px;
+	margin-left: -80px;
 }
 .fete-wrapper {
 	display: flex;
@@ -178,19 +195,20 @@ h4.brew-text {
 	/* justify-content: center; */
 	align-content: center;
 	/* align-items: center; */
-	background: #1c1d1d;
+	background: #cda17b;
+	border-radius: 3px;
 }
 .fete-item.one {
-	background: #1c1d1d;
+	background: #cda17b url("hansel-gretel.png") center center no-repeat;
 	padding: 100px;
 	margin: 65px 0 75px;
 }
 .fete-item.one > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 700;
-	color: #f4ecd9;
+	color: #000;
 	margin: 0;
-	font-size: 42px;
+	font-size: 52px;
 	text-transform: uppercase;
 }
 .fete-item.one > h4 a {
@@ -199,20 +217,27 @@ h4.brew-text {
 	margin: 0;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #03a2e0;
+	color: #000;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+.fete-item.one > h4 a:hover {
+	text-decoration: none;
+	opacity: .6;
 }
 .fete-item.one > h5 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 400;
-	color: #fff;
+	color: #000;
 	margin: 0;
-	padding: 15px 0;
+	padding: 15px 0 25px;
 }
 .fete-item.two {
-	background: #dff3e5;
+	background: #fff;
 	padding: 100px;
 	margin: 65px -65px 75px 0;
 	min-width: 460px;
+	border-radius: 3px;
 }
 .fete-item.two > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -230,7 +255,7 @@ h4.brew-text {
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	background: #1c1d1d;
+	background: #cd6639;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -246,6 +271,8 @@ h4.brew-text {
 	width: 1650px;
 	margin-top: -100px;
 	background: #fff;
+	border: 30px solid #fff;
+	border-top: 0;
 }/* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
 	position: absolute;
@@ -519,6 +546,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row">
+    <div class="intro">Good things are Brewing!</div>
     <div class="slideshow-row">
       <div id="slideshow" class="slideshow-image main"> 
         <!-- define each background-image in CSS -->
@@ -556,12 +584,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <span></span> </div>
     </div>
   </div>
-  <div class="row brew-row">
-    <div class="brew-tour">
-      <h1>Good Things Are Brewing!</h1>
-    </div>
-  </div>
   <div class="row brew-tour-info">
+    <div class="hops"><img src="hops.png" alt=""></div>
     <div class="info-wrapper">
       <h4 class="brew-text">DCL Brew Tour</h4>
       <h3>Through September 30</h3>
