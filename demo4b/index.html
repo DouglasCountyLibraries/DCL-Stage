@@ -274,13 +274,80 @@ Push Notifications End - Removed for Now -->
 }
 .gala-content {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #000;
-	font-size: 28px;
+	color: #fff;
+	font-size: 20px;
 	text-align: center;
 	padding: 0 60px;
 	width: 720px;
 	font-weight: 400;
 }
+.gala-content h1 {
+	color: #fff;
+	font-size: 54px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+		.gala-content > h4 {
+	padding-top: 20px;
+}
+	.gala-content > h4 a {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 700;
+	margin: 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+.gala-content > h4 a:hover {
+	text-decoration: none;
+	opacity: .6;
+}
+.toolkit-row {
+	background: #30cbd9;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	max-width: 1440px;
+	margin: 0 auto 90px;
+}
+.toolkit-wrapper {
+	display: flex;
+	
+	width: 720px;
+	justify-content: center;
+}
+.toolkit-content {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #000;
+	font-size: 22px;
+	/* padding: 0 60px; */
+	width: 330px;
+	font-weight: 400;
+	
+}
+	.toolkit-content h2 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #000;
+	font-size: 30px;
+	font-weight: 600;
+		text-transform: uppercase;
+}
+.toolkit-content > h5 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	color: #000;
+	font-size: 22px;
+	font-weight: 400;
+}
+.toolkit-content > h5 a {
+	color: #000;
+}
+.toolkit-content > h5 a:hover {
+	color: #444;
+	
+}
+
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -521,14 +588,26 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="book-image"><img class="img-responsive" src="books.jpg" alt=""></div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row">
     <div class="gala-row">
       <div class="gala-image"><img class="img-responsive" src="hansel-gretel.jpg" alt=""></div>
       <div class="gala-content">
-        <h2>Deep in the Forest</h2>
-        <h5>Celebrate the timeless tale of Hansel & Gretel at our 7th Annual Fête des Fables Gala, benefiting the DCL Foundation. Enjoy fine dining and drinks, axe throwing, a classic silent auction, and much more.</h5>
+        <h1>Deep in the Forest</h1>
+        <div>Celebrate the timeless tale of Hansel & Gretel at our 7th Annual Fête des Fables Gala, benefiting the DCL Foundation. Enjoy fine dining and drinks, axe throwing, a classic silent auction, and much more.</div>
         <h4><a href="https://www.eventbrite.com/e/fete-des-fables-deep-in-the-forest-tickets-391228865067" target="_blank">Get Tickets</a></h4>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="toolkit-row"><div class="toolkit-wrapper">
+      <div class="toolkit-content">
+        <h2>Babysitter’s Toolkit:</h2>
+        <h5>&#10141;&nbsp;&nbsp;<a href="https://www.kanopy.com/en/dcl/" target="_blank">Kanopy Kids Videos</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/list/share/692283576/2129440009">10 Tales of Hansel & Gretel</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1745505">Karaoke!</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1708351">Crazy Forts Night</a></h5>
+      </div></div>
+      <div class="toolkit-image"><img class="img-responsive" src="toolkit.png" alt=""></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
