@@ -86,20 +86,27 @@ Push Notifications End - Removed for Now -->
 	max-width: 1440px;
 	margin: 20px auto 30px;
 }
-.slideshow-content {
-	/* flex: 1 1; */
-	padding: 0 60px;
-	width: 720px;
-	text-align: center;
-}
 .slideshow-content, .slideshow-content h1, .slideshow-content h2, .slideshow-content h3, .slideshow-content h4 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #000;
+}
+.slideshow-content {
+	font-size: 20px;
+	font-weight: 400;
+	padding: 0 110px;
+	width: 720px;
+	text-align: center;
 }
 .slideshow-content h1 {
 	font-size: 60px;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin: 0;
+}
+.slideshow-content h3 {
+	font-size: 28px;
+	font-weight: 400;
+	margin: 5px 0 20px;
 }
 .slideshow-image.main {
 	min-height: 640px;
@@ -242,7 +249,7 @@ Push Notifications End - Removed for Now -->
 .book-content {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #000;
-	font-size: 28px;
+	font-size: 26px;
 	text-align: center;
 	padding: 0 60px;
 	width: 720px;
@@ -250,21 +257,24 @@ Push Notifications End - Removed for Now -->
 	font-style: italic;
 }
 .book-content > div {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .book-content a {
 	color: #000;
-	border-bottom: 3px solid #000;
+	border-bottom: 2px solid #000;
 	padding-bottom: 3px;
 }
 .book-content a:hover {
 	color: #666;
-	border-bottom: 3px solid #666;
+	border-bottom: 2px solid #666;
 	text-decoration: none;
 	padding-bottom: 3px;
 }
-.gala-row {
+.book-image {
 	background: #f2762e;
+}
+.gala-row {
+	background: #0E5239;
 	display: flex;
 	align-items: center;
 	/* justify-content: center; */
@@ -287,10 +297,10 @@ Push Notifications End - Removed for Now -->
 	font-weight: 700;
 	text-transform: uppercase;
 }
-		.gala-content > h4 {
+.gala-content > h4 {
 	padding-top: 20px;
 }
-	.gala-content > h4 a {
+.gala-content > h4 a {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 700;
 	margin: 0;
@@ -305,16 +315,18 @@ Push Notifications End - Removed for Now -->
 	opacity: .6;
 }
 .toolkit-row {
-	background: #30cbd9;
+	background: #dab2ae;
 	display: flex;
 	align-items: center;
 	/* justify-content: center; */
 	max-width: 1440px;
 	margin: 0 auto 90px;
 }
+.toolkit-image {
+	background: #8c2e36;
+}
 .toolkit-wrapper {
 	display: flex;
-	
 	width: 720px;
 	justify-content: center;
 }
@@ -325,14 +337,14 @@ Push Notifications End - Removed for Now -->
 	/* padding: 0 60px; */
 	width: 330px;
 	font-weight: 400;
-	
 }
-	.toolkit-content h2 {
+.toolkit-content h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #000;
 	font-size: 30px;
 	font-weight: 600;
-		text-transform: uppercase;
+	text-transform: uppercase;
+	margin: 0 0 30px;
 }
 .toolkit-content > h5 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -345,9 +357,7 @@ Push Notifications End - Removed for Now -->
 }
 .toolkit-content > h5 a:hover {
 	color: #444;
-	
 }
-
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -570,10 +580,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <span></span> </div>
       <div class="slideshow-content">
         <div class="info-wrapper">
-          <h4>Good Things Are Brewing!</h4>
+          <div><i>Good Things Are Brewing!</i></div>
           <h1>DCL Brew Tour</h1>
           <h3>Through September 30</h3>
-          <div>Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="white text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
+          <div>Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="black text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
         </div>
       </div>
     </div>
@@ -585,7 +595,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div>Thirsty for a <a href="https://dcl.bibliocommons.com/list/share/692278051/2140423619">good read</a>? </div>
         <div>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books </a>to love!</div>
       </div>
-      <div class="book-image"><img class="img-responsive" src="books.jpg" alt=""></div>
+      <div class="book-image"><img class="img-responsive" src="books.png" alt=""></div>
     </div>
   </div>
   <div class="row">
@@ -599,14 +609,16 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="toolkit-row"><div class="toolkit-wrapper">
-      <div class="toolkit-content">
-        <h2>Babysitter’s Toolkit:</h2>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://www.kanopy.com/en/dcl/" target="_blank">Kanopy Kids Videos</a></h5>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/list/share/692283576/2129440009">10 Tales of Hansel & Gretel</a></h5>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1745505">Karaoke!</a></h5>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1708351">Crazy Forts Night</a></h5>
-      </div></div>
+    <div class="toolkit-row">
+      <div class="toolkit-wrapper">
+        <div class="toolkit-content">
+          <h2>Babysitter’s Toolkit:</h2>
+          <h5>&#10141;&nbsp;&nbsp;<a href="https://www.kanopy.com/en/dcl/" target="_blank">Kanopy Kids Videos</a></h5>
+          <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/list/share/692283576/2129440009">10 Tales of Hansel & Gretel</a></h5>
+          <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1745505">Karaoke!</a></h5>
+          <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1708351">Crazy Forts Night</a></h5>
+        </div>
+      </div>
       <div class="toolkit-image"><img class="img-responsive" src="toolkit.png" alt=""></div>
     </div>
   </div>
