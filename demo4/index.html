@@ -77,6 +77,34 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </script> 
 Push Notifications End - Removed for Now -->
 <style>
+.row.dark {
+	background: #2e2424;
+}
+.healthy-container {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	background: url("brew-background.jpg") top center no-repeat;
+	height: 250px;
+	max-width: 2200px;
+	margin: 0 auto;
+}
+.healthy-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 480px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	justify-content: flex-end;
+}
+h1.healthy {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+}
 .row.brew-row {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #f4ecd9;
@@ -84,11 +112,16 @@ Push Notifications End - Removed for Now -->
 	justify-content: flex-end;
 	background: #2e2424;
 }
+.row.wave-row {
+	background: transparent url(wave.png) center center repeat-x;
+	height: 123px;
+	margin-top: -123px;
+}
 .row.brew-tour-info {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	color: #f4ecd9;
 	background: #2e2424;
-	padding: 90px 15px 215px;
+	padding: 75px 15px 320px;
 }
 .info-wrapper {
 	max-width: 725px;
@@ -115,6 +148,17 @@ h4.brew-text {
 	margin-right: 15%;
 	padding: 40px 60px 0 60px;
 	color: #fff;
+}
+.brew-tour-logo {
+	margin: 0 auto;
+	text-align: center;
+	/* display: flex; */
+	/* justify-content: flex-end; */
+	/* align-content: center; */
+	/* align-items: center; */
+	/* position: relative; */
+	/* bottom: ; */
+	padding-top: 560px;
 }
 .brew-tour h1 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -147,7 +191,7 @@ h4.brew-text {
 	max-width: 1420px;
 	margin: 0 auto;
 	padding: 13px 0 0px;
-	margin-top: -115px;
+	margin-top: -170px;
 }
 .box-item {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -172,7 +216,9 @@ h4.brew-text {
 }
 .row.fete {
 	background: #06311d url(trees.jpg) center top repeat-x;
-	padding: 100px 15px 120px;
+	padding: 250px 15px 150px;
+	/* margin-top: -50px; */
+	padding-right: 60px;
 }
 .fete-wrapper {
 	display: flex;
@@ -181,17 +227,18 @@ h4.brew-text {
 	/* justify-content: center; */
 	align-content: center;
 	/* align-items: center; */
-	background: #2e2424;
+	background: #7CACAC;
+	border-radius: 3px;
 }
 .fete-item.one {
-	background: #2e2424;
+	background: #7CACAC;
 	padding: 100px;
 	margin: 65px 0 75px;
 }
 .fete-item.one > h2 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 700;
-	color: #f4ecd9;
+	color: #000;
 	margin: 0;
 	font-size: 42px;
 	text-transform: uppercase;
@@ -202,14 +249,20 @@ h4.brew-text {
 	margin: 0;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #f4ecd9;
-	border-top: 3px solid #f4ecd9;
-	border-bottom: 3px solid #f4ecd9;
+	color: #000;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+.fete-item.one > h4 a:hover {
+	color: #444;
+	border-top: 3px solid #444;
+	border-bottom: 3px solid #444;
+	text-decoration: none;
 }
 .fete-item.one > h5 {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 400;
-	color: #f4ecd9;
+	color: #000;
 	margin: 0;
 	padding: 15px 0;
 }
@@ -232,125 +285,6 @@ h4.brew-text {
 	color: #000;
 	margin: 0;
 	padding-top: 15px;
-}
-/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
-.slideshow-row {
-	background: #2e2424;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	margin-top: 105px;
-}
-#slideshow {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 0%;
-	/* width: 100%; */
-	min-height: 700px;
-	width: 1650px;
-	margin-top: -100px;
-	background: #fff;
-	border: 30px solid #fff;
-	border-top: 0;
-}/* (img px height / img px width x 100) = padding-bottom % */
-#slideshow div {
-	position: absolute;
-	z-index: 2;
-	width: 105%;
-	height: 105%;
-	top: -5%;
-	left: -5%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0;
-	-webkit-transition: opacity 3s, -webkit-transform 8s;
-	transition: opacity 3s, transform 8s;
-}
-/* slide two */
-#slideshow div {
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
-}
-/* slide three */
-#slideshow div:nth-of-type(2n+1) {
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
-}
-/* slide four */
-#slideshow div:nth-of-type(3n+1) {
-	-webkit-transform-origin: bottom left;
-	transform-origin: bottom left;
-}
-/* slide five */
-#slideshow div:nth-of-type(4n+1) {
-	-webkit-transform-origin: top center;
-	transform-origin: top center;
-}
-/* slide six */
-#slideshow div:nth-of-type(5n+1) {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide seven */
-#slideshow div:nth-of-type(6n+1) {
-	-webkit-transform-origin: top center;
-	transform-origin: top center;
-}
-/* slide eight */
-#slideshow div:nth-of-type(7n+1) {
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
-}
-/* slide nine */
-#slideshow div:nth-of-type(8n+1) {
-	-webkit-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide one */
-#slideshow div:nth-of-type(9n+1) {
-	-webkit-transform-origin: center center;
-	transform-origin: center center;
-}
-#slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
-	z-index: 1
-}
-#slideshow .fx, #slideshow .fx1 {
-	-webkit-transform: scale(1.1) translate(1.5%);
-	-ms-transform: scale(1.1) translate(1.5%);
-	transform: scale(1.1) translate(1.5%);
-	opacity: 1
-}
-#slideshow div:nth-of-type(1) {
-	background-image: url("slideshow/one.jpg")
-}
-#slideshow div:nth-of-type(2) {
-	background-image: url("slideshow/two.jpg")
-}
-#slideshow div:nth-of-type(3) {
-	background-image: url("slideshow/three.jpg")
-}
-#slideshow div:nth-of-type(4) {
-	background-image: url("slideshow/four.jpg")
-}
-#slideshow div:nth-of-type(5) {
-	background-image: url("slideshow/five.jpg")
-}
-#slideshow div:nth-of-type(6) {
-	background-image: url("slideshow/six.jpg")
-}
-#slideshow div:nth-of-type(7) {
-	background-image: url("slideshow/seven.jpg")
-}
-#slideshow div:nth-of-type(8) {
-	background-image: url("slideshow/eight.jpg")
-}
-#slideshow div:nth-of-type(9) {
-	background-image: url("slideshow/nine.jpg")
-}
-#slideshow div:nth-of-type(10) {
-	background-image: url("slideshow/ten.jpg")
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -525,51 +459,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
-    <div class="slideshow-row">
-      <div id="slideshow" class="slideshow-image main"> 
-        <!-- define each background-image in CSS -->
-        <div></div>
-        <!-- #slideshow div:nth-of-type(1) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(2) --> 
-        <span></span>
-        <div></div>
-        
-        <!-- #slideshow div:nth-of-type(3) --> 
-        <span></span>
-        <div></div>
-        
-        <!-- #slideshow div:nth-of-type(4) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(5) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(6) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(7) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(8) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(9) --> 
-        <span></span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(10) --> 
-        <span></span> </div>
-    </div>
+  <div class="row dark">
+    <div class="healthy-container"> </div>
   </div>
-  <div class="row brew-row">
-    <div class="brew-tour">
-      <h1>Good Things Are Brewing!</h1>
-    </div>
-  </div>
+  <div class="row wave-row"></div>
   <div class="row brew-tour-info">
-    <div class="info-wrapper">
+    <div class="info-wrapper"><i>Good Things Are Brewing!</i>
       <h4 class="brew-text">DCL Brew Tour</h4>
       <h3>Through September 30</h3>
       Good times, good brews, and a great community, that is what it’s all about! Plus prizes and awesome events, too. What’s not to love? <a class="white text-underline" href="https://www.dcl.org/brew-tour/">Learn more</a>.</div>
@@ -579,19 +474,19 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="box-item">
         <div><img class="img-responsive center-block" src="the-wonder.jpg" alt="The Wonder"></div>
         <div class="box-content">
-          <div>May we offer a <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2121333879">book to go with your brew</a>? </div>
+          <div><i>May we offer a <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2121333879">book to go with your brew</a>?</i></div>
         </div>
       </div>
       <div class="box-item">
         <div><img class="img-responsive center-block" src="survive-the-night.jpg" alt="Survive the Night"></div>
         <div class="box-content">
-          <div><a href="https://dcl.bibliocommons.com/list/share/692278051/2140423619">Thirsty for a good read</a>? </div>
+          <div><i><a href="https://dcl.bibliocommons.com/list/share/692278051/2140423619">Thirsty for a good read</a>? </i></div>
         </div>
       </div>
       <div class="box-item">
         <div><img class="img-responsive center-block" src="be-frank-with-me.jpg" alt="Be Frank with Me"></div>
         <div class="box-content">
-          <div>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books to love</a>!</div>
+          <div><i>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books to love</a>!</i></div>
         </div>
       </div>
     </div>
@@ -605,10 +500,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div class="fete-item two">
         <h2>Babysitter’s Toolkit:</h2>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://www.kanopy.com/en/dcl/" target="_blank">Kanopy Kids Videos</a></h5>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/list/share/692283576/2129440009">10 Tales of Hansel & Gretel</a></h5>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1745505">Karaoke!</a></h5>
-        <h5>&#10141;&nbsp;&nbsp;<a href="https://dcl.bibliocommons.com/v2/record/S114C1708351">Crazy Forts Night</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a class="black" href="https://www.kanopy.com/en/dcl/" target="_blank">Kanopy Kids Videos</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a class="black" href="https://dcl.bibliocommons.com/list/share/692283576/2129440009">10 Tales of Hansel & Gretel</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a class="black" href="https://dcl.bibliocommons.com/v2/record/S114C1745505">Karaoke!</a></h5>
+        <h5>&#10141;&nbsp;&nbsp;<a class="black" href="https://dcl.bibliocommons.com/v2/record/S114C1708351">Crazy Forts Night</a></h5>
       </div>
     </div>
   </div>
