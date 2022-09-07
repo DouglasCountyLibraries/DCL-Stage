@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -66,21 +67,30 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	color: #666;
 }
 h4.bce {
-	font-size: 23px;
+	font-size: 18px;
+}
+.bce-container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 40px 15px 50px;
 }
 .list-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-top: 15px;
+	align-content: center;
 	max-width: 750px;
 	margin: 0 auto;
 }
 .list-items {
-	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 10px 15px;
+	max-width: 500px;
+	min-width: 275px;
 }
 .list-items div {
-	padding-bottom: 5px;
+	padding-bottom: 8px;
 }
 .list-items > h5 {
 	color: #fff;
@@ -198,7 +208,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -368,7 +378,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <h4 class="roboto margin-top-5 no-margin-bottom margin-lg-100">If you love to talk about books, then we've got a book club for you!</h4>
       <h4 class="bce margin-top-5 margin-bottom-15">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
     </div>
-  </div>  <div class="row padding-bottom-30">
+  </div>
+  <div class="row padding-bottom-30">
     <div class="page-nav">
       <div class="page-nav-item"><a href="#bce"><i class="pagenav-icon fa-regular fa-bags-shopping"></i>Book Club Express</a></div>
       <div class="page-nav-item"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank"><i class="pagenav-icon fa-regular fa-calendar"></i>Book Club Calendar</a></div>
@@ -473,10 +484,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div>Note: Displayed reading list is not actual list</div>
           </div>
         </div>
-        <div class="element-item highlands-ranch adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+daytime&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="great-books.jpg" alt="Great Books: Daytime"></a>
+        <div class="element-item virtual adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+daytime&lib=all&nd=365" target="_blank"><img class="bib-covers" src="great-books.jpg" alt="Great Books: Daytime"></a>
           <div class="item-inner">
             <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+daytime&lib=1004&nd=365" target="_blank">Great Books: Daytime</a></h4>
-            <h5>Highlands Ranch</h5>
+            <h5>Virtual</h5>
             <div>AUDIENCE: Adults</div>
             <div>Note: Displayed reading list is not actual list</div>
           </div>
@@ -585,13 +596,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="text-uppercase font-weight-400"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/748711967">View Reading List &raquo;</a></div>
           </div>
         </div>
-        <div class="element-item lone-tree teens"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=teen+summer+break&lib=1002&nd=365" target="_blank"><img class="bib-covers" src="teen-summer-break.jpg" alt="Teen Summer Break Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=teen+summer+break&lib=1002&nd=365" target="_blank">Teen Summer Break Book Club</a></h4>
-            <h5>Lone Tree</h5>
-            <div>AUDIENCE: Teens</div>
-          </div>
-        </div>
         <div class="element-item castle-rock adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=thursday+evening+book+club&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/703217107.png" alt="Thursday Evening Book Club"></a>
           <div class="item-inner">
             <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=thursday+evening+book+club&lib=1001&nd=365" target="_blank">Thursday Evening Book Club</a></h4>
@@ -612,33 +616,38 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div id="bce" class="row bg-teal">
-    <div class="container white padding-top-40 padding-bottom-50">
+    <div class="bce-container white">
       <h2 class="white text-center no-margin-top">Book Club Express</h2>
       <h4 class="white margin-lg-100 text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</h4>
       <div class="white text-center">New kits now available!</div>
       <div class="list-wrapper">
         <div class="list-items">
-          <h5>January:</h5>
-          <div><i>Finlay Donovan is Killing It</i> by Elle Cosimano</div>
-          <div><i>Of Women and Salt</i> by Gabriella Garcia</div>
+          <h5>May:</h5>
+          <div><i>The Paris Library</i> by Janet Skeslien Charles</div>
+          <div><i>We Begin at the End</i> by Chris Whitaker</div>
+          <div><i>The Recovery Agent</i> by Janet Evanovich</div>
         </div>
         <div class="list-items">
-          <h5>February:</h5>
-          <div><i>All That is Secret</i> by Patricia Raybon</div>
-          <div><i>A Long Petal of the Sea</i> by Isabel Allende</div>
+          <h5>June:</h5>
+          <div><i>Under the Banner of Heaven</i> by Jon Krakauer <!--(NF)--></div>
+          <div><i>The Witch Boy</i> by Molly Ostertag <!--(JGN)--></div>
+          <div><i>Front Desk</i> by Kelly Yang <!--(JF)--></div>
+          <div><i>Clean Getaway</i> by Nic Stone <!--(JF)--></div>
+          <div><i>Stargazing</i> by Jen Wang <!--(JGN)--></div>
         </div>
         <div class="list-items">
-          <h5>March:</h5>
-          <div><i>It Ends With Us</i> by Colleen Hoover</div>
-          <div><i>Klara And The Sun</i> by Kazuro Ishiguro</div>
+          <h5>July:</h5>
+          <div><i>The Personal Librarian</i> by Marie Benedict and Victoria Christopher Murray</div>
+          <div><i>Malibu Rising</i> by Taylor Jenkins Reid</div>
+          <div><i>You’ll Never Believe What Happened to Lacey</i> by Amber Ruffin & Lacey Lamar</div>
         </div>
         <div class="list-items">
-          <h5>April:</h5>
-          <div><i>Who is Maud Dixon</i> by Alexandra Andrews</div>
-          <div><i>Between Two Kingdoms</i> by Suleika Jaouad</div>
+          <h5>August:</h5>
+          <div><i>Not A Happy Family</i> by Shari Lapena</div>
+          <div><i>The Thursday Murder Club</i> by Richard Osman</div>
         </div>
       </div>
-      <div class="text-center padding-top-30 padding-bottom-30"><a href="http://www.eventkeeper.com/kitkeeper/index.cfm?curOrg=dclibs" target="_blank" class="btn btn-lg btn-primary">Reserve a Kit Now!</a></div>
+      <div class="text-center padding-top-30 padding-bottom-30"><a href="https://www.eventkeeper.com/kitkeeper/index.cfm?curOrg=dclibs" target="_blank" class="btn btn-lg btn-primary">Reserve a Kit Now!</a></div>
       <div class="text-center">Please limit your checkouts to one adult kit or two juvenile kits at a time.</div>
     </div>
   </div>
@@ -785,4 +794,5 @@ function concatValues( obj ) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
