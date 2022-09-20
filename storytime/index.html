@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -61,12 +62,40 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .kids-teens-active {
 	background-color: #f5f5f5;
 }
+.custom-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+.storytime-box {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 30px 15px;
+	min-width: 400px;
+	max-width: 800px;
+}
+.align-bottom {
+	margin-top: auto;
+	text-align: center;
+}
+.flower-background {
+	background: transparent url("flowers.png") center bottom repeat-x;
+}
+.large-text {
+	font-size: 18px;
+}
 .text-red {
 	color: #fff;
 	background-color: #b1462c;
 	font-size: 20px;
-	padding: 5px 0 6px;
-	margin: 15px 0 0;
+	padding: 5px 20px 6px;
+	margin: 25px 0 25px 0;
 	text-align: center;
 }
 .location-nav.nav > li > a {
@@ -80,10 +109,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .modal-header {
 	border-bottom: none;
 }
-.animals {
-	background: #fff url("storytime.png") center left/cover;
-	height: 185px;
-}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -94,7 +119,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -260,561 +285,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row border-top">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Storytime</h1>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fas fa-comment fa-flip-horizontal"></i></div>
-        </div>
+        <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Storytime</h1>
+        <h4 class="roboto margin-top-5 no-margin-bottom">Join us Monday-Saturday for Storytime fun and activities!</h4>
+        <div class="margin-lg-200">Library staff will lead songs, rhymes, reading and fingerplays to keep nurturing those all-important emerging reading skills. </div>
       </div>
-      <div class="text-center padding-top-20"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=virtual+storytime&lib=1008&nd=90" target="_blank" class="btn btn-primary text-uppercase">Virtual Storytime Calendar</a></div>
-      
-      <!--- tabs for md and lg devices starts here, hidden for xs and sm devices --> 
-      
-      <!--######## important! ###########
-		###############################
-		any changes need to be done in both the tabs and the accordian - see tabs below and accordian further below
-		###############################
-		###############################-->
-      
-      <div class="row hidden-xs hidden-sm padding-top-15 padding-bottom-30">
-        <div> 
-          <!-- Nav tabs -->
-          <ul class="location-nav nav nav-tabs nav-justified" role="tablist">
-            <li role="presentation" class="active"><a class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Ready&nbsp;to&nbsp;Read</h5>
-              </a></li>
-            <li role="presentation"><a class="tab" href="#two" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Castle&nbsp;Pines</h5>
-              </a></li>
-            <li role="presentation"><a class="tab" href="#three" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Castle&nbsp;Rock</h5>
-              </a></li>
-            <li role="presentation"><a class="tab" href="#four" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Highlands&nbsp;Ranch</h5>
-              </a></li>
-            <li role="presentation"><a class="tab" href="#five" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Lone&nbsp;Tree</h5>
-              </a></li>
-            <li role="presentation"><a class="tab" href="#six" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Parker</h5>
-              </a></li>
-            <li role="presentation"><a class="tab" href="#seven" role="tab" data-toggle="tab">
-              <h5 class="text-uppercase">Roxborough</h5>
-              </a></li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content padding-top-30 padding-left-15 padding-right-15">
-            <div role="tabpanel" class="tab-pane fade in active" id="one">
-              <div class="hours-wrapper">
-                <div>
-                  <div>Early literacy is what children know about reading and writing before they can actually read or write. Storytime nurtures six important pre-reading skills:<br>
-                    <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Tell Me a Story">narrative skills</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Take Time to Rhyme">phonological awareness</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Look for Letters">letter knowledge</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Books Are Fun">print motivation</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Explore New Words">vocabulary</a>, and <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Words Are Everywhere">print awareness</a>.</div>
-                </div>
-                <div style="height:200px;background:transparent url(storytime.png) top center no-repeat;"></div>
-                <div>
-                  <div>Storytime at Douglas County Libraries emphasizes five simple activities — reading, talking, writing, singing and playing&mdash;that help children learn the skills to be ready to read. You can build on your child's learning by incorporating these activities into your day as well. A great way to do this (and earn fun prizes along the way) is to sign up for <a href="https://wandooreader.com/douglascountylibraries/1000-books-before-kindergarten" target="_blank">1000 Books Before Kindergarten</a> and <a href="../one-thousand-books/reading-log.pdf" target="_blank">print your reading log</a>. Exposure to lots of books is a great predictor of reading readiness and school success.</div>
-                </div>
-              </div>
-            </div>
-            <!-- Castle Pines -->
-            <div role="tabpanel" class="tab-pane fade" id="two">
-              <div class="hours-wrapper text-center">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Monday-Friday</h5>
-                    </li>
-                    <li>9:30AM-All Ages</li>
-                    <li>10:30AM-All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="roboto">Special Storytime</h4>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">First Friday of Each Month</h5>
-                    </li>
-                    <li>10:30AM-Make It & Take It Storytime-All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Second & Fourth Friday of Each Month</h5>
-                    </li>
-                    <li>10:30AM-Yoga Storytime-All Ages</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Castle Rock -->
-            <div role="tabpanel" class="tab-pane fade" id="three">
-              <div class="hours-wrapper text-center">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Monday-Friday</h5>
-                    </li>
-                    <li>9:30AM-Baby</li>
-                    <li>10:30AM-Toddler</li>
-                    <li>11:30AM-Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Saturday</h5>
-                    </li>
-                    <li>10:30AM-All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="roboto">Special Storytime</h4>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">Monday</h5>
-                    </li>
-                    <li>6:30PM-Storytime Discover-All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Friday</h5>
-                    </li>
-                    <li>11:30AM-Storytime Presents-Preschool</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Highlands Ranch -->
-            <div role="tabpanel" class="tab-pane fade" id="four">
-              <div class="hours-wrapper text-center">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Monday-Friday</h5>
-                    </li>
-                    <li>9:30AM-Baby</li>
-                    <li>10:30AM-Toddler</li>
-                    <li>11:30AM-Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Wednesday</h5>
-                    </li>
-                    <li>7PM-All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Saturday</h5>
-                    </li>
-                    <li>10:30AM-All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-bottom-30 padding-top-15" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="roboto">Special Storytime</h4>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">First Friday of Each Month</h5>
-                    </li>
-                    <li>11:30AM-Storytime Presents</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="roboto">Sensory Storytime</h4>
-                      <div>An alternative for teens and adults with special needs. </div>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">Thursday</h5>
-                    </li>
-                    <li>11AM-Teens & Adults</li>
-                    <button class="btn btn-primary text-uppercase margin-top-15" data-toggle="collapse" data-target="#ss-ya">View our Social Story for Teens & Adults</button>
-                    <div id="ss-ya" class="collapse">
-                      <div class="margin-lg-200">
-                        <div id="carousel-two" class="carousel slide" data-ride=""> 
-                          
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner">
-                            <div class="item active"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/one.jpg" alt="Welcome to Highlands Ranch Library"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/two.jpg" alt="Book Return"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/three.jpg" alt="Bathroom"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/four.jpg" alt="Name Tags"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/five.jpg" alt="Info Desk"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/six.jpg" alt="Book Stacks"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/seven.jpg" alt="Comfy Chairs"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/eight.jpg" alt="Book Cart"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/nine.jpg" alt="Self Check Kiosks"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/ten.jpg" alt="How to Check Out a Book"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/eleven.jpg" alt="Time for Storytime"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/twelve-ya.jpg" alt="Second Floor Stairs or Elevator"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/thirteen-ya.jpg" alt="Event Hall A"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/fourteen.jpg" alt="Storytime Librarians"> </div>
-                            <div class="item"> <img class="img-responsive" src="../shared-assets/images/sensory-enhanced-storytime/fifteen.jpg" alt="Leaving the Library"> </div>
-                          </div>
-                          
-                          <!-- Controls --> 
-                          <a class="left carousel-control" href="#carousel-two" role="button" data-slide="prev"> <span class="glyphicon text-primary glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-two" role="button" data-slide="next"> <span class="glyphicon text-primary glyphicon-chevron-right"></span> </a> </div>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Lone Tree -->
-            <div role="tabpanel" class="tab-pane fade" id="five">
-              <div class="hours-wrapper text-center">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Monday, Wednesday &amp; Friday</h5>
-                    </li>
-                    <li>9:30AM-Baby</li>
-                    <li>10:15AM-Toddler</li>
-                    <li>11:15AM-Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Tuesday &amp; Thursday</h5>
-                    </li>
-                    <li>9:30AM-Baby</li>
-                    <li>11:15AM-Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Tuesday</h5>
-                    </li>
-                    <li>7PM-All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Saturday</h5>
-                    </li>
-                    <li>10AM-All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="roboto">Special Storytime</h4>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">First Thursday of Each Month</h5>
-                    </li>
-                    <li>11:15AM-Storytime Presents</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Parker -->
-            <div role="tabpanel" class="tab-pane fade" id="six">
-              <div class="hours-wrapper text-center">
-                <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Monday-Friday</h5>
-                    </li>
-                    <li>9:30AM-Baby</li>
-                    <li>10:15AM-Toddler</li>
-                    <li>11:15AM-Preschool</li>
-                    <li>
-                      <h5 class="text-uppercase">Saturday</h5>
-                    </li>
-                    <li>10:15AM-All Ages</li>
-                  </ul>
-                </div>
-                <div class="padding-top-15">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="roboto">Special Storytime</h4>
-                    </li>
-                    <li>
-                      <h5 class="text-uppercase">Monday</h5>
-                    </li>
-                    <li>7PM-Storytime Discover-All Ages</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Roxborough -->
-            <div role="tabpanel" class="tab-pane fade" id="seven">
-              <div class="hours-wrapper text-center">
-                <ul class="list-unstyled">
-                  <li>
-                    <h5 class="text-uppercase">Monday</h5>
-                  </li>
-                  <li>6PM-All Ages</li>
-                  <li>
-                    <h5 class="text-uppercase">Tuesday, Thursday &amp; Saturday</h5>
-                  </li>
-                  <li>10AM-All Ages</li>
-                  <li>
-                    <h5 class="text-uppercase">Wednesday &amp; Friday</h5>
-                  </li>
-                  <li>10AM-Baby</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="row padding-bottom-30">
+    <div class="custom-container">
+      <div class="box-wrapper">
+        <div class="storytime-box"> <img class="img-responsive image-center margin-bottom-10" src="storytime.jpg" alt="Indoor Storytime">
+          <h3 class="text-center">Indoor Storytime</h3>
+          <div class="padding-bottom-20">View the calendar to find a Storytime at your library. Thank you for keeping Storytime allergen-free.</div>
+          <div class="align-bottom"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=7&lib=1000,1001,1002,1003,1004,1005,1006&nd=180" target="_blank" class="btn btn-lg btn-primary text-uppercase"> Storytime Calendar</a></div>
         </div>
-      </div>
-      
-      <!--- accordian for xs and lsm devices starts here, hidden for md and lg devices --> 
-      
-      <!--######## important! ###########
-		###############################
-		any changes need to be done in both the tabs and the accordian - see tabs above and accordian below
-		###############################
-		###############################-->
-      
-      <div class="row hidden-md hidden-lg padding-top-30">
-        <div class="panel-group" id="accordionTwo" role="tablist" aria-multiselectable="true">
-          <div class="panel">
-            <div class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <div class="panel-heading accordion-toggle text-center text-uppercase">Ready to Read</div>
-            </div>
-            <div class="panel-collapse collapse in" id="collapseOne" aria-expanded="false">
-              <div class="panel-body">
-                <div>Early literacy is what children know about reading and writing before they can actually read or write. Storytime nurtures six important pre-reading skills:
-                  <ul>
-                    <li><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Tell Me a Story">Narrative skills</a></li>
-                    <li><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Take Time to Rhyme">Phonological awareness</a></li>
-                    <li><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Look for Letters">Letter knowledge</a></li>
-                    <li><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Books Are Fun">Print motivation</a></li>
-                    <li><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Explore New Words">Vocabulary</a></li>
-                    <li><a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Words Are Everywhere">Print awareness</a></li>
-                  </ul>
-                  Storytime at Douglas County Libraries emphasizes five simple activities — reading, talking, writing, singing and playing&mdash;that help children learn the skills to be ready to read. You can build on your child's learning by incorporating these activities into your day as well. A great way to do this (and earn fun prizes along the way) is to sign up for <a href="https://wandooreader.com/douglascountylibraries/1000-books-before-kindergarten" target="_blank">1000 Books Before Kindergarten</a> and <a href="../one-thousand-books/reading-log.pdf" target="_blank">print your reading log</a>. Exposure to lots of books is a great predictor of reading readiness and school success.</div>
-              </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <div class="panel-heading accordion-toggle text-center text-uppercase">Castle Pines</div>
-            </div>
-            <div class="panel-collapse collapse" id="collapseTwo" aria-expanded="false">
-              <div class="panel-body">
-                <div class="hours-wrapper text-center">
-                  <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h5 class="text-uppercase">Monday-Friday</h5>
-                      </li>
-                      <li>9:30AM-All Ages</li>
-                      <li>10:30AM-All Ages</li>
-                    </ul>
-                  </div>
-                  <div class="padding-top-15">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h4 class="roboto">Special Storytime</h4>
-                      </li>
-                      <li>
-                        <h5 class="text-uppercase">First Friday of Each Month</h5>
-                      </li>
-                      <li>10:30AM-Make It & Take It Storytime-All Ages</li>
-                      <li>
-                        <h5 class="text-uppercase">Second & Fourth Friday of Each Month</h5>
-                      </li>
-                      <li>10:30AM-Yoga Storytime-All Ages</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <div class="panel-heading accordion-toggle text-center text-uppercase">Castle Rock</div>
-            </div>
-            <div class="panel-collapse collapse" id="collapseThree" aria-expanded="false">
-              <div class="panel-body">
-                <div class="hours-wrapper text-center">
-                  <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h5 class="text-uppercase">Monday-Friday</h5>
-                      </li>
-                      <li>9:30AM-Baby</li>
-                      <li>10:30AM-Toddler</li>
-                      <li>11:30AM-Preschool</li>
-                      <li>
-                        <h5 class="text-uppercase">Saturday</h5>
-                      </li>
-                      <li>10:30AM-All Ages</li>
-                    </ul>
-                  </div>
-                  <div class="padding-top-15">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h4 class="roboto">Special Storytime</h4>
-                      </li>
-                      <li>
-                        <h5 class="text-uppercase">Monday</h5>
-                      </li>
-                      <li>6:30PM-Storytime Discover-All Ages</li>
-                      <li>
-                        <h5 class="text-uppercase">Friday</h5>
-                      </li>
-                      <li>11:30AM-Storytime Presents-Preschool</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div data-target="#collapseFour" data-parent="#accordion" data-toggle="collapse" class="panel-heading collapsed" aria-expanded="false">
-              <div class="panel-title accordion-toggle text-center text-uppercase">Highlands Ranch</div>
-            </div>
-            <div class="panel-collapse collapse" id="collapseFour" aria-expanded="false">
-              <div class="panel-body">
-                <div class="hours-wrapper text-center">
-                  <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h5 class="text-uppercase">Monday-Friday</h5>
-                      </li>
-                      <li>9:30AM-Baby</li>
-                      <li>10:30AM-Toddler</li>
-                      <li>11:30AM-Preschool</li>
-                      <li>
-                        <h5 class="text-uppercase">Wednesday</h5>
-                      </li>
-                      <li>7PM-All Ages</li>
-                      <li>
-                        <h5 class="text-uppercase">Saturday</h5>
-                      </li>
-                      <li>10:30AM-All Ages</li>
-                    </ul>
-                  </div>
-                  <div class="padding-bottom-30 padding-top-15" style="border-bottom:1px solid #e5e5e5">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h4 class="roboto">Special Storytime</h4>
-                      </li>
-                      <li>
-                        <h5 class="text-uppercase">First Friday of Each Month</h5>
-                      </li>
-                      <li>11:30AM-Storytime Presents</li>
-                    </ul>
-                  </div>
-                  <div class="padding-top-15">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h4 class="roboto">Sensory Storytime</h4>
-                        <div>An alternative for teens and adults with special needs. </div>
-                      </li>
-                      <li>
-                        <h5 class="text-uppercase">Thursday</h5>
-                      </li>
-                      <li>11AM-Teens & Adults</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              <div class="panel-heading accordion-toggle text-center text-uppercase">Lone Tree</div>
-            </div>
-            <div class="panel-collapse collapse" id="collapseNine" aria-expanded="false">
-              <div class="panel-body">
-                <div class="hours-wrapper text-center">
-                  <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h5 class="text-uppercase">Monday, Wednesday &amp; Friday</h5>
-                      </li>
-                      <li>9:30AM-Baby</li>
-                      <li>10:15AM-Toddler</li>
-                      <li>11:15AM-Preschool</li>
-                      <li>
-                        <h5 class="text-uppercase">Tuesday &amp; Thursday</h5>
-                      </li>
-                      <li>9:30AM-Baby</li>
-                      <li>11:15AM-Preschool</li>
-                      <li>
-                        <h5 class="text-uppercase">Tuesday</h5>
-                      </li>
-                      <li>7PM-All Ages</li>
-                      <li>
-                        <h5 class="text-uppercase">Saturday</h5>
-                      </li>
-                      <li>10AM-All Ages</li>
-                    </ul>
-                  </div>
-                  <div class="padding-top-15">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h4 class="roboto">Special Storytime</h4>
-                      </li>
-                      <li>
-                        <h5 class="text-uppercase">First Thursday of Each Month</h5>
-                      </li>
-                      <li>11:15AM-Storytime Presents</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              <div class="panel-heading accordion-toggle text-center text-uppercase">Parker</div>
-            </div>
-            <div class="panel-collapse collapse" id="collapseSix" aria-expanded="false">
-              <div class="panel-body">
-                <div class="hours-wrapper text-center">
-                  <div class="padding-bottom-30" style="border-bottom:1px solid #e5e5e5">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h5 class="text-uppercase">Monday-Friday</h5>
-                      </li>
-                      <li>9:30AM-Baby</li>
-                      <li>10:15AM-Toddler</li>
-                      <li>11:15AM-Preschool</li>
-                      <li>
-                        <h5 class="text-uppercase">Saturday</h5>
-                      </li>
-                      <li>10:15AM-All Ages</li>
-                    </ul>
-                  </div>
-                  <div class="padding-top-15">
-                    <ul class="list-unstyled">
-                      <li>
-                        <h4 class="roboto">Special Storytime</h4>
-                      </li>
-                      <li>
-                        <h5 class="text-uppercase">Monday</h5>
-                      </li>
-                      <li>7PM-Storytime Discover-All Ages</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              <div class="panel-heading accordion-toggle text-center text-uppercase">Roxborough</div>
-            </div>
-            <div class="panel-collapse collapse" id="collapseSeven" aria-expanded="false">
-              <div class="panel-body">
-                <div class="hours-wrapper text-center">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h5 class="text-uppercase">Monday</h5>
-                    </li>
-                    <li>6PM-All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Tuesday, Thursday &amp; Saturday</h5>
-                    </li>
-                    <li>10AM-All Ages</li>
-                    <li>
-                      <h5 class="text-uppercase">Wednesday &amp; Friday</h5>
-                    </li>
-                    <li>10AM-Baby</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="storytime-box"> <img class="img-responsive image-center margin-bottom-10" src="virtual-storytime.jpg" alt="Virtual Storytime">
+          <h3 class="text-center">Virtual Storytime Recorded</h3>
+          <div class="padding-bottom-20">Visit our Virtual Storytime calendar for recorded sessions you can enjoy from any connected device.</div>
+          <div class="align-bottom"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&df=calendar&et=7&lib=1008&nd=180" target="_blank" class="btn btn-lg btn-primary text-uppercase">Virtual Storytime</a></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div style="border-top: 1px solid #ddd" class="container text-center">
-      <h4 class="roboto padding-top-15 padding-bottom-20">Enjoy Storytime! Please help us keep it allergen-free!</h4>
+  <div class="row bg-gray-5">
+    <div class="container padding-bottom-60 padding-top-50 margin-lg-100">
+      <h2 class="text-center no-margin-top margin-bottom-15">Early Literacy</h2>
+      <div class="padding-bottom-15">Early literacy is what children know about reading and writing before they can actually read or write. Storytime nurtures six important pre-reading skills: <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Tell Me a Story">narrative skills</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Take Time to Rhyme">phonological awareness</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Look for Letters">letter knowledge</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Books Are Fun">print motivation</a>, <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Explore New Words">vocabulary</a>, and <a data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Words Are Everywhere">print awareness</a>.</div>
+      <div><img class="img-responsive image-center" src="storytime-animals.png" alt="Read, Talk Write, Sing, Play">
+        <div class="padding-top-15">Storytime at Douglas County Libraries emphasizes five simple activities — reading, talking, writing, singing and playing&mdash;that help children learn the skills to be ready to read. You can build on your child's learning by incorporating these activities into your day as well. A great way to do this (and earn fun prizes along the way) is to sign up for <a href="../1000-books/">1000 Books Before Kindergarten</a> and <a href="../1000-books/reading-log.pdf" target="_blank">print your reading log</a>. Exposure to lots of books is a great predictor of reading readiness and school success.</div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -883,6 +382,44 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
  </script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> <!-- InstanceEndEditable -->
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Library",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Castle Rock",
+		"addressRegion": "CO",
+		"postalCode": "80104",
+		"streetAddress": "100 S. Wilcox Street"
+	},
+	"telephone": "(303) 791-7323",
+	"name": "Douglas County Libraries",
+	"url": "https://www.dcl.org/",
+	"image": "https://www.dcl.org/locations/castle-rock.jpg",
+	"description": "Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.",
+	"logo": "https://www.dcl.org/dcl-logo.png",
+	"priceRange": "Free",
+
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://dcl.bibliocommons.com/v2/search?query=search_term_string",
+		"query-input": "required name=search_term_string"
+	},
+	"sameAs": ["https:\/\/dcl.bibliocommons.com",
+		"https:\/\/www.blogs.douglascountylibraries.org",
+		"https:\/\/help.dcl.org/",
+		"https:\/\/www.douglascountylibraries.org/",
+		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
+		"https:\/\/www.instagram.com\/dclcolorado",
+		"https:\/\/www.youtube.com\/user\/dclwebteam",
+		"https:\/\/pinterest.com\/dougcolibraries",
+		"https:\/\/twitter.com\/DCLcolorado"
+	]
+}
+</script> 
+<!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
