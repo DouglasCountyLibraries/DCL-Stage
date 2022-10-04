@@ -75,28 +75,20 @@ h4.bce {
 	padding: 40px 15px 50px;
 }
 .list-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	max-width: 750px;
+	max-width: 400px;
 	margin: 0 auto;
 }
 .list-items {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	margin: 10px 15px;
-	max-width: 500px;
-	min-width: 275px;
+
 }
 .list-items div {
-	padding-bottom: 8px;
+	padding-bottom: 5px;
 }
 .list-items > h5 {
-	color: #fff;
-	margin: 10px 0 5px;
+	margin: 10px 0 0;
 	text-transform: uppercase;
 	font-size: 18px;
+	font-weight: 400;
 }
 .grid {
 	margin: 0 auto;
@@ -198,6 +190,9 @@ h4.bce {
 }
 
 @media (max-width: 575px) {
+	.club-item-wrapper {
+		flex-direction: column;
+	}
 .club-item {
 	margin: 20px 5px 0;
 }
@@ -636,11 +631,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div id="bce" class="row bg-teal">
-    <div class="bce-container white">
-      <h2 class="white text-center no-margin-top">Book Club Express</h2>
-      <h4 class="white margin-lg-100 text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</h4>
-      <div class="white text-center">New kits now available!</div>
+  <div id="bce" class="row">
+    <div class="bce-container">
+      <h2 class="text-center no-margin-top">Book Club Express</h2>
+      <h4 class="margin-lg-100 text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</h4>
+      <div class="large-text text-center">New kits now available!</div>
       <div class="list-wrapper">
         <div class="list-items">
           <h5>May:</h5>
@@ -672,15 +667,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center">Please limit your checkouts to one adult kit or two juvenile kits at a time.</div>
     </div>
   </div>
-  <div id="digital-bookclubs" class="row padding-top-40 padding-bottom-50">
+  <div id="digital-bookclubs" class="row bg-gray-5 padding-top-40 padding-bottom-50">
     <div class="container">
       <div class="text-center">
         <h2 class="no-margin">Digital Book Clubs</h2>
         <h4 class="margin-top-5 no-margin-bottom">Looking for digital options? Join an online book club!</h4>
       </div>
       <div class="club-item-wrapper">
-        <div class="club-item"><a href="https://theclub.hoopladigital.com/" target="_blank"><img class="img-responsive" src="hoopla-book-club.jpg" alt="Hoopla Book Club Hub"></a></div>
-        <div class="club-item"><a href="https://biglibraryread.com/" target="_blank"><img class="img-responsive" src="big-library-read.jpg" alt="Big Library Read"></a></div>
+        <div class="club-item"><a href="https://theclub.hoopladigital.com/" target="_blank"><img class="img-responsive" src="hoopla-book-club.jpg?10422" alt="Hoopla Book Club Hub"></a></div>
+        <div class="club-item"><a href="https://biglibraryread.com/" target="_blank"><img class="img-responsive" src="big-library-read.jpg?10422" alt="Big Library Read"></a></div>
       </div>
     </div>
   </div>
