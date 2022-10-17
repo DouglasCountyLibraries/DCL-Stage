@@ -78,12 +78,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 Push Notifications End - Removed for Now -->
 
 <style>
-.row.forest {
-	background: #fff url(brew-background.jpg);
-}
 .forest-container {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	background: url("branches.jpg") center bottom/cover;
+	background: url("tree-branches.jpg") center bottom/cover;
 	height: 675px;
 	max-width: 2800px;
 	margin: 0 auto;
@@ -117,7 +114,10 @@ h1.forest {
 	text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
 	line-height: 70px;/* color: #a5b887; */
 }
-.forest.one, .forest.two {
+.forest.one {
+	font-size: 24px;
+}
+.forest.two {
 	font-size: 22px;
 }
 .forest.three {
@@ -140,13 +140,13 @@ h1.forest {
 	text-decoration: none;
 }
 .box-item-wrapper {
-	background: transparent url(full-bloom.webp);
+	
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 0 120px;
+	padding: 30px 0;
 }
 .box-item {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -155,46 +155,21 @@ h1.forest {
 	color: #000;
 	margin: 15px;
 	width: 395px;
-	background: #f4d3ea;
+	background: #d0dde5;
 	padding: 40px 40px 60px;
 }
 .row.box-row {
-	padding: 0 15px;
-	margin-top: -60px;
-	margin-bottom: -60px;
-	position: relative;
+	padding: 90px 15px;
+	background: #fff url("brew-background.jpg");
+	
 }
-.row.book-row {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	background: #21244a;
-	color: #fff;
-	text-align: center;
-	padding: 160px 0 130px;
-}
+
 .book-wrapper {
 	max-width: 590px;
 	margin: 0 auto;
 	padding: 15px;
 }
-.row.book-row h4 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
-	font-weight: 400;
-	margin: 0;
-}
-.row.book-row h2, .row.book-row h2 a {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
-	font-size: 60px;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin: 0 0 5px 0;
-}
-.row.book-row h2 a:hover {
-	color: #f4d3ea;
-	text-decoration: none;
-}
+
 .read-more {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 	font-weight: 700;
@@ -204,6 +179,7 @@ h1.forest {
 	color: #fff;
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
+	margin-left: 28px;
 }
 .read-more:active, .read-more:hover, .read-more:focus {
 	color: #a5b887;
@@ -214,6 +190,63 @@ h1.forest {
 .box-item-wrapper {
 	max-width: 950px;
 }
+}
+.row.brew-tour {
+	background: #f7e4e6;
+	padding: 85px 15px 155px;
+}
+.brew-tour-wrapper {
+	background: transparent url(santa-claus.jpg) right top no-repeat;
+	display: flex;
+	max-width: 1125px;
+	margin: 0 auto;
+	min-height: 600px;
+}
+.brew-tour-item.one {
+	background: #fff;
+	padding: 60px;
+	margin: 175px 0 75px;
+	max-width: 525px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.brew-tour-item.one > h2 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+}
+.brew-tour-item.one > h5 {
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	padding-top: 0;
+}
+	.row.wedding {
+		background: #fff url("camp-background.png") center center repeat-x;
+	}
+.wed-item {
+	padding: 10px;
+	max-width: 300px;
+	/* justify-content: center; */
+	/* display: ; */
+}
+.wed-item img {
+	
+	border-radius: 2px;
+}
+.wed-item-wrapper {
+	display: flex;
+	max-width: 1400px;
+	margin: 0 auto;
+	justify-content: center;
+	padding: 100px;
+	background: #fff;
+	align-content: center;
+	align-items: center;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -388,31 +421,53 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
+  <div class="row" style="background: #f7e4e6;">
     <div class="forest-container">
       <div class="forest-wrapper">
-        <div class="forest one">Celebrate the Season!</div>
+        <div class="forest one"><i>Celebrate the Season!</i></div>
         <h1 class="forest">A Forest of Stories</h1>
         <div class="details">
           <div class="forest three">120+ Decorated Trees, 7 Locations, 7 Weeks</div>
           <div class="forest four">Unlimited Wonder!</div>
-          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter Sorting Hat, Houses of Hogwarts, Winnie-the-Pooh, and more. Mark your calendar! Nov 19-Jan 7.</div>
+          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter Sorting Hat, Houses of Hogwarts, Winnie-the-Pooh, and more. <span class="font-weight-700">Mark your calendar! Nov 19-Jan 7.</span></div>
         </div>
         <div class="padding-top-15"><a class="read-more" href="forest-of-stories/">Read More</a></div>
       </div>
     </div>
   </div>
-  <div class="row box-row">
-    <div class="box-item-wrapper">
+	
+	
+	  <div class="row brew-tour">
+    <div class="brew-tour-wrapper">
+      <div class="brew-tour-item one">
+        <h2>A Dickens Storybook Holiday</h2><h4>December 3&4, Lone Tree</h4>
+        <h5>Naughty & Nice Hot Cocoa Bar, Entertainment & Performances, Crafts, Make-and-Takes, Characters Come-to-Life, Festive Food & Drinks, Candy Bar, and Much More</h5>
+      </div>
+    </div>
+  </div>
+	
+	
+  <div class="row wedding">
+    <div class="wed-item-wrapper">
+      <div class="wed-item"><img class="img-responsive" src="https://source.unsplash.com/400x500/?woman" alt=""></div>
+      <div class="wed-item"><img class="img-responsive" src="https://source.unsplash.com/400x500/?man" alt=""></div>
+      <div class="wed-item"><img class="img-responsive" src="https://source.unsplash.com/400x500/?child" alt=""></div>
+		<div class="wed-item"><h4>Camp DCL</h4><div></div>Registration is open for our Kid-Free Black Friday Camps and HoliDays Camps. Sign up for some fun!</div>
+    </div>
+  </div>	
+	
+
+  <div class="row box-row"><div class="text-center"><h4>Lifelong Learning</h4><div>Embrace your curiosity and explore these enriching resources and events for adults, and enjoy the journey!</div></div>
+	  <div class="box-item-wrapper">
       <div class="box-item">
-        <div><img class="img-responsive center-block" src="device.png" alt="Digital Device"></div>
+        <div><img class="img-responsive center-block" src="digital-newspaper.png" alt="Digital Newspaper"></div>
         <div class="box-content">
           <h4>Explore & Experience</h4>
           <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=explore+&amp;+experience&lib=ALL&nd=365" target="_blank">Learn how to access</a> digital newspapers, e-books, movies and more on one of our devices or yours.</div>
         </div>
       </div>
       <div class="box-item">
-        <div><img class="img-responsive center-block" src="map.png" alt="Map of the World"></div>
+        <div><img class="img-responsive center-block" src="learning.png" alt="Learning"></div>
         <div class="box-content">
           <h4>Learning Series: A History Of...</h4>
           <div>Active Minds presents the histories of <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=lifelong+learning&lib=ALL&nd=90" target="_blank">some favorite things</a>.</div>
@@ -434,13 +489,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row book-row">
-    <div class="book-wrapper">
-      <h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4>
-      <h2><a href="https://dcl.bibliocommons.com/list/share/692278051/2149961319">Read These</a></h2>
-      <div><i>Did you know?</i> A <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/search?query=binge+box&searchType=smart">Binge Box</a> is a collection of movies you can borrow with one checkout. <a class="white text-underline" href="https://www.hoopladigital.com/browse/binge" target="_blank">Hoopla BingePass</a> gives you extra borrowing power too. </div>
-    </div>
-  </div>
+
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
