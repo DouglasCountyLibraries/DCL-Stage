@@ -242,11 +242,10 @@ h2.camp-dcl {
 }
 .camp-item {
 	padding: 10px;
-
 }
-	.camp-item:last-child {
-		max-width: 300px;
-	}
+.camp-item:last-child {
+	max-width: 300px;
+}
 .camp-item img {
 	border-radius: 2px;
 }
@@ -264,16 +263,43 @@ h2.camp-dcl {
 	align-items: center;
 	border-radius: 3px;
 }
-	@media (max-width: 875px) {
-		.camp-item-content {
-			flex-wrap: wrap;
-			padding: 90px 60px;
-		}
-			.camp-item:last-child {
-		max-width: 100%;
-	}
-	}
+
+@media (max-width: 875px) {
+.camp-item-content {
+	flex-wrap: wrap;
+	padding: 90px 60px;
+}
+.camp-item:last-child {
+	max-width: 100%;
+}
+}
 /* lifelong learning */
+.learning {
+	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+h2.learning {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 38px;
+	color: #333;
+	margin: 0 0 5px;
+}
+.learning.twenty {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.learning.nineteen {
+	font-size: 20px;
+	color: #333;
+	max-width: 520px;
+	margin: 0 auto;
+}
+.learning-item a {
+	font-weight: 600;
+}
 .learning-item-wrapper {
 	display: flex;
 	justify-content: center;
@@ -284,7 +310,6 @@ h2.camp-dcl {
 }
 .learning-item {
 	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-size: 18px;
 	font-weight: 400;
 	color: #000;
 	margin: 15px;
@@ -294,12 +319,27 @@ h2.camp-dcl {
 }
 .row.learning-row {
 	padding: 110px 15px;
-	background: #fff url("brew-background.jpg");
+	background: #fff url("learning-background.jpg");
 }
 
 @media (max-width: 1300px) {
 .learning-item-wrapper {
 	max-width: 950px;
+}
+}
+
+@media (max-width: 865px) {
+.learning-item {
+	width: 300px;
+}
+.row.learning-row {
+	padding: 95px 0;
+}
+}
+
+@media (max-width: 665px) {
+.learning-item {
+	width: 325px;
 }
 }
 </style>
@@ -519,35 +559,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!--#####-->
   <div class="row learning-row">
     <div class="text-center">
-      <h4>Lifelong Learning</h4>
-      <div>Embrace your curiosity and explore these enriching resources and events for adults, and enjoy the journey!</div>
+      <h2 class="learning">Lifelong Learning</h2>
+      <div class="learning nineteen">Embrace your curiosity and explore these enriching resources and events for adults, and enjoy the journey!</div>
     </div>
     <div class="learning-item-wrapper">
       <div class="learning-item">
         <div><img class="img-responsive center-block" src="digital-newspaper.png" alt="Digital Newspaper"></div>
         <div class="learning-content">
-          <h4>Explore & Experience</h4>
+          <div class="learning twenty">Explore & Experience</div>
           <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=explore+&+experience+the+library+digital+collection&lib=ALL&nd=60" target="_blank">Learn how to access</a> digital newspapers, e-books, movies and more on one of our devices or yours.</div>
         </div>
       </div>
       <div class="learning-item">
         <div><img class="img-responsive center-block" src="learning.png" alt="Learning"></div>
         <div class="learning-content">
-          <h4>Learning Series: A History Of...</h4>
+          <div class="learning twenty">Learning Series: A History Of...</div>
           <div>Active Minds presents the histories of <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=lifelong+learning&lib=ALL&nd=90" target="_blank">some favorite things</a>.</div>
         </div>
       </div>
       <div class="learning-item">
         <div><img class="img-responsive center-block" src="beans.png" alt="Coffee Beans"></div>
         <div class="learning-content">
-          <h4>Coffee Chat</h4>
+          <div class="learning twenty">Coffee Chat</div>
           <div>What a great way to <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=coffee+chat&lib=ALL&nd=180" target="_blank">start your day</a> each Tuesday!</div>
         </div>
       </div>
       <div class="learning-item">
         <div><img class="img-responsive center-block" src="chess.png" alt="Chess Piece"></div>
         <div class="learning-content">
-          <h4>Play Chess</h4>
+          <div class="learning twenty">Play Chess</div>
           <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=chess&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">Join a pick-up game</a> at your local DCL branch. All ages and skill levels welcome. </div>
         </div>
       </div>
