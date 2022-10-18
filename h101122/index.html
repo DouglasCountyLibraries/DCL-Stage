@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -80,24 +81,22 @@ Push Notifications End - Removed for Now -->
 .forest-container {
 	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
 	background: url("tree-branches.jpg") center bottom/cover;
-	height: 675px;
 	max-width: 2800px;
 	margin: 0 auto;
 }
 .forest-wrapper {
 	display: flex;
 	flex-direction: column;
-	height: 480px;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 90px 15px 175px;
 	justify-content: flex-end;
 }
 .details {
 	border-left: 6px solid #a5b887;
 	padding-left: 20px;
 	margin: 20px 0;
-	max-width: 925px;
+	max-width: 950px;
 }
 .forest {
 	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
@@ -108,26 +107,32 @@ Push Notifications End - Removed for Now -->
 }
 h1.forest {
 	text-transform: uppercase;
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: 700;
 	line-height: 70px;
 }
 .forest.one {
-	font-size: 24px;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 5px;
 }
 .forest.two {
-	font-size: 22px;
+	font-size: 18px;
+	font-weight: 600;
 }
 .forest.three {
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: 700;
 	line-height: 40px;
 }
 .forest.four {
-	font-size: 28px;
+	font-size: 22px;
 	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 2px;
+	font-weight: 700;
+	padding: 8px 0 10px;
+}
+.mark-your {
+	font-weight: 800;
 }
 .forest-read-more {
 	font-weight: 700;
@@ -141,6 +146,15 @@ h1.forest {
 .forest-read-more:active, .forest-read-more:hover, .forest-read-more:focus {
 	color: #a5b887;
 	text-decoration: none;
+}
+
+@media (max-width: 825px) {
+.forest-container {
+	background: url("tree-branches.jpg") right bottom/cover;
+}
+.forest-wrapper {
+	padding: 60px 15px 175px;
+}
 }
 /* storybook holiday */
 .sbh {
@@ -160,9 +174,14 @@ h1.forest {
 	margin: 0 auto;
 	min-height: 600px;
 }
+h2.sbh {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0;
+}
 .sbh-item.one {
 	background: #fff;
-	padding: 60px;
+	padding: 60px 60px 70px;
 	margin: 175px 0 75px;
 	max-width: 525px;
 	border-radius: 3px;
@@ -171,16 +190,27 @@ h1.forest {
 	justify-content: center;
 }
 .sbh.ten {
-	font-size: 22px;
+	font-size: 20px;
+	margin-top: 3px;
 }
 .sbh.eleven {
 	font-size: 24px;
 	text-transform: uppercase;
-	margin: 5px 0;
-	font-weight: 400;
+	margin: 5px 0 10px;
+	font-weight: 600;
 }
 .sbh.twelve {
-	font-size: 20px;
+	font-size: 16px;
+}
+
+@media (max-width: 975px) {
+.sbh-wrapper {
+	background: transparent url("santa-claus.jpg") center top no-repeat;
+}
+.sbh-item.one {
+	margin: 625px 0 0;
+	max-width: 100%;
+}
 }
 /* camp dcl */	
 .row.camp-dcl {
@@ -243,7 +273,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -412,9 +442,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="forest one"><i>Celebrate the Season!</i></div>
         <h1 class="forest">A Forest of Stories</h1>
         <div class="details">
-          <div class="forest three">120+ Decorated Trees, 7 Locations, 7 Weeks</div>
+          <div class="forest three">120+&nbsp;Decorated Trees, 7&nbsp;Locations, 7&nbsp;Weeks</div>
           <div class="forest four">Unlimited Wonder!</div>
-          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter Sorting Hat, Houses of Hogwarts, Winnie-the-Pooh, and more. <span class="font-weight-700">Mark your calendar! Nov 19-Jan 7.</span></div>
+          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter Sorting Hat, Houses of Hogwarts, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
         </div>
         <div class="padding-top-15"><a class="forest forest-read-more" href="https://www.dcl.org/forest-of-stories/">Read More</a></div>
       </div>
@@ -457,7 +487,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div><img class="img-responsive center-block" src="digital-newspaper.png" alt="Digital Newspaper"></div>
         <div class="learning-content">
           <h4>Explore & Experience</h4>
-          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=explore+&amp;+experience&lib=ALL&nd=365" target="_blank">Learn how to access</a> digital newspapers, e-books, movies and more on one of our devices or yours.</div>
+          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=explore+&+experience+the+library+digital+collection&lib=ALL&nd=60" target="_blank">Learn how to access</a> digital newspapers, e-books, movies and more on one of our devices or yours.</div>
         </div>
       </div>
       <div class="learning-item">
@@ -582,4 +612,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
