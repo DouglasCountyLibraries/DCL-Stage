@@ -179,7 +179,7 @@ h2.sbh {
 	font-weight: 600;
 	margin: 0;
 }
-.sbh-item.one {
+.sbh-item.two {
 	background: #fff;
 	padding: 60px 60px 70px;
 	margin: 175px 0 75px;
@@ -203,13 +203,25 @@ h2.sbh {
 	font-size: 16px;
 }
 
-@media (max-width: 975px) {
-.sbh-wrapper {
-	background: transparent url("santa-claus.jpg") center top no-repeat;
-}
+@media (min-width: 976px) {
 .sbh-item.one {
-	margin: 625px 0 0;
+	display: none;
+}
+}
+
+@media (max-width: 975px) {
+	.row.sbh {
+
+	padding: 80px 15px 120px;
+}
+.sbh-wrapper {
+	background: none;
+	flex-direction: column;
+	align-items: center;
+}
+.sbh-item.two {
 	max-width: 100%;
+	margin: 0;
 }
 }
 /* camp dcl */	
@@ -454,7 +466,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!--#####-->
   <div class="row sbh">
     <div class="sbh-wrapper">
-      <div class="sbh-item one">
+      <div class="sbh-item one"><img class="img-responsive" src="santa-claus.jpg" alt="Santa and Little Girl"></div>
+      <div class="sbh-item two">
         <h2 class="sbh">A Dickens Storybook Holiday</h2>
         <div class="sbh ten">December 3&4, Lone Tree</div>
         <div class="sbh eleven"><a href="https://www.dcl.org/storybook-holiday/#winter">Tickets on Sale</a></div>
