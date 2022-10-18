@@ -210,8 +210,7 @@ h2.sbh {
 }
 
 @media (max-width: 975px) {
-	.row.sbh {
-
+.row.sbh {
 	padding: 80px 15px 120px;
 }
 .sbh-wrapper {
@@ -225,27 +224,55 @@ h2.sbh {
 }
 }
 /* camp dcl */	
+.camp-dcl {
+	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+	font-weight: 400;
+	color: #333;
+}
 .row.camp-dcl {
 	background: #fff url("camp-background.jpg") 100% 40% repeat-x;
 }
+h2.camp-dcl {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 0 10px;
+}
+.camp-dcl a {
+	font-weight: 600;
+}
 .camp-item {
 	padding: 10px;
-	max-width: 320px;
+
 }
+	.camp-item:last-child {
+		max-width: 300px;
+	}
 .camp-item img {
 	border-radius: 2px;
 }
 .camp-item-wrapper {
+	margin: 0 15px;
+}
+.camp-item-content {
 	display: flex;
 	max-width: 1400px;
 	margin: 0 auto;
 	justify-content: center;
-	padding: 90px 0;
+	padding: 90px 40px;
 	background: #fff;
 	align-content: center;
 	align-items: center;
 	border-radius: 3px;
 }
+	@media (max-width: 875px) {
+		.camp-item-content {
+			flex-wrap: wrap;
+			padding: 90px 60px;
+		}
+			.camp-item:last-child {
+		max-width: 100%;
+	}
+	}
 /* lifelong learning */
 .learning-item-wrapper {
 	display: flex;
@@ -479,13 +506,13 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!--#####-->
   <div class="row camp-dcl">
     <div class="camp-item-wrapper">
-      <div class="camp-item"><img class="img-responsive" src="camp-dcl-one.jpg" alt="Kids with Orange Juice and Cups"></div>
-      <div class="camp-item"><img class="img-responsive" src="camp-dcl-two.jpg" alt="Kids with Orange Juice and Cups"></div>
-      <div class="camp-item"><img class="img-responsive" src="camp-dcl-three.jpg" alt="Kids with Orange Juice and Cups"></div>
-      <div class="camp-item">
-        <h4>Camp DCL</h4>
-        <div></div>
-        Registration is open for our Kid-Free Black Friday Camps and HoliDays Camps. <a href="camp-dcl/">Sign up for some fun</a>!</div>
+      <div class="camp-item-content">
+        <div class="camp-item"><img class="img-responsive" src="campers.jpg" alt="Kids at Camp DCL"></div>
+        <div class="camp-item">
+          <h2 class="camp-dcl">Camp DCL</h2>
+          <div>Registration is open for our Kid-Free Black Friday Camps and HoliDays Camps. <a href="https://www.dcl.org/camp-dcl/">Sign up for some fun</a>!</div>
+        </div>
+      </div>
     </div>
   </div>
   
