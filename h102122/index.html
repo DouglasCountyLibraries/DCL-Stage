@@ -274,6 +274,18 @@ h2.sbh {
 	border-radius: 3px;
 }
 
+@media (max-width: 650px) {
+img.large {
+	display: none;
+}
+}
+
+@media (min-width: 651px) {
+img.s {
+	display: none;
+}
+}
+
 @media (max-width: 1120px) {
 .sbh-item-content {
 	flex-wrap: wrap;
@@ -559,7 +571,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row sbh">
     <div class="sbh-item-wrapper">
       <div class="sbh-item-content">
-        <div class="sbh-item"><img class="img-responsive" src="storybook-holiday.jpg" alt="Storybook Holiday"></div>
+        <div class="sbh-item"><img class="large img-responsive" src="storybook-holiday.jpg" alt="Storybook Holiday"><img class="small img-responsive" src="santa-claus.jpg" alt="Storybook Holiday"></div>
         <div class="sbh-item">
           <h2 class="sbh">A Dickens Storybook Holiday</h2>
           <div class="sbh ten">December 3&4, Lone Tree</div>
