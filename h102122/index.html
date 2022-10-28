@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -152,11 +153,11 @@ h1.forest {
 }
 .row.cdcl {
 	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	background: #f7e4e6;
-	padding: 30px 15px 90px;
+	background: #93beb6 url("new-background.jpg") repeat-x;
+	padding: 30px 15px 0;
 }
 .cdcl-wrapper {
-	background: transparent url("dcl-campers.jpg") right top no-repeat;
+	background: transparent url("mother-child.jpg") right top no-repeat;
 	display: flex;
 	max-width: 1125px;
 	margin: 0 auto;
@@ -177,7 +178,7 @@ h2.cdcl {
 }
 .cdcl-item.two {
 	background: #fff;
-	padding: 60px 60px 70px;
+	padding: 50px 60px 70px;
 	margin: 175px 0 75px;
 	max-width: 525px;
 	border-radius: 3px;
@@ -193,9 +194,6 @@ h2.cdcl {
 }
 
 @media (max-width: 975px) {
-.row.cdcl {
-	padding: 80px 15px 120px;
-}
 .cdcl-wrapper {
 	background: none;
 	flex-direction: column;
@@ -215,7 +213,7 @@ h2.cdcl {
 	color: #333;
 }
 .row.sbh {
-	background: #fff url("camp-background.jpg") 100% 40% repeat-x;
+	background: #fff url("sbh-background.jpg") repeat-x;
 	padding-bottom: 90px;
 }
 h2.sbh {
@@ -248,7 +246,7 @@ h2.sbh {
 	border-radius: 2px;
 }
 .sbh-item-wrapper {
-	margin: 0 15px;
+	margin: 90px 15px;
 }
 .sbh-item-content {
 	display: flex;
@@ -283,78 +281,6 @@ img.small {
 	max-width: 100%;
 }
 }
-/* lifelong learning */
-.learning {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-}
-h2.learning {
-	font-weight: 600;
-	font-size: 36px;
-	color: #333;
-	margin: 0 0 5px;
-}
-.learning.twenty {
-	font-size: 20px;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-.learning-intro {
-	padding: 0 15px;
-	max-width: 820px;
-	margin: 0 auto;
-}
-.learning.nineteen {
-	font-size: 20px;
-	color: #333;
-	margin: 0 auto;
-}
-.learning-item a {
-	font-weight: 600;
-}
-.learning-item-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1050px;
-	margin: 0 auto;
-	padding: 10px 0;
-}
-.learning-item {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-	margin: 15px;
-	width: 380px;
-	background: #d0dde5;
-	padding: 30px 40px 50px;
-}
-.row.learning-row {
-	padding: 110px 15px;
-	background: #fff url("learning-background.jpg");
-}
-
-@media (max-width: 1300px) {
-.learning-item-wrapper {
-	max-width: 950px;
-}
-}
-
-@media (max-width: 865px) {
-.learning-item {
-	width: 300px;
-}
-.row.learning-row {
-	padding: 95px 0;
-}
-}
-
-@media (max-width: 665px) {
-.learning-item {
-	width: 325px;
-}
-}
 .sevens:after {
 	content: 'Weeks';
 	animation-name: seven;
@@ -384,7 +310,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -565,21 +491,20 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!--#####-->
   <div class="row cdcl">
     <div class="cdcl-wrapper">
-      <div class="cdcl-item one"><img class="img-responsive" src="dcl-campers.jpg" alt="Camp DCL Campers"></div>
-      <div class="cdcl-item two">
+      <div class="cdcl-item one"><img class="img-responsive" src="mother-child.jpg" alt="Camp DCL Campers"></div>
+      <div class="cdcl-item two"><img style="width: 83px; height: 40px;" src="bling-one.png" alt="">
         <h2 class="cdcl">Holiday Camps</h2>
         <div class="cdcl one">Registration is open for our Black Friday and winter break camps.</div>
         <div class="cdcl two"><a href="camp-dcl/"><i>Sign up for some fun!</i></a></div>
       </div>
     </div>
-  </div>
-  
-  <!--#####-->
-  <div class="row sbh">
+    
+    <!--#####-->
+    
     <div class="sbh-item-wrapper">
       <div class="sbh-item-content">
         <div class="sbh-item"><img class="large img-responsive" src="storybook-holiday.jpg" alt="Storybook Holiday"><img class="small img-responsive" src="santa-claus.jpg" alt="Storybook Holiday"></div>
-        <div class="sbh-item">
+        <div class="sbh-item"><img style="width: 83px; height: 40px;" src="bling-two.png" alt="">
           <h2 class="sbh">A Dickens Storybook Holiday</h2>
           <div class="sbh ten">December 3&4, Lone Tree</div>
           <div class="sbh eleven"><a href="storybook-holiday/">Tickets on Sale</a></div>
@@ -687,4 +612,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
