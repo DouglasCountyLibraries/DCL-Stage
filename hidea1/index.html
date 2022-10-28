@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +25,7 @@
 <!-- InstanceBeginEditable name="title" -->
 <title>Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
+<meta name="description" content="Douglas County Libraries offers a variety of programs and events, from author events, to immersive experiences, to fun for the whole family.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -57,322 +58,55 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<!--randomize div--> 
-
-<!-- pinterest - do not remove -->
-<meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
-<!-- pinterest - do not remove -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Push Notifications Start - Remove for Now
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script> 
+<script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "39124fd4-c082-4c81-b009-95f47620ab0e",
+      autoRegister: true,
+    welcomeNotification: {
+        "title": "Welcome!",
+        "message": "Thanks for subscribing to get DCL event news first.",
+    },
+      notifyButton: {
+        enable: false
+      }
+    }]);
+  </script> 
+Push Notifications End - Removed for Now -->
 <style>
-.forest-container {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	background: url("tree-branches.jpg") center bottom/cover;
-	max-width: 2800px;
-	margin: 0 auto;
-}
-.forest-wrapper {
-	display: flex;
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 90px 15px 175px;
-	justify-content: flex-end;
-}
-.details {
-	border-left: 6px solid #a5b887;
-	padding-left: 20px;
-	margin: 20px 0;
-	max-width: 950px;
-}
-.forest {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
-	margin: 0;
-	text-shadow: 0 4px 9px rgba(0, 0, 0, .9);
-	font-weight: 400;
-}
-h1.forest {
-	text-transform: uppercase;
-	font-size: 70px;
-	font-weight: 700;
-	line-height: 70px;
-}
-.forest.one {
-	font-size: 22px;
-	font-weight: 600;
-	margin-bottom: 5px;
-}
-.forest.two {
-	font-size: 18px;
-	font-weight: 600;
-}
-.forest.three {
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 40px;
-}
-.forest.four {
-	font-size: 22px;
-	text-transform: uppercase;
-	font-weight: 700;
-	padding: 8px 0 10px;
-}
-.mark-your {
-	font-weight: 800;
-}
-.forest-read-more {
-	font-weight: 700;
-	margin: 0;
-	font-size: 30px;
-	text-transform: uppercase;
-	border-top: 3px solid #fff;
-	border-bottom: 3px solid #fff;
-	margin-left: 28px;
-}
-.forest-read-more:active, .forest-read-more:hover, .forest-read-more:focus {
-	color: #a5b887;
-	text-decoration: none;
-}
+.pattern-background {
+	background: url(pattern.jpg) 20% 100% repeat-y;
 
-@media (max-width: 825px) {
-.forest-container {
-	background: url("tree-branches.jpg") right bottom/cover;
 }
-.forest-wrapper {
-	padding: 60px 15px 175px;
+.one {
+	background: rgba(150,150,150,.2);
+	padding: 0px 15px 100px;
+	
+	/* margin-top: 30px; */
 }
-}
-/* camp dcl */
-.cdcl {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #333;
-}
-.row.cdcl {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	background: #f7e4e6;
-	padding: 30px 15px 90px;
-}
-.cdcl-wrapper {
-	background: transparent url("dcl-campers.jpg") right top no-repeat;
-	display: flex;
-	max-width: 1125px;
-	margin: 0 auto;
+.two {
+	background: rgba(150,150,150,.1);
 	min-height: 600px;
+	padding: 100px 15px;
+	
 }
-h2.cdcl {
-	font-size: 34px;
-	font-weight: 600;
-	margin: 0;
-}
-.cdcl.one {
-	padding: 15px 0 10px;
-	font-size: 18px;
-}
-.cdcl.two {
-	font-size: 22px;
-	font-weight: 500;
-}
-.cdcl-item.two {
+.three {
 	background: #fff;
-	padding: 60px 60px 70px;
-	margin: 175px 0 75px;
-	max-width: 525px;
-	border-radius: 3px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	max-width: 900px;
+	padding: 60px;
+	margin: 0 auto;
 }
-
-@media (min-width: 976px) {
-.cdcl-item.one {
-	display: none;
-}
-}
-
-@media (max-width: 975px) {
-.row.cdcl {
-	padding: 80px 15px 120px;
-}
-.cdcl-wrapper {
-	background: none;
-	flex-direction: column;
-	align-items: center;
-	max-width: 675px;
-}
-.cdcl-item.two {
-	max-width: 100%;
-	margin: 0;
-	width: 100%;
-}
-}
-/* storybook holiday */	
-.sbh {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #333;
-}
-.row.sbh {
-	background: #fff url("camp-background.jpg") 100% 40% repeat-x;
-	padding-bottom: 90px;
-}
-h2.sbh {
+.four {
+	background: url(https://source.unsplash.com/1200x600/?sunset);
+	max-width: 1200px;
+	padding: 60px;
+	margin: 0 auto;
 	font-size: 28px;
-	font-weight: 600;
-	margin: 0 0 10px;
-}
-.sbh a {
-	font-weight: 500;
-}
-.sbh.ten {
-	font-size: 20px;
-	margin-top: 3px;
-}
-.sbh.eleven {
-	font-size: 22px;
-	margin: 5px 0 10px;
-	font-weight: 500;
-}
-.sbh.twelve {
-	font-size: 16px;
-}
-.sbh-item {
-	padding: 10px;
-}
-.sbh-item:last-child {
-	max-width: 420px;
-}
-.sbh-item img {
-	border-radius: 2px;
-}
-.sbh-item-wrapper {
-	margin: 0 15px;
-}
-.sbh-item-content {
-	display: flex;
-	max-width: 1400px;
-	margin: 0 auto;
-	justify-content: center;
-	padding: 90px 40px;
-	background: #fff;
-	align-content: center;
-	align-items: center;
-	border-radius: 3px;
-}
-
-@media (max-width: 650px) {
-img.large {
-	display: none;
-}
-}
-
-@media (min-width: 651px) {
-img.small {
-	display: none;
-}
-}
-
-@media (max-width: 1120px) {
-.sbh-item-content {
-	flex-wrap: wrap;
-	padding: 90px 60px;
-}
-.sbh-item:last-child {
-	max-width: 100%;
-}
-}
-/* lifelong learning */
-.learning {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-}
-h2.learning {
-	font-weight: 600;
-	font-size: 36px;
-	color: #333;
-	margin: 0 0 5px;
-}
-.learning.twenty {
-	font-size: 20px;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-.learning-intro {
-	padding: 0 15px;
-	max-width: 820px;
-	margin: 0 auto;
-}
-.learning.nineteen {
-	font-size: 20px;
-	color: #333;
-	margin: 0 auto;
-}
-.learning-item a {
-	font-weight: 600;
-}
-.learning-item-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1050px;
-	margin: 0 auto;
-	padding: 10px 0;
-}
-.learning-item {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	color: #000;
-	margin: 15px;
-	width: 380px;
-	background: #d0dde5;
-	padding: 30px 40px 50px;
-}
-.row.learning-row {
-	padding: 110px 15px;
-	background: #fff url("learning-background.jpg");
-}
-
-@media (max-width: 1300px) {
-.learning-item-wrapper {
-	max-width: 950px;
-}
-}
-
-@media (max-width: 865px) {
-.learning-item {
-	width: 300px;
-}
-.row.learning-row {
-	padding: 95px 0;
-}
-}
-
-@media (max-width: 665px) {
-.learning-item {
-	width: 325px;
-}
-}
-.sevens:after {
-	content: 'Weeks';
-	animation-name: seven;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-}
-@keyframes seven {
-0% {
-opacity:1;
-}
-50% {
-opacity:1;
-content: "Locations"
-}
-100% {
-opacity:1;
-content: "Weeks"
-}
+	color: white;
+	min-height: 600px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -384,7 +118,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -547,44 +281,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row" style="background: #f7e4e6;">
-    <div class="forest-container">
-      <div class="forest-wrapper">
-        <div class="forest one"><i>Celebrate the Season!</i></div>
-        <h1 class="forest">A Forest of Stories</h1>
-        <div class="details">
-          <div class="forest three">7&nbsp;<span class="sevens"></span>, 100+&nbsp;Decorated Trees</div>
-          <div class="forest four">Unlimited Wonder!</div>
-          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. The Houses of Hogwarts, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
-        </div>
-        <div class="padding-top-15"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
-      </div>
-    </div>
-  </div>
-  
-  <!--#####-->
-  <div class="row cdcl">
-    <div class="cdcl-wrapper">
-      <div class="cdcl-item one"><img class="img-responsive" src="dcl-campers.jpg" alt="Camp DCL Campers"></div>
-      <div class="cdcl-item two">
-        <h2 class="cdcl">Holiday Camps</h2>
-        <div class="cdcl one">Registration is open for our Black Friday and winter break camps.</div>
-        <div class="cdcl two"><a href="camp-dcl/"><i>Sign up for some fun!</i></a></div>
-      </div>
-    </div>
-  </div>
-  
-  <!--#####-->
-  <div class="row sbh">
-    <div class="sbh-item-wrapper">
-      <div class="sbh-item-content">
-        <div class="sbh-item"><img class="large img-responsive" src="storybook-holiday.jpg" alt="Storybook Holiday"><img class="small img-responsive" src="santa-claus.jpg" alt="Storybook Holiday"></div>
-        <div class="sbh-item">
-          <h2 class="sbh">A Dickens Storybook Holiday</h2>
-          <div class="sbh ten">December 3&4, Lone Tree</div>
-          <div class="sbh eleven"><a href="storybook-holiday/">Tickets on Sale</a></div>
-          <div class="sbh twelve">Naughty & Nice Hot Cocoa Bar, Entertainment & Performances, Keepsake Crafts, Carolers, Characters Come-to-Life, Festive Food & Drinks, Candy Bar, and Much More.</div>
-        </div>
+  <div class="row pattern-background">
+    <div class="one"><div class="four">
+        
+        <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit, quis molestie velit lacus ut nisl. Suspendisse potenti. Fusce a dui urna, vehicula bibendum orci. Vivamus nisl lacus, rhoncus vitae mattis eu, ullamcorper a nisl. Phasellus semper, purus quis mattis consectetur, lacus purus euismod justo, vel mollis leo massa ut massa.</div>
+      </div></div>
+    <div class="two">
+      <div class="three">
+        <div><img src="https://source.unsplash.com/780x500/?woman"></div>
+        <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit, quis molestie velit lacus ut nisl. Suspendisse potenti. Fusce a dui urna, vehicula bibendum orci. Vivamus nisl lacus, rhoncus vitae mattis eu, ullamcorper a nisl. Phasellus semper, purus quis mattis consectetur, lacus purus euismod justo, vel mollis leo massa ut massa.</div>
       </div>
     </div>
   </div>
@@ -687,4 +392,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
