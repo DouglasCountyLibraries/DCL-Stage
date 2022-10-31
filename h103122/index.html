@@ -76,21 +76,44 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     }]);
   </script> 
 Push Notifications End - Removed for Now -->
+
 <style>
-	h1.pop-clink {
-	font-family: 'Pop Clink Fill', serif;
-	color: #fff;
+@font-face {
+	font-family: 'Pop Clink Fill';
+	src: url('../shared-assets/web-fonts/shared-assets/web-fonts/subset-PopClink-Fill.woff2') format('woff2'), url('../shared-assets/web-fonts/subset-PopClink-Fill.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	margin: 0;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Bulgary';
+	src: url('../shared-assets/web-fonts/subset-BulgaryRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/subset-BulgaryRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1.pop-clink {
+	font-family: 'Pop Clink Fill', serif;
+	background: #F7DD8D;
+	background: linear-gradient(to top, #F7DD8D 0%, #fff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: normal;
+	font-style: normal;
+
+	display: inline;
 	font-size: 80px;
 }
 h1.bulgary {
 	font-family: 'Bulgary', serif;
-	color: #fff;
+	background: #F7DD8D;
+	background: linear-gradient(to top, #F7DD8D 0%, #fff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-weight: normal;
 	font-style: normal;
-	margin: -30px 0;
+	display: inline;
 	font-size: 100px;
 }
 .branches-row {
@@ -110,11 +133,9 @@ h1.bulgary {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 15px;
-
 	position: absolute;
 	top: 265px;
 	right: 29%;
-
 }
 .details {
 	border-left: 6px solid #93beb6;
@@ -205,24 +226,23 @@ content: "Weeks"
 @keyframes sparkle-one {
 0% {
 opacity: .8;
-	background-position: 0 0;
+background-position: 0 0;
 }
-	20% {
+20% {
 opacity: 1;
-	background-position: 3px 5px;
+background-position: 3px 5px;
 }
-	40% {
+40% {
 opacity: .6;
-	background-position: -5px -3px;
+background-position: -5px -3px;
 }
 70% {
 opacity: 1;
-	background-position: 2px 4px;
+background-position: 2px 4px;
 }
 100% {
 opacity: .8;
-	background-position: 3px -2px;
-
+background-position: 3px -2px;
 }
 }
 </style>
@@ -401,19 +421,19 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row no-gutter">
     <div class="branches-row">
       <div class="sparkle-one-row"></div>
-        <div class="forest-wrapper">
-          <div class="forest one"><i>Celebrate the Season!</i></div>
-          <h1 class="pop-clink">FOrEST</h1>
+      <div class="forest-wrapper">
+        <div class="forest one"><i>Celebrate the Season!</i></div>
+        <div class="heading-wrapper"><h1 class="bulgary">A</h1>
+        <h1 class="pop-clink">FOrEST</h1>
         <h1 class="bulgary">of</h1>
-        <h1 class="pop-clink">STORIeS</h1>
-          <div class="details">
-            <div class="forest three">7&nbsp;<span class="sevens"></span>, 100+&nbsp;Decorated Trees</div>
-            <div class="forest four">Unlimited Wonder!</div>
-            <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
-          </div>
-          <div class="padding-top-15"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
+        <h1 class="pop-clink">STORIeS</h1></div>
+        <div class="details">
+          <div class="forest three">7&nbsp;<span class="sevens"></span>, 100+&nbsp;Decorated Trees</div>
+          <div class="forest four">Unlimited Wonder!</div>
+          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
         </div>
-     
+        <div class="padding-top-15"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
