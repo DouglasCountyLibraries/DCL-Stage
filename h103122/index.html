@@ -77,27 +77,44 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </script> 
 Push Notifications End - Removed for Now -->
 <style>
+	h1.pop-clink {
+	font-family: 'Pop Clink Fill', serif;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0;
+	font-size: 80px;
+}
+h1.bulgary {
+	font-family: 'Bulgary', serif;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	margin: -30px 0;
+	font-size: 100px;
+}
 .branches-row {
-	background: #1c1c06 url("one.jpg") center top/cover;
+	background: #1c1c06 url("tree-branches.jpg") center bottom/cover;
+	position: relative;
+}
+.sparkle-one-row {
+	background: transparent url("sparkle-one.png") center bottom no-repeat;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
 	min-height: 1050px;
-}
-.forest-container {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	background: url("branch-heading.jpg") center bottom/cover;
-	max-width: 2800px;
-	margin: 0 auto;
 }
 .forest-wrapper {
 	display: flex;
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 105px 15px 190px;
-	justify-content: flex-end;
+	padding: 15px;
+
+	position: absolute;
+	top: 265px;
+	right: 29%;
+
 }
 .details {
 	border-left: 6px solid #93beb6;
@@ -163,7 +180,7 @@ h1.forest {
 	padding: 60px 15px 175px;
 }
 }
-	.sevens:after {
+.sevens:after {
 	content: 'Weeks';
 	animation-name: seven;
 	animation-duration: 4s;
@@ -180,6 +197,32 @@ content: "Locations"
 100% {
 opacity:1;
 content: "Weeks"
+}
+}
+.sparkle-one-row {
+	animation: sparkle-one 5s ease-in-out infinite both;
+}
+@keyframes sparkle-one {
+0% {
+opacity: .8;
+	background-position: 0 0;
+}
+	20% {
+opacity: 1;
+	background-position: 3px 5px;
+}
+	40% {
+opacity: .6;
+	background-position: -5px -3px;
+}
+70% {
+opacity: 1;
+	background-position: 2px 4px;
+}
+100% {
+opacity: .8;
+	background-position: 3px -2px;
+
 }
 }
 </style>
@@ -357,18 +400,20 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row no-gutter">
     <div class="branches-row">
-      <div class="forest-container">
-      <div class="forest-wrapper">
-        <div class="forest one"><i>Celebrate the Season!</i></div>
-        <h1 class="forest">A Forest of Stories</h1>
-        <div class="details">
-          <div class="forest three">7&nbsp;<span class="sevens"></span>, 100+&nbsp;Decorated Trees</div>
-          <div class="forest four">Unlimited Wonder!</div>
-          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. The Houses of Hogwarts, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
+      <div class="sparkle-one-row"></div>
+        <div class="forest-wrapper">
+          <div class="forest one"><i>Celebrate the Season!</i></div>
+          <h1 class="pop-clink">FOrEST</h1>
+        <h1 class="bulgary">of</h1>
+        <h1 class="pop-clink">STORIeS</h1>
+          <div class="details">
+            <div class="forest three">7&nbsp;<span class="sevens"></span>, 100+&nbsp;Decorated Trees</div>
+            <div class="forest four">Unlimited Wonder!</div>
+            <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
+          </div>
+          <div class="padding-top-15"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
         </div>
-        <div class="padding-top-15"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
-      </div>
-    </div>
+     
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
