@@ -76,7 +76,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     }]);
   </script> 
 Push Notifications End - Removed for Now -->
-
 <style>
 @font-face {
 	font-family: 'Pop Clink Fill';
@@ -424,7 +423,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <h1 class="bulgary">of</h1>
         <h1 class="pop-clink">STORIeS</h1></div>
         <div class="details">
-          <div class="forest three">7&nbsp;<span class="sevens"></span>, 100+&nbsp;Decorated Trees</div>
+          <div class="forest three">7&nbsp;<span class="sevens"></span>, 120+&nbsp;Decorated Trees</div>
           <div class="forest four">Unlimited Wonder!</div>
           <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
         </div>
@@ -493,25 +492,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script>
-/* http://cssmojo.com/ken-burns-effect/ */
-function kbSlideshow() { // set .fx1 class on 1st img on page load
-	window.setInterval(kenBurns, 6000); // calls kenBurns() function every 4 secs
-	var images = document.getElementById('slideshow').getElementsByTagName('div'),
-        numberOfImages = images.length, i = 1; // track loop - 1 (not 0) as 1st img is styled on page load
-	images[0].className = "fx1"; // style 1st img on page load
-	function kenBurns() {
-		if (i==numberOfImages) { i = 0; }
-        	images[i].className = "fx"; // set .fx class on each img
-		// clean up one before last to avoid bounce effect - can't remove .fx from previous
-        	if (i===0) { images[numberOfImages-2].className = ""; }
-        	if (i===1) { images[numberOfImages-1].className = ""; }
-        	if (i>1) { images[i-2].className = ""; }
-        	i++;
-		}
-	}
-setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
-</script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
