@@ -86,12 +86,11 @@ Push Notifications End - Removed for Now -->
 }
 @font-face {
 	font-family: 'Bulgary';
-	src: url('../shared-assets/web-fonts/subset-BulgaryRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/subset-BulgaryRegular.woff') format('woff');
+	src: url('../shared-assets/web-fonts/subset-Bulgary.woff2') format('woff2'), url('../shared-assets/web-fonts/subset-Bulgary.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
-
 h1.pop-clink {
 	font-family: 'Pop Clink Fill', serif;
 	color: #fff;
@@ -133,10 +132,13 @@ h1.bulgary {
 	right: 29%;
 }
 .details {
-	border-left: 6px solid #fff;
-	padding-left: 20px;
 	margin: 20px 0;
 	max-width: 950px;
+	display: flex;
+	align-items: center;
+}
+.content-details {
+	padding-left: 30px;
 }
 .forest {
 	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
@@ -176,12 +178,10 @@ h1.forest {
 }
 .forest-read-more {
 	font-weight: 700;
-	margin: 0;
 	font-size: 30px;
 	text-transform: uppercase;
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
-	margin-left: 28px;
 }
 .forest-read-more:active, .forest-read-more:hover, .forest-read-more:focus {
 	color: #f9dd90;
@@ -238,6 +238,20 @@ background-position: 2px 4px;
 100% {
 opacity: .8;
 background-position: 3px -2px;
+}
+}
+.snowflake-detail {
+	animation: snowflake 15s linear infinite both;
+}
+@keyframes snowflake {
+0% {
+transform: rotateZ(0);
+}
+50% {
+transform: rotateZ(180deg);
+}
+100% {
+transform: rotateZ(360deg);
 }
 }
 </style>
@@ -418,16 +432,20 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="sparkle-one-row"></div>
       <div class="forest-wrapper">
         <div class="forest one"><i>Celebrate the Season!</i></div>
-        <div class="heading-wrapper"><h1 class="bulgary">A</h1>
-        <h1 class="pop-clink">FOrEST</h1>
-        <h1 class="bulgary">of</h1>
-        <h1 class="pop-clink">STORIeS</h1></div>
-        <div class="details">
-          <div class="forest three">7&nbsp;<span class="sevens"></span>, 120+&nbsp;Decorated Trees</div>
-          <div class="forest four">Unlimited Wonder!</div>
-          <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
+        <div class="heading-wrapper">
+          <h1 class="pop-clink">FOrEST</h1>
+          <h1 class="bulgary">of</h1>
+          <h1 class="pop-clink">STORIeS</h1>
         </div>
-        <div class="padding-top-15"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
+        <div class="details">
+          <div class="snowflake-detail"><img src="snowflake.png" alt=""></div>
+          <div class="content-details">
+            <div class="forest three">7&nbsp;<span class="sevens"></span>, 120+&nbsp;Decorated Trees</div>
+            <div class="forest four">Unlimited Wonder!</div>
+            <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories. Harry Potter, Ready Player One, Winnie-the-Pooh, and more. <span class="mark-your">Mark your calendar! Nov 19-Jan 7.</span></div>
+            <div class="padding-top-30"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -491,8 +509,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
