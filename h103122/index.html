@@ -118,13 +118,14 @@ h1.bulgary {
 .forest-wrapper {
 	display: flex;
 	flex-direction: column;
-	max-width: 1200px;
+	max-width: 950px;
 	margin: 0 auto;
-	padding: 15px;
+	padding: 15px 15px 35px 15px;
+}
+	.social-footer {
+	margin-top: -55px;
 }
 .details {
-	margin: 8px 0;
-	max-width: 950px;
 	display: flex;
 	align-items: center;
 }
@@ -207,31 +208,6 @@ opacity:1;
 content: "Weeks"
 }
 }
-.sparkle-one-row {
-	animation: sparkle-one 5s ease-in-out infinite both;
-}
-@keyframes sparkle-one {
-0% {
-opacity: .8;
-background-position: 0 0;
-}
-20% {
-opacity: 1;
-background-position: 3px 5px;
-}
-40% {
-opacity: .6;
-background-position: -5px -3px;
-}
-70% {
-opacity: 1;
-background-position: 2px 4px;
-}
-100% {
-opacity: .8;
-background-position: 3px -2px;
-}
-}
 .snowflake-detail {
 	animation: snowflake 15s linear infinite both;
 	opacity: .8;
@@ -249,13 +225,16 @@ transform: rotateZ(360deg);
 }
 .sparkle-row-top {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	max-width: 90%;
+	margin: 0 auto;
 }
 .sparkle-row-bottom {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding-bottom: 200px;
-	margin-top: -100px;
+	max-width: 90%;
+	margin: -100px auto 0 auto;
 }
 .sparkle-rotate:nth-of-type(1) {
 	animation: sparkle-rotate 15s .3s linear infinite both;
@@ -269,7 +248,7 @@ transform: rotateZ(360deg);
 .sparkle-rotate:nth-of-type(4) {
 	animation: sparkle-rotate 16s .5s linear infinite both;
 }
-	.sparkle-rotate:nth-of-type(5) {
+.sparkle-rotate:nth-of-type(5) {
 	animation: sparkle-rotate 14s .2s linear infinite both;
 }
 .sparkle-rotate:nth-of-type(6) {
@@ -287,8 +266,7 @@ transform: rotateZ(180deg);
 transform: rotateZ(360deg);
 }
 }
-	
-	.sparkle-fall:nth-of-type(1) {
+.sparkle-fall:nth-of-type(1) {
 	animation: sparkle-fall 14s .2s linear infinite both;
 }
 .sparkle-fall:nth-of-type(2) {
@@ -300,34 +278,40 @@ transform: rotateZ(360deg);
 .sparkle-fall:nth-of-type(4) {
 	animation: sparkle-fall 20s .8s linear infinite both;
 }
-	.sparkle-fall:nth-of-type(5) {
+.sparkle-fall:nth-of-type(5) {
 	animation: sparkle-fall 15s .3s linear infinite both;
 }
 .sparkle-fall:nth-of-type(6) {
 	animation: sparkle-fall 12s 1.5s linear infinite both;
 }
 @keyframes sparkle-fall {
-  0% {
-    transform: translateY(0%);
-	  opacity: 0;
-  }
+0% {
+transform: translateY(0%);
+opacity: 0;
+}
+25% {
+opacity: 1;
+}
+50% {
+opacity: 0;
+}
+75% {
+opacity: 1;
+}
+100% {
+transform: translateY(100%);
+opacity: 0;
+}
+}
 
-  25% {
-    
-	  opacity: 1;
-  }
-	  50% {
-    
-	  opacity: 0;
-  }
-	  75% {
-   
-	  opacity: 1;
-  }
-	  100% {
-    transform: translateY(100%);
-		  opacity: 0;
-  }
+@media (max-width: 1050px) {
+.sparkle-fall:nth-of-type(5), .sparkle-fall:nth-of-type(6), .sparkle-rotate:nth-of-type(1), .sparkle-rotate:nth-of-type(2), .sparkle-rotate:nth-of-type(3), .sparkle-rotate:nth-of-type(4), .sparkle-rotate:nth-of-type(5), .sparkle-rotate:nth-of-type(6) {
+	display: none;
+}
+	@media (max-width: 850px) {
+		.forest-wrapper {text-align: center;}
+		.snowflake-detail {display: none;}
+	}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -521,7 +505,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="padding-top-20"><a class="forest forest-read-more" href="forest-of-stories/">Read More</a></div>
           </div>
         </div>
-      </div><div class="sparkle-row-bottom"><img class="img-responsive sparkle-fall" src="s5.png" alt=""><img class="img-responsive sparkle-rotate" src="s3.png" alt=""><img class="img-responsive sparkle-fall" src="s2.png" alt=""><img class="img-responsive sparkle-fall" src="s4.png" alt=""><img class="img-responsive sparkle-fall" src="s6.png" alt=""><img class="img-responsive sparkle-rotate" src="s1.png" alt=""></div>
+      </div>
+      <div class="sparkle-row-bottom"><img class="img-responsive sparkle-fall" src="s5.png" alt=""><img class="img-responsive sparkle-rotate" src="s3.png" alt=""><img class="img-responsive sparkle-fall" src="s2.png" alt=""><img class="img-responsive sparkle-fall" src="s4.png" alt=""><img class="img-responsive sparkle-fall" src="s6.png" alt=""><img class="img-responsive sparkle-rotate" src="s1.png" alt=""></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
