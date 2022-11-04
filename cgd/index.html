@@ -59,28 +59,36 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
+.yellow-background {
+	background: #dff4fc url("yellow-background.jpg") top center repeat-x;
+}
 .present-background {
-	background: linear-gradient(#fcd56c, #f8bf3a);
 }
 .present-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 30px 0 60px;
 }
 .custom-container {
 	max-width: 1200px;
-	padding: 60px 15px;
-	margin: 0 auto;
+	padding: 0 15px 60px 15px;
+	margin: -60px auto 0 auto;
+	position: relative;
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-item-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(#fcd56c, #f8bf3a);
+	background: #fddf8b;
 }
 .slideshow-item-list {
 	padding: 30px;
+	max-width: 450px;
+}
+.program-list li {
+	padding-bottom: 5px;
 }
 .slideshow-item {
 	flex: 1;
@@ -89,7 +97,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 #slideshow {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 30%;
+	padding-bottom: 40%;
 	width: 54%;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
@@ -109,56 +117,22 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* slide two */
 #slideshow div {
-	-webkit-transform-origin: bottom left;
-	-ms-transform-origin: bottom left;
-	transform-origin: bottom left;
+	transform-origin: top right;
 }
 /* slide three */
 #slideshow div:nth-of-type(2n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: bottom right;
+	transform-origin: top left;
 }
 /* slide four */
 #slideshow div:nth-of-type(3n+1) {
-	-webkit-transform-origin: bottom center;
-	-ms-transform-origin: bottom center;
-	transform-origin: bottom center;
+	transform-origin: top right;
 }
 /* slide five */
 #slideshow div:nth-of-type(4n+1) {
-	-webkit-transform-origin: bottom center;
-	-ms-transform-origin: bottom center;
-	transform-origin: bottom center;
-}
-/* slide six */
-#slideshow div:nth-of-type(5n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide seven */
-#slideshow div:nth-of-type(6n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: bottom right;
-}
-/* slide eight */
-#slideshow div:nth-of-type(7n+1) {
-	-webkit-transform-origin: bottom center;
-	-ms-transform-origin: bottom center;
-	transform-origin: bottom center;
-}
-/* slide nine */
-#slideshow div:nth-of-type(8n+1) {
-	-webkit-transform-origin: bottom right;
-	-ms-transform-origin: bottom right;
-	transform-origin: bottom right;
+	transform-origin: top left;
 }
 /* slide one */
 #slideshow div:nth-of-type(9n+1) {
-	-webkit-transform-origin: center center;
-	-ms-transform-origin: center center;
 	transform-origin: center center;
 }
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
@@ -171,31 +145,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	opacity: 1
 }
 #slideshow div:nth-of-type(1) {
-	background-image: url("https://source.unsplash.com/900x600/?cake")
+	background-image: url("early-literacy.jpg")
 }
 #slideshow div:nth-of-type(2) {
-	background-image: url("https://source.unsplash.com/900x600/?pie")
+	background-image: url("camp-dcl.jpg")
 }
 #slideshow div:nth-of-type(3) {
-	background-image: url("https://source.unsplash.com/900x600/?cookies")
+	background-image: url("ged.jpg")
 }
 #slideshow div:nth-of-type(4) {
-	background-image: url("https://source.unsplash.com/900x600/?bread")
+	background-image: url("lifelong-learning.jpg")
 }
 #slideshow div:nth-of-type(5) {
-	background-image: url("https://source.unsplash.com/900x600/?soup")
-}
-#slideshow div:nth-of-type(6) {
-	background-image: url("https://source.unsplash.com/900x600/?hamburger")
-}
-#slideshow div:nth-of-type(7) {
-	background-image: url("https://source.unsplash.com/900x600/?pizza")
-}
-#slideshow div:nth-of-type(8) {
-	background-image: url("https://source.unsplash.com/900x600/?tacos")
-}
-#slideshow div:nth-of-type(9) {
-	background-image: url("https://source.unsplash.com/900x600/?candy")
+	background-image: url("endowment.jpg")
 }
 /* captions */
 #slideshow span {
@@ -206,30 +168,16 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	display: inline-block;
 	padding: 1% 2%;
 	margin: 5%;
-	font-size: 16px;
-	color: transparent
+	font-size: 24px;
+	color: transparent;
 }
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
 	z-index: 1
 }
 #slideshow .fx + span, #slideshow .fx1 + span {
 	color: #fff;
-	-webkit-animation: caption 5s 1s both;
+	text-shadow: 0 2px 4px #000;
 	animation: caption 5s 1s both
-}
-@-webkit-keyframes caption {
-0% {
-opacity:0;
-}
-20% {
-opacity:1;
-}
-90% {
-opacity:1;
-}
-100% {
-opacity:0;
-}
 }
 @keyframes caption {
 0% {
@@ -250,7 +198,7 @@ opacity:0;
 #slideshow span {
 	padding: .5em;
 	margin: .5em;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 400;
 }
 }
@@ -269,6 +217,10 @@ opacity:0;
 	text-align: center;
 	padding: 30px 15px 35px 15px;
 }
+}
+.photos {
+	display: flex;
+	justify-content: space-between;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -443,19 +395,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row text-center present-background">
-    <div class="present-wrapper">
-      <div>
-        <h1 class="black">Support Our Community</h1>
-        <h4 class="black no-margin-bottom">Help Inspire a Love of Reading, Discovery and Connection</h4>
-        <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
+  <div class="row yellow-background">
+    <div class="text-center present-background">
+      <div class="present-wrapper">
+        <div>
+          <h1 class="black">Support Our Community</h1>
+          <h4 class="black no-margin-bottom">Help Inspire a Love of Reading, Discovery and Connection</h4>
+          <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
+        </div>
+        <div><img src="rose.png" alt=""></div>
       </div>
-      <div><img src="present.jpg" alt=""></div>
     </div>
-  </div>
-  <div style="background-color: #dff4fc" class="row">
     <div class="custom-container black">
-      <div class="padding-bottom-30">Please join the Douglas County Libraries (DCL) Foundation on Colorado Gives Day, Tuesday, December 6, to help support our community and the future of our libraries. The DCL Foundation funds programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our libraries.</div>
       <div class="slideshow-item-wrapper no-padding">
         <div class="slideshow-item" id="slideshow"> 
           <!-- define each background-image in CSS -->
@@ -475,12 +426,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <!-- #slideshow div:nth-of-type(5) --> 
           <span>DCL Foundation endowment fund</span>
           <div></div>
-          
-          <!-- #slideshow div:nth-of-type(9) --> 
-          <span>Curabitur ultricies erat sit</span> </div>
+        </div>
         <div class="slideshow-item slideshow-item-list">
           <div>
-            <ul class="no-margin">
+            <ul class="program-list no-margin">
               <li>Early literacy programs set kids up for school success.</li>
               <li>Camp DCL scholarships help children gain confidence and self-esteem.</li>
               <li>GED and Career Online High School scholarships help adults achieve their education and career goals.</li>
@@ -490,10 +439,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </div>
         </div>
       </div>
+      <div class="padding-top-30 padding-bottom-30">Please join the Douglas County Libraries (DCL) Foundation on Colorado Gives Day, Tuesday, December 6, to help support our community and the future of our libraries. The DCL Foundation funds programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our libraries.</div>
+      <div class="photos"><img class="food" src="https://source.unsplash.com/200x200/?dessert"><img class="food" src="https://source.unsplash.com/200x200/?cupcakes"><img class="food" src="https://source.unsplash.com/200x200/?cake"><img class="food" src="https://source.unsplash.com/200x200/?pie"><img class="food" src="https://source.unsplash.com/200x200/?candy"></div>
       <div class="padding-top-30">You don’t have to wait until Colorado Gives Day to give—you may make a donation today! When you do, your gift counts toward our December 6 goal and receives a partial match from the $1 Million+ Incentive Fund. That means your dollars go further in support of your libraries.</div>
-      <div>JOIN US in building a legacy of programs and services that inspire a love of reading, discovery and connection.</div>
-      <div>We’re just getting started!</div>
-      <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
+      <div class="text-center padding-top-30">
+        <div class="large-text">JOIN US in building a legacy of programs and services that inspire a love of reading, discovery and connection.</div>
+        <h4 class="black no-margin-bottom text-center"><i>We’re just getting started!</i></h4>
+      </div>
+      <div class="padding-top-20 padding-bottom-20 text-center"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
