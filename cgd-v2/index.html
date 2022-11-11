@@ -59,11 +59,37 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-.yellow-background {
+@font-face {
+	font-family: 'Impression';
+	src: url('../shared-assets/web-fonts/ImpressionRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/ImpressionRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
-.present-background {
+h1.impression {
+	font-family: 'Impression', serif;
+	font-size: 40px;
+	line-height: 40px;
+	color: #000
+}
+.intro {
+	text-align: center;
+	padding: 15px 30px;
+}
+.row.row-wrapper {
+	background: #fff url("slideshow-background.png") center top no-repeat;
+	padding-bottom: 60px;
+}
+.row.top-border {
+	background: #fff url("top-border.jpg") center center repeat-x;
+	height: 19px;
+}
+.row.botton-border {
+	background: #fff url("bottom-border.jpg") left center repeat-x;
+	height: 19px;
 }
 .present-wrapper {
+	background: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -71,9 +97,14 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .custom-container {
 	max-width: 1200px;
-	padding: 0 15px 60px 15px;
+	background: #fff;
+	color: #000;
+	padding: 0;
 	margin: 0 auto;
 	position: relative;
+}
+.bottom-intro {
+	padding-top: 30px;
 }
 .photos {
 	display: flex;
@@ -87,7 +118,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #f5f5f5;
+	background: #fff;
 }
 .slideshow-item {
 	padding: 30px;
@@ -102,7 +133,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 #slideshow {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 40%;
+	padding-bottom: 60%;
 	width: 54%;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
@@ -122,15 +153,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* slide two */
 #slideshow div {
-	transform-origin: top right;
+	transform-origin: top left;
 }
 /* slide three */
 #slideshow div:nth-of-type(2n+1) {
-	transform-origin: top left;
+	transform-origin: top right;
 }
 /* slide four */
 #slideshow div:nth-of-type(3n+1) {
-	transform-origin: top right;
+	transform-origin: top left;
 }
 /* slide five */
 #slideshow div:nth-of-type(4n+1) {
@@ -208,18 +239,6 @@ opacity:0;
 }
 }
 
-@media (max-width: 1050px) {
-.food:nth-of-type(4) {
-	display: none;
-}
-}
-
-@media (max-width: 925px) {
-.food:nth-of-type(5) {
-	display: none;
-}
-}
-
 @media (max-width: 700px) {
 .slideshow-item-wrapper {
 	flex-direction: column;
@@ -232,7 +251,10 @@ opacity:0;
 }
 .slideshow-item {
 	text-align: center;
-	padding: 30px 15px 35px 15px;
+	padding: 30px 15px 0 15px;
+}
+.bottom-intro {
+	padding-top: 0;
 }
 }
 </style>
@@ -408,16 +430,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="text-center present-background">
-      <div class="present-wrapper">
-        <div>
-          <h2 class="">Our story is just getting started&mdash;and it begins with you!</h2>
-          <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
-        </div>
+  <div class="row top-border"></div>
+  <div class="row row-wrapper">
+    <div class="custom-container">
+      <div class="intro">
+        <h1 class="impression">Our story is just getting started&mdash;and it begins with you!</h1>
       </div>
-    </div>
-    <div class="custom-container black">
       <div class="slideshow-item-wrapper no-padding">
         <div class="slideshow-item" id="slideshow"> 
           <!-- define each background-image in CSS -->
@@ -439,19 +457,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div></div>
         </div>
         <div class="slideshow-item">
-          <div> Please join the Douglas County Libraries (DCL) Foundation on Colorado Gives Day, Tuesday, December 6, to help support our community and the future of our libraries. The DCL Foundation funds programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our libraries. </div>
+          <div>
+            <div class="large-text black">Please join the Douglas County Libraries (DCL) Foundation on Colorado Gives Day, Tuesday, December 6, to help support our community and the future of our libraries.</div>
+            <div class="padding-top-15">The DCL Foundation funds programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our libraries. </div>
+          </div>
+          <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
         </div>
       </div>
-      <div class="padding-top-30 padding-bottom-30"></div>
-      <div class="photos"><img class="food img-responsive" src="https://source.unsplash.com/200x200/?dessert"><img class="food img-responsive" src="https://source.unsplash.com/200x200/?cupcakes"><img class="food img-responsive" src="https://source.unsplash.com/200x200/?cake"><img class="food img-responsive" src="https://source.unsplash.com/200x200/?pie"><img class="food img-responsive" src="https://source.unsplash.com/200x200/?candy"></div>
-      <div class="padding-top-30">You don’t have to wait until Colorado Gives Day to give—you may make a donation today! When you do, your gift counts toward our December 6 goal and receives a partial match from the $1 Million+ Incentive Fund. That means your dollars go further in support of your libraries.</div>
-      <div class="text-center padding-top-15">
-        <div class="large-text">JOIN US in building a legacy of programs and services that inspire a love of reading, discovery and connection.</div>
-        <h4 class="black no-margin-bottom text-center"><i>We’re just getting started!</i></h4>
+      <div class="padding-left-15 padding-right-15">
+        <div class="bottom-intro text-center margin-lg-200">You don’t have to wait until Colorado Gives Day to give—you may make a donation today! When you do, your gift counts toward our December 6 goal and receives a partial match from the $1 Million+ Incentive Fund. That means your dollars go further in support of your libraries.</div>
+        <div class="text-center padding-top-15 margin-lg-250">
+          <div class="large-text">JOIN US in building a legacy of programs and services that inspire a love of reading, discovery and connection.</div>
+          <h4 class="black no-margin-bottom text-center"><i>We’re just getting started!</i></h4>
+        </div>
       </div>
-      <div class="padding-top-30 padding-bottom-30 text-center"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
     </div>
   </div>
+  <div class="row botton-border"></div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
