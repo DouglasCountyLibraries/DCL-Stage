@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -193,6 +194,22 @@ h1.bulgary {
 }
 }
 
+@media (max-width: 850px) {
+.heading-wrapper {
+	max-width: 410px;
+	margin: 0 auto;
+}
+h1.pop-clink {
+	display: inherit;
+	margin: 0;
+}
+h1.bulgary {
+	display: inherit;
+	line-height: 80px;
+	margin: 0;
+}
+}
+
 @media (max-width: 600px) {
 .tree-list-content {
 	flex-direction: column;
@@ -224,7 +241,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -388,7 +405,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row forest-row">
-    <div class="container">
+    <div class="padding-left-15 padding-right-15">
       <div class="text-center">
         <div class="heading-wrapper">
           <h1 class="pop-clink">FOrEST</h1>
@@ -415,7 +432,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="carousel-cell"><img src="carousel/eight.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/nine.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/ten.jpg" alt=""></div>
-		  <div class="carousel-cell"><img src="carousel/eleven.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/eleven.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/twelve.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/thirteen.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/fourteen.jpg" alt=""></div>
@@ -728,4 +745,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
