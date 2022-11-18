@@ -111,6 +111,11 @@ h1.bulgary {
 .carousel-cell {
 	margin: 0 60px;
 }
+.carousel-cell img {
+	box-shadow: 10px 8px 20px -12px #000;
+	margin: 20px;
+	border-radius: 3px;
+}
 .flickity-prev-next-button {
 	width: 50px;
 	height: 50px;
@@ -141,7 +146,7 @@ h1.bulgary {
 	font-weight: 400px;
 	max-width: 1030px;
 	margin: 0 auto;
-	padding: 35px 15px 25px;
+	padding: 15px 15px 25px;
 	color: #000;
 }
 .tree-wrapper {
@@ -421,7 +426,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
   <div class="row carousel-row">
     <div class="custom-container no-padding">
-      <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "pageDots": false, "wrapAround": true, "autoPlay": 4000 }'>
+      <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "pageDots": false, "wrapAround": true, "selectedAttraction": 0.005, "autoPlay": 7000 }'>
         <div class="carousel-cell"><img src="carousel/one.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/two.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/three.jpg" alt=""></div>
