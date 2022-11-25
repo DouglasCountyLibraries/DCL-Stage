@@ -87,8 +87,8 @@ h1.impression {
 	ransition: all .2s ease-in-out;
 }
 .intro-read-more:active, .intro-read-more:hover, .intro-read-more:focus {
-	font-size: 27px;
-	color: #000;
+	
+	color: #d36a50;
 	text-decoration: none;
 }
 .row.row-wrapper {
@@ -207,12 +207,11 @@ h1.impression {
 	-ms-transition: opacity 3s, -ms-transform 8s;
 	transition: opacity 3s, transform 8s;
 }
-
 /* slide one */
 #slideshow div:nth-of-type(12n+1) {
 	transform-origin: top center;
 }
-	/* slide two */
+/* slide two */
 #slideshow div {
 	transform-origin: bottom left;
 }
@@ -228,7 +227,7 @@ h1.impression {
 #slideshow div:nth-of-type(4n+1) {
 	transform-origin: top left;
 }
-	/* slide six */
+/* slide six */
 #slideshow div:nth-of-type(5n+1) {
 	transform-origin: center center;
 }
@@ -240,23 +239,22 @@ h1.impression {
 #slideshow div:nth-of-type(7n+1) {
 	transform-origin: top left;
 }
-	/* slide nine */
+/* slide nine */
 #slideshow div:nth-of-type(8n+1) {
 	transform-origin: bottom right;
 }
 /* slide ten */
 #slideshow div:nth-of-type(9n+1) {
-	transform-origin: top center;
+	transform-origin: top right;
 }
 /* slide eleven */
 #slideshow div:nth-of-type(10n+1) {
 	transform-origin: top left;
 }
-	/* slide twelve */
+/* slide twelve */
 #slideshow div:nth-of-type(11n+1) {
-	transform-origin: bottom right;
+	transform-origin: bottom left;
 }
-
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
 	z-index: 1
 }
@@ -265,42 +263,6 @@ h1.impression {
 	-ms-transform: scale(1.1) translate(1.5%);
 	transform: scale(1.1) translate(1.5%);
 	opacity: 1
-}
-#slideshow div:nth-of-type(1) {
-	background-image: url("slideshow/one.jpg")
-}
-#slideshow div:nth-of-type(2) {
-	background-image: url("slideshow/two.jpg")
-}
-#slideshow div:nth-of-type(3) {
-	background-image: url("slideshow/three.jpg")
-}
-#slideshow div:nth-of-type(4) {
-	background-image: url("slideshow/four.jpg")
-}
-#slideshow div:nth-of-type(5) {
-	background-image: url("slideshow/five.jpg")
-}
-#slideshow div:nth-of-type(6) {
-	background-image: url("slideshow/six.jpg")
-}
-#slideshow div:nth-of-type(7) {
-	background-image: url("slideshow/seven.jpg")
-}
-#slideshow div:nth-of-type(8) {
-	background-image: url("slideshow/eight.jpg")
-}
-#slideshow div:nth-of-type(9) {
-	background-image: url("slideshow/nine.jpg")
-}
-#slideshow div:nth-of-type(10) {
-	background-image: url("slideshow/ten.jpg")
-}
-#slideshow div:nth-of-type(11) {
-	background-image: url("slideshow/eleven.jpg")
-}
-#slideshow div:nth-of-type(12) {
-	background-image: url("slideshow/twelve.jpg")
 }
 /* captions */
 #slideshow span {
@@ -349,6 +311,10 @@ opacity:0;
 @media (max-width: 760px) {
 .slideshow-item-wrapper {
 	flex-direction: column;
+}
+	.row.row-wrapper {
+	
+	padding: 0 0 70px;
 }
 #slideshow {
 	position: relative;
@@ -544,51 +510,39 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="slideshow-item-wrapper no-padding">
         <div class="slideshow-item" id="slideshow"> 
           <!-- define each background-image in CSS -->
-          <div></div>
-          <!-- #slideshow div:nth-of-type(1) --> 
-          <span></span>
-          <div></div>
-          <!-- #slideshow div:nth-of-type(2) --> 
-          <span></span>
-          <div></div>
-          <!-- #slideshow div:nth-of-type(3) --> 
-          <span></span>
-          <div></div>
-          <!-- #slideshow div:nth-of-type(4) --> 
-          <span></span>
-          <div></div>
-          <!-- #slideshow div:nth-of-type(5) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(6) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(7) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(8) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(9) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(10) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(11) --> 
-          <span></span>
-          <div></div>
-			
-			<!-- #slideshow div:nth-of-type(12) --> 
-          <span></span>
-          <div></div>
-			
+          <div class="random-slide" style="background-image: url('slideshow/one.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(1) -->
+          <div class="random-slide" style="background-image: url('slideshow/two.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(2) -->
+          
+          <div class="random-slide" style="background-image: url('slideshow/three.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(3) -->
+          
+          <div class="random-slide" style="background-image: url('slideshow/four.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(4) -->
+          
+          <div class="random-slide" style="background-image: url('slideshow/five.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(5) -->
+          
+          <div class="random-slide" style="background-image: url('slideshow/six.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(6) -->
+          
+          <div class="random-slide" style="background-image: url('slideshow/seven.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(7) -->
+          
+          <div class="random-slide" style="background-image: url('slideshow/eight.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(8) -->
+          
+          <div class="" style="background-image: url('slideshow/nine.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(9) -->
+          <div class="" style="background-image: url('slideshow/ten.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(10) -->
+          
+          <div class="" style="background-image: url('slideshow/eleven.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(11) -->
+          
+          <div class="" style="background-image: url('slideshow/twelve.jpg')"></div>
+          <!-- #slideshow div:nth-of-type(12) --> 
         </div>
         <div class="slideshow-item">
           <div>
@@ -671,6 +625,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<script>
+	var cards = $(".random-slide");
+for (var i = 0; i < cards.length; i++) {
+  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+  cards.eq(target1).before(cards.eq(target2));
+}
+ </script> 
 <script>
 /* http://cssmojo.com/ken-burns-effect/ */
 function kbSlideshow() { // set .fx1 class on 1st img on page load
