@@ -312,6 +312,7 @@ opacity:0;
 	flex-direction: column;
 }
 .row.row-wrapper {
+	background: #fff url("slideshow-background-small.png") left top no-repeat;
 	padding: 0 0 70px;
 }
 #slideshow {
@@ -515,7 +516,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div></div>
           <!-- #slideshow div:nth-of-type(2) -->
           
-          <div style="background-image: url('slideshow/three.jpg')"></div>
+          <div style="background-image: url('slideshow/nine.jpg')"></div>
           <div></div>
           <!-- #slideshow div:nth-of-type(3) -->
           
@@ -523,7 +524,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div></div>
           <!-- #slideshow div:nth-of-type(4) -->
           
-          <div style="background-image: url('slideshow/five.jpg')"></div>
+          <div style="background-image: url('slideshow/eleven.jpg')"></div>
           <div></div>
           <!-- #slideshow div:nth-of-type(5) -->
           
@@ -539,7 +540,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div></div>
           <!-- #slideshow div:nth-of-type(8) -->
           
-          <div style="background-image: url('slideshow/nine.jpg')"></div>
+          <div style="background-image: url('slideshow/three.jpg')"></div>
           <div></div>
           <!-- #slideshow div:nth-of-type(9) -->
           
@@ -547,11 +548,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div></div>
           <!-- #slideshow div:nth-of-type(10) -->
           
-          <div style="background-image: url('slideshow/eleven.jpg')"></div>
+          <div style="background-image: url('slideshow/twelve.jpg')"></div>
           <div></div>
           <!-- #slideshow div:nth-of-type(11) -->
           
-          <div style="background-image: url('slideshow/twelve.jpg')"></div>
+          <div style="background-image: url('slideshow/five.jpg')"></div>
           <div></div>
           <!-- #slideshow div:nth-of-type(12) --> 
         </div>
@@ -639,7 +640,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <script>
 /* http://cssmojo.com/ken-burns-effect/ */
 function kbSlideshow() { // set .fx1 class on 1st img on page load
-	window.setInterval(kenBurns, 6000); // calls kenBurns() function every 4 secs
+	window.setInterval(kenBurns, 3300); // calls kenBurns() function every 4 secs
 	var images = document.getElementById('slideshow').getElementsByTagName('div'),
         numberOfImages = images.length, i = 1; // track loop - 1 (not 0) as 1st img is styled on page load
 	images[0].className = "fx1"; // style 1st img on page load
