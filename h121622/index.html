@@ -58,44 +58,59 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- InstanceBeginEditable name="head" -->
 <style>
 @font-face {
-    font-family: 'Allura';
-    src: url('../shared-assets/web-fonts/Allura-Regular.woff2') format('woff2'), url('../shared-assets/web-fonts/Allura-Regular.woff') format('woff');
+    font-family: 'WildHeart';
+    src: url('../shared-assets/web-fonts/WildHeart.woff2') format('woff2'), url('../shared-assets/web-fonts/WildHeart.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-.allura {
-    font-family: 'Allura';
-    font-size: 100px;
-    line-height: 90px;
-	color: #a2273d;
+h1.allura {
+    font-family: 'WildHeart';
+    font-size: 120px;
+    line-height: 80px;
+    color: #a2273d;
+    text-align: center;
+    margin: 0;
+}
+.dcl {
+    font-size: 145px;
+    line-height: 65px;
+    padding-bottom: 30px;
 }
 .gradient-row {
-    background: linear-gradient(#a389c8 5%, #f1acdb 100%);
-    margin-top: 15px;
-    margin-bottom: -15px;/* border-bottom: 30px solid; */
+    background: linear-gradient(#a389c8 5%, #f1acdb 80%);
+    margin-top: 5px;
+    margin-bottom: -5px;/* border-bottom: 30px solid; */
 }
 .custom-container {
-	/* background: rgba(255,255,255,.2); */
-	max-width: 1430px;
-	margin: 0 auto;
-	display: flex;
-	/* justify-content: center; */
+    /* background: rgba(255,255,255,.2); */
+    max-width: 1430px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
 	/* align-content: center; */
-	align-items: center;
-	font-size: 26px;
-	font-weight: 400;
-	text-align: right;
-	/* text-shadow: 0px 2px 5px #a389c8; */
-	background: rgba(255,255,255,.3);
-	color: #a2273d;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: right;
+    /* text-shadow: 0px 2px 5px #a389c8; */
+    background: rgba(255,255,255,.4);
+    color: #a2273d;
 }
 .intro {
-    padding: 0 80px 30px 60px;
+    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+    padding: 0 80px 70px 60px;
+}
+.intro a {
+    color: #4b3f5c;
+}
+.intro a:hover, .intro a:focus {
+    text-decoration: none;
+    color: #000;
 }
 .image {
     box-shadow: 0px 50px 70px rgba(0,0,0,0.3), 0px 10px 10px rgba(0,0,0,0.1);
-    margin-top: -15px;
+    margin-top: -5px;
     position: relative;
     border-radius: 3px;
 }
@@ -281,9 +296,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row gradient-row">
     <div class="custom-container">
       <div class="intro">
-        <h1 class="allura">Say Yes
-          to DCL!</h1>
-        <div>It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. Birthday parties! Weddings and wedding showers! Baby showers! We’ll add the magic, you make the memories. Celebrate with us in 2023!</div>
+        <h1 class="allura">say yes<br>
+          to<br>
+          <div class="dcl">c</div>
+        </h1>
+        <div>It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
       </div>
       <div><img class="image" src="woman-child.jpg" alt=""></div>
     </div>
