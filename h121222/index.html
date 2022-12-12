@@ -23,7 +23,9 @@
 
 <!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Page Title | Douglas County Libraries</title>
+<title>Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
+<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -68,8 +70,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     pointer-events: auto;
     z-index: 1;
 }
-.slideshow-carousel {
-}
 .flickity-prev-next-button {
     width: 50px;
     height: 50px;
@@ -85,48 +85,275 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .flickity-prev-next-button.no-svg {
     color: #efeeed;
 }
+.tree-details {
+    min-width: 306px;
+}
+.carousel-cell img {
+    border: 3px solid #fff;
+    border-radius: 2px;
+}
 @font-face {
-    font-family: 'WildHeart';
-    src: url('../shared-assets/web-fonts/WildHeart.woff2') format('woff2'), url('../shared-assets/web-fonts/WildHeart.woff') format('woff');
+    font-family: 'Pop Clink Fill';
+    src: url('../shared-assets/web-fonts/subset-PopClink-Fill.woff2') format('woff2'), url('../shared-assets/web-fonts/subset-PopClink-Fill.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-h1.allura {
-    font-family: 'WildHeart';
-    font-size: 120px;
+@font-face {
+    font-family: 'Bulgary';
+    src: url('../shared-assets/web-fonts/subset-BulgaryRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/subset-BulgaryRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1.pop-clink {
+    font-family: 'Pop Clink Fill', serif;
+    color: #fff;
+    font-weight: normal;
+    font-style: normal;
+    display: inline;
+    font-size: 80px;
+    margin: 0 0;
+    text-shadow: 0 4px 9px #000;
     line-height: 80px;
-    color: #a2273d;
-    text-align: center;
-    margin: 0;
 }
-.dcl {
-    font-size: 145px;
-    line-height: 65px;
-    padding-bottom: 30px;
+h1.bulgary {
+    font-family: 'Bulgary', serif;
+    color: #fff;
+    font-weight: normal;
+    font-style: normal;
+    display: inline;
+    font-size: 104px;
+    text-shadow: 0 4px 9px #000;
+    margin: 0 12px 0 5px;
 }
-.gradient-row {
-    background: linear-gradient(#a389c8 5%, #f1acdb 80%);
+.branches-row {
+    background: #1c1c06 url("branch-background.jpg") right bottom/cover;
 }
-.custom-container {
-    max-width: 1430px;
+.forest-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1145px;
     margin: 0 auto;
-    font-size: 26px;
-    font-weight: 400;
-    text-align: right;
-    background: rgba(255,255,255,.4);
-    color: #a2273d;
+    padding: 0 15px 35px;
 }
-.intro {
+.social-footer {
+    margin-top: -55px;
+}
+.details {
+    display: flex;
+    align-items: center;
+}
+.content-details {
+    padding-left: 30px;
+}
+.forest {
     font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-    padding: 0 80px 70px 60px;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 4px 9px #000;
+    font-weight: 400;
 }
-.intro a {
-    color: #4b3f5c;
+h1.forest {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
 }
-.intro a:hover, .intro a:focus {
+.forest.one {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.forest.two {
+    font-size: 18px;
+    font-weight: 600;
+}
+.forest.three {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.forest.four {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px 0 10px;
+}
+.mark-your {
+    font-weight: 800;
+}
+.forest-read-more {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+.forest-read-more:active, .forest-read-more:hover, .forest-read-more:focus {
+    color: #f9dd90;
     text-decoration: none;
-    color: #000;
+}
+.donate {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+    position: relative;
+    z-index: 1000;
+}
+.donate:active, .donate:hover, .donate:focus {
+    color: #f9dd90;
+}
+.sevens:after {
+    content: 'Weeks';
+    animation-name: seven;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes seven {
+0% {
+opacity:1;
+}
+50% {
+opacity:1;
+content: "Locations"
+}
+100% {
+opacity:1;
+content: "Weeks"
+}
+}
+.snowflake-detail {
+    animation: snowflake 15s linear infinite both;
+}
+@keyframes snowflake {
+0% {
+transform: rotateZ(0);
+}
+50% {
+transform: rotateZ(180deg);
+}
+100% {
+transform: rotateZ(360deg);
+}
+}
+.sparkle-row-top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.sparkle-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+    max-width: 90%;
+    margin: -100px auto 0 auto;
+}
+.sparkle-rotate:nth-of-type(1) {
+    animation: sparkle-rotate 15s .3s linear infinite both;
+}
+.sparkle-rotate:nth-of-type(2) {
+    animation: sparkle-rotate 18s .9s linear infinite both;
+}
+.sparkle-rotate:nth-of-type(3) {
+    animation: sparkle-rotate 10s 1s linear infinite both;
+}
+.sparkle-rotate:nth-of-type(4) {
+    animation: sparkle-rotate 16s .5s linear infinite both;
+}
+.sparkle-rotate:nth-of-type(5) {
+    animation: sparkle-rotate 14s .2s linear infinite both;
+}
+.sparkle-rotate:nth-of-type(6) {
+    animation: sparkle-rotate 18s .1s linear infinite both;
+}
+@keyframes sparkle-rotate {
+0% {
+transform: rotateZ(0);
+}
+50% {
+opacity: 0;
+transform: rotateZ(180deg);
+}
+100% {
+transform: rotateZ(360deg);
+}
+}
+.sparkle-fall:nth-of-type(1) {
+    animation: sparkle-fall 14s .2s linear infinite both;
+}
+.sparkle-fall:nth-of-type(2) {
+    animation: sparkle-fall 20s .9s linear infinite both;
+}
+.sparkle-fall:nth-of-type(3) {
+    animation: sparkle-fall 15s .1s linear infinite both;
+}
+.sparkle-fall:nth-of-type(4) {
+    animation: sparkle-fall 20s .8s linear infinite both;
+}
+.sparkle-fall:nth-of-type(5) {
+    animation: sparkle-fall 15s .3s linear infinite both;
+}
+.sparkle-fall:nth-of-type(6) {
+    animation: sparkle-fall 12s 1.5s linear infinite both;
+}
+@keyframes sparkle-fall {
+0% {
+transform: translateY(0%);
+opacity: 0;
+}
+25% {
+opacity: 1;
+}
+50% {
+opacity: 0;
+}
+75% {
+opacity: 1;
+}
+100% {
+transform: translateY(100%);
+opacity: 0;
+}
+}
+
+@media (max-width: 1050px) {
+.sparkle-fall:nth-of-type(5), .sparkle-fall:nth-of-type(6), .sparkle-rotate:nth-of-type(1), .sparkle-rotate:nth-of-type(2), .sparkle-rotate:nth-of-type(3), .sparkle-rotate:nth-of-type(4), .sparkle-rotate:nth-of-type(5), .sparkle-rotate:nth-of-type(6) {
+    display: none;
+}
+}
+
+@media (max-width: 850px) {
+.forest-wrapper {
+    text-align: center;
+}
+.snowflake-detail {
+    display: none;
+}
+.content-details {
+    padding-left: 0;
+}
+h1.pop-clink {
+    line-height: 20px;
+}
+.forest.three {
+    padding-top: 20px;
+}
+.sparkle-fall {
+    height: 200px;
+}
+}
+
+@media (max-width: 450px) {
+h1.pop-clink {
+    font-size: 70px;
+    line-height: 80px;
+}
+h1.bulgary {
+    margin: 0;
+    line-height: 80px;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -301,23 +528,34 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row gradient-row">
-    <div class="custom-container">
-      <div class="slideshow-carousel"><h1 class="heading-test">jfiwjf ijfoijfiq fjewio</h1>
-        <div class="carousel" data-flickity='{ "fade": true, "imagesLoaded": true, "pageDots": false, "wrapAround": true, "autoPlay": 4000 }'>
-          <div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?face" alt=""></div>
-          <div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?woman" alt=""></div>
-          <div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?man" alt=""></div>
-          <div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?sunset" alt=""></div>
+  <div class="row no-gutter">
+    <div class="branches-row">
+      <div class="sparkle-row-top"><img class="img-responsive sparkle-rotate" src="s1.png" alt=""><img class="img-responsive sparkle-fall" src="s2.png" alt=""><img class="img-responsive sparkle-fall" src="s5.png" alt=""><img class="img-responsive sparkle-rotate" src="s4.png" alt=""><img class="img-responsive sparkle-fall" src="s6.png" alt=""><img class="img-responsive sparkle-fall" src="s3.png" alt=""></div>
+      <div class="forest-wrapper">
+        <div class="forest one"><i>Celebrate the Season!</i></div>
+        <div class="heading-wrapper">
+          <h1 class="pop-clink">FOrEST</h1>
+          <h1 class="bulgary">of</h1>
+          <h1 class="pop-clink">STORIeS</h1>
+        </div>
+        <div class="details">
+          <div class="tree-details">
+            <div class="carousel" data-flickity='{ "fade": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": 4000 }'>
+              <div class="carousel-cell"><img src="one.jpg" alt=""></div>
+              <div class="carousel-cell"><img src="two.jpg" alt=""></div>
+              <div class="carousel-cell"><img src="https://source.unsplash.com/300x300/?man" alt=""></div>
+              <div class="carousel-cell"><img src="https://source.unsplash.com/300x300/?sunset" alt=""></div>
+            </div>
+          </div>
+          <div class="content-details">
+            <div class="forest three">7&nbsp;Weeks, 7&nbsp;Locations, 120+&nbsp;Decorated Trees</div>
+            <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories.</div>
+            <div class="padding-top-20 padding-bottom-20"><a class="forest forest-read-more" href="forest-of-stories/">Learn More</a></div>
+            <div class="forest two">The DCL Foundation helps fund programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. Please consider <a class="donate" href="https://www.coloradogives.org/organization/DouglasCountyLibrariesFoundation" target="_blank">donating today</a>.</div>
+          </div>
         </div>
       </div>
-      <div class="intro">
-        <h1 class="allura">say yes<br>
-          to<br>
-          <div class="dcl">c</div>
-        </h1>
-        <div>It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
-      </div>
+      <div class="sparkle-row-bottom"><img class="img-responsive sparkle-fall" src="s5.png" alt=""><img class="img-responsive sparkle-rotate" src="s3.png" alt=""><img class="img-responsive sparkle-fall" src="s2.png" alt=""><img class="img-responsive sparkle-fall" src="s4.png" alt=""><img class="img-responsive sparkle-fall" src="s6.png" alt=""><img class="img-responsive sparkle-rotate" src="s1.png" alt=""></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
@@ -381,17 +619,46 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script src="https://unpkg.com/flickity@2.2/dist/flickity.pkgd.js"></script>
-	<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> 
-<script>
-	var cards = $(".carousel-cell");
-for (var i = 0; i < cards.length; i++) {
-  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
-  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
-  cards.eq(target1).before(cards.eq(target2));
+<script src="https://unpkg.com/flickity@2.2/dist/flickity.pkgd.js"></script> 
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Library",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Castle Rock",
+		"addressRegion": "CO",
+		"postalCode": "80104",
+		"streetAddress": "100 S. Wilcox Street"
+	},
+	"telephone": "(303) 791-7323",
+	"name": "Douglas County Libraries",
+	"url": "https://www.dcl.org/",
+	"image": "https://www.dcl.org/locations/castle-rock.jpg",
+	"description": "Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.",
+	"logo": "https://www.dcl.org/dcl-logo.png",
+	"priceRange": "Free",
+
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://dcl.bibliocommons.com/v2/search?query=search_term_string",
+		"query-input": "required name=search_term_string"
+	},
+	"sameAs": ["https:\/\/dcl.bibliocommons.com",
+		"https:\/\/www.blogs.douglascountylibraries.org",
+		"https:\/\/help.dcl.org/",
+		"https:\/\/www.douglascountylibraries.org/",
+		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
+		"https:\/\/www.instagram.com\/dclcolorado",
+		"https:\/\/www.youtube.com\/user\/dclwebteam",
+		"https:\/\/pinterest.com\/dougcolibraries",
+		"https:\/\/twitter.com\/DCLcolorado"
+	]
 }
- </script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> <!-- InstanceEndEditable -->
+</script> 
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd -->
 </html>
