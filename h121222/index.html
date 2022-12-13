@@ -86,10 +86,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     color: #efeeed;
 }
 .tree-details {
-    min-width: 306px;
+    min-width: 356px;
+    box-shadow: 0 0px 43px 6px rgb(0, 0, 0);
 }
 .carousel-cell img {
-    border: 3px solid #fff;
+    border: 3px solid #f3d9a7;
     border-radius: 2px;
 }
 @font-face {
@@ -128,12 +129,12 @@ h1.bulgary {
     margin: 0 12px 0 5px;
 }
 .branches-row {
-    background: #1c1c06 url("branch-background.jpg") right bottom/cover;
+    background: #1c1c06 url("branches.jpg") right bottom/cover;
 }
 .forest-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 1145px;
+    max-width: 1085px;
     margin: 0 auto;
     padding: 0 15px 35px;
 }
@@ -143,9 +144,10 @@ h1.bulgary {
 .details {
     display: flex;
     align-items: center;
+    padding: 10px 0 30px;
 }
 .content-details {
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .forest {
     font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
@@ -324,7 +326,10 @@ opacity: 0;
 }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 875px) {
+.details {
+    flex-direction: column;
+}
 .forest-wrapper {
     text-align: center;
 }
@@ -342,6 +347,12 @@ h1.pop-clink {
 }
 .sparkle-fall {
     height: 200px;
+}
+}
+
+@media (max-width: 830px) {
+.tree-details {
+    margin: 40px 0 10px;
 }
 }
 
@@ -540,15 +551,16 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
         <div class="details">
           <div class="tree-details">
-            <div class="carousel" data-flickity='{ "fade": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": 4000 }'>
-              <div class="carousel-cell"><img src="one.jpg" alt=""></div>
-              <div class="carousel-cell"><img src="two.jpg" alt=""></div>
-              <div class="carousel-cell"><img src="https://source.unsplash.com/300x300/?man" alt=""></div>
-              <div class="carousel-cell"><img src="https://source.unsplash.com/300x300/?sunset" alt=""></div>
+            <div class="carousel" data-flickity='{ "fade": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": 3000 }'>
+              <div class="carousel-cell"><img src="sleepy-hollow.jpg" alt="The Legend of Sleepy Hollow"></div>
+              <div class="carousel-cell"><img src="jungle-book.jpg" alt="The Jungle Book"></div>
+              <div class="carousel-cell"><img src="harry-potter.jpg" alt="Harry Potter"></div>
             </div>
           </div>
           <div class="content-details">
-            <div class="forest three">7&nbsp;Weeks, 7&nbsp;Locations, 120+&nbsp;Decorated Trees</div>
+            <div class="forest three">7&nbsp;Weeks<br>
+              7&nbsp;Locations<br>
+              120+&nbsp;Decorated Trees</div>
             <div class="forest two">Make DCL your first stop for the holidays. Visit every location and get ready to Ooh and Aah over decorated trees all dressed up in stories.</div>
             <div class="padding-top-20 padding-bottom-20"><a class="forest forest-read-more" href="forest-of-stories/">Learn More</a></div>
             <div class="forest two">The DCL Foundation helps fund programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. Please consider <a class="donate" href="https://www.coloradogives.org/organization/DouglasCountyLibrariesFoundation" target="_blank">donating today</a>.</div>
@@ -621,6 +633,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- InstanceBeginEditable name="scripts" --> 
 <script src="https://unpkg.com/flickity@2.2/dist/flickity.pkgd.js"></script> 
 <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> 
+<script>
+	var cards = $(".carousel-cell");
+for (var i = 0; i < cards.length; i++) {
+  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+  cards.eq(target1).before(cards.eq(target2));
+}
+ </script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
