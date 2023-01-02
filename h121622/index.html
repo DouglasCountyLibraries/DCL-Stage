@@ -106,27 +106,30 @@ h1.allura {
     padding-bottom: 30px;
 }
 .gradient-row {
-    background: linear-gradient(#a389c8 5%, #f1acdb 80%);
+    background: linear-gradient(#D0C3E3 5%, #f1acdb 60%);
+    min-height: 800px;
 }
 .custom-container {
-    max-width: 1430px;
+    max-width: 900px;
     margin: 0 auto;
     font-size: 26px;
     font-weight: 400;
-    text-align: right;
-    background: rgba(255,255,255,.4);
-    color: #a2273d;
+    text-align: center;
+    display: flex;
+    min-height: 800px;
+    align-items: center;
 }
 .intro {
     font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-    padding: 0 80px 70px 60px;
+    padding: 0 15px 55px;
 }
 .intro a {
-    color: #4b3f5c;
+    color: #000;
+    text-decoration: none;
 }
 .intro a:hover, .intro a:focus {
-    text-decoration: none;
-    color: #000;
+    text-decoration: underline;
+    color: #4b3f5c;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -302,8 +305,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row gradient-row">
-    <div class="custom-container">
-      <div class="slideshow-carousel"><h1 class="heading-test">Content overlay goes here</h1>
+    <div class="custom-container"> 
+      <!--<div class="slideshow-carousel">
         <div class="carousel" data-flickity='{ "fade": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": 3000 }'>
           <div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?wedding" alt=""></div>
           <div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?bride" alt=""></div>
@@ -312,7 +315,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 			<div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?baby-shower" alt=""></div>
 			<div class="carousel-cell"><img src="https://source.unsplash.com/1430x800/?wedding-cake" alt=""></div>
         </div>
-      </div>
+      </div>-->
       <div class="intro">
         <h1 class="allura">say yes<br>
           to<br>
@@ -383,8 +386,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script src="https://unpkg.com/flickity@2.2/dist/flickity.pkgd.js"></script>
-	<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> 
+<script src="https://unpkg.com/flickity@2.2/dist/flickity.pkgd.js"></script> 
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> 
 <script>
 	var cards = $(".carousel-cell");
 for (var i = 0; i < cards.length; i++) {
