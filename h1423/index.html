@@ -80,14 +80,14 @@ h1.allura {
     padding-bottom: 30px;
 }
 .custom-container {
-	max-width: 700px;
-	margin: 0 auto;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;
-	display: flex;
-	min-height: 835px;
-	align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    min-height: 835px;
+    align-items: center;
 }
 .intro {
     font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
@@ -117,6 +117,10 @@ h1.allura {
     background: #fff url("bride-flowers.jpg") center bottom/cover;
     min-height: 900px;
 }
+.row-wrapper-four {
+    background: #fff url("cake.jpg") right top/cover;
+    min-height: 900px;
+}
 .confetti-one {
     min-height: 900px;
     background: transparent url("confetti-one.png") center center repeat;
@@ -124,22 +128,15 @@ h1.allura {
 }
 .confetti-two {
     min-height: 900px;
-    background: transparent url("confetti-one.png") center center repeat;
+    background: transparent url("confetti-two.png") center center repeat;
     animation: fall 4s linear infinite;
 }
 .confetti-three {
     min-height: 900px;
-    background: transparent url("confetti-one.png") center center repeat;
+    background: transparent url("confetti-three.png") center center repeat;
     animation: fall 5s linear infinite;
 }
-@-webkit-keyframes fall {
-from {
-background-position: 0 -900px;
-}
-to {
-background-position: 0 0;
-}
-}
+
 @keyframes fall {
 from {
 background-position: 0 -900px;
@@ -362,6 +359,25 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
     <div class="theme">
       <div class="row-wrapper-three">
+        <div class="confetti-one">
+          <div class="confetti-two">
+            <div class="confetti-three">
+              <div class="custom-container">
+                <div class="intro">
+                  <h1 class="allura">say yes<br>
+                    to<br>
+                    <div class="dcl">c</div>
+                  </h1>
+                  <div>It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme">
+      <div class="row-wrapper-four">
         <div class="confetti-one">
           <div class="confetti-two">
             <div class="confetti-three">
