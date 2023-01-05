@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
 <!-- Minimize page flickering for Google Optimize -->
 <style>
 .async-hide {
-	opacity: 0 !important
+    opacity: 0 !important
 }
 </style>
 
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -66,32 +67,42 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-display: swap;
 }
 h1.littlelove {
-	font-family: 'LittleLove';
-	background: url("heading-backround.png") no-repeat;
-	font-size: 155px;
+	font-family: 'LittleLove', sans-serif;
+	background-color: rgba(240, 229, 223);
+	font-size: 180px;
 	color: #a2273d;
 	text-align: center;
-	margin: 0;
-	line-height: 8px;
-	padding-bottom: 100px;
-	transform: rotate(-2deg);
+	line-height: 0px;
+	padding-bottom: 80px;
+	margin: -2px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
 }
-.dcl {
-    font-size: 145px;
-    line-height: 65px;
-    padding-bottom: 30px;
+.heading-wrapper {
+	position: relative;
+	z-index: 100;
+	border: 25px solid transparent;
+	border-image: url("border-background.png") 30 round;
+	margin: 20px 90px 0 0;
+	transform: rotate(-7deg);
+}
+	.-content {
+    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+    padding: 50px 15px 56px;
+    background-color: rgba(240, 229, 223);
+   
 }
 .custom-container {
-	max-width: 700px;
-	margin: 0 auto;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;
-	display: flex;
-	min-height: 908px;
-	align-items: center;
-	line-height: 34px;
-	color: #000;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    min-height: 908px;
+    align-items: center;
+    line-height: 34px;
+    color: #a2273d;
 }
 .intro {
     font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
@@ -99,24 +110,29 @@ h1.littlelove {
     position: relative;
     z-index: 100;
 }
-.intro-content {
-	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-	padding: 50px 15px 56px;
+.intro-wrapper {
 	position: relative;
 	z-index: 100;
-	background: rgba(240,229,223,.9);
-	border-radius: 3px;
-	margin-top: 150px;
+	border: 25px solid transparent;
+	border-image: url("border-background.png") 30 round;
+	margin: 20px 0 0 80px;
+	transform: rotate(-6deg);
+}
+.intro-content {
+	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+	padding: 20px 15px 25px;
+	background-color: rgba(240, 229, 223);
+	margin: -2px;
 }
 .intro a {
     color: #000;
     text-decoration: none;
-	border-bottom: 3px dotted #bbb;
+    border-bottom: 3px dotted #bbb;
 }
 .intro a:hover, .intro a:focus {
     text-decoration: none;
     color: #000;
-	border-bottom: 3px dotted #000;
+    border-bottom: 3px dotted #000;
 }
 .row-wrapper-one {
     background: #fff url("wedding-rings.jpg") right center/cover;
@@ -167,7 +183,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -338,8 +354,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="confetti-three">
               <div class="custom-container">
                 <div class="intro">
-                  <h1 class="littlelove">Let’s Celebrate!</h1>
-                  <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  <div class="heading-wrapper">
+                    <div class="heading-content">
+                      <h1 class="littlelove">Let’s Celebrate!</h1>
+                    </div>
+                  </div>
+                  <div class="intro-wrapper">
+                    <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -354,8 +376,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="confetti-three">
               <div class="custom-container">
                 <div class="intro">
-                  <h1 class="littlelove">Let’s Celebrate!</h1>
-                  <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  <div class="heading-wrapper">
+                    <div class="heading-content">
+                      <h1 class="littlelove">Let’s Celebrate!</h1>
+                    </div>
+                  </div>
+                  <div class="intro-wrapper">
+                    <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -370,8 +398,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="confetti-three">
               <div class="custom-container">
                 <div class="intro">
-                  <h1 class="littlelove">Let’s Celebrate!</h1>
-                  <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  <div class="heading-wrapper">
+                    <div class="heading-content">
+                      <h1 class="littlelove">Let’s Celebrate!</h1>
+                    </div>
+                  </div>
+                  <div class="intro-wrapper">
+                    <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -386,8 +420,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="confetti-three">
               <div class="custom-container">
                 <div class="intro">
-                  <h1 class="littlelove">Let’s Celebrate!</h1>
-                  <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  <div class="heading-wrapper">
+                    <div class="heading-content">
+                      <h1 class="littlelove">Let’s Celebrate!</h1>
+                    </div>
+                  </div>
+                  <div class="intro-wrapper">
+                    <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -501,4 +541,5 @@ $('.theme').hide().eq(random).show();
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
