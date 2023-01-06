@@ -66,34 +66,23 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-style: normal;
     font-display: swap;
 }
+.background-row {
+    background: #efeeed url("row-background.jpg") center top repeat-x;
+}
 .theme {
     max-width: 2000px;
     margin: 0 auto;
 }
 h1.littlelove {
-    font-family: 'LittleLove', sans-serif;
-    background-color: rgba(240, 229, 223);
-    font-size: 180px;
-    color: #a2273d;
-    text-align: center;
-    line-height: 0px;
-    padding-bottom: 80px;
-    margin: -2px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-.heading-wrapper {
-    position: relative;
-    z-index: 100;
-    border: 25px solid transparent;
-    border-image: url("border-background.png") 30 round;
-    margin: 20px 90px 0 0;
-    transform: rotate(-7deg);
-}
-.-content {
-    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-    padding: 50px 15px 56px;
-    background-color: rgba(240, 229, 223);
+	font-family: 'LittleLove', sans-serif;
+	font-size: 180px;
+	color: #a2273d;
+	text-align: center;
+	line-height: 60px;
+	padding-bottom: 75px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	margin: 0;
 }
 .custom-container {
     max-width: 700px;
@@ -108,24 +97,23 @@ h1.littlelove {
     color: #a2273d;
 }
 .intro {
-    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-    padding: 25px 15px 60px;
-    position: relative;
-    z-index: 100;
+	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+	padding: 0 30px 60px;
+	position: relative;
+	z-index: 100;
 }
 .intro-wrapper {
     position: relative;
     z-index: 100;
     border: 25px solid transparent;
-    border-image: url("border-background.png") 30 round;
-    margin: 20px 0 0 80px;
+    border-image: url("paper-background.png") 30 round;
     transform: rotate(-6deg);
 }
 .intro-content {
-    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-    padding: 20px 15px 25px;
-    background-color: rgba(240, 229, 223);
-    margin: -2px;
+	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+	padding: 0px 15px 50px;
+	background-color: rgba(240, 229, 223);
+	margin: -2px;
 }
 .intro a {
     color: #000;
@@ -181,6 +169,20 @@ to {
 background-position: 0 0;
 }
 }
+	@media (max-width: 425px) {
+		h1.littlelove {
+
+	font-size: 140px;
+
+	line-height: 50px;
+	padding-bottom: 45px;
+
+}
+		.intro-wrapper {
+
+    transform: rotate(-3deg);
+}
+	}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -354,7 +356,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
+  <div class="row background-row">
     <div class="theme">
       <div class="row-wrapper-one">
         <div class="ballons">
@@ -363,13 +365,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="confetti-three">
                 <div class="custom-container">
                   <div class="intro">
-                    <div class="heading-wrapper">
-                      <div class="heading-content">
-                        <h1 class="littlelove">Let’s Celebrate!</h1>
-                      </div>
-                    </div>
                     <div class="intro-wrapper">
-                      <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                      <div class="intro-content">
+                        <h1 class="littlelove">Let’s Celebrate!</h1>
+                        It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
                     </div>
                   </div>
                 </div>
@@ -387,13 +386,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="confetti-three">
                 <div class="custom-container">
                   <div class="intro">
-                    <div class="heading-wrapper">
-                      <div class="heading-content">
-                        <h1 class="littlelove">Let’s Celebrate!</h1>
-                      </div>
-                    </div>
                     <div class="intro-wrapper">
-                      <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                      <div class="intro-content">
+                        <h1 class="littlelove">Let’s Celebrate!</h1>
+                        It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
                     </div>
                   </div>
                 </div>
@@ -411,13 +407,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="confetti-three">
                 <div class="custom-container">
                   <div class="intro">
-                    <div class="heading-wrapper">
-                      <div class="heading-content">
-                        <h1 class="littlelove">Let’s Celebrate!</h1>
-                      </div>
-                    </div>
                     <div class="intro-wrapper">
-                      <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                      <div class="intro-content">
+                        <h1 class="littlelove">Let’s Celebrate!</h1>
+                        It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
                     </div>
                   </div>
                 </div>
@@ -435,13 +428,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="confetti-three">
                 <div class="custom-container">
                   <div class="intro">
-                    <div class="heading-wrapper">
-                      <div class="heading-content">
-                        <h1 class="littlelove">Let’s Celebrate!</h1>
-                      </div>
-                    </div>
                     <div class="intro-wrapper">
-                      <div class="intro-content">It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
+                      <div class="intro-content">
+                        <h1 class="littlelove">Let’s Celebrate!</h1>
+                        It’s a new year, and that means brand-new celebrations. Bring your special events to life in one of our beautiful libraries. <a href="#">Birthday parties</a>! <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! We’ll add the magic, you make the memories. <i>Celebrate with us in 2023!</i></div>
                     </div>
                   </div>
                 </div>
