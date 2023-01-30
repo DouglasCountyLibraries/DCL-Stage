@@ -66,6 +66,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-style: normal;
     font-display: swap;
 }
+.background-row {
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
+}
 .theme {
     max-width: 2000px;
     margin: 0 auto;
@@ -128,6 +133,21 @@ h1.allura {
 .row-wrapper-four {
     background: #fff url("cake.jpg") right top/cover;
     min-height: 900px;
+}
+.gold-bling-one {
+    min-height: 900px;
+    background: transparent url("gold-bling-one.png") center center repeat;
+    animation: fall 3s linear infinite;
+}
+.gold-bling-two {
+    min-height: 900px;
+    background: transparent url("gold-bling-two.png") center center repeat;
+    animation: fall 4s linear infinite;
+}
+.gold-bling-three {
+    min-height: 900px;
+    background: transparent url("gold-bling-three.png") center center repeat;
+    animation: fall 5s linear infinite;
 }
 .confetti-one {
     min-height: 900px;
@@ -325,12 +345,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
+  <div class="row background-row">
     <div class="theme">
-      <div class="row-wrapper-one">
-        <div class="confetti-one">
-          <div class="confetti-two">
-            <div class="confetti-three">
+      <!-- gtg --><div class="row-wrapper-one">
+        <div class="gold-bling-one">
+          <div class="gold-bling-two">
+            <div class="gold-bling-three">
               <div class="custom-container">
                 <div class="intro">
                   <h1 class="allura">say yes<br>
@@ -384,7 +404,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
     <div class="theme">
-      <div class="row-wrapper-four">
+      <!-- gtg --><div class="row-wrapper-four">
         <div class="confetti-one">
           <div class="confetti-two">
             <div class="confetti-three">
