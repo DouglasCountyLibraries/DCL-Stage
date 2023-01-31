@@ -67,12 +67,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-display: swap;
 }
 .background-row {
-    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
-    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 75%, #ffe7eb 75%, #ffe7eb 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 75%, #ffe7eb 75%, #ffe7eb 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 75%, #ffe7eb 75%, #ffe7eb 100%);
+}
+.sbh-background {
+    background: transparent url("sbh-background.jpg") bottom left no-repeat;
+    min-height: 512px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-top: 600px;
 }
 .theme {
-    max-width: 2000px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 h1.allura {
@@ -95,7 +102,7 @@ h1.allura {
     font-weight: 400;
     text-align: center;
     display: flex;
-    min-height: 835px;
+    min-height: 1000px;
     align-items: center;
     line-height: 34px;
     color: #000;
@@ -107,6 +114,7 @@ h1.allura {
     z-index: 100;
     background: rgba(255,255,255,.8);
     border-radius: 3px;
+    margin-bottom: 115px;
 }
 .intro a {
     color: #000;
@@ -118,21 +126,89 @@ h1.allura {
     color: #000;
     border-bottom: 3px dotted #000;
 }
+.row.brew-row {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    color: #f4ecd9;
+    display: flex;
+    justify-content: flex-end;
+    background: #2e2424;
+}
+.row.wave-row {
+    background: transparent url("wave.png") center center no-repeat;
+    height: 135px;
+    margin-top: -135px;
+}
+.row.brew-tour-info {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    /* color: #f4ecd9; */
+    background: #ffe7eb;
+    padding: 0px 15px 200px;
+}
+.info-wrapper {
+    max-width: 725px;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.info-wrapper h1 {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    /* padding-bottom: 20px; */
+    font-size: 46px;
+    font-weight: 400;
+    color: #a2273d;
+    /* text-shadow: 0 10px 20px rgba(0, 0, 0, .4); */
+    line-height: 60px;
+}
+.info-wrapper h3 {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    line-height: inherit;
+}
+.box-item-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 13px 0 0px;
+    margin-top: -170px;
+}
+.box-item {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin: 15px;
+    width: 395px;
+    background: #fff;
+    padding: 40px 40px 60px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 24px;
+}
+.box-item img {
+    padding-bottom: 20px;
+}
+.row.box-row {
+    padding: 0 15px;
+}
 .row-wrapper-one {
-    background: #fff url("wedding-rings.jpg") right center/cover;
-    min-height: 900px;
+    background: #fff url("wedding-rings.jpg") center top fixed;
 }
 .row-wrapper-two {
-    background: #fff url("flowers.jpg") center bottom/cover;
-    min-height: 900px;
+    background: #fff url("flowers.jpg") center top fixed;
 }
 .row-wrapper-three {
-    background: #fff url("bride-flowers.jpg") center bottom/cover;
-    min-height: 900px;
+    background: #fff url("bride-flowers.jpg") center top fixed;
 }
 .row-wrapper-four {
-    background: #fff url("cake.jpg") right top/cover;
-    min-height: 900px;
+    background: #fff url("cake.jpg") center top fixed;
 }
 .gold-bling-one {
     min-height: 900px;
@@ -437,6 +513,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row wave-row"></div>
+  <div class="row brew-tour-info">
+    <div class="info-wrapper">
+      <h3><i>Join us for these exciting</i></h3>
+      <h1 class="no-margin-top">February & March Events</h1>
+      Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+  </div>
+  <div class="row box-row">
+    <div class="box-item-wrapper">
+      <div class="box-item">
+        <div><img class="img-responsive center-block" src="the-wonder.jpg" alt="The Wonder"></div>
+        <div class="box-content">
+          <div><i>May we offer a <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2121333879">book to go with your brew</a>?</i></div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div><img class="img-responsive center-block" src="survive-the-night.jpg" alt="Survive the Night"></div>
+        <div class="box-content">
+          <div><i><a href="https://dcl.bibliocommons.com/list/share/692278051/2140423619">Thirsty for a good read</a>? </i></div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div><img class="img-responsive center-block" src="be-frank-with-me.jpg" alt="Be Frank with Me"></div>
+        <div class="box-content">
+          <div><i>Here are <a href="https://dcl.bibliocommons.com/list/share/692278051/2129704889">a latte books to love</a>!</i></div>
         </div>
       </div>
     </div>
