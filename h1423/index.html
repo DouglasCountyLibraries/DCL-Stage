@@ -90,7 +90,7 @@ h1.wildheart {
     text-align: center;
 
 }
-.dcl {
+.extended-font {
     font-size: 145px;
     line-height: 65px;
     padding-bottom: 30px;
@@ -108,13 +108,13 @@ h1.wildheart {
     color: #000;
 }
 .intro {
-    font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-    padding: 25px 15px 60px;
-    position: relative;
-    z-index: 100;
-    background: rgba(255,255,255,.8);
-    border-radius: 3px;
-    margin-bottom: 115px;
+	font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+	padding: 25px 15px 60px;
+	position: relative;
+	z-index: 100;
+	background: rgba(255,255,255,.8);
+	border-radius: 3px;
+	margin: 0 10px 115px 10px;
 }
 .intro a {
     color: #000;
@@ -272,6 +272,25 @@ to {
 background-position: 0 0;
 }
 }
+	.short-font {
+	font-size: 160px;
+	margin: 30px 0;
+}
+		@media (min-width: 699px) {
+		.short-font {
+display: none;
+}
+	}
+	@media (max-width: 700px) {
+		.extended-font {
+display: none;
+}
+		.custom-container {
+
+	min-height: 875px;
+
+}
+	}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -456,7 +475,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                 <div class="intro">
                   <h1 class="wildheart">say yes<br>
                     to<br>
-                    <div class="dcl">c</div>
+                    <div class="extended-font">c</div><div class="short-font">dc</div>
                   </h1>
                   <div>Bring your special events to life in one of our beautiful libraries. <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! <a href="#">Birthday parties</a>! We’ll add the magic, you make the memories. <i>Celebrate with us!</i></div>
                 </div>
@@ -474,7 +493,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="custom-container">
                 <div class="intro">
                   <h1 class="wildheart">celebrate<br>with<br>
-                    <div class="dcl"></div>
+                    <div class="extended-font"></div><div class="short-font">u</div>
                   </h1>
                   <div>Bring your special events to life in one of our beautiful libraries. <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! <a href="#">Birthday parties</a>! We’ll add the magic, you make the memories. <i>Say yes to DCL!</i></div>
                 </div>
@@ -494,7 +513,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                 <div class="intro">
                   <h1 class="wildheart">say yes<br>
                     to<br>
-                    <div class="dcl">c</div>
+                    <div class="extended-font">c</div><div class="short-font">dc</div>
                   </h1>
                   <div>Bring your special events to life in one of our beautiful libraries. <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! <a href="#">Birthday parties</a>! We’ll add the magic, you make the memories. <i>Celebrate with us!</i></div>
                 </div>
@@ -513,7 +532,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="custom-container">
                 <div class="intro">
                   <h1 class="wildheart">celebrate<br>with<br>
-                    <div class="dcl"></div>
+                    <div class="extended-font"></div><div class="short-font">u</div>
                   </h1>
                   <div>Bring your special events to life in one of our beautiful libraries. <a href="#">Weddings</a> and <a href="#">wedding showers</a>! <a href="#">Baby showers</a>! <a href="#">Birthday parties</a>! We’ll add the magic, you make the memories. <i>Say yes to DCL!</i></div>
                 </div>
