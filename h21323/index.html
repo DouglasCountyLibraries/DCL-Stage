@@ -66,7 +66,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-style: normal;
     font-display: swap;
 }
-
 .pooh-row {
     background: #eee url("blue-background.jpg") bottom left no-repeat;
     max-width: 1920px;
@@ -84,47 +83,48 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-family: Times, "Times New Roman", serif;
 }
 h1.times-font {
-    font-family: Times, "Times New Roman", serif;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 45px;
-    color: #7d1d06;
-    line-height: 40px;
+	font-family: Times, "Times New Roman", serif;
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 34px;
+	color: #7d1d06;
+	line-height: 32px;
+	font-weight: 600;
 }
 h1.strawberry {
-    font-family: "Strawberry", sans-serif;
-    margin: 0;
-    font-size: 90px;
-    color: #f7b849;
+	font-family: "Strawberry", sans-serif;
+	margin: 0;
+	font-size: 70px;
+	color: #7d1d06;
 }
 h4.strawberry {
     font-family: "Strawberry", sans-serif;
     text-transform: uppercase;
     margin: 8px 0 0;
     font-size: 32px;
-    color: #5d0701;
+    color: #7d1d06;
 }
 .custom-container {
-	display: flex;
-	/* text-align: center; */
-	color: #000;
-	max-width: 600px;
-	flex: 1 2;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+    display: flex;
+    /* text-align: center; */
+    color: #000;
+    max-width: 600px;
+    flex: 1 2;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 .info-wrapper {
     position: relative;
     z-index: 1;
 }
 .btn.btn-lg.btn-primary.custom {
-    background-color: #5d0701;
+    background-color: #a90d02;
     text-transform: uppercase;
     font-weight: 400;
 }
 .btn.btn-lg.btn-primary.custom:active, .btn.btn-lg.btn-primary.custom:hover, .btn.btn-lg.btn-primary.custom:focus {
-    background-color: #a90d02;
+    background-color: #7d1d06;
 }
 .leaves-one {
     background: transparent url("leaves-one.png") top left repeat-x;
@@ -170,18 +170,11 @@ opacity: 0;
 }
 
 @media (max-width: 1550px) {
-.custom-container {
-    justify-content: flex-end;
-}
-.info-wrapper {
-    margin: 0 90px 0 0;
-}
+
 }
 
 @media (max-width: 1120px) {
-.info-wrapper {
-    margin: 0 15px 0 0;
-}
+
 }
 
 @media (max-width: 1020px) {
@@ -202,27 +195,27 @@ opacity: 0;
     animation: float 6s cubic-bezier(0, 0, 0, 0) 2s both;
 }
 }
-	/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
+/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 1175px;
-	margin: auto auto auto 525px;
-	padding: 90px 30px 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1175px;
+    margin: auto auto auto 525px;
+    padding: 90px 30px 215px;
 }
 .slideshow-content {
     flex: 1;
     padding: 30px;
 }
 .slideshow-image.main {
-	min-height: 450px;
+    min-height: 450px;
 }
 #slideshow {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 0%;
-	width: 500px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0%;
+    width: 500px;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
     position: absolute;
@@ -235,80 +228,53 @@ opacity: 0;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0;
-
     transition: opacity 3s, transform 8s;
 }
 /* slide two */
 #slideshow div {
-
     transform-origin: bottom left;
 }
 /* slide three */
 #slideshow div:nth-of-type(2n+1) {
-
     transform-origin: bottom right;
 }
 /* slide four */
 #slideshow div:nth-of-type(3n+1) {
-  
     transform-origin: bottom center;
 }
 /* slide five */
 #slideshow div:nth-of-type(4n+1) {
-   
     transform-origin: bottom center;
-}
-/* slide six */
-#slideshow div:nth-of-type(5n+1) {
-    
-    transform-origin: bottom right;
-}
-/* slide seven */
-#slideshow div:nth-of-type(6n+1) {
-  
-    transform-origin: bottom right;
-}
-/* slide eight */
-#slideshow div:nth-of-type(7n+1) {
-    
-    transform-origin: bottom center;
-}
-/* slide nine */
-#slideshow div:nth-of-type(8n+1) {
-   
-    transform-origin: bottom right;
 }
 /* slide one */
-#slideshow div:nth-of-type(9n+1) {
-    
-    transform-origin: center center;
+#slideshow div:nth-of-type(5n+1) {
+    transform-origin: top left;
 }
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
     z-index: 1
 }
 #slideshow .fx, #slideshow .fx1 {
-   
     transform: scale(1.1) translate(1.5%);
     opacity: 1
 }
 #slideshow div:nth-of-type(1) {
-    background-image: url("butterfly-pavilion.jpg")
+    background-image: url("costumes.jpg")
 }
 #slideshow div:nth-of-type(2) {
-    background-image: url("colorado-railroad-museum.jpg")
+    background-image: url("puppet-show.jpg")
 }
 #slideshow div:nth-of-type(3) {
-    background-image: url("denver-firefighters-museum.jpg")
+    background-image: url("costumes.jpg")
 }
 #slideshow div:nth-of-type(4) {
-    background-image: url("denver-museum-of-nature-and-science.jpg")
+    background-image: url("costumes.jpg")
 }
 #slideshow div:nth-of-type(5) {
-    background-image: url("dinosaur-ridge.jpg")
+    background-image: url("costumes.jpg")
 }
-
 /* captions */
 #slideshow span {
+	font-family: 'Strawberry';
 	position: absolute;
 	z-index: 2;
 	text-align: center;
@@ -317,37 +283,23 @@ opacity: 0;
 	display: flex;
 	padding: 0;
 	margin: 0;
-	font-size: 60px;
+	font-size: 80px;
 	color: transparent;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	width: 100%;
 	justify-content: center;
-	text-transform: uppercase;
-	font-weight: 900;
-	line-height: 58px;
+	
+	line-height: 75px;
 }
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
     z-index: 1
 }
 #slideshow .fx + span, #slideshow .fx1 + span {
-    color: #fff;
+	color: #fff;
+	animation: caption 5s 1s both;
+	text-shadow: 0 6px 20px #000;
+}
 
-    animation: caption 5s 1s both
-}
-@-webkit-keyframes caption {
-0% {
-opacity:0;
-}
-20% {
-opacity:1;
-}
-90% {
-opacity:1;
-}
-100% {
-opacity:0;
-}
-}
 @keyframes caption {
 0% {
 opacity:0;
@@ -364,7 +316,6 @@ opacity:0;
 }
 
 @media(min-width:42em) { /* bigger than 672px */
-
 }
 
 @media (max-width: 925px) {
@@ -570,54 +521,53 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="float"><img src="red-balloon.png" alt=""></div>
       <div class="leaves-one">
         <div class="leaves-two">
-			
-			
-			
-			
-			
-			
-	  <div class="slideshow-row">
-    <div id="slideshow" class="slideshow-image main"> 
-      <!-- define each background-image in CSS -->
-      <div></div>
-      <!-- #slideshow div:nth-of-type(1) --> 
-      <span>Costumes Encouraged</span>
-      <div></div>
-      
-      <!-- #slideshow div:nth-of-type(2) --> 
-      <span>Puppet Show</span>
-      <div></div>
-      
-      <!-- #slideshow div:nth-of-type(3) --> 
-      <span>Hundred Acre Wood Hunt</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(4) --> 
-      <span>Catered Brunch</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(5) --> 
-		<span>Crafts & Activities</span>
-      
-    </div>
-    <div class="slideshow-content">
-     <div class="info-wrapper">
-              <h1 class="times-font">Silly Old Bear's</h1>
-              <h1 class="strawberry">Blustery Day</h1>
-              <h4 class="strawberry">A Storybook Holiday</h4>
-              <h4 class="times-font black text-uppercase">Sunday, March 26, 8-11AM, Highlands Ranch</h4>
-              <h5 class="black text-uppercase font-weight-400 margin-bottom-5">Tickets: $20 Adults, $15 Ages 3-13</h5>
-              <div><i>Ages 0-2 free with paying adult</i></div>
-              <div class="padding-top-15">Celebrate spring with Winnie the Pooh and friends! Kids can enjoy a Pooh-themed puppet show, crafts, and activities, and hunt for Kanga, Roo, and Piglet in the Hundred Acre Wood. Costumes are encouraged! A delicious catered brunch will also be served.</div>
-              <div class="padding-top-20 margin-bottom-20">
-                <div id="eventbrite-widget-container-515064520847"></div>
-                
-                <!-- Noscript content for added SEO -->
-                <noscript>
-                <a href="https://www.eventbrite.com/e/a-storybook-holiday-silly-old-bears-blustery-day-tickets-515064520847" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a>
-                </noscript>
-                <!-- You can customize this button any way you like -->
-                <button id="eventbrite-widget-modal-trigger-515064520847" type="button" class="btn btn-primary btn-lg custom">Buy Tickets</button>
-                <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script> 
-                <script type="text/javascript">
+          <div class="slideshow-row">
+            <div id="slideshow" class="slideshow-image main"> 
+              <!-- define each background-image in CSS -->
+              <div></div>
+              <!-- #slideshow div:nth-of-type(1) --> 
+              <span>Costumes<br>
+              Encouraged</span>
+              <div></div>
+              
+              <!-- #slideshow div:nth-of-type(2) --> 
+              <span>Crafts<br>
+              &<br>
+              Activities</span>
+              <div></div>
+              
+              <!-- #slideshow div:nth-of-type(3) --> 
+              <span>Catered<br>
+              Brunch</span>
+              <div></div>
+              <!-- #slideshow div:nth-of-type(4) --> 
+              <span>Puppet<br>
+              Show</span>
+              <div></div>
+              <!-- #slideshow div:nth-of-type(5) --> 
+              <span>Crafts<br>
+              &<br>
+              Activities</span> </div>
+            <div class="slideshow-content">
+              <div class="info-wrapper">
+                <h1 class="times-font">Silly Old Bear's</h1>
+                <h1 class="strawberry">Blustery Day</h1>
+                <h4 class="strawberry">A Storybook Holiday</h4>
+                <h4 class="times-font black text-uppercase">Sunday, March 26, 8-11AM, Highlands Ranch</h4>
+                <h5 class="black text-uppercase font-weight-400 margin-bottom-5">Tickets: $20 Adults, $15 Ages 3-13</h5>
+                <div><i>Ages 0-2 free with paying adult</i></div>
+                <div class="padding-top-15">Celebrate spring with Winnie the Pooh and friends! Kids can enjoy a Pooh-themed puppet show, crafts, and activities, and hunt for Kanga, Roo, and Piglet in the Hundred Acre Wood. Costumes are encouraged! A delicious catered brunch will also be served.</div>
+                <div class="padding-top-20 margin-bottom-20">
+                  <div id="eventbrite-widget-container-515064520847"></div>
+                  
+                  <!-- Noscript content for added SEO -->
+                  <noscript>
+                  <a href="https://www.eventbrite.com/e/a-storybook-holiday-silly-old-bears-blustery-day-tickets-515064520847" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a>
+                  </noscript>
+                  <!-- You can customize this button any way you like -->
+                  <button id="eventbrite-widget-modal-trigger-515064520847" type="button" class="btn btn-primary btn-lg custom">Buy Tickets</button>
+                  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script> 
+                  <script type="text/javascript">
     var exampleCallback = function() {
         console.log('Order complete!');
     };
@@ -630,29 +580,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         onOrderComplete: exampleCallback
     });
 </script></div>
-              <!--<div class="max-width-30"><i>Adults ages 21+ may enjoy a selection of mimosas with the purchase of an alcohol wristband for an additional $12. </i></div>--> 
+                <!--<div class="max-width-30"><i>Adults ages 21+ may enjoy a selection of mimosas with the purchase of an alcohol wristband for an additional $12. </i></div>--> 
+              </div>
             </div>
-    </div>
-  </div>		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-          
+          </div>
         </div>
       </div>
     </div>
@@ -737,7 +668,7 @@ function kbSlideshow() { // set .fx1 class on 1st img on page load
 		}
 	}
 setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
-</script>
+</script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
