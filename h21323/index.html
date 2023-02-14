@@ -92,10 +92,10 @@ h1.times-font {
     font-weight: 600;
 }
 h1.strawberry {
-    font-family: "Strawberry", sans-serif;
-    margin: 0;
-    font-size: 70px;
-    color: #7d1d06;
+	font-family: "Strawberry", sans-serif;
+	margin: 0;
+	font-size: 64px;
+	color: #7d1d06;
 }
 h4.strawberry {
     font-family: "Strawberry", sans-serif;
@@ -230,7 +230,7 @@ opacity: 0;
 }
 /* slide two */
 #slideshow div {
-    transform-origin: bottom left;
+    transform-origin: bottom center;
 }
 /* slide three */
 #slideshow div:nth-of-type(2n+1) {
@@ -238,15 +238,15 @@ opacity: 0;
 }
 /* slide four */
 #slideshow div:nth-of-type(3n+1) {
-    transform-origin: bottom center;
+    transform-origin: top right;
 }
 /* slide five */
 #slideshow div:nth-of-type(4n+1) {
-    transform-origin: bottom center;
+    transform-origin: top right;
 }
 /* slide one */
 #slideshow div:nth-of-type(5n+1) {
-    transform-origin: top left;
+    transform-origin: bottom right;
 }
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
     z-index: 1
@@ -281,7 +281,7 @@ opacity: 0;
     display: flex;
     padding: 0;
     margin: 0;
-    font-size: 80px;
+    font-size: 78px;
     color: transparent;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -295,6 +295,7 @@ opacity: 0;
     color: #fff;
     animation: caption 5s 1s both;
     text-shadow: 0 6px 20px #000;
+	padding-bottom: 30px;
 }
 @keyframes caption {
 0% {
