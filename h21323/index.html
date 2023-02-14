@@ -67,10 +67,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-display: swap;
 }
 .pooh-row {
-	background: #eee url("blue-background.jpg") bottom left no-repeat;
-	max-width: 1920px;
-	margin: 0 auto;
-	min-height: 910px;
+    background: #eee url("background.jpg") bottom right no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 1000px;
 }
 .background-row {
     background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 15%, #efeeed 15%, #efeeed 100%);
@@ -93,10 +93,10 @@ h1.times-font {
     font-weight: 600;
 }
 h1.strawberry {
-	font-family: "Strawberry", sans-serif;
-	margin: 0;
-	font-size: 64px;
-	color: #7d1d06;
+    font-family: "Strawberry", sans-serif;
+    margin: 0;
+    font-size: 64px;
+    color: #7d1d06;
 }
 h4.strawberry {
     font-family: "Strawberry", sans-serif;
@@ -196,13 +196,13 @@ opacity: 0;
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	display: flex;
-	align-items: center;
-	/* justify-content: center; */
-	max-width: 1100px;
-	margin: 0 auto;
-	/* padding: 90px 30px 215px; */
-	padding-top: 155px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 90px 30px 215px; */
+    padding: 155px 15px 0 15px;
 }
 .slideshow-content {
     flex: 1;
@@ -297,7 +297,7 @@ opacity: 0;
     color: #fff;
     animation: caption 5s 1s both;
     text-shadow: 0 6px 20px #000;
-	padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 @keyframes caption {
 0% {
@@ -314,33 +314,32 @@ opacity:0;
 }
 }
 
-@media(min-width:42em) { /* bigger than 672px */
+@media (max-width: 1325px) {
+.pooh-row {
+    background: #eee url("small-blue-background.jpg") right bottom no-repeat;
+}
 }
 
-@media (max-width: 925px) {
+@media (max-width: 1025px) {
 .slideshow-row, .item-wrapper {
     flex-direction: column;
 }
+.pooh-row {
+    background: #eee url("small-blue-background.jpg") right top no-repeat;
+}
 .slideshow-content {
-    padding: 30px 20px 40px;
+    padding: 15px;
     text-align: center;
 }
-#slideshow {
-    width: 100%;
-    border-right: 0;
+.slideshow-row {
+    padding: 40px 15px 0 15px;
 }
-.item-wrapper img {
-    padding-bottom: 15px;
-}
-.art-item {
-    text-align: center;
+.info-wrapper {
+    padding: 0;
 }
 }
 
 @media (max-width: 575px) {
-.slideshow-image.main {
-    min-height: 300px;
-}
 }
 </style>
 <!-- InstanceEndEditable -->
