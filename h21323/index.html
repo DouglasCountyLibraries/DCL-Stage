@@ -170,31 +170,6 @@ transform: translate(150vw, 0) rotate(0deg);
 opacity: 0;
 }
 }
-
-@media (max-width: 1550px) {
-}
-
-@media (max-width: 1120px) {
-}
-
-@media (max-width: 1020px) {
-.pooh-row {
-    background: #eee url("small-blue-background.jpg") bottom center no-repeat;
-}
-.custom-container {
-    justify-content: center;
-}
-.info-wrapper {
-    max-width: 545px;
-    margin: 0;
-    padding: 75px 15px 390px;
-}
-.float {
-    position: fixed;
-    top: 160px;
-    animation: float 6s cubic-bezier(0, 0, 0, 0) 2s both;
-}
-}
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
     display: flex;
@@ -315,29 +290,27 @@ opacity:0;
 }
 }
 
-@media (max-width: 1325px) {
-}
-
-@media (max-width: 1025px) {
-.slideshow-row, .item-wrapper {
-    flex-direction: column;
-}
+@media (max-width: 1020px) {
 .pooh-row {
-    background: #eee url("small-blue-background.jpg") right top no-repeat;
+    background: #eee url("small-background.jpg") center bottom no-repeat;
+}
+.custom-container {
+    justify-content: center;
 }
 .slideshow-content {
     padding: 15px;
     text-align: center;
 }
-.slideshow-row {
-    padding: 40px 15px 0 15px;
-}
 .info-wrapper {
-    padding: 0;
+    max-width: 545px;
+    padding: 15px 15px 510px;
 }
+.slideshow-row, .item-wrapper {
+    flex-direction: column;
 }
-
-@media (max-width: 575px) {
+.slideshow-row {
+    padding: 30px 15px 0 15px;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -549,7 +522,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                 <h1 class="times-font">Silly Old Bear's</h1>
                 <h1 class="strawberry">Blustery Day</h1>
                 <h4 class="strawberry">A Storybook Holiday</h4>
-                <h4 class="times-font black text-uppercase">Sunday, March 26, 8-11AM, Highlands Ranch</h4>
+                <h4 class="times-font black text-uppercase">Sunday, March&nbsp;26, 8-11AM, Highlands&nbsp;Ranch</h4>
                 <h5 class="black font-weight-400 no-margin-bottom"><i>Celebrate! Winnie the Pooh-themed crafts, fuzzy petting zoo, delicious brunch, and more. Costumes encouraged!</i></h5>
                 <div class="padding-top-20"><a href="storybook-holiday/" class="btn btn-lg btn-primary custom">Learn More</a></div>
               </div>
