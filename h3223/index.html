@@ -78,20 +78,24 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 Push Notifications End - Removed for Now -->
 
 <style>
-/*
+	.background-row {
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #80b1e9 65%, #80b1e9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #80b1e9 65%, #80b1e9 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #80b1e9 65%, #80b1e9 100%);
+}
 .small-text, .small-text a, .small-text a:hover, .small-text a:focus {
-	color: #fff;
-	padding-top: 5px;
-	text-decoration: none;
+    color: #fff;
+    padding-top: 5px;
+    text-decoration: none;
 }
 .box-item-wrapper {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 1420px;
-	margin: 0 auto;
-	padding: 0 0 90px;
-	margin-top: -60px;
+	margin: -300px auto 0;
+	padding: 0 0 40px;
+	position: relative;
 }
 .box-item {
 	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -100,144 +104,154 @@ Push Notifications End - Removed for Now -->
 	color: #000;
 	margin: 15px;
 	width: 395px;
-	background: #f4d3ea;
+	background: #fff;
 	padding: 40px 40px 60px;
 	border-radius: 3px;
 }
 .row.box-row {
-	background: transparent url(full-bloom.webp);
-	padding: 0 15px;
+    background: transparent url(full-bloom.webp);
+    padding: 0 15px;
 }
 .row.book-row {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	font-weight: 400;
-	background: #21244a;
-	color: #fff;
-	padding: 120px 0 85px 0;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-weight: 400;
+    background: #21244a;
+    color: #fff;
+    padding: 120px 0 85px 0;
 }
 .book-wrapper {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 15px;
-	display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+	
 }
 .row.book-row h4 {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
-	font-weight: 400;
-	margin: 0;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
 }
 .row.book-row h2, .row.book-row h2 a {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	color: #fff;
-	font-size: 60px;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin: 0 0 5px 0;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
 }
 .row.book-row h2 a:hover {
-	color: #f4d3ea;
-	text-decoration: none;
+    color: #f4d3ea;
+    text-decoration: none;
 }
 .speech-bubble-wrapper {
-
-	margin-top: -45px;
+    margin-top: -45px;
 }
 .speech-bubble {
-	position: relative;
-	background: rgba(255,255,255,.2);
-	border-radius: 1em;
-	padding: 30px 40px 35px;
-	max-width: 400px;
+    position: relative;
+    background: rgba(255,255,255,.2);
+    border-radius: 1em;
+    padding: 30px 40px 35px;
+    max-width: 400px;
 }
 .speech-bubble::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 0;
-	height: 0;
-	border: 26px solid transparent;
-	border-right-color: rgba(255,255,255,.2);
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -26px;
-	margin-top: -13px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 26px solid transparent;
+    border-right-color: rgba(255,255,255,.2);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -26px;
+    margin-top: -13px;
 }
 
 @media (max-width: 1300px) {
 .box-item-wrapper {
-	max-width: 950px;
+    max-width: 950px;
 }
-}*/
-	
+}
 .details {
-    border-left: 6px solid #fff;
-    padding-left: 20px;
+	padding-bottom: 300px;
 }
 .healthy {
     font-size: 24px;
-    color: #fff;
+    color: #000;
     padding-top: 0;
-    text-shadow: 0 4px 9px rgba(0, 0, 0, .9);
+   text-shadow: 0 0px 7px rgba(255, 255, 255, 1);
     font-weight: 400;
     max-width: 575px;
 }
 .row.healthy {
 }
 .healthy-container {
-	background: url(mind-body-one.jpg);
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-    background-color: #eee;
-    background-position: center;
-    background-size: cover;
-    animation: image 2s infinite;
-    height: 800px;
-    max-width: 1920px;
     margin: 0 auto;
 }
 .healthy-wrapper {
     display: flex;
     flex-direction: column;
-    height: 480px;
-    max-width: 1200px;
+    height: 900px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 15px;
     justify-content: flex-end;
+    position: relative;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    text-align: center;
 }
 h1.healthy {
-    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 80px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 700;
+	color: #31445a;
+	margin: 0;
+	text-shadow: 0 0px 7px rgba(255, 255, 255, 1);
 }
 h4.healthy {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
     font-size: 32px;
     color: #fff;
     padding-top: 0;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, .8);
+    text-shadow: 0 0px 7px rgba(255, 255, 255, 1);
     font-weight: 500;
     margin: 0;
 }
-	
-	
-	
-	@keyframes image {
-0% {
-background-image: url('mind-body-two.jpg');
-opacity: 0;
+.contain-header {
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+    max-width: 1920px;
+    margin: 0 auto;
+    max-height: 900px;
 }
-
-100% {
-background-image: url('mind-body-two.jpg');
-opacity: 1;
+video#bgvid {
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: #fff url("snow-poster.jpg") center center no-repeat;
+	background-size: cover;
 }
+video {
+    display: block;
 }
-
+.item-row {
+    position: relative;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -411,39 +425,49 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
-    <div class="healthy-container">
-      <div class="healthy-wrapper">
-        <h1 class="healthy">Lorem Ipsum</h1>
-        <div class="details">
-          <div class="healthy">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus.</div>
+  <div class="row background-row">
+    <div class="contain-header">
+      <div class="row main-header">
+        <video autoplay loop muted playsinline poster="snow-poster.jpg" id="bgvid">
+          <source src="flowers-sky.mp4" type="video/mp4" />
+          Sorry, your browser does not support background videos.
+          <source src="snow-video.webm" type="video/webm" />
+          Sorry, your browser does not support background videos.</video>
+        <div class="item-row">
+          <div class="healthy-container">
+            <div class="healthy-wrapper">
+              <h1 class="healthy">Lorem Ipsum</h1>
+              <div class="details">
+                <div class="healthy">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--<div class="row box-row">
     <div class="box-item-wrapper">
       <div class="box-item">
-        <div><img class="img-responsive center-block" src="beans.png" alt="Check Out Colorado"></div>
+        <div><img class="img-responsive center-block" src="https://source.unsplash.com/645x500/?cake" alt="Check Out Colorado"></div>
         <div class="box-content">
-          <div><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=coffee+chat&lib=ALL&nd=180" target="_blank">Coffee Chat</a> is a great way to start your day each Tuesday. </div>
+          <div class="padding-top-15">Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu.</div>
         </div>
       </div>
-      <div class="box-item">
-        <div><img class="img-responsive center-block" src="chess.png" alt="Nontraditional Items"></div>
+       <div class="box-item">
+        <div><img class="img-responsive center-block" src="https://source.unsplash.com/645x500/?candy" alt="Check Out Colorado"></div>
         <div class="box-content">
-          <div>Join a <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=chess&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">pick-up chess game</a> at your local DCL branch. All ages and skill levels welcome! </div>
+          <div class="padding-top-15">Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu.</div>
         </div>
       </div>
-      <div class="box-item">
-        <div><img class="img-responsive center-block" src="alltrails.png" alt="DCL Care Kits"></div>
+       <div class="box-item">
+        <div><img class="img-responsive center-block" src="https://source.unsplash.com/645x500/?cookies" alt="Check Out Colorado"></div>
         <div class="box-content">
-          <div>Take a hike, but first use your library card to get the free <a href="https://www.dcl.org/library-perks/">AllTrails Pro</a> upgrade. Pro tip: Borrow <a href="https://dcl.bibliocommons.com/v2/record/S114C1709128">trekking poles</a> for the trail.</div>
+          <div class="padding-top-15">Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu.</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row book-row">
+  
+  <!--<div class="row book-row">
     <div class="book-wrapper">
       <div class="book-item text-right padding-right-60">
         <h4>Dive deeper into the stories that inspired that TV adaption you just binged. </h4>
