@@ -81,9 +81,8 @@ Push Notifications End - Removed for Now -->
 <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 <style>
 .background-row {
-    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #80b1e9 65%, #80b1e9 100%);
-    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #80b1e9 65%, #80b1e9 100%);
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #80b1e9 65%, #80b1e9 100%);
+    background: url("page-background.jpg") top center repeat-x;
+    padding-bottom: 60px;
 }
 .speech-bubble-wrapper {
     margin-top: -45px;
@@ -114,9 +113,9 @@ Push Notifications End - Removed for Now -->
     margin: 0 auto;
 }
 .info-wrapper {
-    background: radial-gradient(rgba(255,255,255,.8) 0%, rgba(255,255,255,0) 75%);
+    background: transparent url("doodles.png") top center repeat;
     font-family: "Open Sans", arial, sans-serif;
-    padding: 180px 15px;
+    padding: 180px 15px 525px;
     position: relative;
     text-align: center;
 }
@@ -352,10 +351,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <source src="snow-video.webm" type="video/webm" />
           Sorry, your browser does not support background videos.</video>
         <div class="info-wrapper">
-          <div class="details-wrapper">
-            <h1 class="info">Think Spring!</h1>
-            <div class="info-one">Shake off old man winter and embrace a warm new season. The sky is the limit at DCL! Join us for exciting author events with award-winning, bestselling writers. Pick up our Reading Challenge for boundless inspiration and fun. And grow the love of reading in your children ages 0-5 by signing up for free books through Dolly Parton’s Imagination Library. Welcome!</div>
-            <div class="info-two"><i>Don’t forget to upgrade to OverDrive’s Libby app this spring to keep enjoying e-books and audiobooks.</i> Learn More &raquo;</div>
+          <div class="glow-wrapper">
+            <div class="details-wrapper">
+              <h1 class="info">Think Spring!</h1>
+              <div class="info-one">Shake off old man winter and embrace a warm new season. The sky is the limit at DCL! Join us for exciting author events with award-winning, bestselling writers. Pick up our Reading Challenge for boundless inspiration and fun. And grow the love of reading in your children ages 0-5 by signing up for free books through Dolly Parton’s Imagination Library. Welcome!</div>
+              <div class="info-two"><i>Don’t forget to upgrade to OverDrive’s Libby app this spring to keep enjoying e-books and audiobooks.</i> Learn More &raquo;</div>
+            </div>
           </div>
         </div>
       </div>
