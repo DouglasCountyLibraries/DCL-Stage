@@ -109,7 +109,7 @@ Push Notifications End - Removed for Now -->
     margin-top: -13px;
 }
 .details-wrapper {
-    max-width: 900px;
+    max-width: 855px;
     margin: 0 auto;
 }
 .info-wrapper {
@@ -140,8 +140,17 @@ h1.info {
 .info-two {
     font-weight: 400;
     color: #741a45;
-    max-width: 600px;
+    max-width: 480px;
     margin: 0 auto;
+}
+.info-one a, .info-two a {
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.info-one a:hover, .info-two a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
 }
 .contain-header {
     position: relative;
@@ -345,32 +354,23 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="contain-header">
       <div class="row main-header">
-        <video autoplay loop muted playsinline poster="snow-poster.jpg" id="bgvid">
+        <video autoplay loop muted playsinline poster="flowers-sky.mp4" id="bgvid">
           <source src="flowers-sky.mp4" type="video/mp4" />
           Sorry, your browser does not support background videos.
-          <source src="snow-video.webm" type="video/webm" />
+          <source src="flowers-sky.webm" type="video/webm" />
           Sorry, your browser does not support background videos.</video>
         <div class="info-wrapper">
           <div class="glow-wrapper">
             <div class="details-wrapper">
               <h1 class="info">Think Spring!</h1>
-              <div class="info-one">Shake off old man winter and embrace a warm new season. The sky is the limit at DCL! Join us for exciting author events with award-winning, bestselling writers. Pick up our Reading Challenge for boundless inspiration and fun. And grow the love of reading in your children ages 0-5 by signing up for free books through Dolly Parton’s Imagination Library. Welcome!</div>
-              <div class="info-two"><i>Don’t forget to upgrade to OverDrive’s Libby app this spring to keep enjoying e-books and audiobooks.</i> Learn More &raquo;</div>
+              <div class="info-one">Shake off old man winter and embrace a warm new season. The sky is the limit at DCL! Join us for exciting <a href="#">author&nbsp;events</a> with award-winning, bestselling writers. Pick up our <a href="#">Reading&nbsp;Challenge</a> for boundless inspiration and fun. And grow the love of reading in your children ages 0-5 by signing up for free books through Dolly Parton’s <a href="#">Imagination&nbsp;Library</a>. Welcome!</div>
+              <div class="info-two"><i>Don’t forget to upgrade to OverDrive’s Libby app this spring to keep enjoying e-books and audiobooks.</i> <a href="#">Learn&nbsp;More</a> &raquo;</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!--<div class="book-item">
-        <div class="speech-bubble-wrapper">
-          <div class="speech-bubble">
-            <h4><i>Did you know?</i></h4>
-            A <a class="white text-underline" href="https://dcl.bibliocommons.com/v2/search?query=binge+box&searchType=smart">Binge Box</a> is a collection of movies you can borrow with one checkout. <a class="white text-underline" href="https://www.hoopladigital.com/browse/binge" target="_blank">Hoopla BingePass</a> gives you extra borrowing power too. </div>
-        </div>
-      </div>--> 
-  
+  </div>  
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
