@@ -131,6 +131,7 @@ h1.info {
     overflow: hidden;
     background: #fff;
     border: 12px solid #fff;
+    border-bottom: 15px solid #fff;
     border-top: none;
     padding: 0 15px;
     max-width: 1920px;
@@ -154,6 +155,27 @@ video#bgvid {
 }
 video {
     display: block;
+}
+
+@media (max-width: 800px) {
+video#bgvid {
+    display: none;
+}
+.row.main-header {
+    background: url(flower-background.jpg) top center no-repeat;
+    min-height: 1080px;
+}
+.background-row {
+    background: url("page-background.jpg") top center repeat-x;
+    padding-bottom: 0;
+}
+.contain-header {
+    border: none;
+    border-bottom: none;
+}
+.info-wrapper {
+    padding: 200px 15px 395px;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
