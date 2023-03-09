@@ -84,36 +84,11 @@ Push Notifications End - Removed for Now -->
     background: url("page-background.jpg") top center repeat-x;
     padding-bottom: 60px;
 }
-.speech-bubble-wrapper {
-    margin-top: -45px;
-}
-.speech-bubble {
-    position: relative;
-    background: rgba(255,255,255,.2);
-    border-radius: 1em;
-    padding: 30px 40px 35px;
-    max-width: 400px;
-}
-.speech-bubble::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 26px solid transparent;
-    border-right-color: rgba(255,255,255,.2);
-    border-bottom: 0;
-    border-left: 0;
-    margin-left: -26px;
-    margin-top: -13px;
-}
 .details-wrapper {
     max-width: 855px;
     margin: 0 auto;
 }
 .info-wrapper {
-    background: transparent url("new-doodles.png") top center repeat;
     font-family: "Open Sans", arial, sans-serif;
     padding: 180px 15px 600px;
     position: relative;
@@ -174,7 +149,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: #fff url("snow-poster.jpg") center center no-repeat;
+    background: #fff url("flower-background.jpg") center center no-repeat;
     background-size: cover;
 }
 video {
@@ -356,8 +331,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="contain-header">
       <div class="row main-header">
-        <video autoplay loop muted playsinline poster="flower-background.mp4" id="bgvid">
-          <source src="flowers-sky.mp4" type="video/mp4" />
+        <video autoplay loop muted playsinline poster="flower-background.jpg" id="bgvid">
+          <source src="flower-background.mp4" type="video/mp4" />
           Sorry, your browser does not support background videos.
           <source src="flower-background.webm" type="video/webm" />
           Sorry, your browser does not support background videos.</video>
