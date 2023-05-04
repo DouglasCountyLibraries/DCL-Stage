@@ -72,7 +72,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .details-wrapper {
     max-width: 855px;
     margin: 0 auto;
-    padding: 10px 0 140px;
+    padding: 25px 0 140px;
 }
 .info-wrapper {
     font-family: "Open Sans", arial, sans-serif;
@@ -80,7 +80,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     position: relative;
     text-align: center;
     background: url(noun-doodle.png) bottom center no-repeat;
-    margin-top: 215px;
+    margin-top: 230px;
 }
 h1.info {
     font-family: 'Caveat Brush', sans-serif;
@@ -107,13 +107,14 @@ h1.info {
     margin: 0 auto;
 }
 .info-one a, .info-two a {
-    color: #153065;
-    font-weight: 500;
-    text-transform: uppercase;
+	color: #153065;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .info-one a:hover, .info-two a:hover {
     text-decoration: none;
     border-bottom: 2px solid #153065;
+	letter-spacing: .5px;
 }
 .contain-header {
     position: relative;
@@ -148,26 +149,26 @@ video {
 
 @media (max-width: 800px) {
 video#bgvid {
-    display: none;
+    
 }
 .row.main-header {
-    background: url(sky-medium.jpg) top center no-repeat;
-    min-height: 1080px;
+    
 }
 .background-row {
-    background: url("page-background.jpg") top center repeat-x;
-    padding-bottom: 0;
+   
 }
 .contain-header {
-    border: none;
-    border-bottom: none;
+    
 }
 .info-wrapper {
-    padding: 0 15px;
+   
 }
 }
 
 @media (max-width: 650px) {
+	video#bgvid {
+    display: none;
+}
 .row.main-header {
     background: url(sky-small.jpg) top center no-repeat;
     min-height: auto;
@@ -372,18 +373,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="contain-header">
       <div class="row main-header">
-        <video autoplay loop muted playsinline poster="sky-doodles.jpg" id="bgvid">
-          <source src="sky-doodles.mp4" type="video/mp4" />
+        <video autoplay loop muted playsinline poster="sky-with-doodles.jpg" id="bgvid">
+          <source src="sky-with-doodles.mp4" type="video/mp4" />
           Sorry, your browser does not support background videos.
-          <source src="sky-doodles.webm" type="video/webm" />
+          <source src="sky-with-doodles.webm" type="video/webm" />
           Sorry, your browser does not support background videos.</video>
         <div class="info-wrapper">
           <div class="details-wrapper">
             <h1 class="info"><i>The Sky's the Limit!</i></h1>
             <div class="info-one">
               <div>Exciting <a href="featured-events/#author-events">author&nbsp;events</a> with award-winning, bestselling writers.</div>
-              <div> Summer reading fun for all ages! <a href="summer-reading/">Pre-register now</a>.</div>
-              <div> Free books through Dolly Parton's <a href="imagination-library/">Imagination&nbsp;Library</a>.</div>
+              <div>Summer reading fun for all ages! <a class="text-nowrap" href="summer-reading/">Pre-register&nbsp;now</a>.</div>
+              <div>Mental health resources and inspiration for <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2290489219">Taking&nbsp;Care</a>.</div>
             </div>
           </div>
         </div>
