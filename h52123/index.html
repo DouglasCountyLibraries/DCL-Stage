@@ -72,36 +72,33 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     margin: 0 auto;
 }
 .background {
-    background: #b7d559 url("pool.png") top center/cover;
-    padding: 90px 0;
+    background: #b7d559 url("pool.jpg") top center/cover;
     position: relative;
+    min-height: 662px;
 }
-.featured {
-    margin: 300px auto 30px auto;
-}
-.fourth-text {
-    text-shadow: 0px 1px 9px rgba(22,158,201, 1)
-}
-.fourth-text:hover, .fourth-text a:hover {
-    text-decoration: none;
+.floaters {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    min-height: 400px;
 }
 .float-one {
     position: absolute;
-    right: 80%;
-    top: 5%;
-    animation: orbit-one 5s linear infinite;
+    left: 20px;
+    top: 40px;
+    animation: orbit-one 15s linear infinite;
 }
 .float-two {
     position: absolute;
-    right: 50%;
-    top: 70%;
-    animation: orbit-two 5s linear infinite both;
+    bottom: 0;
+    right: 0;
+    animation: orbit-two 50s ease-in-out infinite;
 }
 .float-three {
     position: absolute;
-    right: 10%;
-    top: 6%;
-    animation: orbit-three 5s linear infinite;
+    right: 20px;
+    top: 100px;
+    animation: orbit-three 10s linear infinite;
 }
 @keyframes orbit-one {
 from {
@@ -116,7 +113,7 @@ transform: rotate(360deg) translateX(20px) rotate(-360deg);
 transform: translateX(0);
 }
 50% {
-transform: translateX(100px);
+transform: translateX(-1000px);
 }
 100% {
 transform: translateX(0);
@@ -128,15 +125,6 @@ transform: rotate(0deg) translateX(20px) rotate(0deg);
 }
 to {
 transform: rotate(-360deg) translateX(20px) rotate(360deg);
-}
-}
-
-@media (min-width: 790px) {
-.fourth-text {
-    font-size: 42px;
-}
-.featured {
-    margin: 400px auto 30px auto;
 }
 }
 </style>
@@ -315,9 +303,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="row-wrapper">
       <div class="background">
-        <div class="container featured text-center">
-          <div class="hidden-xs"><img class="float-one animated" src="floating-one.png" alt=""></div>
-          <div class="hidden-xs hidden-sm"><img class="float-two animated" src="floating-two.png" alt=""></div>
+        <div class="floaters">
+          <div><img class="float-one animated" src="floating-one.png" alt=""></div>
+          <div><img class="float-two animated" src="floating-two.png" alt=""></div>
           <div><img class="float-three animated" src="floating-three.png" alt=""></div>
         </div>
       </div>
