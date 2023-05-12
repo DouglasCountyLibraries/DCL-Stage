@@ -68,13 +68,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
 }
 .row-wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	background: #b7d559;
 }
 .background {
     background: #b7d559 url("pool.jpg") top center/cover;
     position: relative;
     min-height: 662px;
+}
+	.watermelon-wrapper {
+	margin: -290px 0 0 30px;
+	position: relative;
 }
 .floaters {
     max-width: 1200px;
@@ -91,8 +97,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .float-two {
     position: absolute;
     bottom: 0;
-    right: 0;
-    animation: orbit-two 50s ease-in-out infinite;
+    right: 20px;
+    animation: orbit-two 60s linear infinite;
 }
 .float-three {
     position: absolute;
@@ -113,7 +119,7 @@ transform: rotate(360deg) translateX(20px) rotate(-360deg);
 transform: translateX(0);
 }
 50% {
-transform: translateX(-1000px);
+transform: translateX(-980px);
 }
 100% {
 transform: translateX(0);
@@ -304,11 +310,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="row-wrapper">
       <div class="background">
         <div class="floaters">
-          <div><img class="float-one animated" src="floating-one.png" alt=""></div>
-          <div><img class="float-two animated" src="floating-two.png" alt=""></div>
-          <div><img class="float-three animated" src="floating-three.png" alt=""></div>
+          <div><img class="float-one" src="floating-one.png" alt=""></div>
+          <div><img class="float-two" src="floating-two.png" alt=""></div>
+          <div><img class="float-three" src="floating-three.png" alt=""></div>
         </div>
-      </div>
+      </div><div class="watermelon-wrapper"><img src="watermelon-dog.png" alt=""></div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
