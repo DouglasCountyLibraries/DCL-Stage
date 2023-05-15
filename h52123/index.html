@@ -63,16 +63,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- pinterest - do not remove -->
 <style>
 .info-row {
-	
-	
 }
 .info-wrapper {
-	background: #f16c55;
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 100px 0 150px;
+    background: #f16c55 url(info-background.jpg) bottom center no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 200px 0 0;
     text-align: center;
     color: #fff;
+    min-height: 525px;
 }
 .background-row {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
@@ -87,15 +86,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     position: relative;
     min-height: 700px;
     padding: 0 10px;
-}
-.plant-wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-}
-.plant-background {
-    background: transparent url("plants.png") top center no-repeat;
-    min-height: 75px;
-    margin-top: -75px;
 }
 .watermelon-wrapper {
     margin: -280px 0 0 250px;
@@ -343,12 +333,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row info-row">
     <div class="info-wrapper">
-      <h1 class="white text-uppercase font-weight-500">Content goes here</h1>
-    </div>
-  </div>
-  <div class="row plant-row">
-    <div class="plant-wrapper">
-      <div class="plant-background"></div>
+      <h1 class="black text-uppercase font-weight-500">Content goes here</h1>
     </div>
   </div>
   <div class="row background-row">
