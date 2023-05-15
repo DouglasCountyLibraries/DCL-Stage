@@ -62,12 +62,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
 <!-- pinterest - do not remove -->
 <style>
-.info-row-wrapper {
-    background: #f16c55;
-    max-width: 1920px;
-    margin: 0 auto;
-}
 .info-row {
+	
+	
+}
+.info-wrapper {
+	background: #f16c55;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 100px 0 150px;
     text-align: center;
     color: #fff;
 }
@@ -82,35 +85,44 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .background {
     background: #b7d559 url("pool.jpg") top center/cover;
     position: relative;
-    min-height: 662px;
+    min-height: 700px;
     padding: 0 10px;
 }
+.plant-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.plant-background {
+    background: transparent url("plants.png") top center no-repeat;
+    min-height: 75px;
+    margin-top: -75px;
+}
 .watermelon-wrapper {
-    margin: -290px 0 0 250px;
+    margin: -280px 0 0 250px;
     position: relative;
 }
 .floaters {
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
-    min-height: 325px;
+    min-height: 375px;
 }
 .float-one {
     position: absolute;
     left: 20px;
-    top: 40px;
+    top: 90px;
     animation: orbit-one 15s linear infinite;
 }
 .float-two {
     position: absolute;
     bottom: 0;
-    right: 20px;
+    right: 70px;
     animation: orbit-two 70s ease-in-out infinite;
 }
 .float-three {
     position: absolute;
     right: 20px;
-    top: 100px;
+    top: 150px;
     animation: orbit-three 10s linear infinite;
 }
 @keyframes orbit-one {
@@ -329,9 +341,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row info-row-wrapper">
-    <div class="info-row">
-      <h1 class="white text-uppercase">Content goes here</h1>
+  <div class="row info-row">
+    <div class="info-wrapper">
+      <h1 class="white text-uppercase font-weight-500">Content goes here</h1>
+    </div>
+  </div>
+  <div class="row plant-row">
+    <div class="plant-wrapper">
+      <div class="plant-background"></div>
     </div>
   </div>
   <div class="row background-row">
