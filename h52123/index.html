@@ -62,13 +62,52 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <meta name="p:domain_verify" content="555e6e72efd395725f489e2ca0d49b94"/>
 <!-- pinterest - do not remove -->
 <style>
-.info-row {
+@font-face {
+    font-family: 'AvalineScriptSC';
+    src: url('../shared-assets/web-fonts/AvalineScriptSC-Bold.woff2') format('woff2'), url('../shared-assets/web-fonts/AvalineScriptSC-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Bubblegum';
+    src: url('../shared-assets/web-fonts/BubblegumScript.woff2') format('woff2'), url('../shared-assets/web-fonts/BubblegumScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+h1.avaline {
+    font-family: 'AvalineScriptSC', serif;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 0;
+    line-height: 90px;
+    color: #333;
+}
+h1.bubblegum {
+    font-family: 'Bubblegum', serif;
+    font-size: 80px;
+    margin: 0;
+    line-height: 64px;
+    color: #333;
+}
+.intro-text {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    color: #000;
+    font-size: 18px;
+    padding: 5px 0 0;
+    text-align: center;
+    font-weight: 400;
+    max-width: 650px;
+    margin: 0 auto;
 }
 .info-wrapper {
     background: #f16c55 url(info-background.jpg) bottom center no-repeat;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 200px 0 0;
+    padding: 150px 10px 0;
     text-align: center;
     color: #fff;
     min-height: 525px;
@@ -88,8 +127,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     padding: 0 10px;
 }
 .watermelon-wrapper {
-	margin: -238px 0 0 325px;
-	position: relative;
+    margin: -238px 0 0 325px;
+    position: relative;
 }
 .floaters {
     max-width: 1200px;
@@ -333,7 +372,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row info-row">
     <div class="info-wrapper">
-      <h1 class="black text-uppercase font-weight-500">Content goes here</h1>
+      <h1 class="avaline">Dog Days</h1>
+      <h1 class="bubblegum">of summer</h1>
+      <div class="intro-text">
+        <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit, quis molestie velit lacus ut nisl.</div>
+      </div>
     </div>
   </div>
   <div class="row background-row">
