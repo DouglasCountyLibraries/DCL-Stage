@@ -104,13 +104,12 @@ h1.bubblegum {
     margin: 0 auto;
 }
 .info-wrapper {
-    background: #f16c55 url(info-background.jpg) bottom center no-repeat;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 150px 10px 0;
-    text-align: center;
-    color: #fff;
-    min-height: 525px;
+	background: transparent;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 30px 10px 325px;
+	text-align: center;
+	color: #000;
 }
 .background-row {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
@@ -121,14 +120,17 @@ h1.bubblegum {
     background: #b7d559;
 }
 .background {
-    background: #b7d559 url("pool.jpg") top center/cover;
+    background: #b7d559 url("dogs-info-pool.jpg") bottom center/cover;
     position: relative;
-    min-height: 700px;
+    min-height: 726px;
     padding: 0 10px;
 }
 .watermelon-wrapper {
-    margin: -238px 0 0 325px;
+    margin: -300px 0 0 325px;
     position: relative;
+}
+.social-footer {
+    padding-top: 70px!important;
 }
 .floaters {
     max-width: 1200px;
@@ -184,17 +186,13 @@ transform: rotate(-360deg) translateX(20px) rotate(360deg);
 
 @media (max-width: 1600px) {
 .watermelon-wrapper {
-    margin: -290px 0 0 100px;
 }
 }
 
 @media (max-width: 1300px) {
 .watermelon-wrapper {
-    margin: -200px 0 0 20px;
 }
 .bottom-row {
-    padding-top: 60px;
-    background: #b7d559;
 }
 }
 </style>
@@ -370,18 +368,16 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row info-row">
-    <div class="info-wrapper">
-      <h1 class="avaline">Dog Days</h1>
-      <h1 class="bubblegum">of summer</h1>
-      <div class="intro-text">
-        <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit, quis molestie velit lacus ut nisl.</div>
-      </div>
-    </div>
-  </div>
   <div class="row background-row">
     <div class="row-wrapper">
       <div class="background">
+        <div class="info-wrapper">
+          <h1 class="avaline">Dog Days</h1>
+          <h1 class="bubblegum">of summer</h1>
+          <div class="intro-text">
+            <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit, quis molestie velit lacus ut nisl.</div>
+          </div>
+        </div>
         <div class="floaters">
           <div><img class="float-one" src="floating-one.png" alt=""></div>
           <div><img class="float-two" src="floating-two.png" alt=""></div>
@@ -390,7 +386,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div class="watermelon-wrapper"><img src="watermelon-dog.png" alt=""></div>
     </div>
-    <div class="bottom-row"><img class="img-responsive image-center" src="bottom-row.jpg" alt=""></div>
+    <!--<div class="bottom-row"><img class="img-responsive image-center" src="bottom-row.jpg" alt=""></div>--> 
   </div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
