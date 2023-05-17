@@ -104,12 +104,12 @@ h1.bubblegum {
     margin: 0 auto;
 }
 .info-wrapper {
-	background: transparent;
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 30px 10px 325px;
-	text-align: center;
-	color: #000;
+    background: transparent;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 30px 10px 325px;
+    text-align: center;
+    color: #000;
 }
 .background-row {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
@@ -120,7 +120,7 @@ h1.bubblegum {
     background: #b7d559;
 }
 .background {
-    background: #b7d559 url("dogs-info-pool.jpg") bottom center/cover;
+    background: #b7d559 url("dogs-info-pool.jpg") bottom center no-repeat;
     position: relative;
     min-height: 726px;
     padding: 0 10px;
@@ -135,25 +135,26 @@ h1.bubblegum {
 .floaters {
     max-width: 1200px;
     position: relative;
+    bottom: 200px;
     margin: 0 auto;
     min-height: 425px;
 }
 .float-one {
     position: absolute;
+    top: 10px;
     left: 20px;
-    top: 120px;
     animation: orbit-one 15s linear infinite;
 }
 .float-two {
     position: absolute;
-    bottom: 0;
+    top: 200px;
     right: 70px;
-    animation: orbit-two 70s ease-in-out infinite;
+    animation: orbit-two 50s ease-in-out infinite;
 }
 .float-three {
     position: absolute;
+    top: 100px;
     right: 20px;
-    top: 170px;
     animation: orbit-three 10s linear infinite;
 }
 @keyframes orbit-one {
@@ -166,13 +167,13 @@ transform: rotate(360deg) translateX(20px) rotate(-360deg);
 }
 @keyframes orbit-two {
 0% {
-transform: translate(0, 130px);
+transform: translate(0, 150px);
 }
 50% {
-transform: translate(-900px, 0);
+transform: translate(-650px, 0);
 }
 100% {
-transform: translate(0, 130px);
+transform: translate(0, 150px);
 }
 }
 @keyframes orbit-three {
