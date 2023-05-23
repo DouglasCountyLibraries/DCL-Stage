@@ -90,24 +90,36 @@ h1.bubblegum {
     font-family: 'Bubblegum', serif;
     font-size: 80px;
     margin: 0;
-    line-height: 64px;
+    line-height: 50px;
     color: #333;
+    margin-bottom: 10px;
 }
 .intro-text {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 0 0;
     text-align: center;
     font-weight: 400;
-    max-width: 650px;
+    max-width: 750px;
     margin: 0 auto;
+}
+.intro-text a {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.intro-text a:hover, .intro-text a:focus {
+    text-decoration: none;
+    border-bottom: 2px solid #02729e;
+    letter-spacing: .5px;
 }
 .info-wrapper {
     background: transparent;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 100px 10px 325px;
+    padding: 75px 10px 350px;
     text-align: center;
     color: #000;
 }
@@ -123,7 +135,7 @@ h1.bubblegum {
     position: relative;
     min-height: 726px;
     padding: 0 10px;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 .watermelon-wrapper {
     margin: -300px 0 0 325px;
@@ -185,15 +197,60 @@ transform: rotate(-360deg) translateX(20px) rotate(360deg);
 }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 950px) {
 .watermelon-wrapper {
+    margin: -300px 0 0 10px;
+    position: relative;
 }
 }
 
-@media (max-width: 1300px) {
-.watermelon-wrapper {
+@media (max-width: 750px) {
+.hide-me {
+    display: none;
 }
-.bottom-row {
+}
+
+@media (max-width: 600px) {
+.float-one {
+    display: none;
+}
+.float-two {
+    top: 150px;
+    right: 0;
+}
+.float-three {
+    top: 30px;
+    right: 35px;
+}
+}
+
+@media (max-width: 475px) {
+.background {
+    background: #b7d559 url("dogs-info-pool-small.jpg") top center no-repeat;
+    position: relative;
+    min-height: 726px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+h1.avaline {
+    font-size: 90px;
+    margin: 0;
+    line-height: 70px;
+    padding-top: 20px;
+}
+h1.bubblegum {
+    font-size: 70px;
+    margin: 0;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.float-two {
+    top: 50px;
+    right: 0;
+}
+.float-three {
+    top: -40px;
+    right: 35px;
 }
 }
 </style>
@@ -376,7 +433,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <h1 class="avaline">Dog Days</h1>
           <h1 class="bubblegum">of summer</h1>
           <div class="intro-text">
-            <div>Celebrate! Events, activities, prizes, and giveaways. <a href="summer-reading/">REGISTER</a> for Summer Reading!<br> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=prize+pickup+kickoff&lib=ALL&nd=60">KICK OFF</a> the Dog Days of Summer and pick up a special limited-edition prize.<br> We’re <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2296334919">HERE FOR THE DOGS</a>!</div>
+            <div>Celebrate! Events, activities, prizes, and giveaways. <a href="summer-reading/">Register</a> for Summer Reading!<br class="hide-me">
+              <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=prize+pickup+kickoff&lib=ALL&nd=60">Kick off</a> the Dog Days of Summer and pick up a special limited-edition prize.<br class="hide-me">
+              We’re <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2296334919">here for the dogs</a>!</div>
           </div>
         </div>
         <div class="floaters">
