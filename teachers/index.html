@@ -58,9 +58,20 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
 <style>
 .kids-teens-active {
     background-color: #f5f5f5;
+}
+h4.nunito {
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #e81111;
+	margin: 20px 0 5px;
+	font-size: 18px;
 }
 .custom-container {
     max-width: 1280px;
@@ -72,10 +83,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     justify-content: center;
     margin: 0 auto;
 }
-.align-bottom {
-    margin-top: auto;
-    text-align: center;
-}
+
 .photo-box-item {
     display: flex;
     flex-direction: column;
@@ -84,6 +92,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     min-width: 400px;
     max-width: 800px;
 }
+	/*img.scholastic {
+		border: 3px solid #ff5200;
+		border-radius: 2px;
+	}*/
 .teachables-box {
     background: #fff;
     padding: 40px 30px 40px;
@@ -120,6 +132,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     margin-top: auto;
     text-align: center;
     padding: 20px 0 55px;
+}
+	.align-bottom-alt {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
 }
 .box-wrapper {
     display: flex;
@@ -368,7 +385,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top padding-bottom-30">
+  <div class="row border-top">
     <div class="container">
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Teachers</h1>
@@ -376,20 +393,22 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-30">
+  <div class="row">
     <div class="custom-container">
       <div class="photo-box-wrapper">
         <div id="" class="photo-box-item">
-          <div><img class="img-responsive center-block" src="https://source.unsplash.com/800x500/?reading" alt=""></div>
-          <h3 class="text-center">Dolly Parton's Imagination Library</h3>
-          <div>Through the Imagination Library, children from birth to age five receive a free book each month, sent straight to their home, that they get to keep.</div>
-          <div class="align-bottom"> <a href="../imagination-library/" class="btn btn-primary btn-lg margin-top-15">Learn More</a></div>
+          <div><img class="scholastic img-responsive center-block" src="scholastic-teachables.jpg" alt="Scholastic BookFlix"></div>
+          <h4 class="nunito text-center">Scholastic</h4>
+          <div class="text-center padding-bottom-15"><img src="teachables-logo.jpg" alt="Teachables"></div>
+          <div>Thousands of ready-to-go lessons, mini-books, activities and more for elementary grades.</div>
+          <div class="align-bottom-alt"> <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=scholastic-teachables" target="_blank" class="btn btn-primary btn-lg margin-top-15">Get Started</a></div>
         </div>
         <div id="" class="photo-box-item">
-          <div><img class="img-responsive center-block" src="https://source.unsplash.com/800x500/?children" alt=""></div>
-          <h3 class="text-center">Slick Science</h3>
+          <div><img class="scholastic img-responsive center-block" src="scholastic-bookflix3.jpg" alt="Scholastic BookFlix"></div>
+          <h4 class="nunito text-center">Scholastic</h4>
+          <div class="text-center padding-bottom-15"><img src="bookflix-logo.jpg" alt="Book Flix"></div>
           <div>Fun, rotating science activities for kids ages 8-12 exploring a variety of STEAM-focused topics.</div>
-          <div class="align-bottom"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=724&kw=slick+science&df=list&cn=0&lib=all&nd=365" target="_blank" class="btn btn-primary btn-lg margin-top-15">Register Now</a></div>
+          <div class="align-bottom-alt"> <a href="#" target="_blank" class="btn btn-primary btn-lg margin-top-15">Get Started</a></div>
         </div>
       </div>
     </div>
