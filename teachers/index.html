@@ -69,13 +69,14 @@ h4.nunito {
 	font-family: 'Nunito', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #e81111;
+	color: #df502a;
 	margin: 20px 0 5px;
 	font-size: 18px;
 }
 .custom-container {
-    max-width: 1280px;
-    margin: 0 auto;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
 .photo-box-wrapper {
     display: flex;
@@ -85,17 +86,13 @@ h4.nunito {
 }
 
 .photo-box-item {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 30px 15px;
-    min-width: 400px;
-    max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 20px 15px;
+	min-width: 400px;
+	max-width: 800px;
 }
-	/*img.scholastic {
-		border: 3px solid #ff5200;
-		border-radius: 2px;
-	}*/
 .teachables-box {
     background: #fff;
     padding: 40px 30px 40px;
@@ -190,6 +187,9 @@ h4.nunito {
 .gray-circle.circle-alt {
     height: 120px;
     width: 120px;
+}
+	.gray-circle > img {
+	border-radius: 50%;
 }
 .white-bottom-row {
     background: #ffffff;
@@ -404,10 +404,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <div class="align-bottom-alt"> <a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=scholastic-teachables" target="_blank" class="btn btn-primary btn-lg">Get Started</a></div>
         </div>
         <div id="" class="photo-box-item">
-          <div><img class="scholastic img-responsive center-block" src="scholastic-bookflix4.jpg" alt="Scholastic BookFlix"></div>
+          <div><img class="scholastic img-responsive center-block" src="scholastic-bookflix.jpg" alt="Scholastic BookFlix"></div>
           <h4 class="nunito text-center">Scholastic</h4>
           <div class="text-center padding-bottom-15"><img src="bookflix-logo.jpg" alt="Book Flix"></div>
-          <div>Help children build real-world knowledge using these video storybooks paired with thematically-related nonfiction ebooks. Early learners discover the joy of reading while building confidence and curiosity.</div>
+          <div>Help children build real-world knowledge using these video storybooks paired with thematically-related nonfiction ebooks.</div>
           <div class="align-bottom-alt"> <a href="#" target="_blank" class="btn btn-primary btn-lg">Get Started</a></div>
         </div>
       </div>
@@ -418,7 +418,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div id="page-to-stage" class="box-item">
         <div class="white-bottom-row">
           <div class="gray-circle-wrapper circle-alt">
-            <div class="gray-circle circle-alt"><img src="page-stage.png" alt="Page to Stage" class="img-responsive"></div>
+            <div class="gray-circle circle-alt"><img src="page-to-stage.jpg" alt="Page to Stage" class="img-responsive"></div>
           </div>
         </div>
         <div class="box-item-inner inner-alt">
@@ -429,7 +429,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div id="epic-reads" class="box-item">
         <div class="white-bottom-row">
           <div class="gray-circle-wrapper circle-alt">
-            <div class="gray-circle circle-alt"><img src="epic-reads.png" alt="Epic Reads" class="img-responsive"></div>
+            <div class="gray-circle circle-alt"><img src="epic-reads.jpg" alt="Epic Reads" class="img-responsive"></div>
           </div>
         </div>
         <div class="box-item-inner inner-alt">
@@ -440,7 +440,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div id="book-an-archivist" class="box-item">
         <div class="white-bottom-row">
           <div class="gray-circle-wrapper circle-alt">
-            <div class="gray-circle circle-alt"><img src="archivist.png" alt="Book an Archivist" class="img-responsive"></div>
+            <div class="gray-circle circle-alt"><img src="book-an-archivist.jpg" alt="Book an Archivist" class="img-responsive"></div>
           </div>
         </div>
         <div class="box-item-inner inner-alt">
