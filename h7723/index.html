@@ -59,121 +59,140 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-.wrapper {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(#119dff 0%, #030423 100%);
-    position: absolute;
+.background-row {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+}
+.bubble-wrapper {
+    height: 80vh;
+    max-width: 1920px;
+    background: radial-gradient(circle, #023c44 0%, #03778c 100%);
+    margin: 0 auto;
+    border-radius: 3px;
 }
 .content-wrapper {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
+	text-align: center;
+	background: #fff;
+	padding: 50px 30px 65px;
+}
+.heading-one {
 	font-family: sans-serif;
 	letter-spacing: 1px;
 	word-spacing: 2px;
-	color: #fff;
-	font-size: 40px;
+	color: #03aebb;
+	font-size: 80px;
 	font-weight: 800;
 	text-transform: uppercase;
-	text-align: center;
+	margin: 0;
+	line-height: 30px;
 }
-.wrapper div {
+.heading-two {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	color: #03778c;
+	font-size: 80px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 25px;
+}
+.bubble-wrapper div {
     height: 40px;
     width: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     position: absolute;
     top: 10%;
     left: 10%;
     animation: 4s linear infinite;
-    background: rgba(255,255,255,.1);
+    background: radial-gradient(circle, rgba(255,255,255,.1) 10%, rgba(255,255,255,.3) 90%);
 }
 div .dot {
     height: 8px;
     width: 5px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     position: absolute;
     top: 17%;
     left: 24%;
     transform: rotate(30deg);
 }
-.wrapper div:nth-child(1) {
+.bubble-wrapper div:nth-child(1) {
     top: 20%;
     left: 20%;
     animation: animate 6s linear infinite;
-	
 }
-.wrapper div:nth-child(2) {
+.bubble-wrapper div:nth-child(2) {
     top: 60%;
     left: 80%;
-    animation: animate 10s linear infinite;
+    animation: animate 4.4s linear infinite;
 }
-.wrapper div:nth-child(3) {
+.bubble-wrapper div:nth-child(3) {
     top: 40%;
-    left: 40%;
+    left: 38%;
     animation: animate 2s linear infinite;
 }
-.wrapper div:nth-child(4) {
+.bubble-wrapper div:nth-child(4) {
     top: 66%;
     left: 30%;
     animation: animate 7s linear infinite;
 }
-.wrapper div:nth-child(5) {
+.bubble-wrapper div:nth-child(5) {
     top: 90%;
     left: 10%;
     animation: animate 9s linear infinite;
 }
-.wrapper div:nth-child(6) {
+.bubble-wrapper div:nth-child(6) {
     top: 30%;
     left: 60%;
     animation: animate 3s linear infinite;
 }
-.wrapper div:nth-child(7) {
+.bubble-wrapper div:nth-child(7) {
     top: 70%;
     left: 20%;
     animation: animate 8s linear infinite;
 }
-.wrapper div:nth-child(8) {
+.bubble-wrapper div:nth-child(8) {
     top: 75%;
     left: 60%;
-    animation: animate 10s linear infinite;
+    animation: animate 3.2s linear infinite;
 }
-.wrapper div:nth-child(9) {
+.bubble-wrapper div:nth-child(9) {
     top: 50%;
     left: 50%;
     animation: animate 5s linear infinite;
 }
-.wrapper div:nth-child(10) {
+.bubble-wrapper div:nth-child(10) {
     top: 45%;
     left: 20%;
-    animation: animate 10s linear infinite;
+    animation: animate 2.8s linear infinite;
 }
-.wrapper div:nth-child(11) {
+.bubble-wrapper div:nth-child(11) {
     top: 10%;
-    left: 90%;
+    left: 92%;
     animation: animate 9s linear infinite;
 }
-.wrapper div:nth-child(12) {
+.bubble-wrapper div:nth-child(12) {
     top: 20%;
     left: 70%;
     animation: animate 7s linear infinite;
 }
-.wrapper div:nth-child(13) {
+.bubble-wrapper div:nth-child(13) {
     top: 25%;
     left: 40%;
     animation: animate 8s linear infinite;
 }
-.wrapper div:nth-child(14) {
+.bubble-wrapper div:nth-child(14) {
     top: 60%;
     left: 5%;
     animation: animate 6s linear infinite;
 }
-.wrapper div:nth-child(15) {
+.bubble-wrapper div:nth-child(15) {
     top: 90%;
-    left: 80%;
+    left: 95%;
     animation: animate 9s linear infinite;
 }
 @keyframes animate {
@@ -357,8 +376,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
-    <div class="wrapper"><span class="content-wrapper"><span>content goes here</span><span><img src="ribbon.png" alt=""></span></span>
+  <div class="row background-row">
+    <div class="bubble-wrapper"><span class="content-wrapper">
+      <h1 class="heading-one">Grand</h1>
+      <span><img class="img-responsive" src="ribbon.png" alt="">
+      <h1 class="heading-two">Opening</h1>
+      </span></span>
       <div><span class="dot"></span></div>
       <div><span class="dot"></span></div>
       <div><span class="dot"></span></div>
