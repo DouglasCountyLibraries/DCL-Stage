@@ -81,14 +81,18 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     z-index: 100;
 }
 .content-container {
-	display: flex;
-	background: #fff url("ribbon.png") center 56% no-repeat;
-	max-width: 925px;
-	justify-content: center;
-	margin: 0 auto;
-	padding: 30px 30px 40px;
-	flex-direction: column;
-	border-radius: 3px;
+    display: flex;
+    background: #fff url("ribbon.png") center 56% no-repeat;
+    max-width: 925px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 30px 40px;
+    flex-direction: column;
+    border-radius: 3px;
+}
+#content-container {
+    border-image: url("border.jpg") 30 round;
+
 }
 .heading-one {
     font-family: sans-serif;
@@ -99,8 +103,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     font-weight: 800;
     text-transform: uppercase;
     margin: 0;
-	padding-bottom: 210px;
-
+    padding-bottom: 210px;
 }
 .heading-two {
     font-family: sans-serif;
@@ -128,9 +131,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     animation: animate 5.2s linear infinite;
 }
 .bubbles:nth-child(2) {
-	top: 96%;
-	left: 70%;
-	animation: animate 4.4s linear infinite;
+    top: 96%;
+    left: 70%;
+    animation: animate 4.4s linear infinite;
 }
 .bubbles:nth-child(3) {
     top: 40%;
@@ -406,7 +409,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="bubble-wrapper">
       <div class="content-wrapper">
-        <div class="content-container"><h1 class="heading-one">Grand</h1><h1 class="heading-two">Opening</h1></div>
+        <div id="content-container" class="content-container">
+          <h1 class="heading-one">Grand</h1>
+          <h1 class="heading-two">Opening</h1>
+        </div>
       </div>
       <div class="bubbles"></div>
       <div class="bubbles"></div>
