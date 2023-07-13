@@ -86,13 +86,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     max-width: 925px;
     justify-content: center;
     margin: 0 auto;
-    padding: 30px 30px 40px;
+    padding: 30px;
     flex-direction: column;
     border-radius: 3px;
 }
 #content-container {
-    border-image: url("border.jpg") 30 round;
-
+	border-width: 6px;
+	border-style: solid;
+	border-image: radial-gradient(#376e82 5%, #bce1da 50%, #376e82 95%) 1;
+	padding: 30px 30px 40px;
 }
 .heading-one {
     font-family: sans-serif;
@@ -409,10 +411,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="bubble-wrapper">
       <div class="content-wrapper">
-        <div id="content-container" class="content-container">
+        <div class="content-container"><div id="content-container">
           <h1 class="heading-one">Grand</h1>
           <h1 class="heading-two">Opening</h1>
-        </div>
+        </div></div>
       </div>
       <div class="bubbles"></div>
       <div class="bubbles"></div>
