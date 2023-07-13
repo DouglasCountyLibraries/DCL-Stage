@@ -73,13 +73,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     overflow: clip;
 }
 .content-wrapper {
-	top: 47%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	padding: 15px;
-	position: relative;
-	z-index: 100;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    z-index: 100;
 }
 .content-container {
     display: flex;
@@ -92,31 +92,31 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     background: #fff;
 }
 #content-container {
-	background: #fff;
-	border-width: 6px;
-	border-style: solid;
-	border-image: radial-gradient(#376e82 5%, #bce1da 50%, #376e82 95%) 1;
-	padding: 25px 25px 45px;
+    background: #fff;
+    border-width: 6px;
+    border-style: solid;
+    border-image: radial-gradient(#376e82 5%, #bce1da 50%, #376e82 95%) 1;
+    padding: 25px 25px 45px;
 }
 .heading-one {
-	font-family: "thirsty-script", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	color: #03aebb;
-	font-size: 130px;
-	margin: 0 0 -35px;
-	z-index: 2;
-	position: relative;
+    font-family: "thirsty-script", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #03aebb;
+    font-size: 130px;
+    margin: 0 0 -35px;
+    z-index: 2;
+    position: relative;
 }
 .heading-two {
-	font-family: "myriad-pro-semiextended", sans-serif;
-	font-weight: 900;
-	font-style: normal;
-	color: #03778c;
-	font-size: 140px;
-	text-transform: uppercase;
-	margin: -105px 0 0;
-	letter-spacing: -7px;
+    font-family: "myriad-pro-semiextended", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #03778c;
+    font-size: 140px;
+    text-transform: uppercase;
+    margin: -105px 0 0;
+    letter-spacing: -7px;
 }
 .myriad-regualar {
     font-family: "myriad-pro", sans-serif;
@@ -129,26 +129,31 @@ h2.myriad-regualar {
     color: #03aebb;
 }
 .ribbon.img-responsive {
-	max-width: 560px;
+    max-width: 560px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+	.link-wrapper {
 	margin: 0 auto;
-	z-index: 1;
-	position: relative;
+	max-width: 875px;
+	padding: 30px 15px 0;
 }
-	.item.one {
-		font-family: "myriad-pro", sans-serif;
-font-weight: 400;
-font-style: normal;
-	color: #fff;
-	padding: 30px 15px 15px;
-	font-size: 24px;
+.item.one {
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 0 0 30px;
+    font-size: 24px;
 }
-		.item.two {
-		font-family: "myriad-pro", sans-serif;
-font-weight: 400;
-font-style: normal;
-	color: #fff;
-	padding: 15px;
-	font-size: 22px;
+.item.two {
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 0;
+    font-size: 22px;
 }
 .bubbles {
     height: 40px;
@@ -171,9 +176,9 @@ font-style: normal;
     animation: animate 4.4s linear infinite;
 }
 .bubbles:nth-child(3) {
-    top: 40%;
-    left: 38%;
-    animation: animate 2s linear infinite;
+	top: 12%;
+	left: 32%;
+	animation: animate 2s linear infinite;
 }
 .bubbles:nth-child(4) {
     top: 66%;
@@ -186,7 +191,7 @@ font-style: normal;
     animation: animate 9.2s linear infinite;
 }
 .bubbles:nth-child(6) {
-    top: 35%;
+    top: 12%;
     left: 60%;
     animation: animate 3s linear infinite;
 }
@@ -451,7 +456,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <h1 class="heading-two">Opening</h1>
             <h2 class="myriad-regualar">Saturday, August 26</h2>
           </div>
-        </div><div class="item one">A brand-new Castle Rock library is on the way&mdash;check out our New Digs! And pop in for our August 26 Grand Opening.</div><div class="item two">The Dog Days of Summer aren’t over yet! Register for Summer Reading.</div>
+        </div>
+        <div class="link-wrapper">
+          <div class="item one">A brand-new Castle Rock library is on the way&mdash;check out our <a class="white text-underline" href="https://www.dcl.org/castle-rock/">New Digs</a>! And pop in for our August 26 <a class="white text-underline" href="https://douglascountylibraries.evanced.info/signup/EventDetails?EventId=218172" target="_blank">Grand Opening</a>.</div>
+          <div class="item two">The Dog Days of Summer aren’t over yet! <a class="white text-underline" href="https://www.dcl.org/summer-reading/">Register</a> for Summer Reading.</div>
+        </div>
       </div>
       <div class="bubbles"></div>
       <div class="bubbles"></div>
