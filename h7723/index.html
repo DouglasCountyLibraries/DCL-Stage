@@ -118,12 +118,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     margin: 0;
     letter-spacing: -7px;
 }
-.myriad-regualar {
+.myriad-regular {
     font-family: "myriad-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-h2.myriad-regualar {
+h2.myriad-regular {
     text-transform: uppercase;
     margin: 10px 0 0;
     color: #03aebb;
@@ -133,7 +133,7 @@ h2.myriad-regualar {
     margin: 0 auto;
     z-index: 1;
     position: relative;
-	margin: -35px auto -105px;
+    margin: -35px auto -105px;
 }
 .link-wrapper {
     margin: 0 auto;
@@ -278,14 +278,32 @@ transform: scale(1) translateY(-250px);
 @media (max-width: 800px) {
 .heading-one {
     font-size: 110px;
-    
 }
 .heading-two {
     font-size: 100px;
 }
 .ribbon.img-responsive {
-	max-width: 100%;
-	margin: -6% auto -13%;
+    max-width: 100%;
+    margin: -6% auto -13%;
+}
+}
+
+@media (max-width: 575px) {
+.heading-one {
+    font-size: 82px;
+}
+.heading-two {
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+.ribbon.img-responsive {
+    margin: -3% auto -13%;
+}
+.content-container {
+    padding: 15px;
+}
+#content-container {
+    padding: 25px 10px 45px;
 }
 }
 </style>
@@ -469,7 +487,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <h1 class="heading-one">Grand</h1>
             <img class="ribbon img-responsive" src="ribbon.png" alt="">
             <h1 class="heading-two">Opening</h1>
-            <h2 class="myriad-regualar">Saturday, August 26</h2>
+            <h2 class="myriad-regular">Saturday, August&nbsp;26</h2>
           </div>
         </div>
         <div class="link-wrapper">
