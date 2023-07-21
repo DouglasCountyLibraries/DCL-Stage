@@ -66,16 +66,17 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .sleepy-wrapper {
     max-width: 1920px;
     min-height: 1080px;
+    background: #fff;
     margin: 0 auto;
-    animation: lighting .6s 2s linear 6;
-    opacity: 1;
+    animation: lighting 4s 0s linear 2;
+    opacity: 0;
 }
 .item-wrapper {
     display: flex;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 .neato {
     font-family: "neato-serif-rough", sans-serif;
@@ -92,18 +93,20 @@ h1.oldstyle {
     font-weight: 500;
     font-style: normal;
     color: #ddd;
-    font-size: 60px;
+    font-size: 56px;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: -2px;
 }
 h1.neato {
     font-family: "neato-serif-rough", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #eee;
-    font-size: 68px;
+    font-size: 75px;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: 4px;
 }
 h4.oldstyle {
     font-family: "ten-oldstyle", serif;
@@ -173,6 +176,59 @@ h4.heading-one {
     line-height: .7em;
 }
 }
+.info-wrapper {
+    font-family: "Open Sans", arial, sans-serif;
+    padding: 0 15px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    animation: fly-in 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+@keyframes fly-in {
+0% {
+transform: scale(0);
+opacity: 1;
+}
+100% {
+transform: scale(1);
+opacity: 1;
+}
+}
+h1.info {
+    font-family: 'Caveat Brush', sans-serif;
+    color: #204999;
+    font-size: 98px;
+    text-align: center;
+    line-height: 72px;
+    letter-spacing: -3px;
+    transform: rotate(-1.3deg);
+}
+.info-one {
+    font-size: 22px;
+    color: #153065;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.info-one div {
+    padding-top: 10px;
+}
+.info-two {
+    font-weight: 400;
+    color: #395129;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.info-one a, .info-two a {
+    color: #153065;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.info-one a:hover, .info-two a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #153065;
+    letter-spacing: .5px;
+}
 .contain-header {
     position: relative;
     overflow: hidden;
@@ -198,24 +254,6 @@ video#bgvid {
 }
 video {
     display: block;
-}
-.horseman {
-    background: transparent url("horseman.jpg") bottom center no-repeat;
-    animation: scale-fade-out 5s cubic-bezier(0.34, 1.56, 0.64, 1) 1;
-}
-@keyframes scale-fade-out {
-0% {
-transform: scale(20);
-opacity: 0;
-}
-30%, 70% {
-transform: scale(1);
-opacity: 1;
-}
-100% {
-transform: scale(0);
-opacity: 0;
-}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -397,7 +435,27 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         Sorry, your browser does not support background videos.
         <source src="sleepy-hollow-video.webm" type="video/webm" />
         Sorry, your browser does not support background videos.</video>
-      <div class="sleepy-wrapper"> </div>
+      <div class="sleepy-wrapper"></div>
+      <div class="info-wrapper">
+        <div class="item-wrapper">
+          <div class="item">
+            <h4 class="oldstyle">A Storybook Holiday Halloween</h4>
+            <h1 class="oldstyle">The Legend of</h1>
+            <h1 class="neato"> Sleepy Hollow</h1>
+            <div class="white">
+              <div class="large-text margin-bottom-15">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque.</div>
+              <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit.</div>
+              <div>
+                <h3 class="white no-margin-bottom">$20&nbsp;Adults*, $15 Ages&nbsp;3-13</h3>
+                (Ages 0-2 free with paying adult)</div>
+              <h4 class="white"><span class="text-uppercase">Parker</span><br>
+                Saturday,&nbsp;October&nbsp;28<br>
+                6-9PM</h4>
+              <div class="padding-top-15 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
