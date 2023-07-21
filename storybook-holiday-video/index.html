@@ -64,11 +64,11 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
 }
 .sleepy-wrapper {
-    background: transparent url("../storybook-holiday - Copy/sleepy-hollow-background.jpg") bottom center no-repeat;
     max-width: 1920px;
-    min-height: 1050px;
+    min-height: 1080px;
     margin: 0 auto;
-    animation: lighting 3s 1s linear 2;
+    animation: lighting .6s 2s linear 6;
+    opacity: 1;
 }
 .item-wrapper {
     display: flex;
@@ -129,35 +129,29 @@ a.btn.btn-default {
 }
 @keyframes lighting {
 0% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
 opacity: 0;
 }
 10% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
 opacity: 0;
 }
-13% {
+11% {
 background: transparent url("horseman.jpg") bottom center no-repeat;
 opacity: 1;
 }
 14% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
 opacity: 0;
 }
 20% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
 opacity: 0;
 }
-23% {
+21% {
 background: transparent url("horseman.jpg") bottom center no-repeat;
 opacity: 1;
 }
 24% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
 opacity: 0;
 }
 104% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
 opacity: 0;
 }
 }
@@ -183,7 +177,6 @@ h4.heading-one {
     position: relative;
     overflow: hidden;
     background: #fff;
-    padding: 0 15px;
     max-width: 1920px;
     margin: 0 auto;
     height: 1080px;
@@ -205,6 +198,24 @@ video#bgvid {
 }
 video {
     display: block;
+}
+.horseman {
+    background: transparent url("horseman.jpg") bottom center no-repeat;
+    animation: scale-fade-out 5s cubic-bezier(0.34, 1.56, 0.64, 1) 1;
+}
+@keyframes scale-fade-out {
+0% {
+transform: scale(20);
+opacity: 0;
+}
+30%, 70% {
+transform: scale(1);
+opacity: 1;
+}
+100% {
+transform: scale(0);
+opacity: 0;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -381,23 +392,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row background-row">
     <div class="contain-header">
-      <div class="row">
-        <video autoplay loop muted playsinline poster="sky-with-doodles.jpg" id="bgvid">
-          <source src="sleepy-hollow-video.mp4" type="video/mp4" />
-          Sorry, your browser does not support background videos.
-          <source src="sleepy-hollow-video.webm" type="video/webm" />
-          Sorry, your browser does not support background videos.</video>
-        <div class="info-wrapper">
-          <div class="details-wrapper">
-            <h1 class="info"><i>The Sky's the Limit!</i></h1>
-            <div class="info-one">
-              <div>Exciting <a href="featured-events/#author-events">author&nbsp;events</a> with award-winning, bestselling writers.</div>
-              <div>Summer reading fun for all ages! <a class="text-nowrap" href="summer-reading/">Pre-register&nbsp;now</a>.</div>
-              <div>Mental health resources and inspiration for <a href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2290489219">Taking&nbsp;Care</a>.</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <video autoplay loop muted playsinline poster="sky-with-doodles.jpg" id="bgvid">
+        <source src="sleepy-hollow-video.mp4" type="video/mp4" />
+        Sorry, your browser does not support background videos.
+        <source src="sleepy-hollow-video.webm" type="video/webm" />
+        Sorry, your browser does not support background videos.</video>
+      <div class="sleepy-wrapper"> </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
