@@ -67,6 +67,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     max-width: 1920px;
     min-height: 1050px;
     margin: 0 auto;
+	animation: lighting 3s 1s linear 2;
 }
 .item-wrapper {
     display: flex;
@@ -126,37 +127,39 @@ a.btn.btn-default {
     text-transform: uppercase;
     font-weight: 500;
 }
-.flash {
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    animation: lighting .5s 1s linear 3;
-    opacity: 1;
-}
+
 @keyframes lighting {
 0% {
-opacity: 0;
+background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	opacity: 0;
 }
 10% {
-opacity: 0;
+background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	opacity: 0;
 }
-11% {
-opacity: 1;
+13% {
+background: transparent url("horseman.jpg") bottom center no-repeat;
+	opacity: 1;
 }
 14% {
-opacity: 0;
+background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	opacity: 0;
 }
 20% {
-opacity: 0;
+background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	opacity: 0;
 }
-21% {
-opacity: 1;
+23% {
+background: transparent url("horseman.jpg") bottom center no-repeat;
+	opacity: 1;
 }
 24% {
-opacity: 0;
+background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	opacity: 0;
 }
 104% {
-opacity: 0;
+background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	opacity: 0;
 }
 }
 
