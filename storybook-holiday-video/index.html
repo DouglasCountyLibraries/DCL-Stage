@@ -113,22 +113,24 @@ h4.oldstyle {
     font-weight: 500;
     font-style: normal;
     color: #ddd;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
+    letter-spacing: 1px;
 }
-.btn.btn-custom {
-    background: #ec9c49;
+.details-wrapper {
+    background: transparent url("bling-two.png") top center no-repeat;
+    padding-top: 60px;
+}
+a.btn.btn-default.btn-custom {
+    background: #ef7a22;
     color: #000;
     border-radius: 2px;
-}
-.btn-custom:active, .btn-custom:hover, .btn-custom:focus {
-    background: #bf631a;
-    color: #fff;
-}
-a.btn.btn-default {
-    color: #000;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
+}
+a.btn.btn-default.btn-custom:active, a.btn.btn-default.btn-custom:hover, a.btn.btn-default.btn-custom:focus {
+    background: #b41b0b;
+    color: #fff;
 }
 @keyframes lighting {
 0% {
@@ -447,16 +449,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <h4 class="oldstyle">A Storybook Holiday Halloween</h4>
             <h1 class="oldstyle">The Legend of</h1>
             <h1 class="neato"> Sleepy Hollow</h1>
-            <div class="white">
+            <div class="details-wrapper white font-weight-400">
               <div class="large-text margin-bottom-15">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque.</div>
               <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit.</div>
               <div>
-                <h3 class="white no-margin-bottom">$20&nbsp;Adults*, $15 Ages&nbsp;3-13</h3>
+                <h2 class="white no-margin-bottom">Saturday, October&nbsp;28, 6-9PM, DCL in Parker</h2>
+                <h3 class="white margin-top-5 margin-bottom-5">$20&nbsp;Adults, $15 Ages&nbsp;3-13</h3>
                 (Ages 0-2 free with paying adult)</div>
-              <h4 class="white"><span class="text-uppercase">Parker</span><br>
-                Saturday,&nbsp;October&nbsp;28<br>
-                6-9PM</h4>
-              <div class="padding-top-15 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
+              <div class="padding-top-30 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
             </div>
           </div>
         </div>
