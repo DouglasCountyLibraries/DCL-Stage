@@ -62,6 +62,20 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <style>
 .background-row {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+	animation: image_blur 8s;
+}
+	
+	
+	
+	@keyframes image_blur {
+0% {
+-webkit-filter: blur(8px);
+filter: blur(8px);
+}
+100% {
+-webkit-filter: blur(0px);
+filter: blur(0px);
+}
 }
 .sleepy-wrapper {
     max-width: 1920px;
@@ -76,7 +90,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 125px;
 }
 .neato {
     font-family: "neato-serif-rough", sans-serif;
@@ -92,7 +106,7 @@ h1.oldstyle {
     font-family: "ten-oldstyle", serif;
     font-weight: 500;
     font-style: normal;
-    color: #ddd;
+    color: #eee;
     font-size: 56px;
     margin: 0;
     text-transform: uppercase;
@@ -102,7 +116,7 @@ h1.neato {
     font-family: "neato-serif-rough", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #eee;
+    color: #fff;
     font-size: 75px;
     margin: 0;
     text-transform: uppercase;
@@ -119,7 +133,7 @@ h4.oldstyle {
 }
 .details-wrapper {
     background: transparent url("bling-two.png") top center no-repeat;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 a.btn.btn-default.btn-custom {
     background: #ef7a22;
@@ -242,7 +256,7 @@ h1.info {
     background: #fff;
     max-width: 1920px;
     margin: 0 auto;
-    height: 1080px;
+    height: 975px;
 }
 video#bgvid {
     position: absolute;
@@ -453,9 +467,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div class="large-text margin-bottom-15">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque.</div>
               <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit.</div>
               <div>
-                <h2 class="white no-margin-bottom">Saturday, October&nbsp;28, 6-9PM, DCL in Parker</h2>
+                <h2 class="white no-margin-bottom">Saturday, October&nbsp;28, 6-9PM, <a class="white text-underline" href="#">DCL in Parker</a></h2>
                 <h3 class="white margin-top-5 margin-bottom-5">$20&nbsp;Adults, $15 Ages&nbsp;3-13</h3>
-                (Ages 0-2 free with paying adult)</div>
+              Kids ages 2 and under get in free.</div>
               <div class="padding-top-30 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
             </div>
           </div>

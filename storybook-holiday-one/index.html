@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
 <!-- Minimize page flickering for Google Optimize -->
 <style>
 .async-hide {
-	opacity: 0 !important
+    opacity: 0 !important
 }
 </style>
 
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -63,18 +64,64 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
 }
 .sleepy-wrapper {
-    background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-    max-width: 1920px;
-    min-height: 1050px;
-    margin: 0 auto;
-	animation: lighting 3s 1s linear 2;
+	background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
+	max-width: 1920px;
+	min-height: 925px;
+	margin: 0 auto;
+	animation: image_blur 4s;
+}
+@keyframes image_blur {
+0% {
+-webkit-filter: blur(5px);
+filter: blur(5px);
+}
+100% {
+-webkit-filter: blur(0px);
+filter: blur(0px);
+}
+}
+.flash {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    animation: lighting .6s 0s linear 3;
+    opacity: 1;
+}
+@keyframes lighting {
+0% {
+opacity: 0;
+}
+10% {
+opacity: 0;
+}
+11% {
+opacity: 1;
+}
+14% {
+opacity: 0;
+}
+20% {
+opacity: 0;
+}
+21% {
+opacity: 1;
+}
+24% {
+opacity: 0;
+}
+104% {
+opacity: 0;
+}
 }
 .item-wrapper {
     display: flex;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 125px;
+}
+.item-shadow {
+	text-shadow: 0px 1px 6px #000;
 }
 .neato {
     font-family: "neato-serif-rough", sans-serif;
@@ -90,77 +137,45 @@ h1.oldstyle {
     font-family: "ten-oldstyle", serif;
     font-weight: 500;
     font-style: normal;
-    color: #ddd;
-    font-size: 60px;
+    color: #eee;
+    font-size: 56px;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: -2px;
 }
 h1.neato {
     font-family: "neato-serif-rough", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #eee;
-    font-size: 68px;
+    color: #fff;
+    font-size: 75px;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: 4px;
 }
 h4.oldstyle {
     font-family: "ten-oldstyle", serif;
     font-weight: 500;
     font-style: normal;
     color: #ddd;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
-
+    letter-spacing: 1px;
 }
-.btn.btn-custom {
-    background: #ec9c49;
+.details-wrapper {
+    background: transparent url("bling-two.png") top center no-repeat;
+    padding-top: 80px;
+}
+a.btn.btn-default.btn-custom {
+    background: #ef7a22;
     color: #000;
     border-radius: 2px;
-}
-.btn-custom:active, .btn-custom:hover, .btn-custom:focus {
-    background: #bf631a;
-    color: #fff;
-}
-a.btn.btn-default {
-    color: #000;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
-
-@keyframes lighting {
-0% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-	opacity: 0;
-}
-10% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-	opacity: 0;
-}
-13% {
-background: transparent url("horseman.jpg") bottom center no-repeat;
-	opacity: 1;
-}
-14% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-	opacity: 0;
-}
-20% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-	opacity: 0;
-}
-23% {
-background: transparent url("horseman.jpg") bottom center no-repeat;
-	opacity: 1;
-}
-24% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-	opacity: 0;
-}
-104% {
-background: transparent url("sleepy-hollow-background.jpg") bottom center no-repeat;
-	opacity: 0;
-}
+a.btn.btn-default.btn-custom:active, a.btn.btn-default.btn-custom:hover, a.btn.btn-default.btn-custom:focus {
+    background: #b41b0b;
+    color: #fff;
 }
 
 @media (max-width: 725px) {
@@ -190,7 +205,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -361,17 +376,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <h4 class="oldstyle">A Storybook Holiday Halloween</h4>
             <h1 class="oldstyle">The Legend of</h1>
             <h1 class="neato"> Sleepy Hollow</h1>
-            <div class="white">
+            <div class="item-shadow"><div class="details-wrapper white font-weight-400">
               <div class="large-text margin-bottom-15">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque.</div>
               <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit.</div>
               <div>
-                <h3 class="white no-margin-bottom">$20&nbsp;Adults*, $15 Ages&nbsp;3-13</h3>
-                (Ages 0-2 free with paying adult)</div>
-              <h4 class="white"><span class="text-uppercase">Parker</span><br>
-                Saturday,&nbsp;October&nbsp;28<br>
-                6-9PM</h4>
-              <div class="padding-top-15 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
-            </div>
+                <h2 class="white no-margin-bottom">Saturday, October&nbsp;28, 6-9PM, <a class="white text-underline" href="#">DCL in Parker</a></h2>
+                <h3 class="white margin-top-5 margin-bottom-5">$20&nbsp;Adults, $15 Ages&nbsp;3-13</h3>
+				  Kids ages 2 and under get in free.</div></div></div>
+              <div class="padding-top-30 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
+            
           </div>
         </div>
       </div>
@@ -475,4 +488,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 }
 	</script><!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
