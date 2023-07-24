@@ -62,12 +62,9 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <style>
 .background-row {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
-	animation: image_blur 8s;
+    animation: image_blur 8s;
 }
-	
-	
-	
-	@keyframes image_blur {
+@keyframes image_blur {
 0% {
 -webkit-filter: blur(8px);
 filter: blur(8px);
@@ -82,7 +79,7 @@ filter: blur(0px);
     min-height: 1080px;
     background: #fff;
     margin: 0 auto;
-    animation: lighting 2s 1s linear 2;
+    animation: lightning 2s 0s linear 3;
     opacity: 0;
 }
 .item-wrapper {
@@ -146,7 +143,7 @@ a.btn.btn-default.btn-custom:active, a.btn.btn-default.btn-custom:hover, a.btn.b
     background: #b41b0b;
     color: #fff;
 }
-@keyframes lighting {
+@keyframes lightning {
 0% {
 opacity: 0;
 }
@@ -157,7 +154,7 @@ opacity: 0;
 background: transparent url("horseman.jpg") bottom center no-repeat;
 opacity: 1;
 }
-33% {
+35% {
 background: transparent url("horseman.jpg") bottom center no-repeat;
 opacity: 1;
 }
@@ -203,16 +200,17 @@ h4.heading-one {
     text-align: center;
     top: 0;
     width: 100%;
-    animation: fly-in 1s ease-in 4s both;
+    animation: fly-in 5s ease-in 0s both;
 }
 @keyframes fly-in {
 0% {
-transform: scale(0);
-opacity: 0.1;
-filter: blur(10px);
+transform: scale(0.2);
+transform-origin: 50% 30%;
+opacity: 0;
 }
 100% {
 transform: scale(1);
+transform-origin: 50% 100%;
 opacity: 1;
 }
 }
@@ -469,7 +467,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <div>
                 <h2 class="white no-margin-bottom">Saturday, October&nbsp;28, 6-9PM, <a class="white text-underline" href="#">DCL in Parker</a></h2>
                 <h3 class="white margin-top-5 margin-bottom-5">$20&nbsp;Adults, $15 Ages&nbsp;3-13</h3>
-              Kids ages 2 and under get in free.</div>
+                Kids ages 2 and under get in free.</div>
               <div class="padding-top-30 text-center"><a href="#" class="btn btn-default btn-lg btn-custom">Buy Tickets</a></div>
             </div>
           </div>
