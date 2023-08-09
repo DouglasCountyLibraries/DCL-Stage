@@ -77,8 +77,58 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
   </script> 
 Push Notifications End - Removed for Now -->
 <style>
+.source {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+.top-row {
+    background: #e6e4e2;
+    text-align: center;
+}
+.bottom-row {
+    background: #e6e4e2;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.top-row h1 {
+    margin: 0;
+    font-weight: 400;
+    color: #333;
+    padding: 30px 0;
+    font-size: 30px;
+}
 .background-row {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+    background: #e6e4e2;
+}
+.link-wrapper {
+    margin: 0 auto;
+    max-width: 925px;
+    padding: 30px 0 0;
+}
+.item.one {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    padding: 0 0 15px;
+    font-size: 26px;
+}
+.list-unstyled.list-wrapper {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.list-unstyled.list-wrapper li {
+    padding: 7px 0;
+    color: #333;
+}
+.list-unstyled.list-wrapper li:nth-of-type(1) {
+    font-size: 22px;
+}
+.list-unstyled.list-wrapper li:nth-of-type(2) {
+    font-size: 20px;
 }
 .photo-wrapper {
     display: flex;
@@ -195,7 +245,7 @@ Push Notifications End - Removed for Now -->
     display: flex;
     padding: 0;
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     color: transparent;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -415,6 +465,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
+  <div class="row top-row">
+    <div class="container">
+      <h1 class="source"><i>Curabitur at est et risus vestibulum pharetra!</i></h1>
+    </div>
+  </div>
   <div class="row background-row">
     <div class="single-photo-wrapper">
       <div class="single-photo photo black text-center">
@@ -440,6 +495,19 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <!-- #slideshow div:nth-of-type(6) --> 
           <span><i class="fa-regular fa-user photo-icon"></i>Caption goes here</span></div>
       </div>
+    </div>
+  </div>
+  <div class="row bottom-row">
+    <div class="link-wrapper">
+      <div class="item one">Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros.</div>
+      <ul class="list-unstyled list-wrapper">
+        <li>It's déjà brew all over again! Visit local breweries and coffee shops, earn prizes!<br>
+          <a style="text-transform: uppercase;font-weight: 700;" href="brew-tour/">Register&nbsp;Now</a></li>
+        <li>Celebrate A Storybook Holiday Halloween: The Legend of Sleepy Hollow.<br>
+          <a style="text-transform: uppercase;font-weight: 700;" href="storybook-holiday/">Buy&nbsp;Tickets</a></li>
+        <li>You’re invited to our Eighth Annual Fête des Fables Gala: The Snow Queen!<br>
+          <a style="text-transform: uppercase;font-weight: 700;" href="fete-des-fables/">Learn&nbsp;More</a></li>
+      </ul>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
