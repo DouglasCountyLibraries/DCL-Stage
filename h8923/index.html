@@ -80,32 +80,47 @@ Push Notifications End - Removed for Now -->
 .source {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 }
-.top-row {
-    background: #e6e4e2;
-    text-align: center;
-}
-.bottom-row {
-    background: #e6e4e2;
-    text-align: center;
-    padding-bottom: 40px;
-}
-.top-row h1 {
-    margin: 0;
-    font-weight: 600;
-    color: #666;
-    padding: 30px 0;
-    font-size: 40px;
-	text-transform: uppercase;
-}
 .background-row {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #d0dde5 65%, #d0dde5 100%);
+}
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 15px;
+    min-width: 400px;
+}
+.photo-wrapper {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    justify-content: center;
     background: #e6e4e2;
+}
+.single-photo.photo {
+    width: 100%;/* border-right: 15px solid #fff; */
+}
+.photo-icon {
+    font-size: 120px;
+    font-weight: 200;
+    padding-bottom: 15px;
+}
+.link-container {
+    margin: 0 15px;
 }
 .link-wrapper {
-    margin: 0 auto;
-    max-width: 925px;
-    padding: 30px 0 0;
+    margin: -100px auto 0 auto;
+    position: relative;
+    z-index: 1000;
+    max-width: 1200px;
+    padding: 40px 30px 45px;
+    background: #fff;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 3px;
 }
-.item.one {
+.link-item {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -131,40 +146,10 @@ Push Notifications End - Removed for Now -->
 .list-unstyled.list-wrapper li:nth-of-type(2) {
     font-size: 20px;
 }
-.photo-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1300px;
-    margin: 0 auto 50px auto;
-}
-.photo-item {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 30px 15px;
-    min-width: 400px;
-}
-.photo-item-inner {
-    padding: 30px 30px 0;
-}
-.single-photo-row {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-.single-photo-wrapper {
-    display: flex;
-    justify-content: center;
-    background: #f5f5f5;
-    margin: 0 15px;
-}
-.single-photo.photo {
-    width: 100%;/* border-right: 15px solid #fff; */
-}
-.photo-icon {
-    font-size: 120px;
-    font-weight: 200;
-    padding-bottom: 15px;
+.bottom-row {
+    background: #d0dde5;
+    text-align: center;
+    padding-bottom: 60px;
 }
 .slideshow-image.main {
     min-height: 675px;
@@ -173,7 +158,9 @@ Push Notifications End - Removed for Now -->
     position: relative;
     overflow: hidden;
     padding-bottom: 0%;
-} /* (img px height / img px width x 100) = padding-bottom % */
+    border-radius: 3px;
+}
+/* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
     position: absolute;
     z-index: 2;
@@ -467,43 +454,45 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row background-row">
-    <div class="single-photo-wrapper">
+    <div class="photo-wrapper">
       <div class="single-photo photo black text-center">
         <div id="slideshow" class="slideshow-image main"> 
           <!-- define each background-image in CSS -->
           <div></div>
           
           <!-- #slideshow div:nth-of-type(1) --> 
-          <span><i class="fa-regular fa-location photo-icon"></i>Check Us Out!</span>
+          <span><i class="fa-sharp fa-square-check photo-icon"></i>Check Us Out!</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(2) --> 
-          <span><i class="fa-regular fa-location-dot photo-icon"></i>Caption goes here</span>
+          <span><i class="fa-sharp fa-location-dot photo-icon"></i>Caption goes here</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(3) --> 
-          <span><i class="fa-regular fa-location-arrow photo-icon"></i>Caption goes here</span>
+          <span><i class="fa-sharp fa-location-arrow photo-icon"></i>Caption goes here</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(4) --> 
-          <span><i class="fa-regular fa-globe photo-icon"></i>Caption goes here</span>
+          <span><i class="fa-sharp fa-globe photo-icon"></i>Caption goes here</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(5) --> 
-          <span><i class="fa-regular fa-thumbtack photo-icon"></i>Caption goes here</span>
+          <span><i class="fa-sharp fa-thumbtack photo-icon"></i>Caption goes here</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(6) --> 
-          <span><i class="fa-regular fa-user photo-icon"></i>Caption goes here</span></div>
+          <span><i class="fa-sharp fa-user photo-icon"></i>Caption goes here</span></div>
       </div>
     </div>
   </div>
   <div class="row bottom-row">
-    <div class="link-wrapper">
-      <div class="item one">All DCL locations are open! Come in and discover what's new.</div>
-      <ul class="list-unstyled list-wrapper">
-        <li>It's déjà brew all over again! Visit local breweries and coffee shops, earn prizes!<br>
-          <a style="text-transform: uppercase;font-weight: 700;" href="brew-tour/">Register&nbsp;Now</a></li>
-        <li>Celebrate A Storybook Holiday Halloween: The Legend of Sleepy Hollow.<br>
-          <a style="text-transform: uppercase;font-weight: 700;" href="storybook-holiday/">Buy&nbsp;Tickets</a></li>
-        <li>You’re invited to our Eighth Annual Fête des Fables Gala: The Snow Queen!<br>
-          <a style="text-transform: uppercase;font-weight: 700;" href="fete-des-fables/">Learn&nbsp;More</a></li>
-      </ul>
+    <div class="link-container">
+      <div class="link-wrapper">
+        <div class="link-item">All DCL locations are open! Come in and discover what's new.</div>
+        <ul class="list-unstyled list-wrapper">
+          <li>It's déjà brew all over again! Visit local breweries and coffee shops, earn prizes!<br>
+            <a style="text-transform: uppercase;font-weight: 700;" href="brew-tour/">Register&nbsp;Now</a></li>
+          <li>Celebrate A Storybook Holiday Halloween: The Legend of Sleepy Hollow.<br>
+            <a style="text-transform: uppercase;font-weight: 700;" href="storybook-holiday/">Buy&nbsp;Tickets</a></li>
+          <li>You’re invited to our Eighth Annual Fête des Fables Gala: The Snow Queen!<br>
+            <a style="text-transform: uppercase;font-weight: 700;" href="fete-des-fables/">Learn&nbsp;More</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- InstanceEndEditable --> </div>
