@@ -109,16 +109,13 @@ Push Notifications End - Removed for Now -->
     margin: 0 15px;
 }
 .link-wrapper {
-    margin: -100px auto 0 auto;
-    position: relative;
-    z-index: 1000;
-    max-width: 1200px;
-    padding: 40px 30px 45px;
-    background: #fff;
-    border-top-right-radius: 60px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 60px;
-    border-top-left-radius: 3px;
+	margin: -190px auto 0 auto;
+	position: relative;
+	z-index: 1000;
+	max-width: 1200px;
+	padding: 40px 30px 45px;
+	background: #fff;
+	border-radius: 3px;
 }
 .link-item {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -140,11 +137,10 @@ Push Notifications End - Removed for Now -->
     padding: 7px 0;
     color: #333;
 }
-.list-unstyled.list-wrapper li:nth-of-type(1) {
-    font-size: 22px;
-}
-.list-unstyled.list-wrapper li:nth-of-type(2) {
-    font-size: 20px;
+.list-unstyled.list-wrapper li a {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .bottom-row {
     background: #d0dde5;
@@ -152,7 +148,7 @@ Push Notifications End - Removed for Now -->
     padding-bottom: 60px;
 }
 .slideshow-image.main {
-    min-height: 675px;
+    min-height: 750px;
 }
 #slideshow {
     position: relative;
@@ -225,23 +221,23 @@ Push Notifications End - Removed for Now -->
 }
 /* captions */
 #slideshow span {
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    font-size: 50px;
-    color: transparent;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 500;
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	top: 42%;
+	left: 50%;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	font-size: 50px;
+	color: transparent;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
     z-index: 1
@@ -486,11 +482,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="link-item">All DCL locations are open! Come in and discover what's new.</div>
         <ul class="list-unstyled list-wrapper">
           <li>It's déjà brew all over again! Visit local breweries and coffee shops, earn prizes!<br>
-            <a style="text-transform: uppercase;font-weight: 700;" href="brew-tour/">Register&nbsp;Now</a></li>
+            <a href="brew-tour/">Register&nbsp;Now</a></li>
           <li>Celebrate A Storybook Holiday Halloween: The Legend of Sleepy Hollow.<br>
-            <a style="text-transform: uppercase;font-weight: 700;" href="storybook-holiday/">Buy&nbsp;Tickets</a></li>
+            <a href="storybook-holiday/">Buy&nbsp;Tickets</a></li>
           <li>You’re invited to our Eighth Annual Fête des Fables Gala: The Snow Queen!<br>
-            <a style="text-transform: uppercase;font-weight: 700;" href="fete-des-fables/">Learn&nbsp;More</a></li>
+            <a href="fete-des-fables/">Learn&nbsp;More</a></li>
         </ul>
       </div>
     </div>
