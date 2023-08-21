@@ -109,14 +109,14 @@ Push Notifications End - Removed for Now -->
     margin: 0 15px;
 }
 .link-wrapper {
-	margin: -190px auto 0 auto;
-	position: relative;
-	z-index: 1000;
-	max-width: 1200px;
-	padding: 40px 30px 45px;
-	background: #fff;
-	border-radius: 3px;
-	box-shadow: 0px 0px 20px 3px rgba(000,000,000,.1);
+    margin: -190px auto 0 auto;
+    position: relative;
+    z-index: 1000;
+    max-width: 1200px;
+    padding: 40px 30px 45px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px 3px rgba(000,000,000,.1);
 }
 .link-item {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -139,9 +139,9 @@ Push Notifications End - Removed for Now -->
     color: #333;
 }
 .list-unstyled.list-wrapper li a {
-	font-size: 20px;
-	font-weight: 700;
-	text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .bottom-row {
     background: #d0dde5;
@@ -220,25 +220,34 @@ Push Notifications End - Removed for Now -->
 #slideshow div:nth-of-type(6) {
     background-image: url("six.jpg")
 }
+#slideshow div:nth-of-type(7) {
+    background-image: url("seven.jpg")
+}
+#slideshow div:nth-of-type(8) {
+    background-image: url("eight.jpg")
+}
+#slideshow div:nth-of-type(9) {
+    background-image: url("nine.jpg")
+}
 /* captions */
 #slideshow span {
-	position: absolute;
-	z-index: 2;
-	text-align: center;
-	top: 42%;
-	left: 50%;
-	display: flex;
-	padding: 0;
-	margin: 0;
-	font-size: 50px;
-	color: transparent;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	justify-content: center;
-	flex-direction: column;
-	line-height: 40px;
-	text-transform: uppercase;
-	font-weight: 500;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 42%;
+    left: 50%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    color: transparent;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
     z-index: 1
@@ -472,10 +481,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <!-- #slideshow div:nth-of-type(5) --> 
           <span><i class="fa-sharp fa-thumbtack photo-icon"></i>Caption goes here</span>
           <div></div>
-			
-			
-			
-			<!-- #slideshow div:nth-of-type(6) --> 
+          
+          <!-- #slideshow div:nth-of-type(6) --> 
           <span><i class="fa-sharp fa-location-arrow photo-icon"></i>Caption goes here</span>
           <div></div>
           <!-- #slideshow div:nth-of-type(7) --> 
@@ -484,14 +491,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <!-- #slideshow div:nth-of-type(8) --> 
           <span><i class="fa-sharp fa-thumbtack photo-icon"></i>Caption goes here</span>
           <div></div>
-			
-			
-			
-			
-			
-			
-			
-			
+          
           <!-- #slideshow div:nth-of-type(9) --> 
           <span><i class="fa-sharp fa-user photo-icon"></i>Caption goes here</span></div>
       </div>
