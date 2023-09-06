@@ -74,8 +74,8 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	font-display: swap;
 }
 .row.forest-row {
-	background: url("branches.jpg") right bottom/cover;
-	padding: 80px 0 250px;
+	background: url("branch-background.jpg") right bottom/cover;
+	padding: 80px 0 225px;
 	color: #fff;
 	text-shadow: 0 4px 9px #000;
 }
@@ -100,18 +100,22 @@ h1.bulgary {
 	font-size: 104px;
 	text-shadow: 0 4px 9px #000;
 }
+.forest-intro {
+	max-width: 820px;
+	margin: 0 auto;
+}
 .row.carousel-row {
-	background: #d7e3d3;
+	background: #deebda;
 }
 .custom-container {
-	max-width: 1200px;
+	max-width: 2400px;
 	margin: -180px auto 0 auto;
 }
 .carousel-cell {
-	margin: 0 60px;
+	margin-left: 90px;
 }
 .carousel-cell img {
-	box-shadow: 10px 8px 20px -12px #000;
+	box-shadow: 10px 8px 20px -12px rgba(0,0,0,.8);
 	margin: 20px;
 	border-radius: 3px;
 }
@@ -137,64 +141,93 @@ h1.bulgary {
 	color: #efffd6;
 }
 .row.detail-row {
-	background: #d7e3d3;
-	padding: 0 0 80px;
+	background: #deebda;
 }
 .detail-wrapper {
 	font-size: 18px;
 	font-weight: 400px;
 	max-width: 1030px;
 	margin: 0 auto;
-	padding: 15px 15px 25px;
+	padding: 35px 15px 15px;
 	color: #000;
+	margin-bottom: -35px;
 }
-.tree-wrapper {
+.row.tree-row {
+	background: #deebda url("tree-pattern.jpg") repeat-x;
+	padding: 0 0 80px;
+}
+.locations {
+	background: #f1ffed;
+	text-align: center;
+	max-width: 1050px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.locations h4 {
+	margin: 0;
+	color: #000;
+	font-size: 24px;
+	padding: 5px 15px 15px;
+}
+.tree-container {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 930px;
+	max-width: 1050px;
 	margin: 0 auto;
 	justify-content: center;
 }
-.tree-list {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	padding: 0 20px;
-	margin: 0;
-}
-.tree-list-content {
-	display: flex;
-	padding: 0 15px 35px;
-	justify-content: center;
-}
 .tree-location {
-	font-size: 26px;
-	text-align: center;
-	padding: 10px 0;
+	font-size: 22px;
+	/* text-align: center; */
+	padding: 0 0 0 25px;
 	text-transform: uppercase;
+	/* background: #2b3a18; */
+	font-weight: 400;
 }
-.location-box {
-	justify-content: center;
-	display: flex;
-	background: #0a0e00;
+.tree-location-alt {
+	font-size: 22px;
+	padding: 5px 0 0 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-left: -30px;
 }
-.location-box img {
-	width: 125px;
-	height: 125px;
+.listing {
+	background: #f1ffed;
+	width: 350px;
+	padding: 5px 0;
 }
-.tree-item {
-	display: flex;
-	margin: 10px 15px;
-	background: rgba(255,255,255,.4);
-	border-radius: 3px;
+.listing:nth-of-type(5) {
+	padding-bottom: 60px;
+}
+.listing ul {
+	margin: 0 0 0 30px;
 	color: #000;
-	flex-direction: column;
-	width: 100%
+}
+.modal-body {
+	position: relative;
+	padding: 20px;
+	padding: 40px 40px 60px;
+	font-size: 18px;
+}
+.modal .close {
+	color: #eee;
+}
+.modal-title {
+	color: #fff;
+}
+.modal-header {
+	background: #0a0e00;
 }
 
 @media (max-width: 1200px) {
 .row.forest-row {
-	background: url("branches.jpg") 60% bottom/cover;
+	background: url("branch-background.jpg") 60% bottom/cover;
+}
+}
+
+@media (max-width: 1049px) {
+.locations {
+	max-width: 700px;
 }
 }
 
@@ -211,6 +244,22 @@ h1.bulgary {
 	display: inherit;
 	line-height: 80px;
 	margin: 0;
+}
+}
+
+@media (max-width: 699px) {
+.listing {
+	width: 100%;
+	margin: 0 15px;
+}
+.listing:nth-of-type(5) {
+	padding-bottom: 0;
+}
+.listing:nth-of-type(6) {
+	padding-bottom: 60px;
+}
+.locations {
+	margin: 0 15px;
 }
 }
 
@@ -417,8 +466,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <h1 class="pop-clink">STORIeS</h1>
         </div>
         <div class="forest-intro">
-          <h3 class="white font-weight-400 no-margin-bottom margin-top-15">On display at all <a class="white text-underline" href="https://www.google.com/maps/search/Douglas+County+Libraries/@39.4355275,-104.9629699" target="_blank">DCL locations</a>, NOV 19-JAN 7</h3>
-          <h4 class="white font-weight-400">Plan your visit! Exhibit is open during library hours, no ticket or registration required.</h4>
+          <h3 class="white font-weight-400 no-margin-bottom margin-top-15">On display at all <a class="white text-underline" href="https://www.google.com/maps/search/Douglas+County+Libraries/@39.4355275,-104.9629699" target="_blank">DCL locations</a> until JAN 7.</h3>
+          <h4 class="white font-weight-400">Visit Now! Exhibit is open during library hours, no ticket or registration required.</h4>
+          <div class="large-text white font-weight-400">There is something for everyone, including an interactive <a style="font-weight: 400;" class="white text-underline" href="../s2/">scavenger hunt</a>. Find certain ornaments among the trees and <a style="font-weight: 400;" class="white text-underline" href="#prize" data-toggle="modal" data-target="#prize">you could win a prize</a>! </div>
         </div>
       </div>
     </div>
@@ -441,201 +491,195 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="carousel-cell"><img src="carousel/thirteen.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/fourteen.jpg" alt=""></div>
         <div class="carousel-cell"><img src="carousel/fifteen.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/sixteen.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/seventeen.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/eighteen.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/nineteen.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-one.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-two.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-three.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-four.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-five.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-six.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-seven.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-eight.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/twenty-nine.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-one.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-two.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-three.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-four.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-five.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-six.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-seven.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-eight.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/thirty-nine.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/forty.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/forty-one.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="carousel/forty-two.jpg" alt=""></div>
       </div>
     </div>
   </div>
   <div class="row detail-row">
     <div class="text-center detail-wrapper">
-      <div>Enjoy a wonder-filled holiday experience for the whole family! Our Forest of Stories exhibit displays more than 120 decorated trees, all dressed up in stories&mdash;from favorite children’s tales and classic literature, to crime thrillers, mysteries and more. There is something for everyone, including an interactive scavenger hunt. Find certain ornaments among the trees and you could win prizes! </div>
-      <h4 class="black no-margin-bottom">Visit all <a href="https://www.google.com/maps/search/Douglas+County+Libraries/@39.4355275,-104.9629699" target="_blank">seven locations</a> and discover the joy of stories.</h4>
+      <div class="margin-bottom-10">Enjoy a wonder-filled holiday experience for the whole family! Our Forest of Stories exhibit displays more than 120 decorated trees, all dressed up in stories&mdash;from favorite children's tales and classic literature, to crime thrillers, mysteries and more. </div>
+      <img class="center-block" src="bling.png" alt=""> </div>
+  </div>
+  <div class="row tree-row">
+    <div class="locations">
+      <h4>Visit all <a href="https://www.google.com/maps/search/Douglas+County+Libraries/@39.4355275,-104.9629699" target="_blank">seven locations</a> and discover the joy of stories.</h4>
     </div>
-    <div class="tree-wrapper">
-      <div class="tree-item">
-        <div class="location-box"><img src="castle-pines.jpg" alt=""> </div>
-        <div class="tree-list-wrapper">
-          <div class="tree-location">Castle Pines</div>
-          <div class="tree-list-content">
-            <ul class="tree-list">
-              <li>Colorado 14er</li>
-              <li>David Sedaris</li>
-              <li>Gardening</li>
-              <li>Hunger Games</li>
-            </ul>
-            <ul class="tree-list">
-              <li>The Lorax</li>
-              <li>Murder on the Orient Express</li>
-              <li>Newberry Classic</li>
-              <li>Outlander</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Roald Dahl’s The Witches</li>
-              <li>Thomas the Tank Engine </li>
-              <li>Twilight</li>
-            </ul>
-          </div>
-        </div>
+    <div class="tree-container">
+      <div class="listing">
+        <div class="tree-location">Castle Pines</div>
+        <ul class="tree-list">
+          <li>Colorado 14er</li>
+          <li>David Sedaris</li>
+          <li>Gardening</li>
+          <li>Hunger Games</li>
+          <li>The Lorax</li>
+          <li>Murder on the Orient Express</li>
+          <li>Newberry Classic</li>
+          <li>Outlander</li>
+          <li>Roald Dahl's The Witches</li>
+          <li>Thomas the Tank Engine </li>
+          <li>Twilight</li>
+        </ul>
       </div>
-      <div class="tree-item">
-        <div class="location-box"><img src="castle-rock.jpg" alt=""> </div>
-        <div class="tree-list-wrapper">
-          <div class="tree-location">Castle Rock</div>
-          <div class="tree-list-content">
-            <ul class="tree-list">
-              <li>Captain Underpants</li>
-              <li>Classic Superhero Comics</li>
-              <li>Clifford the Big Red Dog</li>
-              <li>Dolly Parton</li>
-              <li>Dungeons and Dragons</li>
-              <li>Eric Carle</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Harry Potter</li>
-              <li>I Spy</li>
-              <li>Janet Evanovich/Stephanie Plum</li>
-              <li>Little House on the Prairie</li>
-              <li>The Lord of the Rings</li>
-              <li>Neil Gaiman</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Outdoor Pursuits</li>
-              <li>Westerns</li>
-              <li>Where the Wild Things Are</li>
-              <li>Winnie-the-Pooh</li>
-              <li>The Wizard of Oz</li>
-              <li>World War II</li>
-            </ul>
-          </div>
-        </div>
+      <div class="listing">
+        <div class="tree-location">Castle rock</div>
+        <ul class="tree-list">
+          <li>Captain Underpants</li>
+          <li>Classic Superhero Comics</li>
+          <li>Clifford the Big Red Dog</li>
+          <li>Dolly Parton</li>
+          <li>Dungeons and Dragons</li>
+          <li>Eric Carle</li>
+          <li>Harry Potter</li>
+          <li>I Spy</li>
+          <li>Janet Evanovich/Stephanie Plum</li>
+          <li>Little House on the Prairie</li>
+          <li>The Lord of the Rings</li>
+          <li>Neil Gaiman</li>
+          <li>Outdoor Pursuits</li>
+          <li>Westerns</li>
+          <li>Where the Wild Things Are</li>
+          <li>Winnie-the-Pooh</li>
+          <li>The Wizard of Oz</li>
+          <li>World War II</li>
+        </ul>
       </div>
-      <div class="tree-item">
-        <div class="location-box"><img src="highlands-ranch.jpg" alt=""> </div>
-        <div class="tree-list-wrapper">
-          <div class="tree-location">Highlands Ranch</div>
-          <div class="tree-list-content">
-            <ul class="tree-list">
-              <li>Arthur</li>
-              <li>Brad Meltzer</li>
-              <li>C.J. Box</li>
-              <li>The Cat in the Hat</li>
-              <li>Charlotte's Web</li>
-              <li>Classic Rock</li>
-              <li>Eric Larsen</li>
-              <li>The Great Gatsby</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Harry Potter</li>
-              <li>Ian Fleming</li>
-              <li>The Iron Giant</li>
-              <li>James and the Giant Peach</li>
-              <li>Jan Brett</li>
-              <li>The Joy of Cooking </li>
-              <li>Little Golden Books</li>
-              <li>Manga</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Michael Schur</li>
-              <li>Pete the Cat</li>
-              <li>Police Procedurals</li>
-              <li>The Queen’s Gambit </li>
-              <li>Ready Player One</li>
-              <li>Sesame Street</li>
-              <li>World Records</li>
-            </ul>
-          </div>
-        </div>
+      <div class="listing">
+        <div class="tree-location">Highlands Ranch</div>
+        <ul class="tree-list">
+          <li>Arthur</li>
+          <li>Brad Meltzer</li>
+          <li>C.J. Box</li>
+          <li>The Cat in the Hat</li>
+          <li>Charlotte's Web</li>
+          <li>Classic Rock</li>
+          <li>Erik Larson</li>
+          <li>The Great Gatsby</li>
+          <li>Harry Potter</li>
+          <li>Ian Fleming</li>
+          <li>The Iron Giant</li>
+          <li>James and the Giant Peach</li>
+          <li>Jan Brett</li>
+          <li>The Joy of Cooking </li>
+          <li>Little Golden Books</li>
+          <li>Manga</li>
+          <li>Michael Schur</li>
+          <li>Pete the Cat</li>
+          <li>Police Procedurals</li>
+          <li>The Queen's Gambit </li>
+          <li>Ready Player One</li>
+          <li>Sesame Street</li>
+          <li>World Records</li>
+        </ul>
       </div>
-      <div class="tree-item">
-        <div class="location-box"><img src="lone-tree.jpg" alt=""> </div>
-        <div class="tree-list-wrapper">
-          <div class="tree-location">Lone Tree</div>
-          <div class="tree-list-content">
-            <ul class="tree-list">
-              <li>20,000 Leagues Under the Sea</li>
-              <li>Alice in Wonderland</li>
-              <li>Black Beauty</li>
-              <li>A Christmas Carol</li>
-              <li>Dracula</li>
-              <li>Edgar Allan Poe</li>
-              <li>Frankenstein</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Harry Potter</li>
-              <li>Jane Austen</li>
-              <li>The Jungle Book</li>
-              <li>The Legend of Sleepy Hollow</li>
-              <li>Little Red Riding Hood</li>
-              <li>Little Women</li>
-              <li>Moby Dick</li>
-            </ul>
-            <ul class="tree-list">
-              <li>The Princess Bride</li>
-              <li>Peter Rabbit</li>
-              <li>Sherlock Holmes</li>
-              <li>Treasure Island</li>
-              <li>H.G. Wells</li>
-            </ul>
-          </div>
-        </div>
+      <div class="listing">
+        <div class="tree-location">Lone Tree</div>
+        <ul class="tree-list">
+          <li>20,000 Leagues Under the Sea</li>
+          <li>Alice in Wonderland</li>
+          <li>Black Beauty</li>
+          <li>A Christmas Carol</li>
+          <li>Dracula</li>
+          <li>Edgar Allan Poe</li>
+          <li>Frankenstein</li>
+          <li>Harry Potter</li>
+          <li>Jane Austen</li>
+          <li>The Jungle Book</li>
+          <li>The Legend of Sleepy Hollow</li>
+          <li>Little Red Riding Hood</li>
+          <li>Little Women</li>
+          <li>Moby Dick</li>
+          <li>The Princess Bride</li>
+          <li>Peter Rabbit</li>
+          <li>Sherlock Holmes</li>
+          <li>Treasure Island</li>
+          <li>H.G. Wells</li>
+        </ul>
       </div>
-      <div class="tree-item">
-        <div class="location-box"><img src="parker.jpg" alt=""> </div>
-        <div class="tree-list-wrapper">
-          <div class="tree-location">Parker</div>
-          <div class="tree-list-content">
-            <ul class="tree-list">
-              <li>Around the World in 80 Days</li>
-              <li>Charlie and the Chocolate Factory</li>
-              <li>Chicka Chicka Boom Boom</li>
-              <li>Cinder</li>
-              <li>Despicable Me</li>
-              <li>Dune</li>
-              <li>Game of Thrones</li>
-              <li>Goodnight Moon</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Harold and the Purple Crayon</li>
-              <li>Harry Potter</li>
-              <li>If You Give a Mouse a Cookie</li>
-              <li>The Language of Flowers</li>
-              <li>Magic Tree House</li>
-              <li>The Midnight Library</li>
-              <li>The Nightmare Before Christmas</li>
-              <li>Peter Pan</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Peterson Field Guide to Birds</li>
-              <li>The Princess in Black</li>
-              <li>Rankin-Bass Animated Christmas</li>
-              <li>The Secret Garden</li>
-              <li>Stephen King’s IT</li>
-              <li>Where's Waldo?</li>
-              <li>Mo Willems</li>
-              <li>WWII Homefront</li>
-            </ul>
-          </div>
-        </div>
+      <div class="listing">
+        <div class="tree-location">Parker</div>
+        <ul class="tree-list">
+          <li>Around the World in 80 Days</li>
+          <li>Charlie and the Chocolate Factory</li>
+          <li>Chicka Chicka Boom Boom</li>
+          <li>Cinder</li>
+          <li>Despicable Me</li>
+          <li>Dune</li>
+          <li>Game of Thrones</li>
+          <li>Goodnight Moon</li>
+          <li>Harold and the Purple Crayon</li>
+          <li>Harry Potter</li>
+          <li>If You Give a Mouse a Cookie</li>
+          <li>The Language of Flowers</li>
+          <li>Magic Tree House</li>
+          <li>The Midnight Library</li>
+          <li>The Nightmare Before Christmas</li>
+          <li>Peter Pan</li>
+          <li>Peterson Field Guide to Birds</li>
+          <li>The Princess in Black</li>
+          <li>Rankin-Bass Animated Christmas</li>
+          <li>The Secret Garden</li>
+          <li>Stephen King's IT</li>
+          <li>Where's Waldo?</li>
+          <li>Mo Willems</li>
+          <li>WWII Homefront</li>
+        </ul>
       </div>
-      <div class="tree-item">
-        <div class="location-box"><img src="roxborough.jpg" alt=""> </div>
-        <div class="tree-list-wrapper">
-          <div class="tree-location">Roxborough & Louviers</div>
-          <div class="tree-list-content">
-            <ul class="tree-list">
-              <li>Bats in the Library</li>
-              <li>Bridgerton</li>
-              <li>Charlie Brown</li>
-            </ul>
-            <ul class="tree-list">
-              <li>The Chronicles of Narnia</li>
-              <li>Dinosaurs</li>
-              <li>Fancy Nancy</li>
-            </ul>
-            <ul class="tree-list">
-              <li>Gerald & Piggie</li>
-              <li>Mexican Gothic</li>
-              <li>Paw Patrol</li>
-            </ul>
-          </div>
+      <div class="listing">
+        <div class="tree-location">Roxborough</div>
+        <ul class="tree-list">
+          <li>Bridgerton</li>
+          <li>Charlie Brown</li>
+          <li>The Chronicles of Narnia</li>
+          <li>Dinosaurs</li>
+          <li>Fancy Nancy</li>
+          <li>Gerald & Piggie</li>
+          <li>Mexican Gothic</li>
+          <li>Paw Patrol</li>
+          <div class="tree-location-alt">Louviers</div>
+          <li>Bats in the Library</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="prize" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h3 class="text-center modal-title">Forest of Stories Scavenger Hunt</h3>
+        </div>
+        <div class="modal-body">
+          <div>Enter for a chance to win a Cozy at Home Gift Basket valued at approximately $45. Includes plush green throw blanket, forest puzzle, pine candle, and a copy of "The Mitten" by Jan Brett. Twelve winners will be drawn and contacted by January 31, 2023.</div>
+          <div class="padding-top-15"><i>Start your <a href="../s2/">scavenger hunt today</a>!</i></div>
         </div>
       </div>
     </div>
