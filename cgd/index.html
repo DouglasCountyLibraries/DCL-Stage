@@ -58,33 +58,111 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
 <style>
-.yellow-background {
-	background: #dff4fc url("yellow-background.jpg") top center repeat-x;
+@font-face {
+	font-family: 'Impression';
+	src: url('../shared-assets/web-fonts/ImpressionRegular.woff2') format('woff2'), url('../shared-assets/web-fonts/ImpressionRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
-.present-background {
+h1.impression {
+	font-family: 'Impression', serif;
+	font-size: 40px;
+	line-height: 40px;
+	color: #000
+}
+.intro {
+	text-align: center;
+	padding: 15px 30px;
+}
+.row.row-wrapper {
+	background: #fff url("slideshow-background.png") center top no-repeat;
+	padding-bottom: 60px;
+}
+.row.top-border {
+	background: #fff url("border-top.jpg") center center repeat-x;
+	height: 8px;
+}
+.row.botton-border {
+	background: #fff url("border-bottom.jpg") left center repeat-x;
+	height: 8px;
 }
 .present-wrapper {
+	background: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 30px 0 60px;
+	padding: 30px 0 40px;
 }
 .custom-container {
 	max-width: 1200px;
-	padding: 0 15px 60px 15px;
-	margin: -60px auto 0 auto;
+	background: #fff;
+	color: #000;
+	padding: 0;
+	margin: 0 auto;
 	position: relative;
+}
+.bottom-intro {
+	padding-top: 30px;
+}
+.photos {
+	display: flex;
+	justify-content: center;
+}
+.food {
+	padding: 0 3px;
+}
+.animated-progress {
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+	overflow: hidden;
+	position: relative;
+	background: rgba(141, 198, 63, 0.2);
+}
+.animated-progress span {
+	height: 100%;
+	display: block;
+	width: 0;
+	color: rgb(255, 251, 251);
+	line-height: 30px;
+	position: absolute;
+	text-align: end;
+	padding-right: 5px;
+}
+.progress-blue span {
+	background-color: #8DC63F;
+}
+.custom-progress-bar {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.green {
+	color: #8DC63F;
+}
+.number-raised {
+	text-align: center;
+	font-weight: 400;
+	/* margin: 0; */
+	color: #777;
+	margin-top: 20px;
+}
+.btn-custom {
+	background: #f89728;
+}
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+	background-color: #f88400;
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-item-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #fde5a2;
+	background: #fff;
 }
-.slideshow-item-list {
+.slideshow-item {
 	padding: 30px;
-	max-width: 450px;
 }
 .program-list li {
 	padding-bottom: 5px;
@@ -96,7 +174,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 #slideshow {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 40%;
+	padding-bottom: 60%;
 	width: 54%;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
@@ -116,15 +194,15 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* slide two */
 #slideshow div {
-	transform-origin: top right;
+	transform-origin: bottom left;
 }
 /* slide three */
 #slideshow div:nth-of-type(2n+1) {
-	transform-origin: top left;
+	transform-origin: bottom right;
 }
 /* slide four */
 #slideshow div:nth-of-type(3n+1) {
-	transform-origin: top right;
+	transform-origin: top center;
 }
 /* slide five */
 #slideshow div:nth-of-type(4n+1) {
@@ -132,7 +210,7 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 /* slide one */
 #slideshow div:nth-of-type(9n+1) {
-	transform-origin: center center;
+	transform-origin: top center;
 }
 #slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
 	z-index: 1
@@ -144,19 +222,19 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 	opacity: 1
 }
 #slideshow div:nth-of-type(1) {
-	background-image: url("early-literacy.jpg")
+	background-image: url("one.jpg")
 }
 #slideshow div:nth-of-type(2) {
-	background-image: url("camp-dcl.jpg")
+	background-image: url("two.jpg")
 }
 #slideshow div:nth-of-type(3) {
-	background-image: url("ged.jpg")
+	background-image: url("three.jpg")
 }
 #slideshow div:nth-of-type(4) {
-	background-image: url("lifelong-learning.jpg")
+	background-image: url("four.jpg")
 }
 #slideshow div:nth-of-type(5) {
-	background-image: url("endowment.jpg")
+	background-image: url("five.jpg")
 }
 /* captions */
 #slideshow span {
@@ -193,7 +271,7 @@ opacity:0;
 }
 }
 
-@media(min-width:42em) { /* bigger than 672px */
+@media (min-width:42em) { /* bigger than 672px */
 #slideshow span {
 	padding: .5em;
 	margin: .5em;
@@ -202,24 +280,23 @@ opacity:0;
 }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 760px) {
 .slideshow-item-wrapper {
 	flex-direction: column;
 }
 #slideshow {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 65%;
+	padding-bottom: 120%;
 	width: 100%;
 }
-.slideshow-item-list {
+.slideshow-item {
 	text-align: center;
-	padding: 30px 15px 35px 15px;
+	padding: 30px 15px 0 15px;
 }
+.bottom-intro {
+	padding-top: 0;
 }
-.photos {
-	display: flex;
-	justify-content: space-between;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -394,60 +471,59 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row yellow-background">
-    <div class="text-center present-background">
-      <div class="present-wrapper">
-        <div>
-          <h1 class="black">Support Our Community</h1>
-          <h4 class="black no-margin-bottom">Help Inspire a Love of Reading, Discovery and Connection</h4>
-          <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
-        </div>
-        <div><img src="rose.png" alt=""></div>
+  <div class="row top-border"></div>
+  <div class="row row-wrapper">
+    <div class="custom-container">
+      <div class="intro">
+        <h1 class="impression">Our story is just getting started&mdash;and it begins with you!</h1>
       </div>
-    </div>
-    <div class="custom-container black">
       <div class="slideshow-item-wrapper no-padding">
         <div class="slideshow-item" id="slideshow"> 
           <!-- define each background-image in CSS -->
           <div></div>
           <!-- #slideshow div:nth-of-type(1) --> 
-          <span>Early literacy programs</span>
+          <span></span>
           <div></div>
           <!-- #slideshow div:nth-of-type(2) --> 
-          <span>Camp DCL scholarships</span>
+          <span></span>
           <div></div>
           <!-- #slideshow div:nth-of-type(3) --> 
-          <span>GED and COHS scholarships</span>
+          <span></span>
           <div></div>
           <!-- #slideshow div:nth-of-type(4) --> 
-          <span>Lifelong Learning programs</span>
+          <span></span>
           <div></div>
           <!-- #slideshow div:nth-of-type(5) --> 
-          <span>DCL Foundation endowment fund</span>
+          <span></span>
           <div></div>
         </div>
-        <div class="slideshow-item slideshow-item-list">
+        <div class="slideshow-item">
           <div>
-            <ul class="program-list no-margin">
-              <li>Early literacy programs set kids up for school success.</li>
-              <li>Camp DCL scholarships help children gain confidence and self-esteem.</li>
-              <li>GED and Career Online High School scholarships help adults achieve their education and career goals.</li>
-              <li>Lifelong Learning programs and services support the ageless pursuit of learning and connection.</li>
-              <li>DCL Foundation endowment fund helps support the Foundation in perpetuity, laying a foundation for the library’s future success.</li>
-            </ul>
+            <div class="padding-bottom-15"><img src="cgd-logo.jpg" alt="Colorado Gives Day"></div>
+            <div class="large-text black">Please join the Douglas County Libraries (DCL) Foundation on Colorado Gives Day, Tuesday, December 6, to help support our community and the future of our libraries.</div>
+            <div class="padding-top-15">The DCL Foundation funds programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our libraries. </div>
           </div>
+          <div class="padding-top-20 padding-bottom-20"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-custom btn-lg" target="_blank">Donate Now</a> </div>
         </div>
       </div>
-      <div class="padding-top-30 padding-bottom-30">Please join the Douglas County Libraries (DCL) Foundation on Colorado Gives Day, Tuesday, December 6, to help support our community and the future of our libraries. The DCL Foundation funds programs and services that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our libraries.</div>
-      <div class="photos"><img class="food" src="https://source.unsplash.com/200x200/?dessert"><img class="food" src="https://source.unsplash.com/200x200/?cupcakes"><img class="food" src="https://source.unsplash.com/200x200/?cake"><img class="food" src="https://source.unsplash.com/200x200/?pie"><img class="food" src="https://source.unsplash.com/200x200/?candy"></div>
-      <div class="padding-top-30">You don’t have to wait until Colorado Gives Day to give—you may make a donation today! When you do, your gift counts toward our December 6 goal and receives a partial match from the $1 Million+ Incentive Fund. That means your dollars go further in support of your libraries.</div>
-      <div class="text-center padding-top-30">
-        <div class="large-text">JOIN US in building a legacy of programs and services that inspire a love of reading, discovery and connection.</div>
-        <h4 class="black no-margin-bottom text-center"><i>We’re just getting started!</i></h4>
+      <div class="padding-left-15 padding-right-15">
+        <div class="bottom-intro text-center margin-lg-200">You don’t have to wait until Colorado Gives Day to give—you may make a donation today! When you do, your gift counts toward our December 6 goal and receives a partial match from the $1 Million+ Incentive Fund. That means your dollars go further in support of your libraries.</div>
+        <div class="custom-progress-bar">
+          <h4 class="number-raised"><span class="green">$12,512</span> raised by <span class="green">113</span> donors</h4>
+          <!--Start Animated Progress Bar-->
+          <div class="animated-progress progress-blue"> <span data-progress="19"></span> </div>
+          
+          <!--End Animated Progress Bar-->
+          <!--<div class="small font-weight-400 text-dark">18% complete</div>-->
+        </div>
+        <div class="text-center padding-top-15 margin-lg-250">
+          <div class="large-text">JOIN US in building a legacy of programs and services that inspire a love of reading, discovery and connection.</div>
+          <h4 class="black no-margin-bottom text-center"><i>We’re just getting started!</i></h4>
+        </div>
       </div>
-      <div class="padding-top-20 padding-bottom-20 text-center"><a href="https://www.coloradogives.org/donate/DouglasCountyLibrariesFoundation" class="btn btn-primary btn-lg" target="_blank">Donate Now</a></div>
     </div>
   </div>
+  <div class="row botton-border"></div>
   <!-- InstanceEndEditable --> </div>
 <div class="row no-margin bg-gray-10">
   <div class="container text-center">
@@ -508,7 +584,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
+<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script>
 /* http://cssmojo.com/ken-burns-effect/ */
 function kbSlideshow() { // set .fx1 class on 1st img on page load
@@ -528,6 +604,15 @@ function kbSlideshow() { // set .fx1 class on 1st img on page load
 	}
 setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
 </script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> <!-- InstanceEndEditable -->
+<script>$(".animated-progress span").each(function () {
+  $(this).animate(
+    {
+      width: $(this).attr("data-progress") + "%",
+    },
+    2000
+  );
+  $(this).text($(this).attr("data-progress") + "%");
+});</script> 
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
