@@ -57,70 +57,151 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-.give-row {
-	background: #f5f5f5 url("row-background.gif") top center repeat-x;
+.white-top-row {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 50%, #f5f5f5 50%, #f5f5f5 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 50%, #f5f5f5 50%, #f5f5f5 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f5f5f5 50%, #f5f5f5 100%);
 }
-.box-wrapper, .item-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+.white-bottom-row {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+}
+.gray-circle {
+    border: 6px solid #e6e4e2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #4f878c;
+    background-color: #fff;
+    font-size: 60px;
+    height: 130px;
+    line-height: 115px;
+    margin: 0 auto;
+    text-align: center;
+    width: 130px;
+}
+.white-circle-wrapper {
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 146px;
+    margin: 0 auto;
+    width: 146px;
+}
+.gray-circle-alt {
+    border: 6px solid #e6e4e2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #4f878c;
+    background-color: #fff;
+    font-size: 42px;
+    height: 100px;
+    line-height: 90px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+}
+.gray-circle-wrapper-alt {
+    border: 6px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 112px;
+    margin: 0 auto;
+    width: 112px;
+}
+.item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.item-wrapper.gala {
+    align-items: center;
+    padding: 0 0 20px 0;
 }
 .item {
-	flex: 1;
-	margin: 15px;
-	min-width: 400px;
+    flex: 1;
+    margin: 15px;
+    min-width: 400px;
+}
+.candid {
+    max-width: 175px;
+    margin: 30px auto;
+}
+.candid img {
+    transition: all .4s ease-out;
+    opacity: .7;
+    width: 175px;
+    height: 175px;
+}
+.candid img:hover, .candid img:focus {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px 0;
+    transition: all .4s ease-out;
+}
+.gala-item {
+    padding: 15px;
+}
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .box-item {
-	flex: 1;
-	padding: 5px 30px 35px;
-	margin: 5px 35px;
-	background: #fff url("box-background.gif") top center repeat-x;
-	max-width: 325px;
-	border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 15px;
+    background: #fff;
+    border-radius: 3px;
+    max-width: 575px;
+    min-width: 425px;
 }
-.icon-circle-gray-lg {
-	border: 6px solid #f5f5f5;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #4f878c;
-	background-color: #fff;
-	font-size: 70px;
-	height: 150px;
-	line-height: 135px;
-	margin: 0 auto;
-	text-align: center;
-	width: 150px;
+.box-item-inner {
+    padding: 0px 30px 75px;
 }
-.icon-circle-gray {
-	border: 6px solid #f5f5f5;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #4f878c;
-	background-color: #fff;
-	font-size: 42px;
-	height: 100px;
-	line-height: 90px;
-	margin: 0 auto;
-	text-align: center;
-	width: 100px;
+.custom-icon {
+    top: -8px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+#endowment-modal > .modal-dialog > .modal-content > .modal-body > ul {
+    padding: 15px 30px 30px;
+}
+#endowment-modal > .modal-dialog > .modal-content > .modal-body > ul > li {
+    padding-bottom: 10px;
+}
+#endowment-modal > .modal-dialog > .modal-content > .modal-body > ul > li > b {
+    display: block;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1150px) {
+.page-nav {
+    max-width: 840px;
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 992px) {
-.box-item {
-	flex-direction: column;
-	min-width: 100%;
-	margin: 5px;
+.item {
+    flex-direction: column;
+    min-width: 100%;
+    margin: 15px 5px;
 }
 }
 
-@media (max-width: 992px) {
-.item {
-	flex-direction: column;
-	min-width: 100%;
-	margin: 15px 5px;
+@media (max-width: 915px) {
+.box-wrapper {
+    max-width: 600px;
 }
 }
 </style>
@@ -297,51 +378,54 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
   <div class="row border-top">
+    <div class="container text-center">
+      <h1 class="text-uppercase jumbo-text font-weight-400 no-margin-bottom">Foundation</h1>
+    </div>
+  </div>
+  <div class="row padding-bottom-15">
+    <div class="container text-center">
+      <h4 class="roboto margin-top-5">Supporting our community by inspiring a love of reading, discovery and connection.</h4>
+      <div class="margin-lg-200">Your support of the Foundation helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </div>
+    </div>
+  </div>
+  <div class="row padding-bottom-15">
+    <div class="page-nav">
+      <div class="page-nav-item"><a href="../donate/"><i class="pagenav-icon fa-solid fa-hand-holding-dollar"></i>Ways to Give</a></div>
+      <div class="page-nav-item"><a href="#endowment"><i class="pagenav-icon fa-solid fa-solid fa-umbrella"></i>Endowment</a></div>
+      <div class="page-nav-item"><a href="../foundation-board"><i class="pagenav-icon fa-solid fa-building-columns"></i>Board of Directors</a></div>
+    </div>
+  </div>
+  <div id="connet" class="row white-top-row">
+    <div class="white-circle-wrapper">
+      <div class="gray-circle"><i class="fa-solid fa-users"></i></div>
+    </div>
+  </div>
+  <div class="row bg-gray-5 padding-bottom-30">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 fade-in-text">Foundation</h1>
-        <div class="separator-container">
-          <div class="separator line-separator"><i class="fas fa-bookmark"></i></div>
-        </div>
-        <h4 class="roboto margin-lg-185">The Douglas County Libraries Foundation delivers funding and resources to help sustain the Douglas County Libraries to positively impact our community members so they can grow and thrive.</h4>
+        <h2 class="margin-top-10 margin-bottom-5">Connecting the Community</h2>
+        <h4 class="no-margin-top margin-lg-100">The Douglas County Libraries Foundation delivers funding and resources to help sustain Douglas County Libraries and positively impact our community members so they can grow and thrive.</h4>
       </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5 give-row padding-bottom-40 margin-top-10">
-    <div class="container text-center">
-      <div class="icon-circle-gray-lg"><i class="fas fa-hands-helping"></i></div>
-      <h1 class="margin-top-10 margin-bottom-5 text-uppercase font-weight-400">Ways to Give</h1>
-      <h5 class="no-margin-top margin-lg-100">Your <a href="../donate/">support of the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </h5>
-    </div>
-  </div>
-  <div class="row giving-row">
-    <div class="container text-center padding-top-30">
-      <h1 class="no-margin text-uppercase font-weight-400">Funding the Future</h1>
-      <h4 class="no-margin-top">Giving Now for Generations to Come</h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container">
       <div class="item-wrapper">
         <div class="item">
           <div id="box-one"></div>
-          <h3 class="text-center font-weight-400">Scholarships & Support</h3>
-          <div>The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a href="../camp-dcl/">Camp DCL</a> for kids and <a href="../adult-education/#adult-tutoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our weeklong spring and summer day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+13037643311" class="text-nowrap">(303) 764-3311</a>.</div>
+          <h3 class="text-center">Scholarships & Support</h3>
+          <div>The Foundation provides scholarships and financial support for customers attending various DCL programs with associated small fees, such as <a href="../camp-dcl/">Camp&nbsp;DCL</a> for kids and <a href="../adult-education/#tutoring-and-proctoring">high school equivalency</a> testing for adults. Thanks to these scholarships, kids in families facing financial hardship get the chance to play and learn at our day camps, and adults are able to achieve their high school graduation goals. For more information on accessing support for a fee-based program or service, please contact our Foundation at <a href="tel:+13037643311" class="text-nowrap">(303) 764-3311</a>.</div>
         </div>
         <div class="item">
           <div id="box-two"></div>
-          <h3 class="text-center font-weight-400">Cuddle Up & Read</h3>
+          <h3 class="text-center">Cuddle Up & Read</h3>
           <div>Through partnerships with area hospitals, <a href="../cuddle-up-and-read/">Cuddle Up & Read</a> provides new parents with a fun and meaningful introduction to the library and our early literacy services. The program includes small gifts for mom and baby and an invitation to get baby a library card. We also distribute DCL growth charts, complete with reading suggestions and library service information, to parents through participating pediatricians’ offices across the county. </div>
         </div>
         <div class="item">
           <div id="box-three"></div>
-          <h3 class="text-center font-weight-400">Summer Reading</h3>
+          <h3 class="text-center">Summer Reading</h3>
           <div>Each year, Douglas County Libraries' <a href="../summer-reading/">summer reading program</a> encourages kids to begin reading from a young age, and keeps them reading during school breaks, so they grow up with a strong foundation in literacy. Readers of all ages are encouraged to complete the reading program each year.</div>
         </div>
         <div id="exploration-stations" class="item">
           <div id="box-four"></div>
-          <h3 class="text-center font-weight-400">Exploration Stations</h3>
-          <div>The Foundation supports exciting new ways to inspire a love of discovery and connection in our community, and one of those ways is through Exploration Stations. Located at both Parker Adventist and Castle Rock Adventist hospitals, these interactive areas for kids are located near the family birth centers. The stations include interactive software programs, books, puzzles, activities, and toys that provide learning opportunities as well as entertainment for children.</div>
+          <h3 class="text-center">Fête des Fables Gala</h3>
+          <div>Our annual <a href="../fete-des-fables/">Fête des Fables Gala</a>, in addition to traditional cash donations, is a primary way that we fund our support of DCL programs. Each year, Fête des Fables invites guests to enjoy cocktails and a sumptuous meal, shop a fantastic silent auction, and mingle with friends old and new, while celebrating a classic story in a charming venue.</div>
         </div>
       </div>
     </div>
@@ -356,33 +440,89 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['summer-reading-one.jpg', 'summer-reading-two.jpg', 'summer-reading-three.jpg', 'summer-reading-four.jpg', 'summer-reading-five.jpg', 'summer-reading-six.jpg'];
     $('<img alt="Cause an Effect" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
 	
-	var images = ['station-one.jpg', 'station-two.jpg', 'station-three.jpg', 'station-four.jpg', 'station-five.jpg', 'station-six.jpg'];
-    $('<img alt="Exploration Stations" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
+	var images = ['gala-one.jpg', 'gala-two.jpg', 'gala-three.jpg', 'gala-four.jpg', 'gala-five.jpg', 'gala-six.jpg', 'gala-seven.jpg', 'gala-eight.jpg', 'gala-nine.jpg', 'gala-ten.jpg', 'gala-eleven.jpg'];
+    $('<img alt="Fete des Fables Gala" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');
 </script>
-  <div class="row bg-gray-5 give-row padding-bottom-40 margin-top-10">
-    <div class="container text-center">
-      <div class="icon-circle-gray-lg"><i class="fas fa-university"></i></div>
-      <h1 class="margin-top-10 margin-bottom-5 text-uppercase font-weight-400">Board of Directors</h1>
-      <div class="no-margin-top margin-lg-150 padding-bottom-15">The <a href="../foundation-board/">Foundation’s Board of Directors</a> oversees the <a href="foundation-annual-report.pdf">business and affairs</a> of the Foundation and the <a href="five-year-foundation-report.pdf">fundraising activities</a> that are vital to supporting all of the programs and services of the district. </div>
+  <div id="endowment" class="row white-bottom-row">
+    <div class="white-circle-wrapper">
+      <div class="gray-circle"><i style="position:relative;left:2px;bottom:2px;" class="fa-solid fa-umbrella"></i></div>
     </div>
   </div>
-  <div class="row white bg-teal text-center padding-top-40 padding-bottom-40">
-    <div class="container">
-      <h2 class="white roboto no-margin">Questions or comments?</h2>
-      <a href="#" type="button" class="margin-10 btn btn-lg text-uppercase btn-primary" data-toggle="modal" data-target="#mediamodal">Contact the Foundation</a>
-      <div>or call <a href="tel:+13037643311" class="white text-nowrap">(303) 764-3311</a></div>
+  <div class="row">
+    <div class="container text-center margin-lg-150">
+      <h2 class="margin-top-10 margin-bottom-5">Foundation Endowment</h2>
+      <h4 class="roboto no-margin-top margin-lg-100">Funding the Future: Giving Now for Generations to Come</h4>
+      <div>Our <a href="#" type="button" data-toggle="modal" data-target="#endowment-modal">endowment fund</a>, managed by the Rose Community Foundation, strengthens the library’s ability to support and serve our community well into the future. Your legacy gift <a href="#" type="button" data-toggle="modal" data-target="#endowment-modal">to the Douglas County Libraries Foundation Fund</a> is tax-deductible.</div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="mediamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h3 class="text-center modal-title">Contact the Foundation</h3>
+  </div>
+  <div class="row padding-bottom-60">
+    <div class="container text-center">
+      <h5 class="padding-top-15 no-margin">Questions about the Foundation or Endowment?</h5>
+      <div class="padding-top-20 padding-bottom-20"><a href="#" type="button" class="btn btn-lg text-uppercase btn-primary" data-toggle="modal" data-target="#contact-modal">Contact Us</a></div>
+      <div>or call <a href="tel:+13037643311" class="text-nowrap">(303) 764-3311</a></div>
+    </div>
+  </div>
+  <div class="row bg-gray-5 padding-top-40 padding-bottom-80">
+    <div class="box-wrapper">
+      <div id="support" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper-alt">
+            <div class="gray-circle-alt"><i class="fa-solid fa-hands-helping"></i></div>
           </div>
-          <div class="modal-body">
-            <iframe class="embed-responsive-item" src="https://form.jotform.com/92044974642159" frameborder="0" style="width: 100%;height:435px;border:none;" scrolling="no"> </iframe>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10">We Can Help</h3>
+          <div class="margin-bottom-10">The Foundation supports other agencies and organizations in our community and across Colorado.</div>
+          <div>We recognize that strong communities happen when agencies and organizations help each other achieve their missions. We can provide support to your organization’s programs with financial funding, in-kind sponsorships, or communication and promotional assistance. Tell us of your need and we will reply in 2-4 weeks.</div>
+          <div class="text-center padding-top-20 padding-bottom-20"> <a href="support-request/" target="_blank" class="btn btn-lg text-uppercase btn-primary" type="button">Get Started</a></div>
+          <div>Please be aware that the application and approval process may take up to 8 weeks. Schedule your program accordingly.</div>
+        </div>
+      </div>
+      <div id="candid" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper-alt">
+            <div class="gray-circle-alt"><i class="fa-solid fa-file-certificate"></i></div>
           </div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10">Candid Seal of Transparency</h3>
+          <div>Douglas County Libraries Foundation earned Candid’s Seal of Transparency for making information on our nonprofit <a href="https://www.guidestar.org/profile/shared/1c1e93a9-5a17-4ac1-984e-b05142bcaaca" target="_blank">readily available to supporters</a>. </div>
+          <div class="candid"><a href="https://www.guidestar.org/profile/shared/1c1e93a9-5a17-4ac1-984e-b05142bcaaca" target="_blank"><img src="https://widgets.guidestar.org/TransparencySeal/8254241" alt="Candid Seal of Transparency"/></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="endowment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h3 class="text-center modal-title">Frequently Asked Questions</h3>
+        </div>
+        <div class="modal-body">
+          <ul class="list-unstyled">
+            <li><b>What is an endowment?</b> An endowment fund is money set aside (invested) to earn revenue to fund a charitable activity. Unlike a typical investment fund, the beneficiary of an endowment fund is the nonprofit organization. The principal value of the endowment fund is kept intact, while the investment earnings can be used. Thus, an endowment fund can be held permanently, allowing donors to support causes they care about in perpetuity. Excess income is reinvested in the endowment to grow the fund and protect it from inflationary pressures. Endowments provide perpetual support that strengthens the vitality of their nonprofit into the future.</li>
+            <li><b>Why does Douglas County Libraries Foundation have an endowment?</b> Endowments help protect an organization against market volatility and unexpected expenses while also creating stability. A well-managed endowment sets an organization up for future success by laying a foundation for fiscal responsibility and taking pressure away from an annual fund to allow for more independence and freedom. Endowments are able to grow donations as investments and provide additional income for the nonprofit’s mission. When nonprofits set up an endowment, it not only opens another channel of income, but it can help the organization withstand economic downturns and unexpected expenses by managing resources well.</li>
+            <li><b>Who manages the library’s endowment?</b> Local Denver nonprofit Rose Community Foundation manages Douglas County Libraries Foundation’s endowment, including administrative services and professionally managing the portfolio of funds. For more than 20 years, Rose Community Foundation has supported dozens of nonprofit organizations in creating and growing endowment funds.</li>
+            <li><b>May I donate to the endowment?</b> A donation to an endowment lives on in perpetuity and continues to earn income for the Foundation. If you designate your donation for endowment, the Foundation will honor this designation. Donations to endowment funds are tax-deductible.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h3 class="text-center modal-title">Contact the Foundation</h3>
+        </div>
+        <div class="modal-body">
+          <iframe class="embed-responsive-item" src="https://form.jotform.com/92044974642159" frameborder="0" style="width: 100%;height:435px;border:none;" scrolling="no"> </iframe>
         </div>
       </div>
     </div>
@@ -447,29 +587,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> 
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
- </script> 
-<script type="text/javascript">
-$(document).ready(function() {
-  if(window.location.href.indexOf('#king-soopers') != -1) {
-    $('#king-soopers').modal('show');
-  }
-});
-</script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
-<script>
-	var cards = $(".carousel-cell");
-for (var i = 0; i < cards.length; i++) {
-  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
-  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
-  cards.eq(target1).before(cards.eq(target2));
-}
- </script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --><!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
