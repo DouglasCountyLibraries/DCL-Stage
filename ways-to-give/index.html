@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
 <!-- Minimize page flickering for Google Optimize -->
 <style>
 .async-hide {
-	opacity: 0 !important
+    opacity: 0 !important
 }
 </style>
 
@@ -46,7 +47,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -80,15 +81,34 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 .box-item-inner {
     padding: 0px 30px 75px;
 }
-.gray-circle-wrapper {
-    border: 6px solid #fff;
-    border-radius: 50%;
-    box-sizing: border-box;
-    height: 112px;
-    margin: 0 auto;
-    width: 112px;
+.white-bottom-row {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
 }
 .gray-circle {
+    border: 6px solid #e6e4e2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #4f878c;
+    background-color: #fff;
+    font-size: 60px;
+    height: 130px;
+    line-height: 115px;
+    margin: 0 auto;
+    text-align: center;
+    width: 130px;
+}
+.white-circle-wrapper {
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 146px;
+    margin: 0 auto;
+    width: 146px;
+}
+.gray-circle-alt {
     border: 6px solid #e6e4e2;
     border-radius: 50%;
     box-sizing: border-box;
@@ -101,11 +121,13 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     text-align: center;
     width: 100px;
 }
-.white-bottom-row {
-    background: #ffffff;
-    background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
-    background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
-    background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+.gray-circle-wrapper-alt {
+    border: 6px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 112px;
+    margin: 0 auto;
+    width: 112px;
 }
 .carousel-cell {
     text-align: center;
@@ -161,7 +183,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -329,12 +351,13 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center">
         <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Ways to Give</h1>
         <div class="container text-center">
-      <h4 class="roboto margin-top-5">Supporting our community by inspiring a love of reading, discovery and connection.</h4>
-      <div class="margin-lg-200">Your support of <a href="../foundation/">the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </div>
-    </div>
+          <h4 class="roboto margin-top-5">Supporting our community by inspiring a love of reading, discovery and connection.</h4>
+          <div class="margin-lg-200">Your support of <a href="../foundation/">the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </div>
+        </div>
       </div>
     </div>
-  </div>  <div style="padding-bottom: 25px;" class="row">
+  </div>
+  <div style="padding-bottom: 25px;" class="row">
     <div class="page-nav">
       <div class="page-nav-item"><a href="../donate/"><i class="pagenav-icon fa-solid fa-heart"></i>Donate Now</a></div>
       <div class="page-nav-item"><a href="../foundation/"><i class="pagenav-icon fa-solid fa-solid fa-umbrella"></i>Foundation</a></div>
@@ -393,8 +416,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="box-wrapper">
       <div id="donate-today" class="box-item">
         <div class="white-bottom-row">
-          <div class="gray-circle-wrapper">
-            <div class="gray-circle"><i class="fa-solid fa-hand-heart"></i></div>
+          <div class="gray-circle-wrapper-alt">
+            <div class="gray-circle-alt"><i class="fa-solid fa-hand-heart"></i></div>
           </div>
         </div>
         <div class="box-item-inner">
@@ -412,8 +435,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div id="everyday-giving" class="box-item">
         <div class="white-bottom-row">
-          <div class="gray-circle-wrapper">
-            <div class="gray-circle"><i class="fa-solid fa-sun-haze"></i></div>
+          <div class="gray-circle-wrapper-alt">
+            <div class="gray-circle-alt"><i class="fa-solid fa-sun-haze"></i></div>
           </div>
         </div>
         <div class="box-item-inner">
@@ -426,8 +449,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div id="additional-ways" class="box-item">
         <div class="white-bottom-row">
-          <div class="gray-circle-wrapper">
-            <div class="gray-circle"><i class="fa-solid fa-arrows-repeat fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i></div>
+          <div class="gray-circle-wrapper-alt">
+            <div class="gray-circle-alt"><i class="fa-solid fa-arrows-repeat fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i></div>
           </div>
         </div>
         <div class="box-item-inner">
@@ -442,8 +465,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
       <div id="planned-giving" class="box-item">
         <div class="white-bottom-row">
-          <div class="gray-circle-wrapper">
-            <div class="gray-circle"><i class="fa-solid fa-hand-holding-seedling"></i></div>
+          <div class="gray-circle-wrapper-alt">
+            <div class="gray-circle-alt"><i class="fa-solid fa-hand-holding-seedling"></i></div>
           </div>
         </div>
         <div class="box-item-inner">
@@ -468,9 +491,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div>or call <a href="tel:+13037643311" class="text-nowrap">(303) 764-3311</a></div>
     </div>
   </div>
-  <div id="other-ways" class="row text-center padding-top-40 padding-bottom-80">
+  <div id="other-ways" class="row white-bottom-row">
+    <div class="white-circle-wrapper">
+      <div class="gray-circle"><i style="position:relative;left:2px;bottom:2px;" class="fa-solid fa-hands-helping"></i></div>
+    </div>
+  </div>
+  <div class="row text-center padding-bottom-80">
     <div class="container margin-lg-150">
-      <h1 class="font-weight-400">Other Ways to Give</h1>
+      <h2 class="margin-top-10 margin-bottom-5">Other Ways to Give</h2>
       <h4 class="no-margin-top">Give of Your Time or Donate Materials</h4>
       <div>Douglas County Libraries gratefully accepts donations of new and used books, music CDs, and DVDs. Before donating, please <a href="../library-basics/#donate-books-and-more">review these guidelines</a>. Volunteering at the library helps to provide resources for learning and leisure to improve the lives of the people in our communities. Learn more about <a href="../volunteer/">volunteer opportunities</a> at DCL.</div>
     </div>
@@ -680,4 +708,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
