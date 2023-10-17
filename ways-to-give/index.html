@@ -57,7 +57,101 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
-<style></style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<style>
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.box-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 15px;
+    background: #fff;
+    border-radius: 3px;
+    max-width: 575px;
+    min-width: 425px;
+}
+.box-item-inner {
+    padding: 0px 30px 75px;
+}
+.gray-circle-wrapper {
+    border: 6px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 112px;
+    margin: 0 auto;
+    width: 112px;
+}
+.gray-circle {
+    border: 6px solid #e6e4e2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #4f878c;
+    background-color: #fff;
+    font-size: 42px;
+    height: 100px;
+    line-height: 90px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+}
+.white-bottom-row {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+}
+.carousel-cell {
+    text-align: center;
+    width: 100%;
+}
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+}
+.carousel-cell > div > .img-responsive {
+    margin: 0 auto;
+}
+/* big buttons, no circle */
+.flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: #efeeed;
+}
+.flickity-prev-next-button.no-svg {
+    color: #efeeed;
+}
+.flickity-prev-next-button {
+    top: 40%;
+}
+.flickity-viewport {
+    transition: height 0.6s;
+}
+blockquote {
+    font-size: 18px!important;
+    max-width: 725px;
+    margin: 0 auto;
+}
+
+@media (max-width: 915px) {
+.box-wrapper {
+    max-width: 600px;
+}
+}
+</style>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -233,10 +327,129 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row padding-bottom-20 border-top">
     <div class="container">
       <div class="text-center">
-        <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Donate</h1>
+        <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Ways to Give</h1>
         <div class="container text-center">
-          <h4 class="roboto margin-top-5">Supporting our community by inspiring a love of reading, discovery and connection.</h4>
-          <div class="margin-lg-200">Your support of <a href="../foundation/">the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </div>
+      <h4 class="roboto margin-top-5">Supporting our community by inspiring a love of reading, discovery and connection.</h4>
+      <div class="margin-lg-200">Your support of <a href="../foundation/">the Foundation</a> helps fund programs that reach youth, adults and families in Douglas County and across Colorado, and helps ensure the long-term success of our outstanding libraries. </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container text-center padding-bottom-30">
+      <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 8000 }'>
+        <div class="carousel-cell">
+          <div><img class="img-responsive" alt="" src="donate-four.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"I am continually impressed by the vast array of resources, events, and offerings by DCL. Thank you for serving the community with such intentionality."</blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img class="img-responsive" alt="" src="donate-seven.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"Although my husband is gone now, he relied on one of your volunteers to deliver his books. ...Don’t know what I would do without the library. Even your tech helpers are great."</blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img class="img-responsive" alt="" src="donate-five.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"Being a good reader is a good way to give kids confidence and enable future learning. I love that you are making reading fun."</blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img class="img-responsive" alt="" src="donate-two.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"I honestly don’t think I could have completed my GED without the help of DCL."</blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img class="img-responsive" alt="" src="donate-eight.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"I am thankful to live in a county that promotes educational and self-improvement programs through the library system. Please continue to do this excellent work."</blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div><img class="img-responsive" alt="" src="donate-ten.jpg" />
+            <div class="padding-top-15">
+              <blockquote>"I value the library...it is a place we can all go to find information, a place to work and meet, a place to read for pleasure, a place to borrow books, videos, and a lot of other things. It is a resource for everyone...and it is free."</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-gray-5 padding-top-40 padding-bottom-30">
+    <div class="box-wrapper">
+      <div id="donate-today" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-hand-heart"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10">Donate Today</h3>
+          <ul class="no-margin-bottom">
+            <li>Donate now via <a href="https://www.coloradogives.org/organization/DouglasCountyLibrariesFoundation" target="_blank">ColoradoGives.org</a>. You may direct your donation to a specific program.</li>
+            <li>
+              <div>Mail a check payable to Douglas County Libraries Foundation to:</div>
+              <div style="margin-left: 25px" class="margin-top-5 margin-bottom-5">Douglas County Libraries Foundation<br>
+                100 S. Wilcox St.<br>
+                Castle Rock, CO 80104</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="everyday-giving" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-sun-haze"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10">Everyday Giving</h3>
+          <ul class="no-margin-bottom">
+            <li>Enroll in <a href="#soopers" data-toggle="modal" data-target="#king-soopers">King Soopers Community Rewards</a>, link your Shopper's Card, and the Foundation will earn donations at no added cost to you.</li>
+            <li>The Foundation <a href="../library-basics/#donate-books-and-more">collects donations</a> of new and used books and offers them for sale at discounted prices. <a href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A3DWH3KNEEAD5M&merchant=A3DWH3KNEEAD5M&redirect=true" target="_blank">Shop our bookstore now!</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="additional-ways" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-arrows-repeat fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10">Additional Ways to Support</h3>
+          <ul class="no-margin-bottom">
+            <li>Honor your loved one with a <a href="#bookplate" data-toggle="modal" data-target="#bookplate">memorial bookplate</a>.</li>
+            <li>Attend our annual <a href="../fete-des-fables/">Fête des Fables Gala</a>.</li>
+            <li>Contact us for information about Tribute Gifts, Workplace Giving and/or Matching Gifts.</li>
+            <li>Donate all or part of your <a href="#refund" data-toggle="modal" data-target="#refund">Colorado state tax refund</a>.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="planned-giving" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-hand-holding-seedling"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <h3 class="text-center margin-top-10">Planned & Legacy Giving</h3>
+          <div>Designate a gift to the Foundation or endowment in your will or trust to help ensure the success of our libraries for generations to come:</div>
+          <ul class="margin-top-5 margin-bottom-5">
+            <li>Tax ID: 84-1207775</li>
+            <li>Address (if needed):</li>
+            <div style="margin-left: 25px" class="margin-top-5 margin-bottom-5">Douglas County Libraries Foundation<br>
+              100 S. Wilcox St.<br>
+              Castle Rock, CO 80104</div>
+          </ul>
         </div>
       </div>
     </div>
@@ -249,7 +462,83 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div>or call <a href="tel:+13037643311" class="text-nowrap">(303) 764-3311</a></div>
     </div>
   </div>
+  <div class="row white bg-teal text-center padding-top-40 padding-bottom-80">
+    <div class="container margin-lg-150">
+      <h1 class="white font-weight-400">Other Ways to Give</h1>
+      <h4 class="white no-margin-top">Give of Your Time or Donate Materials</h4>
+      <div>Douglas County Libraries gratefully accepts donations of new and used books, music CDs, and DVDs. Before donating, please <a class="white text-underline" href="../library-basics/#donate-books-and-more">review these guidelines</a>. Volunteering at the library helps to provide resources for learning and leisure to improve the lives of the people in our communities. Learn more about <a class="white text-underline" href="../volunteer/">volunteer opportunities</a> at DCL.</div>
+    </div>
+  </div>
   
+  <!-- Modal -->
+  <div class="modal fade" id="king-soopers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center no-margin">King Soopers Community Rewards</h3>
+        </div>
+        <div class="modal-body">
+          <div>
+            <ul>
+              <li>Go to <a href="https://www.kingsoopers.com/account/communityrewards/" target="_blank">King Soopers Community Rewards &raquo;</a></li>
+              <li>Search for "Douglas County Libraries" or "ri433"</li>
+              <li>Click Enroll</li>
+            </ul>
+          </div>
+          <div class="text-center padding-bottom-15"><img src="king-soopers.gif" alt="King Soopers Community Rewards Signup"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="bookplate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center no-margin">Memorial Bookplate</h3>
+        </div>
+        <div class="modal-body text-left padding-right-30 padding-left-30 padding-bottom-40">
+          <div class="text-center padding-bottom-15"><img src="digital-bookplate.jpg?6222" alt="DCL Digital Bookplate Example"></div>
+          <div>Our acquisitions team will help you choose an appropriate book to represent your special person and place a digital bookplate in the catalog record with the message of your choice. You can choose to see the digital image with the message prior to its addition in the catalog.</div>
+          <ul class="padding-top-15 no-margin-bottom">
+            <li>Donation: $100</li>
+            <li>100 character limit message</li>
+            <li>Dedication remains for five years or until the book is removed from our catalog, whichever comes first.</li>
+            <li>Contact us with questions or requests at <a href="tel:+13037643311">(303) 764-3311</a>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="refund" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="text-center no-margin">Donate From Your State Tax Refund</h3>
+        </div>
+        <div class="modal-body text-left padding-right-30 padding-left-30 padding-bottom-30">
+          <div>
+            <ul>
+              <li>Use Voluntary Contributions form DR0104CH</li>
+              <li>Enter the following on line 19&mdash;Donate to a Colorado Nonprofit Fund:</li>
+              <ul class="margin-top-10 margin-bottom-10">
+                <li>The amount of your donation</li>
+                <li>Registration number 20043004512</li>
+                <li>Douglas County Libraries Foundation</li>
+              </ul>
+              <li>For more information, visit <a href="https://refundwhatmatters.org/" target="_blank">ReFUND CO</a>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
