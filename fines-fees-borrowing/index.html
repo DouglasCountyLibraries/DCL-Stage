@@ -71,6 +71,9 @@ th {
     background: #f5f5f5;
     font-weight: 300;
 }
+#ill-fee:target {
+    background-color: #f5f5f5;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -282,7 +285,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <ul>
         <li>Customers are allowed 200 requests at any one time. OverDrive allows customers 20 holds at a time.</li>
         <li>Customers may request the same title through Interlibrary Loan once per 6 months.</li>
-        <li>Interlibrary Loans from academic/medical institutions may incur a lending fee from the lending library. DCL does not charge customers for using our Interlibrary Loan service. If there is a fee, customers will be contacted via email for approval before we borrow the item. Customers must agree to accept responsibility for the charges before we proceed with the request. When applicable, the average fee ranges from $5-$25, and will be placed on the customer’s library account to be paid at their earliest convenience.</li>
+        <li id="ill-fee">Interlibrary Loans from academic/medical institutions may incur a lending fee from the lending library. DCL does not charge customers for using our Interlibrary Loan service. If there is a fee, customers will be contacted via email for approval before we borrow the item. Customers must agree to accept responsibility for the charges before we proceed with the request. When applicable, the average fee ranges from $5-$25, and will be placed on the customer’s library account to be paid at their earliest convenience.</li>
       </ul>
       <div id="renew">
         <h4>Renewals </h4>
@@ -299,7 +302,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <ul>
         <li>Items overdue by 28 days are considered lost and a replacement cost will be billed to the customer.</li>
         <li>Lost Prospector and Interlibrary Loan items will incur a $40 fine unless we can work with the lending library to reduce the fine.</li>
-        <li>Interlibrary Loans from academic/medical institutions may incur a lending fee from the lending library. When applicable, this fee ranges from $5-$25, and will be placed on the customer's library account to be paid at their earliest convenience.</li>
+        <li>Interlibrary Loans from academic/medical institutions <a href="#ill-fee">may incur a lending fee</a> from the lending library. When applicable, this fee ranges from $5-$25, and will be placed on the customer's library account to be paid at their earliest convenience.</li>
         <li>Book Club Express kits:</li>
         <ul>
           <li>Due dates for kits cannot be extended. There is no grace period.</li>
