@@ -67,6 +67,10 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     padding: 0 15px 60px;
     margin: 0 auto;
 }
+th {
+    background: #f5f5f5;
+    font-weight: 300;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -278,7 +282,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <ul>
         <li>Customers are allowed 200 requests at any one time. OverDrive allows customers 20 holds at a time.</li>
         <li>Customers may request the same title through Interlibrary Loan once per 6 months.</li>
-		<li>Interlibrary Loans from academic/medical institutions may incur a lending fee from the lending library. DCL does not charge customers for using our Interlibrary Loan service. If there is a fee, customers will be contacted via email for approval before we borrow the item. Customers must agree to accept responsibility for the charges before we proceed with the request. When applicable, the average fee ranges from $5-$25, and will be placed on the customer’s library account to be paid at their earliest convenience.</li>
+        <li>Interlibrary Loans from academic/medical institutions may incur a lending fee from the lending library. DCL does not charge customers for using our Interlibrary Loan service. If there is a fee, customers will be contacted via email for approval before we borrow the item. Customers must agree to accept responsibility for the charges before we proceed with the request. When applicable, the average fee ranges from $5-$25, and will be placed on the customer’s library account to be paid at their earliest convenience.</li>
       </ul>
       <div id="renew">
         <h4>Renewals </h4>
@@ -305,56 +309,61 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </ul>
       If a customer accumulates a total of $20 or more in fines and fees, the customer may not check out any library materials until the fine is paid down. If the total exceeds $50, the account may be referred to a collection agency.
       <h4>Customer Overdue Notification and Debt Collection Timeline</h4>
-      <table class="table-bordered table-responsive table-striped margin-bottom-15">
+      <table class="table-bordered table-responsive margin-bottom-30">
         <tr>
-          <td width="30%"><h4>Number of days past due date:</h4></td>
-          <td><h4>Action:</h4></td>
+          <th scope="col" width="25%">Number of days past due date:</th>
+          <th scope="col">Action:</th>
         </tr>
         <tr>
-          <td width="30%">12</td>
+          <td width="25%">7</td>
           <td>DCL sends first overdue notice to customer via email or phone.</td>
         </tr>
         <tr>
-          <td width="30%">24</td>
+          <td width="25%">14</td>
           <td>DCL sends second overdue notice to customer via email or phone.</td>
         </tr>
         <tr>
-          <td width="30%">36</td>
-          <td>Final notice sent by email or U.S. mail, saying customer will be charged for item(s) not returned.</td>
-        </tr>
-        <tr>
-          <td width="30%">48-69</td>
+          <td width="25%">28</td>
           <td><ul>
-              <li>On   day 48, DCL puts replacement charge(s) on customer&rsquo;s account.</li>
-            </ul>
-            <p>If account goes over $50*: </p>
-            <ul>
-              <li>&ldquo;Billing Notice&rdquo; is placed on customer account.</li>
-              <li>Customer will receive an email or letter indicating that the balance must be paid or the account will be sent to Unique Management Services Inc. for collection. Customer has 21 days to respond once communication is sent out.</li>
-              <li>&ldquo;Billing Notice&rdquo; is posted on the account each time an email or letter is sent.</li>
+              <li>Item is considered lost and DCL puts replacement charge(s) on customer's account.</li>
+              <li>Final notice sent by email or U.S. mail, telling customer they will be charged for item(s) not returned.</li>
             </ul></td>
         </tr>
         <tr>
-          <td width="30%">70-77</td>
+          <td colspan="2">If account fees go over $50*:
+            <ul>
+              <li>"Billing Notice" is placed on customer account.</li>
+              <li>"Billing Notice" is posted on the account each time an email or letter is sent by DCL.</li>
+            </ul></td>
+        </tr>
+      </table>
+      <table class="table-bordered table-responsive margin-bottom-15">
+        <tr>
+          <th scope="col" width="25%">Number of days past Billing Notice:</th>
+          <th scope="col">Action:</th>
+        </tr>
+        <tr>
+          <td width="25%">1</td>
           <td><ul>
-              <li>DCL   sends account to Unique Management and adds a $10 collection agency fee to customer account.</li>
-              <li>&ldquo;Message to Borrower&rdquo; note is placed on customer account, noting &ldquo;Zero balance required to stop collection activity.&rdquo;</li>
+              <li>DCL sends account to Unique Management and adds a $10 collection agency fee to customer account.**</li>
+              <li>"Message to Borrower" note is placed on customer account, noting "Zero balance required to stop collection activity."</li>
               <li>Unique Management sends customer a letter as soon as it receives customer account, usually the same day. Customer has three weeks to respond.</li>
             </ul></td>
         </tr>
         <tr>
-          <td width="30%">Three weeks later</td>
+          <td width="25%">22-42</td>
           <td><ul>
-              <li>If no response, Unique Management sends customer a second letter.&nbsp; </li>
-              <li>If customer returns only some materials or makes a partial payment, Unique Management sends another letter encouraging customer to resolve the remaining   balance. </li>
+              <li>If no response from customer, Unique Management calls the customer.</li>
+              <li>If customer returns only some materials or makes a partial payment, Unique Management sends another letter encouraging customer to resolve the remaining balance.</li>
             </ul></td>
         </tr>
         <tr>
-          <td width="30%">Three weeks later and forward</td>
-          <td>If customer still owes the library money, Unique Management begins calling the customer. It will continue sending mail and   making calls until the amount due is paid.</td>
+          <td width="25%">65+</td>
+          <td>If customer's total fee is still not resolved, Unique Management calls the customer. They will continue sending mail and making calls until the amount due is paid.</td>
         </tr>
       </table>
-      <div>* If customer reports an item as lost and the replacement value of the item is over $50, or if total account fees/fines go over $50, the collection process starts.</div>
+      <div class="margin-bottom-5">*If customer reports an item as lost and the replacement value of the item is over $50, or if total account fees/fines go over $50, the collection process starts.</div>
+      <div>**Library debts are not reported to credit bureaus by collection agencies. As such, customers' credit reports are not adversely affected by library debt.</div>
       <h4>Items Returned to Other Library Systems</h4>
       The customer is responsible for the item until it reaches a DCL library.
       <h4>Library Material Replacement</h4>
