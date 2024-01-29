@@ -114,43 +114,37 @@ li.active > a.tab > h2 {
     margin: 0 auto;
     padding: 0 15px;
 }
-.databases {
+.meetings {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     width: 1030px;
     padding: 10px 0 60px;
 }
-.database-item {
+.meeting-item {
     border-bottom: 2px solid #f5f5f5;
     padding: 20px 0;
     width: 475px;
     margin: 0 20px;
 }
-.database-item:nth-last-of-type(1), .database-item:nth-last-of-type(2) {
+.meeting-item:nth-last-of-type(1), .meeting-item:nth-last-of-type(2) {
     border-bottom: 0;
-}
-.database-item > h4 {
-    margin-bottom: 0;
 }
 
 @media (max-width: 1030px) {
-.databases {
+.meetings {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 475px;
 }
-.database-item:nth-last-of-type(2) {
+.meeting-item:nth-last-of-type(2) {
     border-bottom: 2px solid #f5f5f5;
 }
 }
 
 @media (max-width: 525px) {
-.ebsco-search {
-    max-width: auto;
-}
-.databases, .database-item {
+.meetings, .meeting-item {
     width: auto;
 }
 }
@@ -365,8 +359,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     
     <div role="tabpanel" class="tab-pane active fade in" id="one">
       <div class="row">
-        <div class="databases">
-          <div class="database-item">
+        <div class="meetings">
+          <div class="meeting-item">
             <div class="month-heading">January</div>
             <div class="meeting-doc-wrapper">
               <div>1/9 - Budget Public Hearing and Adoption:</div>
@@ -395,7 +389,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">February</div>
             <div class="meeting-doc-wrapper">
               <div>2/8 - Executive Committee Meeting:</div>
@@ -417,7 +411,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">March</div>
             <div class="meeting-doc-wrapper">
               <div>3/14 - Executive Committee Meeting:</div>
@@ -439,7 +433,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">April</div>
             <div class="meeting-doc-wrapper">
               <div>4/11 - Executive Committee Meeting:</div>
@@ -467,7 +461,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">May</div>
             <div class="meeting-doc-wrapper">
               <div>5/9 - Executive Committee Meeting:</div>
@@ -489,7 +483,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">June</div>
             <div class="meeting-doc-wrapper">
               <div>6/13 - Executive Committee Meeting:</div>
@@ -511,7 +505,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">July</div>
             <div class="meeting-doc-wrapper">
               <div>7/11 - Executive Committee Meeting:</div>
@@ -520,7 +514,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">August</div>
             <div class="meeting-doc-wrapper">
               <div>8/8 - Executive Committee Meeting:</div>
@@ -542,7 +536,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">September</div>
             <div class="meeting-doc-wrapper">
               <div>9/12 - Executive Committee Meeting:</div>
@@ -564,7 +558,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">October</div>
             <div class="meeting-doc-wrapper">
               <div>10/10 - Executive Committee Meeting:</div>
@@ -586,7 +580,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">November</div>
             <div class="meeting-doc-wrapper">
               <div>11/14 - Executive Committee Meeting:</div>
@@ -595,7 +589,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </div>
             </div>
           </div>
-          <div class="database-item">
+          <div class="meeting-item">
             <div class="month-heading">December</div>
             <div class="meeting-doc-wrapper">
               <div>12/4 - Study Session:</div>
