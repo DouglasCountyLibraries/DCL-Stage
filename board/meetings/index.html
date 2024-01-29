@@ -83,15 +83,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     max-width: 550px;
     margin: 15px auto;
 }
-.meeting-list {
-    list-style: none;
-    margin-bottom: 0;
-    padding: 20px 0;
-    border-bottom: 2px solid #f5f5f5;
-}
-.meeting-list li {
-    padding-top: 5px;
-}
 .month-heading {
     text-transform: uppercase;
     font-size: 18px;
@@ -99,10 +90,6 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 }
 .fa-regular.fa-file-lines {
     margin-right: 5px;
-}
-.paginate_button.current {
-    border: 2px solid #7fbac5;
-    border-radius: 50%;
 }
 .line-through {
     text-decoration: line-through;
@@ -118,8 +105,44 @@ li.active > a.tab > h2 {
     font-weight: 400;
     color: #666;
 }
+.databases {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1030px;
+}
+.database-item {
+    border-bottom: 2px solid #f5f5f5;
+    padding: 6px 0 20px;
+    width: 475px;
+    margin: 0 20px;
+}
+.database-item:nth-last-of-type(1), .database-item:nth-last-of-type(2) {
+    border-bottom: 0;
+}
+.database-item > h4 {
+    margin-bottom: 0;
+}
 
-@media (max-width: 425px) {
+@media (max-width: 1030px) {
+.databases {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+}
+.database-item:nth-last-of-type(2) {
+    border-bottom: 2px solid #f5f5f5;
+}
+}
+
+@media (max-width: 525px) {
+.ebsco-search {
+    max-width: auto;
+}
+.databases, .database-item {
+    width: auto;
+}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -305,345 +328,281 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <li>Executive and Other Committee Meetings and Board Retreats: Held as needed and noted below</li>
       </ul>
       <div class="text-center padding-bottom-15"><i>The Library Board is a member of the Partnership of Douglas County Governments and <a href="https://www.douglascountypartnership.org/meetings-agendas/" target="_blank">participates in their meetings</a>.</i></div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs nav-justified" role="tablist">
-        <li role="presentation" class="active"><a class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
-          <h2 class="date-tab no-margin text-uppercase">2024</h2>
-          </a></li>
-        <li role="presentation"><a class="tab" href="../meeting-archive/">
-          <h2 class="date-tab no-margin">Archive</h2>
-          </a></li>
-      </ul>
-      
-      <!-- Tab panes -->
-      <div class="tab-content"> 
-        
-        <!-- 
+    </div>
+  </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation" class="active"><a class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
+      <h2 class="date-tab no-margin text-uppercase">2024</h2>
+      </a></li>
+    <li role="presentation"><a class="tab" href="../meeting-archive/">
+      <h2 class="date-tab no-margin">Archive</h2>
+      </a></li>
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content"> 
+    
+    <!-- 
 ##################
 2024
 ################## 
 -->
-        
-        <div role="tabpanel" class="tab-pane active fade in" id="one">
-          <ul class="meeting-list">
+    
+    <div role="tabpanel" class="tab-pane active fade in" id="one">
+      <div class="row">
+        <div class="databases">
+          <div class="database-item">
             <div class="month-heading">January</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Budget Public Hearing and Adoption:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Budget Public Hearing and Adoption:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Annual Board Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Annual Board Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">February</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">March</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">April</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Annual Retreat:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Annual Retreat:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">May</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">June</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">July</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">August</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">September</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">October</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">November</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-          </ul>
-          <ul class="meeting-list">
+            </div>
+          </div>
+          <div class="database-item">
             <div class="month-heading">December</div>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Executive Committee Meeting:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            <div class="meeting-doc-wrapper">
+              <div>Executive Committee Meeting:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Study Session:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Study Session:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Agenda</a></div>
               </div>
-            </li>
-            <li>
-              <div class="meeting-doc-wrapper">
-                <div>Board Business Meeting & Budget Public Hearing:</div>
-                <div class="meeting-docs">
-                  <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
-                  <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
-                </div>
+            </div>
+            <div class="meeting-doc-wrapper">
+              <div>Board Business Meeting & Budget Public Hearing:</div>
+              <div class="meeting-docs">
+                <div><a href="#" target="_blank"><i class="fa-regular fa-file-lines"></i>Packet</a></div>
+                <div class="opacity-6"><i class="fa-regular fa-file-lines"></i>Minutes</div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
