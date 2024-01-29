@@ -75,9 +75,12 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
     flex-direction: row;
     white-space: nowrap;
 }
-.meeting-docs div:nth-of-type(1), .meeting-docs div:nth-of-type(2) {
+.meeting-docs div:nth-of-type(2) {
     white-space: nowrap;
-    margin-left: 10px;
+    margin-left: 6px;
+}
+.meeting-doc-wrapper div:nth-of-type(1) {
+    margin-right: 10px;
 }
 .meeting-dates {
     max-width: 550px;
@@ -105,15 +108,21 @@ li.active > a.tab > h2 {
     font-weight: 400;
     color: #666;
 }
+.nav-container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .databases {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     width: 1030px;
+    padding: 10px 0 60px;
 }
 .database-item {
     border-bottom: 2px solid #f5f5f5;
-    padding: 6px 0 20px;
+    padding: 20px 0;
     width: 475px;
     margin: 0 20px;
 }
@@ -331,14 +340,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-justified" role="tablist">
-    <li role="presentation" class="active"><a class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
-      <h2 class="date-tab no-margin text-uppercase">2024</h2>
-      </a></li>
-    <li role="presentation"><a class="tab" href="../meeting-archive/">
-      <h2 class="date-tab no-margin">Archive</h2>
-      </a></li>
-  </ul>
+  <div class="row">
+    <div class="nav-container">
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active"><a class="tab" href="#one" aria-controls="one" role="tab" data-toggle="tab">
+          <h2 class="date-tab no-margin text-uppercase">2024</h2>
+          </a></li>
+        <li role="presentation"><a class="tab" href="../meeting-archive/">
+          <h2 class="date-tab no-margin">Archive</h2>
+          </a></li>
+      </ul>
+    </div>
+  </div>
   
   <!-- Tab panes -->
   <div class="tab-content"> 
