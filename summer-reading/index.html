@@ -24,7 +24,7 @@
 <!-- InstanceBeginEditable name="title" -->
 <title>Summer Reading | Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Summer Reading, Summer Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
-<meta name="description" content="Summer Reading begins June 2020! Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
+<meta name="description" content="Summer Reading begins June 2023! Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -56,311 +56,500 @@ e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.inser
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=72a1019f-18b4-4f9c-ad65-4b7aa501f1d8"> </script> 
 <!-- End of Zendesk Widget script -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sancreek&display=swap" rel="stylesheet">
 <style>
-.custom-container {
-	max-width: 1170px;
-	margin: 0 auto;
+@font-face {
+    font-family: 'AvalineScriptSC';
+    src: url('../shared-assets/web-fonts/AvalineScriptSC-Bold.woff2') format('woff2'), url('../shared-assets/web-fonts/AvalineScriptSC-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
 }
-.custom-container.one {
-	padding: 40px 10px 75px;
+@font-face {
+    font-family: 'Bubblegum';
+    src: url('../shared-assets/web-fonts/BubblegumScript.woff2') format('woff2'), url('../shared-assets/web-fonts/BubblegumScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
 }
-.custom-container.two {
-	padding: 60px 10px 80px;
+.background-row {
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
 }
-.custom-container.three {
-	padding: 85px 10px 65px;
+.row-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
 }
-.custom-container.four {
-	padding: 90px 10px 100px;
-	max-width: 1250px;
+h1.avaline {
+    font-family: 'AvalineScriptSC', serif;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 0;
+    line-height: 90px;
+    color: #333;
 }
-h1.sancreek {
-	font-family: 'Sancreek', serif;
-	text-transform: uppercase;
-	font-size: 120px;
-	margin: 0;
-	line-height: 120px;
-}
-h1.noto, h2.noto, h3.noto, h4.noto, h5.noto {
-	font-family: 'Noto Serif', serif;
-}
-h3.sancreek {
-	font-family: 'Sancreek', serif;
-	font-size: 60px;
-	margin: 0;
-}
-h4.sancreek {
-	font-family: 'Sancreek', serif;
-	font-size: 40px;
-	margin: 0;
-}
-.smaller {
-	font-size: .8em;
-	vertical-align: middle !important;
-	font-weight: normal;
-	color: #888;
-}
-.intro-text {
-	font-size: 18px;
-	font-weight: 400;
-	padding-bottom: 30px;
-	max-width: 975px;
-	margin: 0 auto;
-}
-.giveaway-text {
-	text-align: center;
-	font-size: 18px;
-	max-width: 870px;
-	margin: 0 auto;
-}
-.alt-text {
-	font-size: 16px;
-}
-.red-shadow {
-	text-shadow: 0px 0px 15px #851734;
-}
-.orange-shadow {
-	text-shadow: 0px 0px 15px #e55d11;
+h1.bubblegum {
+    font-family: 'Bubblegum', serif;
+    font-size: 80px;
+    margin: 0;
+    line-height: 64px;
+    color: #333;
 }
 .background-one {
-	background: radial-gradient(circle at center, #ca2c43 0%, #851734 60%, #4e0d1f 100%);
+    background: #b8d4df;
+    margin-top: 8px;
+    border-radius: 3px;
 }
 .background-two {
-	background: transparent url("bubbles.png") center top repeat-x;
+    background: #faae32;
+    margin-top: 5px;
+    border-radius: 3px;
 }
 .background-three {
-	background: transparent url("banner-flags.png") center top repeat-x;
+    background: #ed5b48;
+    margin-top: 5px;
+    border-radius: 3px;
 }
 .background-four {
-	background: linear-gradient(#431761, #26153f);
+    background: #87c2ea url("tiled-blue-background.jpg") top center repeat;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding-bottom: 30px;
 }
-.background-five {
-	background: #283478 url("magic-trick.jpg") center top no-repeat;
+.skating-background {
+    /* padding: 60px 10px; */
+    min-height: 250px;
+    background: transparent url("skateboarding.png") bottom center repeat-x;
+    -webkit-animation: left-slide 35s linear infinite;
+    animation: left-slide 35s linear infinite;
+    position: relative;
+    z-index: 1;
+    margin-top: -250px;
+    margin-bottom: 0;
+    bottom: 29px;
 }
-.background-six {
-	background: radial-gradient(circle at center, #e57639 0%, #ce540f 60%, #b64a0e 90%, #a8440d 100%);
-	box-shadow: inset 0px 5px 100px 5px rgba(0,0,0,.3);
+@-webkit-keyframes left-slide {
+from {
+background-position: 0 0;
 }
-.background-seven {
-	background: transparent url("bubbles.png") center top repeat-x;
+to {
+background-position: 5000px 0;
 }
-.separator-one {
-	height: 20px;
-	background: transparent url("separator-one.png") center center repeat-x;
-	margin-top: -20px;
 }
-.separator-two {
-	height: 20px;
-	background: transparent url("separator-two.png") center center repeat-x;
-	position: relative;
-	bottom: -20px;
-	margin-top: -20px;
+@keyframes left-slide {
+from {
+background-position: 0 0;
 }
-.section-nav {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-transform: uppercase;
+to {
+background-position: 5000px 0;
 }
-.section-nav-item a {
-	color: #fff;
-	font-weight: 400;
-	padding: 4px 0;
-	display: inline-block;
-	width: 170px;
-	white-space: nowrap;
-	background: linear-gradient(to bottom, #53a9ba 0%, #53a9ba 50%, #3f9fb2 50%, #3f9fb2 100%);
-	border: 8px solid #3f9fb2;
-	text-align: center;
-	margin: 5px;
-	border-radius: 3px;
-	font-size: 18px;
-	letter-spacing: 1.25px;
 }
-.section-nav-item a:hover, .section-nav-item a:focus {
-	color: #fff;
-	background: #358797;
-	border: 8px solid #358797;
-	text-decoration: none;
+.custom-container {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.custom-container.one {
+    background: url("background-one.jpg") center center/cover;
+    padding: 60px 10px 60px;
+}
+.custom-container.two {
+    padding: 60px 10px 60px;
+    color: #000;
+}
+.custom-container.three {
+    padding: 70px 10px 100px;
+}
+.custom-container.four {
+    padding: 60px 10px 75px;
+    color: #000;
+}
+.custom-container.three h1, .custom-container.three h3 {
+    color: #fff;
+    text-align: center;
+}
+.custom-container h2, .custom-container h3, .custom-container h4 {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    color: #333;
+}
+.custom-container.one h2 {
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.custom-container.one h3, .custom-container.two h3 {
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+.custom-container.two h3 {
+    font-weight: 400;
+    margin: 20px 0 0;
+    color: #000
+}
+.custom-container.three h3 {
+    font-weight: 500;
+    margin: 20px 0 0;
+}
+.custom-container.three h4 {
+    font-weight: 500;
+}
+.custom-container.four h2 {
+    font-weight: 500;
+    margin: 15px 0 15px;
+}
+.custom-container.four h3 {
+    font-weight: 500;
+    margin: 20px 0 0;
+    color: #000;
+}
+.custom-container.four h4 {
+    font-weight: 500;
+    color: #000;
+}
+.cr-info {
+    color: #d36a50;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.cr-info a {
+    color: #d36a50;
+    text-decoration: underline;
+}
+.intro-text {
+    font-size: 18px;
+    padding: 5px 0 0;
+    text-align: center;
+    font-weight: 400;
+    max-width: 925px;
+    margin: 0 auto;
+}
+.intro-text-alt {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.giveaway-text {
+    font-size: 20px;
+    padding: 12px 0 20px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 725px;
+    margin: 0 auto;
+}
+.giveaway-text-alt {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 875px;
+    margin: 0 auto;
+}
+.giveaway-text a {
+    color: #000;
+    text-decoration: underline;
+}
+.vendor {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.carousel-cell {
+    text-align: center;
+    width: 100%;
+}
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+}
+.carousel-cell > div > .img-responsive {
+    margin: 0 auto;
+}
+/* big buttons, no circle */
+.flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: rgba(255,255,255,.4);
+}
+.flickity-prev-next-button.no-svg {
+    color: rgba(255,255,255,.6);
+}
+.flickity-prev-next-button {
+    top: 30%;
+}
+.flickity-viewport {
+    transition: height 0.6s;
+}
+.container.carousel-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.card-info {
+    font-size: 22px;
+    font-style: normal;
+    padding: 8px 0 10px;
+    margin: 0 auto;
+    color: #000;
+}
+.card-info h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 60px;
+    color: #000;
 }
 .link-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	padding: 20px 0;
-	font-size: 22px;
-	margin: 0 auto;
-	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.link-wrapper-coming-soon {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 0 19px;
+}
+.coming-soon {
+    color: #fff;
+    background: #000;
+    max-width: 225px;
+    margin: 5px auto 0;
+    padding: 10px;
+    font-weight: 600;
 }
 .link, .link:visited, .link:active {
-	width: 300px;
-	background: linear-gradient(#8556f4, #452d7f);
-	color: #fff;
-	margin: 10px;
-	padding: 15px 5px;
-	border-radius: 3px;
-	text-transform: uppercase;
-	text-decoration: none;
-	box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1);
-	font-weight: 500;
-	border: 3px solid #fff;
+    width: 260px;
+    /*width: 225px;*/
+    background: #000;
+    color: #fff;
+    margin: 10px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: inherit;
+    border-radius: 3px;
+    transition-duration: 0.4s;
 }
 .link:hover {
-	background: #8556f4;
-	color: #fff;
-	text-decoration: none;
-	box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.4);
-	transition-duration: 0.4s;
-}
-.link.tee-link {
-	width: 175px;
-	display: inherit;
-	text-align: center;
-	margin: 25px auto;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition-duration: 0.4s;
 }
 .alt-link-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 25px;
 }
 .alt-link {
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 400;
-	margin: 5px 20px;
-	white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    margin: 15px;
+}
+.alt-link a {
+    color: #333;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+.alt-link a:hover {
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.alt-link img {
+    margin-bottom: 5px;
 }
 .prize-wrapper {
-	display: flex;
-	justify-content: center;
-	padding: 30px 10px 0;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px 0;
 }
 .prize-item {
-	background: radial-gradient(#6743be 0%, #452d7f 100%);
-	padding: 30px 30px 40px;
-	margin: 5px;
-	border-radius: 3px;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px 30px 40px;
+    margin: 5px;
+    border-radius: 3px;
+}
+.prize-item:nth-of-type(2) {
+    background: #fff url("rando-dog.png") right bottom no-repeat;
+    padding-right: 80px;
 }
 .goal-wrapper {
-	display: flex;
-	justify-content: center;
-	padding: 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px 0;
 }
 .goal-item {
-	background: rgba(103,67,190,.3);
-	padding: 30px 30px 40px;
-	margin: 5px;
-	border-radius: 3px;
-}
-.giveaway-wrapper {
-	display: flex;
-	justify-content: center;
-}
-.giveaway-item {
-	text-align: center;
-}
-.giveaway-item > ul {
-	padding: 0 30px;
-	margin-bottom: 0;
-}
-.giveaway-item > ul > li, .prize-item > ul > li {
-	padding: 4px 0;
-}
-.giveaway-item > img {
-	border-radius: 10px;
-	transform: rotate(-5deg);
-	box-shadow: -4px 3px 8px 0px rgba(0,0,0,1);
-	-webkit-backface-visibility: hidden;
-	margin: 25px 0 15px;
-}
-.minutes-read {
-	text-align: center;
-	color: #fff;
-	margin: 0;
-	padding: 20px 0 0;
-	text-transform: uppercase;
-	font-size: 24px;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px 30px 40px;
+    margin: 5px;
+    border-radius: 3px;
+    color: #333;
 }
 .counter {
-	font-size: 55px;
-	font-weight: 900;
-	color: #000;
-	text-align: center;
-	padding-top: 280px;
+    font-size: 88px;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    line-height: 100px;
 }
 .counter:not(.is-visible) {
-	visibility: hidden;
+    visibility: hidden;
 }
-.box-one:after {
-	content: "";
-	display: block;
-	margin: 0 auto;
-	width: 40%;
-	padding-top: 30px;
-	border-bottom: 8px dotted #fff;
+.minutes {
+    color: #000;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.box-two {
-	padding-top: 30px;
-	margin-bottom: 25px;
+.leaderboard-wrapper {
+    background: #fff;
+    max-width: 850px;
+    margin: 0 auto;
 }
-.tee-wrapper {
-	display: flex;
-	justify-content: center;
-	align-content: center;
+.leaderboard-wrapper > .table-responsive > .table {
+    margin: 0;
 }
-.tee-item-two {
-	padding: 0 10px;
+.leaderboard-wrapper > .table-responsive > .table > thead > tr > th {
+    border-bottom-width: 0px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
-
-@media (max-width: 745px) {
-.section-nav {
-	max-width: 500px;
-	margin: 0 auto;
+.smaller {
+    font-size: 16px;
+    text-transform: uppercase;
 }
-.giveaway-item, .goal-wrapper {
-	flex-direction: column;
+.modal {
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
+.modal-body {
+    padding: 20px 30px 40px;
 }
-
-@media (max-width: 1125px) {
-.tee-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
+.row-line-one {
+    height: 3px;
+    width: 98%;
+    background: #333;
+    transform: rotate(-.4deg);
+    margin: 10px auto 0;
 }
-.tee-item-two {
-	order: 3;
-	padding: 15px 10px;
-	max-width: 800px;
-	text-align: center;
+.row-line-two {
+    height: 3px;
+    width: 97%;
+    background: #333;
+    transform: rotate(.6deg);
+    margin: 10px 1% 0;
 }
-.background-five {
-	background: #360015 url("magic-trick.jpg") center top no-repeat;
+.row-line-three {
+    height: 3px;
+    width: 98%;
+    background: #333;
+    transform: rotate(-.9deg);
+    margin: 10px auto 0;
 }
+.row-line-four {
+    height: 3px;
+    width: 99%;
+    background: #333;
+    transform: rotate(.9deg);
+    margin: 10px 1% 0;
+}
+.row-line-five {
+    height: 3px;
+    width: 96%;
+    background: #333;
+    margin: -30px auto 25px auto;
 }
 
 @media (max-width: 875px) {
-.prize-wrapper {
-	flex-direction: column;
-	padding: 30px 10px 0;
-	max-width: 500px;
-	margin: 0 auto;
+.prize-wrapper, .goal-wrapper {
+    flex-direction: column;
+    padding: 30px 0 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.custom-container.one {
+    background: url("background-one-small.jpg") top center/cover;
+    padding: 75px 10px 45px;
+}
+.intro-text, .intro-text-alt {
+    max-width: 655px;
+}
+.goal-item, .prize-item {
+    margin: 5px 0;
+}
+.prize-item:nth-of-type(2) {
+    padding: 30px 150px 40px 30px;
 }
 }
 
-@media (max-width: 850px) {
-.tee-item-one img, .tee-item-three img {
-	max-width: 350px;
+@media (max-width: 575px) {
+.alt-link-wrapper {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
 }
-.tee-item-two {
-	max-width: 700px;
-	text-align: center;
+.alt-link {
+    height: 205px;
+    width: 195px;
+    margin-top: -10px;
+}
+.alt-link:nth-of-type(3) {
+    margin-top: -35px;
+}
+}
+
+@media (max-width: 475px) {
+.prize-item:nth-of-type(2) {
+    background: #fff;
+    padding: 30px 30px 40px;
+}
+.rando-dog-small {
+    position: relative;
+}
+.rando-dog-small img {
+    position: absolute;
+    top: -55px;
+    left: 175px;
+}
+.custom-container.three {
+    padding: 70px 10px 122px;
+}
+}
+
+@media (min-width: 476px) {
+.rando-dog-small {
+    display: none;
 }
 }
 </style>
@@ -536,165 +725,248 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <div class="container-fluid">
   <div id="general-alert" style="display:none;"></div>
   <!-- InstanceBeginEditable name="Content" -->
-  <div class="row">
-    <div class="background-one">
-      <div class="background-two">
-        <div class="background-three">
-          <div class="custom-container one white">
-            <div class="text-center">
-              <h1 class="noto red-shadow white">Unlock the</h1>
-              <h1 class="sancreek red-shadow white">Magic</h1>
-              <h3 class="noto red-shadow white no-margin-top">Pull a Great Summer out of the Hat!</h3>
-              <h2 class="noto red-shadow white no-margin-top">2022 Summer Reading for All Ages</h2>
-              <h5 class="noto red-shadow white no-margin-bottom">Saturday, June 4-Sunday, July 31</h5>
-            </div>
-            <div class="link-wrapper"> <a class="link" href="https://dclibraries.beanstack.org/reader365" target="_blank">Register Now!</a><a class="link" href="https://dclibraries.beanstack.org/users/sign_in" target="_blank">Sign In</a></div>
-            <div class="intro-text text-center red-shadow">
-              <div class="margin-bottom-10">Join us for a magical summer of reading, exciting activities, prizes, and giveaways. We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge is not right for you or your family, feel free to create your own challenge!</div>
-              <div class="alt-text">You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read.<!--You can also do the supplemental activities we suggest <a class="white text-underline" href="#" target="_blank">on the reading log</a>.--> We aren’t set on you reading 900 minutes, we just want you to read and have fun while doing it!</div>
-            </div>
-            <div class="alt-link-wrapper">
-              <div class="alt-link"><a class="white" href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=summer+reading+kickoff+party&lib=ALL&nd=60" target="_blank"><i class="fa-solid fa-wand-sparkles margin-right-5"></i> Ta-da! Kickoff Events</a></div>
-              <div class="alt-link"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=a+summer+reading+event&lib=ALL&nd=90" target="_blank" class="white"><i class="fa-regular fa-sparkles margin-right-5"></i> Dazzling Summer Events</a></div>
-              <!--<div class="alt-link"><a class="white" href="#">Amusing Jokes</a></div>
-              <div class="alt-link"><a class="white" href="#">Tricks for Kids</a></div>--> 
-            </div>
-            <div class="section-nav">
-              <div class="section-nav-item"><a href="#giveaways">Giveaways</a></div>
-              <div class="section-nav-item"><a href="#prizes">Prizes</a></div>
-              <div class="section-nav-item"><a href="#goals">Goals</a></div>
-              <div class="section-nav-item"><a href="#tees">Tees</a></div>
-            </div>
+  <div class="row background-row">
+    <div class="row-wrapper">
+      <div class="row-line-one"></div>
+      <div class="background-one">
+        <div class="custom-container one">
+          <div class="text-center">
+            <h1 class="avaline">Dog Days</h1>
+            <h1 class="bubblegum">of summer</h1>
+            <h2>2023 Summer Fun for All Ages</h2>
+            <h3>Saturday, June 3-Monday, July 31</h3>
+            <div class="cr-info"><i>Important information for <a href="#" data-toggle="modal" data-target="#castle-rock">Castle Rock participants</a>!</i></div>
+          </div>
+          <div class="intro-text">
+            <div>Fetch some fun during your summer of reading with exciting activities, prizes, and giveaways. We’ve suggested 900 minutes of reading as a worthy goal, but if this challenge isn’t right for you or your family, feel free to create your own challenge. You can increase or decrease the number of minutes or set a goal for the number of books or pages you want to read.</div>
+          </div>
+          <div class="link-wrapper"> <a class="link" href="https://dclibraries.beanstack.org/reader365" target="_blank">Pre-Register Now</a><a class="link" href="https://dclibraries.beanstack.org/users/sign_in" target="_blank">Sign In</a> </div>
+          <div class="intro-text-alt">You can also do the supplemental activities we suggest on the <a href="reading-log.pdf" target="_blank">reading log</a>. We aren’t set on you reading 900 minutes, we just want you to read and have a ball while doing it!</div>
+          <div class="alt-link-wrapper">
+            <div class="alt-link"><img class="img-responsive" src="raise-the-woof.png" alt=""><a href="#" data-toggle="modal" data-target="#kickoff">Prize Pickup<br>
+              Kickoff</a></div>
+            <div class="alt-link"><img class="img-responsive" src="summer-events.png" alt=""> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=a+summer+reading+event&lib=ALL&nd=180" target="_blank">Bow-Wow<br>
+              Summer Events</a></div>
+            <div class="alt-link"><img class="img-responsive" src="jokes.png" alt=""> <a href="jokes.pdf" target="_blank">Pawsome<br>
+              Jokes</a></div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="giveaways" class="row white background-four">
-    <div class="custom-container two">
-      <h3 class="text-center sancreek white">10 Days of Giveaways</h3>
-      <h5 class="noto white text-center">June 4-13, Register Now for a Chance to Win!</h5>
-      <div class="giveaway-text">
-        <div class="margin-bottom-10">Look what we have up our sleeve! We’re giving away more than 100 prizes to Summer Reading participants who register to read. What could you win? Unlock the Magic of Summer Reading and find out!</div>
-      </div>
-      <div class="giveaway-wrapper">
-        <div class="giveaway-item"><img src="pirates-cove-gift-card.jpg" alt="$50 Pirates Cove Gift Card">
-          <h2 class="noto white">June 4 Giveaway:</h2>
-          <h5 class="noto white">$50 Pirates Cove Gift Card</h5>
-          <!--<ul>
-            <li>June 4 Giveaway: $50 Pirates Cove gift card</li>
-            <li>June 5 Giveaway: $50 Rocket Fizz gift card </li>
-            <li>June 6 Giveaway: $50 AMC Movies gift card </li>
-            <li>June 7 Giveaway: $75 Target gift card </li>
-            <li>June 8 Giveaway: $75 Whole Foods gift card </li>
-          </ul>
-          <ul>
-            <li>June 9 Giveaway: $75 Lowes gift card </li>
-            <li>June 10 Giveaway: $100 Boondocks gift card </li>
-            <li>June 11 Giveaway: $100 Outlets at Castle Rock gift card </li>
-            <li>June 12 Giveaway: $100 Park Meadows gift card </li>
-            <li>June 13 Giveaway: $150 Amazon gift card </li>
-          </ul>--> 
+      <div class="row-line-two"></div>
+      <div id="giveaways" class="background-two">
+        <div class="custom-container two text-center">
+          <h1 class="bubblegum" style="color: #000;">10 Days of Giveaways</h1>
+          <h3 class="text-uppercase">10 Lucky Winners Each Day, June 3-12</h3>
+          <div class="giveaway-text">Who wants a treat? We’re giving away 105 prizes to participants who sign up to read. <a href="https://dclibraries.beanstack.org/reader365" target="_blank">Pre-register for the Dog Days of Summer</a> for your chance to win!</div>
+          <div class="container carousel-container">
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 4000 }'>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$50 Starbucks Gift Card" src="starbucks-gift-card.jpg"/>
+                  <div class="card-info">June 3 Giveaway:
+                    <h2>$50.00</h2>
+                    <span class="vendor">Starbucks Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$50 Rocket Fizz Gift Card" src="rocket-fizz-gift-card.jpg"/>
+                  <div class="card-info">June 4 Giveaway:
+                    <h2>$50.00</h2>
+                    <span class="vendor">Rocket Fizz Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$50 Amazon Gift Card" src="amazon-gift-card.jpg"/>
+                  <div class="card-info">June 5 Giveaway:
+                    <h2>$50.00</h2>
+                    <span class="vendor">Amazon Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$50 Target Gift Card" src="target-gift-card.jpg"/>
+                  <div class="card-info">June 6 Giveaway:
+                    <h2>$50.00</h2>
+                    <span class="vendor">Target Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$75 Whole Foods Gift Card" src="whole-foods-gift-card.jpg"/>
+                  <div class="card-info">June 7 Giveaway:
+                    <h2>$75.00</h2>
+                    <span class="vendor">Whole Foods Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$75 Lowes Gift Card" src="lowes-gift-card.jpg"/>
+                  <div class="card-info">June 8 Giveaway:
+                    <h2>$75.00</h2>
+                    <span class="vendor">Lowes Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$100 Boondocks Gift Card" src="boondocks-gift-card.jpg"/>
+                  <div class="card-info">June 9 Giveaway:
+                    <h2>$100.00</h2>
+                    <span class="vendor">Boondocks Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$100 King Soopers Gift Card" src="king-soopers-gift-card.jpg"/>
+                  <div class="card-info">June 10 Giveaway:
+                    <h2>$100.00</h2>
+                    <span class="vendor">King Soopers Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$200 Barnes & Noble Gift Card" src="barnes-noble-gift-card.jpg"/>
+                  <div class="card-info">June 11 Giveaway:
+                    <h2>$200.00</h2>
+                    <span class="vendor">Barnes & Noble Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="$250 Amazon Gift Card" src="amazon-gift-card-alt.jpg"/>
+                  <div class="card-info">June 12 Giveaway:
+                    <h2>$250.00</h2>
+                    <span class="vendor">Amazon Gift Card</span></div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div><img class="img-responsive" alt="Wiender Dog" src="wiener-dog.gif"/>
+                  <div class="card-info">
+                    <h2 style="padding-top: 30px;">Wiener Dog</h2>
+                    (He sooo wanted to be on this page!)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="giveaway-text-alt">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-July 14 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL’s digital channels (first name, last initial). No purchase necessary and registration is free. </div>
         </div>
       </div>
-      <div class="giveaway-text">
-        <div class="alt-text text">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-June 13 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be notified via email. No purchase necessary and registration is free.</div>
-      </div>
-    </div>
-  </div>
-  <div id="prizes" class="row white background-one">
-    <div class="background-two">
-      <div class="custom-container two">
-        <h3 class="text-center sancreek white">Prizes</h3>
-        <h5 class="noto white text-center">Prizes will be Available Beginning June 4</h5>
-        <div class="prize-wrapper">
-          <div class="prize-item">
-            <h4 class="noto white no-margin-top">Sign-Up Prizes</h4>
-            <div>Visit any DCL location to pick up your Summer Reading sign-up prizes, while supplies last.</div>
-            <ul>
-              <li>Ages 0-2: Rubber ducky</li>
-              <li>Ages 3-12: Pirates Cove free admission gift coupon*</li>
-              <li>Ages 13-17: Smoothie King free gift coupon*</li>
-              <li>Ages 18+: Park Meadows Free valet parking coupon*</li>
-            </ul>
-            <div>*See coupon for full details.</div>
+      <div class="row-line-three"></div>
+      <div id="prizes" class="background-three">
+        <div class="custom-container three">
+          <h1 class="bubblegum white text-center">Prizes</h1>
+          <h3 class="text-uppercase white text-center">Prizes Available June 3-August 6, or While Supplies Last</h3>
+          <div class="prize-wrapper">
+            <div class="prize-item">
+              <h4 class="no-margin-top">Sign-Up Prizes</h4>
+              <div>Visit any DCL location to pick up your Summer Reading sign-up prizes, while supplies last.</div>
+              <ul>
+                <li>Ages 0-3: Egg Shaker</li>
+                <li>Ages 4-12: Balloon Dog Fidget Toy</li>
+                <li>Ages 13-17: Pet Head Cup Hugger</li>
+                <li>Ages 18+: One Free Second Chapter Bookstore Item (valued $3 or less)</li>
+              </ul>
+            </div>
+            <div class="prize-item">
+              <h4 class="no-margin-top">Finishing Prizes</h4>
+              <div>Collect a prize when you complete your challenge, or just for having a doggone good summer!</div>
+              <ul>
+                <li>Ages 0-12: New Book</li>
+                <li>Ages 13-17: Canvas Tote Bag</li>
+                <li>Ages 18+: Insulated Tote</li>
+              </ul>
+            </div>
           </div>
-          <div class="prize-item">
-            <h4 class="noto white no-margin-top">Mid-Way Prizes</h4>
-            <div>Celebrate being halfway to your goal! Stop by the library to pick up your prize.</div>
-            <ul>
-              <li>Ages 0-2: Bubble tube</li>
-              <li>Ages 3-12: Cards plus tricks and game sheet</li>
-              <li>Ages 13-17: Rocket Fizz gift coupon* and Second Chapter Bookstore free book coupon*</li>
-              <li>Ages 18+: Second Chapter Bookstore free book coupon*</li>
-            </ul>
-            <div>*See coupon for full details.</div>
-          </div>
-          <div class="prize-item">
-            <h4 class="noto white no-margin-top">Finishing Prizes</h4>
-            <div>Collect a prize when you complete your challenge, or just for having a magical summer!</div>
-            <ul>
-              <li>Ages 0-12: Free new book</li>
-              <li>Ages 13+: Canvas pouch</li>
-            </ul>
-            <div>*Finishing prizes available through August 7, or while supplies </div>
-          </div>
+          <div class="rando-dog-small"><img src="rando-dog.png" alt=""></div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="goals" class="row white background-five">
-    <div class="custom-container three">
-      <h3 class="text-center sancreek white">Goals</h3>
-      <div class="counter-wrapper">
-        <div class="counter">0</div>
-        <h4 class="noto minutes-read">Minutes Read</h4>
-      </div>
-      <div class="goal-wrapper">
-        <div class="goal-item">
-          <h4 class="no-margin-top noto white text-center">Help us meet our community goal of 8.5 million minutes read!</h4>
-          <div>Watch the minutes materialize and help us meet our goal. If we meet our goal, the <a class="text-underline white" href="../foundation/">Douglas County Libraries Foundation</a> will donate $1,000 to AllHealth Network, which works to enhance the quality of life for individuals and families in our community through compassionate, integrated behavioral health services.</div>
-        </div>
-        <div class="goal-item">
-          <h4 class="no-margin-top noto white text-center">Help your school earn $500!</h4>
-          All you have to do is sign up (and remind your friends and classmates to sign up!) and be sure to include your school name and your grade when you register. The school with the most sign-ups by July 31 will be awarded $500. Award recipients announced in August. See contest <a href="#" class="white text-underline" data-toggle="modal" data-target="#modalrules">rules and restrictions</a>, and schools <a href="#" class="white text-underline" data-toggle="modal" data-target="#modalleaderboard">currently in the lead</a>. </div>
-      </div>
-      
-      <!--<div class="text-center white">
-        <div>Take your Summer Reading offline</div>
-        <h5 class="noto white margin-top-5">Download a <a class="white text-underline" href="#">Reading Log</a></h5>
-      </div>--> 
-    </div>
-  </div>
-  <div id="tees" class="row">
-    <div class="background-one">
-      <div class="background-seven">
+      <div class="row-line-four"></div>
+      <div id="goals" class="background-four">
         <div class="custom-container four">
-          <h4 class="text-center sancreek white red-shadow">Summer Reading Tees</h4>
-          <h4 class="noto white text-center no-margin-top red-shadow">On Sale Now!</h4>
-          <div class="tee-wrapper">
-            <div class="tee-item-one"><img src="bam-tee.png?5122" alt="Books Are Magic Tee"></div>
-            <div class="tee-item-two">
-              <div class="white red-shadow font-weight-400">Sport one of our summery tees to support the <a class="text-underline white" href="../foundation/">Douglas County Libraries Foundation</a>—choose from two styles. The unisex t-shirts come in youth sizes S-L for $15 plus tax, and adult sizes S-XXL for $18 plus tax. Order by June 5—pick up and pay at your preferred library. Supply chain disruptions may delay order availability and limit supply. Color may vary. You will be contacted by email when your order arrives. Payment required at time of pickup.</div>
-              <div><a class="link tee-link" href="tees/">Order Now!</a></div>
+          <h1 class="bubblegum text-center" style="color: #000;">Goals</h1>
+          <h3 class="text-uppercase text-center">Help us meet our community goal of 9 million minutes read!</h3>
+          <div class="counter">0</div>
+          <div class="minutes text-center">Minutes Read</div>
+          <div class="goal-wrapper">
+            <div class="goal-item">
+              <h4 class="no-margin-top"><a style="font-weight:500;" class="black text-underline" href="https://dclibraries.beanstack.org/users/sign_in" target="_blank">Add your minutes</a> to help us meet our goal.</h4>
+              <div>If we meet the community goal, the <a href="../foundation/">Douglas County Libraries Foundation</a> will donate $1,000 to Guide Dogs for the Blind, which seeks to provide a safe means of mobility for people who are blind and visually impaired.</div>
             </div>
-            <div class="tee-item-three"><img src="gc-tee.png?5122" alt="Great Characters Tee"></div>
+            <div class="goal-item">
+              <h4 class="no-margin-top">Help your school earn $500!</h4>
+              All you have to do is sign up (and remind your friends and classmates to sign up, too!), making sure you include your school’s name and your grade when you register. The school with the most sign-ups by July 31 will be awarded $500. Award recipients announced in August. See <a href="#" data-toggle="modal" data-target="#modalrules">contest rules and restrictions</a>. </div>
           </div>
+          <h2 class="text-uppercase text-center">Who's Ahead?*</h2>
+          <div class="leaderboard-wrapper">
+            <div class="table-responsive">
+              <table class="table table-bordered table-condensed" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="smaller">First Place</th>
+                    <th class="smaller">Second Place</th>
+                    <th class="smaller">Third Place</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="smaller">Elementary</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="smaller">Middle</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="smaller">High</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="smaller">Other (Charter/K-12)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-center padding-top-15 padding-bottom-15">*Leader board will be updated each Monday through July 31.</div>
+        </div>
+      </div>
+      <div class="skating-background"></div>
+      <div class="row-line-five"></div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="castle-rock" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 style="color: #333;" class="text-center modal-title">Castle Rock closed beginning May 22</h3>
+        </div>
+        <div class="modal-body">
+          <div>Castle Rock residents may sign up online beginning May 1 or at an alternate Castle Rock <a href="../storytime/">Storytime</a> location, and can attend a June 3 kickoff at any open DCL location to pick up registration prizes and logs, while supplies last. Prizes will also be available June 3-August 6, while supplies last, at any open <a href="../locations/">library location</a> or one of the alternate Castle Rock <a href="../storytime/">Storytime</a> locations.</div>
+          <div class="padding-top-15">Castle Rock K-12 students are encouraged to participate in the school contest! Simply include the student’s grade and school at signup for the school to be counted.</div>
+          <div class="padding-top-15">Participants may attend Summer Reading events at any open DCL location.</div>
         </div>
       </div>
     </div>
   </div>
-  <!--<div class="row bg-gray-5 padding-top-30 padding-bottom-60">
-    <div class="custom-container">
-      <div class="text-center">
-        <h2 class="margin-top-5">10 Days of Giveaways</h2>
-        <h4 class="no-margin-bottom margin-top-5">June 4-13</h4>
-        <h5 class="margin-top-5">Sign up to win!</h5>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="kickoff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 style="color: #333;" class="text-center modal-title">Summer Reading Kickoff Prize Pickup</h3>
+        </div>
+        <div class="modal-body">
+          <div>Visit the Summer Reading table at any DCL location, except Castle Rock, on June 3 from 10 a.m.-4 p.m. to receive a special, limited-time gift, while supplies last; available June 3 only when you show your Summer Reading email confirmation or Beanstack registration badge. You may also pick up sign-up prizes and reading logs, while supplies last. Registration for prize pickup is not required.</div>
+        </div>
       </div>
-      <div>Look what we have up our sleeve! We’re giving away 105 prizes to Summer Reading participants who sign up to read. What could you win? Unlock the Magic of Summer Reading and find out!</div>
-      <div class="padding-top-15">Each giveaway day features a random drawing for that day’s prize. Everyone registered May 1-July 15 will be entered into the prize drawings. Most prizes mailed directly to winners or delivery will be otherwise arranged. Winners will be announced via DCL’s digital channels (first name, last initial). No purchase necessary and registration is free.</div>
     </div>
-  </div>--> 
+  </div>
   
   <!-- Modal -->
   <div class="modal fade" id="modalrules" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -702,65 +974,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center modal-title">Contest Rules and Restrictions</h3>
+          <h3 style="color: #333;" class="text-center modal-title">Contest Rules and Restrictions</h3>
         </div>
-        <div class="modal-body padding-30">
+        <div class="modal-body">
           <div>Contest applies only to K-12 students in schools located in Douglas County and accredited by the Colorado Department of Education. Awards will be given to one school at each level: elementary, middle, high, and other (e.g., charter, K-12).</div>
-          <div class="padding-top-15">Sign-ups are tallied through Beanstack online registration. The school in each category with the most sign-ups as a percentage of 2021-2022 enrollment earns the award.</div>
-          <div class="padding-top-15 padding-bottom-15">Contest runs May 1-July 31. Prizes courtesy of Douglas County Libraries Foundation. Award recipients will be notified in August 2022.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="modalleaderboard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="text-center modal-title">Who's Ahead?</h3>
-        </div>
-        <div class="modal-body padding-30">
-          <div class="table-responsive">
-            <table class="table table-bordered table-condensed" width="100%" border="0" cellspacing="0" cellpadding="0">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th class="smaller">First Place</th>
-                  <th class="smaller">Second Place</th>
-                  <th class="smaller">Third Place</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="smaller">Elementary</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="smaller">Middle</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="smaller">High</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="smaller">Other (Charter/K-12)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="text-center padding-bottom-15">*Leader board will be updated each Monday through August 1, 2022.</div>
+          <div class="padding-top-15">Sign-ups are tallied through Beanstack online registration. The school in each category with the most sign-ups as a percentage of 2022-2023 enrollment earns the award.</div>
+          <div class="padding-top-15">Contest runs May 1-July 31. Prizes courtesy of Douglas County Libraries Foundation. Award recipients will be notified in August 2023.</div>
         </div>
       </div>
     </div>
@@ -826,9 +1045,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
 <script id="rendered-js" >
 const counterUp = window.counterUp.default;
-
 const callback = entries => {
   entries.forEach(entry => {
     const el = entry.target;
@@ -841,9 +1060,7 @@ const callback = entries => {
     }
   });
 };
-
 const IO = new IntersectionObserver(callback, { threshold: 1 });
-
 const el = document.querySelector('.counter');
 IO.observe(el);
 //# sourceURL=pen.js
