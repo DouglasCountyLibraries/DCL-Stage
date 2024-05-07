@@ -7,33 +7,27 @@
  * find us on GitHub https://github.com/DouglasCountyLibraries/DCL-Website
    ====================================================
    ==================================================== */
-html {
-  scroll-behavior: smooth;
-}
 body {
-  font-family: "Ubuntu", arial, sans-serif;
+  font-family: "Open Sans", arial, sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  -webkit-font-smoothing: auto;
 }
-.roboto {
+.skip-link {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+.roboto, .roboto a {
   font-family: "Roboto Slab", palantino, serif;
   font-weight: 300;
   line-height: 1.3;
   letter-spacing: -0.4px;
-  text-rendering: optimizeLegibility;
-}
-.nothing {
-  font-family: 'Nothing You Could Do', cursive;
-  font-size: 30px;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-}
-.nothing-small {
-  font-family: 'Nothing You Could Do', cursive;
-  font-size: 28px;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
 }
 .container-md, .container-lg {
   margin-right: auto;
@@ -59,10 +53,9 @@ b, strong {
   font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Ubuntu", arial, sans-serif;
-  font-weight: 300;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 400;
   color: #666;
-  text-rendering: optimizeLegibility;
 }
 h4, h5, h6, .h1, .h4, .h5, .h6 {
   line-height: 1.3em;
@@ -115,6 +108,9 @@ table.dataTable thead th, table.dataTable thead td {
 #book-clubs_length > label, #book-clubs_filter > label {
   font-weight: normal;
 }
+input:focus::placeholder {
+  color: transparent;
+}
 a:focus, a:active, .active:focus {
   outline: 0;
   -moz-outline-style: 0;
@@ -133,44 +129,28 @@ a:hover, a:focus {
 a {
   color: #02729e;
   outline: 0;
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
+  text-decoration: none;
   transition-duration: 0.4s;
+  font-weight: 400;
 }
 a:visited, a:hover, a:focus {
   outline: 0;
 }
-:target h1:first-of-type, :target h2:first-of-type, :target h3:first-of-type, :target h4:first-of-type, :target h1 a:first-of-type, :target h2 a:first-of-type, :target h2 a:first-of-type, :target h3 a:first-of-type, :target h4 a:first-of-type {
-  -webkit-animation: target-fade 3s 1;
-  -moz-animation: target-fade 3s 1;
-}
-@-webkit-keyframes target-fade {
-  0% {
-    background-color: transparent;
-  }
-  20% {
-    background-color: rgba(0, 0, 0, .2);
-  }
-  80% {
-    background-color: rgba(0, 0, 0, .2);
-  }
-  100% {
-    background-color: transparent;
-  }
+:target h1:first-of-type, :target h2:first-of-type, :target h1 a:first-of-type, :target h2 a:first-of-type {
+  animation: target-fade 1s 3;
 }
 @keyframes target-fade {
   0% {
-    background-color: transparent;
+    color: #d36a50;
   }
   20% {
-    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
   }
   80% {
-    background-color: rgba(0, 0, 0, .2);
+    color: #d36a50;
   }
   100% {
-    background-color: transparent;
+    color: #fff;
   }
 }
 .modal-backdrop {
@@ -244,13 +224,13 @@ a:visited, a:hover, a:focus {
 .text-danger, .text-danger:hover {
   color: #ae2924;
 }
-.font-weight-400 {
+.font-weight-400, a.font-weight-400 {
   font-weight: 400;
 }
-.font-weight-500 {
+.font-weight-500, a.font-weight-500 {
   font-weight: 500;
 }
-.font-weight-700 {
+.font-weight-700, a.font-weight-700 {
   font-weight: 700;
 }
 blockquote, .blockquote-reverse, blockquote.pull-right {
@@ -264,7 +244,7 @@ blockquote, .blockquote-reverse, blockquote.pull-right {
   text-align: right;
 }
 blockquote footer, blockquote small, blockquote .small {
-  font-family: "Ubuntu", arial, sans-serif;
+  font-family: "Open Sans", arial, sans-serif;
   font-size: 16px;
 }
 .btn-lg {
@@ -293,8 +273,9 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .navbar-default .navbar-nav > li > a {
   color: #000;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-weight: 400;
 }
 .navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav a:focus {
   background-color: #ffff;
@@ -573,7 +554,7 @@ blockquote footer, blockquote small, blockquote .small {
   color: #fff;
 }
 .mobile-search-icon > a:before {
-  font-family: 'Font Awesome 5 free';
+  font-family: 'Font Awesome 6 Pro';
   font-weight: 900;
   content: "\f00d";
   color: #333;
@@ -583,18 +564,6 @@ blockquote footer, blockquote small, blockquote .small {
   cursor: pointer;
 }
 .mobile-search-icon > a.collapsed:before {
-  content: "\f002";
-}
-.mobile-search-icon-springshare > a:before {
-  font-family: 'Fontawesome';
-  content: "\f00d";
-  color: #333;
-  float: right;
-  margin: 18px 20px 0 0;
-  font-size: 24px;
-  cursor: pointer;
-}
-.mobile-search-icon-springshare > a.collapsed:before {
   content: "\f002";
 }
 .alert {
@@ -607,14 +576,21 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .footer-nav h5 {
   font-weight: 400;
-  margin: 0 0 3px;
+  margin: 0 0 10px;
 }
 .footer-nav ul {
   list-style: outside none none;
   padding: 0;
 }
+.footer-column {
+  padding: 0 5px;
+}
+.footer-column li {
+  padding-bottom: 7px;
+  line-height: 20px;
+}
 .footer-nav a, .footer-nav a:active, .footer-nav a:hover, .social-links-wrapper a, .social-footer a, .social-footer a:active, .social-footer a:hover {
-  color: #444;
+  color: #333;
 }
 .copyright, .copyright a, .copyright a:active, .copyright a:hover {
   color: #eee;
@@ -629,11 +605,19 @@ blockquote footer, blockquote small, blockquote .small {
   padding: 15px 0 20px;
   width: 100%;
 }
+.social-footer a, .footer-nav a {
+  font-weight: 400;
+}
 .social-right, .copyright-right {
   margin-left: auto;
 }
 .social-links-wrapper {
   white-space: nowrap;
+}
+.social-left h5, .social-left a {
+	font-size: 18px;
+	color: #333;
+	font-weight: 400;
 }
 .social-right {
   padding-right: 15px;
@@ -758,7 +742,7 @@ blockquote footer, blockquote small, blockquote .small {
 /* ====== buttons ====== */
 .btn-database {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .btn-search {
   background-color: #456e70;
@@ -1047,34 +1031,6 @@ a.hover-shadow {
 .carousel-control {
   text-shadow: none;
 }
-.separator-container {
-  position: relative;
-  text-align: center;
-}
-.separator-container .separator {
-  color: #999;
-  margin: 0 auto;
-  width: 11em;
-}
-.separator-container .separator.line-separator::before, .separator-container .separator.line-separator::after {
-  border: 1px solid #999;
-  content: " ";
-  display: block;
-  margin-top: 10px;
-  width: 40%;
-}
-.separator-container .fff.separator.line-separator::before, .separator-container .fff.separator.line-separator::after {
-  border: 1px solid #fff;
-}
-.separator-container .white.separator.line-separator::before, .separator-container .white.separator.line-separator::after {
-  border: 1px solid #fff;
-}
-.separator-container .separator.line-separator::before {
-  float: left;
-}
-.separator-container .separator.line-separator::after {
-  float: right;
-}
 .opacity-9 {
   opacity: .9;
 }
@@ -1183,6 +1139,9 @@ a.black:hover, a.black:focus, a.black:active, a.black:visited {
 .large-text {
   font-size: 1.2em;
 }
+.large-text a {
+  font-weight: 400;
+}
 /* ====== feeds2js ====== */
 .rss-item {
   list-style: none;
@@ -1195,6 +1154,7 @@ a.black:hover, a.black:focus, a.black:active, a.black:visited {
 }
 .rss-item a {
   font-size: 20px;
+  font-weight: 400;
 }
 /* ====== responsive head elements ====== */
 h1.responsive-text {
@@ -1305,7 +1265,10 @@ h6.responsive-text {
   background: #fff url("../images/white-bottom.gif") center center repeat-x;
 }
 .logo-mediakit {
-  border: 5px solid #ccc;
+  border: 3px solid #e6e4e2;
+}
+.logo-mediakit-alt {
+  border: 3px solid #fff;
 }
 .block {
   display: block;
@@ -1432,7 +1395,7 @@ h6.responsive-text {
   margin-right: 5px;
 }
 .dropdown-menu > li > a {
-  font-weight: 300;
+  font-weight: 400;
   padding: 8px 25px;
 }
 .dropdown-menu li:hover, .dropdown-menu li:focus {
@@ -1535,18 +1498,24 @@ h6.responsive-text {
 #perm-alert a:hover, #perm-alert a:focus {
   color: #000;
 }
+.alert-wrapper {
+	margin: 0 auto;
+	max-width: 1920px;
+}
 #general-alert, #local-alert {
-  background: #d36a50;
-  color: #fff;
-  font-size: 18px;
-  padding: 12px 10px 13px;
-  font-weight: 400;
-  text-align: center;
-  margin-left: -15px;
-  margin-right: -15px;
+	background: #d36a50;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 10px 13px;
+	font-weight: 400;
+	text-align: center;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 #local-alert {
-  border-top: 2px solid #fff;
+	border-top: 2px solid #fff;
+	max-width: 1950px;
+	margin: 0 auto;
 }
 #general-alert a, #local-alert a {
   color: #fff;
@@ -1737,13 +1706,16 @@ h6.responsive-text {
   text-align: center;
   width: 80px;
 }
+.fa-facebook, .fa-x-twitter, .fa-instagram, .fa-pinterest, .fa-youtube, .fa-flickr {
+  transition: all 0.2s ease-out 0s;
+}
 .fa-facebook:active, .fa-facebook:hover, .fa-facebook:focus {
-  color: #4d63dd;
+  color: #1877F2;
   transition: all 0.2s ease-out 0s;
   text-shadow: 0 1px 8px #fff;
 }
-.fa-twitter:active, .fa-twitter:hover, .fa-twitter:focus {
-  color: #28A9E0;
+.fa-x-twitter:active, .fa-x-twitter:hover, .fa-x-twitter:focus {
+  color: #666;
   transition: all 0.2s ease-out 0s;
   text-shadow: 0 1px 8px #fff;
 }
@@ -1753,12 +1725,12 @@ h6.responsive-text {
   text-shadow: 0 1px 8px #fff;
 }
 .fa-pinterest:active, .fa-pinterest:hover, .fa-pinterest:focus {
-  color: #B93936;
+  color: #E60023;
   transition: all 0.2s ease-out 0s;
   text-shadow: 0 1px 8px #fff;
 }
 .fa-youtube:active, .fa-youtube:hover, .fa-youtube:focus {
-  color: #C71D20;
+  color: #FF0000;
   transition: all 0.2s ease-out 0s;
   text-shadow: 0 1px 8px #fff;
 }
@@ -2094,9 +2066,9 @@ h6.responsive-text {
   padding-bottom: 160px;
 }
 .popover {
-  font-family: "Ubuntu", arial, sans-serif;
+  font-family: "Open Sans", arial, sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   z-index: 1000;
 }
 .popover-title, .popover-content {
@@ -2152,7 +2124,7 @@ h6.responsive-text {
   opacity: 0;
   color: #ccc;
   font-size: 26px;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Pro";
   content: "\f31e";
   font-weight: 900;
   pointer-events: none;
@@ -2238,6 +2210,9 @@ h6.responsive-text {
   margin-top: 0;
   position: relative;
   top: 20px;
+}
+.entry-header a {
+  font-weight: 400;
 }
 h1.page-title {
   font-size: 16px;
@@ -2362,7 +2337,7 @@ html body .modula-fancybox-caption {
   background: #eee !important;
   color: #000 !important;
   font-size: 20px !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   padding: 30px 0 !important;
 }
 html body .modula-fancybox-bg {
