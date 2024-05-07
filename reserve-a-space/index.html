@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,14 +107,11 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	text-align: center;
 	padding-top: 25px;
 }
-
 .service-container {
 	max-width: 1470px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
-
 .service-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -126,7 +124,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	min-width: 350px;
 	background: #fff;
 }
-    .service-box h3 {
+.service-box h3 {
 	color: #333;
 	margin: 0;
 	padding: 9px 4px 9px;
@@ -134,13 +132,8 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	background: #e6e4e2;
 	text-align: center;
 }
-    .service-inner {
+.service-inner {
         padding: 30px 15px;
-    }
-
-.item-two {
-	width: 100%;
-	padding: 30px 0 30px;
 }
 .title a, .title a:hover, .title a:focus {
 	color: #333;
@@ -167,8 +160,6 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 .description b:nth-child(1) {
 	font-size: 20px;
 }
-
-
 .self .fa-check {
 	color: #666;
 }
@@ -184,54 +175,14 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 .fa-th {
 	vertical-align: middle;
 }
-/* Fading animation */
-.item {
-	-webkit-animation-name: item-fade;
-	-webkit-animation-duration: 1s;
-	animation-name: item-fade;
-	animation-duration: 1s;
-}
- @-webkit-keyframes item-fade {
- from {
-opacity: 0
-}
- to {
-opacity: 1
-}
-}
- @keyframes item-fade {
- from {
-opacity: 0
-}
- to {
-opacity: 1
-}
-}
-.item:nth-of-type(n+7) {
-	display: none;
-}
-    @media (max-width: 1075px) {
-.box-wrapper {
-	flex-direction: column;   
-}
-.box-item {
-	max-width: 800px;
-	align-self: center;
-	
-}
-.box-inner {
-    text-align: center;
-}
-}
-
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-    background: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1610px;
-    margin: 0 auto;
+	background: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1410px;
+	margin: 70px auto 80px auto;
 }
 .slideshow-content {
     flex: 1 1 36%;
@@ -315,54 +266,64 @@ opacity: 1
     opacity: 1
 }
 #slideshow div:nth-of-type(1) {
-    background-image: url("butterfly-pavilion.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(2) {
-    background-image: url("colorado-railroad-museum.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(3) {
-    background-image: url("denver-firefighters-museum.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(4) {
-    background-image: url("denver-museum-of-nature-and-science.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(5) {
-    background-image: url("dinosaur-ridge.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(6) {
-    background-image: url("history-colorado-center.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(7) {
-    background-image: url("molly-brown-house-museum.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(8) {
-    background-image: url("museum-of-contemporary-art.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(9) {
-    background-image: url("vehicle-vault.jpg")
+   background-image: url("slideshow/one.jpg")
 }
 #slideshow div:nth-of-type(10) {
-    background-image: url("wings-over-the-rockies.jpg")
+    background-image: url("slideshow/one.jpg")
 }
 /* captions */
+ 
 #slideshow span {
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    right: 0;
-    display: inline-block;
-    padding: 2% 3%;
-    margin: 5%;
-    font-size: 2.5vw;
-    color: transparent
-}
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	font-size: 60px;
+	color: transparent;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	line-height: 60px;
+	font-weight: 700;
+}   
+  
 #slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
     z-index: 1
 }
 #slideshow .fx + span, #slideshow .fx1 + span {
-    color: #fff;
-
-    animation: caption 5s 1s both
+	color: #fff;
+	animation: caption 5s 1s both;
+	text-shadow: 0 6px 20px #000;
+	hyphens: manual;
 }
 
 @keyframes caption {
@@ -380,16 +341,28 @@ opacity:0;
 }
 }
 
+    @media (max-width: 1075px) {
+.box-wrapper {
+	flex-direction: column;   
+}
+.box-item {
+	max-width: 800px;
+	align-self: center;
+	
+}
+.box-inner {
+    text-align: center;
+}
+}    
+    
+    
 @media(min-width:42em) { /* bigger than 672px */
 #slideshow span {
-    padding: 1em 1.5em;
-    margin: 2em;
-    font-size: .9em
+
 }
 }
 
 @media (max-width: 925px) {
-
 .slideshow-row {
     flex-direction: column;
 }
@@ -401,7 +374,6 @@ opacity:0;
     width: 100%;
     border-right: 0;
 }
-
 }
 
 @media (max-width: 575px) {
@@ -597,9 +569,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row border-top">
     <div class="container text-center margin-lg-150">
       <h1 class="jumbo-text text-uppercase font-weight-400 no-margin-bottom">Reserve a Space</h1>
-      <h4 class="roboto margin-top-5 margin-bottom-5">Douglas County Libraries offers meeting and study spaces, and indoor and outdoor event spaces, for nonprofit, community and for-profit groups.</h4><div class="large-text padding-bottom-15">Beginning June 3, 2024, you will need a library card and PIN to reserve rooms.</div><div class="padding-bottom-15">We can also help you celebrate your <a href="../say-i-do/">wedding or special occasion</a> and <a href="../showers/">baby shower</a>!</div>
-  </div></div>
-
+      <h4 class="roboto margin-top-5 margin-bottom-5">Douglas County Libraries offers meeting and study spaces, and indoor and outdoor event spaces, for nonprofit, community and for-profit groups.</h4>
+      <div class="large-text padding-bottom-15">Beginning June 3, 2024, you will need a library card and PIN to reserve rooms.</div>
+      <div class="padding-bottom-15">We can also help you celebrate your <a href="../say-i-do/">wedding or special occasion</a> and <a href="../showers/">baby shower</a>!</div>
+    </div>
+  </div>
   <div class="row padding-bottom-15">
     <div class="box-wrapper">
       <div class="box-item">
@@ -706,55 +680,38 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <!-- define each background-image in CSS -->
       <div></div>
       <!-- #slideshow div:nth-of-type(1) --> 
-      <span>&copy; Butterfly Pavilion</span>
+      <span>Birthday Parties</span>
       <div></div>
       
       <!-- #slideshow div:nth-of-type(2) --> 
-      <span>&copy; Colorado Railroad Museum</span>
+      <span>Weddings & Receptions</span>
       <div></div>
       
       <!-- #slideshow div:nth-of-type(3) --> 
-      <span>&copy; Denver Firefighters Museum</span>
+      <span>Baby Showers</span>
       <div></div>
       <!-- #slideshow div:nth-of-type(4) --> 
-      <span>&copy; Denver Museum of Nature & Science</span>
+      <span>After-hours Library Buyout</span>
       <div></div>
       <!-- #slideshow div:nth-of-type(5) --> 
-      <span>&copy; Dinosaur Ridge</span>
+      <span>Wedding Showers</span>
       <div></div>
       <!-- #slideshow div:nth-of-type(6) --> 
-      <span>&copy; History Colorado Center</span>
+      <span>Fundraising Events</span>
       <div></div>
       <!-- #slideshow div:nth-of-type(7) --> 
-      <span>&copy; Paul Brokering Photography</span>
+      <span>Classes, Training & Seminars</span>
       <div></div>
       <!-- #slideshow div:nth-of-type(8) --> 
-      <span>&copy; MCA Denver</span>
+      <span>Public Programs</span>
       <div></div>
       <!-- #slideshow div:nth-of-type(9) --> 
-      <span>&copy; Wings Over the Rockies Air & Space Museum</span> </div>
+      <span>Lectures & Panel Discussions</span> </div>
     <div class="slideshow-content">
-      <h5 class="no-margin-top"><a href="https://goo.gl/maps/VJiUS4pxFem" target="_blank">Butterfly Pavilion</a></h5>
-      <h5><a href="https://g.page/corailroadmuseum" target="_blank">Colorado Railroad Museum</a></h5>
-      
-      <!--<div>
-          <h5 class="no-margin-bottom"><a href="https://goo.gl/maps/hdpzfdcKg4s" target="_blank">Colorado Symphony*</a></h5>
-          <div class="small white">*Passes available for <a href="#" data-toggle="modal" data-target="#symphony" class="white text-underline">these performances</a></div>
-        </div>-->
-      
-      <h5><a href="https://goo.gl/maps/nswiDYjXdYo" target="_blank">Denver Firefighters Museum</a></h5>
-      
-      <!-- removed until they re-open <div>
-         <h5><a href="https://goo.gl/maps/gB4iKfbCsXx" target="_blank">Denver Museum of Miniatures, Dolls and Toys</a></h5>
-        </div>-->
-      
-      <h5><a href="https://goo.gl/maps/wDgZGzgiLct" target="_blank">Denver Museum of Nature & Science</a></h5>
-      <h5><a href="https://goo.gl/maps/HTqhvcNt1Hz6DN5YA" target="_blank">Dinosaur Ridge</a></h5>
-      <h5><a href="https://goo.gl/maps/DC8LFDAHJLo" target="_blank">History Colorado Center</a></h5>
-      <h5><a href="https://goo.gl/maps/nSdLFauthwT2" target="_blank">Molly Brown House Museum</a></h5>
-      <h5><a href="https://goo.gl/maps/ZH2Vas4RAYt" target="_blank">Museum of Contemporary Art Denver</a></h5>
-      <h5><a href="https://goo.gl/maps/jxLnGpwLNts" target="_blank">Wings Over the Rockies Air &amp; Space Museum</a></h5>
-      <div> <a class="text-uppercase btn btn-lg btn-primary margin-top-15" href="https://www.eventkeeper.com/code/events.cfm?curOrg=DCLIBS&curApp=passes" target="_blank">Reserve Now</a></div>
+      <h4 class="no-margin-top">Content goes here</h4>
+      <div class="padding-bottom-15">Curabitur at est et risus vestibulum pharetra. Nulla sed orci risus, vel volutpat dui. Integer ac lacus vitae neque pulvinar scelerisque.</div>
+      <div class="padding-bottom-15">Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu, luctus sit amet nisl.</div>
+      <div>Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
     </div>
   </div>
   
@@ -895,7 +852,25 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> <script>
+/* http://cssmojo.com/ken-burns-effect/ */
+function kbSlideshow() { // set .fx1 class on 1st img on page load
+	window.setInterval(kenBurns, 6000); // calls kenBurns() function every 4 secs
+	var images = document.getElementById('slideshow').getElementsByTagName('div'),
+        numberOfImages = images.length, i = 1; // track loop - 1 (not 0) as 1st img is styled on page load
+	images[0].className = "fx1"; // style 1st img on page load
+	function kenBurns() {
+		if (i==numberOfImages) { i = 0; }
+        	images[i].className = "fx"; // set .fx class on each img
+		// clean up one before last to avoid bounce effect - can't remove .fx from previous
+        	if (i===0) { images[numberOfImages-2].className = ""; }
+        	if (i===1) { images[numberOfImages-1].className = ""; }
+        	if (i>1) { images[i-2].className = ""; }
+        	i++;
+		}
+	}
+setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
+</script> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
@@ -934,4 +909,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
