@@ -7,7 +7,7 @@
 <!-- Minimize page flickering for Google Optimize -->
 <style>
 .async-hide {
-	opacity: 0 !important
+    opacity: 0 !important
 }
 </style>
 
@@ -46,7 +46,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ubuntu:300,400,500,300italic,400italic,500italic|Open+Sans:300,400,500,600,700,800|Nothing+You+Could+Do|Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="../shared-assets/css/dcl.css?122823">
-<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script async="async" type="text/javascript">(function(){var e=document.createElement("script");
 e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
 e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
@@ -336,7 +336,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   .done(function( data ) {
     if ( data !=null ){	$("#general-alert").show().append( data );}
 });
-</script>-->
+</script>--> 
 <!-- Google Tag Manager (noscript) --> 
 
 <!-- End Google Tag Manager (noscript) --> 
@@ -411,11 +411,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </ul>
       </li>
       <li class="digital-media-active"><a href="../digital-media/">Digital Media</a> </li>
-      <li class="reserve-a-space-active"><a href="../reserve-a-space/">Reserve a Space</a> </li>
+      <li class="dropdown reserve-a-space-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reserve a Space <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+        <ul class="dropdown-menu">
+          <li><a href="../reserve-a-space/">Reserve a Space</a></li>
+          <li><a href="https://go.dcl.org/myreservations/">My Reservations</a></li>
+        </ul>
+      </li>
       <li class="dropdown events-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="../authors-events/">Featured Events</a></li>
-          <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">Events Calendar</a></li>
+          <li><a href="../featured-events/">Featured Events</a></li>
+          <li><a href="https://go.dcl.org/events?et=Storytime">Events Calendar</a></li>
+          <li><a href="https://go.dcl.org/myevents">My Events</a></li>
         </ul>
       </li>
       <li class="research-active"><a href="../research/">Research</a> </li>
@@ -467,11 +473,17 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                 </ul>
               </li>
               <li class="digital-media-active mobile-nav-heading"><a href="../digital-media/">Digital Media</a> </li>
-              <li class="reserve-a-space-active mobile-nav-heading"><a href="../reserve-a-space/">Reserve a Space</a> </li>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#reserve-a-space">Reserve a Space <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+                <ul id="reserve-a-space" class="nav mobile-nav-list collapse">
+                  <li><a href="../reserve-a-space/">Reserve a Space</a></li>
+                  <li><a href="https://go.dcl.org/myreservations/">My Reservations</a></li>
+                </ul>
+              </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#library-events">Library Events <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
                 <ul id="library-events" class="nav mobile-nav-list collapse">
-                  <li><a href="../authors-events/">Featured Events</a></li>
-                  <li><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2,3,15,16,18,20,22,24,25,35,36,37,38,39,40&lib=ALL&nd=180" target="_blank">Events Calendar</a></li>
+                  <li><a href="../featured-events/">Featured Events</a></li>
+                  <li><a href="https://go.dcl.org/events?et=Storytime">Events Calendar</a></li>
+                  <li><a href="https://go.dcl.org/myevents">My Events</a></li>
                 </ul>
               </li>
               <li class="research-active mobile-nav-heading"><a href="../research/">Research</a> </li>
