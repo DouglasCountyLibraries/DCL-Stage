@@ -80,20 +80,32 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 .reserve-a-space-active {
 	background-color: #f5f5f5;
 }
+
+    
+    
+ .box-container {
+	max-width: 1440px;
+	margin: 0 auto;
+
+}
 .box-wrapper {
 	display: flex;
-    max-width: 1440px;
-    margin: 0 auto;
+	flex-wrap: wrap;
 	align-content: center;
-	justify-content: center;    
+	justify-content: center;
 }
 .box-item {
+    display: flex;
+    flex-direction: column;
 	flex: 1;
-	flex-direction: column;
-	display: flex;
-	padding-bottom: 30px;
+		padding-bottom: 30px;
 	margin: 15px;
-}
+	min-width: 300px;
+	
+}   
+    
+    
+    
 .align-bottom {
 	margin-top: auto;
 	text-align: center;
@@ -311,20 +323,7 @@ opacity:0;
 }
 }
 
-    @media (max-width: 1075px) {
-.box-wrapper {
-	flex-direction: column;   
-}
-.box-item {
-	max-width: 800px;
-	align-self: center;
-	
-}
-.box-inner {
-    text-align: center;
-}
-}    
-    
+
     
 @media(min-width:42em) { /* bigger than 672px */
 #slideshow span {
@@ -544,30 +543,32 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row">
-    <div class="box-wrapper">
-      <div class="box-item">
-        <div id="box-one"></div>
-        <div class="box-inner">
-          <h3 class="text-center">Meeting Rooms & Event Spaces</h3>
-          <div>Our vibrant buildings offer beautiful and ample meeting and event spaces, and maintain the highest standards of service. From modern furniture to high-end technology, discover the ideal event space for your next <a href="#upgrade">corporate function or intimate social event</a>. We'll even host your child's <a href="../birthday-parties/">birthday party</a>!</div>
+    <div class="box-container">
+      <div class="box-wrapper">
+        <div class="box-item">
+          <div id="box-one"></div>
+          <div class="box-inner">
+            <h3 class="text-center">Meeting Rooms & Event Spaces</h3>
+            <div>Our vibrant buildings offer beautiful and ample meeting and event spaces, and maintain the highest standards of service. From modern furniture to high-end technology, discover the ideal event space for your next <a href="#upgrade">corporate function or intimate social event</a>. We'll even host your child's <a href="../birthday-parties/">birthday party</a>!</div>
+          </div>
+          <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1468" class="btn btn-lg btn-primary">Reserve Now</a></div>
         </div>
-        <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1468" class="btn btn-lg btn-primary">Reserve Now</a></div>
-      </div>
-      <div class="box-item">
-        <div id="box-two"></div>
-        <div class="box-inner">
-          <h3 class="text-center">Study Rooms</h3>
-          <div>Study rooms for up to four people (rooms vary by location) may be reserved up to two weeks in advance, for a maximum of two hours per day. You may forfeit your reservation if you are 15 or more minutes late. For help reserving a study room, call <a class="text-nowrap" href="tel:+13037917323">(303) 791-7323</a> or visit your library.</div>
+        <div class="box-item">
+          <div id="box-two"></div>
+          <div class="box-inner">
+            <h3 class="text-center">Study Rooms</h3>
+            <div>Study rooms for up to four people (rooms vary by location) may be reserved up to two weeks in advance, for a maximum of two hours per day. You may forfeit your reservation if you are 15 or more minutes late. For help reserving a study room, call <a class="text-nowrap" href="tel:+13037917323">(303) 791-7323</a> or visit your library.</div>
+          </div>
+          <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1499" class="btn btn-lg btn-primary">Reserve Now</a></div>
         </div>
-        <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1499" class="btn btn-lg btn-primary">Reserve Now</a></div>
-      </div>
-      <div class="box-item">
-        <div id="box-three"></div>
-        <div class="box-inner">
-          <h3 class="text-center">Parker Recording Studio</h3>
-          <div>Our Parker location offers state-of-the-art software and equipment customers can use to create videos, musical compositions, podcasts, marketing materials and more. <a href="#studiomodal" data-target="#studiomodal" data-toggle="modal" type="link">Find out more</a> about the recording studio or <a href="https://go.dcl.org/events?term=recording+studio+training&r=months&n=6">register now for a one hour orientation</a>. All ages and skill levels are welcome.</div>
+        <div class="box-item">
+          <div id="box-three"></div>
+          <div class="box-inner">
+            <h3 class="text-center">Parker Recording Studio</h3>
+            <div>Our Parker location offers state-of-the-art software and equipment customers can use to create videos, musical compositions, podcasts, marketing materials and more. <a href="#studiomodal" data-target="#studiomodal" data-toggle="modal" type="link">Find out more</a> about the recording studio or <a href="https://go.dcl.org/events?term=recording+studio+training&r=months&n=6">register now for a one hour orientation</a>. All ages and skill levels are welcome.</div>
+          </div>
+          <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1499&roomId=13346" class="btn btn-lg btn-primary margin-right-10">Reserve Now</a> </div>
         </div>
-        <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1499&roomId=13346" class="btn btn-lg btn-primary margin-right-10">Reserve Now</a> </div>
       </div>
     </div>
   </div>
