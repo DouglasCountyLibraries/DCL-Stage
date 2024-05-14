@@ -80,14 +80,6 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 .reserve-a-space-active {
 	background-color: #f5f5f5;
 }
-.larger-text {
-	font-size: 1.4em;
-	padding-bottom: 15px;
-}
-
-.fa-star {
-	color: #FFBE0C;
-}
 .box-wrapper {
 	display: flex;
     max-width: 1440px;
@@ -102,7 +94,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	padding-bottom: 30px;
 	margin: 15px;
 }
-.bottom-button {
+.align-bottom {
 	margin-top: auto;
 	text-align: center;
 	padding-top: 25px;
@@ -129,59 +121,26 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	margin: 0;
 	padding: 9px 4px 9px;
 	font-size: 24px;
-	background: #4d4c4b;
+	background: #4f878c;
 	text-align: center;
 }
 .service-inner {
     padding: 30px 30px 40px;
-    color: #000;
 }
-.title a, .title a:hover, .title a:focus {
-	color: #333;
-	cursor: text;
-	text-decoration: none;
+.fa-ul.services {
+	margin-left: var(--fa-li-margin, 1.5em);
 }
-.contact-info {
-	padding-top: 5px;
-}
-.description b {
-	font-weight: 300;
-	display: block;
-	white-space: nowrap;
-}
-.description b a {
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    white-space: break-spaces;
-}
-.description b:nth-child(1) {
-	font-size: 20px;
-}
-.fa-ul.self, .fa-ul.select, .fa-ul.concierge {
-	
-	margin-left: var(--fa-li-margin,2em);
-	
-}
-.self .fa-check {
-	color: #666;
-}
-.select .fa-check {
-	color: #666;
-}
-.concierge .fa-check {
-	color: #666;
-}
-.fa-ul > li {
+.fa-ul.services li {
 	margin-bottom: 15px;
 }
-.fa-th {
-	vertical-align: middle;
+.fa-li.fa.fa-check.fa-lg {
+	color: #4f878c;
 }
+
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
+    .slideshow-wrapper {
+        margin: 0 15px;
+    }
 .slideshow-row {
 	background: #fff;
 	display: flex;
@@ -592,7 +551,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <h3 class="text-center">Meeting Rooms & Event Spaces</h3>
           <div>Our vibrant buildings offer beautiful and ample meeting and event spaces, and maintain the highest standards of service. From modern furniture to high-end technology, discover the ideal event space for your next <a href="#upgrade">corporate function or intimate social event</a>. We'll even host your child's <a href="../birthday-parties/">birthday party</a>!</div>
         </div>
-        <div class="bottom-button"> <a href="https://go.dcl.org/reserve?bookingType=1468" class="btn btn-lg btn-primary">Reserve Now</a></div>
+        <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1468" class="btn btn-lg btn-primary">Reserve Now</a></div>
       </div>
       <div class="box-item">
         <div id="box-two"></div>
@@ -600,7 +559,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <h3 class="text-center">Study Rooms</h3>
           <div>Study rooms for up to four people (rooms vary by location) may be reserved up to two weeks in advance, for a maximum of two hours per day. You may forfeit your reservation if you are 15 or more minutes late. For help reserving a study room, call <a class="text-nowrap" href="tel:+13037917323">(303) 791-7323</a> or visit your library.</div>
         </div>
-        <div class="bottom-button"> <a href="https://go.dcl.org/reserve?bookingType=1499" class="btn btn-lg btn-primary">Reserve Now</a></div>
+        <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1499" class="btn btn-lg btn-primary">Reserve Now</a></div>
       </div>
       <div class="box-item">
         <div id="box-three"></div>
@@ -608,7 +567,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <h3 class="text-center">Parker Recording Studio</h3>
           <div>Our Parker location offers state-of-the-art software and equipment customers can use to create videos, musical compositions, podcasts, marketing materials and more. <a href="#studiomodal" data-target="#studiomodal" data-toggle="modal" type="link">Find out more</a> about the recording studio or <a href="https://go.dcl.org/events?term=recording+studio+training&r=months&n=6">register now for a one hour orientation</a>. All ages and skill levels are welcome.</div>
         </div>
-        <div class="bottom-button"> <a href="https://go.dcl.org/reserve?bookingType=1499&roomId=13346" class="btn btn-lg btn-primary margin-right-10">Reserve Now</a> </div>
+        <div class="align-bottom"> <a href="https://go.dcl.org/reserve?bookingType=1499&roomId=13346" class="btn btn-lg btn-primary margin-right-10">Reserve Now</a> </div>
       </div>
     </div>
   </div>
@@ -635,49 +594,51 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
   <div class="row bg-gray-5">
-    <div class="slideshow-row">
-      <div id="slideshow" class="slideshow-image main"> 
-        <!-- define each background-image in CSS -->
-        <div></div>
-        <!-- #slideshow div:nth-of-type(1) --> 
-        <span>Birthday Parties</span>
-        <div></div>
-        
-        <!-- #slideshow div:nth-of-type(2) --> 
-        <span>Weddings &<br>
-        Receptions</span>
-        <div></div>
-        
-        <!-- #slideshow div:nth-of-type(3) --> 
-        <span>Fundraising Events</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(4) --> 
-        <span>After-hours Library<br>
-        Buyout</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(5) --> 
-        <span>Award Banquets</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(6) --> 
-        <span>Baby Showers</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(7) --> 
-        <span>Classes, Training &<br>
-        Seminars</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(8) --> 
-        <span>Lectures & Panel<br>
-        Discussions</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(9) --> 
-        <span>Special Occasions</span>
-        <div></div>
-        <!-- #slideshow div:nth-of-type(10) --> 
-        <span>Private Parties</span> </div>
-      <div class="slideshow-content">
-        <div class="padding-bottom-15">Take advantage of our modern, versatile event spaces by hosting your next <a href="../birthday-parties/">birthday party</a>, celebration, <a href="../say-i-do/">wedding</a>, fundraising event, <a href="../showers/">baby or wedding shower</a>, or private party at one of our convenient locations.</div>
-        <div class="padding-bottom-15">Our friendly staff offer full-service planning and management of all details of your special event or meeting. From small groups to large events, our affordable venues accommodate it all.</div>
-        <div><a href="../upgrade/">Contact us today</a> to reserve the perfect space for your next gathering!</div>
+    <div class="slideshow-wrapper">
+      <div class="slideshow-row">
+        <div id="slideshow" class="slideshow-image main"> 
+          <!-- define each background-image in CSS -->
+          <div></div>
+          <!-- #slideshow div:nth-of-type(1) --> 
+          <span>Birthday Parties</span>
+          <div></div>
+          
+          <!-- #slideshow div:nth-of-type(2) --> 
+          <span>Weddings &<br>
+          Receptions</span>
+          <div></div>
+          
+          <!-- #slideshow div:nth-of-type(3) --> 
+          <span>Fundraising Events</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(4) --> 
+          <span>After-hours Library<br>
+          Buyout</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(5) --> 
+          <span>Award Banquets</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(6) --> 
+          <span>Baby Showers</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(7) --> 
+          <span>Classes, Training &<br>
+          Seminars</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(8) --> 
+          <span>Lectures & Panel<br>
+          Discussions</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(9) --> 
+          <span>Special Occasions</span>
+          <div></div>
+          <!-- #slideshow div:nth-of-type(10) --> 
+          <span>Private Parties</span> </div>
+        <div class="slideshow-content">
+          <div class="padding-bottom-15">Take advantage of our modern, versatile event spaces by hosting your next <a href="../birthday-parties/">birthday party</a>, celebration, <a href="../say-i-do/">wedding</a>, fundraising event, <a href="../showers/">baby or wedding shower</a>, or private party at one of our convenient locations.</div>
+          <div class="padding-bottom-15">Our friendly staff offer full-service planning and management of all details of your special event or meeting. From small groups to large events, our affordable venues accommodate it all.</div>
+          <div><a href="../upgrade/">Contact us today</a> to reserve the perfect space for your next gathering!</div>
+        </div>
       </div>
     </div>
   </div>
@@ -693,7 +654,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div id="self-service" class="service-box">
           <h3>Self-Service Meetings & Events</h3>
           <div class="service-inner">
-            <ul class="fa-ul self">
+            <ul class="fa-ul services">
               <li><i class="fa-li fa fa-check fa-lg"></i>You <a href="https://go.dcl.org/reserve?bookingType=1468">reserve your space online</a> with your library card and PIN</li>
               <li><i class="fa-li fa fa-check fa-lg"></i>Basic free meeting service during library operating hours</li>
               <li><i class="fa-li fa fa-check fa-lg"></i>You set up and return the room to its pre-event state</li>
@@ -707,7 +668,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div id="select-service" class="service-box">
           <h3>Select Service</h3>
           <div class="service-inner">
-            <ul class="fa-ul select">
+            <ul class="fa-ul services">
               <li><i class="fa-li fa fa-check fa-lg"></i>You <a href="https://go.dcl.org/reserve?bookingType=1468">reserve your space online</a> with your library card and PIN, at least 48 hours in advance, or contact us for <a href="../upgrade/">details and reservations</a></li>
               <li><i class="fa-li fa fa-check fa-lg"></i>Spaces may be used outside of library operating hours</li>
               <li><i class="fa-li fa fa-check fa-lg"></i>Expert consultation from a DCL event coordinator, including final walk-through and AV troubleshooting</li>
@@ -723,7 +684,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div id="concierge-service" class="service-box">
           <h3>Concierge Service</h3>
           <div class="service-inner">
-            <ul class="fa-ul concierge">
+            <ul class="fa-ul services">
               <li><i class="fa-li fa fa-check fa-lg"></i>We make your reservation for you, at least six weeks and up to three years in advance, and before rooms are available to the public. Contact us for <a href="../upgrade/">details and reservations</a></li>
               <li><i class="fa-li fa fa-check fa-lg"></i>Spaces may be used outside of library operating hours; 50-100% of the library may be rented</li>
               <li><i class="fa-li fa fa-check fa-lg"></i>Full-service event planning and management, including agendas, vendors, finances and AV troubleshooting</li>
