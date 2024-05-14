@@ -183,7 +183,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	align-items: center;
 	justify-content: center;
 	max-width: 1410px;
-	margin: 70px auto 80px auto;
+	margin: 30px auto 80px auto;
 }
 .slideshow-content {
     flex: 1 1 36%;
@@ -623,65 +623,63 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['studio-one.jpg', 'studio-two.jpg', 'studio-three.jpg', 'studio-four.jpg', 'studio-five.jpg', 'studio-six.jpg'];
     $('<img alt="Parker Recording Studio" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
 </script>
-    
-    
-
-    
-<div id="gallery" class="row bg-gray-5">
-  <div class="slideshow-row">
-    <div id="slideshow" class="slideshow-image main"> 
-      <!-- define each background-image in CSS -->
-      <div></div>
-      <!-- #slideshow div:nth-of-type(1) --> 
-      <span>Birthday Parties</span>
-      <div></div>
-      
-      <!-- #slideshow div:nth-of-type(2) --> 
-      <span>Weddings &<br>
-      Receptions</span>
-      <div></div>
-      
-      <!-- #slideshow div:nth-of-type(3) --> 
-      <span>Fundraising Events</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(4) --> 
-      <span>After-hours Library<br>
-      Buyout</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(5) --> 
-      <span>Award Banquets</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(6) --> 
-      <span>Baby Showers</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(7) --> 
-      <span>Classes, Training &<br>
-      Seminars</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(8) --> 
-      <span>Lectures & Panel<br>
-      Discussions</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(9) --> 
-      <span>Special Occasions</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(10) --> 
-      <span>Private Parties</span> </div>
-    <div class="slideshow-content">
-      <h4 class="no-margin-top">Host your next event at DCL!</h4>
-      <div class="padding-bottom-15">Take advantage of our modern, versatile event spaces by hosting your next <a href="../birthday-parties/">birthday party</a>, celebration, <a href="../say-i-do/">wedding</a>, fundraising event, <a href="../showers/">baby or wedding shower</a>, or private party at one of our convenient locations.</div>
-      <div class="padding-bottom-15">Our friendly staff offer full-service planning and management of all details of your special event or meeting. From small groups to large events, our affordable venues accommodate it all.</div>
-      <div><a href="../upgrade/">Contact us today</a> to reserve the perfect space for your next gathering!</div>
+  <div id="gallery" class="row bg-gray-5 padding-top-30">
+    <div class="container text-center margin-lg-175">
+      <h2>Host Your Next Event at DCL</h2>
+      <div>Our meeting rooms and event spaces accommodate the style, size and complexity of any event. When you <a href="#upgrade">upgrade your reservation to Select or Concierge Service</a>, our dedicated event experts can help make your special function a success.</div>
     </div>
-    </div></div>
-    
-    
-    
-    
+  </div>
+  <div class="row bg-gray-5">
+    <div class="slideshow-row">
+      <div id="slideshow" class="slideshow-image main"> 
+        <!-- define each background-image in CSS -->
+        <div></div>
+        <!-- #slideshow div:nth-of-type(1) --> 
+        <span>Birthday Parties</span>
+        <div></div>
+        
+        <!-- #slideshow div:nth-of-type(2) --> 
+        <span>Weddings &<br>
+        Receptions</span>
+        <div></div>
+        
+        <!-- #slideshow div:nth-of-type(3) --> 
+        <span>Fundraising Events</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(4) --> 
+        <span>After-hours Library<br>
+        Buyout</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(5) --> 
+        <span>Award Banquets</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(6) --> 
+        <span>Baby Showers</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(7) --> 
+        <span>Classes, Training &<br>
+        Seminars</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(8) --> 
+        <span>Lectures & Panel<br>
+        Discussions</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(9) --> 
+        <span>Special Occasions</span>
+        <div></div>
+        <!-- #slideshow div:nth-of-type(10) --> 
+        <span>Private Parties</span> </div>
+      <div class="slideshow-content">
+        <div class="padding-bottom-15">Take advantage of our modern, versatile event spaces by hosting your next <a href="../birthday-parties/">birthday party</a>, celebration, <a href="../say-i-do/">wedding</a>, fundraising event, <a href="../showers/">baby or wedding shower</a>, or private party at one of our convenient locations.</div>
+        <div class="padding-bottom-15">Our friendly staff offer full-service planning and management of all details of your special event or meeting. From small groups to large events, our affordable venues accommodate it all.</div>
+        <div><a href="../upgrade/">Contact us today</a> to reserve the perfect space for your next gathering!</div>
+      </div>
+    </div>
+  </div>
   <div id="upgrade" class="row padding-top-30">
     <div class="container text-center margin-lg-200">
-      <h1>Upgrade Your Reservation</h1>
-      <div class="padding-bottom-15">Our meeting rooms and event spaces accommodate the style, size and complexity of any event. When you upgrade your reservation to Select or Concierge Service, our dedicated event experts can help make your special function a success.</div>
+      <h2>Upgrade Your Reservation</h2>
+      <div class="padding-bottom-15">Choose from three levels of services and amenities for a successful meeting or event.</div>
     </div>
   </div>
   <div class="row">
@@ -735,7 +733,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </div>
-  </div>  <div class="row padding-bottom-60">
+  </div>
+  <div class="row padding-bottom-60">
     <div class="container text-center padding-top-15 margin-lg-250">
       <div>Have questions? Call Event + Hospitality Services at <span class="text-nowrap"><a href="tel:303-688-7605">(303) 688-7605</a></span>.</div>
       <div>Select and Concierge Service reservations are subject to availability of Event&nbsp;+&nbsp;Hospitality Services personnel.</div>
