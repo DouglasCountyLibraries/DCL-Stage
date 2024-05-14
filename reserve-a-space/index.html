@@ -122,7 +122,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	flex: 1;
 	margin: 15px;
 	min-width: 350px;
-	background: #fff;
+	background: #f5f5f5;
 }
 .service-box h3 {
 	color: #333;
@@ -133,7 +133,8 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 	text-align: center;
 }
 .service-inner {
-        padding: 30px 15px;
+    padding: 30px 15px;
+    color: #000;
 }
 .title a, .title a:hover, .title a:focus {
 	color: #333;
@@ -177,7 +178,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
 }
 /* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
 .slideshow-row {
-	background: #f5f5f5;
+	background: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -196,7 +197,7 @@ src="https://www.facebook.com/tr?id=323565307821038&ev=PageView
     overflow: hidden;
     padding-bottom: 0%;
     width: 67%;
-    border-right: 15px solid #fff;
+    border-right: 15px solid #f5f5f5;
 } /* (img px height / img px width x 100) = padding-bottom % */
 #slideshow div {
     position: absolute;
@@ -584,7 +585,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div id="box-one"></div>
         <div class="box-inner">
           <h3 class="text-center">Meeting Rooms & Event Spaces</h3>
-          <div>Our vibrant buildings offer beautiful and ample meeting and event spaces, and maintain the highest standards of service. From modern furniture to high-end technology, discover the ideal event space for your next <a href="#gallery">corporate function or intimate social event</a>. We'll even host your child's <a href="../birthday-parties/">birthday party</a>!</div>
+          <div>Our vibrant buildings offer beautiful and ample meeting and event spaces, and maintain the highest standards of service. From modern furniture to high-end technology, discover the ideal event space for your next <a href="#upgrade">corporate function or intimate social event</a>. We'll even host your child's <a href="../birthday-parties/">birthday party</a>!</div>
         </div>
         <div class="bottom-button"> <a href="https://go.dcl.org/reserve?bookingType=1468" class="btn btn-lg btn-primary">Reserve Now</a></div>
       </div>
@@ -606,7 +607,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </div>
   </div>
-  <div class="row padding-bottom-60">
+  <div class="row padding-bottom-50">
     <div class="container text-center">
       <div>By reserving a room you <a href="../meeting-room-guidelines/">agree to DCL's terms and conditions</a>.</div>
       <div>All reservations are subject to room availability.</div>
@@ -622,13 +623,68 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 	var images = ['studio-one.jpg', 'studio-two.jpg', 'studio-three.jpg', 'studio-four.jpg', 'studio-five.jpg', 'studio-six.jpg'];
     $('<img alt="Parker Recording Studio" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');
 </script>
-  <div class="row bg-gray-5 padding-top-30">
+    
+    
+
+    
+<div id="gallery" class="row bg-gray-5">
+  <div class="slideshow-row">
+    <div id="slideshow" class="slideshow-image main"> 
+      <!-- define each background-image in CSS -->
+      <div></div>
+      <!-- #slideshow div:nth-of-type(1) --> 
+      <span>Birthday Parties</span>
+      <div></div>
+      
+      <!-- #slideshow div:nth-of-type(2) --> 
+      <span>Weddings &<br>
+      Receptions</span>
+      <div></div>
+      
+      <!-- #slideshow div:nth-of-type(3) --> 
+      <span>Fundraising Events</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(4) --> 
+      <span>After-hours Library<br>
+      Buyout</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(5) --> 
+      <span>Award Banquets</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(6) --> 
+      <span>Baby Showers</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(7) --> 
+      <span>Classes, Training &<br>
+      Seminars</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(8) --> 
+      <span>Lectures & Panel<br>
+      Discussions</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(9) --> 
+      <span>Special Occasions</span>
+      <div></div>
+      <!-- #slideshow div:nth-of-type(10) --> 
+      <span>Private Parties</span> </div>
+    <div class="slideshow-content">
+      <h4 class="no-margin-top">Host your next event at DCL!</h4>
+      <div class="padding-bottom-15">Take advantage of our modern, versatile event spaces by hosting your next <a href="../birthday-parties/">birthday party</a>, celebration, <a href="../say-i-do/">wedding</a>, fundraising event, <a href="../showers/">baby or wedding shower</a>, or private party at one of our convenient locations.</div>
+      <div class="padding-bottom-15">Our friendly staff offer full-service planning and management of all details of your special event or meeting. From small groups to large events, our affordable venues accommodate it all.</div>
+      <div><a href="../upgrade/">Contact us today</a> to reserve the perfect space for your next gathering!</div>
+    </div>
+    </div></div>
+    
+    
+    
+    
+  <div id="upgrade" class="row padding-top-30">
     <div class="container text-center margin-lg-200">
       <h1>Upgrade Your Reservation</h1>
       <div class="padding-bottom-15">Our meeting rooms and event spaces accommodate the style, size and complexity of any event. When you upgrade your reservation to Select or Concierge Service, our dedicated event experts can help make your special function a success.</div>
     </div>
   </div>
-  <div id="upgrade" class="row bg-gray-5">
+  <div class="row">
     <div class="service-container">
       <div class="service-wrapper">
         <div id="self-service" class="service-box">
@@ -679,57 +735,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </div>
-  </div>
-  <div class="row bg-gray-5 padding-bottom-60">
+  </div>  <div class="row padding-bottom-60">
     <div class="container text-center padding-top-15 margin-lg-250">
       <div>Have questions? Call Event + Hospitality Services at <span class="text-nowrap"><a href="tel:303-688-7605">(303) 688-7605</a></span>.</div>
       <div>Select and Concierge Service reservations are subject to availability of Event&nbsp;+&nbsp;Hospitality Services personnel.</div>
-    </div>
-  </div>
-  <div id="gallery" class="row slideshow-row">
-    <div id="slideshow" class="slideshow-image main"> 
-      <!-- define each background-image in CSS -->
-      <div></div>
-      <!-- #slideshow div:nth-of-type(1) --> 
-      <span>Birthday Parties</span>
-      <div></div>
-      
-      <!-- #slideshow div:nth-of-type(2) --> 
-      <span>Weddings &<br>
-      Receptions</span>
-      <div></div>
-      
-      <!-- #slideshow div:nth-of-type(3) --> 
-      <span>Fundraising Events</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(4) --> 
-      <span>After-hours Library<br>
-      Buyout</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(5) --> 
-      <span>Award Banquets</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(6) --> 
-      <span>Baby Showers</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(7) --> 
-      <span>Classes, Training &<br>
-      Seminars</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(8) --> 
-      <span>Lectures & Panel<br>
-      Discussions</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(9) --> 
-      <span>Special Occasions</span>
-      <div></div>
-      <!-- #slideshow div:nth-of-type(10) --> 
-      <span>Private Parties</span> </div>
-    <div class="slideshow-content">
-      <h4 class="no-margin-top">Host your next event at DCL!</h4>
-      <div class="padding-bottom-15">Take advantage of our modern, versatile event spaces by hosting your next <a href="../birthday-parties/">birthday party</a>, celebration, <a href="../say-i-do/">wedding</a>, fundraising event, <a href="../showers/">baby or wedding shower</a>, or private party at one of our convenient locations.</div>
-      <div class="padding-bottom-15">Our friendly staff offer full-service planning and management of all details of your special event or meeting. From small groups to large events, our affordable venues accommodate it all.</div>
-      <div><a href="../upgrade/">Contact us today</a> to reserve the perfect space for your next gathering!</div>
     </div>
   </div>
   
