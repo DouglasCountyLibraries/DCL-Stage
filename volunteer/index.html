@@ -57,10 +57,6 @@
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
 <style>
-        iframe {
-  width: 100%;
-  height: auto;
-}
 .location li {
 	line-height: 1.6em;
 	font-weight: 400;
@@ -374,42 +370,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="text-center"> <a href="https://app.betterimpact.com/PublicEnterprise/74d8b81b-e9ef-40d3-9ff9-259825082a07" target="_blank" class="btn btn-lg btn-primary margin-top-5">Apply Now / Log In</a> </div>
     </div>
   </div>
-    
-    
-    
-          <iframe src="https://go.dcl.org/widget?id=21007&style=1508&location=3851&bodyonly=1" onload="resizeIframe(this)"></iframe>
-      
-      
-      
-        <script>
-// Parent page
-function resizeIframe(obj) {
-  // Send the new height to the iframe
-  obj.contentWindow.postMessage({ action: "resize", height: obj.style.height }, "*");
-}
-
-window.addEventListener('resize', function() {
-  var iframe = document.querySelector('iframe');
-  if (iframe) {
-    resizeIframe(iframe);
-  }
-});
-
-// Inside the iframe (assuming you can modify its content)
-window.addEventListener("message", function(event) {
-  if (event.data.action === "resize") {
-    // Adjust the iframe's height here
-    document.documentElement.style.height = event.data.height;
-  }
-}, false);
-
-  </script>
-    
-    
-    
-    
-    
-    
   <div class="row bg-teal padding-top-60 padding-bottom-60">
     <div class="custom-container no-padding">
       <div class="carousel" data-flickity='{ "imagesLoaded": true, "groupCells": true, "pageDots": false, "wrapAround": true, "autoPlay": 4000 }'>
