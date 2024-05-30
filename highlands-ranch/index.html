@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -102,17 +103,14 @@
     padding: 50px 10px 70px;
 }
 .widget-wrapper {
-    max-width: 992px;
+    max-width: 925px;
     border: 2px solid #ddd;
     border-radius: 3px;
     margin: 0 auto;
     padding: 15px;
 }
-    .widgetframepreview {
-	height: 24vh;
-}
-    div.amev-event-list {
-	height: 24vh;
+.widgetframepreview {
+    height: 24vh;
 }
 #eventsinfo .item {
     flex: 1 0;
@@ -328,6 +326,12 @@
 @media (max-width: 575px) {
 .slideshow-image.main {
     min-height: 300px;
+}
+}
+
+@media (max-width: 425px) {
+.widgetframepreview {
+    height: 30vh;
 }
 }
 </style>
@@ -578,9 +582,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <script type="text/javascript" src="https://douglascountylibraries.evanced.info/signupadmin/eventsxml.aspx?kw=Highlands-Ranch-Event&lib=ALL&nd=365&private=1&dm=html&limit=4&IncludeDateHtml=1"></script> 
   </div>-->
   <div id="events" class="row text-center location-events">
-    <div class="padding-bottom-20"><h2 class="no-margin-top margin-bottom-5">Featured Branch Events</h2>
-    <a href="https://go.dcl.org/events?et=storytime&l=highlands+ranch&r=months&n=1" class="text-uppercase font-weight-400">Highlands Ranch Calendar »</a>
-    </div><div class="widget-wrapper">
+    <div class="padding-bottom-20">
+      <h2 class="no-margin-top margin-bottom-5">Featured Branch Events</h2>
+      <a href="https://go.dcl.org/events?et=storytime&l=highlands+ranch&r=months&n=1" class="text-uppercase font-weight-400">Highlands Ranch Calendar »</a> </div>
+    <div class="widget-wrapper">
       <iframe src="https://go.dcl.org/widget?id=21598&style=1588&location=3851&bodyonly=1" data-widgetid="21598" data-client="dclibraries" scrolling="yes" width="100%" height="300" marginheight="0" frameborder="0" class="widgetframepreview" onload="resizeIframe(this)"></iframe>
     </div>
   </div>
@@ -804,4 +809,5 @@ for (var i = 0; i < cards.length; i++) {
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
