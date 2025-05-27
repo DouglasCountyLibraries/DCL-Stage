@@ -83,7 +83,7 @@
 .video-container {
 	position: relative;
 	overflow: hidden;
-	background: #eee;
+	background: #7864A9;
 width: calc(100% * 0.5);
 	display: flex;
 	flex-direction: column;
@@ -98,14 +98,14 @@ video#bgvid {
 	width: auto;
 	height: auto;
 	transform: translateX(-50%) translateY(-50%);
-	background: #fbd06e url(bugs.jpg) center center/cover;
+	background: #7864A9 url("bugs-video.jpg") center center/cover;
 	background-size: cover;
 }
 video {
 	display: block;
 }
 .srp-info {
-	background: #544388;
+	background: #7864A9;
 	color: #fff;
 width: calc(100% * 0.5);
 	display: flex;
@@ -489,7 +489,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="srp-container">
         <div class="srp-wrapper">
           <div class="srp-info">
-            <div class="srp-content"><img src="ladybug.jpg" alt="">
+            <div class="srp-content"><img src="ladybug-flower.jpg" alt="">
               <h1 class="srp-heading-one">Don’t Bug Me, I’m Reading!</h1>
               <div class="srp-heading-two">
                 <div>Summer reading registration is open! <a class="white text-underline" href="summer-reading">Sign up today</a>. And drop by May&nbsp;31, 10AM-2PM, for Prize Pickup Kickoff!</div>
@@ -497,10 +497,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             </div>
           </div>
           <div class="video-container">
-            <video autoplay muted playsinline poster="bugs.jpg" id="bgvid">
-              <source src="bugs.mp4" type="video/mp4" />
+            <video autoplay muted playsinline poster="bugs-video.jpg" id="bgvid">
+              <source src="bugs-video.mp4" type="video/mp4" />
               Your browser does not support the background video tag.
-              <source src="bugs.webm" type="video/webm" />
+              <source src="bugs-video.mp4" type="video/webm" />
               Your browser does not support the background video tag. </video>
           </div>
         </div>
