@@ -66,7 +66,8 @@
 .background-row {
 	background: linear-gradient(to bottom, #fff 0%, #fff 25%, #efeeed 65%, #efeeed 100%);
 }
-/* srp */ 
+/* srp & video */
+	
 .srp-container {
 	display: flex;
 	max-width: 1440px;
@@ -129,7 +130,100 @@ h1.srp-heading-one {
 	margin: 0 auto;
 	padding: 0 15px 35px;
 }
-/* summer reading & ready set read */
+	
+	
+/* authors */	
+	
+.authors-info {
+	background: #f6c56b url("covers.jpg") bottom center no-repeat;
+	color: #000;
+width: calc(100% * 0.5);
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	font-size: 22px;
+	text-align: center;
+	justify-content: center;
+}
+h1.authors-heading-one {
+	color: #000;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1;
+	margin: 5px 0 10px;
+}
+.authors-heading-two {
+	font-size: 20px;
+}
+.authors-content {
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 0 15px 80px;
+}
+/* e&h promo & flood exhibit */
+.authors-container {
+	display: flex;
+	max-width: 1440px;
+	min-height: 640px;
+	margin: 30px auto 0 auto;
+}
+.authors-wrapper {
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+}
+.eh-wrapper {
+	background: #fb9188;
+width: calc(100% * 0.5);
+	display: flex;
+	flex-direction: column;
+	padding: 80px 15px 30px;
+}
+.eh-wrapper img {
+	border-radius: 50%;
+}
+.eh-content {
+	margin: 0 auto;
+	color: #000;
+	padding: 30px 0 35px;
+	font-size: 20px;
+	text-align: center;
+	max-width: 650px;
+}
+h2.eh-heading-one {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0 0 10px;
+	font-weight: 500;
+}
+.flood-wrapper {
+	background: #8dc6d0;
+width: calc(100% * 0.5);
+	display: flex;
+	flex-direction: column;
+	padding: 80px 15px 30px;
+}
+.flood-wrapper img {
+	border-radius: 50%;
+}
+.flood-content {
+	margin: 0 auto;
+	color: #000;
+	padding: 30px 0 35px;
+	font-size: 20px;
+	text-align: center;
+	max-width: 650px;
+}
+h2.flood-heading-one {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0 0 10px;
+	font-weight: 500;
+}	
+	
+	
+	
+/* outdoor storytime & fete */
 	
 .icon-font {
 	font-size: 100px;
@@ -192,106 +286,19 @@ h2.read-heading-one {
 	margin: 0 0 10px;
 	font-weight: 500;
 }
-/* authors */	
-	
-.authors-info {
-	background: #f6c56b url("covers.jpg") bottom center no-repeat;
-	color: #000;
-width: calc(100% * 0.5);
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	font-size: 22px;
-	text-align: center;
-	justify-content: center;
-}
-h1.authors-heading-one {
-	color: #000;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 1;
-	margin: 5px 0 10px;
-}
-.authors-heading-two {
-	font-size: 20px;
-}
-.authors-content {
-	max-width: 680px;
-	margin: 0 auto;
-	padding: 0 15px 80px;
-}
-/* e&h promo & flood exhibit */
-.eh-flood-container {
-	display: flex;
-	max-width: 1440px;
-	min-height: 640px;
-	margin: 30px auto 0 auto;
-}
-.eh-flood-wrapper {
-	margin: 0 auto;
-	display: flex;
-	width: 100%;
-}
-.eh-wrapper {
-	background: #fb9188;
-width: calc(100% * 0.5);
-	display: flex;
-	flex-direction: column;
-	padding: 80px 15px 30px;
-}
-.eh-wrapper img {
-	border-radius: 50%;
-}
-.eh-content {
-	margin: 0 auto;
-	color: #000;
-	padding: 30px 0 35px;
-	font-size: 20px;
-	text-align: center;
-	max-width: 650px;
-}
-h2.eh-heading-one {
-	font-size: 30px;
-	line-height: 1;
-	margin: 0 0 10px;
-	font-weight: 500;
-}
-.flood-wrapper {
-	background: #8dc6d0;
-width: calc(100% * 0.5);
-	display: flex;
-	flex-direction: column;
-	padding: 80px 15px 30px;
-}
-.flood-wrapper img {
-	border-radius: 50%;
-}
-.flood-content {
-	margin: 0 auto;
-	color: #000;
-	padding: 30px 0 35px;
-	font-size: 20px;
-	text-align: center;
-	max-width: 650px;
-}
-h2.flood-heading-one {
-	font-size: 30px;
-	line-height: 1;
-	margin: 0 0 10px;
-	font-weight: 500;
-}
+
 
 @media (max-width: 950px) {
-.eh-flood-container, .summer-read-container, .authors-container, .flood-container {
+.authors-container, .summer-read-container, .srp-container, .authors-container, .flood-container {
 	max-width: 720px;
 }
-.eh-flood-wrapper, .summer-read-wrapper, .authors-wrapper, .flood-wrapper {
+.authors-wrapper, .summer-read-wrapper, .srp-wrapper, .authors-wrapper, .flood-wrapper {
 	flex-direction: column;
 }
-.eh-wrapper, .flood-wrapper, .summer-wrapper, .read-wrapper, .authors-info, .authors-content {
+.eh-wrapper, .flood-wrapper, .summer-wrapper, .read-wrapper, .srp-info, .srp-content, .authors-info, .authors-content {
 	width: 100%;
 }
-.authors-content {
+.authors-content, .srp-content {
 	max-width: 680px;
 	margin: 0 auto;
 	padding: 50px 15px 70px;
@@ -305,13 +312,13 @@ h2.flood-heading-one {
 video#bgvid {
 	position: inherit;
 }
-.authors-info {
+.authors-info, .srp-info {
 	order: 2;
 }
 .flood-wrapper, .read-wrapper {
 	margin-top: 30px;
 }
-.summer-wrapperm, .read-wrapper {
+.summer-wrapper, .read-wrapper {
 	padding: 60px 15px 80px;
 }
 }
@@ -513,7 +520,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             </div>
           </div>
           <div class="video-container">
-            
             <video autoplay muted playsinline poster="bugs.jpg" id="bgvid">
           <source src="bugs.mp4" type="video/mp4" />
           Your browser does not support the background video tag.
@@ -523,9 +529,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </section>
+	  
+	  
+	  
     <section>
-      <div class="eh-flood-container">
-        <div class="eh-flood-wrapper">
+      <div class="authors-container">
+        <div class="authors-wrapper">
           <div class="authors-info">
             <div class="authors-content">
               <h1 class="authors-heading-one">Meet the Authors!</h1>
@@ -545,6 +554,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </section>
+	  
+	  
+	  
+	  
     <section>
       <div class="summer-read-container">
         <div class="summer-read-wrapper">
