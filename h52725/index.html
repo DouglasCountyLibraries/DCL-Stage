@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
 <!-- Minimize page flickering for Google Optimize -->
 <style>
 .async-hide {
-    opacity: 0 !important
+	opacity: 0 !important
 }
 </style>
 
@@ -88,7 +89,6 @@ width: calc(100% * 0.5);
 	flex-direction: column;
 	justify-content: center;
 }
-
 video#bgvid {
 	position: absolute;
 	top: 50%;
@@ -130,11 +130,9 @@ h1.srp-heading-one {
 	margin: 0 auto;
 	padding: 0 15px 35px;
 }
-	
-	
 /* authors & eh */	
 
-	.authors-container {
+.authors-container {
 	display: flex;
 	max-width: 1440px;
 	min-height: 640px;
@@ -145,9 +143,6 @@ h1.srp-heading-one {
 	display: flex;
 	width: 100%;
 }
-	
-	
-	
 .authors-info {
 	background: #f6c56b url("covers.jpg") bottom center no-repeat;
 	color: #000;
@@ -174,8 +169,6 @@ h1.authors-heading-one {
 	margin: 0 auto;
 	padding: 0 15px 80px;
 }
-
-
 .eh-wrapper {
 	background: #fb9188;
 width: calc(100% * 0.5);
@@ -200,11 +193,6 @@ h2.eh-heading-one {
 	margin: 0 0 10px;
 	font-weight: 500;
 }
-
-
-	
-	
-	
 /* outdoor storytime & fete */
 	
 .icon-font {
@@ -217,73 +205,77 @@ h2.eh-heading-one {
 	padding: 14px 0 20px;
 	color: #000;
 }
-.summer-read-container {
+.storytime-fete-container {
 	display: flex;
 	max-width: 1440px;
 	min-height: 400px;
 	margin: 30px auto 0 auto;
 }
-.summer-read-wrapper {
+.storytime-fete-wrapper {
 	margin: 0 auto;
 	display: flex;
 	width: 100%;
 }
-.summer-wrapper {
+.storytime-wrapper {
 	display: flex;
 	background: #c4c28b;
 width: calc(100% * 0.5);
 	flex-direction: column;
 	padding: 65px 15px 60px;
 }
-.summer-content {
+.storytime-content {
 	margin: 0 auto;
 	color: #000;
 	font-size: 20px;
 	text-align: center;
 	max-width: 650px;
 }
-h2.summer-heading-one {
+h2.storytime-heading-one {
 	font-size: 30px;
 	line-height: 1;
 	margin: 0 0 10px;
 	font-weight: 500;
 }
-.read-wrapper {
+.fete-wrapper {
 	display: flex;
 	background: #a5b696;
 width: calc(100% * 0.5);
 	flex-direction: column;
 	padding: 65px 15px 60px;
 }
-.read-content {
+.fete-content {
 	margin: 0 auto;
 	color: #000;
 	font-size: 20px;
 	text-align: center;
 	max-width: 650px;
 }
-h2.read-heading-one {
+h2.fete-heading-one {
 	font-size: 30px;
 	line-height: 1;
 	margin: 0 0 10px;
 	font-weight: 500;
 }
 
-
 @media (max-width: 950px) {
-.authors-container, .summer-read-container, .srp-container, .authors-container, .flood-container {
+.authors-container, .storytime-fete-container, .srp-container, .authors-container, .flood-container {
 	max-width: 720px;
 }
-.authors-wrapper, .summer-read-wrapper, .srp-wrapper, .authors-wrapper, .flood-wrapper {
+.authors-wrapper, .storytime-fete-wrapper, .srp-wrapper, .authors-wrapper, .flood-wrapper {
 	flex-direction: column;
 }
-.eh-wrapper, .flood-wrapper, .summer-wrapper, .read-wrapper, .srp-info, .srp-content, .authors-info, .authors-content {
+.eh-wrapper, .flood-wrapper, .storytime-wrapper, .fete-wrapper, .srp-info, .srp-content, .authors-info, .authors-content {
 	width: 100%;
 }
-.authors-content, .srp-content {
+.-content {
 	max-width: 680px;
 	margin: 0 auto;
 	padding: 50px 15px 70px;
+}
+.authors-content {
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 140px 15px 325px;
 }
 .video-container {
 	overflow: hidden;
@@ -297,10 +289,9 @@ video#bgvid {
 .srp-info {
 	order: 2;
 }
-.eh-wrapper, .read-wrapper {
+.eh-wrapper, .fete-wrapper {
 	margin-top: 30px;
 }
-
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -501,17 +492,14 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           </div>
           <div class="video-container">
             <video autoplay muted playsinline poster="bugs.jpg" id="bgvid">
-          <source src="bugs.mp4" type="video/mp4" />
-          Your browser does not support the background video tag.
-          <source src="bugs.webm" type="video/webm" />
-          Your browser does not support the background video tag. </video>
+              <source src="bugs.mp4" type="video/mp4" />
+              Your browser does not support the background video tag.
+              <source src="bugs.webm" type="video/webm" />
+              Your browser does not support the background video tag. </video>
           </div>
         </div>
       </div>
     </section>
-	  
-	  
-	  
     <section>
       <div class="authors-container">
         <div class="authors-wrapper">
@@ -534,24 +522,20 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </section>
-	  
-	  
-	  
-	  
     <section>
-      <div class="summer-read-container">
-        <div class="summer-read-wrapper">
-          <div class="summer-wrapper">
-            <div class="summer-content">
+      <div class="storytime-fete-container">
+        <div class="storytime-fete-wrapper">
+          <div class="storytime-wrapper">
+            <div class="storytime-content">
               <div><i class="icon-font fa-duotone fa-light fa-child-reaching" style="--fa-secondary-opacity: 0.1;"></i></div>
-              <h2 class="summer-heading-one">Outdoor Storytime</h2>
+              <h2 class="storytime-heading-one">Outdoor Storytime</h2>
               <div>Coming soon! <a class="black text-underline" href="https://go.dcl.org/events?t=Storytime&el=Virtual&term=Outdoor+Storytime&r=months&n=4">Learn More</a></div>
             </div>
           </div>
-          <div class="read-wrapper">
-            <div class="read-content">
+          <div class="fete-wrapper">
+            <div class="fete-content">
               <div><i class="icon-font fa-duotone fa-light fa-champagne-glasses" style="--fa-secondary-opacity: 0.1;"></i></div>
-              <h2 class="read-heading-one">10th Annual Fête des Fables Gala</h2>
+              <h2 class="fete-heading-one">10th Annual Fête des Fables Gala</h2>
               <div>Be our guest as we celebrate the timeless tale of Beauty and the Beast. <a class="black text-underline" href="fete-des-fables/">Tickets on sale</a>!</div>
             </div>
           </div>
@@ -691,4 +675,5 @@ setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
 </script> 
 <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
