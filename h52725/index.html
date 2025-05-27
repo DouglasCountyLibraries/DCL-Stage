@@ -132,7 +132,21 @@ h1.srp-heading-one {
 }
 	
 	
-/* authors */	
+/* authors & eh */	
+
+	.authors-container {
+	display: flex;
+	max-width: 1440px;
+	min-height: 640px;
+	margin: 30px auto 0 auto;
+}
+.authors-wrapper {
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+}
+	
+	
 	
 .authors-info {
 	background: #f6c56b url("covers.jpg") bottom center no-repeat;
@@ -160,18 +174,8 @@ h1.authors-heading-one {
 	margin: 0 auto;
 	padding: 0 15px 80px;
 }
-/* e&h promo & flood exhibit */
-.authors-container {
-	display: flex;
-	max-width: 1440px;
-	min-height: 640px;
-	margin: 30px auto 0 auto;
-}
-.authors-wrapper {
-	margin: 0 auto;
-	display: flex;
-	width: 100%;
-}
+
+
 .eh-wrapper {
 	background: #fb9188;
 width: calc(100% * 0.5);
@@ -196,30 +200,8 @@ h2.eh-heading-one {
 	margin: 0 0 10px;
 	font-weight: 500;
 }
-.flood-wrapper {
-	background: #8dc6d0;
-width: calc(100% * 0.5);
-	display: flex;
-	flex-direction: column;
-	padding: 80px 15px 30px;
-}
-.flood-wrapper img {
-	border-radius: 50%;
-}
-.flood-content {
-	margin: 0 auto;
-	color: #000;
-	padding: 30px 0 35px;
-	font-size: 20px;
-	text-align: center;
-	max-width: 650px;
-}
-h2.flood-heading-one {
-	font-size: 30px;
-	line-height: 1;
-	margin: 0 0 10px;
-	font-weight: 500;
-}	
+
+
 	
 	
 	
@@ -312,15 +294,13 @@ h2.read-heading-one {
 video#bgvid {
 	position: inherit;
 }
-.authors-info, .srp-info {
+.srp-info {
 	order: 2;
 }
-.flood-wrapper, .read-wrapper {
+.eh-wrapper, .read-wrapper {
 	margin-top: 30px;
 }
-.summer-wrapper, .read-wrapper {
-	padding: 60px 15px 80px;
-}
+
 }
 </style>
 <!-- InstanceEndEditable -->
