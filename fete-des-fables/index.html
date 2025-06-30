@@ -57,250 +57,396 @@
 <!-- InstanceBeginEditable name="head" -->
 <style>
 @font-face {
-	font-family: 'Rust';
-	src: url('../shared-assets/web-fonts/AtomicRust.woff2') format('woff2'), url('../shared-assets/web-fonts/AtomicRust.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Altown';
+    src: url('../shared-assets/web-fonts/Altown.woff2') format('woff2'), url('../shared-assets/web-fonts/Altown.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Austria';
+    src: url('../shared-assets/web-fonts/Austria-Script.woff2') format('woff2'), url('../shared-assets/web-fonts/Austria-Script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 .background-row {
-	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
-	background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
-	background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #efeeed 65%, #efeeed 100%);
 }
 .contain-header {
-	background: #b18766 url("fete-background-lg.jpg") center bottom no-repeat;
-	padding: 0 15px;
-	max-width: 1920px;
-	margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: #263b60 url("snow-poster.jpg") center center no-repeat;
+    background-size: cover;
+}
+video {
+    display: block;
+}
+.item-row, .info-row, .tickets, .sponsor-row, .tickets-wrapper {
+    position: relative;
 }
 .item-wrapper {
-	font-family: Times, "Times New Roman", serif;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	text-align: center;
-	font-size: 22px;
-	color: #2a1f18;
-	font-weight: 400;
-	max-width: 1920px;
-	margin: 0 auto;
-	justify-content: center;
-	padding: 60px 15px 20px;
-}
-.modal-content {
-	font-family: Times, "Times New Roman", serif;
-	font-size: 19px;
-	color: #2a1f18;
-}
-.modal-content h4 {
-	font-family: Times, "Times New Roman", serif;
-	color: #2a1f18;
-	font-size: 30px;
+    /*background: transparent url("icicles.png") center top no-repeat;*/
+    font-family: Times, "Times New Roman", serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 1920px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 60px 15px 20px;
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 1);
 }
 .item {
-	max-width: 900px;
-	margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .item h1 {
-	font-family: "Rust", serif;
-	font-size: 200px;
-	color: #473529;
-	-webkit-text-stroke: 3px #c89674;
-	text-shadow: 1px 10px 10px #000;
-	margin: 0;
-	line-height: 175px;
+    font-family: "Altown", serif;
+    font-size: 160px;
+    font-weight: 900;
+    color: #fff;
+    margin: 42px 0 54px;
+    line-height: 70px;
+    letter-spacing: -9px;
 }
 .larger-text {
-	font-size: 1.6em;
-	line-height: 1.1;
+    font-size: 1.6em;
+    line-height: 1.1;
 }
-.fete-heading {
-	color: #2a1f18;
+.snow {
+    display: flex;
+    justify-content: center;
 }
-.info-content {
-	max-width: 975px;
-	margin: 0 auto;
-	font-family: Times, "Times New Roman", serif;
-	font-size: 18px;
-	text-align: center;
-	color: #2a1f18;
-	padding: 0 15px;
+.bigs {
+    font-size: 230px;
+    padding-top: 28px;
+    margin-right: -7px;
 }
-.info-content a {
-	text-decoration: underline;
-	color: #2a1f18;
+.item h2 {
+    font-family: "Austria", sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 0;
 }
-.info-content h2 {
-	font-family: Times, "Times New Roman", serif;
-	color: #2a1f18;
-	font-size: 32px;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin: 0;
+.item h2.queen {
+    font-size: 85px;
+    margin-left: -20px;
+    line-height: 0;
 }
-.info-content-one {
-	font-size: 24px;
+.the {
+    margin-right: 120px;
+    padding-top: 32px;
 }
-.info-content-two {
-	font-size: 22px;
-	padding: 10px 0 0;
-}
-.info-content-three {
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 26px;
-	padding: 0 0 5px;
-}
-.info-content-four, .info-content-four a {
-	font-size: 21px;
-	padding: 30px 0 10px;
-	font-style: italic;
+.info-row {
+    padding: 30px 15px 0;
 }
 .info-wrapper-one, .info-wrapper-two, .info-wrapper-three {
-	text-align: center;
-	color: #fff;
-	font-weight: 400;
-	margin: 0 auto;
-	text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    margin: 0 auto;
+    justify-content: center;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
 }
 .info-wrapper-one {
-	font-family: Times, "Times New Roman", serif;
-	max-width: 975px;
-	font-size: 24px;
-	padding-bottom: 30px;
+    font-family: Times, "Times New Roman", serif;
+    max-width: 975px;
+    font-size: 24px;
+    padding-bottom: 30px;
 }
 .info-wrapper-two {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	max-width: 1000px;
-	font-size: 24px;
-	padding: 0 0 15px;
-	margin-top: -40px;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    max-width: 1000px;
+    font-size: 24px;
+    padding: 0 0 15px;
+    margin-top: -40px;
 }
 .info-wrapper-three {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	max-width: 860px;
-	font-size: 20px;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    max-width: 820px;
+    font-size: 20px;
+}
+.tickets-row {
+    padding: 0 15px 15px;
+}
+.tickets {
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0 auto;
+    justify-content: center;
+    text-shadow: 0 0px 6px rgba(0, 0, 0, 1);
+    padding: 0 15px;
 }
 .btn-custom {
-	background: #913b68;
-	color: #fff;
-	text-shadow: none;
+    background: #fff;
+    color: #000;
+    text-shadow: none;
 }
 .btn.btn-custom {
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 22px;
-	letter-spacing: 1px;
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
-	border: 2px solid #fff;
-	transition: all .4s ease-out;
-	line-height: 1;
-	padding: 20px 25px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 0px 30px #fff;
+    transition: all .4s ease-out;
 }
 .btn.btn-custom:hover, .btn.btn-custom:focus {
-	background: #412d4b;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
-	transition: all .4s ease-out;
+    background: #1e283f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 0px 90px #fff;
+    transition: all .4s ease-out;
 }
 .sponsor-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding-bottom: 100px;
-	padding: 10px 15px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding: 45px 15px 100px;
 }
 .sponsor-wrapper h4 {
-	font-family: Times, "Times New Roman", serif;
-	color: #fff;
-	text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
-	font-size: 24px;
-	margin: 0;
-	text-align: center;
+    font-family: Times, "Times New Roman", serif;
+    color: #fff;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
 }
 .logos {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 0 15px 430px;
-}
-.logos a {
-	opacity: .8;
-	transition: all .4s ease-out;
-}
-.logos a:hover, .logos a:focus {
-	opacity: 1;
-	transform: scale(1.05);
-	transition: all .4s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: .75;
 }
 .sponsors {
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-	height: 100px;
-	width: 250px;
-	font-size: 24px;
-	text-transform: uppercase;
-	justify-content: center;
-	display: flex;
-	align-content: center;
-	align-self: center;
-	line-height: 24px;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    height: 100px;
+    width: 250px;
+    font-size: 24px;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    line-height: 24px;
 }
 .sponsors a {
-	display: flex;
-	align-items: center;
-	font-weight: 600;
-}
-
-@media (max-width: 1530px) {
-.logos {
-	max-width: 900px;
-	margin: 0 auto;
-}
-}
-	
-@media (max-width: 925px) {
-.contain-header {
-	background: #b18766 url("fete-background-sm.jpg") center bottom no-repeat;
-}
-.item h1 {
-	font-family: "Rust", serif;
-	font-size: 160px;
-	margin: 0;
-	line-height: 160px;
-}
-.info-content h2 {
-	font-size: 28px;
-}
-}
-
-@media (max-width: 675px) {
-.item h1 {
-	font-family: "Rust", serif;
-	font-size: 120px;
-	margin: 0;
-	line-height: 120px;
-	-webkit-text-stroke: 2px #c89674;
-	text-shadow: 1px 10px 10px rgba(0,0,0,.5);
-}
-.fete-heading {
-	padding-right: 0;
-}
-.item-wrapper {
-	padding: 40px 15px 25px;
-}
+    display: flex;
+    align-items: center;
+    font-weight: 600;
 }
 
 @media (max-width: 500px) {
 .item h1 {
-	font-family: "Rust", serif;
-	font-size: 88px;
-	color: #473529;
-	margin: 0;
-	line-height: 100px;
+    font-family: "Altown", serif;
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
+    margin: 15px 0 20px;
+    line-height: 70px;
+    letter-spacing: -9px;
+}
+.snow {
+    display: flex;
+    justify-content: center;
+}
+.the {
+    margin-right: 120px;
+    padding-top: 0;
+}
+.bigs {
+    font-size: 170px;
+    padding-top: 28px;
+    margin-right: -7px;
+}
+.item h2 {
+    font-family: "Austria", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 14px;
+}
+.item h2.queen {
+    font-size: 60px;
+    margin-left: 30px;
+    line-height: 5px;
+}
+}
+.photo-icon {
+    font-size: 140px;
+    font-weight: 200;
+    padding-bottom: 15px;
+}
+.icicles {
+    background: url("icicles.png") center center no-repeat;
+    min-height: 114px;
+}
+/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
+.single-photo-wrapper {
+    border: 4px solid #fff;
+    border-radius: 2px;
+}
+.single-photo-row {
+    max-width: 825px;
+    margin: 0 auto;
+}
+.slideshow-image.main {
+    min-height: 500px;
+}
+#slideshow {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0%;
+} /* (img px height / img px width x 100) = padding-bottom % */
+#slideshow div {
+    position: absolute;
+    z-index: 2;
+    width: 105%;
+    height: 105%;
+    top: -5%;
+    left: -5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 3s, transform 8s;
+}
+/* slide two */
+#slideshow div {
+    transform-origin: top left;
+}
+/* slide three */
+#slideshow div:nth-of-type(2n+1) {
+    transform-origin: center center;
+}
+/* slide four */
+#slideshow div:nth-of-type(3n+1) {
+    transform-origin: top right;
+}
+/* slide five */
+#slideshow div:nth-of-type(4n+1) {
+    transform-origin: top right;
+}
+/* slide six */
+#slideshow div:nth-of-type(5n+1) {
+    transform-origin: top left;
+}
+/* slide one */
+#slideshow div:nth-of-type(6n+1) {
+    transform-origin: center bottom;
+}
+#slideshow .fx:first-child + span + div ~ div, #slideshow .fx1 {
+    z-index: 1
+}
+#slideshow .fx, #slideshow .fx1 {
+    transform: scale(1.1) translate(1.5%);
+    opacity: 1
+}
+#slideshow div:nth-of-type(1) {
+    background-image: url("catered-dinner.jpg")
+}
+#slideshow div:nth-of-type(2) {
+    background-image: url("location.jpg")
+}
+#slideshow div:nth-of-type(3) {
+    background-image: url("delicious-desserts.jpg")
+}
+#slideshow div:nth-of-type(4) {
+    background-image: url("cocktail.jpg")
+}
+#slideshow div:nth-of-type(5) {
+    background-image: url("entertainment.jpg")
+}
+#slideshow div:nth-of-type(6) {
+    background-image: url("auction.jpg")
+}
+/* captions */
+#slideshow span {
+    font-family: "Altown", sans-serif;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 54px;
+    color: transparent;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 56px;
+    font-weight: 900;
+    letter-spacing: -2.5px;
+}
+#slideshow .fx:first-child + span + div ~ div + span, #slideshow .fx1 + span {
+    z-index: 1
+}
+#slideshow .fx + span, #slideshow .fx1 + span {
+    color: #fff;
+    animation: caption 5s 1s both;
+    text-shadow: 0 6px 20px #000;
+    padding-bottom: 30px;
+    hyphens: manual;
+}
+@keyframes caption {
+0% {
+opacity:0;
+}
+20% {
+opacity:1;
+}
+90% {
+opacity:1;
+}
+100% {
+opacity:0;
+}
+}
+
+@media (max-width: 525px) {
+#slideshow {
+    width: 100%;
+}
+#slideshow span {
+    font-size: 50px;
+    line-height: 54px;
+}
+.photo-icon {
+    font-size: 100px;
+    font-weight: 200;
 }
 }
 </style>
@@ -491,83 +637,98 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="row background-row">
     <div class="contain-header">
       <div class="row main-header">
+        <video autoplay loop muted playsinline poster="snow-poster.jpg" id="bgvid">
+          <source src="snow-video.mp4" type="video/mp4" />
+          Sorry, your browser does not support background videos.
+          <source src="snow-video.webm" type="video/webm" />
+          Sorry, your browser does not support background videos.</video>
         <div class="item-row">
           <div class="item-wrapper">
             <div class="item">
-              <div class="fete-heading">
-                <div>Ninth Annual</div>
-                <div class="larger-text">Fête des Fables Gala</div>
-              </div>
-              <h1 class="entrance-two">Pinocchio</h1>
+              <div>Eighth Annual</div>
+              <div class="larger-text">Fête des Fables Gala</div>
+              <h2 class="the entrance-one padding-top-15">The</h2>
+              <h1 class="snow entrance-two">
+                <div class="bigs">S</div>
+                <div>nOw</div>
+              </h1>
+              <h2 class="queen entrance-three">Queen</h2>
             </div>
           </div>
         </div>
-        <div class="info-content">
-          <h2>You're Invited!</h2>
-          <div class="info-content-two">Join the Douglas County Libraries Foundation to celebrate Carlo Collodi's classic story of the mischievous marionette who becomes a real boy. We'll bring the Italian countryside to life for a fabulous evening that includes a signature cocktail, catered Italian dinner and dessert, remarkable entertainment, and an exciting silent auction, where you just might find the treasure of your dreams. </div>
-          <div class="padding-top-30 padding-bottom-30"> 
-            
-            <!-- Noscript content for added SEO -->
-            <noscript>
-            <a href="https://www.eventbrite.com/e/fete-des-fables-pinocchio-tickets-881960115447" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a>
-            </noscript>
-            <!-- You can customize this button any way you like -->
-            <button class="btn btn-lg btn-custom" id="eventbrite-widget-modal-trigger-881960115447" type="button">Buy Tickets</button>
-            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script> 
-            <script type="text/javascript">
+        <div class="info-row">
+          <div class="info-wrapper-one"> <i>This snow-flake grew larger and larger, till at last it became the figure of a woman, dressed in garments of white gauze, which looked like millions of starry snow-flakes linked together. She was fair and beautiful, but made of ice—shining and glittering ice.</i> </div>
+          <div class="single-photo-row">
+            <div class="single-photo-wrapper">
+              <div class="single-photo photo black text-center">
+                <div id="slideshow" class="slideshow-image main"> 
+                  <!-- define each background-image in CSS -->
+                  <div></div>
+                  
+                  <!-- #slideshow div:nth-of-type(1) --> 
+                  <span><i class="fa-regular fa-plate-utensils photo-icon"></i>Catered Dinner</span>
+                  <div></div>
+                  <!-- #slideshow div:nth-of-type(2) --> 
+                  <span><i class="fa-regular fa-house-turret photo-icon"></i>Charming Location</span>
+                  <div></div>
+                  <!-- #slideshow div:nth-of-type(3) --> 
+                  <span><i class="fa-regular fa-party-horn photo-icon"></i>Delicious Desserts</span>
+                  <div></div>
+                  <!-- #slideshow div:nth-of-type(4) --> 
+                  <span><i class="fa-regular fa-martini-glass-citrus photo-icon"></i>Signature Cocktail</span>
+                  <div></div>
+                  <!-- #slideshow div:nth-of-type(5) --> 
+                  <span><i class="fa-regular fa-guitars photo-icon"></i>Music & Entertain&shy;ment</span>
+                  <div></div>
+                  <!-- #slideshow div:nth-of-type(6) --> 
+                  <span><i class="fa-regular fa-tags photo-icon"></i>Silent Auction</span></div>
+              </div>
+            </div>
+            <div class="icicles"></div>
+          </div>
+          <div class="info-wrapper-two"> Join Douglas County Libraries Foundation as we re-create a Hans Christian Andersen classic celebrating the triumph of good over evil and the power of true love, in a landscape of snow and ice. </div>
+          <div class="info-wrapper-three"> You’re invited! Come dressed in your finest—or a favorite themed outfit. Enjoy a signature cocktail, a delicious catered dinner featuring beef medallion and salmon, and a special dessert. This unforgettable evening includes interesting guests, remarkable entertainment, and an exciting silent auction, where you just might find the treasure of your dreams. </div>
+        </div>
+        <div class="tickets-row">
+          <div class="tickets-wrapper">
+            <div class="tickets">
+              <div class="padding-top-30 padding-bottom-30"> 
+                
+                <!-- Noscript content for added SEO -->
+                <noscript>
+                <a href="https://www.eventbrite.com/e/fete-des-fables-the-snow-queen-tickets-558896894657" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a>
+                </noscript>
+                <!-- You can customize this button any way you like -->
+                <button class="btn btn-lg btn-custom" id="eventbrite-widget-modal-trigger-558896894657" type="button">Buy Tickets</button>
+                <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script> 
+                <script type="text/javascript">
     var exampleCallback = function() {
         console.log('Order complete!');
     };
 
     window.EBWidgets.createWidget({
         widgetType: 'checkout',
-        eventId: '881960115447',
+        eventId: '558896894657',
         modal: true,
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-881960115447',
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-558896894657',
         onOrderComplete: exampleCallback
     });
-</script> 
+</script> </div>
+              <div>Friday, September 29, 6PM<br>
+                Tickets: $125 </div>
+              <div class="large-text padding-bottom-15"><a style="font-weight: 400;" class="white text-underline" href="https://goo.gl/maps/bvF2RLJCdg8TzR3h7" target="_blank">Highlands Ranch Mansion</a></div>
+              <div>Event proceeds benefit <a class="white" href="../foundation/">Douglas County Libraries Foundation</a>. <!--Add your name to our list of sponsors.</div>
+            <div class="padding-top-20 text-uppercase"><a style="font-weight: 400;" href="#" class="white">Sponsorship Package</a> &raquo;--></div>
+            </div>
           </div>
-          <div class="info-content-one">Friday, September 27, 6PM<br>
-            Tickets: $125<br>
-            <a href="https://maps.app.goo.gl/ox8YrYJgsMqbgoDG6" target="_blank" style="font-size: 26px;">Highlands Ranch Mansion</a>
-            <div></div>
+        </div>
+        <div id="sponsors" class="sponsor-row">
+          <div class="sponsor-wrapper">
+            <h4><i>Many Thanks to Our Generous Sponsors!</i></h4>
+            <div class="logos"><img class="" src="sponsors/fransen-pittman.png" alt="Fransen Pittman"><span class="sponsors"><a class="white" href="https://www.parksidepromotions.com/" target="_blank">Parkside<br>
+              Promotions</a></span><span class="sponsors"><a class="white" href="https://www.livelyproductions.com/" target="_blank">Lively<br>
+              Productions </a></span></div>
           </div>
-          <div class="info-content-four">Event proceeds benefit the <a href="../foundation/">Douglas County Libraries Foundation</a>.<br>
-            <a href="#sponsors" class="" data-toggle="modal" data-target="#sponsor-modal">Add your name</a> to our list of sponsors!</div>
-        </div>
-        <div class="logos"> <a href="https://fransenpittman.com/" target="_blank"><img class="" src="sponsors/fransen-pittman.png" alt="Fransen Pittman Construction"></a> <a href="https://hbstrash.com/" target="_blank"><img class="" src="sponsors/hbs-trash-services-updated.png" alt="HBS Trash Services"></a> <a href="https://www.livelyproductions.com/" target="_blank"><img class="" src="sponsors/lively-productions.png" alt="Lively Productions"></a> <a href="https://www.midwesttape.com/" target="_blank"><img class="" src="sponsors/midwest-tape.png" alt="Midwest Tape"></a><a href="https://www.parksidepromotions.com/" target="_blank"><img class="" src="sponsors/parkside-promotions.png" alt="Midwest Tape"></a><a href="https://sterlingranchcolorado.com/" target="_blank"><img class="" src="sponsors/sterling-ranch.png" alt="Sterling Ranch"></a></div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="sponsor-modal" tabindex="-1" role="dialog" aria-labelledby="sponsor-modal">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <h4 class="text-center modal-title">Sponsorship Packages</h4>
-        </div>
-        <div class="modal-body padding-30">
-          <div style="font-size: 22px;">Select from a range of sponsorship packages or we’ll create a customized package just for you!</div>
-          <div class="padding-top-15 padding-bottom-15">Your generous sponsorship will support us in creating a truly enchanting evening and will also contribute to funding vital library programs that reach young people, adults, and families in Douglas County and throughout Colorado.</div>
-          <div class="padding-bottom-15">To participate, please contact us at <a class="text-nowrap" href="tel:+13037643311">303-764-3311</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="auction-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header" style="border-bottom: 0;">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <h4 class="text-center modal-title" style="padding: 20px 50px 0;">Preregister for bidding and check out our auction items here:</h4>
-        </div>
-        <div class="modal-body text-center padding-bottom-60"> <img class="padding-bottom-30" src="auction-qrcode.png" alt="QR Code">
-          <div><a href="https://auctria.events/2023fetedesfables" target="_blank">auctria.events/2023fetedesfables</a></div>
         </div>
       </div>
     </div>
@@ -678,7 +839,8 @@ setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
 		"query-input": "required name=search_term_string"
 	},
 	"sameAs": ["https:\/\/dcl.bibliocommons.com",
-		"https:\/\/www.dclblog.org",
+		"https:\/\/www.blogs.douglascountylibraries.org",
+		"https:\/\/help.dcl.org/",
 		"https:\/\/www.douglascountylibraries.org/",
 		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
 		"https:\/\/www.instagram.com\/dclcolorado",
