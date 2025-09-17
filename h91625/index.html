@@ -87,6 +87,62 @@ video#bgvid {
 video {
     display: block;
 }
+/* outdoor two & one */
+	
+
+.icon-font {
+    font-size: 90px;
+    padding: 50px 0 30px;
+    color: rgba(0,0,0,.7);
+}
+.feature-container {
+    display: flex;
+    max-width: 1440px;
+    min-height: 640px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    padding-top: 250px;
+}
+.feature-wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    min-height: 480px;
+    padding: 0 15px;
+}
+.one-wrapper, .two-wrapper, .three-wrapper {
+    display: flex;
+    background: #fbdcad;
+width: calc(100% * 0.333333);
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.one-content, .two-content, .three-content {
+    margin: 0 auto;
+    color: #000;
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 650px;
+}
+h2.one-heading-one, h2.two-heading-one, h2.three-heading-one {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin: 0 0 5px;
+    font-weight: 500;
+    color: #000;
+}
+.one-heading-two {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: .9;
+}
+.one-heading-three {
+    font-size: 1rem;
+}
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -285,6 +341,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             Your browser does not support the background video tag.
             <source src="fall-video.webm" type="video/webm" />
             Your browser does not support the background video tag. </video>
+          <section>
+            <div class="feature-container">
+              <div class="feature-wrapper">
+                <div class="one-wrapper">
+                  <div class="one-content">
+                    <div><i class="icon-font fa-sharp fa-light fa-ornament"></i></div>
+                    <div class="one-heading-two">A Storybook Holiday: </div>
+                    <h2 class="one-heading-one">Guess Who?</h2>
+                    <div class="one-heading-three">Celebrate with us&mdash;<a class="black text-underline" href="#">get tickets now</a>! Enjoy holiday entertainment, festive activities, delicious food and drinks, and Santa.</div>
+                    <div>Saturday, Dec.&nbsp;6 & Sunday, Dec.&nbsp;7</div>
+                  </div>
+                </div>
+                <div class="two-wrapper">
+                  <div class="two-content">
+                    <div><i class="icon-font fa-sharp fa-light fa-book-open"></i></div>
+                    <h2 class="two-heading-one">Take the Reading Challenge!</h2>
+                    <div>There is still time to <a class="black text-underline" href="reading-challenge/">sign&nbsp;up</a>.</div>
+                  </div>
+                </div>
+                <div class="three-wrapper">
+                  <div class="three-content">
+                    <div><i class="icon-font fa-sharp fa-light fa-wreath"></i></div>
+                    <h2 class="three-heading-one">Booked for the Holidays</h2>
+                    <div>Mark your calendar for a season of festive family fun, Nov. 15-Jan. 4. <a class="black text-underline" href="#">Learn&nbsp;More</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
