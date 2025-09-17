@@ -57,13 +57,16 @@
     background: #fff;
     z-index: -1;
 }
-.contain-header {
+.gradient-row {
+    background: linear-gradient(to bottom, #fff 0%, #fff 25%, #efeeed 65%, #efeeed 100%);
+}
+.container-wrapper {
     position: relative;
     overflow: hidden;
     max-width: 1920px;
     margin: 0 auto;
 }
-.main-header {
+.content-container {
     min-height: 100vh;
 }
 video#bgvid {
@@ -274,10 +277,9 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <main>
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" --> 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    
-    <div class="contain-header">
-      <div class="container">
-        <div class="row main-header">
+    <div class="gradient-row">
+      <div class="container-wrapper">
+        <div class="row content-container">
           <video autoplay muted playsinline poster="fall-video-poster.webp" id="bgvid">
             <source src="fall-video.mp4" type="video/mp4" />
             Your browser does not support the background video tag.
