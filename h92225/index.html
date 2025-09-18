@@ -91,14 +91,14 @@ video {
 	
 
 .icon-font {
-	font-size: 80px;
-	padding: 27px 0 0;
-	color: #fff;
-	background: #7c261e;
-	border-radius: 50%;
-	height: 135px;
-	width: 135px;
-	margin-bottom: 30px;
+    font-size: 80px;
+    padding: 27px 0 0;
+    color: #fff;
+    background: #7c261e;
+    border-radius: 50%;
+    height: 135px;
+    width: 135px;
+    margin-bottom: 30px;
 }
 .feature-container {
     display: flex;
@@ -147,6 +147,29 @@ h2.one-heading-one, h2.two-heading-one, h2.three-heading-one {
 }
 .one-heading-three {
     font-size: 1rem;
+}
+.playpause {
+    position: relative;
+    padding: 10px 15px 0;
+    text-align: center;
+}
+.play, .pause {
+    color: #eee;
+    font-size: 38px;
+    margin: 0 5px;
+    border: 0;
+    background: 0;
+    transition-duration: 0.4s;
+    padding: 0;
+}
+.play:hover, .play:focus, .pause:hover, .pause:focus {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+.play:active, .play:focus {
+    color: #fff;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -373,6 +396,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="playpause">
+              <button class="play" aria-label="Play background video" onclick="document.getElementById('bgvid').play()"><i class="fa-sharp fa-solid fa-play"></i></button>
+              <button class="pause" aria-label="Pause background video" onclick="document.getElementById('bgvid').pause()"><i class="fa-sharp fa-solid fa-pause"></i></button>
             </div>
           </section>
         </div>
