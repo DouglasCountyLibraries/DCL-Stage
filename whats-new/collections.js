@@ -27,7 +27,7 @@ function createAllPageTitle(title)
       '<h1 class="jumbo-text text-uppercase margin-bottom-5 font-weight-400">What&#39;s New</h1>',
    ' </div>',
      '<h2 class="no-margin-top margin-bottom-5 text-center">' + title + '</h2>',
-      '<div><a class="text-uppercase font-weight-400" href="../whats-new">« Return to List</a></div>'     
+      '<div><a class="text-uppercase font-weight-400" href="../whats-new">« Return to Categories</a></div>'     
 	 ].join('\n');
       
     return x;
