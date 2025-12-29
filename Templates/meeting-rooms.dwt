@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="refresh" content="300">
+<meta name="robots" content="noindex, nofollow">
+<title>Meeting Room Display</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="../shared-assets/css/meeting-room-displays.css?61246">
+</head>
+<body>
+<div class="meeting-room-content">
+  <div class="title-date-wrapper">
+    <div class="meeting-room-title"> <!-- TemplateBeginEditable name="Meeting Room Title" -->
+      <div>Meeting Room Title</div>
+      <!-- TemplateEndEditable --></div>
+    <div id="dateTimeDisplay"></div>
+    <script src="../shared-assets/js/meeting-room-displays.js"></script> 
+  </div>
+  <div class="meeting-room-widget"> <!-- TemplateBeginEditable name="Meeting Room Widget" -->
+    <div>Widget goes here</div>
+    <!-- TemplateEndEditable --></div>
+  <div class="reserve-message">Is this room vacant? To reserve it for immediate use, visit DCL.org or see a staff member.</div>
+</div>
+</body>
+</html>
