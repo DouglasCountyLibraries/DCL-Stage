@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+.nav-container {
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 15px 0 15px;
+}
+.custom-container {
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 10px;
+}
+.dcl-logo {
+  max-width: 450px;
+}
+.nav-row {
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
+  margin: 20px 0 15px;
+}
+.nav.nav-pills > li > a {
+  font-size: 18px;
+  color: #333;
+}
+ul {
+  padding-left: 0;
+}
+ol {
+  padding-left: 18px;
+}
+ol li {
+  padding: 2px 0;
+}
+.section-wrapper {
+  background: #f5f5f5;
+}
+section {
+  background: #fff;
+  padding: 30px 15px 50px;
+  margin: 300px 0;
+}
+.floor-plan {
+  padding: 25px 0 30px;
+}
+.source, .microphone, .session {
+  list-style-type: disc;
+  padding: 6px 0 8px;
+}
+.source li, .microphone li, .session li {
+  margin-left: 5px;
+}
+.devices {
+  list-style-type: circle;
+  margin-left: 25px;
+  padding-bottom: 8px;
+}
+.padding-bottom-8 {
+  padding-bottom: 8px;
+}

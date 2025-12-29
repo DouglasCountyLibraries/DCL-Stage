@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Widget Test</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.display-wrapper {
+    background: #333 url("display-background.jpg") center center no-repeat;
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+}
+.display-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    padding: 0 30px;
+    height: 1920px;
+}
+.room-title {
+    font-size: 66px;
+    padding: 48px 0 0;
+}
+.date-time-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#dateTimeDisplay {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+.widget-wrapper {
+    padding: 180px 0 0 0;
+}
+.reserve-message {
+    margin-top: auto;
+    padding: 0 80px 420px;
+    font-size: 28px;
+}
+</style>
+</head>
+<body>
+<div class="display-wrapper">
+  <div class="display-content">
+    <div class="room-title">Event Hall A</div>
+    <!-- HTML element to display the date and time -->
+    <div class="date-time-wrapper">
+      <div id="dateTimeDisplay"></div>
+    </div>
+    <script>
+        // Function to get the current day name
+        function getDayName(dayNumber) {
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            return days[dayNumber];
+        }
+
+        // Function to format the current date and time
+        function displayCurrentDateTime() {
+            // Create a new Date object
+            const now = new Date();
+
+            // Extract the day, date, year, and month
+            const dayName = getDayName(now.getDay());
+            const date = now.getDate();
+            const year = now.getFullYear();
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            const monthName = monthNames[now.getMonth()];
+
+            // Extract the hour, minute, and determine AM/PM
+            let hour = now.getHours();
+            const minute = now.getMinutes();
+            const ampm = hour >= 12 ? 'PM' : 'AM';
+
+            // Convert to 12-hour format and remove leading zero for single-digit hours
+            hour = hour % 12;
+            hour = hour ? hour : 12; // the hour '0' should be '12'
+            const formattedHour = hour < 10 ? hour : hour.toString();
+            const formattedMinute = minute.toString().padStart(2, '0');
+
+            // Format the time with an AM/PM indicator
+            const time = `${formattedHour}:${formattedMinute} ${ampm}`;
+
+            // Format the date and time with month name before the date
+            const formattedDateTime = `${dayName}, ${monthName} ${date}, ${year}, ${time}`;
+
+            // Set the formatted date and time as the text content of the HTML element
+            document.getElementById('dateTimeDisplay').textContent = formattedDateTime;
+        }
+
+        // Call the function to display the current date and time
+        displayCurrentDateTime();
+
+        // Update the date and time every minute
+        setInterval(displayCurrentDateTime, 1000); // 1000 milliseconds = 1 second
+    </script>
+    <div class="widget-wrapper">
+      <iframe src="https://dclibraries.libnet.info/widget?id=21245&style=1554" data-widgetid="21245" data-client="dclibraries" scrolling="no" style="overflow: hidden;" width="100%" height="400" marginheight="0" frameborder="0" class="widgetframepreview" onload="resizeIframe(this)"></iframe>
+    </div>
+    <div class="reserve-message">Is this room vacant? To reserve it for immediate use, visit DCL.org or see a staff member.</div>
+  </div>
+</div>
+</body>
+</html>
