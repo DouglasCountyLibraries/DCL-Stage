@@ -59,10 +59,10 @@
 }
 /* authors */ 
 .authors-container {
-	display: flex;
-	max-width: 1440px;
-	min-height: 560px;
-	margin: 0 auto;
+    display: flex;
+    max-width: 1440px;
+    min-height: 640px;
+    margin: 0 auto;
 }
 .authors-wrapper {
     margin: 0 auto;
@@ -70,7 +70,6 @@
     width: 100%;
 }
 .authors-image {
-
 width: calc(100% * 0.5);
     display: flex;
     flex-direction: column;
@@ -78,27 +77,27 @@ width: calc(100% * 0.5);
 }
 .bg-swap {
     width: 100%;
-    height: 560px;
+    height: 640px;
     background-size: cover;
     background-position: center;
     animation: swapBg 10s infinite;
 }
 @keyframes swapBg {
 0% {
-background-image: url("one.webp");
+background-image: url("float-one.webp");
 }
 33% {
-background-image: url("two.webp");
+background-image: url("float-one.webp");
 }
-    66% {
-background-image: url("three.webp");
+66% {
+background-image: url("float-one.webp");
 }
 100% {
-background-image: url("one.webp");
+background-image: url("float-one.webp");
 }
 }
 .authors-info {
-
+    background: url("float-content.webp") center center no-repeat;
     color: #000;
 width: calc(100% * 0.5);
     display: flex;
@@ -119,9 +118,9 @@ h1.authors-heading-one {
     font-size: 20px;
 }
 .authors-content {
-	max-width: 680px;
-	margin: 0 auto;
-	padding: 0 30px 10px;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 30px 10px;
     font-size: 18px;
 }
 /* kendra scott & readers theatre */
@@ -136,51 +135,49 @@ h1.authors-heading-one {
     padding: 14px 0 20px;
     color: #000;
 }
-.scott-charlotte-container {
+.book-container {
     display: flex;
     max-width: 1440px;
-    min-height: 400px;
+    min-height: 640px;
     margin: 0 auto;
+    background: url("bkg4.webp") center center no-repeat;
+    color: #000;
 }
-.scott-charlotte-wrapper {
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-}
-.scott-wrapper {
+.book-wrapper {
+	margin: 0 auto;
 	display: flex;
-	background: #aecbc6;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	/* padding: 65px 15px 60px; */
-	color: #000;
-	justify-content: center;
-
+	max-width: 1040px;
+	/* justify-content: center; */
+	/* align-content: center; */
+	align-items: center;
+	padding: 0 15px 0px 150px;
 }
-.scott-content {
-    margin: 0 auto;
+.book-content {
+    margin: 0 0 20px 30px;
     color: #000;
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
     max-width: 650px;
 }
-h2.scott-heading-one {
+h2.book-heading-one {
     font-size: 30px;
     line-height: 1;
     margin: 0 0 10px;
     font-weight: 500;
     color: #000;
 }
+    .more-author {
+	font-size: 18px;
+}
 .charlotte-wrapper {
-	display: flex;
-	background: #92cbc2;
-	width: calc(100% * 0.5);
-	display: flex;
-	flex-direction: column;
-	/* padding: 65px 15px 60px; */
-	color: #000;
-	justify-content: center;
+    display: flex;
+    background: #92cbc2;
+width: calc(100% * 0.5);
+    display: flex;
+    flex-direction: column;
+    /* padding: 65px 15px 60px; */
+    color: #000;
+    justify-content: center;
 }
 .gardening-content {
     margin: 0 auto;
@@ -193,7 +190,8 @@ h2.gardening-heading-one {
     font-size: 30px;
     line-height: 1;
     margin: 0 0 10px;
-    font-weight: 500;color: #000;
+    font-weight: 500;
+    color: #000;
 }
 /* e&h promo & spring gardening */
 .eh-garden-container {
@@ -208,7 +206,7 @@ h2.gardening-heading-one {
     width: 100%;
 }
 .eh-wrapper {
-    background: #fb9188;
+    background: #ddd;
 width: calc(100% * 0.5);
     display: flex;
     flex-direction: column;
@@ -232,7 +230,7 @@ h2.eh-heading-one {
     font-weight: 500;
 }
 .garden-wrapper {
-    background: #8dc6d0;
+    background: #ccc;
 width: calc(100% * 0.5);
     display: flex;
     flex-direction: column;
@@ -257,10 +255,10 @@ h2.theatre-heading-one {
 }
 
 @media (max-width: 950px) {
-.eh-garden-container, .scott-charlotte-container, .authors-container, .garden-container {
+.eh-garden-container, .book-container, .authors-container, .garden-container {
     max-width: 720px;
 }
-.eh-garden-wrapper, .scott-charlotte-wrapper, .authors-wrapper, .garden-wrapper {
+.eh-garden-wrapper, .book-wrapper, .authors-wrapper, .garden-wrapper {
     flex-direction: column;
 }
 .eh-wrapper, .garden-wrapper, .scott-wrapper, .charlotte-wrapper, .authors-info, .authors-image, .authors-content {
@@ -281,6 +279,22 @@ h2.theatre-heading-one {
 }
 .charlotte-wrapper {
     padding: 213px 15px 80px;
+}
+}
+    
+    .complex-sprite {
+	height: 485px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+	background-image: url("book-sprite.webp");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	animation: complex-sprite 10s steps(3) infinite;
+}
+@keyframes complex-sprite {
+to {
+background-position: -960px 0;
 }
 }
 </style>
@@ -474,69 +488,51 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
     <div class="row background-row">
       <section>
-        <div class="authors-container">
-          <div class="authors-wrapper">  <div class="authors-image">
-              <div class="bg-swap"></div>
+        <div class="book-container">
+          <div class="book-wrapper">
+            <div class="book-image"><div class="complex-sprite"></div></div>
+            <div class="book-content">
+              <h2 class="book-heading-one">Meet the Authors</h2>
+              <div>Get up-close with these bestselling writers. <a class="black text-underline" href="#">Buy&nbsp;Tickets</a>.</div>
+              <div>
+                <ul>
+                  <li>May 1: Alka Joshi, Six Days in Bombay</li>
+                  <li>May 16: Jack Carr, The Fourth Option</li>
+                  <li>June 16: Brad Thor, Choke Point</li>
+                </ul>
+              </div><div class="more-author"><i>Hear from <a class="black text-underline" href="#">more great authors</a>.</i></div>
             </div>
-            <div class="authors-info">
-              <div class="authors-content">
-                <h1 class="authors-heading-one">Author Content Goes Here</h1>
-                <div class="authors-heading-two">
-                  <ul class="text-left">
-                    <li>Duis tincidunt sem sed massa faucibus pharetra</li>
-                    <li>Suspendisse ante turpis, semper quis pharetra eu, luctus sit amet nisl.</li>
-                    <li> Vivamus sed turpis sed sem varius suscipit non vulputate eros.</li>
-                    <li> Aliquam porta rutrum purus, sit amet pretium diam rutrum vel.</li>
-                  </ul>
-                </div><div><i>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius.</i></div>
-              </div>
-            </div>
-          
           </div>
         </div>
       </section>
       <section>
-        <div class="scott-charlotte-container">
-          <div class="scott-charlotte-wrapper">
-            <div class="scott-wrapper">
-              <div class="scott-content">
-               
-                <h2 class="scott-heading-one">Content Goes Here</h2>
-                <div>Nunc sit amet felis ac purus sagittis ornare gravida at dui. Nam mauris arcu, iaculis id imperdiet a, iaculis sit amet urna. Nulla condimentum scelerisque odio, ut aliquet arcu euismod ac.</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-     <!-- <section>
         <div class="eh-garden-container">
           <div class="eh-garden-wrapper">
             <div class="eh-wrapper">
-              <div id="eh-box"></div>
+             <div id="eh-box"></div>
               <div class="eh-content">
-                <h2 class="eh-heading-one">Double the Celebration, Double the Joy!</h2>
-                <div>Book a DCL birthday party and enjoy 20% off a baby shower.</div>
-                <div class="padding-top-5"><a class="black text-underline" href="birthday-parties/">Learn More</a></div>
+                <h2 class="eh-heading-one">Shop, Gift, Give Back</h2>
+                <div>Our Kendra Scott jewelry shopping event returns May 2-3, benefiting the DCL Foundation. <a class="black text-underline" href="#">Get&nbsp;Details</a>.</div>
+                
               </div>
             </div>
             <div class="garden-wrapper">
-              <div id="theatre-box"></div>
-              <div class="theatre-content">
-                <h2 class="theatre-heading-one">Spring Gardening</h2>
-                <div>Expert tips for seed starting, container gardening, attracting pollinators, and more from a CSU Master Gardener. <a class="black text-underline" href="https://go.dcl.org/events?term=spring+gardening&n=3&r=months">Get&nbsp;Growing</a>!</div>
+             <div id="theatre-box"></div>
+              <div class="theatre-content"><div>From the Archives:</div>
+                <h2 class="theatre-heading-one">Stars, Stripes & Summit Views</h2>
+                <div>Explore Douglas County’s place in the American story through this special ALH exhibit. <a class="black text-underline" href="#">Learn&nbsp;More</a>.</div>
               </div>
             </div>
           </div>
         </div>
-      </section>-->
+      </section>
     </div>
-    <script>
-    var images = ['eh-one.jpg', 'eh-two.jpg', 'eh-three.jpg', 'eh-four.jpg', 'eh-five.jpg'];
+<script>
+    var images = ['https://lipsum.app/300x300/', 'https://lipsum.app/300x300/'];
     $('<img alt="Birthday Party" class="img-responsive image-center" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#eh-box');
-	 var images = ['gardening-one.jpg', 'gardening-two.jpg', 'gardening-three.jpg'];
+	 var images = ['https://lipsum.app/300x300/', 'https://lipsum.app/300x300/'];
     $('<img alt="Theatre Performance" class="img-responsive image-center" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#theatre-box');
-</script> 
+</script>
     <!-- InstanceEndEditable --> </div>
 </main>
 <div class="row no-margin bg-gray-10">
