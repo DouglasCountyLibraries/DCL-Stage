@@ -55,15 +55,15 @@
     margin-bottom: 30px;
 }
 .background-row {
-    background: url("pattern.webp") center center;
+    background: url("flower-pattern.webp") center center;
     padding: 60px 0 80px;
 }
 .row-one-container {
+    background: #fbf4e2 url("flower-background.webp") left center no-repeat;
     display: flex;
     max-width: 1440px;
     min-height: 640px;
     margin: 0 auto;
-    background: #cbe3dc;
     color: #000;
     box-shadow: 0px 8px 20px rgba(0,0,0,.3);
 }
@@ -77,18 +77,19 @@
 .row-one-content {
     margin: 0 0 20px 30px;
     color: #000;
-    font-size: 20px;
+    font-size: 1.25rem;
     max-width: 650px;
 }
-h2.row-one-heading-one {
-    font-size: 30px;
-    line-height: 1;
-    margin: 0 0 10px;
+h2.row-one-heading-one, h2.row-two-heading-one {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin: 0 0 5px;
     font-weight: 500;
     color: #000;
 }
-.row-one-more-authors {
-    font-size: 18px;
+
+.row-one-more-authors, .row-two-from-archives {
+	font-size: 1.125rem;
 }
 .row-two-container {
     display: flex;
@@ -103,41 +104,32 @@ h2.row-one-heading-one {
     box-shadow: 0px 8px 20px rgba(0,0,0,.3);
 }
 .row-two-box-one-wrapper {
-    background: #ddd;
+    background: #c77934;
 width: calc(100% * 0.5);
     display: flex;
     flex-direction: column;
     padding: 80px 15px 30px;
 }
-.row-two-box-one-wrapper img {
+.row-two-box-one-wrapper img, .row-two-box-two-wrapper img {
     border-radius: 50%;
 }
-.row-two-box-one-content {
+.row-two-box-one-content, .row-two-box-two-content {
     margin: 0 auto;
     color: #000;
     padding: 30px 0 35px;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     max-width: 530px;
 }
 .row-two-box-two-wrapper {
-    background: #ccc;
+    background: #769b67;
 width: calc(100% * 0.5);
     display: flex;
     flex-direction: column;
     padding: 80px 15px 30px;
 }
-.row-two-box-two-wrapper img {
-    border-radius: 50%;
-}
-.row-two-box-two-content {
-    margin: 0 auto;
-    color: #000;
-    padding: 30px 0 35px;
-    font-size: 20px;
-    text-align: center;
-    max-width: 530px;
-}
+
+
 .complex-sprite {
     height: 485px;
     margin-left: auto;
@@ -392,7 +384,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div class="row-two-box-two-wrapper">
               <div id="row-two-box-two-image"></div>
               <div class="row-two-box-two-content">
-                <div>From the Archives:</div>
+                <div class="text-uppercase row-two-from-archives">From the Archives:</div>
                 <h2 class="row-two-heading-one">Stars, Stripes & Summit Views</h2>
                 <div>Explore Douglas County’s place in the American story through this special ALH exhibit. <a class="black text-underline" href="#">Learn&nbsp;More</a>.</div>
               </div>
