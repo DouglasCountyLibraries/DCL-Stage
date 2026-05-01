@@ -46,6 +46,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <script src="https://www.dcl.org/shared-assets/js/dcl.js?32725"></script>
 <!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="https://dcl.org/shared-assets/css/flickity.min.css">
+<script src="https://dcl.org/shared-assets/js/biblioList-new.js"></script>
 <style>
 .kids-teens-active {
     background-color: #f5f5f5;
@@ -121,12 +123,12 @@ h1.page-heading {
 }
 .shelf {
     border-bottom: 20px solid transparent;
-    border-image: url("../shared-assets/images/shelf.jpg") 30 round;
+    border-image: url("https://dcl.org/shared-assets/images/shelf.jpg") 30 round;
     border-top: 0 none;
     padding-bottom: 0;
 }
 .shelf-shadow {
-    background: #fff url("../shared-assets/images/shelf-shadow.png") repeat-x;
+    background: #fff url("https://dcl.org/shared-assets/images/shelf-shadow.png") repeat-x;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -419,10 +421,56 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <div class="padding-bottom-5">Through Dolly Parton's Imagination Library, children ages 0-5 receive and get to keep a free high-quality, age-appropriate book each month, sent straight to their home. We're excited to help create more opportunities to read together, build strong literacy foundations, encourage a love of reading, and increase the potential for school success.</div>
         <div class="padding-bottom-15">It's easy and free! Register each child from birth to age five individually; every child in your Douglas County family may receive their own books. Let's inspire a love of reading together!</div>
         <div class="padding-bottom-30"><i>*Allow 6-8 weeks for delivery of your first book from Tennessee, after which books are delivered every month. </i></div>
-        <div><!-- Online Registration Copyright - All Rights Reserved //--><!-- BEGIN Online Registration Code - Copyright - NOT PERMITTED TO MODIFY IMAGE MAP/CODE/LINKS //--><script type="text/javascript" src="https://imaginationlibrary.com/bos/widget/goRegister.us.php"></script>
-<!-- END Online Registration Code - Copyright - NOT PERMITTED TO MODIFY IMAGE MAP/CODE/LINKS //--></div>
+        <div><!-- Online Registration Copyright - All Rights Reserved //--><!-- BEGIN Online Registration Code - Copyright - NOT PERMITTED TO MODIFY IMAGE MAP/CODE/LINKS //--><script type="text/javascript" src="https://imaginationlibrary.com/bos/widget/goRegister.us.php"></script><!-- END Online Registration Code - Copyright - NOT PERMITTED TO MODIFY IMAGE MAP/CODE/LINKS //--></div>
       </div>
-    </div>    
+    </div>
+    <div class="row bg-teal">
+      <div class="carousel-wapper">
+        <div class="h4 white text-center">Learn more about <a class="white text-underline" href="https://imaginationlibrary.com/" target="_blank">Dolly Parton’s Imagination Library</a></div>
+        <div class="container text-center">
+          <div class="carousel max-width-60" data-flickity='{ "wrapAround": true, "autoPlay": 6000 }'>
+            <div class="carousel-cell">
+              <div>
+                <div class="white"><i>The foundation of reading begins at birth and is built word by word, book by book, song by song. </i></div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>
+                <div class="white"><i>Children who are at risk for reading struggles can reliably be identified as such before kindergarten.</i></div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>
+                <div class="white"><i>A baby's brain forms over 1 million neural connections every second.</i></div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>
+                <div class="white"><i>Research has found that reading one book a day can expose children to over 300,000 words by age five.</i></div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>
+                <div class="white"><i>Eighty percent of a child’s brain development is formed by age three.</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-top-50 text-center">
+      <div id="storytime-favorites" class="text-center">
+        <div class="h2 no-margin-top margin-bottom-5">Storytime Favorites</div>
+        <div><a class="text-uppercase" href="https://dcl.bibliocommons.com/list/share/692283576_dclkids/695845537">See Entire List »</a></div>
+      </div>
+      <div id="StorytimeFavorites"></div>
+      <div class="row">
+        <div class="shelf-shadow">
+          <div class="padding-top-40 text-center max-width-80">Discover even more children’s titles to <a href="../read-listen-watch/">read, listen to, and watch</a>. </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Modal -->
     <div class="modal fade" id="dolly-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -500,6 +548,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
+<script src="https://dcl.org/shared-assets/js/flickity.pkgd.min.js"></script> 
+<script>
+	var cards = $(".carousel-cell");
+for (var i = 0; i < cards.length; i++) {
+  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+  cards.eq(target1).before(cards.eq(target2));
+}
+ </script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
