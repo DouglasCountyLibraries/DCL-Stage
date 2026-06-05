@@ -47,41 +47,48 @@
 <script>
 const url = "https://api.bibliocommons.com/v1/lists/904339467?library=dcl&api_key=6ux5avesyf7acz95qa3anve5";
 
-async function loadList() {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
+function loadList() {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
 
-        const container = document.getElementById("list");
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            const data = JSON.parse(xhr.responseText);
+            const container = document.getElementById("list");
 
-        if (!data.items || data.items.length === 0) {
-            container.innerHTML = "<p>No items found.</p>";
-            return;
+            if (!data.items || data.items.length === 0) {
+                container.innerHTML = "<p>No items found.</p>";
+                return;
+            }
+
+            data.items.forEach(item => {
+                const div = document.createElement("div");
+                div.className = "item";
+
+                const title = item.title || "Untitled";
+                const author = item.author || "Unknown Author";
+                const cover = item.cover_image?.url || "";
+
+                div.innerHTML = `
+                    <img src="${cover}" alt="Cover Image" onerror="this.src='';">
+                    <div>
+                        <div class="item-title">${title}</div>
+                        <div class="item-author">${author}</div>
+                    </div>
+                `;
+
+                container.appendChild(div);
+            });
+        } else {
+            document.getElementById("list").innerHTML = "<p>Error loading data.</p>";
         }
+    };
 
-        data.items.forEach(item => {
-            const div = document.createElement("div");
-            div.className = "item";
+    xhr.onerror = function () {
+        document.getElementById("list").innerHTML = "<p>Network error.</p>";
+    };
 
-            const title = item.title || "Untitled";
-            const author = item.author || "Unknown Author";
-            const cover = item.cover_image?.url || "";
-
-            div.innerHTML = `
-                <img src="${cover}" alt="Cover Image" onerror="this.src='';">
-                <div>
-                    <div class="item-title">${title}</div>
-                    <div class="item-author">${author}</div>
-                </div>
-            `;
-
-            container.appendChild(div);
-        });
-
-    } catch (err) {
-        console.error(err);
-        document.getElementById("list").innerHTML = "<p>Error loading data.</p>";
-    }
+    xhr.send();
 }
 
 loadList();
