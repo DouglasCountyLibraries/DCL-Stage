@@ -79,6 +79,11 @@ h2.page-subheading, h2.page-subheading a {
 h2.page-subheading {
   color: #555;
 }
+@media (max-width: 425px) {
+.h1.page-heading-fit {
+	font-size: 2rem;
+}
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 400;
@@ -87,27 +92,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 h1, .h1, h2.lg-heading, h3.xlg-heading, h4.xxlg-heading, h5.xxxlg-heading {
   font-size: 2.49rem;
-    line-height: 1.2;
+  line-height: 1.2;
 }
 h2, .h2, h1.sm-heading, h3.lg-heading, h4.xlg-heading, h5.xxlg-heading {
   font-size: 2.07rem;
-    line-height: 1.23;
+  line-height: 1.23;
 }
 h3, .h3, h1.xsm-heading, h2.sm-heading, h4.lg-heading, h5.xlg-heading {
   font-size: 1.73rem;
-    line-height: 1.32;
+  line-height: 1.32;
 }
 h4, .h4, h1.xxsm-heading, h2.xsm-heading, h3.sm-heading, h4.sm-heading, h5.xlg-heading {
   font-size: 1.44rem;
-    line-height: 1.38;
+  line-height: 1.38;
 }
 h5, .h5, h2.xxsm-heading, h3.xsm-heading, h4.xsm-heading {
   font-size: 1.23rem;
-    line-height: 1.41;
+  line-height: 1.41;
 }
 h6, .h6, h2.xxxsm-heading, h3.xxsm-heading, h4.xxsm-heading, h5.sm-heading {
   font-size: 1.1rem;
-    line-height: 1.43;
+  line-height: 1.43;
 }
 ul, ol {
   padding-left: 25px;
@@ -303,9 +308,9 @@ blockquote footer, blockquote small, blockquote .small {
   font-size: 10px;
 }
 .dcl-navbar-container, .dcl-logo-search-container {
-	margin: 0 auto;
-	max-width: 1200px;
-	padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 .collapse.navbar-collapse {
   font-family: "Open Sans", arial, sans-serif;
@@ -357,6 +362,12 @@ blockquote footer, blockquote small, blockquote .small {
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #000;
+}
+@media (max-width: 1100px) {
+  .dropdown-menu.research-menu {
+    left: auto;
+    right: 0;
+  }
 }
 .input-group-addon, .input-group-btn {
   vertical-align: top;
@@ -844,16 +855,13 @@ a.btn.btn-default {
   opacity: 1;
   cursor: pointer;
 }
-.btn-null {
-  background-color: #4e3b59;
-  border: 0;
-  -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
-}
-a.btn.btn-null {
-  color: #fff;
-  text-transform: uppercase;
+.btn-null, a.btn.btn-null {
+	background-color: #4e3b59;
+	border: 0;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: none;
 }
 .btn-null:active, .btn-null:hover, .btn-null:focus {
   background-color: #4e3b59;
@@ -2419,13 +2427,13 @@ h6.responsive-text {
   margin-right: 0px !important;
 }
 #archive-header h2 {
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 400;
-	margin-top: 0;
-	position: relative;
-	top: 20px;
-	padding-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  top: 20px;
+  padding-bottom: 15px;
 }
 .entry-header a {
   font-weight: 400;
@@ -3038,12 +3046,12 @@ label.archive-search {
   }
 }
 /* ====== navbar and search media queries ====== */
-@media (max-width: 991px) {
+@media (max-width: 995px) {
   .dcl-navbar, .dcl-logo-search {
     display: none !important;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 996px) {
   .dcl-mobile-navbar {
     display: none !important;
   }

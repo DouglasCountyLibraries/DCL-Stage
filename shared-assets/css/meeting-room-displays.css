@@ -35,5 +35,6 @@ body {
 }
 .reserve-message {
   padding: 30px 15px 40px;
-  margin-top: auto;
+  margin: 0 auto;
+  max-width: 900px;
 }

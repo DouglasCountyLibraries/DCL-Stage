@@ -9,7 +9,7 @@ var allKeyName;
 function createAllPageTitle(title) {
   var x = [
     '<div class="text-center">',
-    '<h1 class="jumbo-text text-uppercase font-weight-400">What' + "'s" + 'New</h1>',
+    '<h1 class="page-heading">What' + "'s" + 'New</h1>',
     ' </div>',
     ' <h1 class="no-margin">' + title + '</h1>  '
   ].join('\n');
