@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Analytics with Google Optimize plugin --> 
+
+<!-- End --> 
 <!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MV5DM73');</script> 
-<!-- End Google Tag Manager -->
+
+<!-- End Google Tag Manager --> 
+<!-- Patron Point --> 
+
+<!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
 <title>Summer Reading | Douglas County Libraries</title>
 <meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Summer Reading, Summer Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
@@ -40,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="https://www.dcl.org/shared-assets/css/dcl.css?42225">
+<link type="text/css" rel="stylesheet" href="https://www.dcl.org/shared-assets/css/dcl.css?81925">
 <script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
@@ -148,14 +149,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- InstanceEndEditable -->
 </head>
 <body>
+<!-- pull alert.txt into the general-alert div --> 
+<!--<script>
+$.get("https://s3.amazonaws.com/website.alert/alert.txt")
+  .done(function( data ) {
+    if ( data !=null ){	$("#general-alert").show().append( data );}
+});
+</script>--> 
+<!-- Google Tag Manager (noscript) --> 
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV5DM73"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
 <!-- End Google Tag Manager (noscript) --> 
-
 <a href="#content-begins" class="skip-link">Skip to content</a> 
 <!-- BC Log In Bar -->
 <div class="login-row">
@@ -169,12 +172,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <!-- End BC Log In Bar --> 
 <!-- Desktop Logo and Search -->
-
 <div class="dcl-logo-search client_and_search">
   <div class="container">
     <div class="dcl-logo-search-wrapper">
       <div class="dcl-logo-wrapper">
-        <div class="dcl-logo"> <a href="/"><img class="img-responsive" src="../dcl-logo.svg" alt="Douglas County Libraries"></a> </div>
+        <div class="dcl-logo"> <a href="/"><img class="img-responsive" src="../stage-logo.png" alt="Douglas County Libraries"></a> </div>
       </div>
       <div class="search-wrapper">
         <form id="searchForm" class="search dcl-search" action="https://dcl.bibliocommons.com/search" role="search">
@@ -190,7 +192,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
 </div>
-
 <!-- End Desktop Logo and Search --> 
 <!-- Desktop Navbar -->
 <nav class="dcl-navbar navbar navbar-default">
@@ -332,11 +333,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 <!-- End Mobile Navbar -->
 <main>
-  <div id="content-begins" class="container-fluid">
-    <div class="alert-wrapper">
-      <div id="general-alert" style="display:none;"></div>
-    </div>
-    <!-- InstanceBeginEditable name="Content" -->
+  <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
     <div class="row border-top padding-bottom-15">
       <div class="container text-center">
         <h1 class="page-heading">Summer Reading</h1>
@@ -519,26 +516,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script> 
 <!-- InstanceEndEditable --> 
 <!-- pull alert.txt into the general-alert div --> 
-<script>
-$.get("https://s3.amazonaws.com/website.alert/alert.txt?q=" + Math.floor(Math.random() * 1000000))
-  .done(function( data ) {
-    if ( data !=null ){	$("#general-alert").show().append( data );}
-});
-</script> 
-<!-- BiblioCommons APK --> 
-<script async="async" type="text/javascript">(function(){var e=document.createElement("script");
-e.src="https://dcl.bibliocommons.com/javascripts/sdk.js";
-e.async=true;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script> 
-<!-- Patron Point --> 
-<script>
-    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
-        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
-        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://dclco.patronpoint.com/mtc.js','mt');
 
-    mt('send', 'pageview');
-</script> 
+<!-- BiblioCommons APK --> 
+
+<!-- Patron Point --> 
+
 <!-- End Patron Point -->
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
