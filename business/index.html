@@ -46,122 +46,186 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <script src="https://www.dcl.org/shared-assets/js/dcl.js?32725"></script>
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="../shared-assets/css/flickity.min.css">
 <style>
 .using-the-library-active {
-	background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
-.margin-top-20 {
-	margin-top: 20px;
+.fa-li.fa-right {
+    position: revert;
+    margin-right: 5px;
+}
+.text-uppercase.small {
+    margin-bottom: 3px;
 }
 .item-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .item {
-	padding: 30px 30px 15px;
-	text-align: center;
+    padding: 30px 30px 15px;
+    text-align: center;
 }
-.red-check .fa-check {
-	color: #D36A50;
-}
-.fa-ul > li {
-	margin-bottom: 15px;
+.fa-li > .fa-solid.fa-check {
+    color: #90ad63;
+    font-size: 1.25rem;
 }
 .checklist-wrapper {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.checklist > li {
+    padding: 6px 0;
 }
 .checklist {
-	max-width: 50rem;
-	margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .databases {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 980px;
 }
 .database-item {
-	border-bottom: 2px solid #e6e4e2;
-	padding: 6px 0 20px;
-	width: 450px;
-	margin: 0 20px;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 6px 0 20px;
+    width: 450px;
+    margin: 0 20px;
 }
-.database-item:last-of-type {
-	border-bottom: 0;
-	padding-bottom: 15px;
+.database-item:nth-of-type(4), .database-item:nth-of-type(5) {
+    border-bottom: none;
 }
 .database-item > h4 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .carousel-cell {
-	width: 100%;
-	padding: 0 0 20px;
+    width: 100%;
 }
 .carousel-cell:before {
-	display: block;
-	text-align: center;
+    display: block;
+    text-align: center;
 }
 /* big buttons, no circle */
 .flickity-prev-next-button {
-	width: 50px;
-	height: 50px;
-	background: transparent;
+    width: 50px;
+    height: 50px;
+    background: transparent;
 }
 .flickity-prev-next-button:hover {
-	background: transparent;
+    background: transparent;
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-	fill: #efeeed;
+    fill: #efeeed;
 }
 .flickity-prev-next-button.no-svg {
-	color: #efeeed;
+    color: #efeeed;
 }
 .flickity-prev-next-button {
-	top: 66%;
+    top: 66%;
 }
 .flickity-viewport {
-	transition: height 0.6s;
+    transition: height 0.6s;
+}
+.custom-container {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .shelf-container img {
-	margin: 15px 15px 17px 15px;
-	vertical-align: bottom;
+    margin: 15px 15px 20px 15px;
+    vertical-align: bottom;
 }
-
-@media (min-width: 992px) {
+.shelf-wrapper {
+    margin: 0 5px;
+}
 .shelf {
-	background: url("new-shelf.jpg") bottom center repeat-x;
+    border-top: 20px solid transparent;
+    border-image: url("../shared-assets/images/shelf.jpg") 30 round;
+    max-width: 1170px;
+    margin: -3px auto 0 auto;
 }
 .shelf-shadow {
-	background: #fff url("shelf-shadow.jpg");
-	background-repeat: repeat-x;
+    background: #fff url("../shared-assets/images/shelf-shadow.png") repeat-x;
+    max-width: 1170px;
+    margin: 0 auto -40px auto;
+    min-height: 100px;
+    border-right: 30px solid #fff;
+    border-left: 30px solid #fff;
+}
+
+@media (max-width: 1075px) {
+.dolly-container {
+    max-width: 800px;
+    flex-direction: column;
+    text-align: center;
+}
+.dolly-item-two {
+    display: flex;
+    justify-content: center;
+    min-width: inherit;
+    margin-top: 0;
+}
+}
+
+@media (max-width: 1050px) {
+.cover-image {
+    max-width: 155px;
+}
+}
+
+@media (max-width: 992px) {
+.shelf-container img {
+    margin: 15px 5px 20px 5px;
+}
+}
+
+@media (max-width: 875px) {
+.shelf {
+    border-top: 0;
+    border-image: none;
+}
+.shelf-shadow {
+    background: none;
+    margin: 0 auto 40px auto;
+    min-height: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.shelf-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+.shelf-container img {
+    vertical-align: top;
+}
+.find-more {
+    margin-top: 20px;
 }
 }
 
 @media (max-width: 980px) {
 .databases {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
 }
-.database-item:nth-last-of-type(2) {
-	border-bottom: 2px solid #e6e4e2;
+.database-item:nth-of-type(4) {
+    border-bottom: 2px solid #f5f5f5;
 }
 }
 
 @media (max-width: 600px) {
 .databases, .database-item {
-	width: auto;
+    width: auto;
 }
 .item {
-	padding: 15px;
-	text-align: center;
+    padding: 15px;
+    text-align: center;
 }
 }
 </style>
@@ -353,120 +417,176 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- End Mobile Navbar -->
 <main>
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="container text-center">
-      <h1 class="text-uppercase jumbo-text font-weight-400">DCL for Business</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container text-center">
-      <h4 class="roboto no-margin-top margin-lg-100">Information Services for Entrepreneurs and Small Businesses</h4>
-      <div class="margin-lg-100">Our specially trained business librarians offer boutique-style service to fit your needs&mdash;market information, competitive intelligence, data on industry trends, sample business plans, and more. Contact us with your business idea or question and a business librarian will respond in one business day.</div>
-      <div class="text-center margin-top-20"> <a href="form/" target="_blank" class="btn btn-primary btn-lg">Contact Us</a> </div>
-    </div>
-  </div>
-  <div class="row shelf">
-    <div class="container text-center">
-      <div class="bottom-carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "selectedAttraction": 0.01, "friction": 0.40, "autoPlay": 6000 }'> 
-        <!--carousel group begins-->
-        <div class="carousel-cell">
-          <div class="text-center">
-            <h2>Business for Creatives</h2>
-            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1854975299">See Entire List &raquo;</a></div>
-          </div>
-          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1609080114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781614294986/MC.GIF" alt="Creativity, Spirituality & Making A Buck"></a> <a href="https://dcl.bibliocommons.com/item/show/1514257114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781524761714/MC.GIF" alt="The Creative Curve"></a> <a href="https://dcl.bibliocommons.com/item/show/1284410114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781608682560/MC.GIF" alt="Building your Business the Right-brain Way"></a> <a href="https://dcl.bibliocommons.com/item/show/1086544114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780307587107/MC.GIF" alt="Handmade to Sell"></a> <a href="https://dcl.bibliocommons.com/item/show/1070222114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781603429894/MC.GIF" alt="Grow your Handmade Business"></a> </div>
-        </div>
-        <!--carousel group ends--> 
-        
-        <!--carousel group begins-->
-        <div class="carousel-cell">
-          <div class="text-center">
-            <h2>Business Startups</h2>
-            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1868140989">See Entire List &raquo;</a></div>
-          </div>
-          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1661536114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780231194525/MC.GIF" alt="Startup Myths and Models"></a> <a href="https://dcl.bibliocommons.com/item/show/1693722114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781642504125/MC.GIF" alt="The Entrepreneur's Paradox"></a> <a href="https://dcl.bibliocommons.com/item/show/1693839114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780593137024/MC.GIF" alt="Why Startups Fail"></a> <a href="https://dcl.bibliocommons.com/item/show/1693842114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781413327588/MC.GIF" alt="The Women's Small Business Start-up Kit"></a> <a href="https://dcl.bibliocommons.com/item/show/1670904114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780995404403/MC.GIF" alt="The 7 Day Startup"></a> </div>
-        </div>
-        <!--carousel group ends--> 
-        
-        <!--carousel group begins-->
-        <div class="carousel-cell">
-          <div class="text-center">
-            <h2>The Business Plan</h2>
-            <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1992774469">See Entire List &raquo;</a></div>
-          </div>
-          <div class="container shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1550598114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781401957476/MC.GIF" alt="Choose"></a> <a href="https://dcl.bibliocommons.com/item/show/1470164114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780749480844/MC.GIF" alt="Starting A Business From Home"></a> <a href="https://dcl.bibliocommons.com/item/show/1440668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781476794358/MC.GIF" alt="Burn the Business Plan"></a> <a href="https://dcl.bibliocommons.com/item/show/1561379114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781933895826/MC.GIF" alt="Successful Business Plan Secrets & Strategies S Plan Guide!"></a> <a href="https://dcl.bibliocommons.com/item/show/1516381114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781413325454/MC.GIF" alt="How to Write A Business Plan"></a> </div>
-        </div>
-        <!--carousel group ends--> 
-        
-      </div>
-    </div>
-  </div>
-  <div id="databases" class="row shelf-shadow">
-    <div class="container text-center padding-top-40">
-      <h1 class="no-margin-top text-center">Business Databases</h1>
-      <div class="margin-lg-100">Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications. Access the databases for free either at the library or online using your <a href="http://getacard.org/v2/index.html" target="_blank">library card</a>.</div>
-    </div>
-  </div>
-  <div class="row padding-bottom-30">
-    <div class="database-wrapper">
-      <div class="databases">
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-insights" target="_blank">Business Insights: Essentials</a></h4>
-          <div>Business and industry overviews, rankings, market data, and investment and financial reports.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=business-source-premier" target="_blank">Business Source Premier</a></h4>
-          <div>Economic data, company profiles, industry information and market research from more than 2,200 popular and academic business publications.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=demographicsnow" target="_blank">DemographicsNow</a></h4>
-          <div>Demographic data useful for opening a business, finding audiences for products/services, and analyzing the needs of a given population.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=plunkett-research" target="_blank">Market Research</a></h4>
-          <div class="text-uppercase small">Plunkett Research</div>
-          <div>Worldwide market research, industry statistics, trends and in-depth analysis of top companies.</div>
-        </div>
-        <div class="database-item">
-          <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=referenceusa" target="_blank">Reference Solutions</a></h4>
-          <div class="text-uppercase small">Formerly ReferenceUSA</div>
-          <div>Business and residential info on over 25 million businesses and more than 262 million consumers in the U.S. and Canada.</div>
+    <div class="row border-top">
+      <div class="container text-center padding-bottom-40">
+        <h1 class="page-heading">DCL for Business</h1>
+        <div class="max-width-80">
+          <h2 class="page-subheading">Information Services for Entrepreneurs and Small Businesses</h2>
+          <div>Our specially trained business librarians offer boutique-style service to fit your needs&mdash;market information, competitive intelligence, data on industry trends, sample business plans, and more. Contact us with your business idea or question and a business librarian will respond in one business day.</div>
+          <div class="text-center margin-top-20"> <a href="form/" target="_blank" class="btn btn-primary btn-lg">Contact Us</a> </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row bg-gray-5">
-    <div class="container padding-top-40 padding-bottom-40">
-      <h4 class="text-center no-margin">Our specially trained business librarians are here to help you with your research.</h4>
-      <div class="item-wrapper">
-        <div class="item">
-          <div><img alt="Colbe Galston, Highlands Ranch" class="img-circle" src="colbe.jpg">
-            <h5 class="no-margin-bottom">Colbe Galston</h5>
-          </div>
-        </div>
-        <div class="item">
-          <div><img alt="Patty Van Eysden, Castle Rock" class="img-circle" src="patty.jpg">
-            <h5 class="no-margin-bottom">Patty Van Eysden</h5>
+    <section>
+      <div class="row">
+        <div class="custom-container text-center">
+          <div class="bottom-carousel" data-flickity='{"imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "pageDots": false, "autoPlay": 7000 }'> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Artificial Intelligence in Business</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2305300779">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/14847030981"><img class="cover-image" src="https://cover.hoopladigital.com/nbn_9781954759442_270.jpeg" alt="The NeuroPreneur"></a> <a href="https://dcl.bibliocommons.com/item/show/1740790114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781647820107/MC.GIF&client=dougp&type=xw12&oclc=" alt="The Digital Mindset"></a> <a href="https://dcl.bibliocommons.com/item/show/1693776114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781633694422/MC.GIF&client=dougp&type=xw12&oclc=" alt="My Robot Gets Me"></a> <a href="https://dcl.bibliocommons.com/item/show/1694488114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781524742676/MC.GIF&client=dougp&type=xw12&oclc=" alt="Genius Makers"></a> <a href="https://dcl.bibliocommons.com/item/show/14060321981"><img class="cover-image" src="https://cover.hoopladigital.com/csp_9781503628045_270.jpeg" alt="The AI Marketing Canvas"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Finding Your Audience</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2012599370">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/14392948981"><img class="cover-image" src="https://cover.hoopladigital.com/csp_9781735688534_270.jpeg" alt="The Beginner's Guide to Content Marketing"></a> <a href="https://dcl.bibliocommons.com/item/show/1629618114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781974415700/MC.GIF" alt="The One-hour Content Plan"></a> <a href="https://dcl.bibliocommons.com/item/show/1535833114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781729456361/MC.GIF" alt="Content Marketing Made Easy"></a> <a href="https://dcl.bibliocommons.com/item/show/1670969114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781610353168/MC.GIF" alt="Essentials of Thought Leadership & Content Marketing"></a> <a href="https://dcl.bibliocommons.com/item/show/1254984114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780071819893/MC.GIF" alt="Epic Content Marketing"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Attracting More Customers</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/2261359119">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1755584114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780593418574/MC.GIF" alt="Unreasonable Hospitality"></a> <a href="https://dcl.bibliocommons.com/item/show/1629618114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781974415700/MC.GIF" alt="Fanocracy"></a> <a href="https://dcl.bibliocommons.com/item/show/1355179114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781101980675/MC.GIF" alt="Hug your Haters"></a> <a href="https://dcl.bibliocommons.com/item/show/1707709114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781097332021/MC.GIF" alt="77 Ways to Get More Customers"></a> <a href="https://dcl.bibliocommons.com/item/show/1363197114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780814437810/MC.GIF" alt="What Customers Crave"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Business for Creatives</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1854975299">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1609080114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781614294986/MC.GIF" alt="Creativity, Spirituality & Making A Buck"></a> <a href="https://dcl.bibliocommons.com/item/show/1514257114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781524761714/MC.GIF" alt="The Creative Curve"></a> <a href="https://dcl.bibliocommons.com/item/show/1284410114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781608682560/MC.GIF" alt="Building your Business the Right-brain Way"></a> <a href="https://dcl.bibliocommons.com/item/show/1086544114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780307587107/MC.GIF" alt="Handmade to Sell"></a> <a href="https://dcl.bibliocommons.com/item/show/1070222114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781603429894/MC.GIF" alt="Grow your Handmade Business"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Business Startups</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1868140989">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1661536114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780231194525/MC.GIF" alt="Startup Myths and Models"></a> <a href="https://dcl.bibliocommons.com/item/show/1693722114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781642504125/MC.GIF" alt="The Entrepreneur's Paradox"></a> <a href="https://dcl.bibliocommons.com/item/show/1693839114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780593137024/MC.GIF" alt="Why Startups Fail"></a> <a href="https://dcl.bibliocommons.com/item/show/1693842114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781413327588/MC.GIF" alt="The Women's Small Business Start-up Kit"></a> <a href="https://dcl.bibliocommons.com/item/show/1670904114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780995404403/MC.GIF" alt="The 7 Day Startup"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">The Business Plan</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1992774469">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1550598114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781401957476/MC.GIF" alt="Choose"></a> <a href="https://dcl.bibliocommons.com/item/show/1470164114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780749480844/MC.GIF" alt="Starting A Business From Home"></a> <a href="https://dcl.bibliocommons.com/item/show/1440668114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781476794358/MC.GIF" alt="Burn the Business Plan"></a> <a href="https://dcl.bibliocommons.com/item/show/1561379114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781933895826/MC.GIF" alt="Successful Business Plan Secrets & Strategies S Plan Guide!"></a> <a href="https://dcl.bibliocommons.com/item/show/1516381114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781413325454/MC.GIF" alt="How to Write A Business Plan"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Entrepreneurship </div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051/1831865179">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1693715114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781400220618/MC.GIF" alt="Digital Goddess"></a> <a href="https://dcl.bibliocommons.com/item/show/1642588114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781722510176/MC.GIF" alt="Entrepreneurship"></a> <a href="https://dcl.bibliocommons.com/item/show/1693814114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781950863471/MC.GIF" alt="Stuck in the Middle Seat"></a> <a href="https://dcl.bibliocommons.com/item/show/1693727114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781642505177/MC.GIF" alt="The Fearless Woman's Guide to Starting A Business"></a> <a href="https://dcl.bibliocommons.com/item/show/1693759114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781264259168/MC.GIF" alt="Launch your Inner Entrepreneur"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
+            <!--carousel group begins-->
+            <div class="carousel-cell">
+              <div class="text-center">
+                <div class="h2">Marketing Insights</div>
+                <div><a class="text-uppercase font-weight-400" href="https://dcl.bibliocommons.com/list/share/692278051_dcladults/1858771239">See Entire List &raquo;</a></div>
+              </div>
+              <div class="shelf-container text-center"> <a href="https://dcl.bibliocommons.com/item/show/1542102114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781989025017/MC.GIF" alt="The 1-Page Marketing Plan"></a> <a href="https://dcl.bibliocommons.com/item/show/1737534114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9780593330630/MC.GIF" alt="Get Different: Marketing That Can't Be Ignored!"></a> <a href="https://dcl.bibliocommons.com/item/show/1693768114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781642503807/MC.GIF" alt="Marketing Mess to Brand Success"></a> <a href="https://dcl.bibliocommons.com/item/show/1638173114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781633697973/MC.GIF" alt="The Experience Economy"></a> <a href="https://dcl.bibliocommons.com/item/show/1314677114"><img class="cover-image" src="https://secure.syndetics.com/index.aspx?isbn=9781101903599/MC.GIF" alt="The Power of Broke"></a> </div>
+            </div>
+            <!--carousel group ends--> 
+            
           </div>
         </div>
       </div>
-      <div class="checklist-wrapper">
-        <div class="checklist">
-          <ul class="fa-ul red-check">
-            <li><i class="fa-li fa fa-check fa-lg"></i>Help starting a new business with sample business plans, registration and other startup information.</li>
-            <li><i class="fa-li fa fa-check fa-lg"></i>Market information, competitive intelligence, industry trends, and operation assistance for established businesses.</li>
-            <li><i class="fa-li fa fa-check fa-lg"></i>Instruction and best practices for using and understanding the wealth of data reported in the above business databases.</li>
-          </ul>
+    </section>
+    <section>
+      <div class="row">
+        <div class="shelf-wrapper">
+          <div class="shelf"></div>
+          <div class="shelf-shadow"></div>
         </div>
-        <div class="text-center margin-lg-200">
-          <div>In addition, our libraries offer <a href="../reserve-a-space/">meeting rooms and study rooms</a> that may be reserved for uninterrupted work, meetings with clients, and group presentations, with free wireless internet access.</div>
-          <h5 class="no-margin-bottom margin-top-15"><i>Contact us now with your business question!</i></h5>
+        <div class="max-width-90">
+          <div class="text-center padding-bottom-60">
+            <div class="h3 no-margin-top margin-bottom-5">Small-Business Special:</div>
+            Sign up for a free, professional headshot to enhance your portfolio, <a href="https://go.dcl.org/event/15071600">September&nbsp;14, Castle Rock</a> and <a href="https://go.dcl.org/event/15071661">October&nbsp;5, Parker</a>.</div>
         </div>
-        <div class="text-center margin-top-20"> <a href="form/" target="_blank" class="btn btn-lg btn-primary">Contact Us</a> </div>
       </div>
-    </div>
-  </div>
-  <!-- InstanceEndEditable --> </div>
+    </section>
+    <section>
+      <div id="databases" class="row bg-gray-5 text-center">
+        <div class="container padding-top-40 padding-bottom-15">
+          <div class="h1">Business Databases </div>
+          <div class="max-width-90">Our suite of research databases includes sources for demographics, market research and market segmentation, plus comprehensive resources for nonprofit businesses and thousands of articles from leading business publications. Access the databases for free either at the library or online using <a href="https://getacard-ssl.dclibraries.us/" target="_blank">your library card</a>.</div>
+        </div>
+      </div>
+      <div class="row bg-gray-5 padding-bottom-15">
+        <div class="database-wrapper">
+          <div class="databases">
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=business-insights" target="_blank">Business Insights: Essentials</a></div>
+              <div>Business and industry overviews, rankings, market data, and investment and financial reports.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=business-source-premier" target="_blank">Business Source Premier</a></div>
+              <div>Economic data, company profiles, industry information and market research from more than 2,200 popular and academic business publications.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=PlanBuilder" target="_blank">Gale Business: Plan Builder</a></div>
+              <div>Tools to grow, plan, and optimize a business or nonprofit, including development tools and a step-by-step process for building a business plan.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=referenceusa" target="_blank">Reference Solutions</a></div>
+              <div class="text-uppercase small">Formerly ReferenceUSA</div>
+              <div>Business and residential info on over 25 million businesses and more than 262 million consumers in the U.S. and Canada.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=simply-analytics" target="_blank">SimplyAnalytics</a></div>
+              <div>Demographic data useful for opening a business, finding audiences for products/services, and analyzing the needs of a given population.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-gray-5">
+        <div class="container padding-bottom-70">
+          <div class="max-width-70 text-center">In addition, DCL offers <a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=linkedin" target="_blank">LinkedIn Learning</a> video courses, as well as <a href="../reserve-a-space/">meeting rooms and study rooms</a> that may be reserved for uninterrupted work, client meetings, and group presentations, with free wireless internet access.</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <div class="container padding-top-50 padding-bottom-70">
+          <div class="h4 text-center margin-bottom-20">Our specially trained business librarians are here to help you with your research.</div>
+          <div class="checklist-wrapper">
+            <ul class="fa-ul checklist">
+              <li><span class="fa-li"><i class="fa-solid fa-check" aria-hidden="true"></i></span>Help starting a new business with sample business plans, registration and other startup information.</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check" aria-hidden="true"></i></span>Market information, competitive intelligence, industry trends, and operation assistance for established businesses.</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check" aria-hidden="true"></i></span>Instruction and best practices for using and understanding the wealth of data reported in the above business databases.</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check" aria-hidden="true"></i></span><a href="https://go.dcl.org/events?t=business+%26+technology&term=fired+up&r=months&n=12">Free workshops</a> on small-business topics. In partnership with the South Metro Small Business Development Center (SBDC).</li>
+            </ul>
+            <div class="h6 text-center no-margin-bottom margin-top-15"><i>Contact us now with your business question!</i></div>
+            <div class="text-center margin-top-20"> <a href="form/" target="_blank" class="btn btn-lg btn-primary">Contact Us</a> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- InstanceEndEditable --> </div>
 </main>
 <div class="row no-margin bg-gray-10">
   <div class="container">
@@ -529,7 +649,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   </div>
 </div>
 <!-- InstanceBeginEditable name="scripts" --> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
+<script src="../shared-assets/js/flickity.pkgd.min.js"></script> 
 <script>
 	var cards = $(".carousel-cell");
 for (var i = 0; i < cards.length; i++) {
@@ -564,8 +684,7 @@ for (var i = 0; i < cards.length; i++) {
 		"query-input": "required name=search_term_string"
 	},
 	"sameAs": ["https:\/\/dcl.bibliocommons.com",
-		"https:\/\/www.blogs.douglascountylibraries.org",
-		"https:\/\/help.dcl.org/",
+		"https:\/\/www.dclblog.org",
 		"https:\/\/www.douglascountylibraries.org/",
 		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
 		"https:\/\/www.instagram.com\/dclcolorado",

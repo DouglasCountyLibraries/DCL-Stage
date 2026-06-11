@@ -46,17 +46,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <script src="https://www.dcl.org/shared-assets/js/dcl.js?32725"></script>
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css" integrity="sha256-R7F2N1AOmvTM5vdSjlUU+Uij6rwjyLuGezvu4lU+5cI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="../shared-assets/css/flickity.min.css">
 <style>
-.library-info-active {
+.using-the-library-active {
     background-color: #f5f5f5;
 }
 .custom-container {
     max-width: 1600px;
     margin: 0 auto;
-}
-.carousel-wapper {
-    padding: 3.75rem 0;
 }
 .carousel-cell {
     width: 100%;
@@ -65,12 +62,17 @@
     display: block;
     text-align: center;
 }
+.carousel-cell > div {
+    font-size: 1.125rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
 .flickity-page-dots {
     bottom: -30px;
-    opacity: .2;
+    opacity: .5;
 }
 .flickity-page-dots .dot {
-    background-color: #000;
+    background-color: #fff;
 }
 .flickity-prev-next-button {
     display: none;
@@ -80,21 +82,30 @@
 }
 .box-item-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1640px;
     margin: 0 auto;
 }
-.box-item {
+.box-item, .esl-item {
     display: flex;
     flex-direction: column;
     flex: 1;
     margin: 15px 15px 30px;
-    max-width: 575px;
-    min-width: 275px;
+}
+.esl-item-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .align-bottom {
     margin-top: auto;
     text-align: center;
+}
+.margin-top-20 {
+    margin-top: 20px;
 }
 #dropdown-wrapper {
     max-width: 400px;
@@ -119,10 +130,123 @@
     margin-top: 10.5px;
 }
 blockquote .small {
-    opacity: .6;
+    padding-top: 5px;
 }
 #proctor-modal > .modal-dialog > .modal-content > .modal-body > ul > li, #tech-modal > .modal-dialog > .modal-content > .modal-body > ul > li {
     padding-bottom: 10px;
+}
+/* slideshow */
+	
+.slideshow-container {
+    display: flex;
+    max-width: 1610px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.slideshow-wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+.slideshow-image {
+    background: #fff;
+width: calc(100% * 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slideshow-info {
+    background: #f5f5f5;
+    color: #000;
+width: calc(100% * 0.35);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    margin-left: -40px;
+}
+.slideshow-arrow {
+    background: url("../shared-assets/images/slideshow-arrow-left.png") 100% 48% no-repeat;
+    width: 40px;
+    position: relative;
+    z-index: 100;
+    left: -30px;
+}
+.slideshow-content {
+    padding: 0 30px 20px;
+}
+.slideshow-pic {
+    min-height: 600px;
+    position: relative;
+}
+.pic-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*animation*/
+    animation: slideShow 54s ease-out infinite 0s;
+}
+.pic-2 {
+    transform-origin: bottom right;
+}
+.pic-3 {
+    transform-origin: top left;
+}
+.pic-4 {
+    transform-origin: top right;
+}
+.pic-5 {
+    transform-origin: bottom left;
+}
+.pic-6 {
+    transform-origin: center center;
+}
+.pic-7 {
+    transform-origin: bottom right;
+}
+.pic-8 {
+    transform-origin: top left;
+}
+.pic-9 {
+    transform-origin: bottom left;
+}
+	
+/* keyframes*/
+@keyframes slideShow {
+0% {
+opacity: 0;
+transform:scale(1);
+}
+2% {
+opacity: 1
+}
+15% {
+opacity: 1;
+}
+18% {
+opacity: 0;
+transform:scale(1.1);
+}
+100% {
+opacity: 0;
+transform:scale(1);
+}
+}
+
+@media (max-width: 1150px) {
+.page-nav {
+    max-width: 800px;
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 1030px) {
@@ -137,121 +261,89 @@ blockquote .small {
 }
 }
 
-@media (max-width: 525px) {
-.databases, .database-item {
-    width: auto;
-}
-}
-/* slideshow - adapted from http://cssmojo.com/ken-burns-effect/ */
-.slideshow-wrapper {
-    margin: 0 .75rem 0 .75rem;
-}
-.slideshow-row {
-    background: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1610px;
+@media (max-width: 1000px) {
+.box-item-wrapper, .esl-item-wrapper {
+    max-width: 830px;
     margin: 0 auto;
 }
-.slideshow-content {
-    flex: 1 1 36%;
-    padding: 0 30px 20px;
+.box-item:first-child {
+    width: 100%;
 }
-.slideshow-image.main {
-    min-height: 600px;
+.esl-item:first-child {
+    width: 100%;
 }
-#slideshow {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 0%;
-    width: 67%;
-    border-right: 15px solid #fff;
-} /* (img px height / img px width x 100) = padding-bottom % */
-#slideshow div {
-    position: absolute;
-    z-index: 2;
-    width: 105%;
-    height: 105%;
-    top: -5%;
-    left: -5%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0;
-    -webkit-transition: opacity 3s, -webkit-transform 8s;
-    transition: opacity 3s, transform 8s;
-}
-#slideshow div:nth-of-type(9n+1) {
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-}
-#slideshow div {
-    -webkit-transform-origin: bottom right;
-    transform-origin: bottom right;
-}
-#slideshow div:nth-of-type(2n+1) {
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-}
-#slideshow div:nth-of-type(3n+1) {
-    -webkit-transform-origin: bottom left;
-    transform-origin: bottom left;
-}
-#slideshow div:nth-of-type(4n+1) {
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-}
-#slideshow div:nth-of-type(5n+1) {
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-}
-#slideshow div:nth-of-type(6n+1) {
-    -webkit-transform-origin: bottom right;
-    transform-origin: bottom right;
-}
-#slideshow div:nth-of-type(7n+1) {
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-}
-/* slide one */
-#slideshow div:nth-of-type(8n+1) {
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-}
-#slideshow .fx, #slideshow .fx1 {
-    -webkit-transform: scale(1.1) translate(1.5%);
-    transform: scale(1.1) translate(1.5%);
-    opacity: 1;
-}
-
-@media (max-width: 1150px) {
-.slideshow-image.main {
-    min-height: 400px;
-}
-.page-nav {
-    max-width: 800px;
-    margin: 0 auto;
-}
-}
-
-@media (max-width: 725px) {
-.box-item-wrapper {
-    max-width: 600px;
+.flex-break {
+    flex-basis: 100%;
+    height: 0;
 }
 }
 
 @media (max-width: 925px) {
-.slideshow-row {
+.slideshow-wrapper, .item-wrapper {
     flex-direction: column;
 }
-.slideshow-content {
-    padding: 30px 20px 40px;
+.slideshow-info {
+    margin: -40px 0 0;
     text-align: center;
 }
-#slideshow {
+.slideshow-content {
+    padding: 40px 15px 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.slideshow-arrow {
+    background: url("../shared-assets/images/slideshow-arrow-top.png") 50% 100% no-repeat;
     width: 100%;
-    border-right: 0;
+    height: 40px;
+    z-index: 100;
+    top: -30px;
+    position: relative;
+    margin: 0 auto;
+    left: auto;
+}
+.slideshow-image, .slideshow-info {
+    width: 100%;
+}
+}
+
+@media (max-width: 825px) {
+.box-wrapper {
+    flex-direction: column;
+}
+}
+}
+
+@media (max-width: 820px) {
+.esl-item {
+    flex-basis: 100%;
+}
+}
+
+@media (max-width: 725px) {
+.box-item, .photo-item {
+    flex-basis: 100%;
+}
+.slideshow-pic {
+    min-height: 400px;
+}
+}
+
+@media (max-width: 575px) {
+.slideshow-pic {
+    min-height: 300px;
+}
+.slideshow-arrow {
+    display: none;
+}
+.slideshow-info {
+    margin: 0;
+}
+.skill-wrapper {
+    flex-direction: column;
+    padding-top: 10px
+}
+.skill-wrapper ul {
+    padding: 0 0 0 30px;
 }
 }
 
@@ -262,9 +354,9 @@ blockquote .small {
 }
 }
 
-@media (max-width: 575px) {
-.slideshow-image.main {
-    min-height: 300px;
+@media (max-width: 525px) {
+.databases, .database-item {
+    width: auto;
 }
 }
 </style>
@@ -456,217 +548,323 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- End Mobile Navbar -->
 <main>
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="container-xxl text-center">
-      <h1 class="jumbo-text text-uppercase font-weight-400 margin-top-20 no-margin-bottom">Adult Education</h1>
-      <h1 class="text-uppercase font-weight-400 no-margin">& Test Prep</h1>
-    </div>
-  </div>
-  <div class="container-xxl padding-top-15 padding-bottom-30">
-    <div class="page-nav">
-      <div class="page-nav-item"><a href="#citizenship-and-esl"><i class="pagenav-icon fa-solid fa-flag-usa fa-flip-horizontal"></i>Citizenship & ESL</a></div>
-      <div class="page-nav-item"><a href="#resources"><i class="pagenav-icon fa-regular fa-globe"></i>Resources</a></div>
-      <div class="page-nav-item"><a href="#tutoring-and-proctoring"><i class="pagenav-icon fa-solid fa-chalkboard-user"></i>Tutoring & Proctoring</a></div>
-    </div>
-  </div>
-  <div class="slideshow-wrapper">
-    <div class="slideshow-row">
-      <div id="slideshow" class="slideshow-image main"> 
-        <!-- define each background-image in CSS -->
-        <div class="random-slide" style="background-image: url('slideshow/cohs-one.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(1) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-two.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(2) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-three.jpg')"></div>
-        
-        <!-- #slideshow div:nth-of-type(3) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-four.jpg')"></div>
-        
-        <!-- #slideshow div:nth-of-type(4) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-five.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(5) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-six.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(6) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-seven.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(7) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-eight.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(8) -->
-        
-        <div class="random-slide" style="background-image: url('slideshow/cohs-nine.jpg')"></div>
-        <!-- #slideshow div:nth-of-type(9) --> 
-        
+    <div class="row border-top">
+      <div class="container text-center">
+        <h1 class="page-heading">Adult Education</h1>
+        <div class="h1 text-uppercase no-margin">& Test Prep</div>
       </div>
-      <div class="slideshow-content">
-        <h4 class="no-margin-top">Education & Career Programs</h4>
-        <div>DCL offers nontraditional options for adults ages 17 and up to realize their high school education and career goals. Complete the form to get started. Questions or comments? <a href="#contact-cohs" type="button" data-bs-toggle="modal" data-bs-target="#cohs-modal">Contact our Adult Literacy Team</a>.
-          <div class="padding-top-20">
-            <button type="button" class="btn btn-lg btn-primary text-uppercase" data-toggle="modal" data-target="#programs-modal">Get Started</button>
-          </div>
+    </div>
+    <div class="row">
+      <div class="container padding-top-15 padding-bottom-30">
+        <div class="page-nav">
+          <div class="page-nav-item"><a href="#citizenship-and-esl"><i class="pagenav-icon fa-solid fa-flag-usa fa-flip-horizontal"></i>Citizenship & ESL</a></div>
+          <div class="page-nav-item"><a href="#resources"><i class="pagenav-icon fa-regular fa-globe"></i>Resources</a></div>
+          <div class="page-nav-item"><a href="#tutoring-and-proctoring"><i class="pagenav-icon fa-solid fa-chalkboard-user"></i>Tutoring & Proctoring</a></div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="citizenship-and-esl" class="padding-top-60 padding-bottom-50">
-    <div class="container-xxl no-padding">
-      <h2 class="text-center">Citizenship & ESL</h2>
-      <div class="box-item-wrapper">
-        <div class="box-item">
-          <div id="box-one"></div>
-          <script>
-     var images = ['usc-one.jpg', 'usc-two.jpg', 'usc-three.jpg', 'usc-four.jpg', 'usc-five.jpg', 'usc-six.jpg'];
+    <section>
+      <div class="row padding">
+        <div class="slideshow-container">
+          <div class="slideshow-wrapper">
+            <div class="slideshow-image">
+              <div class="slideshow-pic">
+                <div class="pic-wrapper" id="pic-wrapper">
+                  <figure id="fig1"></figure>
+                  <figure id="fig2"></figure>
+                  <figure id="fig3"></figure>
+                  <figure id="fig4"></figure>
+                  <figure id="fig5"></figure>
+                  <figure id="fig6"></figure>
+                  <figure id="fig7"></figure>
+                  <figure id="fig8"></figure>
+                  <figure id="fig9"></figure>
+                </div>
+              </div>
+            </div>
+            <div class="slideshow-arrow"></div>
+            <div class="slideshow-info">
+              <div class="slideshow-content">
+                <h2 class="xsm-heading no-margin-top">Adult Education</h2>
+                <div>DCL offers nontraditional options for adults ages 17 and up to realize their high school education and career goals. Complete the form to get started. Questions or comments? <a href="#contact-al-modal" type="button" data-toggle="modal" data-target="#contact-al-modal">Contact our Adult Literacy Team</a>.
+                  <div class="padding-top-20">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#education-career-modal">Get Started</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="citizenship-and-esl" class="row padding-top-70 padding-bottom-50">
+        <div class="h1 no-margin-top text-center">Citizenship & ESL</div>
+        <div class="esl-item-wrapper">
+          <div class="esl-item">
+            <div id="box-one"></div>
+            <script>
+     var images = ['usc-one.webp', 'usc-two.webp', 'usc-three.webp', 'usc-four.webp', 'usc-five.webp', 'usc-six.webp'];
     $('<img alt="U.S. Citizenship" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-one');  
     </script>
-          <h4 class="padding-top-15 text-center">U.S. Citizenship</h4>
-          <div>Candidates for U.S. citizenship can choose classes on March 25 or October 7, 2023, to prepare for citizenship application and interviews. <a href="https://www.uscis.gov/" target="_blank">Representatives from USCIS</a> attend to answer your questions.</div>
-          <div class="align-bottom"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&et=&kw=Prepare+for+U.S.+Citizenship&nd=365" target="_blank" class="btn btn-primary margin-top-20">View Calendar</a></div>
-        </div>
-        <div class="box-item">
-          <div id="box-two"></div>
-          <script>
-     var images = ['esl-one.jpg', 'esl-two.jpg', 'esl-three.jpg', 'esl-four.jpg', 'esl-five.jpg', 'esl-six.jpg'];
+            <div class="h3 margin-top-20 text-center">U.S. Citizenship</div>
+            <div>Interested candidates for U.S. citizenship can apply to receive tutoring help to prepare for the citizenship exam or attend a <a href="https://go.dcl.org/events?t=%255B%2522ESL%252C%2520Literacy%2520%2526%2520Citizenship%2522%255D=&term=prepare+for+u.s.+citizenship&n=12&r=months">citizenship preparation class</a>.</div>
+            <div class="align-bottom"> <a href="https://forms.gle/6oypGqifwVjJMsGe6" target="_blank" class="btn btn-primary margin-top-20">Apply Now</a> </div>
+          </div>
+          <div class="flex-break"></div>
+          <div class="esl-item">
+            <div id="box-two"></div>
+            <script>
+     var images = ['esl-twenty-one.webp', 'esl-twenty-two.webp', 'esl-twenty-three.webp', 'esl-twenty-four.webp', 'esl-twenty-five.webp'];
     $('<img alt="Practice Your English" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-two');  
     </script>
-          <h4 class="padding-top-15 text-center">Practice Your English</h4>
-          <div>Adults of all skill levels, cultures and language backgrounds converse in English in a relaxed environment, facilitated by trained volunteers. Practice Your English is held four times each month, at various Douglas County Libraries locations. </div>
-          <div class="align-bottom"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&et=&kw=Practice+Your+English&nd=365" target="_blank" class="btn btn-primary margin-top-20">View Calendar</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="resources" class="bg-gray-5 padding-top-60 padding-bottom-60">
-    <div class="container-xxl no-padding">
-      <h2 class="text-center no-margin">Resources</h2>
-      <div class="database-wrapper">
-        <div class="databases">
-          <div class="database-item">
-            <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=adult-learning-center" target="_blank">Adult Learning Center</a></h4>
-            <div>Achieve your learning and career goals with live assistance from Brainfuse. Connect with experts to prepare for the GED, practice for the U.S. citizenship test, write a resume, and more.</div>
-          </div>
-          <div class="database-item">
-            <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a></h4>
-            <div>Online language program to learn basic English as well as other languages. No downloads are required, and an app is available.</div>
-          </div>
-          <div class="database-item">
-            <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=news-for-you" target="_blank">News for You</a></h4>
-            <div>Easy-to-read news stories from reputable news services to help improve English language skills. Includes audio, vocabulary lists, exercises and puzzles.</div>
-          </div>
-          <div class="database-item">
-            <h4><a href="http://ezstats.dclibraries.org/Intercept/GetStats?name=terc" target="_blank">Peterson's Test Prep</a></h4>
-            <div>Explore college and career options, build a professional resume, and access practice tests for major academic and vocational exams.</div>
-          </div>
-          <div class="database-item">
-            <h4><a href="https://dcl.kanopy.com/category/supplier/great-courses" target="_blank">The Great Courses</a></h4>
-            <div>Unlimited access to college-level video courses covering a variety of subjects, including history, science, humanities, hobbies and more.</div>
+            <div class="h3 margin-top-20 text-center">Practice Your English</div>
+            <div>Adults of all skill levels, cultures and language backgrounds converse in English in a relaxed, volunteer-facilitated environment. Held four times monthly at various Douglas County Libraries locations. Join the <a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=esl&r=months&n=12">ESL book club</a> for additional reading practice.</div>
+            <div class="align-bottom"> <a href="https://go.dcl.org/events?term=practice+your+english&r=months&n=6" class="btn btn-primary margin-top-20">View Calendar</a> </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="tutoring-and-proctoring" class="padding-top-60 padding-bottom-50">
-    <div class="container-xxl no-padding">
-      <h2 class="text-center">Tutoring & Proctoring</h2>
-      <div class="box-item-wrapper">
-        <div id="adult-tutoring" class="box-item">
-          <div id="box-three"></div>
-          <script>
-     var images = ['adult-tutoring-one.jpg', 'adult-tutoring-two.jpg', 'adult-tutoring-three.jpg', 'adult-tutoring-four.jpg', 'adult-tutoring-five.jpg', 'adult-tutoring-six.jpg'];
+    </section>
+    <section>
+      <div id="resources" class="row bg-gray-5 padding-top-60 padding-bottom-60">
+        <div class="h1 text-center no-margin">Resources</div>
+        <div class="database-wrapper">
+          <div class="databases">
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=linkedin" target="_blank">LinkedIn Learning</a></div>
+              <div>Learn software, creative, business and technology skills from video courses taught by industry experts. Installed the <a href="https://play.google.com/store/apps/details?id=com.linkedin.android.learning" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/linkedin-learning/id1084807225" target="_blank">iOS</a> app? Sign in with your library learning and Library ID, “DCL”.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a></div>
+              <div>Online language program to learn basic English as well as other languages. No downloads are required, and an app is available.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=news-for-you" target="_blank">News for You</a></div>
+              <div>Easy-to-read news stories from reputable news services to help improve English language skills. Includes audio, vocabulary lists, exercises and puzzles.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=terc" target="_blank">Peterson's Test Prep</a></div>
+              <div>Explore college and career options, build a professional resume, and access practice tests for major academic and vocational exams.</div>
+            </div>
+            <div class="database-item">
+              <div class="h4"><a href="https://dcl.kanopy.com/category/supplier/great-courses" target="_blank">The Great Courses</a></div>
+              <div>Unlimited access to college-level video courses covering a variety of subjects, including history, science, humanities, hobbies and more.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="tutoring-and-proctoring" class="row padding-top-60 padding-bottom-50">
+        <div class="h1 no-margin-top text-center">Tutoring & Proctoring</div>
+        <div class="box-item-wrapper">
+          <div id="adult-tutoring" class="box-item">
+            <div id="box-three"></div>
+            <script>
+     var images = ['adult-tutoring-one.webp', 'adult-tutoring-two.webp', 'adult-tutoring-three.webp', 'adult-tutoring-four.webp', 'adult-tutoring-five.webp', 'adult-tutoring-six.webp'];
     $('<img alt="Adult Tutoring" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-three');  
     </script>
-          <h4 class="padding-top-15 text-center">Adult Tutoring</h4>
-          <div>Tutoring for <a href="#esl" data-bs-toggle="tooltip" data-bs-placement="top" title="English as a Second Language">ESL</a>, basic literacy, and GED/HiSET exam preparation is personalized to student needs. ESL students meet with tutors one hour a week for three months. GED/HiSET students work with tutors until they are ready to pass the test. </div>
-          <div class="align-bottom text-center">
-            <button class="btn btn-primary text-uppercase dropdown-toggle margin-top-20" type="button" id="tutoring-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Apply Now<span class="material-icons">expand_more</span> </button>
-            <ul id="dropdown-wrapper" class="dropdown-menu" aria-labelledby="tutoring-dropdown">
-              <div class="padding-15">
-                <ul class="no-margin">
-                  <li><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScvOshsWuI2Ob_Ri-G-qaNSLrrkOEh_jFTknoT4BazqvHco7A/viewform" target="_blank">Application for an ESL or Citizenship Tutor </a></li>
-                  <li class="margin-top-10"><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSd2OhEQ_bhiK2kWLj20atcc6Ztc4OlbL_ITTS804Qi5OxWAoA/viewform" target="_blank">GED/HiSET or Adult Basic Literacy Tutoring</a></li>
-                  <li class="margin-top-10"><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdBo_PSiZ7T00KIvCCnQRiIMW1afw38ocpEWOZ-2Mr0miRPWg/viewform" target="_blank">Solicitud de un Tutor de Inglés</a></li>
-                </ul>
+            <div class="h3 margin-top-20 text-center">Adult Tutoring</div>
+            <div>Tutoring for adult English learners, basic literacy, and U.S. citizenship and GED/HiSET exam preparation is personalized to student needs. Adult English learners meet with tutors for one hour a week for three months. Citizenship students meet with tutors until they are ready to pass the test.</div>
+            <div class="align-bottom text-center">
+              <div class="dropdown text-center">
+                <button class="btn btn-primary margin-top-20" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apply Now <span class="caret"></span></button>
+                <div class="dropdown-menu dropdown-menu-center" style="min-width: 280px;padding: 15px;">
+                  <ul class="no-margin padding-bottom-15">
+                    <!--<li><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdp1BK1DLaGLiFcU0KZmsbtyqcgCMmO6AhWcU_fObNqRxTrXQ/viewform" target="_blank">ESL Tutoring Classes in Castle Rock</a></li>-->
+                    <li class="margin-top-10"><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdxpUDDk7UiI6ca0DxgQ0RTI2hOAtgE9voOsAZSl2uvJ4MQ2w/viewform" target="_blank">Application for an ESL or Citizenship Tutor </a></li>
+                    <li class="margin-top-10"><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSf5eL1f73E5RlrD7Hxhh5OmfqkZfnUPa81TDN-e7fksfGdNFA/viewform" target="_blank">GED/HiSET or Adult Basic Literacy Tutoring</a></li>
+                    <li class="margin-top-10"><a class="text-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfowCE3ZweqZnYNK8TLNxZIvc2davD-QvcpO49I9vJBb7t8sA/viewform" target="_blank">Solicitud de un Tutor de Inglés</a></li>
+                  </ul>
+                </div>
               </div>
-            </ul>
+            </div>
           </div>
-        </div>
-        <div id="tech-tutoring" class="box-item">
-          <div id="box-four"></div>
-          <script>
-     var images = ['tech-tutoring-one.jpg', 'tech-tutoring-two.jpg', 'tech-tutoring-three.jpg', 'tech-tutoring-four.jpg'];
+          <div class="flex-break"></div>
+          <div id="tech-tutoring" class="box-item">
+            <div id="box-four"></div>
+            <script>
+     var images = ['tech-tutoring-one.webp', 'tech-tutoring-two.webp', 'tech-tutoring-three.webp', 'tech-tutoring-four.webp'];
     $('<img alt="Tech Tutoring" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-four');  
     </script>
-          <h4 class="padding-top-15 text-center">Tech Tutoring</h4>
-          <div>We match customers to tutors for individualized learning in <a href="#tech-tutoring-info" type="button" data-bs-toggle="modal" data-bs-target="#tech-modal">technology subjects</a> like basic internet use, tablets, email, e-books, popular software basics and more. Schedule a one-hour appointment with library staff now <a href="#tech-tutoring-info" type="button" data-bs-toggle="modal" data-bs-target="#tech-modal">or learn more</a>.</div>
-          <div class="align-bottom"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=42&lib=ALL&nd=365" target="_blank" class="btn btn-primary margin-top-20">View Calendar</a></div>
-        </div>
-        <div id="proctoring" class="box-item">
-          <div id="box-five"></div>
-          <script>
-     var images = ['proctoring-one.jpg', 'proctoring-two.jpg', 'proctoring-three.jpg', 'proctoring-four.jpg', 'proctoring-five.jpg', 'proctoring-six.jpg', 'proctoring-seven.jpg'];
+            <div class="h3 margin-top-20 text-center">Tech Tutoring</div>
+            <div>We match customers to tutors for individualized learning in <a href="#tech-modal" type="button" data-toggle="modal" data-target="#tech-modal">technology subjects</a> like basic internet use, tablets, email, e-books, popular software basics and more. Request a one-hour weekday session with library staff now.</div>
+            <div class="align-bottom"> <a href="tech-tutoring-form/" target="_blank" class="btn btn-primary margin-top-20">Request a Session</a> </div>
+          </div>
+          <div id="proctoring" class="box-item">
+            <div id="box-five"></div>
+            <script>
+     var images = ['proctoring-one.webp', 'proctoring-two.webp', 'proctoring-three.webp', 'proctoring-four.webp', 'proctoring-five.webp', 'proctoring-six.webp', 'proctoring-seven.webp'];
     $('<img alt="Proctoring" class="img-responsive image-center" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#box-five');  
     </script>
-          <h4 class="padding-top-15 text-center">Proctoring</h4>
-          <div>We are pleased to offer free test proctoring at four locations, by appointment. By submitting the form, I agree to <a href="#proctoring-info" type="button" data-bs-toggle="modal" data-bs-target="#proctor-modal">DCL's Proctoring Guidelines</a>.</div>
-          <div class="align-bottom"> <a href="proctoring-form/" target="_blank" class="btn btn-primary margin-top-20">Get Started</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-gray-5 padding-top-50 padding-bottom-60">
-    <div class="container-xxl text-center">
-      <div class="carousel" data-flickity='{ "imagesLoaded": true, "adaptiveHeight": true, "wrapAround": true, "selectedAttraction": 0.05, "friction": 0.40, "autoPlay": 7000 }'>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300">John got the job at the salary he was looking for! He and his DCL volunteer tutor practiced communication skills. He is now the chief cook at his workplace, managing a kitchen crew and ordering supplies.</div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300"><i>"People are creating in the library. They're creating businesses, going back to school, studying, because they're going to create something. How would that happen if we didn't have libraries?"</i>
-            <blockquote><span class="small">&mdash;Niki Weninger</span></blockquote>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300">DCL tutoring builds confidence. After some general literacy tutoring, Margaret is making plans to re-enroll in high school or pursue her GED. DCL will be with her every step of the way!</div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300">DCL ESL learners have passed online classes, volunteered for children's field trips, helped friends solve problems by acting as interpreters, and shared books in English with their own children. DCL tutoring makes a difference! </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300">Margaret had been driving without a license because her low literacy skills prevented her from passing the written portion of the exam. After DCL-facilitated tutoring, Margaret passed, having missed only two questions. </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300">A recent session of Practice Your English included many highly educated people from Peru, Iran, India and Venezuela (to name a few) who wanted to refine their English and improve their accents. </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300">A DCL ESL student who had struggled in an English class at the community college received an A on his last paper. He is now employed as a substitute teacher and private math tutor. </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="large-text margin-lg-300"><i>"The library's literacy program helped me interact with people, and more importantly, gave me the opportunity to teach. When I came to this country, I didn't speak English. Someone took the time to teach me."</i>
-            <blockquote><span class="small">&mdash;Opp Slawson</span></blockquote>
+            <div class="h3 margin-top-20 text-center">Proctoring</div>
+            <div>We are pleased to offer free test proctoring at our Castle Rock and Lone Tree locations, by appointment. By submitting the form, I agree to <a href="#proctor-modal" type="button" data-toggle="modal" data-target="#proctor-modal">DCL's Proctoring Guidelines</a>.</div>
+            <div class="align-bottom"> <a href="proctoring-form/" target="_blank" class="btn btn-primary btn-lg margin-top-20">Get Started</a> </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="bg-teal padding-top-40 padding-bottom-50">
-    <div class="container-xxl text-center">
-      <h4 class="white no-margin"><i>"I want to be an <a class="white text-underline" href="../volunteer/">adult literacy volunteer</a>!"</i></h4>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="programs-modal" tabindex="-1" role="dialog" aria-labelledby="programs-modal-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title text-center" id="programs-modal-label">Education & Career Programs</h4>
+    </section>
+    <section>
+      <div class="row bg-teal padding-top-60 padding-bottom-15">
+        <div class="container text-center">
+          <div class="white large-text"><i>"I want to be an <a class="white text-underline" href="../volunteer/">adult literacy volunteer</a>!"</i></div>
         </div>
-        <div class="modal-body padding-top-30 padding-right-30 padding-bottom-50 padding-left-30">
-          <iframe
+      </div>
+      <div class="row bg-teal white padding-bottom-90">
+        <div class="container text-center">
+          <div class="carousel" data-flickity='{ "adaptiveHeight": true, "wrapAround": true, "autoPlay": 7000 }'>
+            <div class="carousel-cell">
+              <div>John got the job at the salary he was looking for! He and his DCL volunteer tutor practiced communication skills. He is now the chief cook at his workplace, managing a kitchen crew and ordering supplies.</div>
+            </div>
+            <div class="carousel-cell">
+              <div><i>"People are creating in the library. They're creating businesses, going back to school, studying, because they're going to create something. How would that happen if we didn't have libraries?"</i>
+                <blockquote><span class="small white">Niki Weninger</span></blockquote>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div>DCL tutoring builds confidence. After some general literacy tutoring, Margaret is making plans to re-enroll in high school or pursue her GED. DCL will be with her every step of the way!</div>
+            </div>
+            <div class="carousel-cell">
+              <div>DCL ESL learners have passed online classes, volunteered for children's field trips, helped friends solve problems by acting as interpreters, and shared books in English with their own children. DCL tutoring makes a difference! </div>
+            </div>
+            <div class="carousel-cell">
+              <div>Margaret had been driving without a license because her low literacy skills prevented her from passing the written portion of the exam. After DCL-facilitated tutoring, Margaret passed, having missed only two questions. </div>
+            </div>
+            <div class="carousel-cell">
+              <div>A recent session of Practice Your English included many highly educated people from Peru, Iran, India and Venezuela (to name a few) who wanted to refine their English and improve their accents. </div>
+            </div>
+            <div class="carousel-cell">
+              <div>A DCL ESL student who had struggled in an English class at the community college received an A on his last paper. He is now employed as a substitute teacher and private math tutor. </div>
+            </div>
+            <div class="carousel-cell">
+              <div><i>"The library's literacy program helped me interact with people, and more importantly, gave me the opportunity to teach. When I came to this country, I didn't speak English. Someone took the time to teach me."</i>
+                <blockquote><span class="small white">Opp Slawson</span></blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact AL Modal -->
+    <div class="modal fade" id="contact-al-modal" tabindex="-1" aria-labelledby="contact-al-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="h5 modal-title text-center" id="al-modal-label">Contact the Adult Literacy Team</div>
+          </div>
+          <div class="modal-body padding-top-30 padding-right-30 padding-bottom-50 padding-left-30">
+            <iframe
+      id="JotFormIFrame-92054608043149"
+      title="Contact the Adult Literacy Team"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/92054608043149"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    > </iframe>
+            <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-92054608043149");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Education & Career Modal -->
+    <div class="modal fade" id="education-career-modal" tabindex="-1" aria-labelledby="education-career-modal-label" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="h5 modal-title text-center" id="education-career-modal-label">Education & Career Programs</div>
+          </div>
+          <div class="modal-body padding-top-30 padding-right-30 padding-bottom-50 padding-left-30">
+            <iframe
       id="JotFormIFrame-233245726995165"
       title="Education & Career Programs Form"
       onload="window.parent.scrollTo(0,0)"
@@ -678,7 +876,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       style="min-width:100%;max-width:100%;height:539px;border:none;"
       scrolling="no"
     > </iframe>
-          <script type="text/javascript">
+            <script type="text/javascript">
     var ifr = document.getElementById("JotFormIFrame-233245726995165");
     if (ifr) {
       var src = ifr.src;
@@ -761,176 +959,69 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       window.attachEvent("onmessage", handleIFrameMessage);
     }
     </script></div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="cohs-modal" tabindex="-1" aria-labelledby="cohs-modal-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="cohs-modal-label">Contact our Adult Literacy Team</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body padding-top-30 padding-right-30 padding-bottom-50 padding-left-30">
-          <iframe
-      id="JotFormIFrame-92054608043149"
-      title="Contact the COHS Team"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allowfullscreen="true"
-      allow="geolocation; microphone; camera"
-      src="https://form.jotform.com/92054608043149"
-      frameborder="0"
-      style="
-      min-width: 100%;
-      height:530px;
-      border:none;"
-      scrolling="no"
-    > </iframe>
-          <script type="text/javascript">
-      var ifr = document.getElementById("JotFormIFrame-92054608043149");
-      if (ifr) {
-        var src = ifr.src;
-        var iframeParams = [];
-        if (window.location.href && window.location.href.indexOf("?") > -1) {
-          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-        }
-        if (src && src.indexOf("?") > -1) {
-          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-          src = src.substr(0, src.indexOf("?"))
-        }
-        iframeParams.push("isIframeEmbed=1");
-        ifr.src = src + "?" + iframeParams.join('&');
-      }
-      window.handleIFrameMessage = function(e) {
-        if (typeof e.data === 'object') { return; }
-        var args = e.data.split(":");
-        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-        if (!iframe) { return; }
-        switch (args[0]) {
-          case "scrollIntoView":
-            iframe.scrollIntoView();
-            break;
-          case "setHeight":
-            iframe.style.height = args[1] + "px";
-            break;
-          case "collapseErrorPage":
-            if (iframe.clientHeight > window.innerHeight) {
-              iframe.style.height = window.innerHeight + "px";
-            }
-            break;
-          case "reloadPage":
-            window.location.reload();
-            break;
-          case "loadScript":
-            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-            var src = args[1];
-            if (args.length > 3) {
-                src = args[1] + ':' + args[2];
-            }
-            var script = document.createElement('script');
-            script.src = src;
-            script.type = 'text/javascript';
-            document.body.appendChild(script);
-            break;
-          case "exitFullscreen":
-            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-            break;
-        }
-        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-        }
-      };
-      window.isPermitted = function(originUrl, whitelisted_domains) {
-        var url = document.createElement('a');
-        url.href = originUrl;
-        var hostname = url.hostname;
-        var result = false;
-        if( typeof hostname !== 'undefined' ) {
-          whitelisted_domains.forEach(function(element) {
-              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                  result = true;
-              }
-          });
-          return result;
-        }
-      };
-      if (window.addEventListener) {
-        window.addEventListener("message", handleIFrameMessage, false);
-
-      } else if (window.attachEvent) {
-        window.attachEvent("onmessage", handleIFrameMessage);
-      }
-      </script> 
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="tech-modal" tabindex="-1" aria-labelledby="tech-modal-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="tech-modal-label">Tech Tutoring at DCL</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body padding-30">
-          <div class="margin-bottom-10">This is a one-on-one service where you can sit down with a trained library staff member to help you achieve your specific technology goal(s).</div>
-          <div class="padding-bottom-15">We can help with multiple tasks, including:</div>
-          <ul>
-            <li><b>Basic Computer Skills:</b><br>
-              How to use a mouse and keyboard, the basics of a new device, tips on organizing your laptop.</li>
-            <li><b>Basic Word Processing:</b><br>
-              Get started with Microsoft Word, Excel, or PowerPoint (or their equivalents), or help utilizing templates, organizing a page, or making edits to existing documents.</li>
-            <li><b>Downloading Apps and E-books:</b><br>
-              Get assistance with a Kindle or other e-reader devices, and learn the basics of using the Libby or Hoopla apps.</li>
-            <li><b>Internet Safety:</b><br>
-              Get basic tips, suggested resources, and best practices for keeping your accounts and devices safe, including how to recognize and avoid malware, viruses, spam, and phishing attempts.</li>
-            <li><b>Email:</b><br>
-              Set up a free email account of choice, and learn to send/receive attachments safely and keep your email organized.</li>
-            <li><b>Social Media Basics:</b><br>
-              Learn about the different types of social media platforms and get help setting up an account, or just get answers to your general questions about social media.</li>
-            <li><b>Database Basics:</b><br>
-              Discover the various research databases accessible at DCL, such as Consumer Reports, Legal Forms, Investing Center, MyHeritage, and many more.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal fade" id="proctor-modal" tabindex="-1" aria-labelledby="proctor-modal-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="proctor-modal-label">Proctoring Guidelines</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body padding-30">
-          <ul>
-            <li>Proctoring services are provided by appointment only. We do not offer walk-in or same day testing.</li>
-            <li>We are unable to provide continuous monitoring of testing. Please check your school or institution's monitoring requirements before completing a proctoring request.</li>
-            <li>We must receive written confirmation of acceptance of our guidelines from your school/institution or receive proctor approval from your institution.</li>
-            <li>We must receive exam materials 48 hours in advance of a testing appointment.</li>
-            <li>The proctor will provide a computer for any online testing. To ensure access to the exam, please bring your login credentials to your appointment.</li>
-            <li>Secure storage is not available for personal items. Please do not bring a backpack, purse, bag, mobile phone or other smart devices to your testing appointment.</li>
-            <li>Please bring a current photo ID to each exam appointment.</li>
-            <li>We can scan/email completed exam materials to your school or testing institution. Students are responsible for all costs for returning exams by mail.</li>
-            <li>Proctors cannot provide any personal identification numbers as part of the proctor approval process.</li>
-          </ul>
+    
+    <!-- Tech Modal -->
+    <div class="modal fade" id="tech-modal" tabindex="-1" aria-labelledby="tech-modal-label" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="h5 modal-title text-center" id="tech-modal-label">Tech Tutoring at DCL</div>
+          </div>
+          <div class="modal-body padding-30">
+            <div class="margin-bottom-10">This is a one-on-one service where you can sit down with a trained library staff member to help you achieve your specific technology goal(s).</div>
+            <div class="padding-bottom-15">We can help with multiple tasks, including:</div>
+            <ul>
+              <li><b>Basic Computer Skills:</b><br>
+                How to use a mouse and keyboard, the basics of a new device, tips on organizing your laptop.</li>
+              <li><b>Basic Mobile Phone Skills:</b><br>
+                Learn to use a VPN, create or use a Wi-Fi hotspot, manage security settings and organize your photos.</li>
+              <li><b>Basic Word Processing:</b><br>
+                Get started with Microsoft Word, Excel, or PowerPoint (or their equivalents), or help utilizing templates, organizing a page, or making edits to existing documents.</li>
+              <li><b>Downloading Apps and E-books:</b><br>
+                Get assistance with a Kindle or other e-reader devices, and learn the basics of using the Libby or Hoopla apps.</li>
+              <li><b>Internet Safety:</b><br>
+                Get basic tips, suggested resources, and best practices for keeping your accounts and devices safe, including how to recognize and avoid malware, viruses, spam and phishing attempts.</li>
+              <li><b>Email:</b><br>
+                Set up a free email account of choice, and learn to send/receive attachments safely and keep your email organized.</li>
+              <li><b>Social Media Basics:</b><br>
+                Learn about the different types of social media platforms and get help setting up an account, or just get answers to your general questions about social media.</li>
+              <li><b>DCL Database Basics:</b><br>
+                Discover the various research databases accessible at DCL, such as Consumer Reports, Legal Forms, Investing Center, MyHeritage and many more.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- InstanceEndEditable --> </div>
+    
+    <!-- Proctor Modal -->
+    <div class="modal fade" id="proctor-modal" tabindex="-1" aria-labelledby="proctor-modal-label" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="h5 modal-title text-center" id="proctor-modal-label">Proctoring Guidelines</div>
+          </div>
+          <div class="modal-body padding-30">
+            <ul>
+              <li>Proctoring services are provided by appointment only. We do not offer walk-in or same day testing.</li>
+              <li>We are unable to provide continuous monitoring of testing. Please check your school or institution's monitoring requirements before completing a proctoring request.</li>
+              <li>We must receive written confirmation of acceptance of our guidelines from your school/institution or receive proctor approval from your institution.</li>
+              <li>We must receive exam materials 48 hours in advance of a testing appointment.</li>
+              <li>The proctor will provide a computer for any online testing. To ensure access to the exam, please bring your login credentials to your appointment.</li>
+              <li>Secure storage is not available for personal items. Please do not bring a backpack, purse, bag, mobile phone or other smart devices to your testing appointment.</li>
+              <li>Please bring a current photo ID to each exam appointment. <i>A digital ID is not an acceptable proof of identification for testing.</i></li>
+              <li>We can scan/email completed exam materials to your school or testing institution. Students are responsible for all costs for returning exams by mail.</li>
+              <li>Proctors cannot provide any personal identification numbers as part of the proctor approval process.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- InstanceEndEditable --> </div>
 </main>
 <div class="row no-margin bg-gray-10">
   <div class="container">
@@ -1000,33 +1091,33 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 </script> 
 <script>
-	var cards = $(".random-slide");
-for (var i = 0; i < cards.length; i++) {
-  var target1 = Math.floor(Math.random() * cards.length - 1) + 1;
-  var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
-  cards.eq(target1).before(cards.eq(target2));
-}
- </script> 
-<script>
-/* http://cssmojo.com/ken-burns-effect/ */
-function kbSlideshow() { // set .fx1 class on 1st img on page load
-	window.setInterval(kenBurns, 6000); // calls kenBurns() function every 4 secs
-	var images = document.getElementById('slideshow').getElementsByTagName('div'),
-        numberOfImages = images.length, i = 1; // track loop - 1 (not 0) as 1st img is styled on page load
-	images[0].className = "fx1"; // style 1st img on page load
-	function kenBurns() {
-		if (i==numberOfImages) { i = 0; }
-        	images[i].className = "fx"; // set .fx class on each img
-		// clean up one before last to avoid bounce effect - can't remove .fx from previous
-        	if (i===0) { images[numberOfImages-2].className = ""; }
-        	if (i===1) { images[numberOfImages-1].className = ""; }
-        	if (i>1) { images[i-2].className = ""; }
-        	i++;
-		}
-	}
-setTimeout(kbSlideshow, 1); // short delay so CSS transforms work on 1st img
+document.addEventListener("DOMContentLoaded", function() {
+    var images = [
+        "slideshow/one.webp",
+        "slideshow/two.webp",
+		"slideshow/three.webp",
+		"slideshow/four.webp",
+		"slideshow/five.webp",
+		"slideshow/six.webp",
+		"slideshow/seven.webp",
+		"slideshow/eight.webp",
+		"slideshow/nine.webp"
+    ];
+    // Shuffle images
+    for (var i = images.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        [images[i], images[j]] = [images[j], images[i]];
+    }
+    // Apply the images as background
+    var figures = document.querySelectorAll("figure");
+    figures.forEach(function(figure, index) {
+        figure.style.background = `url(${images[index]}) center center/cover`;
+        figure.className = `pic-${index + 1}`;
+        figure.style.animationDelay = `${index * 6}s`;
+    });
+});
 </script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" integrity="sha256-jBJrwTqJhvGprAz9HNZygKWuDspS1FGf5wK3z4XHakM=" crossorigin="anonymous"></script> 
+<script src="../shared-assets/js/flickity.pkgd.min.js"></script> 
 <script>
 	var cards = $(".carousel-cell");
 for (var i = 0; i < cards.length; i++) {
@@ -1035,7 +1126,48 @@ for (var i = 0; i < cards.length; i++) {
   cards.eq(target1).before(cards.eq(target2));
 }
  </script> 
-<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> <!-- InstanceEndEditable --> 
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Library",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Castle Rock",
+		"addressRegion": "CO",
+		"postalCode": "80104",
+		"streetAddress": "100 S. Wilcox Street"
+	},
+	"telephone": "(303) 791-7323",
+	"name": "Douglas County Libraries",
+	"url": "https://www.dcl.org/",
+	"image": "https://www.dcl.org/locations/castle-rock.jpg",
+	"description": "Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.",
+	"logo": "https://www.dcl.org/dcl-logo.png",
+	"priceRange": "Free",
+
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://dcl.bibliocommons.com/v2/search?query=search_term_string",
+		"query-input": "required name=search_term_string"
+	},
+	"sameAs": ["https:\/\/dcl.bibliocommons.com",
+		"https:\/\/www.dclblog.org",
+		"https:\/\/www.douglascountylibraries.org/",
+		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
+		"https:\/\/www.instagram.com\/dclcolorado",
+		"https:\/\/www.youtube.com\/user\/dclwebteam",
+		"https:\/\/pinterest.com\/dougcolibraries",
+		"https:\/\/twitter.com\/DCLcolorado"
+	]
+}
+</script> 
+<!-- InstanceEndEditable --> 
 <!-- pull alert.txt into the general-alert div --> 
 
 <!-- BiblioCommons APK --> 

@@ -49,136 +49,167 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
 <style>
 .using-the-library-active {
-	background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 .text-gray, a.text-gray:hover, a.text-gray:focus, a.text-gray:active, a.text-gray:visited {
-	color: #666;
+    color: #666;
+}
+.quiet-groups {
+    text-align: center;
+    padding: 30px 15px 0;
+    font-size: 1.125rem;
 }
 .bce-container {
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 40px 15px 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 15px 50px;
+}
+.kit-list {
+    display: flex;
+}
+.reading-list {
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .list-wrapper {
-	max-width: 400px;
-	margin: 0 auto;
+    max-width: 475px;
+    margin: 0 auto;
+    padding-top: 10px;
 }
-.list-items {
+.list-wrapper:first-of-type {
+    padding-right: 30px;
 }
 .list-items div {
-	padding-bottom: 5px;
+    padding-bottom: 4px;
 }
-.list-items > h5 {
-	margin: 5px 0 3px;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 400;
+.list-items > .h5 {
+    margin: 8px 0 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
 }
 .grid {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 .bib-covers {
-	height: 378px;
-	width: 436px;
-	margin: 0 auto;
-	display: inline-block;
-	overflow: hidden;
-	object-fit: cover;
-	object-position: top;
+    height: 350px;
+    width: 436px;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
 }
 .element-item {
-	height: 550px;
-	width: 456px;
-	background-color: #fff;
-	border: 10px solid #f5f5f5;
-	border-radius: 3px;
-	text-align: center;
-	overflow: hidden;
+    height: 563px;
+    width: 456px;
+    background-color: #fff;
+    border: 10px solid #f5f5f5;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 3px;
 }
 .filter-wrapper {
-	display: flex;
-	justify-content: center;
-	padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 .filter {
-	padding: 10px;
+    padding: 10px;
 }
 .item-inner {
-	padding: 15px;
-	position: relative;
-	background: #fff;
+    padding: 25px 15px 35px;
+    position: relative;
+    background: #fff;
+    border-top: 2px solid #efeeed;
+    border-radius: 3px;
 }
-.item-inner > h4 {
-	margin: 0;
-	font-size: 24px;
+.item-inner > .h4 {
+    margin: 0 0 3px;
+    font-size: 24px;
+    line-height: 1.2;
 }
-.item-inner > h5 {
-	margin: 0;
-	color: #333;
-	text-transform: uppercase;
+.item-inner > .h5 {
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
 }
 .club-item-wrapper {
-	display: flex;
-	max-width: 800px;
-	margin: 0 auto;
-	justify-content: space-between;
-	align-content: center;
-	align-items: center;
+    display: flex;
+    max-width: 635px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 .club-item {
-	margin: 40px 40px 20px;
-	transition-duration: 0.4s;
+    margin: 20px;
+    transition-duration: 0.4s;
+}
+.club-full {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ad1a27;
+    font-weight: 500;
+    margin-top: 3px;
 }
 .club-item:hover, .club-item:focus {
-	transform: scale(1.05);
-	transition-duration: 0.4s;
+    transform: scale(1.05);
+    transition-duration: 0.4s;
 }
 .bce-wrapper {
-	display: flex;
-}
-
-@media (min-width: 275px) and (max-width: 475px) {
-.bib-covers {
-	min-height: inherit;
-	height: 395px;
-	width: 300px;
-	margin: 0 auto;
-	display: block;
-}
-.element-item {
-	padding-top: 10px;
-}
-.item-inner {
-	padding: 20px 15px 30px;
-	position: relative;
-	top: -135px;
-	background: #fff;
-}
-.element-item, .grid {
-	width: 100%!important;
-	height: 450px;
-}
+    display: flex;
 }
 
 @media (min-width: 1600px) {
 .custom-container {
-	width: 1400px;
-	margin: 0 auto;
+    width: 1400px;
+    margin: 0 auto;
 }
 }
 
-@media (max-width: 767px) {
-.club-item {
-	margin: 20px;
+@media (max-width: 750px) {
+.list-wrapper {
+    max-width: 100%;
+    margin: 0;
+}
+.list-wrapper:first-of-type {
+    padding-right: 0;
+}
+.kit-list {
+    flex-direction: column;
 }
 }
 
 @media (max-width: 575px) {
 .club-item-wrapper {
-	flex-direction: column;
+    flex-direction: column;
 }
 .club-item {
-	margin: 20px 5px 0;
+    margin: 20px 5px 0;
+}
+}
+
+@media (min-width: 275px) and (max-width: 475px) {
+.bib-covers {
+    min-height: inherit;
+    height: 395px;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+.element-item {
+    padding-top: 10px;
+}
+.item-inner {
+    padding: 20px 15px 30px;
+    position: relative;
+    top: -137px;
+    background: #fff;
+}
+.element-item, .grid {
+    width: 100%!important;
+    height: 470px;
 }
 }
 </style>
@@ -370,316 +401,508 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- End Mobile Navbar -->
 <main>
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-  <div class="row border-top">
-    <div class="container text-center">
-      <h1 class="jumbo-text no-margin-bottom text-uppercase font-weight-400">Book Clubs</h1>
-      <h1 class="text-uppercase font-weight-400 no-margin">& Book Club Express</h1>
-      <div class="margin-top-5 large-text margin-lg-100">If you love to talk about books, then we've got a book club for you!</div>
-      <h4 class="text-dark margin-top-5 margin-bottom-15">You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h4>
-    </div>
-  </div>
-  <div class="row padding-bottom-30">
-    <div class="page-nav">
-      <div class="page-nav-item"><a href="#bce"><i class="pagenav-icon fa-regular fa-bags-shopping"></i>Book Club Express</a></div>
-      <div class="page-nav-item"><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&et=2&lib=ALL&nd=365" target="_blank"><i class="pagenav-icon fa-regular fa-calendar"></i>Book Club Calendar</a></div>
-      <div class="page-nav-item"><a href="#digital-bookclubs"><i class="pagenav-icon fa-regular fa-book-open-reader"></i>Digital Book Clubs</a></div>
-    </div>
-  </div>
-  <div class="row bg-gray-5">
-    <div class="filter-wrapper">
-      <div class="filter">
-        <select class="form-control filter-select font-weight-400" value-group="location">
-          <option value="">ANY LOCATION</option>
-          <option value=".castle-pines">CASTLE PINES</option>
-          <option value=".castle-rock">CASTLE ROCK</option>
-          <option value=".highlands-ranch">HIGHLANDS RANCH</option>
-          <option value=".lone-tree">LONE TREE</option>
-          <option value=".parker">PARKER</option>
-          <option value=".roxborough">ROXBOROUGH</option>
-          <option value=".virtual">VIRTUAL</option>
-        </select>
-      </div>
-      <div class="filter">
-        <select class="form-control filter-select font-weight-400" value-group="audience">
-          <option value="">ANY AUDIENCE</option>
-          <option value=".adults">ADULTS</option>
-          <!--<option value=".teens">TEENS</option>-->
-          <option value=".children">CHILDREN</option>
-        </select>
-      </div>
-    </div>
-  </div>
-  <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
-    <div class="custom-container no-gutter">
-      <div class="grid">
-        <div class="element-item parker adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=20+mile+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/904339467.png" alt="20 Mile Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=20+mile+book+club&df=list&cn=0&lib=ALL&nd=365" target="_blank">20 Mile Book Club</a></h4>
-            <h5>Parker</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/904339467">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-pines adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=between+the+lines&lib=1000&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2170114709.png" alt="Between the Lines"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=between+the+lines&lib=1000&nd=365" target="_blank">Between the Lines</a></h4>
-            <h5>Castle Pines</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2170114709">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item lone-tree adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=book+banter&df=list&cn=0&lib=ALL&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/717033187.png" alt="Book Banter"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=book+banter&df=list&cn=0&lib=ALL&nd=365" target="_blank">Book Banter</a></h4>
-            <h5>Lone Tree</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/717033187">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item parker children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=bricks+&+books&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1873484030.png" alt="Bricks & Books"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=bricks+&+books&nd=365" target="_blank">Bricks & Books</a></h4>
-            <h5>Parker</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1873484030">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item parker children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=club+cuento&df=list&cn=0&lib=1005&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1878832749.png" alt="Club CUENTO"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=club+cuento&df=list&cn=0&lib=1005&nd=365" target="_blank">Club CUENTO</a></h4>
-            <h5>Parker</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1878832749">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item lone-tree adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=crime+&+beyond&df=list&cn=0&lib=1002&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/716638358.png" alt="Crime & Beyond"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=crime+&+beyond&df=list&cn=0&lib=1002&nd=365" target="_blank">Crime & Beyond</a></h4>
-            <h5>Lone Tree</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/716638358">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item roxborough adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=roxborough+daytime+book+club&lib=1006&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2166545700.png" alt="Daytime Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=roxborough+daytime+book+club&lib=1006&nd=365" target="_blank">Daytime Book Club</a></h4>
-            <h5>Roxborough</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2166545700">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item highlands-ranch adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=daytime+book+group&df=list&cn=0&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/704045239.png" alt="Daytime Book Group"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=daytime+book+group&df=list&cn=0&lib=1004&nd=365" target="_blank">Daytime Book Group</a></h4>
-            <h5>Highlands Ranch</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/704045239">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item highlands-ranch children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=graphic+novel&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1554094469.png" alt="Graphic Novel Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=graphic+novel&lib=1004&nd=365" target="_blank">Graphic Novel Book Club</a></h4>
-            <h5>Highlands Ranch</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1554094469">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item lone-tree children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=graphic+novel&lib=1002&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2179910219.png" alt="Graphic Novel Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=graphic+novel&lib=1002&nd=365" target="_blank">Graphic Novel Book Club</a></h4>
-            <h5>Lone Tree</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2179910219">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="great-books.jpg" alt="Great Books"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books&lib=1001&nd=365" target="_blank">Great Books</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="margin-top-5"><i>Displayed list is not actual reading list</i></div>
-          </div>
-        </div>
-        <div class="element-item virtual adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+daytime&lib=all&nd=365" target="_blank"><img class="bib-covers" src="great-books.jpg" alt="Great Books: Daytime"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+daytime&lib=all&nd=365" target="_blank">Great Books: Daytime</a></h4>
-            <h5>Virtual</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="margin-top-5"><i>Displayed list is not actual reading list</i></div>
-          </div>
-        </div>
-        <div class="element-item virtual adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+evening&lib=1008&nd=365" target="_blank"><img class="bib-covers" src="great-books.jpg" alt="Great Books: Evening"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=great+books:+evening&lib=1008&nd=365" target="_blank">Great Books: Evening</a></h4>
-            <h5>Virtual</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="margin-top-5"><i>Displayed list is not actual reading list</i></div>
-          </div>
-        </div>
-        <div class="element-item highlands-ranch adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=highlands+ranch+book+group&df=list&cn=0&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/710097317.png" alt="Highlands Ranch Book Group"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=highlands+ranch+book+group&df=list&cn=0&lib=1004&nd=365" target="_blank">Highlands Ranch Book Group</a></h4>
-            <h5>Highlands Ranch</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710097317">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item parker adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=inklings&lib=1005&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/770621407.png" alt="Inklings Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=inklings&lib=1005&nd=365" target="_blank">Inklings Book Club</a></h4>
-            <h5>Parker</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/770621407">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-pines children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1000&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1878898469.png" alt="Junior Page Turners"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1000&nd=365" target="_blank">Junior Page Turners</a></h4>
-            <h5>Castle Pines</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1878898469">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/735540837.png" alt="Junior Page Turners"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1001&nd=365" target="_blank">Junior Page Turners</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/735540837">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item highlands-ranch children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1862815219.png" alt="Junior Page Turners"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1004&nd=365" target="_blank">Junior Page Turners</a></h4>
-            <h5>Highlands Ranch</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1862815219">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item lone-tree children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1002&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2036385409.png" alt="Junior Page Turners"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=junior+page+turners&lib=1002&nd=365" target="_blank">Junior Page Turners</a></h4>
-            <h5>Lone Tree</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2036385409">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item highlands-ranch virtual adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=mystery+loves+company&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/721383955.png" alt="Mystery Loves Company"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=mystery+loves+company&lib=1004&nd=365" target="_blank">Mystery Loves Company</a></h4>
-            <h5>Highlands Ranch & Virtual</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/721383955">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=overbooked&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1955880869.png" alt="OverBooked"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=overbooked&lib=1001&nd=365" target="_blank">OverBooked</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1955880869">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=page+twisters&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/733488197.png" alt="Page Twisters"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=page+twisters&lib=1001&nd=365" target="_blank">Page Twisters</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/733488197">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item lone-tree adults"> <a href="https://douglascountylibraries.evanced.info/signup/List?nomobile=1&ag=&kw=readers%27+roost&lib=1002&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/723944697.png" alt="Readers' Roost"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/List?nomobile=1&ag=&kw=readers%27+roost&lib=1002&nd=365" target="_blank">Readers' Roost</a></h4>
-            <h5>Lone Tree</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/723944697">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item highlands-ranch children"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=steam+book+club&lib=1004&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1128129531.png" alt="STEAM Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&kw=steam+book+club&lib=1004&nd=365" target="_blank">STEAM Book Club</a></h4>
-            <h5>Highlands Ranch</h5>
-            <div>AUDIENCE: Children</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1128129531">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=teen+reads+for+grown-ups&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/748711967.png" alt="Teen Reads for Grown-Ups"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=teen+reads+for+grown-ups&lib=1001&nd=365" target="_blank">Teen Reads for Grown-Ups</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/748711967">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=thursday+evening+book+club&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/703217107.png" alt="Thursday Evening Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=thursday+evening+book+club&lib=1001&nd=365" target="_blank">Thursday Evening Book Club</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/703217107">View Reading List &raquo;</a></div>
-          </div>
-        </div>
-        <div class="element-item castle-rock adults"> <a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=travel+through+history+book+club&lib=1001&nd=365" target="_blank"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2017426729.png" alt="Travel Through History Book Club"></a>
-          <div class="item-inner">
-            <h4><a href="https://douglascountylibraries.evanced.info/signup/list?nomobile=1&ag=&kw=travel+through+history+book+club&lib=1001&nd=365" target="_blank">Travel Through History Book Club</a></h4>
-            <h5>Castle Rock</h5>
-            <div>AUDIENCE: Adults</div>
-            <div class="text-uppercase font-weight-400 margin-top-5"><a href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2017426729">View Reading List &raquo;</a></div>
-          </div>
+    <div class="row border-top">
+      <div class="container text-center">
+        <h1 class="page-heading">Book Clubs</h1>
+        <div class="h1 text-uppercase no-margin">& Book Club Express</div>
+        <div class="max-width-80">
+          <h2 class="page-subheading">If you love to talk about books, then we've got a book club for you! You can also reserve materials for your next book club with <a href="#bce">Book Club Express</a>.</h2>
         </div>
       </div>
     </div>
-  </div>
-  <div id="bce" class="row">
-    <div class="bce-container">
-      <h2 class="text-center no-margin-top">Book Club Express</h2>
-      <h4 class="margin-lg-100 text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</h4>
-      <div class="large-text text-center">New kits now available!</div>
-      <div class="list-wrapper">
-        <div class="list-items">
-          <h5>May:</h5>
-          <div><i>The Paris Library</i> by Janet Skeslien Charles (Adult)</div>
-          <div><i>We Begin at the End</i> by Chris Whitaker (Adult)</div>
-          <div><i>The Recovery Agent</i> by Janet Evanovich (Adult)</div>
-        </div>
-        <div class="list-items">
-          <h5>June:</h5>
-          <div><i>Under the Banner of Heaven</i> by Jon Krakauer (Adult)</div>
-          <div><i>The Witch Boy</i> by Molly Ostertag (Children)</div>
-          <div><i>Front Desk</i> by Kelly Yang (Children)</div>
-          <div><i>Clean Getaway</i> by Nic Stone (Children)</div>
-          <div><i>Stargazing</i> by Jen Wang (Children)</div>
-        </div>
-        <div class="list-items">
-          <h5>July:</h5>
-          <div><i>The Personal Librarian</i> by Marie Benedict and Victoria Christopher Murray (Adult)</div>
-          <div><i>Malibu Rising</i> by Taylor Jenkins Reid (Adult)</div>
-          <div><i>You’ll Never Believe What Happened to Lacey</i> by Amber Ruffin & Lacey Lamar (Adult)</div>
-        </div>
-        <div class="list-items">
-          <h5>August:</h5>
-          <div><i>Not A Happy Family</i> by Shari Lapena (Adult)</div>
-          <div><i>The Thursday Murder Club</i> by Richard Osman (Adult)</div>
-        </div>
-      </div>
-      <div class="text-center padding-top-30 padding-bottom-30"><a href="https://www.eventkeeper.com/kitkeeper/index.cfm?curOrg=dclibs" target="_blank" class="btn btn-lg btn-primary">Reserve a Kit Now!</a></div>
-      <div class="text-center">Please limit your checkouts to one adult kit or two juvenile kits at a time.</div>
-    </div>
-  </div>
-  <div id="digital-bookclubs" class="row bg-gray-5 padding-top-40 padding-bottom-50">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="no-margin">Digital Book Clubs</h2>
-        <h4 class="margin-top-5 no-margin-bottom">Looking for digital options? Join an online book club!</h4>
-      </div>
-      <div class="club-item-wrapper">
-        <div class="club-item"><a href="https://theclub.hoopladigital.com/" target="_blank"><img class="img-responsive" src="hoopla-book-club.jpg?10422" alt="Hoopla Book Club Hub"></a></div>
-        <div class="club-item"><a href="https://biglibraryread.com/" target="_blank"><img class="img-responsive" src="big-library-read.jpg?10422" alt="Big Library Read"></a></div>
+    <div class="row padding-bottom-30">
+      <div class="page-nav">
+        <div class="page-nav-item"><a href="#bce"><i class="pagenav-icon fa-regular fa-bags-shopping"></i>Book Club Express</a></div>
+        <div class="page-nav-item"><a href="https://go.dcl.org/events?t=book+club&r=months&n=12"><i class="pagenav-icon fa-regular fa-calendar"></i>Book Club Calendar</a></div>
+        <div class="page-nav-item"><a href="#digital-bookclubs"><i class="pagenav-icon fa-regular fa-book-open-reader"></i>Digital Book Clubs</a></div>
       </div>
     </div>
-  </div>
-  <!-- InstanceEndEditable --> </div>
+    <div class="row bg-gray-5">
+      <div class="quiet-groups"><i>We also offer <a href="https://go.dcl.org/events?t=book+club&term=quiet+reading+group&r=months&n=12">quiet reading groups</a>&mdash;no discussion required.</i></div>
+      <div class="filter-wrapper">
+        <div class="filter">
+          <select class="form-control filter-select font-weight-400" value-group="location">
+            <option value="">ANY LOCATION</option>
+            <option value=".castle-pines">CASTLE PINES</option>
+            <option value=".castle-rock">CASTLE ROCK</option>
+            <option value=".highlands-ranch">HIGHLANDS RANCH</option>
+            <option value=".lone-tree">LONE TREE</option>
+            <option value=".parker">PARKER</option>
+            <option value=".roxborough">ROXBOROUGH</option>
+            <option value=".virtual">VIRTUAL</option>
+          </select>
+        </div>
+        <div class="filter">
+          <select class="form-control filter-select font-weight-400" value-group="audience">
+            <option value="">ANY AUDIENCE</option>
+            <option value=".adults">ADULTS</option>
+            <option value=".teens">TEENS</option>
+            <option value=".children">CHILDREN</option>
+            <option value=".family">FAMILY</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="row bg-gray-5 padding-top-15 padding-bottom-60">
+        <div class="custom-container no-gutter">
+          <div class="grid">
+            <div class="element-item parker adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/904339467.png" alt="20 Mile Book Club">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=parker&term=20+mile+book+club&r=months&n=12">-->20 Mile Book Club<!--</a>--></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/904339467">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree children"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2999809607.png" alt="Art Explorers">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=art+explorers&r=months&n=12">Art Explorers</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2999809607">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock family children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2682094347.png" alt="Baby Literacy Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle-rock&term=baby+literacy&r=months&n=12">Baby Literacy Book Club</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Family</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2682094347">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item roxborough family children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2829871307.png" alt="Baby Literacy Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=roxborough&term=baby+literacy&r=months&n=12">Baby Literacy Book Club</a></div>
+                <div class="h5">Roxborough</div>
+                <div>AUDIENCE: Family</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2829871307">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-pines adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2170114709.png" alt="Between the Lines">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=castle+pines&term=between+the+lines&r=months&n=12">-->Between the Lines<!--</a>--></div>
+                <div class="h5">Castle Pines</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2170114709">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2821638887.png" alt="Book 1">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=book+1&r=months&n=12">Book 1</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2821638887">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/717033187.png" alt="Book Banter">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=book+banter&r=months&n=12">Book Banter</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/717033187">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2906808417.png" alt="Book Explorers">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=book+explorers&r=months&n=12">Book Explorers</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2906808417">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item parker adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2831174217.png" alt="The Book Was Better - Or Was It? Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=parker&term=the+book+was+better&r=months&n=12">The Book Was Better?</a></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2831174217">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2200644189.png" alt="Brick-It Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=brick-it&r=months&n=12">Brick-It Book Club</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2200644189">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch family children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2877127157.png" alt="Caregiver Connect Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=caregiver+connect&r=months&n=12">Caregiver Connect</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Family</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2877127157">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item parker children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1878832749.png" alt="Club de Cuentos">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=parker&term=club+de++cuentos&r=months&n=12">Club de Cuentos</a></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1878832749">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-pines adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2379467529.png" alt="Daytime Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+pines&term=daytime+book+club&r=months&n=12">Daytime Book Club</a></div>
+                <div class="h5">Castle Pines</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2379467529">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/704045239.png" alt="Daytime Book Group">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=daytime+book+group&r=months&n=12">-->Daytime Book Club<!--</a>--></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/704045239">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item roxborough adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2166545700.png" alt="Daytime Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=roxborough&term=daytime+book+club&r=months&n=12">Daytime Book Club</a></div>
+                <div class="h5">Roxborough</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2166545700">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock adults teens"> <img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2885490747.png" alt="Dungeons & Dragons Gaming and Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=dungeons+dragons&r=months&n=12">Dungeons & Dragons Gaming and Book Club</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Adults/Teens</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2885490747">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree adults teens"> <img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2915460917.png" alt="Dungeons & Dragons Gaming and Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=dungeons+dragons&r=months&n=12">Dungeons & Dragons Gaming and Book Club</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Adults/Teens</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2915460917">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2880267937.png" alt="ESL Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=esl&r=months&n=12">ESL Book Club</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2880267937">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item parker family children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2601364579.png" alt="Family Book & Activity Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=parker&term=family+book+and+activity+club&r=months&n=12">Family Book & Activity Club</a></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Family</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612/2601364579">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree family children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2845219177.png" alt="Family Book Club: Unplugged Cozy Hour">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=unplugged+cozy+hour&n=12&r=months">Family Book Club: Unplugged Cozy Hour</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Family</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2845219177">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item roxborough adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2872641801.png" alt="Fiction Fusion Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=roxborough&term=fiction+fusion&r=months&n=12">Fiction Fusion</a></div>
+                <div class="h5">Roxborough</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2872641801">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree teens"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2928802517.png" alt="Get It! Graphic Novels">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=get+it!+graphic+novels&r=months&n=12">Get It! Graphic Novels</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Teens</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2928802517">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item virtual adults"><img class="bib-covers" src="great-books.jpg" alt="Great Books: Daytime">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=virtual&term=great+books&r=months&n=12">Great Books</a></div>
+                <div class="h5">Virtual</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><i>Displayed list is not actual reading list</i></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2819872657.png" alt="Haunts & Horrors Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=haunts+%26+horrors&r=months&n=12">Haunts & Horrors</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2819872657">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/710097317.png" alt="Highlands Ranch Book Group">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=highlands+ranch+book+group&r=months&n=12">-->Highlands Ranch Book Group<!--</a>--></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/710097317">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item parker adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/770621407.png" alt="Inklings Book Club">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=parker&term=inklings&r=months&n=12">-->Inklings Book Club</a></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/770621407">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2216234009.png" alt="Inquiring Minds Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=inquiring+minds&r=months&n=12">Inquiring Minds Book Club</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2216234009">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-pines children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1878898469.png" alt="Junior Page Turners">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+pines&term=junior+page+turners&r=months&n=12">Junior Page Turners</a></div>
+                <div class="h5">Castle Pines</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1878898469">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/735540837.png" alt="Junior Page Turners">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=junior+page+turners&r=months&n=12">Junior Page Turners</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/735540837">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/1862815219.png" alt="Junior Page Turners">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=junior+page+turners&r=months&n=12">Junior Page Turners</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/1862815219">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2036385409.png" alt="Junior Page Turners">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=junior+page+turners&r=months&n=12">Junior Page Turners</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2036385409">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item roxborough children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2257226979.png" alt="Junior Page Turners">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=roxborough&term=junior+page+turners&r=months&n=12">Junior Page Turners</a></div>
+                <div class="h5">Roxborough</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2257226979">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2886143517.png" alt="Kindie Club Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=kindie+club&r=months&n=12">Kindie Club</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2886143517">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2403638449.png" alt="Know Thy Shelf Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=Book+Club&l=Castle+Rock&term=know+thy+shelf&n=12&r=months">Know Thy Shelf Book Club</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2403638449">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/721383955.png" alt="Mystery Loves Company">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=mystery+loves+company&r=months&n=12">Mystery Loves Company</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/721383955">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <!--<div class="element-item parker adults"><img class="bib-covers" src="great-books.jpg" alt="Neuroinclusive Quiet Reading Group">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=parker&term=neuroinclusive+quiet+reading+group&r=months&n=12">Neuroinclusive Quiet Reading Group</a></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><i>Displayed list is not actual reading list</i></div>
+              </div>
+            </div>-->
+            <div class="element-item lone-tree adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2622043479.png" alt="Next Chapter Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=next+chapter&r=months&n=12">Next Chapter Book Club</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/v2/list/display/692285612/2622043479">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item highlands-ranch teens"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2271219279.png" alt="OverBooked">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=highlands+ranch&term=overbooked&r=months&n=12">OverBooked</a></div>
+                <div class="h5">Highlands Ranch</div>
+                <div>AUDIENCE: Teens</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2271219279">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/733488197.png" alt="Page Twisters">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=page+twisters&r=months&n=12">Page Twisters</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/733488197">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2297127479.png" alt="Page Twisters">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=page+twisters&r=months&n=12">Page Twisters</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2297127479">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item roxborough children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2416396239.png" alt="Page Twisters">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=roxborough&term=page+twisters&r=months&n=12">Page Twisters</a></div>
+                <div class="h5">Roxborough</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2416396239">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2677524147.png" alt="Read Around the World">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=read+around+the+world&r=months&n=12">Read Around the World</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2677524147">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/723944697.png" alt="Readers' Roost">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=readers%27+roost&r=months&n=12">Readers' Roost</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/723944697">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item lone-tree adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2402121909.png" alt="Tales & Travels Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=lone+tree&term=tales+&+travels&r=months&n=12">Tales & Travels Book Club</a></div>
+                <div class="h5">Lone Tree</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2402121909">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/748711967.png" alt="Teen Reads for Grown-Ups">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=teen+reads+for+grown-ups&r=months&n=12">Teen Reads for Grown-Ups</a></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/748711967">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/703217107.png" alt="Thursday Evening Book Club">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=thursday+evening+book+club&r=months&n=12">-->Thursday Evening Book Club<!--</a>--></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/703217107">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item castle-rock adults"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2017426729.png" alt="Travel Through History Book Club">
+              <div class="item-inner">
+                <div class="h4"><!--<a href="https://go.dcl.org/events?t=book+club&l=castle+rock&term=travel+through+history&r=months&n=12">-->Travel Through History Book Club<!--</a>--></div>
+                <div class="h5">Castle Rock</div>
+                <div>AUDIENCE: Adults</div>
+                <div class="club-full">This club is currently full</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2017426729">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+            <div class="element-item parker children children-family"><img class="bib-covers" src="https://cor-cdn-static.bibliocommons.com/list_jacket_covers/live/2486095369.png" alt="Zinedom Book Club">
+              <div class="item-inner">
+                <div class="h4"><a href="https://go.dcl.org/events?t=book+club&l=parker&term=zinedom&r=months&n=12">Zinedom Book Club</a></div>
+                <div class="h5">Parker</div>
+                <div>AUDIENCE: Children</div>
+                <div class="margin-top-5"><a class="reading-list" href="https://dcl.bibliocommons.com/list/share/692285612_dclbookclubs/2486095369">View Reading List &raquo;</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="bce" class="row">
+        <div class="bce-container">
+          <div class="h2 text-center no-margin-top">Book Club Express</div>
+          <div class="h5 text-center">Reserve materials for your next book club here! Multiple copies of the book, author bio, book reviews, author interview, and discussion questions are provided in a handy to-go kit.</div>
+          <div class="kit-list">
+            <div class="list-wrapper">
+              <div class="large-text margin-bottom-10">New kits now available!</div>
+              <div class="list-items">
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=18975" target="_blank">The Sherlock Society</a></i> by James Ponti (Children, Fiction)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=18973" target="_blank">Theo of Golden</a></i> by Allen Levi (Adult, Fiction)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19376" target="_blank">The Amazing Generation</a></i> by Jonathan Haidt (Children, Nonfiction)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19375" target="_blank">Beautiful Ugly</a></i> by Alice Feeney (Adult, Fiction)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19321" target="_blank">The Quiet Librarian</a></i> by Allen Eskens (Adult, Fiction)</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19322" target="_blank">Raising Hare</a> by Chloe Dalton (Adult, Biography)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19743" target="_blank">The Stolen Life of Colette Marceau</a></i> by Kristin Harmel (Adult, Fiction)</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19744" target="_blank">A Walk in the Park</a> by Kevin Fedarko (Adult, Nonfiction)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19894" target="_blank">The Correspondent</a></i> by Virginia Evans (Adult, Fiction)</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19851" target="_blank">James</a></i> by Percival Everett (Adult, Fiction)</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19852" target="_blank">The Names</a> by Florence Knapp (Adult, Fiction)</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19893" target="_blank">One Crazy Summer: the Graphic Novel</a> by Rita Williams–Garcia (Children, Fiction)</div>
+              </div>
+            </div>
+            <div class="list-wrapper">
+              <div class="large-text margin-bottom-10">New kits that include two large-type copies:</div>
+              <div class="list-items">
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=13136" target="_blank"><i>Where Coyotes Howl</i></a> by Sandra Dallas</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=15134" target="_blank">After Annie</a></i> by Anna Quindlen</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=15136" target="_blank"><i>The Wager</i></a> by David Grann</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=16307" target="_blank">Middle of the Night</a></i> by Riley Sager</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=16657" target="_blank">All the Colors of the Dark</a></i> by Chris Whitaker</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=17480" target="_blank">Here One Moment</a></i> by Liane Moriarty</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=18518" target="_blank">The God of the Woods</a></i> by Liz Moore</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=18783" target="_blank">The Briar Club</a></i> by Kate Quinn</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=18782" target="_blank">Isola</a> by Allegra Goodman</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=18972" target="_blank">The Jackal's Mistress</a></i> by Chris Bohjalian</div>
+                <div><i><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19851" target="_blank">James</a></i> by Percival Everett</div>
+                <div><a href="https://www2.museumkey.com/things//listDate/?code=dougco80104&musID=19852" target="_blank">The Names</a> by Florence Knapp</div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center padding-top-30 padding-bottom-30"><a href="https://www2.museumkey.com/things/?code=dougco80104&branchID=430" target="_blank" class="btn btn-primary">Reserve a Kit Now!</a></div>
+          <div class="text-center">Please limit your checkouts to one adult kit or two juvenile kits at a time.</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="digital-bookclubs" class="row bg-gray-5 padding-top-40 padding-bottom-30">
+        <div class="container">
+          <div class="text-center">
+            <div class="h2 no-margin">Digital Book Clubs</div>
+            <div class="h4 margin-top-5 no-margin-bottom">Looking for digital options? Join an online book club!</div>
+          </div>
+          <div class="club-item-wrapper">
+            <div class="club-item"><a href="https://theclub.hoopladigital.com/" target="_blank"><img class="img-responsive" src="hoopla-book-club.jpg" alt="Hoopla Book Club Hub"></a></div>
+            <div class="club-item"><a href="https://biglibraryread.com/" target="_blank"><img class="img-responsive" src="big-library-read.jpg" alt="Big Library Read"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- InstanceEndEditable --> </div>
 </main>
 <div class="row no-margin bg-gray-10">
   <div class="container">
@@ -773,6 +996,26 @@ function concatValues( obj ) {
   return value;
 }
 </script> 
+<script>
+  //read the url hash on page load and apply it:
+var $grid = $('.grid').isotope({
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+
+// read hash on load
+var hash = window.location.hash.replace('#', '');
+
+if (hash) {
+  $grid.isotope({ filter: '.' + hash });
+}
+
+// update filter when hash changes
+$(window).on('hashchange', function () {
+  var newHash = window.location.hash.replace('#', '');
+  $grid.isotope({ filter: '.' + newHash });
+});  
+    </script> 
 <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
@@ -799,8 +1042,7 @@ function concatValues( obj ) {
 		"query-input": "required name=search_term_string"
 	},
 	"sameAs": ["https:\/\/dcl.bibliocommons.com",
-		"https:\/\/www.blogs.douglascountylibraries.org",
-		"https:\/\/help.dcl.org/",
+		"https:\/\/www.dclblog.org",
 		"https:\/\/www.douglascountylibraries.org/",
 		"https:\/\/www.facebook.com\/DouglasCountyLibrariesColorado",
 		"https:\/\/www.instagram.com\/dclcolorado",

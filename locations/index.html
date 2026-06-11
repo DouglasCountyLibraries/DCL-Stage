@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
@@ -14,9 +14,9 @@
 
 <!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Library Perks | Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks, Creative Bug, Mango Languages, Lynda.com, Online Learning">
-<meta name="description" content="Douglas County Libraries offers cardholders fun perks, from free online classes to activities you can enjoy in real life, like Colorado State Park passes and nontraditional library items.">
+<title>Hours & Locations | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
+<meta name="description" content="Library hours and locations. Visit us to find popular materials, events, research tools, free Wi-Fi, public computers, study spaces, and more.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -48,93 +48,65 @@
 <!-- InstanceBeginEditable name="head" -->
 <style>
 .using-the-library-active {
-	background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
-.photo-item-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1280px;
-	margin: 0 auto;
+.box-item-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
 }
-.learning-item, .photo-item {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	margin: 15px;
+.box-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 15px;
 }
-.learning-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1280px;
-	margin: 0 auto;
+.box-content {
+    text-align: center;
 }
-.learning-content {
-	padding: 0 30px 35px;
+.hours-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
 }
-.learning-item {
-	background: #fff;
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.full-flex-break {
-	flex-basis: 100%;
-	height: 0;
+ul.branch-hours {
+    padding: 0;
+    margin: 6px 0 0;
+    list-style-position: inside;
 }
-
-@media (max-width: 1000px) {
-.learning-wrapper {
-	max-width: 830px;
-	margin: 0 auto;
+.branch-hours li {
+    white-space: nowrap;
 }
-.learning-item:first-child {
-	width: 100%;
-	padding: 30px 0 10px;
+.branch-address {
+    font-size: 18px;
 }
 .flex-break {
-	flex-basis: 100%;
-	height: 0;
+    flex-basis: 100%;
+    height: 0;
 }
+.closures {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 820px) {
-.learning-item {
-	flex-basis: 100%;
-	padding: 30px 0 10px;
-}
-}
-
-@media (max-width: 725px) {
-.box-item, .photo-item {
-	flex-basis: 100%;
-}
-}
-.box-container {
-	max-width: 1610px;
-	margin: 0 auto;
-}
-.box-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-}
-.box-inner {
-	max-width: 800px;
-	margin: 0 auto;
-}
+@media (max-width: 800px) {
 .box-item {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	padding-bottom: 20px;
-	margin: 15px;
-	min-width: 380px;
+    flex-basis: 100%;
 }
-
-@media (max-width: 500px) {
-.box-item {
-	min-width: 100%;
-	padding: 15px;
+.box-item-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
 }
 }
 </style>
@@ -327,71 +299,179 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <main>
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
     <div class="row border-top">
-      <div class="container text-center padding-bottom-15">
-        <h1 class="page-heading">Library Perks</h1>
-        <div class="max-width-80">
-          <h2 class="page-subheading">Congratulations! Being a <a href="https://getacard-ssl.dclibraries.us/" target="_blank">DCL cardholder</a> means you have access to all sorts of fun perks, everything from free <a href="../digital-media/" target="_blank">digital media</a> to free <a href="#online-learning">online classes</a> (in crafting, software, language and more).</h2>
-          <div><i>Explore your options and do something new!</i></div>
-        </div>
-      </div>
-    </div>
-    <div id="check-out" class="row padding-bottom-40">
-      <div class="box-container">
-        <div class="box-wrapper">
-          <div id="check-out-colorado" class="box-item">
-            <div><img class="img-responsive image-center" src="check-out-colorado.webp" alt="Check Out Colorado"></div>
-            <div class="box-inner">
-              <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/item/show/1350439114">Check Out Colorado</a></div>
-              <div>A limited number of backpacks containing a pass good for admission to any Colorado State Park are available for checkout from our welcome desks. <a href="https://dcl.bibliocommons.com/item/show/1350439114">Check now for availability</a>. </div>
-            </div>
-          </div>
-          <div id="nontraditional-items" class="box-item">
-            <div><img class="img-responsive image-center" src="oculus.webp" alt="Nontraditional Items"></div>
-            <div class="box-inner">
-              <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">Nontraditional Items</a></div>
-              <div>Looking for something new and exciting to check out? We offer a variety of gadgets, electronics, and learning tools.</div>
-            </div>
-          </div>
-          <div id="dcl-care-kits" class="box-item">
-            <div><img class="img-responsive image-center" src="care-kits.webp" alt="DCL Care Kits"></div>
-            <div class="box-inner">
-              <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=anywhere%3A(care%20kit)%20%20%20-anywhere%3A(curriculum)&searchType=bl&suppress=true&f_FORMAT=KIT&sort=newly_acquired">DCL Care Kits</a></div>
-              <div>Our specialized, self-contained kits for kids, adults and caregivers contain materials to help those struggling with anxiety, loss related to suicide, and memory issues. Multigenerational and road trip kits also available. Kits check out for three weeks.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="online-learning" class="row bg-gray-5">
       <div class="container">
-        <div class="max-width-80 text-center padding-top-60">
-          <div class="h1 no-margin-top font-weight-400">Online Learning</div>
-          <div>These resources make learning a new language or new technology skills simple and convenient. Learn from the privacy of your own home&mdash;or your local library or coffee shop.</div>
+        <div class="text-center">
+          <h1 class="page-heading">Hours & Locations</h1>
         </div>
       </div>
     </div>
-    <div class="row bg-gray-5 padding-top-15 padding-bottom-80">
-      <div class="learning-wrapper">
-        <div id="linkedin-learning" class="learning-item">
-          <div><img class="img-responsive center-block" src="linkedin-learning.webp" alt="LinkedIn Learning"></div>
-          <div class="learning-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=linkedin" target="_blank">LinkedIn Learning</a></div>
-            <div>Learn software, creative, business and technology skills from video courses taught by industry experts. Installed the <a href="https://play.google.com/store/apps/details?id=com.linkedin.android.learning" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/linkedin-learning/id1084807225" target="_blank">iOS</a> app? Sign in with your library learning and Library ID, “DCL”.</div>
+    <div class="row padding-bottom-15 padding-top-15">
+      <div class="page-nav">
+        <div class="page-nav-item"><a href="#" data-toggle="modal" data-target="#closings"><i class="pagenav-icon fa-solid fa-gifts"></i>Holiday Closures</a></div>
+        <div class="page-nav-item"><a href="https://www.google.com/maps/d/u/2/edit?mid=1sB-MCxZYfc1iBrNIADdlKr9GiOAHPXk&usp=sharing" target="_blank"><i class="pagenav-icon fa-solid fa-location-dot"></i>Map to All Locations</a></div>
+      </div>
+    </div>
+    <div class="row padding-bottom-60">
+      <div class="box-item-wrapper">
+        <div id="castle-pines" class="box-item">
+          <div><a href="../castle-pines/"><img src="castle-pines.jpg" alt="Douglas County Libraries, Castle Pines" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase margin-bottom-5"><a href="../castle-pines/">Castle Pines</a></div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/Fkbjve6qxH32" target="_blank"><span itemprop="streetAddress">360&nbsp;Village&nbsp;Square&nbsp;Lane</span>, <span itemprop="addressLocality">Castle&nbsp;Pines</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80108</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Monday-Thursday:&nbsp;8AM-8PM</li>
+                  <li>Friday:&nbsp;8AM-6PM</li>
+                  <li>Saturday-Sunday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="castle-rock" class="box-item">
+          <div><a href="../castle-rock/"><img src="castle-rock.jpg" alt="Douglas County Libraries, Castle Rock" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase no-margin-bottom"><a href="../castle-rock/">Castle Rock</a></div>
+            <div class="text-uppercase margin-bottom-5">The Philip & Jerry Miller Library</div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/3kDTE89mPGw" target="_blank"><span itemprop="streetAddress">100&nbsp;S.&nbsp;Wilcox&nbsp;Street</span>, <span itemprop="addressLocality">Castle&nbsp;Rock</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80104</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Monday-Thursday:&nbsp;8AM-8PM</li>
+                  <li>Friday:&nbsp;8AM-6PM</li>
+                  <li>Saturday-Sunday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="flex-break"></div>
-        <div id="mango" class="learning-item">
-          <div><img class="img-responsive center-block " src="mango.webp" alt="Mango Languages"></div>
-          <div class="learning-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a></div>
-            <div>Online language learning from German to Spanish, Russian to Mandarin Chinese, plus American Sign Language. No downloads are required, and an app is available.</div>
+        <div id="highlands-ranch" class="box-item">
+          <div><a href="../highlands-ranch/"><img src="highlands-ranch.jpg" alt="Douglas County Libraries, Highlands Ranch" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase margin-bottom-5"><a href="../highlands-ranch/">Highlands Ranch</a></div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/xzXMWh7yn772" target="_blank"><span itemprop="streetAddress">9292&nbsp;S.&nbsp;Ridgeline&nbsp;Blvd.</span>, <span itemprop="addressLocality">Highlands&nbsp;Ranch</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80129</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Monday-Thursday:&nbsp;8AM-8PM</li>
+                  <li>Friday:&nbsp;8AM-6PM</li>
+                  <li>Saturday-Sunday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="creativebug" class="learning-item">
-          <div><img class="img-responsive center-block" src="creativebug.webp" alt="Creativebug"></div>
-          <div class="learning-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://creativebug.com/lib/dcl" target="_blank">Creativebug</a></div>
-            <div>Watch more than 1,000 DIY classes from renowned artists&mdash;anytime, anywhere. Create a Creativebug account using your library card and PIN, and start crafting!</div>
+        <div id="lone-tree" class="box-item">
+          <div><a href="../lone-tree/"><img src="lone-tree.jpg" alt="Douglas County Libraries, Lone Tree" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase margin-bottom-5"><a href="../lone-tree/">Lone Tree</a></div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/iCAWeKh68Dr" target="_blank"><span itemprop="streetAddress">10055&nbsp;Library&nbsp;Way</span>, <span itemprop="addressLocality">Lone&nbsp;Tree</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80124</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Monday-Thursday:&nbsp;8AM-8PM</li>
+                  <li>Friday:&nbsp;8AM-6PM</li>
+                  <li>Saturday-Sunday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-break"></div>
+        <div id="louviers" class="box-item">
+          <div><a href="../louviers/"><img src="louviers.jpg" alt="Douglas County Libraries, Louviers" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase margin-bottom-5"><a href="../louviers/">Louviers</a></div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/xXeJ3N1B2zR2" target="_blank"><span itemprop="streetAddress">7885&nbsp;Louviers&nbsp;Blvd.</span>, <span itemprop="addressLocality">Louviers</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80131</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Tuesday:&nbsp;3-8PM</li>
+                  <li>Saturday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="parker" class="box-item">
+          <div><a href="../parker/"><img src="parker.jpg" alt="Douglas County Libraries, Parker" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase margin-bottom-5"><a href="../parker/">Parker</a></div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/BN5GzHYJYwB2" target="_blank"><span itemprop="streetAddress">20105&nbsp;East&nbsp;Mainstreet</span>, <span itemprop="addressLocality">Parker</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80138</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Monday-Thursday:&nbsp;8AM-8PM</li>
+                  <li>Friday:&nbsp;8AM-6PM</li>
+                  <li>Saturday-Sunday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-break"></div>
+        <div id="roxborough" class="box-item">
+          <div><a href="../roxborough/"><img src="roxborough.jpg" alt="Douglas County Libraries, Roxborough" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase margin-bottom-5"><a href="../roxborough/">Roxborough</a></div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/Kk1TkKQHKrj" target="_blank"><span itemprop="streetAddress">8357&nbsp;N.&nbsp;Rampart&nbsp;Range&nbsp;Rd.&nbsp;#200</span>, <span itemprop="addressLocality">Littleton</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80125</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Monday-Thursday:&nbsp;8AM-8PM</li>
+                  <li>Friday:&nbsp;8AM-6PM</li>
+                  <li>Saturday-Sunday:&nbsp;10AM-4PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="alh" class="box-item">
+          <div><a href="https://archives.dcl.org/" target="_blank"><img src="archives-local-history.jpg" alt="DCL Archives & Local History" class="img-responsive"></a></div>
+          <div class="box-content">
+            <div class="h3 text-uppercase no-margin-bottom"><a href="https://archives.dcl.org/" target="_blank">Archives&nbsp;& Local History</a></div>
+            <div class="margin-bottom-5">Inside Our Castle Rock Location</div>
+            <div class="branch-address" itemscope itemtype="http://schema.org/PostalAddress"> <a href="https://goo.gl/maps/3kDTE89mPGw" target="_blank"><span itemprop="streetAddress">100&nbsp;S.&nbsp;Wilcox&nbsp;Street</span>, <span itemprop="addressLocality">Castle&nbsp;Rock</span>,&nbsp;<span itemprop="addressRegion">CO</span>&nbsp;<span itemprop="postalCode">80104</span></a> </div>
+            <div class="hours-container">
+              <div class="list-container">
+                <ul class="branch-hours">
+                  <li>Reading Room, Monday & Friday:&nbsp;8AM-4PM</li>
+                  <li>Research Assistance <a href="https://archives.dcl.org/digital/custom/visit" target="_blank">by&nbsp;Appointment&nbsp;Only</a></li>
+                  <li>Saturday-Sunday:&nbsp;Closed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="closings" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="h4 modal-title text-center" id="myModalLabel">2026 Holiday Closures</div>
+          </div>
+          <div class="modal-body closures">
+            <ul class="list-unstyled padding-bottom-15">
+              <li>January 1 – New Year's Day</li>
+              <li>January 19 – Martin Luther King Jr. Day</li>
+              <li>February 16 – Presidents Day</li>
+              <li>May 25 – Memorial Day</li>
+              <li>June 19 – Juneteenth</li>
+              <li>July 4 – Independence Day</li>
+              <li>September 7 – Labor Day</li>
+              <li>November 25 – Thanksgiving Eve*</li>
+              <li>November 26 – Thanksgiving Day</li>
+              <li>December 24 – Christmas Eve*</li>
+              <li>December 25 – Christmas Day</li>
+              <li>December 31 – New Year's Eve*</li>
+              <li class="margin-top-15">*Open until 3PM</li>
+            </ul>
           </div>
         </div>
       </div>

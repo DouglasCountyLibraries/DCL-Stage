@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
@@ -14,9 +14,9 @@
 
 <!-- End Patron Point -->
 <!-- InstanceBeginEditable name="title" -->
-<title>Library Perks | Douglas County Libraries</title>
-<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks, Creative Bug, Mango Languages, Lynda.com, Online Learning">
-<meta name="description" content="Douglas County Libraries offers cardholders fun perks, from free online classes to activities you can enjoy in real life, like Colorado State Park passes and nontraditional library items.">
+<title>Ageless Adults: Service for Seniors | Douglas County Libraries</title>
+<meta name="keywords" content="Douglas County Libraries, Douglas County Colorado, Library, Events, Event Spaces, Hospitality Services, Meeting Rooms, Study Rooms, Books, Movies, Music, Digital Media, Bestsellers, Staff Picks">
+<meta name="description" content="Douglas County Libraries elevates our community by inspiring a love of reading, discovery and connection.">
 <!-- InstanceEndEditable -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
@@ -50,91 +50,88 @@
 .using-the-library-active {
 	background-color: #f5f5f5;
 }
-.photo-item-wrapper {
+.photo-box-wrapper {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 1280px;
 	margin: 0 auto;
 }
-.learning-item, .photo-item {
+.align-bottom {
+	margin-top: auto;
+	text-align: center;
+}
+.photo-box-item {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	margin: 15px;
-}
-.learning-wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1280px;
-	margin: 0 auto;
-}
-.learning-content {
-	padding: 0 30px 35px;
-}
-.learning-item {
-	background: #fff;
-}
-.full-flex-break {
-	flex-basis: 100%;
-	height: 0;
-}
-
-@media (max-width: 1000px) {
-.learning-wrapper {
-	max-width: 830px;
-	margin: 0 auto;
-}
-.learning-item:first-child {
-	width: 100%;
-	padding: 30px 0 10px;
-}
-.flex-break {
-	flex-basis: 100%;
-	height: 0;
-}
-}
-
-@media (max-width: 820px) {
-.learning-item {
-	flex-basis: 100%;
-	padding: 30px 0 10px;
-}
-}
-
-@media (max-width: 725px) {
-.box-item, .photo-item {
-	flex-basis: 100%;
-}
-}
-.box-container {
-	max-width: 1610px;
-	margin: 0 auto;
+	margin: 30px 15px;
 }
 .box-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-}
-.box-inner {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 .box-item {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	padding-bottom: 20px;
-	margin: 15px;
-	min-width: 380px;
+	margin: 10px 15px;
+	background: #fff;
+	border-radius: 3px;
+	max-width: 575px;
+	min-width: 275px;
+}
+.box-item-inner {
+	padding: 0px 30px 75px;
+}
+.gray-circle-wrapper {
+	border: 6px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 112px;
+	margin: 0 auto;
+	width: 112px;
+}
+.gray-circle {
+	border: 6px solid #e6e4e2;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #42777B;
+	background-color: #fff;
+	font-size: 42px;
+	height: 100px;
+	line-height: 90px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+}
+.white-bottom-row {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+	background: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+}
+.flex-break {
+	flex-basis: 100%;
+	height: 0;
 }
 
-@media (max-width: 500px) {
-.box-item {
-	min-width: 100%;
-	padding: 15px;
+@media (max-width: 915px) {
+.box-wrapper {
+	max-width: 600px;
+}
+}
+
+@media (max-width: 825px) {
+.photo-box-wrapper {
+	max-width: 625px;
+}
+.photo-box-item {
+	flex-basis: 100%;
 }
 }
 </style>
@@ -326,77 +323,119 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <!-- End Mobile Navbar -->
 <main>
   <div id="content-begins" class="container-fluid"> <!-- InstanceBeginEditable name="Content" -->
-    <div class="row border-top">
-      <div class="container text-center padding-bottom-15">
-        <h1 class="page-heading">Library Perks</h1>
-        <div class="max-width-80">
-          <h2 class="page-subheading">Congratulations! Being a <a href="https://getacard-ssl.dclibraries.us/" target="_blank">DCL cardholder</a> means you have access to all sorts of fun perks, everything from free <a href="../digital-media/" target="_blank">digital media</a> to free <a href="#online-learning">online classes</a> (in crafting, software, language and more).</h2>
-          <div><i>Explore your options and do something new!</i></div>
+  <div class="row border-top">
+    <div class="container text-center">
+      <h1 class="page-heading">Ageless Adults</h1>
+      <div class="max-width-80">
+        <h2 class="page-subheading">DCL offers an array of services, events, and opportunities to connect for adults of all ages, because curiosity never retires.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row padding-bottom-30">
+    <div class="photo-box-wrapper">
+      <div id="materials-delivery" class="photo-box-item">
+        <div id="photo-box-one"></div>
+        <div class="h3 margin-top-20 text-center"><a href="../materials-request/" target="_blank">Materials Delivery</a></div>
+        <div>Residents in participating communities may request book delivery. DCL also provides homebound delivery for <a class="text-center" data-placement="top" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="To find out if you qualify, or to volunteer as a Homebound Delivery driver, call us at (303) 791-7323 and ask for the Volunteer Services Coordinator at your home library." aria-describedby="popover1">qualified cardholders</a>
+          <div id="popover1" class="sr-only" role="tooltip"> Popover: To find out if you qualify, or to volunteer as a Homebound Delivery driver, call us at (303) 791-7323 and ask for the Volunteer Services Coordinator at your home library. </div>
+          who are unable to visit the library due to illness or disability.</div>
+      </div>
+      <div id="connect" class="photo-box-item">
+        <div id="photo-box-two"></div>
+        <div class="h3 margin-top-20 text-center"><a href="#" data-toggle="modal" data-target="#connect-modal">Connect!</a></div>
+        <div>Meet and connect with your community at the library. Pop in for <a href="https://go.dcl.org/events?term=coffee+chat&r=months&n=3">Coffee Chat</a> each Tuesday morning, attend a <a href="https://go.dcl.org/events?term=book+lovers&r=months&n=3">Book Lovers</a> event, join a <a href="../book-clubs/">book club</a>, drop in to <a href="https://go.dcl.org/events?term=play+%26+connect&n=3&r=months">Play and Connect</a>, request a <a href="../adult-education/tech-tutoring-form/" target="_blank">Tech Tutoring</a> session, <a href="../featured-events/">and more</a>.</div>
+      </div>
+      <div class="flex-break"></div>
+      <div id="classes-programs" class="photo-box-item">
+        <div id="photo-box-three"></div>
+        <div class="h3 margin-top-20 text-center"><a href="https://go.dcl.org/events?term=ageless&et=business+%26+technology&r=months&n=3">Ageless Classes & Programs</a></div>
+        <div>Attend noncredit courses and special programs for the joy of learning! You’ll find classes and events to suit a wide array of interests, presented by expert partners and hosted at DCL locations.</div>
+      </div>
+      <div id="volunteer" class="photo-box-item">
+        <div id="photo-box-four"></div>
+        <div class="h3 margin-top-20 text-center"><a href="../volunteer/">Volunteer</a></div>
+        <div>Use your skills, give back to your community, and meet new people of all ages when you volunteer at DCL. We would love to work with you!</div>
+      </div>
+    </div>
+  </div>
+  <script>
+	var images = ['materials-delivery-one.webp', 'materials-delivery-two.webp'];
+    $('<img alt="People receiving materials from the library" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#photo-box-one');
+      
+    var images = ['connect-one.webp', 'connect-two.webp'];
+    $('<img alt="People connecting with each other" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#photo-box-two');
+	
+	var images = ['classes-one.webp'];
+    $('<img alt="Large groups of people attending classes or programs" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#photo-box-three');
+	
+	var images = ['volunteer-one.webp'];
+    $('<img alt="People volunteering at the library" class="img-responsive center-block" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#photo-box-four');
+</script>
+  <div class="row bg-gray-5 padding-top-40 padding-bottom-80">
+    <div class="box-wrapper">
+      <div id="memory-care-kits" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-shopping-bag"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <div class="h3 text-center margin-top-10"><a href="https://dcl.bibliocommons.com/v2/search?query=%22Care%20kits%20%E2%80%94%20Memory.%22&searchType=subject">Memory Care Kits</a></div>
+          <div>Our specialized, self-contained kits for caregivers contain materials to help those struggling with memory issues. Kits check out for three weeks.</div>
+        </div>
+      </div>
+      <div id="book-clubs" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-books"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <div class="h3 text-center margin-top-10"><a href="../book-clubs/">Book Clubs & Book Club Express </a></div>
+          <div>Join other book lovers to read and talk about books at a DCL-hosted book club, or reserve a handy to-go kit with curated resources for your own book club.</div>
+        </div>
+      </div>
+      <div id="nontraditional-items" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-telescope"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <div class="h3 text-center margin-top-10"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">Nontraditional Items</a></div>
+          <div>Did you know you can check out a variety of gadgets, electronics, and other useful items that aren’t just books or DVDs? Take a look!</div>
+        </div>
+      </div>
+      <div id="online-learning" class="box-item">
+        <div class="white-bottom-row">
+          <div class="gray-circle-wrapper">
+            <div class="gray-circle"><i class="fa-solid fa-chalkboard-user"></i></div>
+          </div>
+        </div>
+        <div class="box-item-inner">
+          <div class="h3 text-center margin-top-10"><a href="../library-perks/#online-learning">Online Learning</a></div>
+          <div>Keep growing! It’s simple and convenient to learn a new language, take DIY crafting classes, and hone your software and technology skills using your library card.</div>
         </div>
       </div>
     </div>
-    <div id="check-out" class="row padding-bottom-40">
-      <div class="box-container">
-        <div class="box-wrapper">
-          <div id="check-out-colorado" class="box-item">
-            <div><img class="img-responsive image-center" src="check-out-colorado.webp" alt="Check Out Colorado"></div>
-            <div class="box-inner">
-              <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/item/show/1350439114">Check Out Colorado</a></div>
-              <div>A limited number of backpacks containing a pass good for admission to any Colorado State Park are available for checkout from our welcome desks. <a href="https://dcl.bibliocommons.com/item/show/1350439114">Check now for availability</a>. </div>
-            </div>
-          </div>
-          <div id="nontraditional-items" class="box-item">
-            <div><img class="img-responsive image-center" src="oculus.webp" alt="Nontraditional Items"></div>
-            <div class="box-inner">
-              <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=formatcode%3A%28EQUIPMENT+%29&searchType=bl&suppress=true">Nontraditional Items</a></div>
-              <div>Looking for something new and exciting to check out? We offer a variety of gadgets, electronics, and learning tools.</div>
-            </div>
-          </div>
-          <div id="dcl-care-kits" class="box-item">
-            <div><img class="img-responsive image-center" src="care-kits.webp" alt="DCL Care Kits"></div>
-            <div class="box-inner">
-              <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/v2/search?custom_edit=false&query=anywhere%3A(care%20kit)%20%20%20-anywhere%3A(curriculum)&searchType=bl&suppress=true&f_FORMAT=KIT&sort=newly_acquired">DCL Care Kits</a></div>
-              <div>Our specialized, self-contained kits for kids, adults and caregivers contain materials to help those struggling with anxiety, loss related to suicide, and memory issues. Multigenerational and road trip kits also available. Kits check out for three weeks.</div>
-            </div>
-          </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="connect-modal" tabindex="-1" role="dialog" aria-labelledby="connect-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="text-center modal-title">Connect!</h4>
+        </div>
+        <div class="modal-body padding-30">
+          <div class="padding-bottom-15">DCL offers much more than books! Our events, programs, and services provide a deeper library experience to help you connect with your community.</div>
+          <div class="padding-bottom-15">Enjoy coffee, conversation, and games weekly at Coffee Chat. Join a DCL book club to read and discuss books in a group setting. Enjoy lively book talks with other avid readers at Book Lovers. Feed your curiosity in noncredit classes and courses. Play and connect over tabletop games. And keep up with the technology that keeps you connected to family and friends through individualized tech tutoring. Welcome!</div>
         </div>
       </div>
     </div>
-    <div id="online-learning" class="row bg-gray-5">
-      <div class="container">
-        <div class="max-width-80 text-center padding-top-60">
-          <div class="h1 no-margin-top font-weight-400">Online Learning</div>
-          <div>These resources make learning a new language or new technology skills simple and convenient. Learn from the privacy of your own home&mdash;or your local library or coffee shop.</div>
-        </div>
-      </div>
-    </div>
-    <div class="row bg-gray-5 padding-top-15 padding-bottom-80">
-      <div class="learning-wrapper">
-        <div id="linkedin-learning" class="learning-item">
-          <div><img class="img-responsive center-block" src="linkedin-learning.webp" alt="LinkedIn Learning"></div>
-          <div class="learning-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=linkedin" target="_blank">LinkedIn Learning</a></div>
-            <div>Learn software, creative, business and technology skills from video courses taught by industry experts. Installed the <a href="https://play.google.com/store/apps/details?id=com.linkedin.android.learning" target="_blank">Android</a> or <a href="https://apps.apple.com/us/app/linkedin-learning/id1084807225" target="_blank">iOS</a> app? Sign in with your library learning and Library ID, “DCL”.</div>
-          </div>
-        </div>
-        <div class="flex-break"></div>
-        <div id="mango" class="learning-item">
-          <div><img class="img-responsive center-block " src="mango.webp" alt="Mango Languages"></div>
-          <div class="learning-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://ezstats.dclibraries.app/Intercept/GetStats?name=mango-languages" target="_blank">Mango Languages</a></div>
-            <div>Online language learning from German to Spanish, Russian to Mandarin Chinese, plus American Sign Language. No downloads are required, and an app is available.</div>
-          </div>
-        </div>
-        <div id="creativebug" class="learning-item">
-          <div><img class="img-responsive center-block" src="creativebug.webp" alt="Creativebug"></div>
-          <div class="learning-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://creativebug.com/lib/dcl" target="_blank">Creativebug</a></div>
-            <div>Watch more than 1,000 DIY classes from renowned artists&mdash;anytime, anywhere. Create a Creativebug account using your library card and PIN, and start crafting!</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- InstanceEndEditable --> </div>
+  </div>
+  <!-- InstanceEndEditable --> </div>
 </main>
 <div class="row no-margin bg-gray-10">
   <div class="container">
@@ -458,7 +497,18 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="scripts" --> <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
+<!-- InstanceBeginEditable name="scripts" --> 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').on('focus', function () {
+        $(this).popover('show');
+    }).on('blur', function () {
+        $(this).popover('hide');
+    });
+});
+ </script> 
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="structured data" --> 
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
