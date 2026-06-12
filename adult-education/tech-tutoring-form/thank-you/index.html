@@ -37,11 +37,10 @@
 <link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="#007b83">
 <meta name="theme-color" content="#ffffff">
 <link type="text/css" rel="stylesheet" href="https://www.dcl.org/shared-assets/css/bootstrap-custom-min.css?41825">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Material+Icons" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="https://www.dcl.org/shared-assets/css/dcl.css?81925">
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Open+Sans:wght@300..800&family=Material+Icons&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://www.dcl.org/shared-assets/css/dcl.css?2526">
 <script src="https://kit.fontawesome.com/5a49a17030.js" crossorigin="anonymous"></script> 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
@@ -153,13 +152,12 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 <nav class="dcl-navbar navbar navbar-default">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li class="dropdown"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <i class="fa-solid fa-chevron-down"></i> </a>
+      <li class="dropdown explore-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <i class="fa-solid fa-chevron-down"></i> </a>
         <ul class="dropdown-menu">
-          <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/awards">Awards</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/bestsellers">Bestsellers</a></li>
-          <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
+          <li><a href="../../../staff-picks/">Staff Picks</a></li>
+          <li><a href="../../../staff-lists/">Staff Lists</a></li>
+          <li><a href="#">Browse & Discover</a></li>
+          <li><a href="../../../book-clubs/">Book Clubs</a></li>
         </ul>
       </li>
       <li class="whats-new-active"><a href="../../../whats-new/">What's New</a> </li>
@@ -168,8 +166,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
           <li><a href="../../../locations/">Hours & Locations</a></li>
           <li><a href="../../../library-basics/">Library Basics</a></li>
           <li><a href="../../../library-perks/">Library Perks</a></li>
-          <li><a href="../../../book-clubs/">Book Clubs</a></li>
-          <li><a href="../../../staff-recommendations/">Staff Recommendations</a></li>
           <li><a href="../../../business/">DCL for Business</a></li>
           <li><a href="../../../adult-education/">Adult Education & Test Prep</a></li>
           <li><a href="../../../ageless/">Ageless Adults</a></li>
@@ -177,30 +173,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </li>
       <li class="dropdown kids-teens-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kids & Teens <i class="fa-solid fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="../../../storytime/">Storytime</a></li>
-          <li><a href="../../../read-listen-watch/">Read, Listen, Watch</a></li>
-          <li><a href="../../../parents/">Parents</a></li>
-          <li><a href="../../../teachers/">Teachers</a></li>
-          <li><a href="../../../camp-dcl/">Camp DCL</a></li>
-          <li><a href="../../../research/students/">Homework Help</a></li>
-          <li><a href="../../../teens/">Teens</a></li>
+          <li><a href="#">Storytime</a></li>
+          <li><a href="#">Read, Listen, Watch</a></li>
+          <li><a href="#">Parents</a></li>
+          <li><a href="#">Teachers</a></li>
+          <li><a href="#">Camp DCL</a></li>
+          <li><a href="#">Homework Help</a></li>
+          <li><a href="#">Teens</a></li>
         </ul>
       </li>
       <li class="digital-media-active"><a href="../../../digital-media/">Digital Media</a> </li>
       <li class="dropdown reserve-a-space-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reserve a Space <i class="fa-solid fa-chevron-down"></i> </a>
         <ul class="dropdown-menu">
-          <li><a href="../../../reserve-a-space/">Reserve a Space</a></li>
-          <li><a href="https://go.dcl.org/myreservations/">My Reservations</a></li>
+          <li><a href="#">Reserve a Space</a></li>
+          <li><a href="#">My Reservations</a></li>
         </ul>
       </li>
       <li class="dropdown events-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Events <i class="fa-solid fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="../../../featured-events/">Featured Events</a></li>
-          <li><a href="https://go.dcl.org/events?et=storytime&r=months&n=1">Events Calendar</a></li>
-          <li><a href="https://go.dcl.org/myevents">My Events</a></li>
+          <li><a href="#">Featured Events</a></li>
+          <li><a href="#">Events Calendar</a></li>
+          <li><a href="#">My Events</a></li>
         </ul>
       </li>
-      <li class="research-active"><a href="../../../research/">Research</a></li>
+      <li class="dropdown research-active"> <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu research-menu">
+          <li><a href="#">Research Databases</a></li>
+          <li><a href="#" target="_blank">Archives & Local History</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </nav>
@@ -221,11 +222,10 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <ul class="nav mobile-nav">
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#explore">Explore <i class="fa-solid fa-chevron-down"></i> </a>
                 <ul id="explore" class="nav mobile-nav-list collapse">
-                  <li><a href="https://dcl.bibliocommons.com/">Recent Activity</a></li>
-                  <li><a href="https://dcl.bibliocommons.com/explore/recent_arrivals">New Titles</a></li>
-                  <li><a href="https://dcl.bibliocommons.com/explore/awards">Awards</a></li>
-                  <li><a href="https://dcl.bibliocommons.com/explore/bestsellers">Bestsellers</a></li>
-                  <li><a href="https://dcl.bibliocommons.com/explore/featured_lists/staff_picks">Staff Picks</a></li>
+                  <li><a href="../../../staff-picks/">Staff Picks</a></li>
+                  <li><a href="../../../staff-lists/">Staff Lists</a></li>
+                  <li><a href="#">Browse & Discover</a></li>
+                  <li><a href="../../../book-clubs/">Book Clubs</a></li>
                 </ul>
               </li>
               <li class="whats-new-active mobile-nav-heading"><a href="../../../whats-new/">What's New</a> </li>
@@ -234,8 +234,6 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
                   <li><a href="../../../locations/">Hours & Locations</a></li>
                   <li><a href="../../../library-basics/">Library Basics</a></li>
                   <li><a href="../../../library-perks/">Library Perks</a> </li>
-                  <li><a href="../../../book-clubs/">Book Clubs</a></li>
-                  <li><a href="../../../staff-recommendations/">Staff Recommendations</a></li>
                   <li><a href="../../../business/">DCL for Business</a></li>
                   <li><a href="../../../adult-education/">Adult Education & Test Prep</a></li>
                   <li><a href="../../../ageless/">Ageless Adults</a></li>
@@ -243,30 +241,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#kids-teens">Kids & Teens <i class="fa-solid fa-chevron-down"></i> </a>
                 <ul id="kids-teens" class="nav mobile-nav-list collapse">
-                  <li><a href="../../../storytime/">Storytime</a></li>
-                  <li><a href="../../../read-listen-watch/">Read, Listen, Watch</a></li>
-                  <li><a href="../../../parents/">Parents</a></li>
-                  <li><a href="../../../teachers/">Teachers</a></li>
-                  <li><a href="../../../camp-dcl/">Camp DCL</a></li>
-                  <li><a href="../../../research/students/">Homework Help</a></li>
-                  <li><a href="../../../teens/">Teens</a></li>
+                  <li><a href="#">Storytime</a></li>
+                  <li><a href="#">Read, Listen, Watch</a></li>
+                  <li><a href="#">Parents</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">Camp DCL</a></li>
+                  <li><a href="#">Homework Help</a></li>
+                  <li><a href="#">Teens</a></li>
                 </ul>
               </li>
               <li class="digital-media-active mobile-nav-heading"><a href="../../../digital-media/">Digital Media</a> </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#reserve-a-space">Reserve a Space <i class="fa-solid fa-chevron-down"></i> </a>
                 <ul id="reserve-a-space" class="nav mobile-nav-list collapse">
-                  <li><a href="../../../reserve-a-space/">Reserve a Space</a></li>
-                  <li><a href="https://go.dcl.org/myreservations/">My Reservations</a></li>
+                  <li><a href="#">Reserve a Space</a></li>
+                  <li><a href="#">My Reservations</a></li>
                 </ul>
               </li>
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#library-events">Library Events <i class="fa-solid fa-chevron-down"></i> </a>
                 <ul id="library-events" class="nav mobile-nav-list collapse">
-                  <li><a href="../../../featured-events/">Featured Events</a></li>
-                  <li><a href="https://go.dcl.org/events?et=storytime&r=months&n=1">Events Calendar</a></li>
-                  <li><a href="https://go.dcl.org/myevents">My Events</a></li>
+                  <li><a href="#">Featured Events</a></li>
+                  <li><a href="#">Events Calendar</a></li>
+                  <li><a href="#">My Events</a></li>
                 </ul>
               </li>
-              <li class="research-active mobile-nav-heading"><a href="../../../research/">Research</a> </li>
+              <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#research">Research <i class="fa-solid fa-chevron-down"></i> </a>
+                <ul id="research" class="nav mobile-nav-list collapse">
+                  <li><a href="#">Research Databases</a></li>
+                  <li><a href="#" target="_blank">Archives & Local History</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -322,32 +325,32 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="footer-column">
         <div class="h5">About</div>
         <ul>
-          <li><a href="../../../who-we-are/">Who We Are</a></li>
-          <li><a href="../../../foundation/">Our Foundation</a></li>
-          <li><a href="../../../join-our-team/">Join Our Team</a></li>
-          <li><a href="../../../press-kit/">Press Kit</a></li>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Our Foundation</a></li>
+          <li><a href="#">Join Our Team</a></li>
+          <li><a href="#">Press Kit</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <div class="h5">Contact</div>
         <ul>
-          <li><a href="../../../help/">Help & FAQs</a></li>
-          <li><a href="../../../board/cora-request/">DCL Open Records Request</a></li>
+          <li><a href="#">Help & FAQs</a></li>
+          <li><a href="#">DCL Open Records Request</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <div class="h5">Connect</div>
         <ul>
-          <li><a href="../../../newsletters/">eNews Sign-Up</a></li>
-          <li><a href="https://archives.dcl.org/" target="_blank">Archives & Local History</a></li>
+          <li><a href="#">eNews Sign-Up</a></li>
+          <li><a href="#" target="_blank">Archives & Local History</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <div class="h5">Support</div>
         <ul>
-          <li><a href="../../../donate/">Donate Now</a></li>
-          <li><a href="../../../ways-to-give/">Ways to Give</a></li>
-          <li><a href="../../../volunteer/">Volunteer</a></li>
+          <li><a href="#">Donate Now</a></li>
+          <li><a href="#">Ways to Give</a></li>
+          <li><a href="#">Volunteer</a></li>
         </ul>
       </div>
     </div>
@@ -357,8 +360,8 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
   <div class="container">
     <div class="copyright">
       <div class="copyright-left">
-        <div><a href="../../../website-accessibility/">Website Accessibility</a></div>
-        <div><a href="../../../website-privacy/">Website Privacy</a></div>
+        <div><a href="#">Website Accessibility</a></div>
+        <div><a href="#">Website Privacy</a></div>
       </div>
       <div class="copyright-right">&copy; <script>document.write(new Date().getFullYear())</script> Douglas County Libraries, <a href="https://goo.gl/maps/1KN1wAoTvgx" target="_blank"><span class="text-nowrap">100 S. Wilcox Street,</span> <span class="text-nowrap">Castle Rock, CO&nbsp;&nbsp;80104</span></a> | <a class="text-nowrap" href="tel:+13037917323">(303) 791-7323</a></div>
     </div>
