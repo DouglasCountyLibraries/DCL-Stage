@@ -52,38 +52,40 @@
     background-color: #f5f5f5;
 }
 .award-wrapper {
-	display: flex;
-	justify-content: center;
-	max-width: 1440px;
-	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .award-item-large {
-	display: flex;
-	flex-direction: column;
-	background: #fff;
-	max-width: 780px;
-	text-align: center;
-	padding: 15px;
-    
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    margin: 15px;
+}
+.award-item-large.three-up {
+    flex: 1;
 }
 .award-content {
     padding: 0 15px 30px;
 }
 .book-cover-wrapper {
-	display: flex;
-	flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
     gap: 10px;
-
 }
-    .book-cover-wrapper img {
-	flex: 1 1 0;
-	min-width: 0;
-
+.book-cover-wrapper img {
+    flex: 1 1 0;
+    min-width: 0;
 }
-    .award-item-small {
-	background: #fff;
+.award-item-small-wrapper {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
 }
-
 </style>
 <!-- InstanceEndEditable -->
 </head>
@@ -285,30 +287,130 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         </div>
       </div>
     </div>
-    <div class="row bg-gray-5 padding-top-40 padding-bottom-80">
+    <div class="row bg-gray-5 padding-top-40">
+      <div class="h1 no-margin text-center padding-bottom-15">Awards</div>
       <div class="award-wrapper">
         <div class="award-item-large">
           <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&issn=/LC.JPG&client=dougp&type=xw12&oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&issn=/LC.JPG&client=dougp&type=xw12&oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&issn=/LC.JPG&client=dougp&type=xw12&oclc=1423243528" alt=""></div>
           <div class="award-content">
-            <div class="h3 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
+            <div>The Association for Library Service to Children (ALSC) recognizes the best in children's books from the past year, as chosen by their Notable Childrens Books Committee.</div>
+          </div>
+        </div>
+        <div class="award-item-small-wrapper">
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
+              <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
+            </div>
+          </div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/118898_boston_globe-horn_book_award">Boston Globe-Horn Book Award</a></div>
+              <div>Presented annually since 1967 by the Boston Globe and The Horn Book Magazine for excellence in children's and young adult literature.</div>
+            </div>
+          </div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/87642_caldecott_medal">Caldecott Medal</a></div>
+              <div>The Caldecott was named in honor of nineteenth-century English illustrator Randolph Caldecott. It is awarded annually by the ALSC to the artist of the most distinguished American picture book for children. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-gray-5">
+      <div class="award-wrapper">
+        <div class="award-item-large three-up">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593529461&issn=/LC.JPG&client=dougp&type=xw12&oclc=1389606380" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593532294&issn=/LC.JPG&client=dougp&type=xw12&oclc=1394001267" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593571675&issn=/LC.JPG&client=dougp&type=xw12&oclc=1370502212" alt=""></div>
+          <div class="award-content">
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
+            <div>The Colorado Libraries for Early Literacy (CLEL) awards five high-quality children's books that provide excellent support of early literacy development in young children. Awards are given in the categories for the five early literacy practices&mdash;read, write, sing, talk and play.</div>
+          </div>
+        </div>
+        <div class="award-item-large three-up">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&issn=/LC.JPG&client=dougp&type=xw12&oclc=1468489337" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780823450169&issn=/LC.JPG&client=dougp&type=xw12" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781536215540&issn=/LC.JPG&client=dougp&type=xw12&oclc=1374247573" alt=""></div>
+          <div class="award-content">
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">Coretta Scott King Award</a></div>
+            <div>Awarded annually since 1970 to authors and illustrators of books for children and young adults that demonstrate an appreciation of African-American culture.</div>
+          </div>
+        </div>
+        <div class="award-item-large three-up">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780813952239&issn=/LC.JPG&client=dougp&type=xw12&oclc=1442928330" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780525535768&issn=/LC.JPG&client=dougp&type=xw12&oclc=1443490315" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780374388942&issn=/LC.JPG&client=dougp&type=xw12&oclc=1407025784" alt=""></div>
+          <div class="award-content">
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">Edgar Award</a></div>
+            <div>Presented annually by the Mystery Writers of America. Named after Edgar Allan Poe, the awards honor the best in mystery fiction, non-fiction, television, film, and theater. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-gray-5">
+      <div class="award-wrapper">
+        <div class="award-item-small-wrapper">
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
+              <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
+            </div>
+          </div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/118898_boston_globe-horn_book_award">Boston Globe-Horn Book Award</a></div>
+              <div>Presented annually since 1967 by the Boston Globe and The Horn Book Magazine for excellence in children's and young adult literature.</div>
+            </div>
+          </div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
+              <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
+            </div>
+          </div>
+        </div>
+        <div class="award-item-large">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&issn=/LC.JPG&client=dougp&type=xw12&oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&issn=/LC.JPG&client=dougp&type=xw12&oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&issn=/LC.JPG&client=dougp&type=xw12&oclc=1423243528" alt=""></div>
+          <div class="award-content">
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
+            <div>The Association for Library Service to Children (ALSC) recognizes the best in children's books from the past year, as chosen by theirNotable Childrens Books Committee.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-gray-5 padding-bottom-40">
+      <div class="award-wrapper">
+        <div class="award-item-large">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&issn=/LC.JPG&client=dougp&type=xw12&oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&issn=/LC.JPG&client=dougp&type=xw12&oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&issn=/LC.JPG&client=dougp&type=xw12&oclc=1423243528" alt=""></div>
+          <div class="award-content">
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
             <div>The Association for Library Service to Children (ALSC) recognizes the best in children's books from the past year, as chosen by theirNotable Childrens Books Committee.</div>
           </div>
         </div>
         <div class="award-item-small-wrapper">
-      <div class="award-item-small">
-          
-          <div class="award-content">
-            <div class="h3 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
-            <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
+              <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
+            </div>
+          </div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/118898_boston_globe-horn_book_award">Boston Globe-Horn Book Award</a></div>
+              <div>Presented annually since 1967 by the Boston Globe and The Horn Book Magazine for excellence in children's and young adult literature.</div>
+            </div>
+          </div>
+          <div class="award-item-small">
+            <div class="award-content">
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/87642_caldecott_medal">Caldecott Medal</a></div>
+              <div>The Caldecott was named in honor of nineteenth-century English illustrator Randolph Caldecott. It is awarded annually by the ALSC to the artist of the most distinguished American picture book for children. </div>
+            </div>
           </div>
         </div>
-        <div class="award-item-small">
-          
+        <div class="award-item-large">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&issn=/LC.JPG&client=dougp&type=xw12&oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&issn=/LC.JPG&client=dougp&type=xw12&oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&issn=/LC.JPG&client=dougp&type=xw12&oclc=1423243528" alt=""></div>
           <div class="award-content">
-            <div class="h3 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/118898_boston_globe-horn_book_award">Boston Globe-Horn Book Award</a></div>
-            <div>Donec a luctus lorem. Vestibulum ac erat quis risus hendrerit vestibulum. Suspendisse ante turpis, semper quis pharetra eu, luctus sit amet nisl.</div>
+            <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
+            <div>The Association for Library Service to Children (ALSC) recognizes the best in children's books from the past year, as chosen by theirNotable Childrens Books Committee.</div>
           </div>
-          </div></div>
+        </div>
       </div>
     </div>
     <!-- InstanceEndEditable --> </div>
