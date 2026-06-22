@@ -54,39 +54,27 @@
 .award-wrapper {
     display: flex;
     justify-content: center;
-    max-width: 1650px;
+    max-width: 1440px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
-.award-item-large {
+.award-item {
     display: flex;
     flex-direction: column;
     background: #fff;
-    padding: 15px 15px 35px;
+    padding: 15px 15px 30px;
     margin: 15px;
     flex: 1 1 0;
-}
-.award-item-large.three-up {
-    flex: 1 1 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    min-width: 350px;
+    max-width: 600px;
 }
 .award-content {
-    padding: 0 0 30px;
 }
 .book-cover-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-}
-.book-cover-wrapper img {
-    flex: 1 1 0;
-    min-width: 0;
 }
 .award-item-small-wrapper {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 15px;
-    padding: 15px;
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -286,24 +274,25 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
         <h1 class="page-heading">Awards &amp; Bestsellers</h1>
         <div class="max-width-80">
           <h2 class="page-subheading">Praesent consequat eros ut arcu commodo sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h2>
+          <div><i>Book covers are random examples of past winners.</i></div>
         </div>
       </div>
     </div>
     <div class="row padding-bottom-20">
       <div class="h1 no-margin text-center">Awards</div>
       <div class="award-wrapper">
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593529461&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1389606380" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593532294&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1394001267" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593571675&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1370502212" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
-          <div>The Colorado Libraries for Early Literacy (CLEL) awards five high-quality children's books that provide excellent support of early literacy development in young children. Awards are given in the categories for the five early literacy practices—read, write, sing, talk and play.</div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9781419787621&issn=/LC.JPG&client=dougp&type=xw12&oclc=1546805356" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/115693_james_beard_award">James Beard Award</a></div>
+          <div>Awards presented annually by the James Beard Foundation for outstanding culinary writing across various categories.</div>
         </div>
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780823450169&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781536215540&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1374247573" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">Coretta Scott King Award</a></div>
-          <div>Awarded annually since 1970 to authors and illustrators of books for children and young adults that demonstrate an appreciation of African-American culture.</div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9780385550369&issn=/LC.JPG&client=dougp&type=xw12" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/84863_pulitzer_prize">Pulitzer Prize</a></div>
+          <div>Awarded annually by New York's Columbia University for excellence in fiction, drama, history, biography, poetry and general nonfiction.</div>
         </div>
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780813952239&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1442928330" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780525535768&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1443490315" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780374388942&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1407025784" alt=""></div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9780813952239&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1442928330" alt=""></div>
           <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">Edgar Award</a></div>
           <div>Presented annually by the Mystery Writers of America. Named after Edgar Allan Poe, the awards honor the best in mystery fiction, non-fiction, television, film, and theater. </div>
         </div>
@@ -313,87 +302,93 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       <div class="award-wrapper" style="max-width: 1300px;">
         <div class="award-item-small-wrapper">
           <div class="award-item-small">
-            <div class="award-content" style="border-bottom: 2px solid #f5f5f5;">
+            <div class="award-content">
               <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/143173_hugo_award">Hugo Award</a></div>
               <div>Voted as the best science fiction or fantasy works for the year by the World Science Fiction Convention.</div>
             </div>
           </div>
           <div class="award-item-small">
-            <div class="award-content" style="border-bottom: 2px solid #f5f5f5;">
-              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/115693_james_beard_award">James Beard Award</a></div>
-              <div>Awards presented annually by the James Beard Foundation for outstanding culinary writing across various categories.</div>
-            </div>
-          </div>
-          <div class="award-item-small">
             <div class="award-content">
-              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/492211_library_reads">Library Reads</a></div>
-              <div>A monthly library staff picks list for adult fiction and non-fiction tiles chosen by librarians across the country.</div>
+              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
+              <div>The Colorado Libraries for Early Literacy (CLEL) awards five high-quality children's books that provide excellent support of early literacy development in young children. Awards are given in the categories for the five early literacy practices—read, write, sing, talk and play.</div>
             </div>
           </div>
         </div>
-        <div class="award-item-large" style="min-width: 750px;">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1423243528" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/81164_michael_l_printz_award">Michael L. Printz Award</a></div>
+        <div class="award-item-small">
+          <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/81164_michael_l_printz_award">Michael L. Printz Award</a></div>
           <div>Awarded annually by the Young Adult Library Services Association for excellence in young adult literature.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row padding-bottom-20">
+      <div class="award-wrapper">
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9780811238618&issn=/LC.JPG&client=dougp&type=xw12&oclc=1457623938" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/116227_national_book_award">National Book Award</a></div>
+          <div>Established in 1950 to celebrate the best writing in America, the National Book Award is one of the most prestigious literary prizes in the country. Awards are given to one book (author) annually in each of five categories: fiction, nonfiction, poetry, translation, and young people's literature.</div>
+        </div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9798217093243&issn=/LC.JPG&client=dougp&type=xw12&oclc=1535592629" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/492211_library_reads">Library Reads</a></div>
+          <div>A monthly library staff picks list for adult fiction and non-fiction tiles chosen by librarians across the country.</div>
+        </div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
+          <div>The Association for Library Service to Children (ALSC) recognizes the best in children's books from the past year, as chosen by their Notable Childrens Books Committee.</div>
         </div>
       </div>
     </div>
     <div class="row padding-top-40 padding-bottom-20">
       <div class="award-wrapper">
-        <div class="award-item-large" style="min-width: 500px;">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1423243528" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/116227_national_book_award">National Book Award</a></div>
-          <div>Established in 1950 to celebrate the best writing in America, the National Book Award is one of the most prestigious literary prizes in the country. </div>
-        </div>
-        <div class="award-item-large" style="min-width: 500px;">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1423243528" alt=""></div>
+        <div class="award-item" style="min-width: 500px;">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""></div>
           <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/1406503_man_booker_prize">Man Booker Prize</a></div>
           <div>Awarded annually for best original novel written in English and published in the U.K., the Booker Prize is regarded as one of the most prestigious awards in literature.</div>
         </div>
-        <div class="award-item-large" style="min-width: 500px;">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1423243528" alt=""></div>
+        <div class="award-item" style="min-width: 500px;">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""></div>
           <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/89367_newbery_medal">Newbery Medal</a></div>
           <div>Awarded annually to the author of the most distinguished contribution to American literature for children. The Newbery and the Caldecott Medal are considered the two most prestigious awards for children's literature in the United States</div>
         </div>
       </div>
     </div>
     <div class="row bg-gray-5 padding-top-40 padding-bottom-50">
-      <div class="award-wrapper" style="max-width: 1350px;">
-        <div class="award-item-large" style="min-width: 750px;">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781547605897&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1440044573" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781454953456&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1420635134" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781419754364&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1423243528" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">ALSC Notable Children's Books</a></div>
-          <div>The Association for Library Service to Children (ALSC) recognizes the best in children's books from the past year, as chosen by their Notable Childrens Books Committee.</div>
-        </div>
-        <div class="award-item-small-wrapper">
-          <div class="award-item-small">
-            <div class="award-content" style="border-bottom: 2px solid #f5f5f5;">
-              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
-              <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
-            </div>
+      <div class="award-wrapper">
+        <div class="award-item-small">
+          <div class="award-content">
+            <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/999594_audie_awards">Audie Awards</a></div>
+            <div>Recognizing distinction in audiobooks and spoken-word entertainment since 1996 by the Audio Publishers Association.</div>
           </div>
-          <div class="award-item-small">
-            <div class="award-content" style="border-bottom: 2px solid #f5f5f5;">
-              <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/118898_boston_globe-horn_book_award">Boston Globe-Horn Book Award</a></div>
-              <div>Presented annually since 1967 by the Boston Globe and The Horn Book Magazine for excellence in children's and young adult literature.</div>
-            </div>
+        </div>
+        <div class="award-item-small">
+          <div class="award-content">
+            <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/118898_boston_globe-horn_book_award">Boston Globe-Horn Book Award</a></div>
+            <div>Presented annually since 1967 by the Boston Globe and The Horn Book Magazine for excellence in children's and young adult literature.</div>
+          </div>
+        </div>
+        <div class="award-item-small">
+          <div class="award-content">
+            <div class="h4 margin-top-20"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
+            <div>The Colorado Libraries for Early Literacy (CLEL) awards five high-quality children's books that provide excellent support of early literacy development in young children. Awards are given in the categories for the five early literacy practices—read, write, sing, talk and play.</div>
           </div>
         </div>
       </div>
     </div>
     <div class="row padding-top-40 padding-bottom-20">
       <div class="award-wrapper">
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593529461&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1389606380" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593532294&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1394001267" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593571675&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1370502212" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/84863_pulitzer_prize">Pulitzer Prize</a></div>
-          <div>Awarded annually by New York's Columbia University for excellence in fiction, drama, history, biography, poetry and general nonfiction.</div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/121909_coretta_scott_king_award">Coretta Scott King Award</a></div>
+          <div>Awarded annually since 1970 to authors and illustrators of books for children and young adults that demonstrate an appreciation of African-American culture.</div>
         </div>
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780823450169&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781536215540&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1374247573" alt=""></div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""></div>
           <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/3671891_spanish_clel_bell_book_awards">Spanish CLEL Bell Book Awards</a></div>
           <div>Modeled after the CLEL Bell Awards, this award recognizes Spanish-language books that effectively help caregivers, librarians, and other early childhood advocates support children's reading, writing, talking, playing, and singing skills.</div>
         </div>
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780823450169&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781536215540&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1374247573" alt=""></div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""></div>
           <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/87642_caldecott_medal">Caldecott Medal</a></div>
           <div>The Caldecott was named in honor of nineteenth-century English illustrator Randolph Caldecott. It is awarded annually by the ALSC to the artist of the most distinguished American picture book for children. </div>
         </div>
@@ -402,15 +397,15 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
     <div class="row bg-gray-5 padding-top-40 padding-bottom-70">
       <div class="h1 no-margin text-center padding-bottom-15">Bestsellers</div>
       <div class="award-wrapper" style="max-width: 1300px;">
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593529461&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1389606380" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780593532294&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1394001267" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780316541077&issn=/LC.JPG&client=dougp&type=xw12&oclc=1245957504" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
-          <div>The Colorado Libraries for Early Literacy (CLEL) awards five high-quality children's books that provide excellent support of early literacy development in young children. Awards are given in the categories for the five early literacy practices—read, write, sing, talk and play.</div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/bestsellers/5925_new_york_times">New York Times</a></div>
+          <div>Morbi ultrices tortor sollicitudin elit lobortis scelerisque. Vivamus sed turpis sed sem varius suscipit non vulputate eros. Etiam id tortor fermentum felis fringilla adipiscing at et libero. Sed hendrerit, leo non iaculis vehicula, nisl arcu volutpat velit, quis molestie velit lacus ut nisl.</div>
         </div>
-        <div class="award-item-large three-up">
-          <div class="book-cover-wrapper"><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9780823450169&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12" alt=""><img class="img-responsive" src="https://www.syndetics.com/index.aspx?isbn=9781536215540&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1374247573" alt=""></div>
-          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/274276_association_for_library_service_to_children_(alsc)_notable_childrens_books">Coretta Scott King Award</a></div>
-          <div>Awarded annually since 1970 to authors and illustrators of books for children and young adults that demonstrate an appreciation of African-American culture.</div>
+        <div class="award-item">
+          <div class="book-cover-wrapper"><img class="img-responsive center-block" src="https://www.syndetics.com/index.aspx?isbn=9781250887283&amp;issn=/LC.JPG&amp;client=dougp&amp;type=xw12&amp;oclc=1468489337" alt=""></div>
+          <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/bestsellers/493879_indie_next">Indie Next</a></div>
+          <div>Fusce a dui urna, vehicula bibendum orci. Vivamus nisl lacus, rhoncus vitae mattis eu, ullamcorper a nisl. Phasellus semper, purus quis mattis consectetur, lacus purus euismod justo, vel mollis leo massa ut massa.</div>
         </div>
       </div>
     </div>
