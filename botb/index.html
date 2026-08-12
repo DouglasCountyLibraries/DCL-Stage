@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,7 +50,7 @@
 .kids-teens-active {
     background-color: #f5f5f5;
 }
-.location-wrapper {
+.location-wrapper, .finals-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -59,6 +60,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.goal-item {
+    flex: 1;
+    padding: 30px 30px 40px;
+    margin: 5px;
+}
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.leaderboard-table th, .leaderboard-table td {
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    text-align: left;
+}
+.leaderboard-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+.leaderboard-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.leaderboard-table thead th {
+    background-color: #eee;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 .book-list {
     background: #fff;
@@ -101,8 +128,16 @@
 }
 
 @media (max-width: 1300px) {
-.location-wrapper {
+.location-wrapper, .finals-wrapper {
     max-width: 900px;
+}
+}
+
+@media (max-width: 600px) {
+.leaderboard-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 }
 </style>
@@ -230,11 +265,11 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
               <li class="mobile-nav-heading"> <a href="#" data-toggle="collapse" data-target="#explore">Explore <i class="fa-solid fa-chevron-down"></i> </a>
                 <ul id="explore" class="nav mobile-nav-list collapse">
                   <li><a href="../staff-picks/">Staff Picks</a></li>
-          <li><a href="../book-clubs/">Book Clubs</a></li>
-          <li><a href="../awards-bestsellers/">Awards & Bestsellers</a></li>
-          <li><a href="https://dcl.bibliocommons.com/v2/search?f_ON_ORDER=false&query=nw%3A%5B0%20TO%20180%5D&searchType=bl&sort=NEWLY_ACQUIRED&suppress=true&title_key=all_newly_acquired">New Titles</a></li>
-          <li><a href="https://dcl.bibliocommons.com/v2/search?f_ON_ORDER=true&query=nw%3A%5B0%20TO%20180%5D&searchType=bl&sort=NEWLY_ACQUIRED&suppress=true&title_key=all_newly_acquired">On Order</a></li>
-          <li><a href="https://dcl.bibliocommons.com/dashboard">Recent Activity</a></li>
+                  <li><a href="../book-clubs/">Book Clubs</a></li>
+                  <li><a href="../awards-bestsellers/">Awards & Bestsellers</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/v2/search?f_ON_ORDER=false&query=nw%3A%5B0%20TO%20180%5D&searchType=bl&sort=NEWLY_ACQUIRED&suppress=true&title_key=all_newly_acquired">New Titles</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/v2/search?f_ON_ORDER=true&query=nw%3A%5B0%20TO%20180%5D&searchType=bl&sort=NEWLY_ACQUIRED&suppress=true&title_key=all_newly_acquired">On Order</a></li>
+                  <li><a href="https://dcl.bibliocommons.com/dashboard">Recent Activity</a></li>
                 </ul>
               </li>
               <li class="whats-new-active mobile-nav-heading"><a href="../whats-new/">What's New</a> </li>
@@ -338,7 +373,67 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </section>
     <section>
-      <div class="row">
+      <div class="row padding-top-30 padding-bottom-30">
+        <div class="container">
+          <div class="h2 text-center">District Finals Leaderboard</div>
+          <div class="text-center max-width-80 padding-bottom-5">District Battles begin Wednesday, March 11, 2026</div>
+        </div>
+        <div class="finals-wrapper">
+          <div class="padding-30">
+            <h4 class="no-margin">3rd-4th Grade</h4>
+            <div class="goal-item">
+              <table class="leaderboard-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Ranking</th>
+                    <th scope="col">School</th>
+                    <th scope="col">Point Differential</th>
+                    <th scope="col">DCL Branch</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>TBD</td>
+                    <td>0</td>
+                    <td>Castle Pines</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>TBD</td>
+                    <td>0</td>
+                    <td>Castle Rock</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>TBD</td>
+                    <td>0</td>
+                    <td>Lone Tree</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>TBD</td>
+                    <td>0</td>
+                    <td>Highlands Ranch</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>TBD</td>
+                    <td>0</td>
+                    <td>Parker</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-center padding-30">
+            <h4 class="margin-top-15 no-margin-bottom">5th-6th Grade</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row bg-gray-5">
         <div id="book-lists" class="padding-top-30 padding-bottom-30">
           <div class="h2 text-center no-margin-top">Book Lists</div>
           <div class="max-width-80 text-center padding-bottom-20">Get ready to battle! These are the books that this year's trivia battle questions will be based upon. All of these titles will be available as "Your Lucky Day" books at your local DCL branch.</div>
@@ -356,7 +451,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </section>
     <section>
-      <div id="pronunciations" class="row bg-gray-5 padding-top-40 padding-bottom-60">
+      <div id="pronunciations" class="row padding-top-40 padding-bottom-60">
         <div class="h2 text-center">Title and Author Pronunciation List</div>
         <div class="author-wrapper">
           <div class="author-item">
@@ -600,4 +695,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 
 <!-- End Patron Point -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
