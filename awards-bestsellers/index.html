@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,16 +59,16 @@
     flex-wrap: wrap;
 }
 .award-item {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    padding: 0 15px 30px;
-    margin: 15px 15px 75px;
-    flex: 1 1 0;
-    border: 2px solid #ddd;
-    border-radius: 3px;
-    min-width: 350px;
-    max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	padding: 0 30px 40px;
+	margin: 15px 15px 75px;
+	flex: 1 1 0;
+	border: 2px solid #ddd;
+	border-radius: 3px;
+	min-width: 350px;
+	max-width: 600px;
 }
 .award-list-wrapper {
     display: flex;
@@ -94,6 +95,33 @@
     margin-left: auto;
     margin-right: auto;
     max-height: 325px;
+}
+.award-wrapper-small {
+	margin: 0 auto;
+	max-width: 825px;
+	padding: 0 15px;
+}
+.award-content-small {
+    display: flex;
+
+    background: #fff;
+    margin: 0 0 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+    .award-item-small-one {
+border-right: 15px solid #f5f5f5;
+  
+}
+.award-item-small-one img {
+    height: 240px;
+    width: 160px;
+  
+}
+.award-item-small-two {
+    flex: 1;
+    padding: 30px 30px 35px;
+    
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -324,29 +352,35 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
       </div>
     </section>
     <section>
-      <div class="row bg-gray-5 padding-top-40 padding-bottom-50">
-        <div class="award-list-wrapper">
-          <div class="award-list-item">
-            <div class="award-content">
-              <div class="h4"><a href="https://dcl.bibliocommons.com/explore/awards/1406503_man_booker_prize">Man Booker Prize</a></div>
+      <div class="row bg-gray-5 padding-top-70 padding-bottom-40">
+        <div class="award-wrapper-small">
+          <div class="award-content-small">
+            <div class="award-item-small-one"><a href="https://dcl.bibliocommons.com/v2/record/S980C13198808"><img src="https://www.syndetics.com/index.aspx?isbn=9780385545310&issn=/LC.JPG&client=dougp&type=xw12&oclc=1455747796" alt="Endling"></a></div>
+            <div class="award-item-small-two">
+              <div class="h4 no-margin-top"><a href="https://dcl.bibliocommons.com/explore/awards/1406503_man_booker_prize">Man Booker Prize</a></div>
               <div>Awarded annually for best original novel written in English and published in the U.K., the Booker Prize is regarded as one of the most prestigious awards in literature.</div>
             </div>
           </div>
-          <div class="award-list-item">
-            <div class="award-content">
-              <div class="h4"><a href="https://dcl.bibliocommons.com/explore/awards/143173_hugo_award">Hugo Award</a></div>
+          <div class="award-content-small">
+            <div class="award-item-small-one"><a href="https://dcl.bibliocommons.com/v2/record/S980C13198808"><img src="https://www.syndetics.com/index.aspx?isbn=9781250244048&issn=/LC.JPG&client=dougp&type=xw12" alt="Nettle & Bone"></a></div>
+            <div class="award-item-small-two">
+              <div class="h4 no-margin-top"><a href="https://dcl.bibliocommons.com/explore/awards/143173_hugo_award">Hugo Award</a></div>
               <div>Voted as the best science fiction or fantasy works for the year by the World Science Fiction Convention.</div>
             </div>
           </div>
-          <div class="award-list-item">
-            <div class="award-content">
-              <div class="h4"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
+          <div class="award-content-small">
+            <div class="award-item-small-one"><a href="https://dcl.bibliocommons.com/v2/record/S980C13198808"><img src="https://www.syndetics.com/index.aspx?isbn=9780593529461&issn=/LC.JPG&client=dougp&type=xw12&oclc=1389606380" alt="Gaga Mistake Day"></a></div>
+            <div class="award-item-small-two">
+              <div class="h4 no-margin-top"><a href="https://dcl.bibliocommons.com/explore/awards/1546244_clel_bell_picture_book_awards">CLEL Bell Picture Book Awards</a></div>
               <div>The Colorado Libraries for Early Literacy (CLEL) awards five high-quality children's books that provide excellent support of early literacy development in young children. Awards are given in the categories for the five early literacy practices—read, write, sing, talk and play.</div>
             </div>
           </div>
-          <div class="award-list-item">
-            <div class="h4"><a href="https://dcl.bibliocommons.com/explore/awards/81164_michael_l_printz_award">Michael L. Printz Award</a></div>
-            <div>Awarded annually by the Young Adult Library Services Association for excellence in young adult literature.</div>
+          <div class="award-content-small">
+            <div class="award-item-small-one"><a href="https://dcl.bibliocommons.com/v2/record/S980C13198808"><img src="https://www.syndetics.com/index.aspx?isbn=9780063314269&issn=/LC.JPG&client=dougp&type=xw12&oclc=1474007340" alt="Legendary Frybread Drive-in"></a></div>
+            <div class="award-item-small-two">
+              <div class="h4 no-margin-top"><a href="https://dcl.bibliocommons.com/explore/awards/81164_michael_l_printz_award">Michael L. Printz Award</a></div>
+              <div>Awarded annually by the Young Adult Library Services Association for excellence in young adult literature.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -411,7 +445,7 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
             <div>Awarded annually since 1970 to authors and illustrators of books for children and young adults that demonstrate an appreciation of African-American culture.</div>
           </div>
           <div class="award-item">
-            <div class="book-cover-wrapper"><img src="https://www.syndetics.com/index.aspx?isbn=9781464220159&issn=/LC.JPG&client=dougp&type=xw12&oclc=1468492809" alt=""></div>
+            <div class="book-cover-wrapper"><img src="https://www.syndetics.com/index.aspx?isbn=1558859896&issn=/LC.JPG&client=dougp&type=xw12&oclc=1428197232" alt=""></div>
             <div class="h4 margin-top-20 text-center"><a href="https://dcl.bibliocommons.com/explore/awards/3671891_spanish_clel_bell_book_awards">Spanish CLEL Bell Book Awards</a></div>
             <div>Modeled after the CLEL Bell Awards, this award recognizes Spanish-language books that effectively help caregivers, librarians, and other early childhood advocates support children's reading, writing, talking, playing, and singing skills.</div>
           </div>
@@ -547,4 +581,5 @@ $.get("https://s3.amazonaws.com/website.alert/alert.txt")
 
 <!-- End Patron Point -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
